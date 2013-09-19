@@ -1,0 +1,8 @@
+campaign:
+    resource: "@CampaignBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+campaigns:
+    type:     rest
+    resource: Vifeed\CampaignBundle\Controller\CampaignController
