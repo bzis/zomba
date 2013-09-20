@@ -32,7 +32,7 @@ class AgeRange
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -43,19 +43,20 @@ class AgeRange
      * Set name
      *
      * @param string $name
+     *
      * @return AgeRange
      */
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {

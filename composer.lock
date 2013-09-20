@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "50ba348a09f773806087adfd667c8faa",
+    "hash": "2e5a7021f8c6897e765fe3614419d54a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -657,17 +657,17 @@
         },
         {
             "name": "friendsofsymfony/rest-bundle",
-            "version": "0.13.1",
+            "version": "dev-master",
             "target-dir": "FOS/RestBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "2c3434f17fdbbcc22c2da2737b04234646749463"
+                "reference": "ea7ee0ddf9bf609bd0910469ee9c75c8592de723"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/2c3434f17fdbbcc22c2da2737b04234646749463",
-                "reference": "2c3434f17fdbbcc22c2da2737b04234646749463",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/ea7ee0ddf9bf609bd0910469ee9c75c8592de723",
+                "reference": "ea7ee0ddf9bf609bd0910469ee9c75c8592de723",
                 "shasum": ""
             },
             "require": {
@@ -728,7 +728,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2013-08-15 13:30:47"
+            "time": "2013-09-19 05:00:36"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2000,9 +2000,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "friendsofsymfony/rest-bundle": 20
+    },
     "platform": {
         "php": ">=5.3.3"
     },

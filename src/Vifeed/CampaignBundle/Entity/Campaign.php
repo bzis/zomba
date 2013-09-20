@@ -136,7 +136,7 @@ class Campaign
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -147,19 +147,20 @@ class Campaign
      * Set name
      *
      * @param string $name
+     *
      * @return Campaign
      */
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -170,19 +171,20 @@ class Campaign
      * Set description
      *
      * @param string $description
+     *
      * @return Campaign
      */
     public function setDescription($description)
     {
         $this->description = $description;
-    
+
         return $this;
     }
 
     /**
      * Get description
      *
-     * @return string 
+     * @return string
      */
     public function getDescription()
     {
@@ -198,14 +200,14 @@ class Campaign
     public function setGender($gender)
     {
         $this->gender = $gender;
-    
+
         return $this;
     }
 
     /**
      * Get gender
      *
-     * @return string 
+     * @return string
      */
     public function getGender()
     {
@@ -216,19 +218,20 @@ class Campaign
      * Set maxBid
      *
      * @param float $maxBid
+     *
      * @return Campaign
      */
     public function setMaxBid($maxBid)
     {
         $this->maxBid = $maxBid;
-    
+
         return $this;
     }
 
     /**
      * Get maxBid
      *
-     * @return float 
+     * @return float
      */
     public function getMaxBid()
     {
@@ -239,19 +242,20 @@ class Campaign
      * Set budget
      *
      * @param float $budget
+     *
      * @return Campaign
      */
     public function setBudget($budget)
     {
         $this->budget = $budget;
-    
+
         return $this;
     }
 
     /**
      * Get budget
      *
-     * @return float 
+     * @return float
      */
     public function getBudget()
     {
@@ -262,19 +266,20 @@ class Campaign
      * Set budgetType
      *
      * @param string $budgetType
+     *
      * @return Campaign
      */
     public function setBudgetType($budgetType)
     {
         $this->budgetType = $budgetType;
-    
+
         return $this;
     }
 
     /**
      * Get budgetType
      *
-     * @return string 
+     * @return string
      */
     public function getBudgetType()
     {
@@ -285,19 +290,20 @@ class Campaign
      * Set startAt
      *
      * @param \DateTime $startAt
+     *
      * @return Campaign
      */
     public function setStartAt($startAt)
     {
         $this->startAt = $startAt;
-    
+
         return $this;
     }
 
     /**
      * Get startAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getStartAt()
     {
@@ -308,19 +314,20 @@ class Campaign
      * Set endAt
      *
      * @param \DateTime $endAt
+     *
      * @return Campaign
      */
     public function setEndAt($endAt)
     {
         $this->endAt = $endAt;
-    
+
         return $this;
     }
 
     /**
      * Get endAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getEndAt()
     {
@@ -331,19 +338,20 @@ class Campaign
      * Set totalViews
      *
      * @param integer $totalViews
+     *
      * @return Campaign
      */
     public function setTotalViews($totalViews)
     {
         $this->totalViews = $totalViews;
-    
+
         return $this;
     }
 
     /**
      * Get totalViews
      *
-     * @return integer 
+     * @return integer
      */
     public function getTotalViews()
     {
@@ -354,19 +362,20 @@ class Campaign
      * Set bid
      *
      * @param float $bid
+     *
      * @return Campaign
      */
     public function setBid($bid)
     {
         $this->bid = $bid;
-    
+
         return $this;
     }
 
     /**
      * Get bid
      *
-     * @return float 
+     * @return float
      */
     public function getBid()
     {
@@ -387,12 +396,13 @@ class Campaign
      * Add platforms
      *
      * @param Platform $platforms
+     *
      * @return Campaign
      */
     public function addPlatform(Platform $platforms)
     {
         $this->platforms[] = $platforms;
-    
+
         return $this;
     }
 
@@ -410,12 +420,13 @@ class Campaign
      * Add countries
      *
      * @param Country $countries
+     *
      * @return Campaign
      */
     public function addCountrie(Country $countries)
     {
         $this->countries[] = $countries;
-    
+
         return $this;
     }
 
@@ -432,7 +443,7 @@ class Campaign
     /**
      * Get countries
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getCountries()
     {
@@ -443,12 +454,13 @@ class Campaign
      * Add tags
      *
      * @param Tag $tags
+     *
      * @return Campaign
      */
     public function addTag(Tag $tags)
     {
         $this->tags[] = $tags;
-    
+
         return $this;
     }
 
@@ -465,7 +477,7 @@ class Campaign
     /**
      * Get tags
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getTags()
     {
@@ -476,12 +488,13 @@ class Campaign
      * Add ageRanges
      *
      * @param AgeRange $ageRanges
+     *
      * @return Campaign
      */
     public function addAgeRange(AgeRange $ageRanges)
     {
         $this->ageRanges[] = $ageRanges;
-    
+
         return $this;
     }
 
@@ -498,7 +511,7 @@ class Campaign
     /**
      * Get ageRanges
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getAgeRanges()
     {

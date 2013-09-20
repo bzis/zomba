@@ -1,8 +1,9 @@
-campaign:
-    resource: "@CampaignBundle/Controller/"
-    type:     annotation
-    prefix:   /
+#campaign:
+#    resource: "@CampaignBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
 
 campaigns:
     type:     rest
     resource: Vifeed\CampaignBundle\Controller\CampaignController
+#    prefix:   /campaigns
