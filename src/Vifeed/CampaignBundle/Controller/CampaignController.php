@@ -10,6 +10,7 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Vifeed\CampaignBundle\Entity\Campaign;
 use Vifeed\CampaignBundle\Form\CampaignType;
+use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
 //use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 //use FOS\RestBundle\Controller\Annotations\QueryParam;
@@ -25,6 +26,8 @@ class CampaignController extends FOSRestController
 {
     /**
      * Список кампаний
+     *
+     * @ApiDoc()
      *
      * @return Response
      */
@@ -50,6 +53,7 @@ class CampaignController extends FOSRestController
      *
      * @param int $id
      *
+     * @ApiDoc()
      * todo: подумать о валидации параметров с помощью аннотаций
      *
      * @//QueryParam(name="id", requirements="\d+", strict=true, description="blabal", nullable=false)
@@ -69,6 +73,8 @@ class CampaignController extends FOSRestController
 
     /**
      * Создать новую кампанию
+     *
+     * @ApiDoc()
      *
      * @return Response
      */
@@ -94,6 +100,8 @@ class CampaignController extends FOSRestController
      *
      * @param int $id
      *
+     * @ApiDoc()
+     *
      * @return Response
      */
     public function putCampaignAction($id)
@@ -117,6 +125,8 @@ class CampaignController extends FOSRestController
      * Удалить кампанию
      *
      * @param int $id
+     *
+     * @ApiDoc()
      *
      * @return Response
      */

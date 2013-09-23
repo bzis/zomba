@@ -38,9 +38,8 @@ class Campaign
 
     /**
      * @var string
-     * todo: подумать над более оптимальным типом. Enum?
      *
-     * @ORM\Column(name="gender", type="string", length=1)
+     * @ORM\Column(name="gender", type="string", columnDefinition="ENUM('male', 'female')")
      */
     private $gender;
 
@@ -60,9 +59,8 @@ class Campaign
 
     /**
      * @var string
-     * todo: подумать над более оптимальным типом. Enum?
      *
-     * @ORM\Column(name="budget_type", type="string", length=1)
+     * @ORM\Column(name="budget_type", type="string", columnDefinition="ENUM('lifetime', 'per day')")
      */
     private $budgetType;
 
