@@ -22,8 +22,8 @@ class CampaignType extends AbstractType
               ->add('maxBid')
               ->add('budget')
               ->add('budgetType')
-              ->add('startAt')
-              ->add('endAt')
+              ->add('startAt', 'datetime')
+              ->add('endAt', 'datetime')
               ->add('totalViews')
               ->add('bid')
               ->add('platforms')
@@ -40,7 +40,8 @@ class CampaignType extends AbstractType
         $resolver->setDefaults(
             array(
                  'data_class' => 'Vifeed\CampaignBundle\Entity\Campaign',
-//                 'csrf_protection'   => false,
+                 'csrf_protection'   => false,
+                 'validation_groups' => array('default'),
             )
         );
     }
@@ -50,7 +51,7 @@ class CampaignType extends AbstractType
      */
     public function getName()
     {
-        return 'vifeed_campaignbundle_campaign';
+        return 'campaign';
     }
 
 

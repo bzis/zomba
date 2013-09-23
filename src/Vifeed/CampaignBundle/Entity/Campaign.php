@@ -4,6 +4,7 @@ namespace Vifeed\CampaignBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Campaign
@@ -13,6 +14,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Campaign
 {
+    const GENDER_MAIL = 'male';
+    const GENDER_FEMAIL = 'female';
+
+    const BUDGET_LIFETIME = 'lifetime';
+    const BUDGET_PER_DAY = 'per day';
+
     /**
      * @var integer
      *
@@ -26,6 +33,11 @@ class Campaign
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"},
+     *      message="Название не должно быть пустым"
+     * )
      */
     private $name;
 
@@ -40,6 +52,12 @@ class Campaign
      * @var string
      *
      * @ORM\Column(name="gender", type="string", columnDefinition="ENUM('male', 'female')")
+     *
+     * @Assert\Choice(
+     *      choices = {"male", "female"},
+     *      groups={"default"},
+     *      message = "Выберите пол"
+     * )
      */
     private $gender;
 
@@ -47,6 +65,15 @@ class Campaign
      * @var float
      *
      * @ORM\Column(name="max_bid", type="decimal")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\Type(
+     *      type="integer",
+     *      groups={"default"},
+     *      message="Должно быть числом"
+     * )
      */
     private $maxBid;
 
@@ -54,6 +81,21 @@ class Campaign
      * @var float
      *
      * @ORM\Column(name="budget", type="decimal")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\Type(
+     *      type="integer",
+     *      groups={"default"},
+     *      message="Должно быть числом"
+     * )
+     * @Assert\GreaterThan(
+     *      value = 0,
+     *      groups={"default"},
+     *      message="Должно быть положительным числом"
+     * )
+
      */
     private $budget;
 
@@ -61,6 +103,15 @@ class Campaign
      * @var string
      *
      * @ORM\Column(name="budget_type", type="string", columnDefinition="ENUM('lifetime', 'per day')")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\Choice(
+     *      choices = {"lifetime", "per day"},
+     *      groups={"default"},
+     *      message = "Выберите тип бюджета"
+     * )
      */
     private $budgetType;
 
@@ -68,6 +119,14 @@ class Campaign
      * @var \DateTime
      *
      * @ORM\Column(name="start_at", type="datetime")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\DateTime(
+     *      groups={"default"},
+     *      message="Неверная дата"
+     * )
      */
     private $startAt;
 
@@ -75,6 +134,11 @@ class Campaign
      * @var \DateTime
      *
      * @ORM\Column(name="end_at", type="datetime")
+     *
+     * @Assert\DateTime(
+     *      groups={"default"},
+     *      message="Неверная дата"
+     * )
      */
     private $endAt;
 
@@ -89,6 +153,20 @@ class Campaign
      * @var float
      *
      * @ORM\Column(name="bid", type="decimal")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\Type(
+     *      type="integer",
+     *      groups={"default"},
+     *      message="Должно быть числом"
+     * )
+     * @Assert\GreaterThan(
+     *      value = 0,
+     *      groups={"default"},
+     *      message="Должно быть положительным числом"
+     * )
      */
     private $bid;
 
@@ -421,7 +499,7 @@ class Campaign
      *
      * @return Campaign
      */
-    public function addCountrie(Country $countries)
+    public function addCountry(Country $countries)
     {
         $this->countries[] = $countries;
 
@@ -433,7 +511,7 @@ class Campaign
      *
      * @param Country $countries
      */
-    public function removeCountrie(Country $countries)
+    public function removeCountry(Country $countries)
     {
         $this->countries->removeElement($countries);
     }
