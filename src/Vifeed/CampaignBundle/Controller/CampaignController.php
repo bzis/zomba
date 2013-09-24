@@ -13,6 +13,8 @@ use Vifeed\CampaignBundle\Form\CampaignType;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
 //use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+//use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+//use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 //use FOS\RestBundle\Controller\Annotations\QueryParam;
 //use FOS\RestBundle\Request\ParamFetcher;
 //use FOS\RestBundle\Request\ParamFetcherInterface;
@@ -24,6 +26,7 @@ use Nelmio\ApiDocBundle\Annotation\ApiDoc;
  */
 class CampaignController extends FOSRestController
 {
+
     /**
      * Список кампаний
      *
@@ -54,7 +57,6 @@ class CampaignController extends FOSRestController
      * @param int $id
      *
      * @ApiDoc()
-     * todo: подумать о валидации параметров с помощью аннотаций
      *
      * @//QueryParam(name="id", requirements="\d+", strict=true, description="blabal", nullable=false)
      *
@@ -188,9 +190,9 @@ class CampaignController extends FOSRestController
     private function getActions(Campaign $campaign)
     {
         return array(
-            'get'    => $this->get('router')->generate('get_campaign', array('id' => $campaign->getId())),
-            'edit'   => $this->get('router')->generate('put_campaign', array('id' => $campaign->getId())),
-            'delete' => $this->get('router')->generate('delete_campaign', array('id' => $campaign->getId())),
+            'get'    => $this->get('router')->generate('api_get_campaign', array('id' => $campaign->getId())),
+            'edit'   => $this->get('router')->generate('api_put_campaign', array('id' => $campaign->getId())),
+            'delete' => $this->get('router')->generate('api_delete_campaign', array('id' => $campaign->getId())),
         );
     }
 

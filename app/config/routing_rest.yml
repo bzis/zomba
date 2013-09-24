@@ -1,0 +1,4 @@
+campaigns:
+    type:     rest
+    resource: Vifeed\CampaignBundle\Controller\CampaignController
+    name_prefix: api_

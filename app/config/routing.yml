@@ -1,9 +1,9 @@
 #campaign:
-#    resource: "@CampaignBundle/Controller/"
+#    resource: "@CampaignBundle/Controller/TestCampaignController.php"
 #    type:     annotation
 #    prefix:   /
 
-campaigns:
-    type:     rest
-    resource: Vifeed\CampaignBundle\Controller\CampaignController
-#    prefix:   /campaigns
+rest :
+  type : rest
+  resource : "routing_rest.yml"
+#  prefix : /api
