@@ -44,9 +44,9 @@ class Campaign
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="string", length=255)
+     * @ORM\Column(name="description", type="string", length=255, nullable=true)
      */
-    private $description;
+    private $description = '';
 
     /**
      * @var string
@@ -70,10 +70,11 @@ class Campaign
      *      groups={"default"}
      * )
      * @Assert\Type(
-     *      type="integer",
      *      groups={"default"},
+     *      type="integer",
      *      message="Должно быть числом"
      * )
+     * todo: почему-то Assert\Type не работает
      */
     private $maxBid;
 
@@ -85,11 +86,13 @@ class Campaign
      * @Assert\NotBlank(
      *      groups={"default"}
      * )
-     * @Assert\Type(
+     * @//Assert\Type(
      *      type="integer",
      *      groups={"default"},
      *      message="Должно быть числом"
      * )
+     * todo: проверка на число не пропускает строку "100" из формы в тестах
+     *
      * @Assert\GreaterThan(
      *      value = 0,
      *      groups={"default"},
@@ -133,7 +136,7 @@ class Campaign
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="end_at", type="datetime")
+     * @ORM\Column(name="end_at", type="datetime", nullable=true)
      *
      * @Assert\DateTime(
      *      groups={"default"},
@@ -145,9 +148,9 @@ class Campaign
     /**
      * @var integer
      *
-     * @ORM\Column(name="total_views", type="integer")
+     * @ORM\Column(name="total_views", type="integer", nullable=true)
      */
-    private $totalViews;
+    private $totalViews = 0;
 
     /**
      * @var float
@@ -271,6 +274,7 @@ class Campaign
      * Set gender
      *
      * @param string $gender
+     *
      * @return Campaign
      */
     public function setGender($gender)
