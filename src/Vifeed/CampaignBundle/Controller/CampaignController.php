@@ -154,7 +154,8 @@ class CampaignController extends FOSRestController
     private function createCampaignForm($campaign = null)
     {
         $form = $this->createForm(new CampaignType(), $campaign);
-        $form->submit($this->getRequest());
+        $clearMissing = ($campaign === null) ? true : false;
+        $form->submit($this->getRequest(), $clearMissing); // !! clearMissing
 
         return $form;
     }
