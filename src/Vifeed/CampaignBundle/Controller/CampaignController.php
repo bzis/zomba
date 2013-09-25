@@ -112,7 +112,6 @@ class CampaignController extends FOSRestController
         $form = $this->createCampaignForm($campaign);
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            $em->persist($campaign);
             $em->flush();
 
             $view = new View($campaign, 200);
@@ -171,11 +170,11 @@ class CampaignController extends FOSRestController
     {
         $id += 0;
         if ($id == 0) {
-            throw new BadRequestHttpException('Неправильный id');
+            throw new BadRequestHttpException('Incorrect id');
         }
         $data = $this->getDoctrine()->getRepository('CampaignBundle:Campaign')->find($id);
         if (!$data instanceof Campaign) {
-            throw new NotFoundHttpException('Объект не найден');
+            throw new NotFoundHttpException('Campaign not found');
         }
 
         return $data;

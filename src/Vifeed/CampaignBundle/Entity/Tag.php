@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Tag
  *
  * @ORM\Table(name="tag")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="TagRepository")
  */
 class Tag
 {
@@ -27,6 +27,15 @@ class Tag
      * @ORM\Column(name="name", type="string", length=255)
      */
     private $name;
+
+    /**
+     *
+     * @return
+     */
+    public function __toString()
+    {
+        return $this->getName();
+    }
 
 
     /**
