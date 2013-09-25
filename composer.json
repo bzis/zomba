@@ -36,7 +36,9 @@
         "twig/extensions": "1.0.*",
         "friendsofsymfony/rest-bundle": "dev-master",
         "jms/serializer-bundle": "0.12.*",
-        "nelmio/api-doc-bundle": "dev-master"
+        "nelmio/api-doc-bundle": "dev-master",
+        "doctrine/migrations": "dev-master",
+        "doctrine/doctrine-migrations-bundle": "dev-master"
 
     },
     "require-dev": {
