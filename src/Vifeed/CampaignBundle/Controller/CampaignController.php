@@ -12,12 +12,6 @@ use Vifeed\CampaignBundle\Entity\Campaign;
 use Vifeed\CampaignBundle\Form\CampaignType;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
-//use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-//use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-//use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-//use FOS\RestBundle\Controller\Annotations\QueryParam;
-//use FOS\RestBundle\Request\ParamFetcher;
-//use FOS\RestBundle\Request\ParamFetcherInterface;
 
 /**
  * Class CampaignController
@@ -154,7 +148,7 @@ class CampaignController extends FOSRestController
     {
         $form = $this->createForm(new CampaignType(), $campaign);
         $clearMissing = ($campaign === null) ? true : false;
-        $form->submit($this->getRequest(), $clearMissing); // !! clearMissing
+        $form->submit($this->getRequest(), $clearMissing); // todo: clearMissing - посмотреть как себя ведёт
 
         return $form;
     }
@@ -164,6 +158,7 @@ class CampaignController extends FOSRestController
      *
      * @throws \Symfony\Component\HttpKernel\Exception\BadRequestHttpException
      * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
+     *
      * @return \Vifeed\CampaignBundle\Entity\Campaign
      */
     private function getEntity($id)

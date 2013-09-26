@@ -29,8 +29,7 @@ class Tag
     private $name;
 
     /**
-     *
-     * @return
+     * @return string
      */
     public function __toString()
     {
