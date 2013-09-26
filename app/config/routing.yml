@@ -1,9 +1,4 @@
-#campaign:
-#    resource: "@CampaignBundle/Controller/TestCampaignController.php"
-#    type:     annotation
-#    prefix:   /
-
 rest :
   type : rest
   resource : "routing_rest.yml"
-#  prefix : /api
+  prefix : /api
