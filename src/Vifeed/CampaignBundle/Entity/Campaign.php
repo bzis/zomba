@@ -4,6 +4,7 @@ namespace Vifeed\CampaignBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Campaign
@@ -13,6 +14,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Campaign
 {
+    const GENDER_MAIL = 'male';
+    const GENDER_FEMAIL = 'female';
+
+    const BUDGET_LIFETIME = 'lifetime';
+    const BUDGET_PER_DAY = 'per day';
+
     /**
      * @var integer
      *
@@ -26,21 +33,31 @@ class Campaign
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"},
+     *      message="Название не должно быть пустым"
+     * )
      */
     private $name;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="string", length=255)
+     * @ORM\Column(name="description", type="string", length=255, nullable=true)
      */
-    private $description;
+    private $description = '';
 
     /**
      * @var string
-     * todo: подумать над более оптимальным типом. Enum?
      *
-     * @ORM\Column(name="gender", type="string", length=1)
+     * @ORM\Column(name="gender", type="string", columnDefinition="ENUM('male', 'female')")
+     *
+     * @Assert\Choice(
+     *      choices = {"male", "female"},
+     *      groups={"default"},
+     *      message = "Выберите пол"
+     * )
      */
     private $gender;
 
@@ -48,6 +65,16 @@ class Campaign
      * @var float
      *
      * @ORM\Column(name="max_bid", type="decimal")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\Type(
+     *      groups={"default"},
+     *      type="integer",
+     *      message="Должно быть числом"
+     * )
+     * todo: почему-то Assert\Type не работает
      */
     private $maxBid;
 
@@ -55,14 +82,39 @@ class Campaign
      * @var float
      *
      * @ORM\Column(name="budget", type="decimal")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @//Assert\Type(
+     *      type="integer",
+     *      groups={"default"},
+     *      message="Должно быть числом"
+     * )
+     * todo: проверка на число не пропускает строку "100" из формы в тестах
+     *
+     * @Assert\GreaterThan(
+     *      value = 0,
+     *      groups={"default"},
+     *      message="Должно быть положительным числом"
+     * )
+
      */
     private $budget;
 
     /**
      * @var string
-     * todo: подумать над более оптимальным типом. Enum?
      *
-     * @ORM\Column(name="budget_type", type="string", length=1)
+     * @ORM\Column(name="budget_type", type="string", columnDefinition="ENUM('lifetime', 'per day')")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\Choice(
+     *      choices = {"lifetime", "per day"},
+     *      groups={"default"},
+     *      message = "Выберите тип бюджета"
+     * )
      */
     private $budgetType;
 
@@ -70,27 +122,54 @@ class Campaign
      * @var \DateTime
      *
      * @ORM\Column(name="start_at", type="datetime")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\DateTime(
+     *      groups={"default"},
+     *      message="Неверная дата"
+     * )
      */
     private $startAt;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="end_at", type="datetime")
+     * @ORM\Column(name="end_at", type="datetime", nullable=true)
+     *
+     * @Assert\DateTime(
+     *      groups={"default"},
+     *      message="Неверная дата"
+     * )
      */
     private $endAt;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="total_views", type="integer")
+     * @ORM\Column(name="total_views", type="integer", nullable=true)
      */
-    private $totalViews;
+    private $totalViews = 0;
 
     /**
      * @var float
      *
      * @ORM\Column(name="bid", type="decimal")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\Type(
+     *      type="integer",
+     *      groups={"default"},
+     *      message="Должно быть числом"
+     * )
+     * @Assert\GreaterThan(
+     *      value = 0,
+     *      groups={"default"},
+     *      message="Должно быть положительным числом"
+     * )
      */
     private $bid;
 
@@ -136,7 +215,7 @@ class Campaign
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -147,19 +226,20 @@ class Campaign
      * Set name
      *
      * @param string $name
+     *
      * @return Campaign
      */
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -170,19 +250,20 @@ class Campaign
      * Set description
      *
      * @param string $description
+     *
      * @return Campaign
      */
     public function setDescription($description)
     {
         $this->description = $description;
-    
+
         return $this;
     }
 
     /**
      * Get description
      *
-     * @return string 
+     * @return string
      */
     public function getDescription()
     {
@@ -193,19 +274,20 @@ class Campaign
      * Set gender
      *
      * @param string $gender
+     *
      * @return Campaign
      */
     public function setGender($gender)
     {
         $this->gender = $gender;
-    
+
         return $this;
     }
 
     /**
      * Get gender
      *
-     * @return string 
+     * @return string
      */
     public function getGender()
     {
@@ -216,19 +298,20 @@ class Campaign
      * Set maxBid
      *
      * @param float $maxBid
+     *
      * @return Campaign
      */
     public function setMaxBid($maxBid)
     {
         $this->maxBid = $maxBid;
-    
+
         return $this;
     }
 
     /**
      * Get maxBid
      *
-     * @return float 
+     * @return float
      */
     public function getMaxBid()
     {
@@ -239,19 +322,20 @@ class Campaign
      * Set budget
      *
      * @param float $budget
+     *
      * @return Campaign
      */
     public function setBudget($budget)
     {
         $this->budget = $budget;
-    
+
         return $this;
     }
 
     /**
      * Get budget
      *
-     * @return float 
+     * @return float
      */
     public function getBudget()
     {
@@ -262,19 +346,20 @@ class Campaign
      * Set budgetType
      *
      * @param string $budgetType
+     *
      * @return Campaign
      */
     public function setBudgetType($budgetType)
     {
         $this->budgetType = $budgetType;
-    
+
         return $this;
     }
 
     /**
      * Get budgetType
      *
-     * @return string 
+     * @return string
      */
     public function getBudgetType()
     {
@@ -285,19 +370,20 @@ class Campaign
      * Set startAt
      *
      * @param \DateTime $startAt
+     *
      * @return Campaign
      */
     public function setStartAt($startAt)
     {
         $this->startAt = $startAt;
-    
+
         return $this;
     }
 
     /**
      * Get startAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getStartAt()
     {
@@ -308,19 +394,20 @@ class Campaign
      * Set endAt
      *
      * @param \DateTime $endAt
+     *
      * @return Campaign
      */
     public function setEndAt($endAt)
     {
         $this->endAt = $endAt;
-    
+
         return $this;
     }
 
     /**
      * Get endAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getEndAt()
     {
@@ -331,19 +418,20 @@ class Campaign
      * Set totalViews
      *
      * @param integer $totalViews
+     *
      * @return Campaign
      */
     public function setTotalViews($totalViews)
     {
         $this->totalViews = $totalViews;
-    
+
         return $this;
     }
 
     /**
      * Get totalViews
      *
-     * @return integer 
+     * @return integer
      */
     public function getTotalViews()
     {
@@ -354,19 +442,20 @@ class Campaign
      * Set bid
      *
      * @param float $bid
+     *
      * @return Campaign
      */
     public function setBid($bid)
     {
         $this->bid = $bid;
-    
+
         return $this;
     }
 
     /**
      * Get bid
      *
-     * @return float 
+     * @return float
      */
     public function getBid()
     {
@@ -387,12 +476,13 @@ class Campaign
      * Add platforms
      *
      * @param Platform $platforms
+     *
      * @return Campaign
      */
     public function addPlatform(Platform $platforms)
     {
         $this->platforms[] = $platforms;
-    
+
         return $this;
     }
 
@@ -410,12 +500,13 @@ class Campaign
      * Add countries
      *
      * @param Country $countries
+     *
      * @return Campaign
      */
-    public function addCountrie(Country $countries)
+    public function addCountry(Country $countries)
     {
         $this->countries[] = $countries;
-    
+
         return $this;
     }
 
@@ -424,7 +515,7 @@ class Campaign
      *
      * @param Country $countries
      */
-    public function removeCountrie(Country $countries)
+    public function removeCountry(Country $countries)
     {
         $this->countries->removeElement($countries);
     }
@@ -432,7 +523,7 @@ class Campaign
     /**
      * Get countries
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getCountries()
     {
@@ -443,12 +534,13 @@ class Campaign
      * Add tags
      *
      * @param Tag $tags
+     *
      * @return Campaign
      */
     public function addTag(Tag $tags)
     {
         $this->tags[] = $tags;
-    
+
         return $this;
     }
 
@@ -465,7 +557,7 @@ class Campaign
     /**
      * Get tags
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getTags()
     {
@@ -476,12 +568,13 @@ class Campaign
      * Add ageRanges
      *
      * @param AgeRange $ageRanges
+     *
      * @return Campaign
      */
     public function addAgeRange(AgeRange $ageRanges)
     {
         $this->ageRanges[] = $ageRanges;
-    
+
         return $this;
     }
 
@@ -498,7 +591,7 @@ class Campaign
     /**
      * Get ageRanges
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getAgeRanges()
     {
