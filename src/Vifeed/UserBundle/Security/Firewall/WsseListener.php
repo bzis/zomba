@@ -36,7 +36,6 @@ class WsseListener implements ListenerInterface
         if (!$request->headers->has('x-wsse') || 1 !== preg_match($wsseRegex, $request->headers->get('x-wsse'), $matches)) {
             return;
         }
-
         $token = new WsseApiToken();
         $token->setUser($matches[1]);
 

@@ -2,33 +2,23 @@
 
 namespace Vifeed\CampaignBundle\Tests\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Vifeed\CampaignBundle\Entity\Tag;
+use Vifeed\CampaignBundle\Tests\ApiTestCase;
 
-class TagControllerTest extends WebTestCase
+class TagControllerTest extends ApiTestCase
 {
-    /** @var \Symfony\Bundle\FrameworkBundle\Client */
-    private static $client;
-
-    /** @var \Symfony\Component\Routing\Router */
-    private static $router;
-
-    private static $parameters = array();
-
 
     public static function setUpBeforeClass()
     {
-        self::$client = static::createClient();
-        self::$router = self::$client->getContainer()->get('router');
+        parent::setUpBeforeClass();
 
-        $em = self::$client->getContainer()->get('doctrine.orm.entity_manager');
         $tag1 = new Tag();
         $tag1->setName('test1');
-        $em->persist($tag1);
+        self::$em->persist($tag1);
         $tag2 = new Tag();
         $tag2->setName('test2');
-        $em->persist($tag2);
-        $em->flush();
+        self::$em->persist($tag2);
+        self::$em->flush();
 
         self::$parameters['id1'] = $tag1->getId();
         self::$parameters['id2'] = $tag2->getId();
@@ -36,10 +26,11 @@ class TagControllerTest extends WebTestCase
 
     public static function tearDownAfterClass()
     {
-        $em = static::createClient()->getContainer()->get('doctrine.orm.entity_manager');
-        $em->remove($em->getRepository('CampaignBundle:Tag')->find(self::$parameters['id1']));
-        $em->remove($em->getRepository('CampaignBundle:Tag')->find(self::$parameters['id2']));
-        $em->flush();
+        parent::tearDownAfterClass();
+
+        self::$em->remove(self::$em->getRepository('CampaignBundle:Tag')->find(self::$parameters['id1']));
+        self::$em->remove(self::$em->getRepository('CampaignBundle:Tag')->find(self::$parameters['id2']));
+        self::$em->flush();
     }
 
     /**
@@ -50,20 +41,18 @@ class TagControllerTest extends WebTestCase
     public function testGetTags($word, $expected)
     {
         $url = self::$router->generate('api_get_tags', array('word' => $word));
-        self::$client->request('GET', $url);
-
+        $this->sendRequest('GET', $url);
 
         $expected = preg_replace_callback(
             '/%%id(\d)%%/',
             function ($match) {
-                return self::$parameters['id'.$match[1]];
+                return self::$parameters['id' . $match[1]];
             },
             $expected
         );
 
         $response = self::$client->getResponse();
         $content = $response->getContent();
-
         $this->assertEquals(200, $response->getStatusCode());
         $this->assertJson($content);
         $this->assertEquals($expected, $content);
