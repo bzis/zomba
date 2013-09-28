@@ -52,6 +52,8 @@ doctrine:
         # if using pdo_sqlite as your database driver, add the path in parameters.yml
         # e.g. database_path: %kernel.root_dir%/data/data.db3
         # path:     %database_path%
+        mapping_types:
+            enum: string
 
     orm:
         auto_generate_proxy_classes: %kernel.debug%
@@ -77,3 +79,8 @@ fos_rest:
             html: true
         failed_validation: HTTP_BAD_REQUEST
         default_engine: twig
+    param_fetcher_listener: force
+#    format_listener:
+#        rules:
+#            - { path: '^/', fallback_format: json, prefer_extension: false }
+nelmio_api_doc: ~
