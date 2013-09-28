@@ -2,25 +2,14 @@
 
 namespace Vifeed\CampaignBundle\Tests\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Vifeed\CampaignBundle\Entity\Campaign;
 use Vifeed\CampaignBundle\Form\CampaignType;
+use Vifeed\CampaignBundle\Tests\ApiTestCase;
 
-class CampaignControllerTest extends WebTestCase
+class CampaignControllerTest extends ApiTestCase
 {
-    /** @var \Symfony\Bundle\FrameworkBundle\Client */
-    private $client;
-
-    /** @var \Symfony\Component\Routing\Router */
-    private $router;
 
     private static $createdCampaignId = null;
-
-    public function setUp()
-    {
-        $this->client = static::createClient();
-        $this->router = $this->client->getContainer()->get('router');
-    }
 
     /**
      * Новая кампания
@@ -30,11 +19,11 @@ class CampaignControllerTest extends WebTestCase
      */
     public function testPutCampaigns($data, $code, $errors = null)
     {
-        $url = $this->router->generate('api_put_campaigns');
-        $this->client->request('PUT', $url, $data);
-        $this->assertEquals($code, $this->client->getResponse()->getStatusCode());
+        $url = self::$router->generate('api_put_campaigns');
+        $this->sendRequest('PUT', $url, $data);
+        $this->assertEquals($code, self::$client->getResponse()->getStatusCode());
 
-        $response = $this->client->getResponse();
+        $response = self::$client->getResponse();
 
         if ($errors !== null) {
             $this->assertJson($response->getContent());
@@ -61,12 +50,12 @@ class CampaignControllerTest extends WebTestCase
      */
     public function testGetCampaigns()
     {
-        $url = $this->router->generate('api_get_campaigns');
-        $crawler = $this->client->request('GET', $url);
-        $response = $this->client->getResponse();
+        $url = self::$router->generate('api_get_campaigns');
+        $this->sendRequest('GET', $url);
+        $response = self::$client->getResponse();
         $content = $response->getContent();
 
-        $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
+        $this->assertEquals(200, self::$client->getResponse()->getStatusCode());
         $this->assertJson($content);
 
         $data = json_decode($content, JSON_UNESCAPED_UNICODE);
@@ -83,18 +72,18 @@ class CampaignControllerTest extends WebTestCase
      */
     public function testGetCampaign()
     {
-        $url = $this->router->generate('api_get_campaign', array('id' => -1));
-        $this->client->request('GET', $url);
-        $this->assertEquals(404, $this->client->getResponse()->getStatusCode());
+        $url = self::$router->generate('api_get_campaign', array('id' => -1));
+        $this->sendRequest('GET', $url);
+        $this->assertEquals(404, self::$client->getResponse()->getStatusCode());
 
         $id = static::$createdCampaignId;
         $this->assertTrue(is_numeric($id));
 
-        $url = $this->router->generate('api_get_campaign', array('id' => $id));
-        $this->client->request('GET', $url);
-        $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
+        $url = self::$router->generate('api_get_campaign', array('id' => $id));
+        $this->sendRequest('GET', $url);
+        $this->assertEquals(200, self::$client->getResponse()->getStatusCode());
 
-        $content = $this->client->getResponse()->getContent();
+        $content = self::$client->getResponse()->getContent();
         $this->assertJson($content);
 
         $data = json_decode($content, JSON_UNESCAPED_UNICODE);
@@ -113,9 +102,9 @@ class CampaignControllerTest extends WebTestCase
      */
     public function testPutCampaign()
     {
-        $url = $this->router->generate('api_put_campaign', array('id' => -1));
-        $this->client->request('PUT', $url);
-        $this->assertEquals(404, $this->client->getResponse()->getStatusCode());
+        $url = self::$router->generate('api_put_campaign', array('id' => -1));
+        $this->sendRequest('PUT', $url);
+        $this->assertEquals(404, self::$client->getResponse()->getStatusCode());
 
         $id = static::$createdCampaignId;
         $this->assertTrue(is_numeric($id));
@@ -123,14 +112,14 @@ class CampaignControllerTest extends WebTestCase
         $data = array(
             'campaign' => array('maxBid' => 11)
         );
-        $url = $this->router->generate('api_put_campaign', array('id' => $id));
-        $this->client->request('PUT', $url, $data);
+        $url = self::$router->generate('api_put_campaign', array('id' => $id));
+        $this->sendRequest('PUT', $url, $data);
 
-        $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
+        $this->assertEquals(200, self::$client->getResponse()->getStatusCode());
 
-        $url = $this->router->generate('api_get_campaign', array('id' => $id));
-        $this->client->request('GET', $url);
-        $data = json_decode($this->client->getResponse()->getContent(), JSON_UNESCAPED_UNICODE);
+        $url = self::$router->generate('api_get_campaign', array('id' => $id));
+        $this->sendRequest('GET', $url);
+        $data = json_decode(self::$client->getResponse()->getContent(), JSON_UNESCAPED_UNICODE);
         $this->assertEquals(11, $data['campaign']['max_bid']);
     }
 
@@ -139,20 +128,20 @@ class CampaignControllerTest extends WebTestCase
      */
     public function testDeleteCampaign()
     {
-        $url = $this->router->generate('api_delete_campaign', array('id' => -1));
-        $this->client->request('DELETE', $url);
-        $this->assertEquals(404, $this->client->getResponse()->getStatusCode());
+        $url = self::$router->generate('api_delete_campaign', array('id' => -1));
+        $this->sendRequest('DELETE', $url);
+        $this->assertEquals(404, self::$client->getResponse()->getStatusCode());
 
         $id = static::$createdCampaignId;
         $this->assertTrue(is_numeric($id));
 
-        $url = $this->router->generate('api_delete_campaign', array('id' => $id));
-        $this->client->request('DELETE', $url);
-        $this->assertEquals(204, $this->client->getResponse()->getStatusCode());
+        $url = self::$router->generate('api_delete_campaign', array('id' => $id));
+        $this->sendRequest('DELETE', $url);
+        $this->assertEquals(204, self::$client->getResponse()->getStatusCode());
 
-        $url = $this->router->generate('api_get_campaign', array('id' => $id));
-        $this->client->request('GET', $url);
-        $this->assertEquals(404, $this->client->getResponse()->getStatusCode());
+        $url = self::$router->generate('api_get_campaign', array('id' => $id));
+        $this->sendRequest('GET', $url);
+        $this->assertEquals(404, self::$client->getResponse()->getStatusCode());
     }
 
 

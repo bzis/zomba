@@ -1,0 +1,9 @@
+# src/Acme/DemoBundle/Resources/config/services.yml
+services:
+    wsse.security.authentication.provider:
+        class:  Vifeed\UserBundle\Security\Authentication\Provider\WsseProvider
+        arguments: ["", "%kernel.cache_dir%/security/nonces"]
+
+    wsse.security.authentication.listener:
+        class:  Vifeed\UserBundle\Security\Firewall\WsseListener
+        arguments: ["@security.context", "@security.authentication.manager"]
