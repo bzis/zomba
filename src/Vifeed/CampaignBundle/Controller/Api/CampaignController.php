@@ -68,7 +68,9 @@ class CampaignController extends FOSRestController
     /**
      * Создать новую кампанию
      *
-     * @ApiDoc()
+     * @ApiDoc(
+     *     input="Vifeed\CampaignBundle\Entity\Campaign"
+     * )
      *
      * @return Response
      */
@@ -94,7 +96,9 @@ class CampaignController extends FOSRestController
      *
      * @param int $id
      *
-     * @ApiDoc()
+     * @ApiDoc(
+     *     input="Vifeed\CampaignBundle\Entity\Campaign"
+     * )
      *
      * @return Response
      */
