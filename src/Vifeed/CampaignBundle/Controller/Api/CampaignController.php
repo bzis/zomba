@@ -30,7 +30,7 @@ class CampaignController extends FOSRestController
     {
         $data = array();
         /** @var Campaign[] $data */
-        $campaigns = $this->getDoctrine()->getRepository('CampaignBundle:Campaign')->findAll();
+        $campaigns = $this->getDoctrine()->getRepository('VifeedCampaignBundle:Campaign')->findAll();
         foreach ($campaigns as $campaign) {
             $data[] = array(
                 'campaign' => $campaign,
@@ -165,7 +165,7 @@ class CampaignController extends FOSRestController
         if ($id == 0) {
             throw new BadRequestHttpException('Incorrect id');
         }
-        $data = $this->getDoctrine()->getRepository('CampaignBundle:Campaign')->find($id);
+        $data = $this->getDoctrine()->getRepository('VifeedCampaignBundle:Campaign')->find($id);
         if (!$data instanceof Campaign) {
             throw new NotFoundHttpException('Campaign not found');
         }

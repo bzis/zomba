@@ -34,7 +34,7 @@ class TagController extends FOSRestController
         }
 
         /** @var Tag[] $data */
-        $tags = $this->getDoctrine()->getRepository('CampaignBundle:Tag')->findByWord($word);
+        $tags = $this->getDoctrine()->getRepository('VifeedCampaignBundle:Tag')->findByWord($word);
 
         $view = new View($tags);
 

@@ -24,7 +24,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new FOS\UserBundle\FOSUserBundle(),
 
-            new Vifeed\CampaignBundle\CampaignBundle(),
+            new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\UserBundle(),
         );
 

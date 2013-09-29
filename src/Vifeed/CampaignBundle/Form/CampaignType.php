@@ -54,5 +54,4 @@ class CampaignType extends AbstractType
         return 'campaign';
     }
 
-
 }
