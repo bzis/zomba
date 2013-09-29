@@ -1,4 +1,5 @@
 rest :
   type : rest
-  resource : "routing_rest.yml"
+  resource: "@VifeedCampaignBundle/Resources/config/routing_rest.yml"
   prefix : /api
+

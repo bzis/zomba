@@ -1,17 +1,15 @@
 <?php
 
-namespace Vifeed\CampaignBundle\Controller;
+namespace Vifeed\CampaignBundle\Controller\Api;
 
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Vifeed\CampaignBundle\Entity\Campaign;
 use Vifeed\CampaignBundle\Form\CampaignType;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
-
 
 /**
  * Class CampaignController

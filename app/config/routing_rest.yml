@@ -1,9 +1,0 @@
-campaigns:
-    type:     rest
-    resource: Vifeed\CampaignBundle\Controller\CampaignController
-    name_prefix: api_
-
-tags:
-    type:     rest
-    resource: Vifeed\CampaignBundle\Controller\TagController
-    name_prefix: api_
