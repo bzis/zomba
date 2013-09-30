@@ -28,8 +28,8 @@ class TagControllerTest extends ApiTestCase
     {
         parent::tearDownAfterClass();
 
-        self::$em->remove(self::$em->getRepository('CampaignBundle:Tag')->find(self::$parameters['id1']));
-        self::$em->remove(self::$em->getRepository('CampaignBundle:Tag')->find(self::$parameters['id2']));
+        self::$em->remove(self::$em->getRepository('VifeedCampaignBundle:Tag')->find(self::$parameters['id1']));
+        self::$em->remove(self::$em->getRepository('VifeedCampaignBundle:Tag')->find(self::$parameters['id2']));
         self::$em->flush();
     }
 
