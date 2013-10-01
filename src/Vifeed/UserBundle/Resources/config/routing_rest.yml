@@ -1,0 +1,9 @@
+users_security:
+    type: rest
+    resource: '@VifeedUserBundle/Controller/Api/SecurityController.php'
+    name_prefix: api_
+
+users_registration:
+    type: rest
+    resource: '@VifeedUserBundle/Controller/Api/RegistrationController.php'
+    name_prefix: api_

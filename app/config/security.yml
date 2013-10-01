@@ -19,6 +19,10 @@ security:
 #            logout:       true
 #            anonymous:    true
 
+        pre_auth:
+            pattern:  ^/api/user/(register|login)
+            security: false
+
         wsse_secured:
             pattern:   ^/api/.*
             stateless: true
