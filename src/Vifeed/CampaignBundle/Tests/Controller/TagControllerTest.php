@@ -3,7 +3,7 @@
 namespace Vifeed\CampaignBundle\Tests\Controller;
 
 use Vifeed\CampaignBundle\Entity\Tag;
-use Vifeed\CampaignBundle\Tests\ApiTestCase;
+use Vifeed\SystemBundle\Tests\ApiTestCase;
 
 class TagControllerTest extends ApiTestCase
 {

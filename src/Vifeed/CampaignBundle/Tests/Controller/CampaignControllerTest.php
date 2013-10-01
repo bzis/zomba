@@ -4,7 +4,7 @@ namespace Vifeed\CampaignBundle\Tests\Controller;
 
 use Vifeed\CampaignBundle\Entity\Campaign;
 use Vifeed\CampaignBundle\Form\CampaignType;
-use Vifeed\CampaignBundle\Tests\ApiTestCase;
+use Vifeed\SystemBundle\Tests\ApiTestCase;
 
 class CampaignControllerTest extends ApiTestCase
 {
