@@ -26,6 +26,7 @@ class AppKernel extends Kernel
 
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\VifeedUserBundle(),
+            new Vifeed\SystemBundle\VifeedSystemBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
