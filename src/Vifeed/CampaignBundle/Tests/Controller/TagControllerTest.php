@@ -41,6 +41,10 @@ class TagControllerTest extends ApiTestCase
     public function testGetTags($word, $expected)
     {
         $url = self::$router->generate('api_get_tags', array('word' => $word));
+
+        self::$client->request('GET', $url);
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+
         $this->sendRequest('GET', $url);
 
         $expected = preg_replace_callback(

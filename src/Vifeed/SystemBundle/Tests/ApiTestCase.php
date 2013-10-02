@@ -45,7 +45,8 @@ class ApiTestCase extends TestCase
         $user = $userManager->createUser()
               ->setEmail('test@test.test')
               ->setUsername('test')
-              ->setPlainPassword('test');
+              ->setPlainPassword('test')
+              ->setEnabled(true);
 
         $userManager->updateUser($user);
 

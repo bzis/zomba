@@ -20,6 +20,9 @@ class CampaignControllerTest extends ApiTestCase
     public function testPutCampaigns($data, $code, $errors = null)
     {
         $url = self::$router->generate('api_put_campaigns');
+        self::$client->request('PUT', $url, $data);
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+
         $this->sendRequest('PUT', $url, $data);
         $this->assertEquals($code, self::$client->getResponse()->getStatusCode());
 
@@ -51,6 +54,9 @@ class CampaignControllerTest extends ApiTestCase
     public function testGetCampaigns()
     {
         $url = self::$router->generate('api_get_campaigns');
+        self::$client->request('GET', $url);
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+
         $this->sendRequest('GET', $url);
         $response = self::$client->getResponse();
         $content = $response->getContent();
@@ -73,6 +79,10 @@ class CampaignControllerTest extends ApiTestCase
     public function testGetCampaign()
     {
         $url = self::$router->generate('api_get_campaign', array('id' => -1));
+
+        self::$client->request('GET', $url);
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+
         $this->sendRequest('GET', $url);
         $this->assertEquals(404, self::$client->getResponse()->getStatusCode());
 
@@ -103,6 +113,10 @@ class CampaignControllerTest extends ApiTestCase
     public function testPutCampaign()
     {
         $url = self::$router->generate('api_put_campaign', array('id' => -1));
+
+        self::$client->request('PUT', $url);
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+
         $this->sendRequest('PUT', $url);
         $this->assertEquals(404, self::$client->getResponse()->getStatusCode());
 
@@ -129,6 +143,10 @@ class CampaignControllerTest extends ApiTestCase
     public function testDeleteCampaign()
     {
         $url = self::$router->generate('api_delete_campaign', array('id' => -1));
+
+        self::$client->request('DELETE', $url);
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+
         $this->sendRequest('DELETE', $url);
         $this->assertEquals(404, self::$client->getResponse()->getStatusCode());
 
