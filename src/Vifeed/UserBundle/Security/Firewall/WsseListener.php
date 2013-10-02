@@ -16,11 +16,13 @@ class WsseListener implements ListenerInterface
     protected $authenticationManager;
 
     /**
-     * @param SecurityContextInterface       $securityContext
+     * @param SecurityContextInterface $securityContext
      * @param AuthenticationManagerInterface $authenticationManager
      */
-    public function __construct(SecurityContextInterface $securityContext, AuthenticationManagerInterface $authenticationManager)
-    {
+    public function __construct(
+        SecurityContextInterface $securityContext,
+        AuthenticationManagerInterface $authenticationManager
+    ) {
         $this->securityContext = $securityContext;
         $this->authenticationManager = $authenticationManager;
     }
@@ -33,39 +35,37 @@ class WsseListener implements ListenerInterface
         $request = $event->getRequest();
 
         $wsseRegex = '/UsernameToken Username="([^"]+)", PasswordDigest="([^"]+)", Nonce="([^"]+)", Created="([^"]+)"/';
-        if (!$request->headers->has('x-wsse') || 1 !== preg_match($wsseRegex, $request->headers->get('x-wsse'), $matches)) {
-            return;
-        }
-        $token = new WsseApiToken();
-        $token->setUser($matches[1]);
+        if ($request->headers->has('x-wsse') && (1 === preg_match($wsseRegex, $request->headers->get('x-wsse'), $matches))) {
+            $token = new WsseApiToken();
+            $token->setUser($matches[1]);
 
-        $token->digest   = $matches[2];
-        $token->nonce    = $matches[3];
-        $token->created  = $matches[4];
+            $token->digest = $matches[2];
+            $token->nonce = $matches[3];
+            $token->created = $matches[4];
 
-        try {
-            $authToken = $this->authenticationManager->authenticate($token);
-            $this->securityContext->setToken($authToken);
+            try {
+                $authToken = $this->authenticationManager->authenticate($token);
+                $this->securityContext->setToken($authToken);
 
-            return;
-        } catch (AuthenticationException $failed) {
-            // ... you might log something here
+                return;
+            } catch (AuthenticationException $failed) {
+                // ... you might log something here
 
-            // To deny the authentication clear the token. This will redirect to the login page.
-            // Make sure to only clear your token, not those of other authentication listeners.
-            // $token = $this->securityContext->getToken();
-            // if ($token instanceof WsseUserToken && $this->providerKey === $token->getProviderKey()) {
-            //     $this->securityContext->setToken(null);
-            // }
-            // return;
+                // To deny the authentication clear the token. This will redirect to the login page.
+                // Make sure to only clear your token, not those of other authentication listeners.
+                // $token = $this->securityContext->getToken();
+                // if ($token instanceof WsseUserToken && $this->providerKey === $token->getProviderKey()) {
+                //     $this->securityContext->setToken(null);
+                // }
+                // return;
 
-            // Deny authentication with a '403 Forbidden' HTTP response
+                // Deny authentication with a '403 Forbidden' HTTP response
             $response = new Response();
             $response->setStatusCode(403);
             $event->setResponse($response);
 
+            }
         }
-
         // By default deny authorization
         $response = new Response();
         $response->setStatusCode(403);
