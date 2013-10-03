@@ -23,9 +23,9 @@ security:
             form_login:
                 provider: fos_userbundle
                 csrf_provider: form.csrf_provider
-                check_path: /login_check
-#                check_path: /api/user/login_check
-#                default_target_path: /api/user/login_success
+                check_path: /api/user/login_check
+                success_handler: vifeed.security.authentication.success_handler
+                failure_handler: vifeed.security.authentication.failure_handler
             logout:       true
             anonymous:    true
 

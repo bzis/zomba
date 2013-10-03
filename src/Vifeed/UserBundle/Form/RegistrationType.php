@@ -27,8 +27,8 @@ class RegistrationType extends AbstractType
         $resolver->setDefaults(
             array(
                  'data_class'        => 'Vifeed\UserBundle\Entity\User',
-                 'csrf_protection'   => false,
                  'validation_groups' => array('FastRegistration'),
+                 'intention'  => 'registration',
             )
         );
     }

@@ -7,3 +7,13 @@ services:
     wsse.security.authentication.listener:
         class:  Vifeed\UserBundle\Security\Firewall\WsseListener
         arguments: ["@security.context", "@security.authentication.manager"]
+
+    vifeed.security.authentication.success_handler:
+        class:  Vifeed\UserBundle\EventListener\UserAuthenticationSuccessHandler
+        tags:
+            - { name: 'monolog.logger', channel: 'security' }
+
+    vifeed.security.authentication.failure_handler:
+        class:  Vifeed\UserBundle\EventListener\UserAuthenticationFailureHandler
+        tags:
+            - { name: 'monolog.logger', channel: 'security' }

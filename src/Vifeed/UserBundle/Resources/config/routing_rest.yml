@@ -7,3 +7,8 @@ users_registration:
     type: rest
     resource: '@VifeedUserBundle/Controller/Api/RegistrationController.php'
     name_prefix: api_
+
+api_fos_user_security_check:
+    path: /user/login_check
+    defaults:  { _controller: FOSUserBundle:Security:check }
+    methods:  [POST]
