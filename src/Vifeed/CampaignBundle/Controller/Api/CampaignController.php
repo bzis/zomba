@@ -22,7 +22,10 @@ class CampaignController extends FOSRestController
     /**
      * Список кампаний
      *
-     * @ApiDoc()
+     * @ApiDoc(
+     *     section="Frontend API",
+     *     resource=true
+     * )
      *
      * @return Response
      */
@@ -48,7 +51,10 @@ class CampaignController extends FOSRestController
      *
      * @param int $id
      *
-     * @ApiDoc()
+     * @ApiDoc(
+     *     section="Frontend API",
+     *     output="Vifeed\CampaignBundle\Entity\Campaign"
+     * )
      *
      * @//QueryParam(name="id", requirements="\d+", strict=true, description="blabal", nullable=false)
      *
@@ -69,7 +75,9 @@ class CampaignController extends FOSRestController
      * Создать новую кампанию
      *
      * @ApiDoc(
-     *     input="Vifeed\CampaignBundle\Entity\Campaign"
+     *     section="Frontend API",
+     *     input="Vifeed\CampaignBundle\Entity\Campaign",
+     *     output="Vifeed\CampaignBundle\Entity\Campaign"
      * )
      *     //input="Vifeed\CampaignBundle\Form\CampaignType"
      *
@@ -98,7 +106,9 @@ class CampaignController extends FOSRestController
      * @param int $id
      *
      * @ApiDoc(
-     *     input="Vifeed\CampaignBundle\Entity\Campaign"
+     *     section="Frontend API",
+     *     input="Vifeed\CampaignBundle\Entity\Campaign",
+     *     output="Vifeed\CampaignBundle\Entity\Campaign"
      * )
      *
      * @return Response
@@ -124,7 +134,9 @@ class CampaignController extends FOSRestController
      *
      * @param int $id
      *
-     * @ApiDoc()
+     * @ApiDoc(
+     *     section="Frontend API"
+     * )
      *
      * @return Response
      */

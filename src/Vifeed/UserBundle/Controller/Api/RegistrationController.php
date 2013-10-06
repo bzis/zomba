@@ -5,8 +5,6 @@ namespace Vifeed\UserBundle\Controller\Api;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 use Vifeed\UserBundle\Entity\User;
 use Vifeed\UserBundle\Form\RegistrationType;
@@ -21,7 +19,9 @@ class RegistrationController extends FOSRestController
     /**
      * Создать нового юзера
      *
-     * @ApiDoc()
+     * @ApiDoc(
+     *     section="Frontend API"
+     * )
      *
      * @return Response
      */

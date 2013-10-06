@@ -15,6 +15,7 @@ use Nelmio\ApiDocBundle\Annotation\ApiDoc;
  * Class PlatformController
  *
  * @package Vifeed\PlatformBundle\Controller
+ *
  */
 class PlatformController extends FOSRestController
 {
@@ -23,7 +24,9 @@ class PlatformController extends FOSRestController
      *
      * @param int $id
      *
-     * @ApiDoc()
+     * @ApiDoc(
+     *     section="Frontend API"
+     * )
      *
      * @return Response
      */
@@ -41,6 +44,8 @@ class PlatformController extends FOSRestController
      * Создать площадку
      *
      * @ApiDoc(
+     *     section="Frontend API",
+     *     resource=true,
      *     input="Vifeed\CampaignBundle\Entity\Platform"
      * )
      *
@@ -69,6 +74,7 @@ class PlatformController extends FOSRestController
      * @param int $id
      *
      * @ApiDoc(
+     *     section="Frontend API",
      *     input="Vifeed\CampaignBundle\Entity\Platform"
      * )
      *
@@ -95,7 +101,9 @@ class PlatformController extends FOSRestController
      *
      * @param int $id
      *
-     * @ApiDoc()
+     * @ApiDoc(
+     *     section="Frontend API"
+     * )
      *
      * @return Response
      */

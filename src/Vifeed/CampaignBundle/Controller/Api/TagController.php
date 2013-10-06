@@ -22,7 +22,10 @@ class TagController extends FOSRestController
      *
      * @param string $word
      *
-     * @ApiDoc()
+     * @ApiDoc(
+     *     section="Frontend API",
+     *     resource=true
+     * )
      *
      * @return Response
      */
