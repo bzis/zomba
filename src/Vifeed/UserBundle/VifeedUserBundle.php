@@ -6,7 +6,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Vifeed\UserBundle\DependencyInjection\Security\WsseFactory;
 
-class UserBundle extends Bundle
+class VifeedUserBundle extends Bundle
 {
     /**
      * {@inheritdoc}

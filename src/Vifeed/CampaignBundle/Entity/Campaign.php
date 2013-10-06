@@ -209,6 +209,8 @@ class Campaign
     public function __construct()
     {
         $this->platforms = new ArrayCollection();
+        $this->countries = new ArrayCollection();
+        $this->tags = new ArrayCollection();
     }
 
 

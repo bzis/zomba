@@ -1,6 +1,6 @@
 <?php
 
-namespace Vifeed\CampaignBundle\Tests;
+namespace Vifeed\SystemBundle\Tests;
 
 use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\HttpFoundation\Request;
@@ -45,7 +45,8 @@ class ApiTestCase extends TestCase
         $user = $userManager->createUser()
               ->setEmail('test@test.test')
               ->setUsername('test')
-              ->setPlainPassword('test');
+              ->setPlainPassword('test')
+              ->setEnabled(true);
 
         $userManager->updateUser($user);
 
