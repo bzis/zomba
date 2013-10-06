@@ -1,6 +1,6 @@
 <?php
 
-namespace Vifeed\CampaignBundle\Tests;
+namespace Vifeed\SystemBundle\Tests;
 
 use Doctrine\ORM\EntityManager;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;

@@ -25,7 +25,8 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
 
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
-            new Vifeed\UserBundle\UserBundle(),
+            new Vifeed\UserBundle\VifeedUserBundle(),
+            new Vifeed\SystemBundle\VifeedSystemBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

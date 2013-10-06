@@ -3,6 +3,11 @@ campaigns:
     resource: '@VifeedCampaignBundle/Controller/Api/CampaignController.php'
     name_prefix: api_
 
+platforms:
+    type: rest
+    resource: '@VifeedCampaignBundle/Controller/Api/PlatformController.php'
+    name_prefix: api_
+
 tags:
     type: rest
     resource: '@VifeedCampaignBundle/Controller/Api/TagController.php'

@@ -3,7 +3,7 @@
 namespace Vifeed\CampaignBundle\Tests\Controller;
 
 use Vifeed\CampaignBundle\Entity\Tag;
-use Vifeed\CampaignBundle\Tests\ApiTestCase;
+use Vifeed\SystemBundle\Tests\ApiTestCase;
 
 class TagControllerTest extends ApiTestCase
 {
@@ -28,8 +28,8 @@ class TagControllerTest extends ApiTestCase
     {
         parent::tearDownAfterClass();
 
-        self::$em->remove(self::$em->getRepository('CampaignBundle:Tag')->find(self::$parameters['id1']));
-        self::$em->remove(self::$em->getRepository('CampaignBundle:Tag')->find(self::$parameters['id2']));
+        self::$em->remove(self::$em->getRepository('VifeedCampaignBundle:Tag')->find(self::$parameters['id1']));
+        self::$em->remove(self::$em->getRepository('VifeedCampaignBundle:Tag')->find(self::$parameters['id2']));
         self::$em->flush();
     }
 
@@ -41,6 +41,10 @@ class TagControllerTest extends ApiTestCase
     public function testGetTags($word, $expected)
     {
         $url = self::$router->generate('api_get_tags', array('word' => $word));
+
+        self::$client->request('GET', $url);
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+
         $this->sendRequest('GET', $url);
 
         $expected = preg_replace_callback(

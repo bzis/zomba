@@ -11,39 +11,43 @@ security:
             id: fos_user.user_provider.username
 
     firewalls:
-#        main:
-#            pattern: ^/
+
+        wsse_secured:
+            pattern:   ^/api/(?!user)
+            stateless: true
+            wsse:      true
+
+        main:
+            pattern: ^/
+#            pattern: ^/(?!api)
+            form_login:
+                provider: fos_userbundle
+                csrf_provider: form.csrf_provider
+                check_path: /api/user/login_check
+                success_handler: vifeed.security.authentication.success_handler
+                failure_handler: vifeed.security.authentication.failure_handler
+            logout:       true
+            anonymous:    true
+
+#        pre_auth:
+#            pattern:  ^/api/user/(register|login)
+#            security: false
 #            form_login:
 #                provider: fos_userbundle
 #                csrf_provider: form.csrf_provider
-#            logout:       true
-#            anonymous:    true
 
-        wsse_secured:
-            pattern:   ^/api/.*
-            stateless: true
-            wsse:      true
+
 
         dev:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        login:
-            pattern:  ^/demo/secured/login$
-            security: false
-
-        secured_area:
-            pattern:    ^/demo/secured/
-            form_login:
-                check_path: _security_check
-                login_path: _demo_login
-            logout:
-                path:   _demo_logout
-                target: _demo
-            #anonymous: ~
-            #http_basic:
-            #    realm: "Secured Demo Area"
 
     access_control:
-        - { path: ^/demo/secured/hello/admin/, roles: ROLE_ADMIN }
+            - { path: ^/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
+            - { path: ^/api/user/(register|login), role: IS_AUTHENTICATED_ANONYMOUSLY }
+            - { path: ^/api/, role: ROLE_USER }
+#            - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+
+#        - { path: ^/demo/secured/hello/admin/, roles: ROLE_ADMIN }
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }

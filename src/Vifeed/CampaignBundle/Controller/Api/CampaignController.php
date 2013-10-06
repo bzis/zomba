@@ -71,6 +71,7 @@ class CampaignController extends FOSRestController
      * @ApiDoc(
      *     input="Vifeed\CampaignBundle\Entity\Campaign"
      * )
+     *     //input="Vifeed\CampaignBundle\Form\CampaignType"
      *
      * @return Response
      */
