@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
+use Symfony\Component\Security\Core\Util\SecureRandom;
 use Vifeed\UserBundle\Entity\User;
 use Vifeed\UserBundle\Form\RegistrationType;
 
@@ -32,11 +33,12 @@ class RegistrationController extends FOSRestController
 
         if ($form->isValid()) {
             $userManager = $this->container->get('fos_user.user_manager');
-
+            $generator = new SecureRandom();
+            $pass = $generator->nextBytes(6);
             /** @var User $user */
             $user = $form->getData();
             $user->setUsername($user->getEmail())
-                  ->setPlainPassword(md5(time() . rand()));
+                  ->setPlainPassword($pass);
 //            ->setEnabled(true);
 
             $userManager->updateUser($user);
