@@ -73,6 +73,14 @@ class Platform
     }
 
     /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->getName();
+    }
+
+    /**
      * Get id
      *
      * @return integer

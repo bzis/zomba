@@ -8,3 +8,6 @@ users_rest:
   resource: "@VifeedUserBundle/Resources/config/routing_rest.yml"
   prefix: /api
 
+users:
+  resource: "@VifeedUserBundle/Resources/config/routing.yml"
+
