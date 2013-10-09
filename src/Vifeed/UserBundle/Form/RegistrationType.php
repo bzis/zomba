@@ -4,7 +4,11 @@ namespace Vifeed\UserBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\FormEvent;
+use Symfony\Component\Form\FormEvents;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Vifeed\UserBundle\Entity\User;
+use Vifeed\UserBundle\Form\EventListener\AddPasswordFieldSubscriber;
 
 class RegistrationType extends AbstractType
 {
@@ -17,6 +21,30 @@ class RegistrationType extends AbstractType
         $builder
               ->add('email', 'email')
               ->add('type', null, array('required' => true));
+        $builder->addEventListener(
+            FormEvents::SUBMIT,
+            function(FormEvent $event) {
+                $form = $event->getForm();
+
+                /** @var User $user */
+                $user = $event->getData();
+
+                if ($user && ($user->getType() == User::TYPE_PUBLISHER)) {
+                    $form->add('plainPassword', 'repeated', array(
+                                                                 'required' => true,
+                                                                 'type'            => 'password',
+                                                                 'invalid_message' => 'Пароли должны совпадать!'
+                                                            ));
+                }
+                $form->handleRequest();
+//                $form->submit();
+            });
+        /*
+        $builder->add('plainPassword', 'repeated', array(
+                                                     'type'            => 'password',
+                                                     'invalid_message' => 'Пароли должны совпадать!'
+                                                ));*/
+//        $builder->addEventSubscriber(new AddPasswordFieldSubscriber());
     }
 
     /**
