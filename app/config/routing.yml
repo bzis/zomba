@@ -11,3 +11,7 @@ users_rest:
 users:
   resource: "@VifeedUserBundle/Resources/config/routing.yml"
 
+default:
+  pattern: /
+  defaults:
+    _controller: 'VifeedSystemBundle:default:index'
