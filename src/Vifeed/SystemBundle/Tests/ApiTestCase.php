@@ -13,9 +13,6 @@ class ApiTestCase extends TestCase
     /** @var User */
     protected static $user = null;
 
-    /**
-     * todo: генерить юзера в начале работы, а в конце его херить
-     */
     public static function setUpBeforeClass()
     {
         parent::setUpBeforeClass();
