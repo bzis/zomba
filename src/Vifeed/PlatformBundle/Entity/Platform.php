@@ -1,6 +1,6 @@
 <?php
 
-namespace Vifeed\CampaignBundle\Entity;
+namespace Vifeed\PlatformBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
@@ -68,7 +68,7 @@ class Platform
     /**
      * @var ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="Country")
+     * @ORM\ManyToMany(targetEntity="Vifeed\CampaignBundle\Entity\Country")
      * @ORM\JoinTable(name="platform_country")
      */
     private $countries;
@@ -76,7 +76,7 @@ class Platform
     /**
      * @var ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="Tag")
+     * @ORM\ManyToMany(targetEntity="Vifeed\CampaignBundle\Entity\Tag")
      * @ORM\JoinTable(name="platform_tag")
      */
     private $tags;
@@ -133,10 +133,10 @@ class Platform
     /**
      * Set type
      *
-     * @param \Vifeed\CampaignBundle\Entity\PlatformType $type
+     * @param \Vifeed\PlatformBundle\Entity\PlatformType $type
      * @return Platform
      */
-    public function setType(\Vifeed\CampaignBundle\Entity\PlatformType $type)
+    public function setType(\Vifeed\PlatformBundle\Entity\PlatformType $type)
     {
         $this->type = $type;
     
@@ -146,7 +146,7 @@ class Platform
     /**
      * Get type
      *
-     * @return \Vifeed\CampaignBundle\Entity\PlatformType 
+     * @return \Vifeed\PlatformBundle\Entity\PlatformType
      */
     public function getType()
     {
