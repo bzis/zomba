@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class RegistrationType extends AbstractType
+class PublisherRegistrationType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -16,7 +16,15 @@ class RegistrationType extends AbstractType
     {
         $builder
               ->add('email', 'email')
-              ->add('type', null, array('required' => true));
+              ->add(
+                  'plainPassword',
+                  'repeated',
+                  array(
+                       'required'        => true,
+                       'type'            => 'password',
+                       'invalid_message' => 'Пароли должны совпадать!'
+                  )
+              );
     }
 
     /**
@@ -27,8 +35,8 @@ class RegistrationType extends AbstractType
         $resolver->setDefaults(
             array(
                  'data_class'        => 'Vifeed\UserBundle\Entity\User',
-                 'validation_groups' => array('FastRegistration'),
-                 'intention'  => 'registration',
+                 'validation_groups' => array('PublisherRegistration'),
+                 'intention'         => 'registration',
             )
         );
     }
@@ -38,6 +46,6 @@ class RegistrationType extends AbstractType
      */
     public function getName()
     {
-        return 'registration';
+        return 'publisher_registration';
     }
 }
