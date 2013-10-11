@@ -4,6 +4,7 @@ namespace Vifeed\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use FOS\UserBundle\Model\User as BaseUser;
+use Symfony\Component\Security\Core\Util\SecureRandom;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
@@ -17,17 +18,20 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *     fields={"emailCanonical"},
  *     errorPath="email",
  *     message="fos_user.email.already_used",
- *     groups={"FastRegistration"}
+ *     groups={"AdvertiserRegistration", "PublisherRegistration"}
  * )
  * @UniqueEntity(
  *     fields={"usernameCanonical"},
  *     errorPath="username",
  *     message="fos_user.username.already_used",
- *     groups={"FastRegistration"}
+ *     groups={"AdvertiserRegistration", "PublisherRegistration"}
  * )
  */
 class User extends BaseUser
 {
+    const TYPE_ADVERTISER = 'advertiser';
+    const TYPE_PUBLISHER = 'publisher';
+
     /**
      * @var integer
      *
@@ -41,13 +45,6 @@ class User extends BaseUser
      * @var string
      *
      * @ORM\Column(name="type", type="string", columnDefinition="ENUM('advertiser', 'publisher')")
-     *
-     * @Assert\Choice(
-     *      choices = {"advertiser", "publisher"},
-     *      groups = {"FastRegistration"},
-     *      message = "Выберите тип"
-     * )
-     * @Assert\NotBlank(groups={"FastRegistration"})
      */
     protected $type;
 
@@ -56,27 +53,65 @@ class User extends BaseUser
      *
      * @Assert\NotBlank(
      *      message = "fos_user.email.blank",
-     *      groups = {"FastRegistration"}
+     *      groups = {"AdvertiserRegistration", "PublisherRegistration"}
      * )
      * @Assert\Length(
      *      min = 2,
      *      minMessage = "fos_user.email.short",
      *      max = 254,
      *      maxMessage = "fos_user.email.long",
-     *      groups = {"FastRegistration"}
+     *      groups = {"AdvertiserRegistration", "PublisherRegistration"}
      * )
      * @Assert\Email(
      *      message = "fos_user.email.invalid",
-     *      groups = {"FastRegistration"}
+     *      groups = {"AdvertiserRegistration", "PublisherRegistration"}
      * )
      */
     protected $email;
+
+    /**
+     * @var string
+     * 
+     * @Assert\NotBlank(
+     *      message = "fos_user.password.blank",
+     *      groups = {"PublisherRegistration"}
+     * )
+     * @Assert\Length(
+     *      min = 6,
+     *      minMessage = "fos_user.password.short",
+     *      max = 4096,
+     *      groups = {"PublisherRegistration"}
+     * )
+     */
+    protected $plainPassword;
+
+
+    /**
+     * @return User
+     */
+    public function prepareForRegistration()
+    {
+        $this->setUsername($this->getEmail());
+
+        if ($this->getType() == self::TYPE_ADVERTISER) {
+            $generator = new SecureRandom();
+            $pass = $generator->nextBytes(6);
+
+            $this->setPlainPassword($pass)
+                  ->setEnabled(true);
+
+        } elseif ($this->getType() == self::TYPE_PUBLISHER) {
+
+        }
+
+        return $this;
+    }
 
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -92,10 +127,14 @@ class User extends BaseUser
     }
 
     /**
-     * @param mixed $type
+     * @param string $type
+     *
+     * @return User
      */
     public function setType($type)
     {
         $this->type = $type;
+
+        return $this;
     }
 }

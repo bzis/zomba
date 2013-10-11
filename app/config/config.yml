@@ -85,8 +85,13 @@ fos_rest:
 #            - { path: '^/', fallback_format: json, prefer_extension: false }
 
 fos_user:
-    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    db_driver: orm
     firewall_name: main
     user_class: Vifeed\UserBundle\Entity\User
-
+    service:
+        mailer: fos_user.mailer.twig_swift
+    registration:
+        confirmation:
+            enabled:    true
+            template:   VifeedUserBundle:Registration:email.html.twig
 nelmio_api_doc: ~

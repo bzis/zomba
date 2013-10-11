@@ -11,9 +11,11 @@ class ApiSecurityTest extends ApiTestCase
     public static function tearDownAfterClass()
     {
         $um = static::createClient()->getContainer()->get('fos_user.user_manager');
-        $user = $um->findUserByEmail('regtest@test.test');
-        if ($user) {
-            $um->deleteUser($user);
+        foreach (array('regtest@test.test', 'regtest2@test.test') as $email) {
+            $user = $um->findUserByEmail($email);
+            if ($user) {
+                $um->deleteUser($user);
+            }
         }
 
         parent::tearDownAfterClass();
@@ -29,14 +31,20 @@ class ApiSecurityTest extends ApiTestCase
     {
         $url = self::$router->generate('api_put_user_register');
 
-        self::$client->request('PUT', $url); // чтобы открыть сессию
+        self::$client->request('GET', '/'); // чтобы открыть сессию
 
         $csrf = self::$client->getContainer()->get('form.csrf_provider');
         $token = $csrf->generateCsrfToken('registration');
-
-        $data['registration']['_token'] = $token;
+        $key = array_keys($data)[0];
+        $data[$key]['_token'] = $token;
 
         self::$client->request('PUT', $url, $data);
+        if (self::$client->getResponse()->getStatusCode() != $code) {
+            var_dump(
+                json_decode(self::$client->getResponse()->getContent(), JSON_UNESCAPED_UNICODE)['errors']['children']
+            );
+
+        }
         $this->assertEquals($code, self::$client->getResponse()->getStatusCode());
 
         $response = self::$client->getResponse();
@@ -48,8 +56,24 @@ class ApiSecurityTest extends ApiTestCase
             $this->assertArrayHasKey('children', $content['errors']);
             foreach ($errors as $field => $error) {
                 $this->assertArrayHasKey($field, $content['errors']['children']);
-                $this->assertArrayHasKey('errors', $content['errors']['children'][$field]);
-                $this->assertTrue(in_array($error, $content['errors']['children'][$field]['errors']));
+                if (!is_array($error)) {
+                    $this->assertArrayHasKey('errors', $content['errors']['children'][$field]);
+                    $this->assertTrue(in_array($error, $content['errors']['children'][$field]['errors']));
+                } else {
+                    array_walk_recursive(
+                        $errors,
+                        function ($item, $key) use ($field, $content) {
+                            $this->assertArrayHasKey($key, $content['errors']['children'][$field]['children']);
+                            $this->assertArrayHasKey(
+                                'errors',
+                                $content['errors']['children'][$field]['children'][$key]
+                            );
+                            $this->assertTrue(
+                                in_array($item, $content['errors']['children'][$field]['children'][$key]['errors'])
+                            );
+                        }
+                    );
+                }
             }
         }
         if ($code == 201) {
@@ -66,7 +90,7 @@ class ApiSecurityTest extends ApiTestCase
     public function testLogin($data, $code, $errors = null)
     {
         $url = self::$router->generate('api_fos_user_security_check');
-        self::$client->request('POST', $url); // чтобы открыть сессию
+        self::$client->request('GET', '/'); // чтобы открыть сессию
 
         $csrf = self::$client->getContainer()->get('form.csrf_provider');
         $token = $csrf->generateCsrfToken('authenticate');
@@ -102,32 +126,18 @@ class ApiSecurityTest extends ApiTestCase
         $data = array(
             array(
                 array(
-                    'registration' => array(
-                        'type' => 'advertiser',
-                    )
-                ),
-                400,
-                array(
-                    'email' => 'Пожалуйста, укажите Ваш email',
-                )
-            ),
-            array(
-                array(
-                    'registration' => array(
-                        'type'  => 'test1',
+                    'advertiser_registration' => array(
                         'email' => 'afasfdsa'
                     )
                 ),
                 400,
                 array(
-                    'type'  => 'Выберите тип',
                     'email' => 'Email в неправильном формате',
                 )
             ),
             array(
                 array(
-                    'registration' => array(
-                        'type'  => 'advertiser',
+                    'advertiser_registration' => array(
                         'email' => 'regtest@test.test'
                     )
                 ),
@@ -135,8 +145,7 @@ class ApiSecurityTest extends ApiTestCase
             ),
             array(
                 array(
-                    'registration' => array(
-                        'type'  => 'publisher',
+                    'publisher_registration' => array(
                         'email' => 'regtest@test.test'
                     )
                 ),
@@ -144,6 +153,71 @@ class ApiSecurityTest extends ApiTestCase
                 array(
                     'email' => 'Email уже используется',
                 )
+            ),
+            array(
+                array(
+                    'publisher_registration' => array(
+                        'email' => 'regtest2@test.test',
+                    )
+                ),
+                400,
+                array(
+                    'plainPassword' => array(
+                        'children' => array(
+                            'first' => 'Пожалуйста, укажите пароль'
+                        )
+                    ),
+                )
+            ),
+            array(
+                array(
+                    'publisher_registration' => array(
+                        'email' => 'regtest2@test.test',
+                        'plainPassword' => array(
+                            'first' => 'aaa'
+                        )
+                    )
+                ),
+                400,
+                array(
+                    'plainPassword' => array(
+                        'children' => array(
+                            'first' => 'Пароли должны совпадать!'
+                        )
+                    ),
+                )
+            ),
+            array(
+                array(
+                    'publisher_registration' => array(
+                        'email' => 'regtest2@test.test',
+                        'plainPassword' => array(
+                            'first' => 'aaa',
+                            'second' => 'aaa'
+                        )
+                    )
+                ),
+                400,
+                array(
+                    'plainPassword' => array(
+                        'children' => array(
+                            'first' => 'Пароль слишком короткий'
+                        )
+                    ),
+                )
+
+            ),
+            array(
+                array(
+                    'publisher_registration' => array(
+                        'email' => 'regtest2@test.test',
+                        'plainPassword' => array(
+                            'first' => 'aaabbb',
+                            'second' => 'aaabbb'
+                        )
+                    )
+                ),
+                201,
             ),
         );
 
