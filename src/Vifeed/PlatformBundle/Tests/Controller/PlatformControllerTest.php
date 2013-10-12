@@ -1,9 +1,9 @@
 <?php
 
-namespace Vifeed\CampaignBundle\Tests\Controller;
+namespace Vifeed\PlatformBundle\Tests\Controller;
 
-use Vifeed\CampaignBundle\Entity\Platform;
-use Vifeed\CampaignBundle\Form\PlatformType;
+use Vifeed\PlatformBundle\Entity\Platform;
+use Vifeed\PlatformBundle\Form\PlatformType;
 use Vifeed\SystemBundle\Tests\ApiTestCase;
 
 class PlatformControllerTest extends ApiTestCase

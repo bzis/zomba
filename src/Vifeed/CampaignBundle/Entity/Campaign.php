@@ -5,6 +5,7 @@ namespace Vifeed\CampaignBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Vifeed\PlatformBundle\Entity\Platform;
 
 /**
  * Campaign
@@ -176,7 +177,7 @@ class Campaign
     /**
      * @var ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="Platform")
+     * @ORM\ManyToMany(targetEntity="Vifeed\PlatformBundle\Entity\Platform")
      * @ORM\JoinTable(name="campaign_platform")
      */
     private $platforms;
