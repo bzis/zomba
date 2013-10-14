@@ -25,6 +25,8 @@ class ApiSecurityTest extends ApiTestCase
     /**
      * Новый юзер
      *
+     * todo: сделать проверку активации юзера и подтверждения почты
+     *
      * @dataProvider putUsersProvider
      */
     public function testPutUsers($data, $code, $errors = null)
@@ -32,6 +34,7 @@ class ApiSecurityTest extends ApiTestCase
         $url = self::$router->generate('api_put_user_register');
 
         self::$client->request('GET', '/'); // чтобы открыть сессию
+        self::$client->enableProfiler();
 
         $csrf = self::$client->getContainer()->get('form.csrf_provider');
         $token = $csrf->generateCsrfToken('registration');
@@ -54,31 +57,17 @@ class ApiSecurityTest extends ApiTestCase
             $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);
             $this->assertArrayHasKey('errors', $content);
             $this->assertArrayHasKey('children', $content['errors']);
-            foreach ($errors as $field => $error) {
-                $this->assertArrayHasKey($field, $content['errors']['children']);
-                if (!is_array($error)) {
-                    $this->assertArrayHasKey('errors', $content['errors']['children'][$field]);
-                    $this->assertTrue(in_array($error, $content['errors']['children'][$field]['errors']));
-                } else {
-                    array_walk_recursive(
-                        $errors,
-                        function ($item, $key) use ($field, $content) {
-                            $this->assertArrayHasKey($key, $content['errors']['children'][$field]['children']);
-                            $this->assertArrayHasKey(
-                                'errors',
-                                $content['errors']['children'][$field]['children'][$key]
-                            );
-                            $this->assertTrue(
-                                in_array($item, $content['errors']['children'][$field]['children'][$key]['errors'])
-                            );
-                        }
-                    );
-                }
-            }
+            $this->validateErros($content, $errors);
         }
         if ($code == 201) {
             $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);
             $this->assertTrue(is_array($content));
+            $mailCollector = self::$client->getProfile()->getCollector('swiftmailer');
+
+            $this->assertEquals(1, $mailCollector->getMessageCount());
+            $collectedMessages = $mailCollector->getMessages();
+            $message = $collectedMessages[0];
+            $this->assertInstanceOf('Swift_Message', $message);
         }
     }
 
@@ -250,4 +239,5 @@ class ApiSecurityTest extends ApiTestCase
 
         return $data;
     }
+
 }
