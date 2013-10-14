@@ -25,6 +25,8 @@ class ApiSecurityTest extends ApiTestCase
     /**
      * Новый юзер
      *
+     * todo: сделать проверку активации юзера и подтверждения почты
+     *
      * @dataProvider putUsersProvider
      */
     public function testPutUsers($data, $code, $errors = null)
