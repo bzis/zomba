@@ -33,11 +33,7 @@ class CampaignControllerTest extends ApiTestCase
             $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);
             $this->assertArrayHasKey('errors', $content);
             $this->assertArrayHasKey('children', $content['errors']);
-            foreach ($errors as $field => $error) {
-                $this->assertArrayHasKey($field, $content['errors']['children']);
-                $this->assertArrayHasKey('errors', $content['errors']['children'][$field]);
-                $this->assertTrue(in_array($error, $content['errors']['children'][$field]['errors']));
-            }
+            $this->validateErros($content, $errors);
         }
         if ($code == 201) {
             $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);

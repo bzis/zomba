@@ -3,8 +3,20 @@ campaign_rest:
   resource: "@VifeedCampaignBundle/Resources/config/routing_rest.yml"
   prefix: /api
 
+platform_rest:
+  type: rest
+  resource: "@VifeedPlatformBundle/Resources/config/routing_rest.yml"
+  prefix: /api
+
 users_rest:
   type: rest
   resource: "@VifeedUserBundle/Resources/config/routing_rest.yml"
   prefix: /api
 
+users:
+  resource: "@VifeedUserBundle/Resources/config/routing.yml"
+
+default:
+  pattern: /
+  defaults:
+    _controller: 'VifeedSystemBundle:default:index'

@@ -1,15 +1,15 @@
 <?php
 
-namespace Vifeed\CampaignBundle\Controller\Api;
+namespace Vifeed\PlatformBundle\Controller\Api;
 
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Vifeed\CampaignBundle\Entity\Platform;
-use Vifeed\CampaignBundle\Form\PlatformType;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
+use Vifeed\PlatformBundle\Entity\Platform;
+use Vifeed\PlatformBundle\Form\PlatformType;
 
 /**
  * Class PlatformController
@@ -76,6 +76,7 @@ class PlatformController extends FOSRestController
      * @ApiDoc(
      *     section="Frontend API",
      *     input="Vifeed\CampaignBundle\Entity\Platform"
+     *     input="Vifeed\PlatformBundle\Entity\Platform"
      * )
      *
      * @return Response
@@ -141,7 +142,7 @@ class PlatformController extends FOSRestController
      * @throws \Symfony\Component\HttpKernel\Exception\BadRequestHttpException
      * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
      *
-     * @return \Vifeed\CampaignBundle\Entity\Platform
+     * @return \Vifeed\PlatformBundle\Entity\Platform
      */
     private function getEntity($id)
     {
@@ -149,7 +150,7 @@ class PlatformController extends FOSRestController
         if ($id == 0) {
             throw new BadRequestHttpException('Incorrect id');
         }
-        $data = $this->getDoctrine()->getRepository('VifeedCampaignBundle:Platform')->find($id);
+        $data = $this->getDoctrine()->getRepository('VifeedPlatformBundle:Platform')->find($id);
         if (!$data instanceof Platform) {
             throw new NotFoundHttpException('Platform not found');
         }

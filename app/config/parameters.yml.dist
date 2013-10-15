@@ -11,9 +11,11 @@ parameters:
     mailer_user:       ~
     mailer_password:   ~
 
-    locale:            en
+    locale:            ru
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
     assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/images/'
+
+    developer_email:   dev@example.com
