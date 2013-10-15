@@ -1,9 +1,10 @@
 <?php
 
-namespace Vifeed\CampaignBundle\Entity;
+namespace Vifeed\PlatformBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Platform
@@ -26,6 +27,11 @@ class Platform
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"},
+     *      message="Название не должно быть пустым"
+     * )
      */
     private $name;
 
@@ -33,6 +39,11 @@ class Platform
      * @var string
      *
      * @ORM\Column(name="url", type="string", length=255)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"},
+     *      message="Адрес не должен быть пустым"
+     * )
      */
     private $url;
 
@@ -40,6 +51,11 @@ class Platform
      * @var string
      * todo: хватит 255 символов?
      * @ORM\Column(name="description", type="string", length=255)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"},
+     *      message="Описание не должно быть пустым"
+     * )
      */
     private $description;
 
@@ -52,7 +68,7 @@ class Platform
     /**
      * @var ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="Country")
+     * @ORM\ManyToMany(targetEntity="Vifeed\CampaignBundle\Entity\Country")
      * @ORM\JoinTable(name="platform_country")
      */
     private $countries;
@@ -60,7 +76,7 @@ class Platform
     /**
      * @var ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="Tag")
+     * @ORM\ManyToMany(targetEntity="Vifeed\CampaignBundle\Entity\Tag")
      * @ORM\JoinTable(name="platform_tag")
      */
     private $tags;
@@ -70,6 +86,14 @@ class Platform
     {
         $this->countries = new ArrayCollection();
         $this->tags = new ArrayCollection();
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->getName();
     }
 
     /**
@@ -109,10 +133,10 @@ class Platform
     /**
      * Set type
      *
-     * @param \Vifeed\CampaignBundle\Entity\PlatformType $type
+     * @param \Vifeed\PlatformBundle\Entity\PlatformType $type
      * @return Platform
      */
-    public function setType(\Vifeed\CampaignBundle\Entity\PlatformType $type)
+    public function setType(\Vifeed\PlatformBundle\Entity\PlatformType $type)
     {
         $this->type = $type;
     
@@ -122,7 +146,7 @@ class Platform
     /**
      * Get type
      *
-     * @return \Vifeed\CampaignBundle\Entity\PlatformType 
+     * @return \Vifeed\PlatformBundle\Entity\PlatformType
      */
     public function getType()
     {
@@ -193,7 +217,7 @@ class Platform
      *
      * @param \Vifeed\CampaignBundle\Entity\Country $country
      */
-    public function removeCountrie(\Vifeed\CampaignBundle\Entity\Country $country)
+    public function removeCountry(\Vifeed\CampaignBundle\Entity\Country $country)
     {
         $this->countries->removeElement($country);
     }

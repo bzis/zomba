@@ -1,11 +1,11 @@
 <?php
 
-namespace Vifeed\CampaignBundle\Form;
+namespace Vifeed\PlatformBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use Vifeed\CampaignBundle\Entity\Platform;
+use Vifeed\PlatformBundle\Entity\Platform;
 
 class PlatformType extends AbstractType
 {
@@ -31,7 +31,7 @@ class PlatformType extends AbstractType
     {
         $resolver->setDefaults(
             array(
-                 'data_class' => 'Vifeed\CampaignBundle\Entity\Platform',
+                 'data_class' => 'Vifeed\PlatformBundle\Entity\Platform',
                  'csrf_protection'   => false,
                  'validation_groups' => array('default'),
             )

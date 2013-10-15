@@ -18,9 +18,6 @@ class TestCase extends WebTestCase {
 
     protected static $parameters = array();
 
-    /**
-     * todo: генерить юзера в начале работы, а в конце его херить
-     */
     public static function setUpBeforeClass()
     {
         self::$client = static::createClient();

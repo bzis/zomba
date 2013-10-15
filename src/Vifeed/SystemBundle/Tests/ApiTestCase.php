@@ -13,9 +13,6 @@ class ApiTestCase extends TestCase
     /** @var User */
     protected static $user = null;
 
-    /**
-     * todo: генерить юзера в начале работы, а в конце его херить
-     */
     public static function setUpBeforeClass()
     {
         parent::setUpBeforeClass();
@@ -72,6 +69,35 @@ class ApiTestCase extends TestCase
             'Nonce="' . $nonce . '", Created="' . $created . '"'
         );
         return self::$client->request($method, $url, $parameters, array(), $server);
+    }
+
+    /**
+     * @param array $content
+     * @param array $errors
+     */
+    protected function validateErros($content, $errors)
+    {
+        foreach ($errors as $field => $error) {
+            $this->assertArrayHasKey($field, $content['errors']['children']);
+            if (!is_array($error)) {
+                $this->assertArrayHasKey('errors', $content['errors']['children'][$field]);
+                $this->assertTrue(in_array($error, $content['errors']['children'][$field]['errors']));
+            } else {
+                array_walk_recursive(
+                    $errors,
+                    function ($item, $key) use ($field, $content) {
+                        $this->assertArrayHasKey($key, $content['errors']['children'][$field]['children']);
+                        $this->assertArrayHasKey(
+                            'errors',
+                            $content['errors']['children'][$field]['children'][$key]
+                        );
+                        $this->assertTrue(
+                            in_array($item, $content['errors']['children'][$field]['children'][$key]['errors'])
+                        );
+                    }
+                );
+            }
+        }
     }
 
 }

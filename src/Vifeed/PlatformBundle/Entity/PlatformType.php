@@ -1,6 +1,6 @@
 <?php
 
-namespace Vifeed\CampaignBundle\Entity;
+namespace Vifeed\PlatformBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
