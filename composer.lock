@@ -598,19 +598,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
-                "reference": "3db446747fa70dedb7adbd5413cd87bb5a4ad1bb"
+                "reference": "1a7f58d7639cf65b8fcae56fd9a8f4e42a41a27c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/3db446747fa70dedb7adbd5413cd87bb5a4ad1bb",
-                "reference": "3db446747fa70dedb7adbd5413cd87bb5a4ad1bb",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/1a7f58d7639cf65b8fcae56fd9a8f4e42a41a27c",
+                "reference": "1a7f58d7639cf65b8fcae56fd9a8f4e42a41a27c",
                 "shasum": ""
             },
             "require": {
                 "doctrine/doctrine-bundle": "~1.0",
                 "doctrine/migrations": "*",
                 "php": ">=5.3.2",
-                "symfony/framework-bundle": ">=2.1.0,<2.4-dev"
+                "symfony/framework-bundle": "~2.1"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -643,7 +643,7 @@
                 "migrations",
                 "schema"
             ],
-            "time": "2013-09-03 20:38:48"
+            "time": "2013-10-02 14:42:48"
         },
         {
             "name": "doctrine/inflector",
@@ -766,12 +766,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "99475d79841dc00a63fe7dd051f8fb1ba03bf1a8"
+                "reference": "e96022469595b4def59756f7b6b9ceb78c9f0e66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/99475d79841dc00a63fe7dd051f8fb1ba03bf1a8",
-                "reference": "99475d79841dc00a63fe7dd051f8fb1ba03bf1a8",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/e96022469595b4def59756f7b6b9ceb78c9f0e66",
+                "reference": "e96022469595b4def59756f7b6b9ceb78c9f0e66",
                 "shasum": ""
             },
             "require": {
@@ -812,7 +812,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2013-09-13 02:44:30"
+            "time": "2013-10-03 12:44:16"
         },
         {
             "name": "doctrine/orm",
@@ -885,74 +885,22 @@
             "time": "2013-05-11 07:51:12"
         },
         {
-            "name": "friendsofsymfony/rest",
-            "version": "0.8.0",
-            "target-dir": "FOS/Rest",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfSymfony/FOSRest.git",
-                "reference": "9a84df8220553e2ae3163b8325a3c4c2e9792426"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRest/zipball/9a84df8220553e2ae3163b8325a3c4c2e9792426",
-                "reference": "9a84df8220553e2ae3163b8325a3c4c2e9792426",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "symfony/http-foundation": "~2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "FOS\\Rest": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Lukas Kahwe Smith",
-                    "email": "smith@pooteeweet.org"
-                },
-                {
-                    "name": "FriendsOfSymfony Community",
-                    "homepage": "https://github.com/FriendsOfSymfony/FOSRest/contributors"
-                }
-            ],
-            "description": "This library provides various tools to develop RESTful API's",
-            "homepage": "http://friendsofsymfony.github.com",
-            "keywords": [
-                "rest"
-            ],
-            "time": "2013-03-02 20:35:05"
-        },
-        {
             "name": "friendsofsymfony/rest-bundle",
             "version": "dev-master",
             "target-dir": "FOS/RestBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "9d98ec8c62a28cfa49b074f5cdd3fb7f417c5118"
+                "reference": "adc9c6dd26f0628b7ce52072a7ea0032c60f455a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/9d98ec8c62a28cfa49b074f5cdd3fb7f417c5118",
-                "reference": "9d98ec8c62a28cfa49b074f5cdd3fb7f417c5118",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/adc9c6dd26f0628b7ce52072a7ea0032c60f455a",
+                "reference": "adc9c6dd26f0628b7ce52072a7ea0032c60f455a",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "1.0.*",
-                "friendsofsymfony/rest": ">=0.7.0,<0.9.0-dev",
                 "php": ">=5.3.2",
                 "symfony/framework-bundle": "~2.1",
                 "willdurand/negotiation": "1.0.*"
@@ -966,12 +914,14 @@
                 "sensio/framework-extra-bundle": "~2.1",
                 "symfony/form": "~2.1",
                 "symfony/security": "~2.1",
+                "symfony/serializer": "~2.1",
+                "symfony/validator": "~2.1",
                 "symfony/yaml": "~2.1"
             },
             "suggest": {
                 "jms/serializer-bundle": "Add support for advanced serialization capabilities, recommended, requires 0.12.*",
                 "sensio/framework-extra-bundle": "Add support for route annotations and the view response listener",
-                "symfony/serializer": "Add support for basic serialization capabilities, requires >=2.0,<2.3-dev"
+                "symfony/serializer": "Add support for basic serialization capabilities and xml decoding, requires ~2.1"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1008,7 +958,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2013-09-24 15:16:52"
+            "time": "2013-10-12 18:24:51"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1017,12 +967,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "b4840d8b3293386dba685d91169559eb20f2d767"
+                "reference": "f9ea1de0698e3055c9916e88c19f42e28844ef61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/b4840d8b3293386dba685d91169559eb20f2d767",
-                "reference": "b4840d8b3293386dba685d91169559eb20f2d767",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/f9ea1de0698e3055c9916e88c19f42e28844ef61",
+                "reference": "f9ea1de0698e3055c9916e88c19f42e28844ef61",
                 "shasum": ""
             },
             "require": {
@@ -1077,7 +1027,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2013-09-23 12:09:51"
+            "time": "2013-10-09 22:58:46"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1543,12 +1493,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "c2d36d9ef0ec80dadb92746bff55af7df1af8b1c"
+                "reference": "22cd63f9bdbee1b768c904f8a8c88d1e4a365c5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/c2d36d9ef0ec80dadb92746bff55af7df1af8b1c",
-                "reference": "c2d36d9ef0ec80dadb92746bff55af7df1af8b1c",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/22cd63f9bdbee1b768c904f8a8c88d1e4a365c5a",
+                "reference": "22cd63f9bdbee1b768c904f8a8c88d1e4a365c5a",
                 "shasum": ""
             },
             "require": {
@@ -1602,7 +1552,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2013-09-12 08:51:49"
+            "time": "2013-10-11 16:47:55"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2156,16 +2106,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.5",
+            "version": "v2.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "aa5626cd2a359567c948ebdeeca68d948640302f"
+                "reference": "d0597156c4c03ceca039f6b7770a47397ba295f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/aa5626cd2a359567c948ebdeeca68d948640302f",
-                "reference": "aa5626cd2a359567c948ebdeeca68d948640302f",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/d0597156c4c03ceca039f6b7770a47397ba295f0",
+                "reference": "d0597156c4c03ceca039f6b7770a47397ba295f0",
                 "shasum": ""
             },
             "require": {
@@ -2260,7 +2210,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-09-27 07:31:40"
+            "time": "2013-10-10 13:24:22"
         },
         {
             "name": "twig/extensions",
@@ -2311,16 +2261,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.13.2",
+            "version": "v1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "6d6a1009427d1f398c9d40904147bf9f723d5755"
+                "reference": "224fc55635d544a2ec8edb3592be18db5a093f59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/6d6a1009427d1f398c9d40904147bf9f723d5755",
-                "reference": "6d6a1009427d1f398c9d40904147bf9f723d5755",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/224fc55635d544a2ec8edb3592be18db5a093f59",
+                "reference": "224fc55635d544a2ec8edb3592be18db5a093f59",
                 "shasum": ""
             },
             "require": {
@@ -2329,7 +2279,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.13-dev"
+                    "dev-master": "1.14-dev"
                 }
             },
             "autoload": {
@@ -2356,7 +2306,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-08-03 15:35:31"
+            "time": "2013-10-03 06:41:20"
         },
         {
             "name": "willdurand/negotiation",
