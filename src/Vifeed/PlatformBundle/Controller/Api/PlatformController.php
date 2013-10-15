@@ -74,12 +74,8 @@ class PlatformController extends FOSRestController
      * @param int $id
      *
      * @ApiDoc(
-<<<<<<< HEAD:src/Vifeed/CampaignBundle/Controller/Api/PlatformController.php
      *     section="Frontend API",
      *     input="Vifeed\CampaignBundle\Entity\Platform"
-=======
-     *     input="Vifeed\PlatformBundle\Entity\Platform"
->>>>>>> ace83c70a23020a4899a2ecd610d1e9f606bfb5b:src/Vifeed/PlatformBundle/Controller/Api/PlatformController.php
      * )
      *
      * @return Response
