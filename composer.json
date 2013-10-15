@@ -40,7 +40,10 @@
         "doctrine/migrations": "dev-master",
         "doctrine/doctrine-migrations-bundle": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
-        "friendsofsymfony/user-bundle": "~2.0@dev"
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+
+        "jlong/sass-twitter-bootstrap": "dev-master"
+
     },
     "require-dev": {
     },
