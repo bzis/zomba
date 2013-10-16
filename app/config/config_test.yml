@@ -15,3 +15,8 @@ web_profiler:
 swiftmailer:
     disable_delivery: true
     delivery_address:  %developer_email%
+
+monolog:
+    handlers:
+        main:
+            level: info
