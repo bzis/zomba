@@ -1,0 +1,11 @@
+campaign_rest:
+  type: rest
+  resource: "@VifeedCampaignBundle/Resources/config/routing_rest.yml"
+
+platform_rest:
+  type: rest
+  resource: "@VifeedPlatformBundle/Resources/config/routing_rest.yml"
+
+users_rest:
+  type: rest
+  resource: "@VifeedUserBundle/Resources/config/routing_rest.yml"
