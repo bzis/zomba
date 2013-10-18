@@ -27,3 +27,9 @@ fos_user_security_login:
     pattern: '/login'
     defaults:
         _controller: 'FOSUserBundle:Security:login'
+
+fos_user_security_check:
+    pattern: '/api/user/login_check'
+    methods:  [POST]
+    defaults:
+        _controller: 'FOSUserBundle:Security:check'
