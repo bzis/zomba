@@ -17,3 +17,8 @@ fos_user_security_logout:
     pattern: /logout
     defaults:
         _controller: 'FOSUserBundle:Security:logout'
+
+user_social_link:
+    path: /user/social/link
+    defaults:
+        _controller: 'VifeedUserBundle:Social:linkUser'

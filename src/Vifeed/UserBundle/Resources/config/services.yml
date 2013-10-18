@@ -1,4 +1,3 @@
-# src/Acme/DemoBundle/Resources/config/services.yml
 services:
     wsse.security.authentication.provider:
         class:  Vifeed\UserBundle\Security\Authentication\Provider\WsseProvider
@@ -17,3 +16,9 @@ services:
         class:  Vifeed\UserBundle\EventListener\UserAuthenticationFailureHandler
         tags:
             - { name: 'monolog.logger', channel: 'security' }
+
+    vifeed.oauth.provider.factory:
+        class: Vifeed\UserBundle\OAuth\OAuthProviderFactory
+        arguments:
+            - %social%
+            - '@router'
