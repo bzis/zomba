@@ -46,7 +46,7 @@ class PlatformController extends FOSRestController
      * @ApiDoc(
      *     section="Frontend API",
      *     resource=true,
-     *     input="Vifeed\CampaignBundle\Entity\Platform"
+     *     input="Vifeed\PlatformBundle\Entity\Platform"
      * )
      *
      * @return Response
@@ -75,7 +75,6 @@ class PlatformController extends FOSRestController
      *
      * @ApiDoc(
      *     section="Frontend API",
-     *     input="Vifeed\CampaignBundle\Entity\Platform"
      *     input="Vifeed\PlatformBundle\Entity\Platform"
      * )
      *
