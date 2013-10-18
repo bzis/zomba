@@ -2,15 +2,13 @@
 
 namespace Vifeed\UserBundle\OAuth\Provider;
 
-use Buzz\Client\AbstractClient;
+use Buzz\Browser;
 use Buzz\Client\Curl;
 use Buzz\Message\Request;
 use Buzz\Message\Response;
 
 abstract class AbstractOAuthProvider
 {
-    /** @var  AbstractClient */
-    protected $httpClient;
     protected $accessToken;
 
     protected $codeVarName;
@@ -19,24 +17,8 @@ abstract class AbstractOAuthProvider
     protected $parameters = array();
 
     protected $accessTokenUrl;
-    protected $accessTokenParams = array();
 
     protected $apiUrl;
-
-    public function __construct()
-    {
-        $this->setHttpClient(new Curl());
-    }
-
-    /**
-     * Используется в тестах
-     * @param $httpClient
-     * @return void
-     */
-    public function setHttpClient($httpClient)
-    {
-        $this->httpClient = $httpClient;
-    }
 
     public function getCodeVarName()
     {
@@ -45,11 +27,14 @@ abstract class AbstractOAuthProvider
 
     /**
      * Запрашивает токен и возвращает массив из полученных данных
+     *
+     * @param array $params переменные запроса
+     *
      * @return array
      */
-    protected function requestAccessToken()
+    protected function requestAccessToken($params)
     {
-        $url = $this->accessTokenUrl . '?' . http_build_query($this->accessTokenParams);
+        $url = $this->accessTokenUrl . '?' . http_build_query($params);
         $response = $this->httpRequest($url);
 
         if (false !== strpos($response->getHeader('Content-Type'), 'application/json')) {
@@ -70,15 +55,11 @@ abstract class AbstractOAuthProvider
      *
      * @return Response
      */
-    protected function httpRequest($url, $content = null, $method = null)
+    protected function httpRequest($url, $content = null, $method = Request::METHOD_GET)
     {
-        if (null === $method) {
-            $method = (null === $content) ? Request::METHOD_GET : Request::METHOD_POST;
-        }
-        $request = new Request($method, $url);
-        $response = new Response();
-        $request->setContent($content);
-        $this->httpClient->send($request, $response);
+        $browser = new Browser(new Curl);
+        $response = $browser->call($url, $method, array(), $content);
+
         return $response;
     }
 
@@ -112,21 +93,6 @@ abstract class AbstractOAuthProvider
     }
 
     /**
-     * @abstract
-     * @return array
-     *
-     * формат возвращаемых данных:
-     * array(
-     *  'ext_id' => ID в социальной сети
-     *  'name'   => имя в формате "имя фамилия"
-     *  'gender' => пол. константа из класса User или null
-     *  'email'  => email
-     *  'raw'    => массив данных в таком виде, как его отдаёт социальная сеть
-     * )
-     */
-    abstract public function getUserInfo();
-
-    /**
      * Возвращает ID пользователя в социальной сети
      * @abstract
      * @return int
@@ -145,10 +111,6 @@ abstract class AbstractOAuthProvider
      */
     abstract protected function prepareAccessTokenParams();
 
-    /**
-     * @abstract
-     * @return array
-     */
-    abstract protected function requestUserInfo();
+
 
 }
