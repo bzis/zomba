@@ -26,7 +26,7 @@ class CampaignType extends AbstractType
               ->add('endAt', 'datetime')
               ->add('totalViews')
               ->add('bid')
-              ->add('platforms')
+//              ->add('platforms')
               ->add('countries')
               ->add('tags')
               ->add('ageRanges');
