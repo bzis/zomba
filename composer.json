@@ -42,7 +42,9 @@
         "doctrine/doctrine-fixtures-bundle": "dev-master",
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "sensio/buzz-bundle": "dev-master",
-        "jlong/sass-twitter-bootstrap": "dev-master"
+        "jlong/sass-twitter-bootstrap": "dev-master",
+        "snc/redis-bundle": "1.1.x-dev",
+        "predis/predis": "0.8.x-dev"
 
     },
     "require-dev": {
