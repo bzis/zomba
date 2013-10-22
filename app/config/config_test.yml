@@ -20,3 +20,7 @@ monolog:
     handlers:
         main:
             level: info
+
+doctrine:
+    dbal:
+        dbname:   %database_name%_test
