@@ -18,8 +18,6 @@ abstract class AbstractOAuthProvider
 
     protected $accessTokenUrl;
 
-    protected $apiUrl;
-
     public function getCodeVarName()
     {
         return $this->codeVarName;

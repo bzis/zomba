@@ -7,8 +7,6 @@ class VKOAuthProvider extends AbstractOAuthProvider
     protected $codeVarName = 'code';
     protected $accessTokenUrl = 'https://oauth.vk.com/access_token';
 
-    protected $apiUrl = 'https://api.vk.com/method/';
-
     /* что нужно получить из конфига */
     protected $requiredParametersFromConfig = array(
         'VKAppID',
