@@ -5,7 +5,6 @@ namespace Vifeed\CampaignBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
-use Vifeed\PlatformBundle\Entity\Platform;
 
 /**
  * Campaign
@@ -177,14 +176,6 @@ class Campaign
     /**
      * @var ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="Vifeed\PlatformBundle\Entity\Platform")
-     * @ORM\JoinTable(name="campaign_platform")
-     */
-    private $platforms;
-
-    /**
-     * @var ArrayCollection
-     *
      * @ORM\ManyToMany(targetEntity="Country")
      * @ORM\JoinTable(name="campaign_country")
      */
@@ -207,9 +198,9 @@ class Campaign
     private $ageRanges;
 
 
+
     public function __construct()
     {
-        $this->platforms = new ArrayCollection();
         $this->countries = new ArrayCollection();
         $this->tags = new ArrayCollection();
     }
@@ -463,40 +454,6 @@ class Campaign
     public function getBid()
     {
         return $this->bid;
-    }
-
-    /**
-     * get Platforms
-     *
-     * @return ArrayCollection
-     */
-    public function getPlatforms()
-    {
-        return $this->platforms;
-    }
-
-    /**
-     * Add platforms
-     *
-     * @param Platform $platforms
-     *
-     * @return Campaign
-     */
-    public function addPlatform(Platform $platforms)
-    {
-        $this->platforms[] = $platforms;
-
-        return $this;
-    }
-
-    /**
-     * Remove platforms
-     *
-     * @param Platform $platforms
-     */
-    public function removePlatform(Platform $platforms)
-    {
-        $this->platforms->removeElement($platforms);
     }
 
     /**
