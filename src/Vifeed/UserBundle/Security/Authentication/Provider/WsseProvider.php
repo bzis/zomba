@@ -8,6 +8,7 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Exception\NonceExpiredException;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+use Vifeed\UserBundle\Manager\WsseTokenManager;
 use Vifeed\UserBundle\Security\Authentication\Token\WsseApiToken;
 
 /**
@@ -25,14 +26,18 @@ class WsseProvider implements AuthenticationProviderInterface
     /** @var \Predis\Client|\Redis */
     private $redis;
 
+    private $tokenManager;
+
     /**
-     * @param UserProviderInterface $userProvider
-     * @param \Predis\Client|\Redis $redisClient
+     * @param UserProviderInterface                       $userProvider
+     * @param \Predis\Client|\Redis                       $redisClient
+     * @param \Vifeed\UserBundle\Manager\WsseTokenManager $tokenManager
      */
-    public function __construct(UserProviderInterface $userProvider, $redisClient)
+    public function __construct(UserProviderInterface $userProvider, $redisClient, WsseTokenManager $tokenManager)
     {
         $this->userProvider = $userProvider;
         $this->redis = $redisClient;
+        $this->tokenManager = $tokenManager;
     }
 
     /**
@@ -45,11 +50,15 @@ class WsseProvider implements AuthenticationProviderInterface
     {
         $user = $this->userProvider->loadUserByUsername($token->getUsername());
 
-        if ($user && $this->validateDigest($token->digest, $token->nonce, $token->created, $user->getPassword())) {
-            $authenticatedToken = new WsseApiToken($user->getRoles());
-            $authenticatedToken->setUser($user);
+        if ($user) {
+            $wsseToken = $this->tokenManager->getUserToken($user->getId());
+            if ($this->validateDigest($token->digest, $token->nonce, $token->created, $wsseToken)) {
 
-            return $authenticatedToken;
+                $authenticatedToken = new WsseApiToken($user->getRoles());
+                $authenticatedToken->setUser($user);
+
+                return $authenticatedToken;
+            }
         }
 
         throw new AuthenticationException('The WSSE authentication failed.');
