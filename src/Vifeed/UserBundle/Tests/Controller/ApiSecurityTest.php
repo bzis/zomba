@@ -62,7 +62,6 @@ class ApiSecurityTest extends ApiTestCase
         }
         if ($code == 201) {
             $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);
-            var_dump($content);
             $this->assertTrue(is_array($content));
             $mailCollector = self::$client->getProfile()->getCollector('swiftmailer');
 
