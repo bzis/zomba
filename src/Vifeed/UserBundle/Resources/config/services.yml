@@ -1,7 +1,7 @@
 services:
     wsse.security.authentication.provider:
         class:  Vifeed\UserBundle\Security\Authentication\Provider\WsseProvider
-        arguments: ["", "%kernel.cache_dir%/security/nonces"]
+        arguments: ["", "@snc_redis.default"]
 
     wsse.security.authentication.listener:
         class:  Vifeed\UserBundle\Security\Firewall\WsseListener

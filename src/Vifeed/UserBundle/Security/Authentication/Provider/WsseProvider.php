@@ -2,6 +2,7 @@
 
 namespace Vifeed\UserBundle\Security\Authentication\Provider;
 
+use Predis\Client;
 use Symfony\Component\Security\Core\Authentication\Provider\AuthenticationProviderInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
@@ -9,19 +10,29 @@ use Symfony\Component\Security\Core\Exception\NonceExpiredException;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Vifeed\UserBundle\Security\Authentication\Token\WsseApiToken;
 
+/**
+ * Class WsseProvider
+ *
+ * @package Vifeed\UserBundle\Security\Authentication\Provider
+ */
 class WsseProvider implements AuthenticationProviderInterface
 {
+    const PREFIX = 'wsse.nonce';
+    const TTL = 300;
+
     private $userProvider;
-    private $cacheDir;
+
+    /** @var \Predis\Client|\Redis */
+    private $redis;
 
     /**
      * @param UserProviderInterface $userProvider
-     * @param string                $cacheDir
+     * @param \Predis\Client|\Redis $redisClient
      */
-    public function __construct(UserProviderInterface $userProvider, $cacheDir)
+    public function __construct(UserProviderInterface $userProvider, $redisClient)
     {
         $this->userProvider = $userProvider;
-        $this->cacheDir = $cacheDir;
+        $this->redis = $redisClient;
     }
 
     /**
@@ -45,10 +56,10 @@ class WsseProvider implements AuthenticationProviderInterface
     }
 
     /**
-     * @param $digest
-     * @param $nonce
-     * @param $created
-     * @param $secret
+     * @param string $digest
+     * @param string $nonce
+     * @param string $created
+     * @param string $secret
      *
      * @return bool
      * @throws \Symfony\Component\Security\Core\Exception\NonceExpiredException
@@ -61,21 +72,15 @@ class WsseProvider implements AuthenticationProviderInterface
         }
 
         // Expire timestamp after 5 minutes
-        if (time() - strtotime($created) > 300) {
+        if (time() - strtotime($created) > self::TTL) {
             return false;
         }
 
         // Validate nonce is unique within 5 minutes
-        if (file_exists($this->cacheDir . '/' . $nonce) &&
-              file_get_contents($this->cacheDir . '/' . $nonce) + 300 > time()
-        ) {
+        if ($this->redis->exists(self::PREFIX . ':' . $nonce)) {
             throw new NonceExpiredException('Previously used nonce detected');
         }
-        // If cache directory does not exist we create it
-        if (!is_dir($this->cacheDir)) {
-            mkdir($this->cacheDir, 0777, true);
-        }
-        file_put_contents($this->cacheDir . '/' . $nonce, time());
+        $this->redis->setex(self::PREFIX . ':' . $nonce, self::TTL, time());
 
         // Validate Secret
         $expected = base64_encode(sha1(base64_decode($nonce) . $created . $secret, true));
