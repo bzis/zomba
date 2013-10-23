@@ -4,6 +4,11 @@ namespace Vifeed\UserBundle\Security\Authentication\Token;
 
 use Symfony\Component\Security\Core\Authentication\Token\AbstractToken;
 
+/**
+ * Class WsseApiToken
+ *
+ * @package Vifeed\UserBundle\Security\Authentication\Token
+ */
 class WsseApiToken extends AbstractToken
 {
     public $created;

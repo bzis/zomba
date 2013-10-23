@@ -9,6 +9,11 @@ use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\SecurityContextInterface;
 use Symfony\Component\Security\Http\Authentication\AuthenticationFailureHandlerInterface;
 
+/**
+ * Class UserAuthenticationFailureHandler
+ *
+ * @package Vifeed\UserBundle\EventListener
+ */
 class UserAuthenticationFailureHandler implements AuthenticationFailureHandlerInterface
 {
 
@@ -31,6 +36,7 @@ class UserAuthenticationFailureHandler implements AuthenticationFailureHandlerIn
             'success' => false,
             'message' => $exception->getMessage() //todo: перевести message
         );
+
         return new JsonResponse($data, 401);
     }
 }

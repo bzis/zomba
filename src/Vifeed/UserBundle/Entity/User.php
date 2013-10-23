@@ -120,9 +120,9 @@ class User extends BaseUser
     }
 
     /**
-     * @static
+     * @param string $provider
      *
-     * @param $provider
+     * @static
      *
      * @return string
      */
@@ -136,8 +136,10 @@ class User extends BaseUser
     }
 
     /**
-     * @param $provider
-     * @param $id
+     * @param string $provider
+     * @param mixed  $id
+     *
+     * @return User
      */
     public function setSocialID($provider, $id)
     {
@@ -148,7 +150,8 @@ class User extends BaseUser
     }
 
     /**
-     * @param $provider
+     * @param string $provider
+     *
      * @return bool
      */
     public function getSocialDataByProvider($provider)
@@ -162,8 +165,8 @@ class User extends BaseUser
     }
 
     /**
-     * @param $provider
-     * @param $socialData
+     * @param string $provider
+     * @param mixed  $socialData
      */
     public function setSocialDataByProvider($provider, $socialData)
     {
@@ -176,7 +179,7 @@ class User extends BaseUser
     }
 
     /**
-     * @param $provider
+     * @param string $provider
      */
     public function removeSocialDataByProvider($provider)
     {

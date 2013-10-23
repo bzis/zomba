@@ -31,7 +31,7 @@ class RegistrationController extends FOSRestController
      *
      * @return Response
      */
-    public function putUserRegisterAction()
+    public function putUsersAction()
     {
         if (is_array($this->getRequest()->get('publisher_registration'))) {
             $type = User::TYPE_PUBLISHER;

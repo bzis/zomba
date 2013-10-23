@@ -31,7 +31,7 @@ class ApiSecurityTest extends ApiTestCase
      */
     public function testPutUsers($data, $code, $errors = null)
     {
-        $url = self::$router->generate('api_put_user_register');
+        $url = self::$router->generate('api_put_users');
 
         self::$client->request('GET', '/'); // чтобы открыть сессию
         self::$client->enableProfiler();
@@ -48,6 +48,7 @@ class ApiSecurityTest extends ApiTestCase
             );
 
         }
+
         $this->assertEquals($code, self::$client->getResponse()->getStatusCode());
 
         $response = self::$client->getResponse();
@@ -61,6 +62,7 @@ class ApiSecurityTest extends ApiTestCase
         }
         if ($code == 201) {
             $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);
+            var_dump($content);
             $this->assertTrue(is_array($content));
             $mailCollector = self::$client->getProfile()->getCollector('swiftmailer');
 
