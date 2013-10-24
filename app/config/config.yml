@@ -29,6 +29,7 @@ twig:
     exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
     globals:
         social: %social%
+
 # Assetic Configuration
 assetic:
     debug:          %kernel.debug%
@@ -100,4 +101,12 @@ fos_user:
         confirmation:
             enabled:    true
             template:   VifeedUserBundle:Registration:email.html.twig
+
 nelmio_api_doc: ~
+
+snc_redis:
+    clients:
+        default:
+            type: predis
+            alias: default
+            dsn: redis://localhost

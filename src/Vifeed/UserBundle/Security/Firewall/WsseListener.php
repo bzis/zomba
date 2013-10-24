@@ -10,19 +10,22 @@ use Symfony\Component\Security\Core\SecurityContextInterface;
 use Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface;
 use Vifeed\UserBundle\Security\Authentication\Token\WsseApiToken;
 
+/**
+ * Class WsseListener
+ *
+ * @package Vifeed\UserBundle\Security\Firewall
+ */
 class WsseListener implements ListenerInterface
 {
     protected $securityContext;
     protected $authenticationManager;
 
     /**
-     * @param SecurityContextInterface $securityContext
+     * @param SecurityContextInterface       $securityContext
      * @param AuthenticationManagerInterface $authenticationManager
      */
-    public function __construct(
-        SecurityContextInterface $securityContext,
-        AuthenticationManagerInterface $authenticationManager
-    ) {
+    public function __construct(SecurityContextInterface $securityContext, AuthenticationManagerInterface $authenticationManager)
+    {
         $this->securityContext = $securityContext;
         $this->authenticationManager = $authenticationManager;
     }
@@ -35,7 +38,12 @@ class WsseListener implements ListenerInterface
         $request = $event->getRequest();
 
         $wsseRegex = '/UsernameToken Username="([^"]+)", PasswordDigest="([^"]+)", Nonce="([^"]+)", Created="([^"]+)"/';
-        if ($request->headers->has('x-wsse') && (1 === preg_match($wsseRegex, $request->headers->get('x-wsse'), $matches))) {
+        if ($request->headers->has('x-wsse') && (1 === preg_match(
+                        $wsseRegex,
+                        $request->headers->get('x-wsse'),
+                        $matches
+                    ))
+        ) {
             $token = new WsseApiToken();
             $token->setUser($matches[1]);
 
@@ -60,9 +68,9 @@ class WsseListener implements ListenerInterface
                 // return;
 
                 // Deny authentication with a '403 Forbidden' HTTP response
-            $response = new Response();
-            $response->setStatusCode(403);
-            $event->setResponse($response);
+                $response = new Response();
+                $response->setStatusCode(403);
+                $event->setResponse($response);
 
             }
         }

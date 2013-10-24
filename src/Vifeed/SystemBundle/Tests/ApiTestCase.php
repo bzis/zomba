@@ -59,9 +59,12 @@ class ApiTestCase extends TestCase
      */
     protected function sendRequest($method, $url, $parameters = array())
     {
+        $tokenManager = self::$client->getContainer()->get('vifeed.user.wsse_token_manager');
+        $token = $tokenManager->getUserToken(self::$user->getId());
+
         $created = (new \DateTime())->format('Y-m-d H:i:s');
         $nonce = md5($created.rand());
-        $digest = base64_encode(sha1(base64_decode($nonce) . $created . self::$user->getPassword(), true));
+        $digest = base64_encode(sha1(base64_decode($nonce) . $created . $token, true));
 
         $server = array(
             'HTTP_x-wsse' => 'UsernameToken Username="' . self::$user->getUsername() . '", ' .
