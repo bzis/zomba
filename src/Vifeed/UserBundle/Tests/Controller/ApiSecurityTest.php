@@ -29,14 +29,14 @@ class ApiSecurityTest extends ApiTestCase
         $csrf = self::$client->getContainer()->get('form.csrf_provider');
         $token = $csrf->generateCsrfToken('registration');
         $key = array_keys($data)[0];
-        // todo: разобраться с csrf. Пока выключена
-//        $data[$key]['_token'] = $token;
+        $data[$key]['_token'] = $token;
 
         self::$client->request('PUT', $url, $data);
 
         $this->assertEquals($code, self::$client->getResponse()->getStatusCode());
 
         $response = self::$client->getResponse();
+        $isAuthenticated = self::$client->getContainer()->get('security.context')->isGranted('ROLE_USER');
 
         if ($errors !== null) {
             $this->assertJson($response->getContent());
@@ -44,6 +44,7 @@ class ApiSecurityTest extends ApiTestCase
             $this->assertArrayHasKey('errors', $content);
             $this->assertArrayHasKey('children', $content['errors']);
             $this->validateErros($content, $errors);
+            $this->assertFalse($isAuthenticated);
         }
         if ($code == 201) {
             $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);
@@ -59,6 +60,11 @@ class ApiSecurityTest extends ApiTestCase
                 preg_match('@\/confirm\/([^"]+)"@', $message->getBody(), $matches);
                 $token = $matches[1];
                 $this->testConfirmation($token);
+            }
+            if (array_key_exists('advertiser_registration', $data)) {
+                $this->assertTrue($isAuthenticated);
+            } else {
+                $this->assertFalse($isAuthenticated);
             }
         }
     }
@@ -76,13 +82,15 @@ class ApiSecurityTest extends ApiTestCase
      */
     public function testLogin($data, $code, $errors = null)
     {
+        self::$client->restart();
+
         $url = self::$router->generate('api_fos_user_security_check');
         self::$client->request('GET', '/'); // чтобы открыть сессию
 
         $csrf = self::$client->getContainer()->get('form.csrf_provider');
         $token = $csrf->generateCsrfToken('authenticate');
 
-//        $data['_csrf_token'] = $token;
+        $data['_csrf_token'] = $token;
 
         self::$client->request('POST', $url, $data);
 
@@ -98,8 +106,10 @@ class ApiSecurityTest extends ApiTestCase
             $this->assertEquals(false, $content['success']);
             $this->assertArrayHasKey('message', $content);
             $this->assertEquals($errors, $content['message']);
+            $this->assertNull(self::$client->getContainer()->get('security.context')->getToken());
         } else {
             $this->assertEquals(true, $content['success']);
+            $this->assertTrue(self::$client->getContainer()->get('security.context')->isGranted('ROLE_USER'));
         }
 
     }

@@ -71,6 +71,7 @@ class ApiTestCase extends TestCase
             'PasswordDigest="' . $digest . '", ' .
             'Nonce="' . $nonce . '", Created="' . $created . '"'
         );
+
         return self::$client->request($method, $url, $parameters, array(), $server);
     }
 

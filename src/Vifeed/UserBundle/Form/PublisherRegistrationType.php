@@ -37,7 +37,6 @@ class PublisherRegistrationType extends AbstractType
                  'data_class'        => 'Vifeed\UserBundle\Entity\User',
                  'validation_groups' => array('PublisherRegistration'),
                  'intention'         => 'registration',
-                 'csrf_protection'   => false, // todo: пока выключаем, потому что в тестах не разобрался с csrf
             )
         );
     }
