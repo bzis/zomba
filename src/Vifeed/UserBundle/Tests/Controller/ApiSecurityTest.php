@@ -79,6 +79,7 @@ class ApiSecurityTest extends ApiTestCase
      * @dataProvider testLoginProvider
      *
      * todo: тест входа рекламодателя (как?)
+     * todo: получение токена для апи - проверить
      */
     public function testLogin($data, $code, $errors = null)
     {
@@ -135,6 +136,36 @@ class ApiSecurityTest extends ApiTestCase
         } else {
             $this->assertEquals(404, self::$client->getResponse()->getStatusCode());
         }
+    }
+
+    /**
+     * logout и удаление api-токена
+     */
+    public function testDeleteToken()
+    {
+        self::$client->restart();
+
+        $url = self::$router->generate('api_delete_users_token');
+
+        self::$client->request('DELETE', $url);
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+
+        // запрос для авторизации
+        $this->sendRequest('GET', self::$router->generate('api_get_tags', array('word' => 'word')));
+
+        $userId = self::$client->getContainer()->get('security.context')->getToken()->getUser()->getId();
+        $tokenManager = self::$client->getContainer()->get('vifeed.user.wsse_token_manager');
+
+        $this->assertNotNull($tokenManager->getUserToken($userId));
+
+        $this->sendRequest('DELETE', $url);
+
+        $this->assertEquals(204, self::$client->getResponse()->getStatusCode());
+        $this->assertNull($tokenManager->getUserToken($userId));
+
+        // теперь мы не можем получить доступ
+        $this->sendRequest('GET', self::$router->generate('api_get_tags', array('word' => 'word')));
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
     }
 
     /**
