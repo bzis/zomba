@@ -3,7 +3,6 @@
 namespace Vifeed\UserBundle\Tests\Controller;
 
 use Vifeed\SystemBundle\Tests\ApiTestCase;
-use Vifeed\SystemBundle\Tests\TestCase;
 
 class ApiSecurityTest extends ApiTestCase
 {
