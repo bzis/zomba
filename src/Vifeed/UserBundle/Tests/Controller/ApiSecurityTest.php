@@ -8,29 +8,19 @@ use Vifeed\SystemBundle\Tests\TestCase;
 class ApiSecurityTest extends ApiTestCase
 {
 
-    public static function tearDownAfterClass()
-    {
-        $um = static::createClient()->getContainer()->get('fos_user.user_manager');
-        foreach (array('regtest@test.test', 'regtest2@test.test') as $email) {
-            $user = $um->findUserByEmail($email);
-            if ($user) {
-                $um->deleteUser($user);
-            }
-        }
-
-        parent::tearDownAfterClass();
-
-    }
-
     /**
      * Новый юзер
      *
-     * todo: сделать проверку активации юзера и подтверждения почты
+     * @param array $data
+     * @param int   $code
+     * @param null  $errors
+     * @param array $parameters
      *
      * @dataProvider putUsersProvider
      */
-    public function testPutUsers($data, $code, $errors = null)
+    public function testPutUsers($data, $code, $errors = null, $parameters = array())
     {
+        self::$client->restart();
         $url = self::$router->generate('api_put_users');
 
         self::$client->request('GET', '/'); // чтобы открыть сессию
@@ -39,15 +29,10 @@ class ApiSecurityTest extends ApiTestCase
         $csrf = self::$client->getContainer()->get('form.csrf_provider');
         $token = $csrf->generateCsrfToken('registration');
         $key = array_keys($data)[0];
-        $data[$key]['_token'] = $token;
+        // todo: разобраться с csrf. Пока выключена
+//        $data[$key]['_token'] = $token;
 
         self::$client->request('PUT', $url, $data);
-        if (self::$client->getResponse()->getStatusCode() != $code) {
-            var_dump(
-                json_decode(self::$client->getResponse()->getContent(), JSON_UNESCAPED_UNICODE)['errors']['children']
-            );
-
-        }
 
         $this->assertEquals($code, self::$client->getResponse()->getStatusCode());
 
@@ -67,15 +52,27 @@ class ApiSecurityTest extends ApiTestCase
 
             $this->assertEquals(1, $mailCollector->getMessageCount());
             $collectedMessages = $mailCollector->getMessages();
+            /** @var \Swift_Message $message */
             $message = $collectedMessages[0];
             $this->assertInstanceOf('Swift_Message', $message);
+            if (in_array('confirm', $parameters)) {
+                preg_match('@\/confirm\/([^"]+)"@', $message->getBody(), $matches);
+                $token = $matches[1];
+                $this->testConfirmation($token);
+            }
         }
     }
 
     /**
      * Тест логина
      *
+     * @param array $data
+     * @param int   $code
+     * @param null  $errors
+     *
      * @dataProvider testLoginProvider
+     *
+     * todo: тест входа рекламодателя (как?)
      */
     public function testLogin($data, $code, $errors = null)
     {
@@ -85,7 +82,7 @@ class ApiSecurityTest extends ApiTestCase
         $csrf = self::$client->getContainer()->get('form.csrf_provider');
         $token = $csrf->generateCsrfToken('authenticate');
 
-        $data['_csrf_token'] = $token;
+//        $data['_csrf_token'] = $token;
 
         self::$client->request('POST', $url, $data);
 
@@ -98,13 +95,36 @@ class ApiSecurityTest extends ApiTestCase
         $this->assertArrayHasKey('success', $content);
 
         if ($errors !== null) {
-            $this->assertEquals($content['success'], false);
+            $this->assertEquals(false, $content['success']);
             $this->assertArrayHasKey('message', $content);
-            $this->assertEquals($content['message'], $errors);
+            $this->assertEquals($errors, $content['message']);
         } else {
-            $this->assertEquals($content['success'], true);
+            $this->assertEquals(true, $content['success']);
         }
 
+    }
+
+
+    /**
+     * тест подтвреждения емейла. Может вызываться из регистрации с конкретным токеном
+     *
+     * @param string $token
+     */
+    public function testConfirmation($token = '')
+    {
+        $url = self::$router->generate('api_patch_users_confirm');
+
+        $data = array();
+        $data['token'] = $token ?: 'token';
+
+        self::$client->request('PATCH', $url, $data);
+
+        $content = self::$client->getResponse()->getContent();
+        if ($token !== '') {
+            $this->assertEquals(200, self::$client->getResponse()->getStatusCode());
+        } else {
+            $this->assertEquals(404, self::$client->getResponse()->getStatusCode());
+        }
     }
 
     /**
@@ -128,7 +148,7 @@ class ApiSecurityTest extends ApiTestCase
             array(
                 array(
                     'advertiser_registration' => array(
-                        'email' => 'regtest@test.test'
+                        'email' => 'advregtest1@test.test'
                     )
                 ),
                 201,
@@ -136,7 +156,7 @@ class ApiSecurityTest extends ApiTestCase
             array(
                 array(
                     'publisher_registration' => array(
-                        'email' => 'regtest@test.test'
+                        'email' => 'advregtest1@test.test'
                     )
                 ),
                 400,
@@ -147,7 +167,7 @@ class ApiSecurityTest extends ApiTestCase
             array(
                 array(
                     'publisher_registration' => array(
-                        'email' => 'regtest2@test.test',
+                        'email' => 'publisheregtest1@test.test',
                     )
                 ),
                 400,
@@ -162,7 +182,7 @@ class ApiSecurityTest extends ApiTestCase
             array(
                 array(
                     'publisher_registration' => array(
-                        'email' => 'regtest2@test.test',
+                        'email' => 'publisheregtest1@test.test',
                         'plainPassword' => array(
                             'first' => 'aaa'
                         )
@@ -180,7 +200,7 @@ class ApiSecurityTest extends ApiTestCase
             array(
                 array(
                     'publisher_registration' => array(
-                        'email' => 'regtest2@test.test',
+                        'email' => 'publisheregtest1@test.test',
                         'plainPassword' => array(
                             'first' => 'aaa',
                             'second' => 'aaa'
@@ -200,7 +220,7 @@ class ApiSecurityTest extends ApiTestCase
             array(
                 array(
                     'publisher_registration' => array(
-                        'email' => 'regtest2@test.test',
+                        'email' => 'publisheregtest1@test.test',
                         'plainPassword' => array(
                             'first' => 'aaabbb',
                             'second' => 'aaabbb'
@@ -208,6 +228,20 @@ class ApiSecurityTest extends ApiTestCase
                     )
                 ),
                 201,
+            ),
+            array(
+                array(
+                    'publisher_registration' => array(
+                        'email' => 'publisheregtest2@test.test',
+                        'plainPassword' => array(
+                            'first' => 'aaabbb',
+                            'second' => 'aaabbb'
+                        )
+                    )
+                ),
+                201,
+                null,
+                array('confirm')
             ),
         );
 
@@ -223,8 +257,16 @@ class ApiSecurityTest extends ApiTestCase
         $data = array(
             array(
                 array(
-                    '_username' => 'test',
-                    '_password' => 'test',
+                    '_username' => 'publisheregtest1@test.test',
+                    '_password' => 'aaabbb',
+                ),
+                401,
+                'User account is disabled.'
+            ),
+            array(
+                array(
+                    '_username' => 'publisheregtest2@test.test',
+                    '_password' => 'aaabbb',
                 ),
                 200,
             ),

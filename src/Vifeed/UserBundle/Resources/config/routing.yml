@@ -7,3 +7,8 @@ user_social_link:
     path: /user/social/link
     defaults:
         _controller: 'VifeedUserBundle:Social:linkUser'
+
+fos_user_registration_check_email:
+    pattern: /check-email
+    defaults:
+        _controller: 'FOSUserBundle:Registration:checkEmail'
