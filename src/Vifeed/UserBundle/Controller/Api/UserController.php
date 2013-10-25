@@ -37,25 +37,5 @@ class UserController extends FOSRestController
         return $this->handleView($view);
     }
 
-    /**
-     * Удалить токен и разлогиниться
-     *
-     * @ApiDoc(
-     *     section="Frontend API"
-     * )
-     *
-     * @return Response
-     */
-    public function deleteUsersTokenAction()
-    {
-        $tokenManager = $this->container->get('vifeed.user.wsse_token_manager');
-        $tokenManager->deleteUserToken($this->getUser()->getId());
-        $this->get('security.context')->setToken(null);
-        $this->get('request')->getSession()->invalidate();
-
-        $view = new View('');
-
-        return $this->handleView($view);
-    }
 }
  
