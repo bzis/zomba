@@ -27,4 +27,4 @@ default:
 
 users_frontend:
   resource: "@VifeedUserBundle/Resources/config/routing_frontend.yml"
-  prefix: /
+  prefix: /users
