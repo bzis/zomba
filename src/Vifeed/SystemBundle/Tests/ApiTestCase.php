@@ -38,6 +38,7 @@ class ApiTestCase extends TestCase
     protected static function createUser()
     {
         $userManager = self::$client->getContainer()->get('fos_user.user_manager');
+        $tokenManager = self::$client->getContainer()->get('vifeed.user.wsse_token_manager');
 
         $user = $userManager->createUser()
               ->setEmail('test@test.test')
@@ -46,6 +47,7 @@ class ApiTestCase extends TestCase
               ->setEnabled(true);
 
         $userManager->updateUser($user);
+        $tokenManager->createUserToken($user->getId());
 
         return $user;
     }
@@ -71,6 +73,7 @@ class ApiTestCase extends TestCase
             'PasswordDigest="' . $digest . '", ' .
             'Nonce="' . $nonce . '", Created="' . $created . '"'
         );
+
         return self::$client->request($method, $url, $parameters, array(), $server);
     }
 

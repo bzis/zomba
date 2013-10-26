@@ -3,7 +3,6 @@
 namespace Vifeed\UserBundle\Tests\Controller;
 
 use Vifeed\SystemBundle\Tests\ApiTestCase;
-use Vifeed\SystemBundle\Tests\TestCase;
 
 class ApiSecurityTest extends ApiTestCase
 {
@@ -29,14 +28,14 @@ class ApiSecurityTest extends ApiTestCase
         $csrf = self::$client->getContainer()->get('form.csrf_provider');
         $token = $csrf->generateCsrfToken('registration');
         $key = array_keys($data)[0];
-        // todo: разобраться с csrf. Пока выключена
-//        $data[$key]['_token'] = $token;
+        $data[$key]['_token'] = $token;
 
         self::$client->request('PUT', $url, $data);
 
         $this->assertEquals($code, self::$client->getResponse()->getStatusCode());
 
         $response = self::$client->getResponse();
+        $isAuthenticated = self::$client->getContainer()->get('security.context')->isGranted('ROLE_USER');
 
         if ($errors !== null) {
             $this->assertJson($response->getContent());
@@ -44,6 +43,7 @@ class ApiSecurityTest extends ApiTestCase
             $this->assertArrayHasKey('errors', $content);
             $this->assertArrayHasKey('children', $content['errors']);
             $this->validateErros($content, $errors);
+            $this->assertFalse($isAuthenticated);
         }
         if ($code == 201) {
             $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);
@@ -60,6 +60,11 @@ class ApiSecurityTest extends ApiTestCase
                 $token = $matches[1];
                 $this->testConfirmation($token);
             }
+            if (array_key_exists('advertiser_registration', $data)) {
+                $this->assertTrue($isAuthenticated);
+            } else {
+                $this->assertFalse($isAuthenticated);
+            }
         }
     }
 
@@ -73,16 +78,19 @@ class ApiSecurityTest extends ApiTestCase
      * @dataProvider testLoginProvider
      *
      * todo: тест входа рекламодателя (как?)
+     * todo: получение токена для апи - проверить
      */
     public function testLogin($data, $code, $errors = null)
     {
+        self::$client->restart();
+
         $url = self::$router->generate('api_fos_user_security_check');
         self::$client->request('GET', '/'); // чтобы открыть сессию
 
         $csrf = self::$client->getContainer()->get('form.csrf_provider');
         $token = $csrf->generateCsrfToken('authenticate');
 
-//        $data['_csrf_token'] = $token;
+        $data['_csrf_token'] = $token;
 
         self::$client->request('POST', $url, $data);
 
@@ -98,8 +106,10 @@ class ApiSecurityTest extends ApiTestCase
             $this->assertEquals(false, $content['success']);
             $this->assertArrayHasKey('message', $content);
             $this->assertEquals($errors, $content['message']);
+            $this->assertNull(self::$client->getContainer()->get('security.context')->getToken());
         } else {
             $this->assertEquals(true, $content['success']);
+            $this->assertTrue(self::$client->getContainer()->get('security.context')->isGranted('ROLE_USER'));
         }
 
     }
@@ -125,6 +135,36 @@ class ApiSecurityTest extends ApiTestCase
         } else {
             $this->assertEquals(404, self::$client->getResponse()->getStatusCode());
         }
+    }
+
+    /**
+     * logout и удаление api-токена
+     */
+    public function testDeleteToken()
+    {
+        self::$client->restart();
+
+        $url = self::$router->generate('api_delete_users_token');
+
+        self::$client->request('DELETE', $url);
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+
+        // запрос для авторизации
+        $this->sendRequest('GET', self::$router->generate('api_get_tags', array('word' => 'word')));
+
+        $userId = self::$client->getContainer()->get('security.context')->getToken()->getUser()->getId();
+        $tokenManager = self::$client->getContainer()->get('vifeed.user.wsse_token_manager');
+
+        $this->assertNotNull($tokenManager->getUserToken($userId));
+
+        $this->sendRequest('DELETE', $url);
+
+        $this->assertEquals(204, self::$client->getResponse()->getStatusCode());
+        $this->assertNull($tokenManager->getUserToken($userId));
+
+        // теперь мы не можем получить доступ
+        $this->sendRequest('GET', self::$router->generate('api_get_tags', array('word' => 'word')));
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
     }
 
     /**

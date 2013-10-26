@@ -52,7 +52,7 @@ class WsseProvider implements AuthenticationProviderInterface
 
         if ($user) {
             $wsseToken = $this->tokenManager->getUserToken($user->getId());
-            if ($this->validateDigest($token->digest, $token->nonce, $token->created, $wsseToken)) {
+            if (!is_null($wsseToken) && $this->validateDigest($token->digest, $token->nonce, $token->created, $wsseToken)) {
 
                 $authenticatedToken = new WsseApiToken($user->getRoles());
                 $authenticatedToken->setUser($user);
@@ -93,7 +93,7 @@ class WsseProvider implements AuthenticationProviderInterface
 
         // Validate Secret
         $expected = base64_encode(sha1(base64_decode($nonce) . $created . $secret, true));
-
+        
         return $digest === $expected;
     }
 

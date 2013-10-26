@@ -13,6 +13,9 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 /**
  * Class EmailConfirmationListener
  *
+ * переопределии потому что стандартый лисенер всегда ставит $user->setEnabled(false),
+ * а нам это не подходит, потому что рекламодатель сразу enabled = true
+ *
  * @package Vifeed\UserBundle\EventListener
  */
 class EmailConfirmationListener implements EventSubscriberInterface

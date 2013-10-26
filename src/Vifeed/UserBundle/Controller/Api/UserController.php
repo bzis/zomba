@@ -6,6 +6,8 @@ use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
 use Symfony\Component\HttpFoundation\Response;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Vifeed\UserBundle\Entity\User;
 
 
 /**
@@ -30,6 +32,12 @@ class UserController extends FOSRestController
     {
         $userManager = $this->container->get('fos_user.user_manager');
         $user = $userManager->findUserBy(['id' => $id]);
+
+        var_dump($id);
+        if (!$user instanceof User) {
+            throw new NotFoundHttpException('User not found');
+        }
+
         $view = new View(array(
                               'user' => $user,
                          ));
@@ -37,25 +45,5 @@ class UserController extends FOSRestController
         return $this->handleView($view);
     }
 
-    /**
-     * Удалить токен и разлогиниться
-     *
-     * @ApiDoc(
-     *     section="Frontend API"
-     * )
-     *
-     * @return Response
-     */
-    public function deleteUsersTokenAction()
-    {
-        $tokenManager = $this->container->get('vifeed.user.wsse_token_manager');
-        $tokenManager->deleteUserToken($this->getUser()->getId());
-        $this->get('security.context')->setToken(null);
-        $this->get('request')->getSession()->invalidate();
-
-        $view = new View('');
-
-        return $this->handleView($view);
-    }
 }
  
