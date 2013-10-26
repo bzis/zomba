@@ -891,12 +891,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "adc9c6dd26f0628b7ce52072a7ea0032c60f455a"
+                "reference": "d808b2269d0049e39f318b5eb8c1ab63ad9e7814"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/adc9c6dd26f0628b7ce52072a7ea0032c60f455a",
-                "reference": "adc9c6dd26f0628b7ce52072a7ea0032c60f455a",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/d808b2269d0049e39f318b5eb8c1ab63ad9e7814",
+                "reference": "d808b2269d0049e39f318b5eb8c1ab63ad9e7814",
                 "shasum": ""
             },
             "require": {
@@ -958,7 +958,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2013-10-12 18:24:51"
+            "time": "2013-10-18 17:56:57"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -967,12 +967,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "f9ea1de0698e3055c9916e88c19f42e28844ef61"
+                "reference": "4025c4113bc000cef331ea833a52123080d2faa4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/f9ea1de0698e3055c9916e88c19f42e28844ef61",
-                "reference": "f9ea1de0698e3055c9916e88c19f42e28844ef61",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/4025c4113bc000cef331ea833a52123080d2faa4",
+                "reference": "4025c4113bc000cef331ea833a52123080d2faa4",
                 "shasum": ""
             },
             "require": {
@@ -1027,7 +1027,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2013-10-09 22:58:46"
+            "time": "2013-10-21 09:54:07"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1135,12 +1135,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jlong/sass-bootstrap.git",
-                "reference": "9c306cfb2f2c5808913ce5ae54796dbcb99a7560"
+                "reference": "58bafdc61ebb65260d28c347a49487ab5026a62d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jlong/sass-bootstrap/zipball/9c306cfb2f2c5808913ce5ae54796dbcb99a7560",
-                "reference": "9c306cfb2f2c5808913ce5ae54796dbcb99a7560",
+                "url": "https://api.github.com/repos/jlong/sass-bootstrap/zipball/58bafdc61ebb65260d28c347a49487ab5026a62d",
+                "reference": "58bafdc61ebb65260d28c347a49487ab5026a62d",
                 "shasum": ""
             },
             "type": "library",
@@ -1162,13 +1162,13 @@
                 }
             ],
             "description": "A sass port of the sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-            "homepage": "http://github.com/jlong/sass-twitter-bootstrap/",
+            "homepage": "http://github.com/jlong/sass-bootstrap/",
             "keywords": [
                 "bootstrap",
                 "css",
                 "sass"
             ],
-            "time": "2013-09-22 10:49:22"
+            "time": "2013-10-20 03:19:58"
         },
         {
             "name": "jms/metadata",
@@ -1534,12 +1534,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "22cd63f9bdbee1b768c904f8a8c88d1e4a365c5a"
+                "reference": "bef7da0ef9ac7100f5b1066a99fb2dbe3cf477a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/22cd63f9bdbee1b768c904f8a8c88d1e4a365c5a",
-                "reference": "22cd63f9bdbee1b768c904f8a8c88d1e4a365c5a",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/bef7da0ef9ac7100f5b1066a99fb2dbe3cf477a8",
+                "reference": "bef7da0ef9ac7100f5b1066a99fb2dbe3cf477a8",
                 "shasum": ""
             },
             "require": {
@@ -1593,7 +1593,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2013-10-11 16:47:55"
+            "time": "2013-10-15 22:39:44"
         },
         {
             "name": "phpcollection/phpcollection",
