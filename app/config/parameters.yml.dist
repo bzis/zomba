@@ -17,8 +17,11 @@ parameters:
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
     assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/images/'
+    assetic.cdn_url: 'http://vifeed.dev/dev'
+    assetic.cdn_path: "%kernel.root_dir%/../web/dev"
 
     developer_email:   dev@example.com
 
-    assetic.cdn_url: 'http://vifeed.dev/dev'
-    assetic.cdn_path: "%kernel.root_dir%/../web/dev"
+    social:
+        VKAppID: ''
+        VKAppSecret: ''

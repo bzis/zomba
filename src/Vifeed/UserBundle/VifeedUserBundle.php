@@ -4,6 +4,7 @@ namespace Vifeed\UserBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Vifeed\UserBundle\DependencyInjection\Compiler\OverrideServiceCompilerPass;
 use Vifeed\UserBundle\DependencyInjection\Security\WsseFactory;
 
 class VifeedUserBundle extends Bundle
@@ -25,5 +26,8 @@ class VifeedUserBundle extends Bundle
 
         $extension = $container->getExtension('security');
         $extension->addSecurityListenerFactory(new WsseFactory());
+        $container->addCompilerPass(new OverrideServiceCompilerPass());
     }
+
+
 }

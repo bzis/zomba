@@ -3,6 +3,9 @@
 namespace Vifeed\UserBundle\Controller\Api;
 
 use FOS\RestBundle\Controller\FOSRestController;
+use FOS\RestBundle\View\View;
+use Symfony\Component\HttpFoundation\Response;
+use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
 /**
  * Class SecurityController
@@ -11,8 +14,23 @@ use FOS\RestBundle\Controller\FOSRestController;
  */
 class SecurityController extends FOSRestController
 {
-    public function userRegisterAction()
+    /**
+     * Удалить токен и разлогиниться
+     *
+     * @ApiDoc(
+     *     section="Frontend API"
+     * )
+     *
+     * @return Response
+     */
+    public function deleteUsersTokenAction()
     {
+        $tokenManager = $this->container->get('vifeed.user.wsse_token_manager');
+        $tokenManager->deleteUserToken($this->getUser()->getId());
+        $this->get('security.context')->setToken(null);
+        $this->get('request')->getSession()->invalidate();
+        $view = new View('', 204);
 
+        return $this->handleView($view);
     }
 }

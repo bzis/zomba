@@ -19,7 +19,8 @@ framework:
         #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
     trusted_proxies: ~
-    session:         ~
+    session:
+        save_path: %kernel.root_dir%/var/sessions
     fragments:       ~
     http_method_override: true
 
@@ -28,6 +29,8 @@ twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
     exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
+    globals:
+        social: %social%
 
 # Assetic Configuration
 assetic:
@@ -103,4 +106,12 @@ fos_user:
         confirmation:
             enabled:    true
             template:   VifeedUserBundle:Registration:email.html.twig
+
 nelmio_api_doc: ~
+
+snc_redis:
+    clients:
+        default:
+            type: predis
+            alias: default
+            dsn: redis://localhost

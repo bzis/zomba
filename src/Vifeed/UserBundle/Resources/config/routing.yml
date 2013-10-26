@@ -3,17 +3,12 @@ fos_user_registration_confirm:
     defaults:
         _controller: 'FOSUserBundle:Registration:confirm'
 
+user_social_link:
+    path: /user/social/link
+    defaults:
+        _controller: 'VifeedUserBundle:Social:linkUser'
+
 fos_user_registration_check_email:
     pattern: /check-email
     defaults:
         _controller: 'FOSUserBundle:Registration:checkEmail'
-
-fos_user_registration_confirmed:
-    pattern: /confirmed
-    defaults:
-        _controller: 'FOSUserBundle:Registration:confirmed'
-
-fos_user_security_logout:
-    pattern: /logout
-    defaults:
-        _controller: 'FOSUserBundle:Security:logout'

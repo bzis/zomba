@@ -71,7 +71,7 @@ class User extends BaseUser
 
     /**
      * @var string
-     * 
+     *
      * @Assert\NotBlank(
      *      message = "fos_user.password.blank",
      *      groups = {"PublisherRegistration"}
@@ -84,6 +84,18 @@ class User extends BaseUser
      * )
      */
     protected $plainPassword;
+
+    /**
+     * @var string
+     * @ORM\Column(type="string", name="vk_id", nullable=true)
+     */
+    protected $vkID;
+
+    /**
+     * @var array
+     * @ORM\Column(type="array", name="social_data", nullable=true, length=65532)
+     */
+    protected $socialData;
 
 
     /**
@@ -106,6 +118,80 @@ class User extends BaseUser
 
         return $this;
     }
+
+    /**
+     * @param string $provider
+     *
+     * @static
+     *
+     * @return string
+     */
+    public static function getSocialIdName($provider)
+    {
+        switch ($provider) {
+            case 'VK':
+                return 'vkID';
+        }
+        throw new \Exception('Неизвестный провайдер ' . $provider);
+    }
+
+    /**
+     * @param string $provider
+     * @param mixed  $id
+     *
+     * @return User
+     */
+    public function setSocialID($provider, $id)
+    {
+        $var        = $this->getSocialIdName($provider);
+        $this->$var = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $provider
+     *
+     * @return bool
+     */
+    public function getSocialDataByProvider($provider)
+    {
+        $data = $this->getSocialData();
+        if (isset($data[$provider])) {
+            return $data[$provider];
+        }
+
+        return false;
+    }
+
+    /**
+     * @param string $provider
+     * @param mixed  $socialData
+     */
+    public function setSocialDataByProvider($provider, $socialData)
+    {
+        $data = $this->getSocialData();
+        if (!is_array($data)) {
+            $data = array();
+        }
+        $data[$provider] = $socialData;
+        $this->setSocialData($data);
+    }
+
+    /**
+     * @param string $provider
+     */
+    public function removeSocialDataByProvider($provider)
+    {
+        $data = $this->getSocialData();
+        if (isset($data[$provider])) {
+            unset($data[$provider]);
+        }
+
+        $this->setSocialData($data);
+    }
+
+
 
 
     /**
@@ -136,5 +222,46 @@ class User extends BaseUser
         $this->type = $type;
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVkID()
+    {
+        return $this->vkID;
+    }
+
+    /**
+     * @param string $vkID
+     *
+     * @return User
+     */
+    public function setVkID($vkID)
+    {
+        $this->vkID = $vkID;
+
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function getSocialData()
+    {
+        return $this->socialData;
+    }
+
+    /**
+     * @param array $socialData
+     *
+     * @return User
+     */
+    private function setSocialData($socialData)
+    {
+        $this->socialData = $socialData;
+
+        return $this;
+
     }
 }

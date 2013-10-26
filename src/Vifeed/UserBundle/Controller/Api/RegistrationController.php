@@ -11,6 +11,7 @@ use FOS\UserBundle\FOSUserEvents;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Vifeed\UserBundle\Entity\User;
 use Vifeed\UserBundle\Form\AdvertiserRegistrationType;
 use Vifeed\UserBundle\Form\PublisherRegistrationType;
@@ -31,7 +32,7 @@ class RegistrationController extends FOSRestController
      *
      * @return Response
      */
-    public function putUserRegisterAction()
+    public function putUsersAction()
     {
         if (is_array($this->getRequest()->get('publisher_registration'))) {
             $type = User::TYPE_PUBLISHER;
@@ -67,6 +68,7 @@ class RegistrationController extends FOSRestController
 
             $view = new View($user, 201);
 
+            // todo: нужно ли всегда кидать этот эвент? После него пользователь аутентицируется
             $dispatcher->dispatch(
                 FOSUserEvents::REGISTRATION_COMPLETED,
                 new FilterUserResponseEvent($user, $request, new Response())
@@ -80,13 +82,48 @@ class RegistrationController extends FOSRestController
     }
 
     /**
+     * Подтвердить email
      *
-     * @param \Vifeed\UserBundle\Entity\User $user
+     * @ApiDoc(
+     *     section="Frontend API"
+     * )
      *
-     * @return User
+     * @return Response
      */
-    private function prepareUserForRegistration(User $user)
+    public function patchUsersConfirmAction()
     {
+        $token = $this->getRequest()->get('token');
 
+        /** @var $userManager \FOS\UserBundle\Model\UserManagerInterface */
+        $userManager = $this->container->get('fos_user.user_manager');
+
+        $user = $userManager->findUserByConfirmationToken($token);
+
+        if (null === $user) {
+            throw new NotFoundHttpException(sprintf('The user with confirmation token "%s" does not exist', $token));
+        }
+
+        /** @var $dispatcher \Symfony\Component\EventDispatcher\EventDispatcherInterface */
+        $dispatcher = $this->container->get('event_dispatcher');
+
+        $user->setConfirmationToken(null);
+        $user->setEnabled(true);
+
+        $event = new GetResponseUserEvent($user, $this->getRequest());
+        $dispatcher->dispatch(FOSUserEvents::REGISTRATION_CONFIRM, $event);
+
+        $userManager->updateUser($user);
+
+        $response = ($event->getResponse() === null) ? new Response() : $event->getResponse();
+
+        $dispatcher->dispatch(
+            FOSUserEvents::REGISTRATION_CONFIRMED,
+            new FilterUserResponseEvent($user, $this->getRequest(), $response)
+        );
+
+        $view = new View('', 200);
+
+        return $this->handleView($view);
     }
+
 }

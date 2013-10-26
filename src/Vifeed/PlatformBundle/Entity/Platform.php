@@ -11,6 +11,12 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table(name="platform")
  * @ORM\Entity
+ * @ORM\InheritanceType("SINGLE_TABLE")
+ * @ORM\DiscriminatorColumn(name="discr", type="string")
+ * @ORM\DiscriminatorMap({
+ *      "platform" = "Platform",
+ *      "vk" = "VkPlatform"
+ * })
  */
 class Platform
 {

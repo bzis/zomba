@@ -8,6 +8,16 @@ users_registration:
     resource: '@VifeedUserBundle/Controller/Api/RegistrationController.php'
     name_prefix: api_
 
+users_social:
+    type: rest
+    resource: '@VifeedUserBundle/Controller/Api/SocialController.php'
+    name_prefix: api_
+
+users:
+    type: rest
+    resource: '@VifeedUserBundle/Controller/Api/UserController.php'
+    name_prefix: api_
+
 api_fos_user_security_check:
     path: /user/login_check
     defaults:  { _controller: FOSUserBundle:Security:check }

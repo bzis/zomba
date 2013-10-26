@@ -16,3 +16,36 @@ _main:
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
     prefix:   /api_doc
+
+## временные роуты для тестирования, пока нет фронтенда
+fos_user_registration_register:
+    pattern: '/register'
+    defaults:
+        _controller: 'FOSUserBundle:Registration:register'
+
+fos_user_security_login:
+    pattern: '/login'
+    defaults:
+        _controller: 'FOSUserBundle:Security:login'
+
+fos_user_security_check:
+    pattern: '/login_check'
+    methods:  [POST]
+    defaults:
+        _controller: 'FOSUserBundle:Security:check'
+
+
+fos_user_registration_check_email:
+    pattern: /check-email
+    defaults:
+        _controller: 'FOSUserBundle:Registration:checkEmail'
+
+fos_user_registration_confirmed:
+    pattern: /confirmed
+    defaults:
+        _controller: 'FOSUserBundle:Registration:confirmed'
+
+fos_user_security_logout:
+    pattern: /logout
+    defaults:
+        _controller: 'FOSUserBundle:Security:logout'
