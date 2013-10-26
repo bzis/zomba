@@ -1,3 +1,7 @@
+vifeed_public:
+    resource: "@VifeedPublicBundle/Resources/config/routing.yml"
+    prefix:   /
+
 campaign_rest:
   type: rest
   resource: "@VifeedCampaignBundle/Resources/config/routing_rest.yml"
