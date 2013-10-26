@@ -14,3 +14,6 @@ default:
 users_frontend:
   resource: "@VifeedUserBundle/Resources/config/routing_frontend.yml"
   prefix: /users
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

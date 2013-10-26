@@ -17,13 +17,14 @@
 
     {% javascripts
 
+      '@FOSJsRoutingBundle/Resources/public/js/router.js'
       '@VifeedUserBundle/Resources/assets/js/*/*/*.js'
-
       '@VifeedUserBundle/Resources/assets/js/*/*.js'
       '@VifeedUserBundle/Resources/assets/js/*.js'
     %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}    
+    <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
     <!-- core CSS -->
 	{% stylesheets output='css/*.css' filter='cssrewrite,?yui_css'
         '@VifeedPublicBundle/Resources/assets/sass/bootstrap-override.scss'
