@@ -1,0 +1,30 @@
+<section ng-hide="user.isAuthenticated()">
+  <div>
+  <form class="form-signin">
+    <h3 class="form-signin-heading">Пожалуйста авторизируйтесь.</h3>
+
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+      <input class="form-control input-lg" type="email" placeholder="Email" autofocus ng-model="username">
+    </div>
+    <br />
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon"><i class="fa fa-key"></i></span>
+      <input class="form-control" type="password" placeholder="Пароль" ng-model="password">
+    </div>
+    <p id="error-message" ng-show="message">{[{message}]}</p>
+    <label class="checkbox">
+      <input type="checkbox" value="remember-me"> Запомнить меня
+    </label>
+    <button class="btn btn-lg btn-primary btn-block uppercase" type="submit" ng-click="signinButtonClick()"><strong>Войти</strong></button>
+  </form>
+
+  <header>
+    <h2>Principal Information</h2>
+  </header>
+  <ul>
+    <li>Authenticated: <span id="user-is-authenticated">{[{user.isAuthenticated()}]}</span></li>
+    <li>Username: <span id="user-name">{[{user.identity().name()}]}</span></li>
+    <li>ID: <span id="user-id">{[{user.identity().id()}]}</span></li>
+  </ul>
+</section>
