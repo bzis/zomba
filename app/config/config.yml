@@ -57,6 +57,9 @@ assetic:
         #https://github.com/angular-ui/bootstrap/
         angular_ui_bootstrap:
             inputs:
+                #templates
+                - %kernel.root_dir%/../tmp/templates.js
+                #tabs
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/tabs/tabs.js
 
 # Doctrine Configuration
