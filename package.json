@@ -6,7 +6,10 @@
   "dependencies": {
     "grunt": "~0.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-html2js": "~0.1.8"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
