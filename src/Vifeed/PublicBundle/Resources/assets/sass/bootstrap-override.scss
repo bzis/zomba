@@ -113,4 +113,9 @@ body {
 	}
 }
 
+//fix strang bug http://uploadr.obnovlenie.ru/uploads/lazzycoder-2013-10-27-221123.png
+.input-group-lg .input-lg {
+	height: 45px !important;
+}
+
 @import "carousel";

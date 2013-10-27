@@ -15,19 +15,15 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
-    {% javascripts
-
+    {% javascripts output='js/*.js' filter="?closure"
       '@FOSJsRoutingBundle/Resources/public/js/router.js'
-      '@VifeedUserBundle/Resources/assets/js/*/*/*.js'
-      '@VifeedUserBundle/Resources/assets/js/*/*.js'
-      '@VifeedUserBundle/Resources/assets/js/*.js'
     %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}    
+    {% endjavascripts %}
     <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
     <!-- core CSS -->
 	{% stylesheets output='css/*.css' filter='cssrewrite,?yui_css'
-        '@VifeedPublicBundle/Resources/assets/sass/bootstrap-override.scss'
+        '@VifeedPublicBundle/Resources/assets/sass/main.scss'
 	%}
 	<link rel="stylesheet" href="{{ asset_url }}" />
 	{% endstylesheets %}

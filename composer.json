@@ -45,8 +45,8 @@
         "jlong/sass-twitter-bootstrap": "dev-master",
         "snc/redis-bundle": "1.1.x-dev",
         "predis/predis": "0.8.x-dev",
-        "friendsofsymfony/jsrouting-bundle": "~1.1"
-
+        "friendsofsymfony/jsrouting-bundle": "~1.1",
+        "fortawesome/font-awesome": "4.0.x-dev"
     },
     "require-dev": {
     },

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5a99c61a966f23ebe5627515bf18ed80",
+    "hash": "b5da696898b28927cb492aff11eaf147",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -897,6 +897,54 @@
                 "orm"
             ],
             "time": "2013-05-11 07:51:12"
+        },
+        {
+            "name": "fortawesome/font-awesome",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "4e92eeb8ec7c757b74fc60b6ac8cdef937e0614f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/4e92eeb8ec7c757b74fc60b6ac8cdef937e0614f",
+                "reference": "4e92eeb8ec7c757b74fc60b6ac8cdef937e0614f",
+                "shasum": ""
+            },
+            "require-dev": {
+                "jekyll": "1.0.2",
+                "lessc": "1.4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OFL-1.1",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Gandy",
+                    "email": "dave@fontawesome.io",
+                    "homepage": "http://twitter.com/davegandy",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The iconic font designed for Bootstrap",
+            "homepage": "http://fontawesome.io/",
+            "keywords": [
+                "FontAwesome",
+                "awesome",
+                "bootstrap",
+                "font",
+                "icon"
+            ],
+            "time": "2013-10-23 14:42:27"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -2733,7 +2781,8 @@
         "sensio/buzz-bundle": 20,
         "jlong/sass-twitter-bootstrap": 20,
         "snc/redis-bundle": 20,
-        "predis/predis": 20
+        "predis/predis": 20,
+        "fortawesome/font-awesome": 20
     },
     "platform": {
         "php": ">=5.3.3"

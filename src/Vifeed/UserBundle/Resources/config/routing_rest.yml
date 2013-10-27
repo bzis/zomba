@@ -22,3 +22,5 @@ api_fos_user_security_check:
     path: /user/login_check
     defaults:  { _controller: FOSUserBundle:Security:check }
     methods:  [POST]
+    options:
+        expose: true
