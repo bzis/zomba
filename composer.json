@@ -1,4 +1,19 @@
 {
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "angular-ui/bootstrap",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/angular-ui/bootstrap.git",
+                    "reference": "bootstrap3_bis2"
+                }
+            }
+        }
+    ],
+
     "autoload": {
         "psr-0": {
             "": "src/"
@@ -16,7 +31,8 @@
             "file": "app/config/parameters.yml"
         },
         "symfony-app-dir": "app",
-        "symfony-web-dir": "web"
+        "symfony-web-dir": "web",
+        "symfony-assets-install": "relative"
     },
     "license": "MIT",
     "minimum-stability": "stable",
@@ -46,7 +62,8 @@
         "snc/redis-bundle": "1.1.x-dev",
         "predis/predis": "0.8.x-dev",
         "friendsofsymfony/jsrouting-bundle": "~1.1",
-        "fortawesome/font-awesome": "4.0.x-dev"
+        "fortawesome/font-awesome": "4.0.x-dev",
+        "angular-ui/bootstrap": "dev-master"
     },
     "require-dev": {
     },

@@ -3,8 +3,18 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b5da696898b28927cb492aff11eaf147",
+    "hash": "97ae81fdd47b8c742a42018d9e4ca300",
     "packages": [
+        {
+            "name": "angular-ui/bootstrap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/angular-ui/bootstrap.git",
+                "reference": "bootstrap3_bis2"
+            },
+            "type": "library"
+        },
         {
             "name": "dflydev/markdown",
             "version": "v1.0.3",
@@ -2782,7 +2792,8 @@
         "jlong/sass-twitter-bootstrap": 20,
         "snc/redis-bundle": 20,
         "predis/predis": 20,
-        "fortawesome/font-awesome": 20
+        "fortawesome/font-awesome": 20,
+        "angular-ui/bootstrap": 20
     },
     "platform": {
         "php": ">=5.3.3"

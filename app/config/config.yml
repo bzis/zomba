@@ -51,6 +51,14 @@ assetic:
         #    jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar
     read_from:        %assetic.cdn_url%
     write_to:         %assetic.cdn_path%
+    assets:
+        #Angular UI ~ Bootstrap
+        #http://angular-ui.github.io/bootstrap/
+        #https://github.com/angular-ui/bootstrap/
+        angular_ui_bootstrap:
+            inputs:
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/tabs/tabs.js
+
 # Doctrine Configuration
 doctrine:
     dbal:
