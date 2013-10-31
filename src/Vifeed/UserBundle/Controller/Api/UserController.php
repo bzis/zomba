@@ -33,7 +33,6 @@ class UserController extends FOSRestController
         $userManager = $this->container->get('fos_user.user_manager');
         $user = $userManager->findUserBy(['id' => $id]);
 
-        var_dump($id);
         if (!$user instanceof User) {
             throw new NotFoundHttpException('User not found');
         }
