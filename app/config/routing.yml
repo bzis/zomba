@@ -8,4 +8,4 @@ users:
 default:
   pattern: /
   defaults:
-    _controller: 'VifeedSystemBundle:default:index'
+    _controller: 'VifeedSystemBundle:Default:index'
