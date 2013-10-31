@@ -10,4 +10,6 @@ before_script: composer install -n
 
 script:
   - phpunit -c app
+
+after_failure:
   - echo log file; cat app/logs/test.log
