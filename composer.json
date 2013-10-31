@@ -5,7 +5,10 @@
         }
     },
     "config": {
-        "bin-dir": "bin"
+        "bin-dir": "bin",
+        "github-oauth": {
+            "github.com": "1e604348eb7c6731a692a5c3bd63967a55332e13"
+        }
     },
     "description": "The \"Symfony Standard Edition\" distribution",
     "extra": {
