@@ -29,7 +29,23 @@ fos_user_security_login:
         _controller: 'FOSUserBundle:Security:login'
 
 fos_user_security_check:
-    pattern: '/api/user/login_check'
+    pattern: '/login_check'
     methods:  [POST]
     defaults:
         _controller: 'FOSUserBundle:Security:check'
+
+
+fos_user_registration_check_email:
+    pattern: /check-email
+    defaults:
+        _controller: 'FOSUserBundle:Registration:checkEmail'
+
+fos_user_registration_confirmed:
+    pattern: /confirmed
+    defaults:
+        _controller: 'FOSUserBundle:Registration:confirmed'
+
+fos_user_security_logout:
+    pattern: /logout
+    defaults:
+        _controller: 'FOSUserBundle:Security:logout'

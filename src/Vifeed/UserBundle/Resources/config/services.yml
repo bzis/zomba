@@ -1,7 +1,7 @@
 services:
     wsse.security.authentication.provider:
         class:  Vifeed\UserBundle\Security\Authentication\Provider\WsseProvider
-        arguments: ["", "%kernel.cache_dir%/security/nonces"]
+        arguments: ["", "@snc_redis.default", "@vifeed.user.wsse_token_manager"]
 
     wsse.security.authentication.listener:
         class:  Vifeed\UserBundle\Security\Firewall\WsseListener
@@ -9,6 +9,7 @@ services:
 
     vifeed.security.authentication.success_handler:
         class:  Vifeed\UserBundle\EventListener\UserAuthenticationSuccessHandler
+        arguments: ["@vifeed.user.wsse_token_manager"]
         tags:
             - { name: 'monolog.logger', channel: 'security' }
 
@@ -17,8 +18,16 @@ services:
         tags:
             - { name: 'monolog.logger', channel: 'security' }
 
+    vifeed.user.registration.completed_listener:
+        class: Vifeed\UserBundle\EventListener\UserRegistrationCompletedListener
+        tags:
+            - { name: 'kernel.event_subscriber' }
+
     vifeed.oauth.provider.factory:
         class: Vifeed\UserBundle\OAuth\OAuthProviderFactory
-        arguments:
-            - %social%
-            - '@router'
+        arguments: [%social%, '@router']
+
+    vifeed.user.wsse_token_manager:
+        class: Vifeed\UserBundle\Manager\WsseTokenManager
+        arguments: ["@snc_redis.default"]
+
