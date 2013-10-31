@@ -13,3 +13,6 @@ script:
 
 after_failure:
   - echo log file; cat app/logs/test.log
+
+notifications:
+  flowdock: 99c0b1ff68ca7ff45786742d6430d6a7
