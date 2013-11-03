@@ -9,7 +9,7 @@ vifeed_public:
 default:
   pattern: /
   defaults:
-    _controller: 'VifeedSystemBundle:default:index'
+    _controller: 'VifeedSystemBundle:Default:index'
 
 users_frontend:
   resource: "@VifeedUserBundle/Resources/config/routing_frontend.yml"

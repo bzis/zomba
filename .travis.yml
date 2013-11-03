@@ -1,10 +1,18 @@
 language: php
 
 php:
-  - 5.3.3
-  - 5.3
   - 5.4
+
+services:
+  - redis-server
 
 before_script: composer install -n
 
-script: phpunit -c app
+script:
+  - phpunit -c app
+
+after_failure:
+  - echo log file; cat app/logs/test.log
+
+notifications:
+  flowdock: 99c0b1ff68ca7ff45786742d6430d6a7

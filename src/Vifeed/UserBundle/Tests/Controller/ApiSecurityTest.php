@@ -16,6 +16,8 @@ class ApiSecurityTest extends ApiTestCase
      * @param array $parameters
      *
      * @dataProvider putUsersProvider
+     *
+     * todo: если рекламодатель зарегался, то он автоматом авторизуется, и у него должен быть токен
      */
     public function testPutUsers($data, $code, $errors = null, $parameters = array())
     {

@@ -18,10 +18,10 @@ services:
         tags:
             - { name: 'monolog.logger', channel: 'security' }
 
-    vifeed.user.registration.completed_listener:
-        class: Vifeed\UserBundle\EventListener\UserRegistrationCompletedListener
-        tags:
-            - { name: 'kernel.event_subscriber' }
+#    vifeed.user.registration.completed_listener:
+#        class: Vifeed\UserBundle\EventListener\UserRegistrationCompletedListener
+#        tags:
+#            - { name: 'kernel.event_subscriber' }
 
     vifeed.oauth.provider.factory:
         class: Vifeed\UserBundle\OAuth\OAuthProviderFactory
@@ -31,3 +31,7 @@ services:
         class: Vifeed\UserBundle\Manager\WsseTokenManager
         arguments: ["@snc_redis.default"]
 
+#    fos.user.registration.controller:
+#        class:     FOS\UserBundle\Controller\RegistrationController
+#        calls:
+#            - [setContainer, ["@service_container"]]
