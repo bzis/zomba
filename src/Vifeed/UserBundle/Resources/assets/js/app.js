@@ -12,7 +12,7 @@
 //   //   $interpolateProvider.endSymbol('}]}');
 // });
 
-var userApp = angular.module('userApp', ['http-auth-interceptor', 'authentication', 'ui.bootstrap.tabs', 'ui-templates'], function($interpolateProvider) {
+var userApp = angular.module('userApp', ['http-auth-interceptor', 'authentication', 'ui.bootstrap.tabs', 'templates-angularUiBootstrapTabs'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('{[{');
     $interpolateProvider.endSymbol('}]}');
 }).config(['$routeProvider', function($routeProvider) {

@@ -2,13 +2,13 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 	  html2js: {
-	  	module: 'ui-templates',
+	  	module: 'templates',
 	    options: {
 		    rename: function (modulePath) {
 		      return modulePath.replace('../vendor/angular-ui/bootstrap/', '');
 		    }
 	    },
-	    main: {
+	    angularUiBootstrapTabs: {
 	      src: ['vendor/angular-ui/bootstrap/template/tabs/*.html'],
 	      dest: 'tmp/templates.js'
 	    },
