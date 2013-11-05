@@ -16,12 +16,13 @@ $kernel = new AppKernel('test', true);
 $kernel->boot();
 
 $application = new Application($kernel);
-
+/** @var Doctrine\DBAL\Connection $connection */
 $connection = $application->getKernel()->getContainer()->get('doctrine')->getConnection();
 
+$dbh = new PDO('mysql:host=' . $connection->getHost() . ';port=' . $connection->getPort(), $connection->getUsername(), $connection->getPassword());
 // проверяем, есть ли база
-$query = mysql_query("SHOW DATABASES LIKE '".$connection->getDatabase()."';");
-$result = mysql_fetch_array($query);
+$result = $dbh->query("SHOW DATABASES LIKE '" . $connection->getDatabase() . "';")->fetchColumn();
+unset($dbh);
 if ($result !== false) {
     $command = new DropDatabaseDoctrineCommand();
     $application->add($command);
