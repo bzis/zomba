@@ -30,13 +30,14 @@ class ApiSecurityTest extends ApiTestCase
         $csrf = self::$client->getContainer()->get('form.csrf_provider');
         $token = $csrf->generateCsrfToken('registration');
         $key = array_keys($data)[0];
-        $data[$key]['_token'] = $token;
+//        $data[$key]['_token'] = $token;
 
         self::$client->request('PUT', $url, $data);
 
-        $this->assertEquals($code, self::$client->getResponse()->getStatusCode());
-
         $response = self::$client->getResponse();
+
+        $this->assertEquals($code, $response->getStatusCode());
+
         $isAuthenticated = self::$client->getContainer()->get('security.context')->isGranted('ROLE_USER');
 
         if ($errors !== null) {
