@@ -16,12 +16,12 @@ $kernel = new AppKernel('test', true);
 $kernel->boot();
 
 $application = new Application($kernel);
-
+/** @var Doctrine\DBAL\Connection $connection */
 $connection = $application->getKernel()->getContainer()->get('doctrine')->getConnection();
 
 // проверяем, есть ли база
-$query = mysql_query("SHOW DATABASES LIKE '".$connection->getDatabase()."';");
-$result = mysql_fetch_array($query);
+$result = $connection->fetchColumn("SHOW DATABASES LIKE '".$connection->getDatabase()."';");
+
 if ($result !== false) {
     $command = new DropDatabaseDoctrineCommand();
     $application->add($command);
