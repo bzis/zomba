@@ -1,3 +1,13 @@
 user:
     pattern:  /
     defaults: { _controller: VifeedUserBundle:Frontend\User:index }
+
+fos_user_registration_confirm:
+    pattern: '/confirm/{token}'
+    defaults:
+        _controller: 'FOSUserBundle:Registration:confirm'
+
+fos_user_registration_check_email:
+    pattern: /check-email
+    defaults:
+        _controller: 'FOSUserBundle:Registration:checkEmail'
