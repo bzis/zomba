@@ -11,3 +11,8 @@
 /bin/
 /composer.phar
 atlassian-ide-plugin.xml
+web/dev
+tmp
+node_modules
+module
+app/Resources/java

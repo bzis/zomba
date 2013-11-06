@@ -42,7 +42,7 @@ assetic:
         sass: ~
         compass:
             apply_to: "\.(sass|scss)$"
-            bin: /usr/local/bin/compass
+            bin: %assetic.filter.compass.bin%
         cssrewrite:
             apply_to: "\.scss$"
         closure:
