@@ -28,6 +28,7 @@ class AdvertiserRegistrationType extends AbstractType
                  'data_class'        => 'Vifeed\UserBundle\Entity\User',
                  'validation_groups' => array('AdvertiserRegistration'),
                  'intention'         => 'registration',
+                 'csrf_protection'   => false
             )
         );
     }
