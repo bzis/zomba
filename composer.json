@@ -48,7 +48,8 @@
         "jlong/sass-twitter-bootstrap": "dev-master",
         "snc/redis-bundle": "1.1.x-dev",
         "predis/predis": "0.8.x-dev",
-        "jms/di-extra-bundle": "dev-master"
+        "jms/di-extra-bundle": "dev-master",
+        "jms/payment-core-bundle": "master-dev"
 
     },
     "require-dev": {
