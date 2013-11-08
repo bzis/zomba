@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d4abd46508afc391f20676e2c645681e",
+    "hash": "cdbca78eb5db6382111b9e4c4ef3a1cb",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -1430,6 +1430,73 @@
             "time": "2012-11-18 18:08:43"
         },
         {
+            "name": "jms/payment-core-bundle",
+            "version": "dev-master",
+            "target-dir": "JMS/Payment/CoreBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/JMSPaymentCoreBundle.git",
+                "reference": "d14e4801ae94588cb690484e0b88fb3197804be5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/d14e4801ae94588cb690484e0b88fb3197804be5",
+                "reference": "d14e4801ae94588cb690484e0b88fb3197804be5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mcrypt": "*",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "~2.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "*",
+                "doctrine/orm": "*",
+                "jms/aop-bundle": "*",
+                "jms/di-extra-bundle": "*",
+                "jms/payment-paypal-bundle": "*@dev",
+                "sensio/framework-extra-bundle": "*",
+                "symfony/browser-kit": "*",
+                "symfony/class-loader": "*",
+                "symfony/css-selector": "*",
+                "symfony/finder": "*",
+                "symfony/form": "*",
+                "symfony/process": "*",
+                "symfony/twig-bundle": "*",
+                "symfony/validator": "*",
+                "symfony/yaml": "*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "JMS\\Payment\\CoreBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "http://jmsyst.com",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "This bundle is providing the foundation for various payment plugins.",
+            "homepage": "http://jmsyst.com/bundles/JMSPaymentCoreBundle",
+            "keywords": [
+                "payment"
+            ],
+            "time": "2013-11-01 13:01:45"
+        },
+        {
             "name": "jms/serializer",
             "version": "0.13.0",
             "source": {
@@ -2805,7 +2872,8 @@
         "jlong/sass-twitter-bootstrap": 20,
         "snc/redis-bundle": 20,
         "predis/predis": 20,
-        "jms/di-extra-bundle": 20
+        "jms/di-extra-bundle": 20,
+        "jms/payment-core-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
