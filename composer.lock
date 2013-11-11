@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0da139f72263bc49f7fce3c7784e8222",
+    "hash": "83bf8b167d6491fc03559f59944ec832",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -785,12 +785,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "0f5a110a1e6ae413e425912e6601643f91b069c1"
+                "reference": "37aacdae6507faad03c3df1624e7d3a6e6c1b388"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/0f5a110a1e6ae413e425912e6601643f91b069c1",
-                "reference": "0f5a110a1e6ae413e425912e6601643f91b069c1",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/37aacdae6507faad03c3df1624e7d3a6e6c1b388",
+                "reference": "37aacdae6507faad03c3df1624e7d3a6e6c1b388",
                 "shasum": ""
             },
             "require": {
@@ -837,7 +837,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2013-11-03 20:54:43"
+            "time": "2013-11-10 05:33:50"
         },
         {
             "name": "doctrine/orm",
@@ -1095,12 +1095,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "0cb03029c7c1c833a11c7bebf30125276f0aa5b9"
+                "reference": "e543600e49216765315610b6281349ee86dfe87e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/0cb03029c7c1c833a11c7bebf30125276f0aa5b9",
-                "reference": "0cb03029c7c1c833a11c7bebf30125276f0aa5b9",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/e543600e49216765315610b6281349ee86dfe87e",
+                "reference": "e543600e49216765315610b6281349ee86dfe87e",
                 "shasum": ""
             },
             "require": {
@@ -1155,7 +1155,17 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2013-10-28 10:50:07"
+            "time": "2013-11-07 03:54:10"
+        },
+        {
+            "name": "google-code/crypto-js",
+            "version": "3.1.2",
+            "source": {
+                "type": "svn",
+                "url": "http://crypto-js.googlecode.com/svn/tags",
+                "reference": "3.1.2"
+            },
+            "type": "library"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1263,15 +1273,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jlong/sass-bootstrap.git",
-                "reference": "0c9ad8f0a09783c18f57e30de499fcf0d0fcff56"
+                "reference": "2b2bd7cce7693e25518cace258a89ad9621169d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jlong/sass-bootstrap/zipball/0c9ad8f0a09783c18f57e30de499fcf0d0fcff56",
-                "reference": "0c9ad8f0a09783c18f57e30de499fcf0d0fcff56",
+                "url": "https://api.github.com/repos/jlong/sass-bootstrap/zipball/2b2bd7cce7693e25518cace258a89ad9621169d0",
+                "reference": "2b2bd7cce7693e25518cace258a89ad9621169d0",
                 "shasum": ""
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
@@ -1296,7 +1311,7 @@
                 "css",
                 "sass"
             ],
-            "time": "2013-11-03 18:46:02"
+            "time": "2013-11-10 13:07:00"
         },
         {
             "name": "jms/metadata",
@@ -1710,12 +1725,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "769b435cf3612f263883d4f0669b1c5654ab058f"
+                "reference": "8728e825eaf89a5e1234f0ec6e4040d83b645faa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/769b435cf3612f263883d4f0669b1c5654ab058f",
-                "reference": "769b435cf3612f263883d4f0669b1c5654ab058f",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/8728e825eaf89a5e1234f0ec6e4040d83b645faa",
+                "reference": "8728e825eaf89a5e1234f0ec6e4040d83b645faa",
                 "shasum": ""
             },
             "require": {
@@ -1776,7 +1791,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2013-10-29 13:41:13"
+            "time": "2013-11-07 01:53:53"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -1883,12 +1898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "695b6dd7b315a828a778a421037c85e718fb9054"
+                "reference": "b1a51b2ef900c28f389cc7ba498f3698b9749ce6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/695b6dd7b315a828a778a421037c85e718fb9054",
-                "reference": "695b6dd7b315a828a778a421037c85e718fb9054",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/b1a51b2ef900c28f389cc7ba498f3698b9749ce6",
+                "reference": "b1a51b2ef900c28f389cc7ba498f3698b9749ce6",
                 "shasum": ""
             },
             "require": {
@@ -1922,7 +1937,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2013-11-02 17:52:43"
+            "time": "2013-11-09 19:00:33"
         },
         {
             "name": "psr/log",
