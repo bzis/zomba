@@ -100,7 +100,7 @@ class User extends BaseUser
     /**
      * @ORM\Column(type="decimal", precision = 2)
      */
-    protected $balance;
+    protected $balance = 0;
 
 
     /**

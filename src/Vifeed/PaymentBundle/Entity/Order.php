@@ -12,6 +12,7 @@ use Vifeed\UserBundle\Entity\User;
  *
  * @ORM\Table(name="payment_order")
  * @ORM\Entity
+ * @ORM\HasLifecycleCallbacks
  */
 class Order
 {
@@ -33,20 +34,31 @@ class Order
 
     /**
      * @ORM\OneToOne(targetEntity="JMS\Payment\CoreBundle\Entity\PaymentInstruction")
+     * @ORM\JoinColumn(name="payment_instruction_id", referencedColumnName="id")
+
      */
     private $paymentInstruction;
 
     /**
-     * @ORM\Column(type="decimal", precision = 2)
+     * @ORM\Column(type="decimal", precision = 9, scale = 2)
      */
     private $amount;
 
     /**
      * @ORM\ManyToOne(targetEntity="Vifeed\UserBundle\Entity\User")
-     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="CASCADE")
      **/
     private $user;
 
+
+    /**
+     * PrePersist
+     *  @ORM\PrePersist
+     */
+    public function prePersist()
+    {
+        $this->createdAt = new \DateTime();
+    }
 
 
     /**
