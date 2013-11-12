@@ -61,7 +61,11 @@ assetic:
                 - %kernel.root_dir%/../tmp/templates.js
                 #tabs
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/tabs/tabs.js
-
+        cryptoJs:
+            inputs:
+                - %kernel.root_dir%/../vendor/google-code/crypto-js/build/rollups/sha1.js
+                - %kernel.root_dir%/../vendor/google-code/crypto-js/build/rollups/md5.js
+                - %kernel.root_dir%/../vendor/google-code/crypto-js/build/components/enc-base64-min.js
 # Doctrine Configuration
 doctrine:
     dbal:

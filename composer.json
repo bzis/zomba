@@ -11,6 +11,18 @@
                     "reference": "bootstrap3_bis2"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "google-code/crypto-js",
+                "version": "3.1.2",
+                "source": {
+                    "type": "svn",
+                    "url": "http://crypto-js.googlecode.com/svn/tags",
+                    "reference": "3.1.2"
+                }
+            }
         }
     ],
 
@@ -66,7 +78,8 @@
         "predis/predis": "0.8.x-dev",
         "friendsofsymfony/jsrouting-bundle": "~1.1",
         "fortawesome/font-awesome": "4.0.x-dev",
-        "angular-ui/bootstrap": "dev-master"
+        "angular-ui/bootstrap": "dev-master",
+        "google-code/crypto-js": "3.1.2"
     },
     "require-dev": {
     },
