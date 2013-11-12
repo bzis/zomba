@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+
+    <parameters>
+        <parameter key="payment.form.my_payment_type.class">Vifeed\PaymentBundle\Form\MyPaymentType</parameter>
+        <parameter key="payment.plugin.my.class">Vifeed\PaymentBundle\Plugin\MyPlugin</parameter>
+    </parameters>
+
+    <services>
+            <service id="payment.form.my_payment_type" class="%payment.form.my_payment_type.class%">
+            <tag name="payment.method_form_type" />
+            <tag name="form.type" alias="my_payment_type" />
+        </service>
+
+        <service id="payment.plugin.my" class="%payment.plugin.my.class%">
+            <tag name="payment.plugin" />
+        </service>
+    </services>
+
+
+
+</container>
