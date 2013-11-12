@@ -50,7 +50,7 @@ class UserAuthenticationSuccessHandler implements AuthenticationSuccessHandlerIn
         );
 
         $response = new JsonResponse($data);
-        $cookie = new Cookie('token', $wsseToken);
+        $cookie = new Cookie('token', $wsseToken); //todo: нужно ли ставить куку?
         $response->headers->setCookie($cookie);
 
         return $response;
