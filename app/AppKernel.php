@@ -26,7 +26,8 @@ class AppKernel extends Kernel
             new Sensio\Bundle\BuzzBundle\SensioBuzzBundle(),
             new Snc\RedisBundle\SncRedisBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
-
+            new JMS\DiExtraBundle\JMSDiExtraBundle($this),
+            new JMS\AopBundle\JMSAopBundle(),
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\VifeedUserBundle(),
             new Vifeed\SystemBundle\VifeedSystemBundle(),

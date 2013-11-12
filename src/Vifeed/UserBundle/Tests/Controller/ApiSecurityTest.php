@@ -63,10 +63,16 @@ class ApiSecurityTest extends ApiTestCase
                 $token = $matches[1];
                 $this->testConfirmation($token);
             }
+
             if (array_key_exists('advertiser_registration', $data)) {
                 $this->assertTrue($isAuthenticated);
+                $wsseToken = $this->getCreatedWsseToken();
+                $this->assertNotNull($wsseToken);
+                $this->assertArrayHasKey('token', $content);
+                $this->assertEquals($content['token'], $wsseToken);
             } else {
                 $this->assertFalse($isAuthenticated);
+                $this->assertArrayNotHasKey('token', $content);
             }
         }
     }
@@ -113,6 +119,10 @@ class ApiSecurityTest extends ApiTestCase
         } else {
             $this->assertEquals(true, $content['success']);
             $this->assertTrue(self::$client->getContainer()->get('security.context')->isGranted('ROLE_USER'));
+            $wsseToken = $this->getCreatedWsseToken();
+            $this->assertNotNull($wsseToken);
+            $this->assertArrayHasKey('token', $content);
+            $this->assertEquals($content['token'], $wsseToken);
         }
 
     }
@@ -156,18 +166,30 @@ class ApiSecurityTest extends ApiTestCase
         $this->sendRequest('GET', self::$router->generate('api_get_tags', array('word' => 'word')));
 
         $userId = self::$client->getContainer()->get('security.context')->getToken()->getUser()->getId();
-        $tokenManager = self::$client->getContainer()->get('vifeed.user.wsse_token_manager');
-
-        $this->assertNotNull($tokenManager->getUserToken($userId));
+        $this->assertNotNull($this->getCreatedWsseToken($userId));
 
         $this->sendRequest('DELETE', $url);
 
         $this->assertEquals(204, self::$client->getResponse()->getStatusCode());
-        $this->assertNull($tokenManager->getUserToken($userId));
+        $this->assertNull($this->getCreatedWsseToken($userId));
 
         // теперь мы не можем получить доступ
         $this->sendRequest('GET', self::$router->generate('api_get_tags', array('word' => 'word')));
         $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+    }
+
+    /**
+     *
+     * @return
+     */
+    private function getCreatedWsseToken($userId = null)
+    {
+        $tokenManager = self::$client->getContainer()->get('vifeed.user.wsse_token_manager');
+        if ($userId === null) {
+            $userId = self::$client->getContainer()->get('security.context')->getToken()->getUser()->getId();
+        }
+
+        return $tokenManager->getUserToken($userId);
     }
 
     /**

@@ -66,7 +66,15 @@ class RegistrationController extends FOSRestController
             $dispatcher->dispatch(FOSUserEvents::REGISTRATION_SUCCESS, $event);
             $userManager->updateUser($user);
 
-            $view = new View($user, 201);
+            $data = array(
+                'success' => true,
+            );
+            if ($user->isEnabled()) {
+                $wsseToken = $this->container->get('vifeed.user.wsse_token_manager')->createUserToken($user->getId());
+                $data['token'] = $wsseToken;
+
+            }
+            $view = new View($data, 201);
 
             // todo: нужно ли всегда кидать этот эвент? После него пользователь аутентицируется
             $dispatcher->dispatch(
