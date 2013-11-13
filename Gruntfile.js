@@ -10,8 +10,12 @@ module.exports = function(grunt) {
 	    },
 	    angularUiBootstrapTabs: {
 	      src: ['vendor/angular-ui/bootstrap/template/tabs/*.html'],
-	      dest: 'tmp/templates.js'
+	      dest: 'tmp/angular-ui-tabs-templates.js'
 	    },
+	    angularUiBootstrapModal: {
+	      src: ['vendor/angular-ui/bootstrap/template/modal/*.html'],
+	      dest: 'tmp/angular-ui-modal-templates.js'
+	    }
 	  },
 	});
 

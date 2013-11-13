@@ -57,10 +57,12 @@ assetic:
         #https://github.com/angular-ui/bootstrap/
         angular_ui_bootstrap:
             inputs:
-                #templates
-                - %kernel.root_dir%/../tmp/templates.js
                 #tabs
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/tabs/tabs.js
+                - %kernel.root_dir%/../tmp/angular-ui-tabs-templates.js
+                #modal
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/modal/modal.js
+                - %kernel.root_dir%/../tmp/angular-ui-modal-templates.js
         cryptoJs:
             inputs:
                 - %kernel.root_dir%/../vendor/google-code/crypto-js/build/rollups/sha1.js
