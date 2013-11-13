@@ -4,6 +4,7 @@ namespace Vifeed\UserBundle\Controller\Api;
 
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
+use JMS\Serializer\SerializationContext;
 use Symfony\Component\HttpFoundation\Response;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -18,9 +19,7 @@ use Vifeed\UserBundle\Entity\User;
 class UserController extends FOSRestController
 {
     /**
-     * Информация о юзере по id
-     *
-     * @param int $id
+     * Информация о юзере
      *
      * @ApiDoc(
      *     section="Frontend API"
@@ -28,18 +27,18 @@ class UserController extends FOSRestController
      *
      * @return Response
      */
-    public function getUserAction($id)
+    public function getUserAction()
     {
-        $userManager = $this->container->get('fos_user.user_manager');
-        $user = $userManager->findUserBy(['id' => $id]);
+        $user = $this->getUser();
 
-        if (!$user instanceof User) {
-            throw new NotFoundHttpException('User not found');
-        }
+        $context = new SerializationContext();
+        $context->setGroups(array('user'));
 
         $view = new View(array(
                               'user' => $user,
                          ));
+
+        $view->setSerializationContext($context);
 
         return $this->handleView($view);
     }
