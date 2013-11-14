@@ -1,4 +1,4 @@
-SignupController = function ($http, $rootScope, $scope, principal, authority, authService) {
+SignupController = function ($http, $rootScope, $scope, principal, authority, authService, TokenHandler) {
     var apiSingupUrl = '/api/users';
 
     $scope.user = principal;
