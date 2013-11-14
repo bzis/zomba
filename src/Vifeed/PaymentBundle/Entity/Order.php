@@ -5,6 +5,8 @@ namespace Vifeed\PaymentBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use JMS\Payment\CoreBundle\Entity\PaymentInstruction;
 use Vifeed\UserBundle\Entity\User;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 
 /**
@@ -41,6 +43,15 @@ class Order
 
     /**
      * @ORM\Column(type="decimal", precision = 9, scale = 2)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\GreaterThan(
+     *      value = 0,
+     *      groups={"default"},
+     *      message="Должно быть положительным числом"
+     * )
      */
     private $amount;
 
@@ -136,7 +147,7 @@ class Order
     }
 
     /**
-     * @return mixed
+     * @return PaymentInstruction
      */
     public function getPaymentInstruction()
     {
