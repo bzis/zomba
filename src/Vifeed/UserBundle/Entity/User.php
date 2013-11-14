@@ -7,7 +7,7 @@ use FOS\UserBundle\Model\User as BaseUser;
 use Symfony\Component\Security\Core\Util\SecureRandom;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
-
+use JMS\Serializer\Annotation\Groups;
 
 /**
  * User
@@ -35,6 +35,8 @@ class User extends BaseUser
     /**
      * @var integer
      *
+     * @Groups({"user"})
+     *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -50,6 +52,8 @@ class User extends BaseUser
 
     /**
      * @var string
+     *
+     * @Groups({"user"})
      *
      * @Assert\NotBlank(
      *      message = "fos_user.email.blank",
@@ -84,6 +88,11 @@ class User extends BaseUser
      * )
      */
     protected $plainPassword;
+
+    /**
+     * @Groups({"user"})
+     */
+    protected $lastLogin;
 
     /**
      * @var string
