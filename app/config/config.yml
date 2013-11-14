@@ -87,6 +87,8 @@ fos_rest:
         failed_validation: HTTP_BAD_REQUEST
         default_engine: twig
     param_fetcher_listener: force
+    serializer:
+            serialize_null: true
 #    format_listener:
 #        rules:
 #            - { path: '^/', fallback_format: json, prefer_extension: false }
