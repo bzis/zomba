@@ -1,0 +1,14 @@
+<ul class="nav navbar-nav navbar-right">
+  <li ng-show="isAuthenticated()">
+      <a href="#">{{currentUser.firstName}} {{currentUser.lastName}}</a>
+  </li>
+  <li ng-show="isAuthenticated()">
+      <a href="#" ng-click="logout()">Выход</a>
+  </li>
+  <li ng-hide="isAuthenticated()">
+    <a href="#">Регистраци</a>
+  </li>
+  <li ng-hide="isAuthenticated()">
+      <a href="#" ng-click="login()">Вход</a>
+  </li>
+</ul>
