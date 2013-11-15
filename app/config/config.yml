@@ -114,4 +114,4 @@ snc_redis:
             dsn: redis://localhost
 
 jms_payment_core:
-    secret: 38jB2bX5UOwDQhe
+    secret: %payment.secret%

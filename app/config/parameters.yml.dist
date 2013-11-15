@@ -23,3 +23,5 @@ parameters:
     social:
         VKAppID: ''
         VKAppSecret: ''
+
+    payment.secret: ''
