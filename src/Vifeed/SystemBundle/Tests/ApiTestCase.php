@@ -22,7 +22,7 @@ class ApiTestCase extends TestCase
 
     public static function tearDownAfterClass()
     {
-        $um = static::createClient()->getContainer()->get('fos_user.user_manager');
+        $um = static::$container->get('fos_user.user_manager');
         $user = $um->findUserByUsername('test');
         $um->deleteUser($user);
 
@@ -37,8 +37,8 @@ class ApiTestCase extends TestCase
      */
     protected static function createUser()
     {
-        $userManager = self::$client->getContainer()->get('fos_user.user_manager');
-        $tokenManager = self::$client->getContainer()->get('vifeed.user.wsse_token_manager');
+        $userManager = static::$container->get('fos_user.user_manager');
+        $tokenManager = static::$container->get('vifeed.user.wsse_token_manager');
 
         $user = $userManager->createUser()
               ->setEmail('test@test.test')
@@ -61,7 +61,8 @@ class ApiTestCase extends TestCase
      */
     protected function sendRequest($method, $url, $parameters = array())
     {
-        $tokenManager = self::$client->getContainer()->get('vifeed.user.wsse_token_manager');
+
+        $tokenManager = static::$container->get('vifeed.user.wsse_token_manager');
         $token = $tokenManager->getUserToken(self::$user->getId());
 
         $created = (new \DateTime())->format('Y-m-d H:i:s');
