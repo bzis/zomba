@@ -43,5 +43,13 @@ class TestCase extends WebTestCase
         return static::$kernel->getContainer();
     }
 
+    /**
+     * @return \Doctrine\ORM\EntityManager
+     */
+    public function getEntityManager()
+    {
+        return static::$container->get('doctrine.orm.entity_manager');
+    }
+
 
 }

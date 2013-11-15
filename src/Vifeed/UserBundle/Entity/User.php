@@ -107,7 +107,7 @@ class User extends BaseUser
     protected $socialData;
 
     /**
-     * @ORM\Column(type="decimal", precision = 2)
+     * @ORM\Column(type="decimal", precision = 9, scale = 2)
      */
     protected $balance = 0;
 
@@ -203,6 +203,20 @@ class User extends BaseUser
         }
 
         $this->setSocialData($data);
+    }
+
+    /**
+     * Изменить баланс на $value
+     *
+     * @param $value
+     *
+     * @return User
+     */
+    public function updateBalance($value)
+    {
+        $this->setBalance($this->balance + $value);
+
+        return $this;
     }
 
 

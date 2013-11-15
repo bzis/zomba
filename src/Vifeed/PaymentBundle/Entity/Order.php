@@ -127,7 +127,7 @@ class Order
     }
 
     /**
-     * @return mixed
+     * @return User
      */
     public function getUser()
     {

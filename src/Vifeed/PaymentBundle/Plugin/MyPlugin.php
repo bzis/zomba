@@ -2,7 +2,10 @@
 
 namespace Vifeed\PaymentBundle\Plugin;
 
+use JMS\Payment\CoreBundle\Entity\Payment;
+use JMS\Payment\CoreBundle\Model\FinancialTransactionInterface;
 use JMS\Payment\CoreBundle\Plugin\AbstractPlugin;
+use JMS\Payment\CoreBundle\Plugin\PluginInterface;
 
 class MyPlugin extends AbstractPlugin
 {
@@ -19,8 +22,24 @@ class MyPlugin extends AbstractPlugin
      *
      * @return boolean
      */
-    function processes($paymentSystemName)
+    public function processes($paymentSystemName)
     {
         return $paymentSystemName === 'my_payment_type';
-    }}
+    }
+
+    /**
+     * @param FinancialTransactionInterface $transaction
+     * @param bool                          $retry
+     */
+    public function approveAndDeposit(FinancialTransactionInterface $transaction, $retry)
+    {
+        $data = $transaction->getExtendedData();
+        /** @var Payment $payment */
+        $payment = $transaction->getPayment();
+        $transaction->setReferenceNumber('some_id');
+        $transaction->setProcessedAmount($payment->getTargetAmount());
+        $transaction->setResponseCode(PluginInterface::RESPONSE_CODE_SUCCESS);
+        $transaction->setReasonCode(PluginInterface::REASON_CODE_SUCCESS);
+    }
+}
  
