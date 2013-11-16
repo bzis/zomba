@@ -105,8 +105,17 @@ angular.module('security.service', [
       }
     },
 
-    // Information about the current user
+    setUser: function(email, token) {
+      this.currentUser = {
+        email: email,
+        token: token
+      };
+      Cookies.setItem('user_email', this.currentUser.email, 7200, '/');
+      Cookies.setItem('user_token', this.currentUser.token, 7200, '/');
+    },
+
     currentUser: null,
+
 
     // Is the current user authenticated?
     isAuthenticated: function(){
@@ -118,6 +127,14 @@ angular.module('security.service', [
       return !!(service.currentUser && service.currentUser.admin);
     }
   };
+
+    // Information about the current user
+    if(Cookies.hasItem('user_token') && Cookies.hasItem('user_email')){
+      service.currentUser = {
+        email: Cookies.hasItem('user_email'),
+        token: Cookies.hasItem('user_token')
+      };
+    }
 
   return service;
 }]);

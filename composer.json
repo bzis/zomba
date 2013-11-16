@@ -15,6 +15,18 @@
         {
             "type": "package",
             "package": {
+                "name": "xapu/angularjs-cookies",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/xapu/angularjs-cookies.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "google-code/crypto-js",
                 "version": "3.1.2",
                 "source": {
@@ -80,7 +92,8 @@
         "fortawesome/font-awesome": "4.0.x-dev",
         "angular-ui/bootstrap": "dev-master",
         "google-code/crypto-js": "3.1.2",
-        "jms/di-extra-bundle": "dev-master"
+        "jms/di-extra-bundle": "dev-master",
+        "xapu/angularjs-cookies": "dev-master"
     },
     "require-dev": {
     },

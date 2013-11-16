@@ -68,6 +68,9 @@ assetic:
                 - %kernel.root_dir%/../vendor/google-code/crypto-js/build/rollups/sha1.js
                 - %kernel.root_dir%/../vendor/google-code/crypto-js/build/rollups/md5.js
                 - %kernel.root_dir%/../vendor/google-code/crypto-js/build/components/enc-base64-min.js
+        angularjsCookies:
+            inputs:
+                - %kernel.root_dir%/../vendor/xapu/angularjs-cookies/cookiesModule.js
 # Doctrine Configuration
 doctrine:
     dbal:
