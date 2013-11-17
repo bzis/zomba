@@ -8,7 +8,7 @@
                 "source": {
                     "type": "git",
                     "url": "git://github.com/angular-ui/bootstrap.git",
-                    "reference": "bootstrap3_bis2"
+                    "reference": "bootstrap3"
                 }
             }
         },
