@@ -1,11 +1,9 @@
-{% extends 'VifeedPublicBundle:Default:layout.html.twig' %}
+{% extends 'VifeedFrontendBundle:Default:layout.html.twig' %}
 
 {% block app %}userApp{% endblock %}
 {% block javascripts %}
     {{ parent() }}
     {% javascripts output='js/*.js' filter="?closure"
-      '@cryptoJs'
-      '@angular_ui_bootstrap'
       '@VifeedUserBundle/Resources/assets/js/user/SignupController.js'
       '@VifeedUserBundle/Resources/assets/js/userApp.js'
     %}

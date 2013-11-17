@@ -3,7 +3,7 @@ rest:
   prefix: /api
 
 vifeed_public:
-    resource: "@VifeedPublicBundle/Resources/config/routing.yml"
+    resource: "@VifeedFrontendBundle/Resources/config/routing.yml"
     prefix:   /
 
 default:
