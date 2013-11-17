@@ -1,3 +1,0 @@
-vifeed_public_homepage:
-    pattern:  /
-    defaults: { _controller: VifeedPublicBundle:Default:index }

@@ -1,5 +1,5 @@
 parameters:
-#    vifeed_public.example.class: Vifeed\PublicBundle\Example
+#    vifeed_public.example.class: Vifeed\FrontendBundle\Example
 
 services:
 #    vifeed_public.example:

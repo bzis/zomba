@@ -1,6 +1,6 @@
 <?php
 
-namespace Vifeed\PublicBundle\Tests\Controller;
+namespace Vifeed\FrontendBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
