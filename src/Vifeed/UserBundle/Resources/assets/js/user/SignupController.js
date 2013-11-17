@@ -9,14 +9,31 @@ SignupController = function (security, $http, $rootScope, $scope) {
     	type: 'advertiser'
     };
 
+    $scope.userTypeAdvertiser = function() {
+      $scope.signupData.type = 'advertiser';
+    };
+
+    $scope.userTypePublisher = function() {
+      $scope.signupData.type = 'publisher';
+    };
+
     // Sign in button handler
     $scope.signupButtonClick = function () {
       // Values to post to authentication service
-      var body = {
-      	advertiser_registration: {
-        	email: $scope.signupData.email 
+      var body = {};
+      if ($scope.signupData.type == 'advertiser') {
+        body = {
+        	advertiser_registration: {
+          	email: $scope.signupData.email 
+          }
+        };
+      } else {
+        body = {
+          publisher_registration: {
+            email: $scope.signupData.email
+          }
+        };
       }
-    };
 
       // Reset the error messages
       $scope.message = null;
