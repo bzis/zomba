@@ -26,6 +26,7 @@ SignupController = function (security, $http, $rootScope, $scope) {
         .put(apiSingupUrl, body)
         .success(function (data) {
           security.setUser($scope.signupData.email, data.token, $scope.signupData.type);
+          window.location = '/';
         })
         // This error message should only occur if there were no user
         // credentials supplied.

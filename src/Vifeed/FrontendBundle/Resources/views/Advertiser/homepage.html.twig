@@ -1,5 +1,14 @@
 {% extends 'VifeedFrontendBundle:Default:layout.html.twig' %}
 
+{% block navbar %}
+<ul class="nav navbar-nav">
+	<li><a href="#">Новая кампания</a></li>
+	<li><a href="#">Управление кампаниями</a></li>
+	<li><a href="#">Финансы</a></li>
+	<li><a href="#">Настройки</a></li>
+</ul>
+{% endblock %}
+
 {% block content %}
   homepage for advertiser
   <div ng-view></div>
