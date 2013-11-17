@@ -3,10 +3,11 @@ angular.module('security.service', [
   'security.retryQueue',    // Keeps track of failed requests that need to be retried once the user logs in
   'security.login',         // Contains the login form template and controller
   'ui.bootstrap.modal',     // Used to display the login form as a modal dialog.
-  'templates-angularUiBootstrapModal'
+  'templates-angularUiBootstrapModal',
+  'security.wsse'
 ])
 
-.factory('security', ['$http', '$q', '$location', 'securityRetryQueue', '$modal', function($http, $q, $location, queue, $modal, $log) {
+.factory('security', ['TokenHandler', 'Cookies', '$http', '$q', '$location', 'securityRetryQueue', '$modal', function(tokenHandler, Cookies, $http, $q, $location, queue, $modal, $log) {
 
   // Redirect to the given url (defaults to '/')
   function redirect(url) {
@@ -60,23 +61,24 @@ angular.module('security.service', [
       openLoginDialog();
     },
 
+    signup: function() {
+      window.location = Routing.generate('sign_up');
+    },
+
     // Attempt to authenticate a user by the given email and password
     login: function(email, password) {
       var request = $http.post(Routing.generate('api_fos_user_security_check'), {_username: email, _password: password});
-      return request;
+
       return request.then(function(response) {
         if (response.data.success) {
-          service.currentUser = {
-            email: email,
-            token: response.data.token
-          };
+          this.setUser(email, response.data.token, response.data.type);
         }
         
         if ( service.isAuthenticated() ) {
           closeLoginDialog(true);
         }
         return service.isAuthenticated();
-      });
+      }.bind(this));
     },
 
     // Give up trying to login and clear the retry queue
@@ -89,6 +91,9 @@ angular.module('security.service', [
     logout: function(redirectTo) {
       $http.post('/logout').then(function() {
         service.currentUser = null;
+        Cookies.removeItem('user_token', '/');
+        Cookies.removeItem('user_email', '/');
+        Cookies.removeItem('user_type', '/');
         redirect(redirectTo);
       });
     },
@@ -98,20 +103,29 @@ angular.module('security.service', [
       if ( service.isAuthenticated() ) {
         return $q.when(service.currentUser);
       } else {
-        return $http.get('/api/user').then(function(response) {
+        return $http({
+          url: '/api/user',
+          method: 'GET',
+          headers: {
+            'X-WSSE': tokenHandler.getCredentials(service.currentUser.email, service.currentUser.token)
+          }
+        }).then(function(response) {
           service.currentUser = response.data.user;
           return service.currentUser;
         });
       }
     },
 
-    setUser: function(email, token) {
+    setUser: function(email, token, type) {
       this.currentUser = {
         email: email,
-        token: token
+        token: token,
+        type: type
       };
       Cookies.setItem('user_email', this.currentUser.email, 7200, '/');
       Cookies.setItem('user_token', this.currentUser.token, 7200, '/');
+      Cookies.setItem('user_type', this.currentUser.type, 7200, '/');
+
     },
 
     currentUser: null,
@@ -129,10 +143,11 @@ angular.module('security.service', [
   };
 
     // Information about the current user
-    if(Cookies.hasItem('user_token') && Cookies.hasItem('user_email')){
+    if(Cookies.hasItem('user_token') && Cookies.hasItem('user_email') && Cookies.hasItem('user_type')){
       service.currentUser = {
         email: Cookies.hasItem('user_email'),
-        token: Cookies.hasItem('user_token')
+        token: Cookies.hasItem('user_token'),
+        type: Cookies.hasItem('user_type')
       };
     }
 

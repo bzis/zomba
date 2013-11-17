@@ -11,9 +11,9 @@ default:
   defaults:
     _controller: 'VifeedSystemBundle:Default:index'
 
-users_frontend:
+vifeed_user_frontend:
   resource: "@VifeedUserBundle/Resources/config/routing_frontend.yml"
-  prefix: /user
+  prefix: /
 
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

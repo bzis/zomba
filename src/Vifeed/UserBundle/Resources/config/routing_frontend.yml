@@ -1,6 +1,8 @@
-user:
-    pattern:  /
+sign_up:
+    pattern:  /sign-up/
     defaults: { _controller: VifeedUserBundle:Frontend\User:index }
+    options:
+        expose: true
 
 fos_user_registration_confirm:
     pattern: '/confirm/{token}'
