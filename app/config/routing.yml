@@ -2,10 +2,18 @@ rest:
   resource: routing_rest.yml
   prefix: /api
 
-users:
-  resource: "@VifeedUserBundle/Resources/config/routing.yml"
+vifeed_public:
+    resource: "@VifeedFrontendBundle/Resources/config/routing.yml"
+    prefix:   /
 
 default:
   pattern: /
   defaults:
     _controller: 'VifeedSystemBundle:Default:index'
+
+vifeed_user_frontend:
+  resource: "@VifeedUserBundle/Resources/config/routing_frontend.yml"
+  prefix: /
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

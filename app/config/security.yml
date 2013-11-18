@@ -22,10 +22,11 @@ security:
 #            pattern: ^/(?!api)
             form_login:
                 provider: fos_userbundle
-                csrf_provider: form.csrf_provider
+#                csrf_provider: form.csrf_provider
                 check_path: /api/user/login_check
                 success_handler: vifeed.security.authentication.success_handler
                 failure_handler: vifeed.security.authentication.failure_handler
+                require_previous_session: false
             logout:       true
             anonymous:    true
 

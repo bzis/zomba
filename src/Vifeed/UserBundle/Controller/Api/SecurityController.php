@@ -6,7 +6,6 @@ use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
 use Symfony\Component\HttpFoundation\Response;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
-use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
 /**
  * Class SecurityController
@@ -15,7 +14,6 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
  */
 class SecurityController extends FOSRestController
 {
-
     /**
      * Удалить токен и разлогиниться
      *

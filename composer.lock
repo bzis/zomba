@@ -3,8 +3,18 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "cdbca78eb5db6382111b9e4c4ef3a1cb",
+    "hash": "1033c0e673a35cd19cdd4948e81fbc2f",
     "packages": [
+        {
+            "name": "angular-ui/bootstrap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/angular-ui/bootstrap.git",
+                "reference": "bootstrap3"
+            },
+            "type": "library"
+        },
         {
             "name": "dflydev/markdown",
             "version": "v1.0.3",
@@ -775,12 +785,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "0f5a110a1e6ae413e425912e6601643f91b069c1"
+                "reference": "37aacdae6507faad03c3df1624e7d3a6e6c1b388"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/0f5a110a1e6ae413e425912e6601643f91b069c1",
-                "reference": "0f5a110a1e6ae413e425912e6601643f91b069c1",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/37aacdae6507faad03c3df1624e7d3a6e6c1b388",
+                "reference": "37aacdae6507faad03c3df1624e7d3a6e6c1b388",
                 "shasum": ""
             },
             "require": {
@@ -827,7 +837,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2013-11-03 20:54:43"
+            "time": "2013-11-10 05:33:50"
         },
         {
             "name": "doctrine/orm",
@@ -898,6 +908,109 @@
                 "orm"
             ],
             "time": "2013-05-11 07:51:12"
+        },
+        {
+            "name": "fortawesome/font-awesome",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
+                "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
+                "shasum": ""
+            },
+            "require-dev": {
+                "jekyll": "1.0.2",
+                "lessc": "1.4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OFL-1.1",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Gandy",
+                    "email": "dave@fontawesome.io",
+                    "homepage": "http://twitter.com/davegandy",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The iconic font designed for Bootstrap",
+            "homepage": "http://fontawesome.io/",
+            "keywords": [
+                "FontAwesome",
+                "awesome",
+                "bootstrap",
+                "font",
+                "icon"
+            ],
+            "time": "2013-11-05 12:35:21"
+        },
+        {
+            "name": "friendsofsymfony/jsrouting-bundle",
+            "version": "1.4.1",
+            "target-dir": "FOS/JsRoutingBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
+                "reference": "ca856bcd25c8486d42e52279391fcb1dfc288dba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/ca856bcd25c8486d42e52279391fcb1dfc288dba",
+                "reference": "ca856bcd25c8486d42e52279391fcb1dfc288dba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/console": "~2.0",
+                "symfony/framework-bundle": "~2.0",
+                "symfony/serializer": "~2.0",
+                "willdurand/jsonp-callback-validator": "~1.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "FOS\\JsRoutingBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
+                },
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/friendsofsymfony/FOSJsRoutingBundle/contributors"
+                }
+            ],
+            "description": "Symfony FOSJsRoutingBundle",
+            "homepage": "http://friendsofsymfony.github.com",
+            "keywords": [
+                "Js Routing"
+            ],
+            "time": "2013-10-21 13:22:09"
         },
         {
             "name": "friendsofsymfony/rest-bundle",
@@ -1045,6 +1158,16 @@
             "time": "2013-11-07 03:54:10"
         },
         {
+            "name": "google-code/crypto-js",
+            "version": "3.1.2",
+            "source": {
+                "type": "svn",
+                "url": "http://crypto-js.googlecode.com/svn/tags",
+                "reference": "3.1.2"
+            },
+            "type": "library"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.0.0",
             "target-dir": "Incenteev/ParameterHandler",
@@ -1150,12 +1273,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jlong/sass-bootstrap.git",
-                "reference": "601391a9fc228f7e37bf76d536510a9e743b4631"
+                "reference": "2b2bd7cce7693e25518cace258a89ad9621169d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jlong/sass-bootstrap/zipball/601391a9fc228f7e37bf76d536510a9e743b4631",
-                "reference": "601391a9fc228f7e37bf76d536510a9e743b4631",
+                "url": "https://api.github.com/repos/jlong/sass-bootstrap/zipball/2b2bd7cce7693e25518cace258a89ad9621169d0",
+                "reference": "2b2bd7cce7693e25518cace258a89ad9621169d0",
                 "shasum": ""
             },
             "type": "library",
@@ -1188,7 +1311,7 @@
                 "css",
                 "sass"
             ],
-            "time": "2013-11-07 10:54:58"
+            "time": "2013-11-10 13:07:00"
         },
         {
             "name": "jms/aop-bundle",
@@ -1436,12 +1559,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSPaymentCoreBundle.git",
-                "reference": "d14e4801ae94588cb690484e0b88fb3197804be5"
+                "reference": "222bbb72f6c3d3a1b7de38f0b01922235cf6c662"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/d14e4801ae94588cb690484e0b88fb3197804be5",
-                "reference": "d14e4801ae94588cb690484e0b88fb3197804be5",
+                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/222bbb72f6c3d3a1b7de38f0b01922235cf6c662",
+                "reference": "222bbb72f6c3d3a1b7de38f0b01922235cf6c662",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1608,7 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -1494,7 +1617,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2013-11-01 13:01:45"
+            "time": "2013-11-14 08:13:19"
         },
         {
             "name": "jms/serializer",
@@ -1634,6 +1757,49 @@
             "time": "2013-07-29 12:36:36"
         },
         {
+            "name": "karser/robokassa-bundle",
+            "version": "dev-master",
+            "target-dir": "Karser/RobokassaBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/karser/RobokassaBundle.git",
+                "reference": "25479e6d8f19e39cc8d70713d36df8c4eb79fb9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/karser/RobokassaBundle/zipball/25479e6d8f19e39cc8d70713d36df8c4eb79fb9e",
+                "reference": "25479e6d8f19e39cc8d70713d36df8c4eb79fb9e",
+                "shasum": ""
+            },
+            "require": {
+                "jms/payment-core-bundle": "dev-master",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": ">=2.1,<3.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Karser\\RobokassaBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitry Poddubny",
+                    "email": "dpoddubny@gmail.com"
+                }
+            ],
+            "description": "Bundle allows you to accept Robokassa payments",
+            "keywords": [
+                "payment",
+                "robokassa"
+            ],
+            "time": "2013-09-02 02:58:30"
+        },
+        {
             "name": "kriswallsmith/assetic",
             "version": "v1.1.2",
             "source": {
@@ -1754,16 +1920,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "f72392d0e6eb855118f5a84e89ac2d257c704abd"
+                "reference": "6225b22de9dcf36546be3a0b2fa8e3d986153f57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f72392d0e6eb855118f5a84e89ac2d257c704abd",
-                "reference": "f72392d0e6eb855118f5a84e89ac2d257c704abd",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/6225b22de9dcf36546be3a0b2fa8e3d986153f57",
+                "reference": "6225b22de9dcf36546be3a0b2fa8e3d986153f57",
                 "shasum": ""
             },
             "require": {
@@ -1771,21 +1937,26 @@
                 "psr/log": "~1.0"
             },
             "require-dev": {
+                "aws/aws-sdk-php": "~2.4.8",
                 "doctrine/couchdb": "dev-master",
                 "mlehner/gelf-php": "1.0.*",
-                "raven/raven": "0.5.*"
+                "phpunit/phpunit": "~3.7.0",
+                "raven/raven": "0.5.*",
+                "ruflin/elastica": "0.90.*"
             },
             "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
                 "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "raven/raven": "Allow sending log messages to a Sentry server"
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -1812,7 +1983,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-07-28 22:38:30"
+            "time": "2013-11-14 19:48:31"
         },
         {
             "name": "nelmio/api-doc-bundle",
@@ -1821,12 +1992,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "8728e825eaf89a5e1234f0ec6e4040d83b645faa"
+                "reference": "2ceea4871a6205c421dc3ce9b0a7b350aafe7000"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/8728e825eaf89a5e1234f0ec6e4040d83b645faa",
-                "reference": "8728e825eaf89a5e1234f0ec6e4040d83b645faa",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/2ceea4871a6205c421dc3ce9b0a7b350aafe7000",
+                "reference": "2ceea4871a6205c421dc3ce9b0a7b350aafe7000",
                 "shasum": ""
             },
             "require": {
@@ -1840,7 +2011,7 @@
                 "jms/serializer-bundle": "<0.11"
             },
             "require-dev": {
-                "friendsofsymfony/rest-bundle": "0.12.*@dev",
+                "friendsofsymfony/rest-bundle": "~1.0",
                 "jms/serializer-bundle": ">=0.11",
                 "sensio/framework-extra-bundle": "~2.1",
                 "symfony/browser-kit": "~2.1",
@@ -1858,7 +2029,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3.x-dev"
+                    "dev-master": "2.4.x-dev"
                 }
             },
             "autoload": {
@@ -1887,7 +2058,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2013-11-07 01:53:53"
+            "time": "2013-11-18 10:06:15"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -1994,12 +2165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "62f8730f1aa0e6a6879eaee73819a3a0b57f8dab"
+                "reference": "b1a51b2ef900c28f389cc7ba498f3698b9749ce6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/62f8730f1aa0e6a6879eaee73819a3a0b57f8dab",
-                "reference": "62f8730f1aa0e6a6879eaee73819a3a0b57f8dab",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/b1a51b2ef900c28f389cc7ba498f3698b9749ce6",
+                "reference": "b1a51b2ef900c28f389cc7ba498f3698b9749ce6",
                 "shasum": ""
             },
             "require": {
@@ -2033,7 +2204,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2013-11-07 17:48:53"
+            "time": "2013-11-09 19:00:33"
         },
         {
             "name": "psr/log",
@@ -2601,16 +2772,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.6",
+            "version": "v2.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "d0597156c4c03ceca039f6b7770a47397ba295f0"
+                "reference": "2829b471871c2564228fe9f0832a0f928a8ffaa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/d0597156c4c03ceca039f6b7770a47397ba295f0",
-                "reference": "d0597156c4c03ceca039f6b7770a47397ba295f0",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/2829b471871c2564228fe9f0832a0f928a8ffaa1",
+                "reference": "2829b471871c2564228fe9f0832a0f928a8ffaa1",
                 "shasum": ""
             },
             "require": {
@@ -2705,7 +2876,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-10-10 13:24:22"
+            "time": "2013-11-14 07:58:51"
         },
         {
             "name": "twig/extensions",
@@ -2804,6 +2975,46 @@
             "time": "2013-10-30 08:20:53"
         },
         {
+            "name": "willdurand/jsonp-callback-validator",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willdurand/JsonpCallbackValidator.git",
+                "reference": "58c0a6c76718794856f7049cf066fdda4e984c49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willdurand/JsonpCallbackValidator/zipball/58c0a6c76718794856f7049cf066fdda4e984c49",
+                "reference": "58c0a6c76718794856f7049cf066fdda4e984c49",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsonpCallbackValidator": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William DURAND",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
+                }
+            ],
+            "description": "JSONP callback validator.",
+            "time": "2013-10-21 12:01:32"
+        },
+        {
             "name": "willdurand/negotiation",
             "version": "1.0.1",
             "source": {
@@ -2852,6 +3063,17 @@
                 "negotiation"
             ],
             "time": "2013-08-01 14:42:09"
+        },
+        {
+            "name": "xapu/angularjs-cookies",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/xapu/angularjs-cookies.git",
+                "reference": "master"
+            },
+            "type": "library",
+            "time": "2013-08-02 14:48:04"
         }
     ],
     "packages-dev": [
@@ -2873,7 +3095,11 @@
         "snc/redis-bundle": 20,
         "predis/predis": 20,
         "jms/di-extra-bundle": 20,
-        "jms/payment-core-bundle": 20
+        "jms/payment-core-bundle": 20,
+        "karser/robokassa-bundle": 20,
+        "fortawesome/font-awesome": 20,
+        "angular-ui/bootstrap": 20,
+        "xapu/angularjs-cookies": 20
     },
     "platform": {
         "php": ">=5.3.3"

@@ -1,4 +1,42 @@
 {
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "angular-ui/bootstrap",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/angular-ui/bootstrap.git",
+                    "reference": "bootstrap3"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "xapu/angularjs-cookies",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/xapu/angularjs-cookies.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "google-code/crypto-js",
+                "version": "3.1.2",
+                "source": {
+                    "type": "svn",
+                    "url": "http://crypto-js.googlecode.com/svn/tags",
+                    "reference": "3.1.2"
+                }
+            }
+        }
+    ],
     "autoload": {
         "psr-0": {
             "": "src/"
@@ -19,7 +57,8 @@
             "file": "app/config/parameters.yml"
         },
         "symfony-app-dir": "app",
-        "symfony-web-dir": "web"
+        "symfony-web-dir": "web",
+        "symfony-assets-install": "relative"
     },
     "license": "MIT",
     "minimum-stability": "stable",
@@ -49,8 +88,13 @@
         "snc/redis-bundle": "1.1.x-dev",
         "predis/predis": "0.8.x-dev",
         "jms/di-extra-bundle": "dev-master",
-        "jms/payment-core-bundle": "master-dev"
-
+        "jms/payment-core-bundle": "master-dev",
+        "karser/robokassa-bundle": "dev-master",
+        "friendsofsymfony/jsrouting-bundle": "~1.1",
+        "fortawesome/font-awesome": "4.0.x-dev",
+        "angular-ui/bootstrap": "dev-master",
+        "google-code/crypto-js": "3.1.2",
+        "xapu/angularjs-cookies": "dev-master"
     },
     "require-dev": {
     },

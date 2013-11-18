@@ -14,9 +14,12 @@ parameters:
     locale:            ru
     secret:            ThisTokenIsNotSoSecretChangeIt
 
+    assetic.filter.compass.bin: '/usr/local/bin/compass'
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
     assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/images/'
+    assetic.cdn_url: 'http://vifeed.dev'
+    assetic.cdn_path: "%kernel.root_dir%/../web"
 
     developer_email:   dev@example.com
 

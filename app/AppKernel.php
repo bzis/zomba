@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new Sensio\Bundle\BuzzBundle\SensioBuzzBundle(),
             new Snc\RedisBundle\SncRedisBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\AopBundle\JMSAopBundle(),
             new JMS\Payment\CoreBundle\JMSPaymentCoreBundle(),
@@ -34,6 +35,7 @@ class AppKernel extends Kernel
             new Vifeed\SystemBundle\VifeedSystemBundle(),
             new Vifeed\PlatformBundle\VifeedPlatformBundle(),
             new Vifeed\PaymentBundle\VifeedPaymentBundle(),
+            new Vifeed\FrontendBundle\VifeedFrontendBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

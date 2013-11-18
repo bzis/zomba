@@ -1,0 +1,17 @@
+{% extends 'VifeedFrontendBundle:Default:layout.html.twig' %}
+
+{% block app %}userApp{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    {% javascripts output='js/*.js' filter="?closure"
+      '@VifeedUserBundle/Resources/assets/js/user/SignupController.js'
+      '@VifeedUserBundle/Resources/assets/js/userApp.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{% block content %}
+
+  <div ng-view></div>
+{% endblock %}

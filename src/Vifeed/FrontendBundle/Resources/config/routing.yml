@@ -1,0 +1,3 @@
+vifeed_frontend_homepage:
+    pattern:  /
+    defaults: { _controller: VifeedFrontendBundle:Default:index }
