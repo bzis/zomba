@@ -28,3 +28,7 @@ parameters:
         VKAppSecret: ''
 
     payment.secret: ''
+
+    robokassa.login: ''
+    robokassa.password1: ''
+    robokassa.password2: ''

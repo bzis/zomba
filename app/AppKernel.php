@@ -29,6 +29,7 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\AopBundle\JMSAopBundle(),
             new JMS\Payment\CoreBundle\JMSPaymentCoreBundle(),
+            new Karser\RobokassaBundle\KarserRobokassaBundle(),
 
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\VifeedUserBundle(),

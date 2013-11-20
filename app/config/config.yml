@@ -140,3 +140,9 @@ snc_redis:
 
 jms_payment_core:
     secret: %payment.secret%
+
+karser_robokassa:
+    login: %robokassa.login%
+    password1: %robokassa.password1%
+    password2: %robokassa.password2%
+    test: false
