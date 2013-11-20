@@ -50,15 +50,16 @@ class PaymentController extends FOSRestController
         $orderForm = $this->createForm(new OrderType());
         $orderForm->submit($this->getRequest());
         if ($orderForm->isValid()) {
+            /** @var Order $order */
             $order = $orderForm->getData();
             $form = $this->container->get('form.factory')->create(
                 'jms_choose_payment_method',
                 null,
                 array(
-                     'csrf_protection'   => false,
-                     'amount'         => $order->getAmount(),
-                     'currency'       => 'RUR',
-//                     'default_method' => 'payment_paypal', // Optional
+                     'csrf_protection' => false,
+                     'amount'          => $order->getAmount(),
+                     'currency'        => 'RUR',
+                     //                     'default_method' => 'payment_paypal', // Optional
                 )
             );
             $form->submit($this->getRequest());
@@ -71,8 +72,15 @@ class PaymentController extends FOSRestController
                 $this->em->persist($order);
                 $this->em->flush($order);
 
-                // todo: что здесь должно происходить?
-                $view = new View($order, 201);
+                $data = array(
+                    'status' => 'payment complete',
+                    'order'  => array(
+                        'id' => $order->getId(),
+//                        'amount' => $order->getAmount()
+                    )
+                );
+
+                $view = new View($data, 201);
             } else {
                 $view = new View($form, 400);
             }
@@ -102,46 +110,44 @@ class PaymentController extends FOSRestController
     public function getOrderCompleteAction(Order $order)
     {
         $instruction = $order->getPaymentInstruction();
-        /** @var FinancialTransaction $pendingTransaction */
-        $pendingTransaction = $instruction->getPendingTransaction();
+        // если заказ уже оплачен, то нам тут нечего ловить
+        if ($instruction->getAmount() != $instruction->getApprovedAmount()) {
 
-        if (null === $pendingTransaction) {
-            $payment = $this->ppc->createPayment(
-                $instruction->getId(),
-                $instruction->getAmount() - $instruction->getDepositedAmount()
-            );
-        } else {
-            $payment = $pendingTransaction->getPayment();
-        }
 
-        $result = $this->ppc->approveAndDeposit($payment->getId(), $payment->getTargetAmount());
+            /** @var FinancialTransaction $pendingTransaction */
+            $pendingTransaction = $instruction->getPendingTransaction();
 
-        if (Result::STATUS_PENDING === $result->getStatus()) {
-            $ex = $result->getPluginException();
+            if (null === $pendingTransaction) {
+                $payment = $this->ppc->createPayment(
+                    $instruction->getId(),
+                    $instruction->getAmount() - $instruction->getDepositedAmount()
+                );
+            } else {
+                $payment = $pendingTransaction->getPayment();
+            }
 
-            if ($ex instanceof ActionRequiredException) {
-                $action = $ex->getAction();
+            /** @var Result $result */
+            $result = $this->ppc->approveAndDeposit($payment->getId(), $payment->getTargetAmount());
 
-                if ($action instanceof VisitUrl) {
-                    return $this->handleView(new View($action->getUrl(), 303));
+            if (Result::STATUS_PENDING === $result->getStatus()) {
+                $ex = $result->getPluginException();
+
+                if ($ex instanceof ActionRequiredException) {
+                    $action = $ex->getAction();
+
+                    if ($action instanceof VisitUrl) {
+                        return $this->handleView(new View(array('url' => $action->getUrl()), 303));
+                    }
+
+                    throw $ex;
                 }
-
-                throw $ex;
-            }
-        } else {
-            if (Result::STATUS_SUCCESS !== $result->getStatus()) {
-                throw new \RuntimeException('Transaction was not successful: ' . $result->getReasonCode());
+            } else {
+                if (Result::STATUS_SUCCESS !== $result->getStatus()) {
+                    throw new \RuntimeException('Transaction was not successful: ' . $result->getReasonCode());
+                }
             }
         }
-
-        $amount = $result->getPaymentInstruction()->getApprovedAmount();
-
-        $this->getUser()->updateBalance($amount);
-        $this->container->get('fos_user.user_manager')->updateUser($this->getUser());
-
-        $view = new View(array(
-                              'amount' => $amount
-                         ), 200);
+        $view = new View(array(), 200);
 
         return $this->handleView($view);
     }

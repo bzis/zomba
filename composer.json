@@ -94,7 +94,8 @@
         "fortawesome/font-awesome": "4.0.x-dev",
         "angular-ui/bootstrap": "dev-master",
         "google-code/crypto-js": "3.1.2",
-        "xapu/angularjs-cookies": "dev-master"
+        "xapu/angularjs-cookies": "dev-master",
+        "guzzle/guzzle": "~3.7"
     },
     "require-dev": {
     },

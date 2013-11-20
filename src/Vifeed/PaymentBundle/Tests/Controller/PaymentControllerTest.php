@@ -36,7 +36,8 @@ class PaymentControllerTest extends ApiTestCase
             $this->assertArrayHasKey('children', $content['errors']);
             $this->validateErros($content, $errors);
         } else {
-            $this->assertArrayHasKey('id', $content);
+            $this->assertArrayHasKey('order', $content);
+            $this->assertArrayHasKey('id', $content['order']);
         }
     }
 
@@ -49,14 +50,14 @@ class PaymentControllerTest extends ApiTestCase
      */
     public function testPutOrder()
     {
-        $amount = 75.20;
+        $amount = 61;
 
         $data = array(
             'order'                     => array(
                 'amount' => $amount
             ),
             'jms_choose_payment_method' => array(
-                'method' => 'my_payment_type'
+                'method' => 'robokassa'
             )
         );
 
@@ -71,7 +72,7 @@ class PaymentControllerTest extends ApiTestCase
 
         $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);
 
-        $order = $this->getEntityManager()->find('\Vifeed\PaymentBundle\Entity\Order', $content['id']);
+        $order = $this->getEntityManager()->find('\Vifeed\PaymentBundle\Entity\Order', $content['order']['id']);
         $this->assertNotNull($order);
         $this->assertInstanceOf('\Vifeed\PaymentBundle\Entity\Order', $order);
         $this->assertEquals($amount, $data['order']['amount'], $order->getPaymentInstruction()->getAmount());
@@ -84,38 +85,63 @@ class PaymentControllerTest extends ApiTestCase
     }
 
     /**
-     * завершение заказа
+     * подготовка к оплате заказа
      *
-     * @param int $id
+     * @param int $id Order id
      *
      * @depends testPutOrder
      */
     public function testCompleteOrder($id)
+    {
+        $url = self::$router->generate('api_get_order_complete', array('order' => $id));
+        self::$client->request('GET', $url);
+        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+
+        $this->sendRequest('GET', $url);
+        $response = self::$client->getResponse();
+
+        $this->assertEquals(303, $response->getStatusCode());
+        $this->assertJson($response->getContent());
+
+        $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);
+        $this->assertTrue(is_array($content));
+        $this->assertArrayHasKey('url', $content);
+
+    }
+
+    /**
+     * тест обработки подтверждения от робокассы
+     *
+     * @param int $id Order id
+     *
+     * @depends testPutOrder
+     */
+    public function testRobokassaResultUrl($id)
     {
         /** @var Order $order */
         $order = $this->getEntityManager()->find('\Vifeed\PaymentBundle\Entity\Order', $id);
         $user = $order->getUser();
         $balanceBefore = $user->getBalance();
 
-        $url = self::$router->generate('api_get_order_complete', array('order' => $id));
+        $data = array(
+            'OutSum' => $order->getAmount(),
+            'InvId'  => $order->getId(),
+        );
+        $data['SignatureValue'] = md5(
+            join(':', $data) . ':' . $this->getContainer()->getParameter('karser_robokassa.password2')
+        );
+        $url = self::$router->generate('karser_robokassa_callback', $data);
         self::$client->request('GET', $url);
-        $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
+        $content = self::$client->getResponse()->getContent();
+        $this->assertEquals('OK' . $id, $content);
 
-        $this->sendRequest('GET', $url);
-        $this->assertEquals(200, self::$client->getResponse()->getStatusCode());
-
-        $response = self::$client->getResponse();
-        $this->assertJson($response->getContent());
-
-        $content = json_decode($response->getContent(), JSON_UNESCAPED_UNICODE);
-        $this->assertTrue(is_array($content));
-        $this->assertArrayHasKey('amount', $content);
-
+        $this->getEntityManager()->refresh($order->getPaymentInstruction());
         $this->getEntityManager()->refresh($user);
-
-        $this->assertEquals($order->getAmount(), $content['amount']);
-        $this->assertEquals($user->getBalance() - $balanceBefore, $content['amount']);
+        // здесь могут быть расхождения, потому что робокасса в тестовом режиме создаёт платёж с фиксированной суммой 1.79 WMZ
+        $this->assertEquals($order->getAmount(), $order->getPaymentInstruction()->getApprovedAmount());
+        $this->assertEquals($user->getBalance() - $balanceBefore, $order->getAmount());
     }
+
 
     /**
      * data-provider для testPutOrder
@@ -149,7 +175,7 @@ class PaymentControllerTest extends ApiTestCase
                         'amount' => 100
                     ),
                     'jms_choose_payment_method' => array(
-                        'method' => 'my_payment_type'
+                        'method' => 'robokassa'
                     )
                 ),
                 201,
