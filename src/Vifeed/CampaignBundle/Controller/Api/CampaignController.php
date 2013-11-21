@@ -87,7 +87,9 @@ class CampaignController extends FOSRestController
     {
         $form = $this->createCampaignForm();
         if ($form->isValid()) {
+            /** @var Campaign $campaign */
             $campaign = $form->getData();
+            $campaign->setUser($this->getUser());
             $em = $this->getDoctrine()->getManager();
             $em->persist($campaign);
             $em->flush();

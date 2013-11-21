@@ -5,6 +5,7 @@ namespace Vifeed\CampaignBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Vifeed\UserBundle\Entity\User;
 
 /**
  * Campaign
@@ -28,6 +29,12 @@ class Campaign
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Vifeed\UserBundle\Entity\User")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="CASCADE")
+     **/
+    private $user;
 
     /**
      * @var string
@@ -508,10 +515,14 @@ class Campaign
      * Remove tags
      *
      * @param Tag $tags
+     *
+     * @return Campaign
      */
     public function removeTag(Tag $tags)
     {
         $this->tags->removeElement($tags);
+
+        return $this;
     }
 
     /**
@@ -542,10 +553,14 @@ class Campaign
      * Remove ageRanges
      *
      * @param AgeRange $ageRanges
+     *
+     * @return Campaign
      */
     public function removeAgeRange(AgeRange $ageRanges)
     {
         $this->ageRanges->removeElement($ageRanges);
+
+        return $this;
     }
 
     /**
@@ -556,5 +571,25 @@ class Campaign
     public function getAgeRanges()
     {
         return $this->ageRanges;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User $user
+     *
+     * @return Campaign
+     */
+    public function setUser(User $user)
+    {
+        $this->user = $user;
+
+        return $this;
     }
 }
