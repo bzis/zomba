@@ -41,6 +41,18 @@ class Campaign
      */
     private $name;
 
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="hash", type="string", length=255)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"},
+     *      message="Хеш видео не должен быть пустым"
+     * )
+     */
+    private $hash;
+
     /**
      * @var string
      *
