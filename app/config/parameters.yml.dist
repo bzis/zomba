@@ -26,3 +26,9 @@ parameters:
     social:
         VKAppID: ''
         VKAppSecret: ''
+
+    payment.secret: 'secret'
+
+    robokassa.login: 'vifeed-dev'
+    robokassa.password1: 'DZ1oZrZc9U8e'
+    robokassa.password2: 'dEv56kZLMA2X'

@@ -26,3 +26,6 @@ monolog:
 doctrine:
     dbal:
         dbname:   %database_name%_test
+
+karser_robokassa:
+    test: true

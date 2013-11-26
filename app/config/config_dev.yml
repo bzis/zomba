@@ -27,5 +27,8 @@ monolog:
 assetic:
     use_controller: false
 
+karser_robokassa:
+    test: true
+
 #swiftmailer:
 #    delivery_address: me@example.com

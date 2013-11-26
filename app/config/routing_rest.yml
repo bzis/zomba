@@ -9,3 +9,7 @@ platform_rest:
 users_rest:
   type: rest
   resource: "@VifeedUserBundle/Resources/config/routing_rest.yml"
+
+payments_rest:
+  type: rest
+  resource: "@VifeedPaymentBundle/Resources/config/routing_rest.yml"

@@ -106,6 +106,11 @@ class User extends BaseUser
      */
     protected $socialData;
 
+    /**
+     * @ORM\Column(type="decimal", precision = 9, scale = 2)
+     */
+    protected $balance = 0;
+
 
     /**
      * @return User
@@ -200,6 +205,20 @@ class User extends BaseUser
         $this->setSocialData($data);
     }
 
+    /**
+     * Изменить баланс на $value
+     *
+     * @param $value
+     *
+     * @return User
+     */
+    public function updateBalance($value)
+    {
+        $this->setBalance($this->balance + $value);
+
+        return $this;
+    }
+
 
 
 
@@ -272,5 +291,25 @@ class User extends BaseUser
 
         return $this;
 
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getBalance()
+    {
+        return $this->balance;
+    }
+
+    /**
+     * @param mixed $balance
+     *
+     * @return User
+     */
+    public function setBalance($balance)
+    {
+        $this->balance = $balance;
+        
+        return $this;
     }
 }
