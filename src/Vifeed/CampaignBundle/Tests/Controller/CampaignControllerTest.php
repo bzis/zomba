@@ -24,9 +24,9 @@ class CampaignControllerTest extends ApiTestCase
         $this->assertEquals(403, self::$client->getResponse()->getStatusCode());
 
         $this->sendRequest('PUT', $url, $data);
-        $this->assertEquals($code, self::$client->getResponse()->getStatusCode());
-
         $response = self::$client->getResponse();
+
+        $this->assertEquals($code, $response->getStatusCode(), $response->getContent());
 
         if ($errors !== null) {
             $this->assertJson($response->getContent());
@@ -192,6 +192,7 @@ class CampaignControllerTest extends ApiTestCase
                 array(
                     'campaign' => array(
                         'name'       => 'test1',
+                        'hash'     => 'dafkjhasdfsdafasdf',
                         'gender'     => 'male',
                         'maxBid'     => 10,
                         'budget'     => 100,

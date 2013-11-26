@@ -20,6 +20,7 @@ class CampaignType extends AbstractType
               ->add('description')
               ->add('gender')
               ->add('maxBid')
+              ->add('hash')
               ->add('budget')
               ->add('budgetType')
               ->add('startAt', 'datetime')
