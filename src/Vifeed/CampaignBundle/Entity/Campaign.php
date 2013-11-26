@@ -604,4 +604,24 @@ class Campaign
 
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getHash()
+    {
+        return $this->hash;
+    }
+
+    /**
+     * @param string $hash
+     *
+     * @return Campaign
+     */
+    public function setHash($hash)
+    {
+        $this->hash = $hash;
+
+        return $this->hash;
+    }
 }
