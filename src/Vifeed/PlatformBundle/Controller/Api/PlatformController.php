@@ -55,7 +55,9 @@ class PlatformController extends FOSRestController
     {
         $form = $this->createPlatformForm();
         if ($form->isValid()) {
+            /** @var Platform $platform */
             $platform = $form->getData();
+            $platform->setUser($this->getUser());
             $em = $this->getDoctrine()->getManager();
             $em->persist($platform);
             $em->flush();

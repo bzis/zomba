@@ -28,10 +28,14 @@ class AppKernel extends Kernel
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\AopBundle\JMSAopBundle(),
+            new JMS\Payment\CoreBundle\JMSPaymentCoreBundle(),
+            new Karser\RobokassaBundle\KarserRobokassaBundle(),
+
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\VifeedUserBundle(),
             new Vifeed\SystemBundle\VifeedSystemBundle(),
             new Vifeed\PlatformBundle\VifeedPlatformBundle(),
+            new Vifeed\PaymentBundle\VifeedPaymentBundle(),
             new Vifeed\FrontendBundle\VifeedFrontendBundle(),
         );
 

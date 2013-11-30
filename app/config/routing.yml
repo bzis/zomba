@@ -6,6 +6,10 @@ vifeed_public:
     resource: "@VifeedFrontendBundle/Resources/config/routing.yml"
     prefix:   /
 
+vifeed_payment:
+    resource: "@VifeedPaymentBundle/Resources/config/routing.yml"
+    prefix:   /
+
 default:
   pattern: /
   defaults:

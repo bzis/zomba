@@ -1,13 +1,12 @@
 <?php
 
-namespace Vifeed\CampaignBundle\Form;
+namespace Vifeed\PaymentBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use Vifeed\CampaignBundle\Entity\Campaign;
 
-class CampaignType extends AbstractType
+class OrderType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -16,21 +15,7 @@ class CampaignType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-              ->add('name')
-              ->add('description')
-              ->add('gender')
-              ->add('maxBid')
-              ->add('hash')
-              ->add('budget')
-              ->add('budgetType')
-              ->add('startAt', 'datetime')
-              ->add('endAt', 'datetime')
-              ->add('totalViews')
-              ->add('bid')
-//              ->add('platforms')
-              ->add('countries')
-              ->add('tags')
-              ->add('ageRanges');
+              ->add('amount');
     }
 
     /**
@@ -40,7 +25,7 @@ class CampaignType extends AbstractType
     {
         $resolver->setDefaults(
             array(
-                 'data_class' => 'Vifeed\CampaignBundle\Entity\Campaign',
+                 'data_class' => 'Vifeed\PaymentBundle\Entity\Order',
                  'csrf_protection'   => false,
                  'validation_groups' => array('default'),
             )
@@ -52,7 +37,7 @@ class CampaignType extends AbstractType
      */
     public function getName()
     {
-        return 'campaign';
+        return 'order';
     }
 
 }

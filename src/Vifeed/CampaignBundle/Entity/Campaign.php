@@ -5,6 +5,7 @@ namespace Vifeed\CampaignBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Vifeed\UserBundle\Entity\User;
 
 /**
  * Campaign
@@ -30,6 +31,12 @@ class Campaign
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity="Vifeed\UserBundle\Entity\User")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="CASCADE")
+     **/
+    private $user;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
@@ -40,6 +47,18 @@ class Campaign
      * )
      */
     private $name;
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="hash", type="string", length=255)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"},
+     *      message="Хеш видео не должен быть пустым"
+     * )
+     */
+    private $hash;
 
     /**
      * @var string
@@ -508,10 +527,14 @@ class Campaign
      * Remove tags
      *
      * @param Tag $tags
+     *
+     * @return Campaign
      */
     public function removeTag(Tag $tags)
     {
         $this->tags->removeElement($tags);
+
+        return $this;
     }
 
     /**
@@ -542,10 +565,14 @@ class Campaign
      * Remove ageRanges
      *
      * @param AgeRange $ageRanges
+     *
+     * @return Campaign
      */
     public function removeAgeRange(AgeRange $ageRanges)
     {
         $this->ageRanges->removeElement($ageRanges);
+
+        return $this;
     }
 
     /**
@@ -556,5 +583,45 @@ class Campaign
     public function getAgeRanges()
     {
         return $this->ageRanges;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User $user
+     *
+     * @return Campaign
+     */
+    public function setUser(User $user)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getHash()
+    {
+        return $this->hash;
+    }
+
+    /**
+     * @param string $hash
+     *
+     * @return Campaign
+     */
+    public function setHash($hash)
+    {
+        $this->hash = $hash;
+
+        return $this->hash;
     }
 }
