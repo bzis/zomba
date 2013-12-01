@@ -1,5 +1,18 @@
 {% extends 'VifeedFrontendBundle:Default:layout.html.twig' %}
 
+{% block app %}advertiserApp{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    {#
+		js app
+    #}
+    {#% javascripts output='js/*.js' filter="?closure"
+      '@VifeedFrontendBundle/Resources/assets/js/advertiserApp.js'
+    %
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    #}
+{% endblock %}
+
 {% block stylesheets %}
     {{ parent() }}
 	{% stylesheets output='css/*.css' filter='cssrewrite,?yui_css'
@@ -8,6 +21,7 @@
 	<link rel="stylesheet" href="{{ asset_url }}" />
 	{% endstylesheets %}
 {% endblock %}
+
 
 {% block navbar %}
 <ul class="nav navbar-nav">
