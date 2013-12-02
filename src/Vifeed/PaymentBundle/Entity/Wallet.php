@@ -4,6 +4,8 @@ namespace Vifeed\PaymentBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Vifeed\UserBundle\Entity\User;
+use Symfony\Component\Validator\Constraints as Assert;
+use JMS\Serializer\Annotation\Groups;
 
 /**
  * Wallet
@@ -19,6 +21,8 @@ class Wallet
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
+     *
+     * @Groups({"default"})
      */
     private $id;
 
@@ -34,6 +38,12 @@ class Wallet
      * @var string
      *
      * @ORM\Column(name="type", type="string", length=10)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     *
+     * @Groups({"default"})
      */
     private $type;
 
@@ -41,6 +51,12 @@ class Wallet
      * @var string
      *
      * @ORM\Column(name="number", type="string", length=20)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     *
+     * @Groups({"default"})
      */
     private $number;
 
