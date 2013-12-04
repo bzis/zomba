@@ -5,6 +5,7 @@ namespace Vifeed\CampaignBundle\Controller\Api;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Vifeed\CampaignBundle\Entity\Campaign;
@@ -119,7 +120,7 @@ class CampaignController extends FOSRestController
     {
         $campaign = $this->getEntity($id);
         if ($campaign->getUser() != $this->getUser()) {
-            throw new \Exception('Можно изменять только свои кампании');
+            throw new AccessDeniedHttpException('Можно изменять только свои кампании');
         }
         $form = $this->createCampaignForm($campaign);
         if ($form->isValid()) {
@@ -150,7 +151,7 @@ class CampaignController extends FOSRestController
         $campaign = $this->getEntity($id);
 
         if ($campaign->getUser() != $this->getUser()) {
-            throw new \Exception('Можно удалять только свои кампании');
+            throw new AccessDeniedHttpException('Можно удалять только свои кампании');
         }
 
         $em = $this->getDoctrine()->getManager();

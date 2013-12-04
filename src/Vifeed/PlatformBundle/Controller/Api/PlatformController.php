@@ -5,6 +5,7 @@ namespace Vifeed\PlatformBundle\Controller\Api;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
@@ -87,7 +88,7 @@ class PlatformController extends FOSRestController
         $platform = $this->getEntity($id);
 
         if ($platform->getUser() != $this->getUser()) {
-            throw new \Exception('Можно изменять только свои площадки');
+            throw new AccessDeniedHttpException('Можно изменять только свои площадки');
         }
 
         $form = $this->createPlatformForm($platform);
@@ -119,7 +120,7 @@ class PlatformController extends FOSRestController
         $platform = $this->getEntity($id);
 
         if ($platform->getUser() != $this->getUser()) {
-            throw new \Exception('Можно удалять только свои площадки');
+            throw new AccessDeniedHttpException('Можно удалять только свои площадки');
         }
 
         $em = $this->getDoctrine()->getManager();
