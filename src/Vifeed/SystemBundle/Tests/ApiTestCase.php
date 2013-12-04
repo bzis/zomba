@@ -22,12 +22,12 @@ class ApiTestCase extends TestCase
 
     public static function tearDownAfterClass()
     {
-        $um = static::$container->get('fos_user.user_manager');
-        $user = $um->findUserByUsername('test');
-        $um->deleteUser($user);
-
         parent::tearDownAfterClass();
 
+        $um = static::getContainer()->get('fos_user.user_manager');
+        $user = $um->findUserByUsername('test');
+        $um->deleteUser($user);
+        static::$user = null;
     }
 
     /**
@@ -37,17 +37,24 @@ class ApiTestCase extends TestCase
      */
     protected static function createUser()
     {
-        $userManager = static::$container->get('fos_user.user_manager');
-        $tokenManager = static::$container->get('vifeed.user.wsse_token_manager');
+        if (static::$user !== null) {
+            return static::$user;
+        }
+
+        $userManager = static::getContainer()->get('fos_user.user_manager');
+        $tokenManager = static::getContainer()->get('vifeed.user.wsse_token_manager');
 
         $user = $userManager->createUser()
               ->setEmail('test@test.test')
               ->setUsername('test')
               ->setPlainPassword('test')
+              ->setBalance(100)
               ->setEnabled(true);
 
         $userManager->updateUser($user);
         $tokenManager->createUserToken($user->getId());
+
+        static::$user = $user;
 
         return $user;
     }
@@ -66,13 +73,13 @@ class ApiTestCase extends TestCase
         $token = $tokenManager->getUserToken(self::$user->getId());
 
         $created = (new \DateTime())->format('Y-m-d H:i:s');
-        $nonce = md5($created.rand());
+        $nonce = md5($created . rand());
         $digest = base64_encode(sha1(base64_decode($nonce) . $created . $token, true));
 
         $server = array(
             'HTTP_x-wsse' => 'UsernameToken Username="' . self::$user->getUsername() . '", ' .
-            'PasswordDigest="' . $digest . '", ' .
-            'Nonce="' . $nonce . '", Created="' . $created . '"'
+                  'PasswordDigest="' . $digest . '", ' .
+                  'Nonce="' . $nonce . '", Created="' . $created . '"'
         );
 
         return self::$client->request($method, $url, $parameters, array(), $server);

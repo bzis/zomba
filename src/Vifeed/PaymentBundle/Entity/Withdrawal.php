@@ -4,6 +4,8 @@ namespace Vifeed\PaymentBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Vifeed\UserBundle\Entity\User;
+use Symfony\Component\Validator\Constraints as Assert;
+use JMS\Serializer\Annotation\Groups;
 
 /**
  * Withdrawal
@@ -14,6 +16,10 @@ use Vifeed\UserBundle\Entity\User;
  */
 class Withdrawal
 {
+    const STATUS_CREATED = 1;
+    const STATUS_ERROR = 5;
+    const STATUS_OK = 10;
+
     /**
      * @var integer
      *
@@ -35,7 +41,11 @@ class Withdrawal
      * @var Wallet
      *
      * @ORM\ManyToOne(targetEntity="Vifeed\PaymentBundle\Entity\Wallet")
-     * @ORM\JoinColumn(name="wallet_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="wallet_id", referencedColumnName="id", nullable=false, onDelete="CASCADE")
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
      */
     private $wallet;
 
@@ -44,6 +54,15 @@ class Withdrawal
      * @var float
      *
      * @ORM\Column(name="amount", type="decimal", precision = 9, scale = 2)
+     *
+     * @Assert\NotBlank(
+     *      groups={"default"}
+     * )
+     * @Assert\GreaterThan(
+     *      value = 0,
+     *      groups={"default"},
+     *      message="Должно быть положительным числом"
+     * )
      */
     private $amount;
 
@@ -51,6 +70,8 @@ class Withdrawal
      * @var integer
      *
      * @ORM\Column(name="status", type="integer")
+     *
+     * @Groups({"default"})
      */
     private $status;
 
@@ -76,6 +97,7 @@ class Withdrawal
     public function prePersist()
     {
         $this->createdAt = new \DateTime();
+        $this->updatedAt = new \DateTime();
     }
 
     /**

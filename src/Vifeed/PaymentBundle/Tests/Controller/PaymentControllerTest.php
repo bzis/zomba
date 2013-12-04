@@ -135,8 +135,8 @@ class PaymentControllerTest extends ApiTestCase
         $content = self::$client->getResponse()->getContent();
         $this->assertEquals('OK' . $id, $content);
 
-        $this->getEntityManager()->refresh($order->getPaymentInstruction());
-        $this->getEntityManager()->refresh($user);
+        $order = $this->getEntityManager()->find('\Vifeed\PaymentBundle\Entity\Order', $id);
+        $user = $order->getUser();
         // здесь могут быть расхождения, потому что робокасса в тестовом режиме создаёт платёж с фиксированной суммой 1.79 WMZ
         $this->assertEquals($order->getAmount(), $order->getPaymentInstruction()->getApprovedAmount());
         $this->assertEquals($user->getBalance() - $balanceBefore, $order->getAmount());

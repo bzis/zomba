@@ -30,7 +30,7 @@ class Wallet
      * @var User
      *
      * @ORM\ManyToOne(targetEntity="Vifeed\UserBundle\Entity\User")
-     * @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="CASCADE")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id", nullable=false, onDelete="CASCADE")
      */
     private $user;
 
@@ -59,6 +59,11 @@ class Wallet
      * @Groups({"default"})
      */
     private $number;
+
+    public function __toString()
+    {
+        return $this->getType() . ' ' . $this->getNumber();
+    }
 
 
     /**
