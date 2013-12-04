@@ -8,6 +8,7 @@ use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 use JMS\DiExtraBundle\Annotation as DI;
 use FOS\RestBundle\View\View;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Vifeed\PaymentBundle\Entity\Wallet;
 use Vifeed\PaymentBundle\Form\WalletType;
@@ -109,7 +110,7 @@ class WalletController extends FOSRestController
         }
 
         if ($wallet->getUser() != $this->getUser()) {
-            throw new \Exception('Можно удалять только свои кошельки');
+            throw new AccessDeniedHttpException('Можно удалять только свои кошельки');
         }
 
         $this->em->remove($wallet);

@@ -9,6 +9,7 @@ use JMS\DiExtraBundle\Annotation as DI;
 use FOS\RestBundle\View\View;
 use Symfony\Component\Form\FormError;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Vifeed\PaymentBundle\Entity\Withdrawal;
 use Vifeed\PaymentBundle\Form\WithdrawalType;
 
@@ -35,7 +36,6 @@ class WithdrawalController extends FOSRestController
      * )
      *
      * @return Response
-     * @throws \Exception
      */
     public function putWithdrawalAction()
     {
@@ -46,7 +46,7 @@ class WithdrawalController extends FOSRestController
             $withdrawal = $form->getData();
 
             if ($withdrawal->getWallet()->getUser() != $this->getUser()) {
-                throw new \Exception('Можно вывести только на свой кошелёк');
+                throw new AccessDeniedHttpException('Можно вывести только на свой кошелёк');
             }
             if ($withdrawal->getAmount() > $this->getUser()->getBalance()) {
                 $form->get('amount')->addError(new FormError('Недостаточно денег на балансе'));
