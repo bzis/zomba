@@ -85,6 +85,11 @@ class PlatformController extends FOSRestController
     public function putPlatformAction($id)
     {
         $platform = $this->getEntity($id);
+
+        if ($platform->getUser() != $this->getUser()) {
+            throw new \Exception('Можно изменять только свои площадки');
+        }
+
         $form = $this->createPlatformForm($platform);
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();

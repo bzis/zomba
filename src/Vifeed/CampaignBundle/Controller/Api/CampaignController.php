@@ -118,6 +118,9 @@ class CampaignController extends FOSRestController
     public function putCampaignAction($id)
     {
         $campaign = $this->getEntity($id);
+        if ($campaign->getUser() != $this->getUser()) {
+            throw new \Exception('Можно изменять только свои кампании');
+        }
         $form = $this->createCampaignForm($campaign);
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
