@@ -1,4 +1,0 @@
-payment:
-    type: rest
-    resource: '@VifeedPaymentBundle/Controller/Api/PaymentController.php'
-    name_prefix: api_

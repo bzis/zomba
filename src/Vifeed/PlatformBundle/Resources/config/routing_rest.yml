@@ -1,4 +1,0 @@
-platforms:
-    type: rest
-    resource: '@VifeedPlatformBundle/Controller/Api/PlatformController.php'
-    name_prefix: api_
