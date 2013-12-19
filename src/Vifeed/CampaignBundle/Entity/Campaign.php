@@ -117,6 +117,7 @@ class Campaign
      *      groups={"default"},
      *      message="Должно быть положительным числом"
      * )
+
      */
     private $budget;
 
