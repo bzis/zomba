@@ -112,11 +112,6 @@ class PlatformController extends FOSRestController
     public function deletePlatformAction($id)
     {
         $platform = $this->getEntity($id);
-
-        if ($platform->getUser() != $this->getUser()) {
-            throw new \Exception('Можно удалять только свои площадки');
-        }
-
         $em = $this->getDoctrine()->getManager();
         $em->remove($platform);
         $em->flush();
