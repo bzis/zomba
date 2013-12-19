@@ -145,6 +145,11 @@ class CampaignController extends FOSRestController
     public function deleteCampaignAction($id)
     {
         $campaign = $this->getEntity($id);
+
+        if ($campaign->getUser() != $this->getUser()) {
+            throw new \Exception('Можно удалять только свои кампании');
+        }
+
         $em = $this->getDoctrine()->getManager();
         $em->remove($campaign);
         $em->flush();

@@ -36,6 +36,10 @@ class TestCase extends WebTestCase
      */
     public static function getContainer()
     {
+        if (null === static::$kernel) {
+            static::$kernel = static::createKernel();
+        }
+
         if (static::$kernel->getContainer() === null) {
             static::$kernel->boot();
         }
@@ -48,7 +52,7 @@ class TestCase extends WebTestCase
      */
     public function getEntityManager()
     {
-        return static::$container->get('doctrine.orm.entity_manager');
+        return $this->getContainer()->get('doctrine.orm.entity_manager');
     }
 
 

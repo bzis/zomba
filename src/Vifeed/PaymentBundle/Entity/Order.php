@@ -37,7 +37,6 @@ class Order
     /**
      * @ORM\OneToOne(targetEntity="JMS\Payment\CoreBundle\Entity\PaymentInstruction")
      * @ORM\JoinColumn(name="payment_instruction_id", referencedColumnName="id")
-
      */
     private $paymentInstruction;
 
@@ -64,13 +63,12 @@ class Order
 
     /**
      * PrePersist
-     *  @ORM\PrePersist
+     * @ORM\PrePersist
      */
     public function prePersist()
     {
         $this->createdAt = new \DateTime();
     }
-
 
     /**
      * Get id
