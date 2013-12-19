@@ -35,6 +35,42 @@
                     "reference": "3.1.2"
                 }
             }
+        },
+        {
+            "type": "git",
+            "name": "vifeed/campaign-bundle",
+            "url": "ssh://git@github.com/vifeed/CampaignBundle",
+            "version": "dev-master"
+        },
+        {
+            "type": "git",
+            "name": "vifeed/frontend-bundle",
+            "url": "ssh://git@github.com/vifeed/FrontendBundle",
+            "version": "dev-master"
+        },
+        {
+            "type": "git",
+            "name": "vifeed/payment-bundle",
+            "url": "ssh://git@github.com/vifeed/PaymentBundle",
+            "version": "dev-master"
+        },
+        {
+            "type": "git",
+            "name": "vifeed/platform-bundle",
+            "url": "ssh://git@github.com/vifeed/PlatformBundle",
+            "version": "dev-master"
+        },
+        {
+            "type": "git",
+            "name": "vifeed/system-bundle",
+            "url": "ssh://git@github.com/vifeed/SystemBundle",
+            "version": "dev-master"
+        },
+        {
+            "type": "git",
+            "name": "vifeed/user-bundle",
+            "url": "ssh://git@github.com/vifeed/UserBundle",
+            "version": "dev-master"
         }
     ],
     "autoload": {
@@ -95,7 +131,13 @@
         "angular-ui/bootstrap": "dev-master",
         "google-code/crypto-js": "3.1.2",
         "xapu/angularjs-cookies": "dev-master",
-        "guzzle/guzzle": "~3.7"
+        "guzzle/guzzle": "~3.7",
+        "vifeed/campaign-bundle": "dev-master",
+        "vifeed/frontend-bundle": "dev-master",
+        "vifeed/payment-bundle": "dev-master",
+        "vifeed/platform-bundle": "dev-master",
+        "vifeed/system-bundle": "dev-master",
+        "vifeed/user-bundle": "dev-master"
     },
     "require-dev": {
     },
