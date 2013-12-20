@@ -11,9 +11,8 @@
 /bin/
 /composer.phar
 atlassian-ide-plugin.xml
-/web/dev
+web/dev
 tmp
-/node_modules
-/module
-/app/Resources/java
-/vagrant_boxes
+node_modules
+module
+app/Resources/java
