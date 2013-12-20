@@ -68,6 +68,12 @@
         },
         {
             "type": "git",
+            "name": "vifeed/geo-bundle",
+            "url": "ssh://git@github.com/vifeed/GeoBundle",
+            "version": "dev-master"
+        },
+        {
+            "type": "git",
             "name": "vifeed/user-bundle",
             "url": "ssh://git@github.com/vifeed/UserBundle",
             "version": "dev-master"
@@ -132,12 +138,13 @@
         "google-code/crypto-js": "3.1.2",
         "xapu/angularjs-cookies": "dev-master",
         "guzzle/guzzle": "~3.7",
-        "vifeed/campaign-bundle": "dev-master",
+        "vifeed/campaign-bundle": "dev-hotfix",
         "vifeed/frontend-bundle": "dev-master",
         "vifeed/payment-bundle": "dev-master",
-        "vifeed/platform-bundle": "dev-master",
+        "vifeed/platform-bundle": "dev-hotfix",
         "vifeed/system-bundle": "dev-master",
-        "vifeed/user-bundle": "dev-master"
+        "vifeed/user-bundle": "dev-hotfix",
+        "vifeed/geo-bundle": "dev-hotfix"
     },
     "require-dev": {
     },
