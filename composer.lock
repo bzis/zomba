@@ -2383,12 +2383,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "317fa42891f647b69603708d96d3a16db1ff1559"
+                "reference": "d2debfd43eb8a5201204bb70275a0ef83b3d11ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/317fa42891f647b69603708d96d3a16db1ff1559",
-                "reference": "317fa42891f647b69603708d96d3a16db1ff1559",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/d2debfd43eb8a5201204bb70275a0ef83b3d11ff",
+                "reference": "d2debfd43eb8a5201204bb70275a0ef83b3d11ff",
                 "shasum": ""
             },
             "require": {
@@ -2422,7 +2422,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2013-12-21 11:00:44"
+            "time": "2013-12-22 16:51:18"
         },
         {
             "name": "psr/log",
@@ -3602,7 +3602,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/GeoBundle",
-                "reference": "4dddc92cbdb17721c922ad47d97ec504f5780214"
+                "reference": "5fc67955407fccf677694d906db48818a806d541"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3611,7 +3611,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2013-12-19 13:50:10"
+            "time": "2013-12-22 17:04:28"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3681,7 +3681,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/UserBundle",
-                "reference": "88adf5d67191c6c9930882c6077c54d2c0b86df9"
+                "reference": "7aaa8be84cc9306b39a63d8e0422e9be207fdd2f"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3693,7 +3693,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2013-12-16 15:56:32"
+            "time": "2013-12-22 16:47:52"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
