@@ -3602,7 +3602,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/GeoBundle",
-                "reference": "5fc67955407fccf677694d906db48818a806d541"
+                "reference": "aafad6154df4661e0a623ecdd072cb7f515bbd5a"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3611,7 +3611,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2013-12-22 17:04:28"
+            "time": "2013-12-22 18:23:03"
         },
         {
             "name": "vifeed/payment-bundle",
