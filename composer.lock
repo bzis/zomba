@@ -1021,18 +1021,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "f7892fa7390ce9502842cf966d864a83097d2d72"
+                "reference": "7f5134b4bf868ecbff9580d15d1fce6943240653"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/f7892fa7390ce9502842cf966d864a83097d2d72",
-                "reference": "f7892fa7390ce9502842cf966d864a83097d2d72",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/7f5134b4bf868ecbff9580d15d1fce6943240653",
+                "reference": "7f5134b4bf868ecbff9580d15d1fce6943240653",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "1.0.*",
                 "php": ">=5.3.2",
                 "symfony/framework-bundle": "~2.2",
+                "willdurand/jsonp-callback-validator": "~1.0.0",
                 "willdurand/negotiation": "~1.2.0"
             },
             "conflict": {
@@ -1088,7 +1089,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2013-12-19 08:12:24"
+            "time": "2013-12-21 11:56:54"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2382,12 +2383,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "b45f87caf2aac0c9d84b35d60ccf4e8cc74c8dc1"
+                "reference": "317fa42891f647b69603708d96d3a16db1ff1559"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/b45f87caf2aac0c9d84b35d60ccf4e8cc74c8dc1",
-                "reference": "b45f87caf2aac0c9d84b35d60ccf4e8cc74c8dc1",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/317fa42891f647b69603708d96d3a16db1ff1559",
+                "reference": "317fa42891f647b69603708d96d3a16db1ff1559",
                 "shasum": ""
             },
             "require": {
@@ -2421,7 +2422,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2013-12-19 10:51:45"
+            "time": "2013-12-21 11:00:44"
         },
         {
             "name": "psr/log",
@@ -3561,7 +3562,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/CampaignBundle",
-                "reference": "00cbed4d257c06bf4d2748c9790a878db25fff86"
+                "reference": "44be3b7fb65456ca9bcab77f79d3e4578ddf3ec6"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3574,7 +3575,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2013-12-16 15:37:31"
+            "time": "2013-12-20 12:05:02"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3640,7 +3641,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/PlatformBundle",
-                "reference": "a002f1e9816c4e6354e294b5e61bc602ffc8c34e"
+                "reference": "5f70bcf980226afcf2f6cf35c68de8fc9f60f4dc"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3653,7 +3654,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2013-12-16 15:35:56"
+            "time": "2013-12-20 12:12:03"
         },
         {
             "name": "vifeed/system-bundle",
