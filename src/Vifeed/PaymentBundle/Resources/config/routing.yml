@@ -1,3 +1,0 @@
-karser_robokassa_callback:
-    pattern:  /payment/robokassa/callback
-    defaults: { _controller: KarserRobokassaBundle:Robokassa:callback }

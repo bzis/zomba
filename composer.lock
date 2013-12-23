@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "64c174935a6cafed87c5146e2f0f81fa",
+    "hash": "49e907c70861f3a07cab5b0730b6b243",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -153,7 +153,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -295,7 +295,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -794,7 +794,7 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -1127,12 +1127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "6596b9d754b6cb094e10470967ed7b51e2aa9e12"
+                "reference": "f7380a4e476302aa8ca16c9fd017d6d9adc9482e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/6596b9d754b6cb094e10470967ed7b51e2aa9e12",
-                "reference": "6596b9d754b6cb094e10470967ed7b51e2aa9e12",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/f7380a4e476302aa8ca16c9fd017d6d9adc9482e",
+                "reference": "f7380a4e476302aa8ca16c9fd017d6d9adc9482e",
                 "shasum": ""
             },
             "require": {
@@ -1945,6 +1945,119 @@
             "time": "2013-09-02 02:58:30"
         },
         {
+            "name": "knplabs/knp-menu",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpMenu.git",
+                "reference": "f8e867268f63f561c1adadd6cbb5d8524f921873"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/f8e867268f63f561c1adadd6cbb5d8524f921873",
+                "reference": "f8e867268f63f561c1adadd6cbb5d8524f921873",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "pimple/pimple": "*",
+                "silex/silex": "1.0.*",
+                "twig/twig": ">=1.2,<2.0-dev"
+            },
+            "suggest": {
+                "pimple/pimple": "for the built-in implementations of the menu provider and renderer provider",
+                "silex/silex": "for the integration with your silex application",
+                "twig/twig": "for the TwigRenderer and the integration with your templates"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Menu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                },
+                {
+                    "name": "KnpLabs",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/KnpLabs/KnpMenu/contributors"
+                }
+            ],
+            "description": "An object oriented menu library",
+            "homepage": "http://knplabs.com",
+            "keywords": [
+                "menu",
+                "tree"
+            ],
+            "time": "2012-06-10 16:20:40"
+        },
+        {
+            "name": "knplabs/knp-menu-bundle",
+            "version": "v1.1.2",
+            "target-dir": "Knp/Bundle/MenuBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
+                "reference": "2fecac02614e5a006f674dd5dd754eeaeca060b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/2fecac02614e5a006f674dd5dd754eeaeca060b9",
+                "reference": "2fecac02614e5a006f674dd5dd754eeaeca060b9",
+                "shasum": ""
+            },
+            "require": {
+                "knplabs/knp-menu": "~1.1",
+                "symfony/framework-bundle": "~2.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Bundle\\MenuBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                },
+                {
+                    "name": "Knplabs",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/KnpLabs/KnpMenuBundle/contributors"
+                }
+            ],
+            "description": "This bundle provides an integration of the KnpMenu library",
+            "keywords": [
+                "menu"
+            ],
+            "time": "2013-05-25 10:20:03"
+        },
+        {
             "name": "kriswallsmith/assetic",
             "version": "v1.1.2",
             "source": {
@@ -2137,12 +2250,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "4b6efc6631161f9ddb64aecfbcbc8d117a77df52"
+                "reference": "21a0774265fbd79d5d145580a2d757c964ce6ab3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/4b6efc6631161f9ddb64aecfbcbc8d117a77df52",
-                "reference": "4b6efc6631161f9ddb64aecfbcbc8d117a77df52",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/21a0774265fbd79d5d145580a2d757c964ce6ab3",
+                "reference": "21a0774265fbd79d5d145580a2d757c964ce6ab3",
                 "shasum": ""
             },
             "require": {
@@ -2310,12 +2423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "b45f87caf2aac0c9d84b35d60ccf4e8cc74c8dc1"
+                "reference": "381023ad8f019eb4859550538e4affdb5bb9a68b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/b45f87caf2aac0c9d84b35d60ccf4e8cc74c8dc1",
-                "reference": "b45f87caf2aac0c9d84b35d60ccf4e8cc74c8dc1",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/381023ad8f019eb4859550538e4affdb5bb9a68b",
+                "reference": "381023ad8f019eb4859550538e4affdb5bb9a68b",
                 "shasum": ""
             },
             "require": {
@@ -2643,6 +2756,308 @@
             "time": "2013-11-24 12:43:35"
         },
         {
+            "name": "sonata-project/admin-bundle",
+            "version": "2.2.8",
+            "target-dir": "Sonata/AdminBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataAdminBundle.git",
+                "reference": "5e15d1fa4e962987f8c44b5f5d1a70ba8211826d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/5e15d1fa4e962987f8c44b5f5d1a70ba8211826d",
+                "reference": "5e15d1fa4e962987f8c44b5f5d1a70ba8211826d",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": "~2.2",
+                "knplabs/knp-menu-bundle": "~1.1",
+                "sensio/generator-bundle": "~2.2",
+                "sonata-project/block-bundle": "~2.2,>=2.2.7",
+                "sonata-project/exporter": "1.*",
+                "sonata-project/jquery-bundle": "1.8.*",
+                "symfony/class-loader": "~2.2",
+                "symfony/config": "~2.2",
+                "symfony/console": "~2.2",
+                "symfony/form": "~2.2",
+                "symfony/http-foundation": "~2.2",
+                "symfony/routing": "~2.2",
+                "symfony/security-bundle": "~2.2",
+                "symfony/twig-bridge": "~2.2",
+                "symfony/validator": "~2.2",
+                "twig/extensions": "~1.0",
+                "twig/twig": "~1.12"
+            },
+            "require-dev": {
+                "jms/translation-bundle": "*@dev",
+                "sonata-project/intl-bundle": "~2.1",
+                "symfony/yaml": "~2.2"
+            },
+            "suggest": {
+                "sonata-project/doctrine-orm-admin-bundle": "2.2.*@dev",
+                "sonata-project/intl-bundle": "2.1.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Sonata\\AdminBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataAdminBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonataAdminBundle",
+            "homepage": "http://sonata-project.org/bundles/admin",
+            "keywords": [
+                "Admin Generator",
+                "admin",
+                "bootstrap",
+                "sonata"
+            ],
+            "time": "2013-12-05 09:38:25"
+        },
+        {
+            "name": "sonata-project/block-bundle",
+            "version": "2.2.7",
+            "target-dir": "Sonata/BlockBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataBlockBundle.git",
+                "reference": "ff56bb0135fbfe0d270a47049a7d35f8610c4776"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/ff56bb0135fbfe0d270a47049a7d35f8610c4776",
+                "reference": "ff56bb0135fbfe0d270a47049a7d35f8610c4776",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": "~2.3",
+                "symfony/form": "~2.2",
+                "symfony/http-foundation": "~2.2"
+            },
+            "require-dev": {
+                "sonata-project/admin-bundle": "~2.2@dev",
+                "sonata-project/cache-bundle": "~2.1"
+            },
+            "suggest": {
+                "sonata-project/admin-bundle": "~2.2@dev",
+                "sonata-project/cache-bundle": "~2.1"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Sonata\\BlockBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataBlockBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonataBlockBundle",
+            "homepage": "http://sonata-project.org/bundles/block",
+            "keywords": [
+                "block",
+                "sonata"
+            ],
+            "time": "2013-10-24 09:04:49"
+        },
+        {
+            "name": "sonata-project/doctrine-orm-admin-bundle",
+            "version": "2.2.5",
+            "target-dir": "Sonata/DoctrineORMAdminBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
+                "reference": "228b47b990f781422a45f478d65c821bdcac45f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/228b47b990f781422a45f478d65c821bdcac45f8",
+                "reference": "228b47b990f781422a45f478d65c821bdcac45f8",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "~2.3",
+                "sonata-project/admin-bundle": ">=2.2.2",
+                "symfony/symfony": "~2.2"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Sonata\\DoctrineORMAdminBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle/contributors"
+                }
+            ],
+            "description": "Symfony Sonata / Integrate Doctrine ORM into the SonataAdminBundle",
+            "homepage": "http://sonata-project.org/bundles/admin",
+            "keywords": [
+                "Admin Generator",
+                "admin",
+                "bootstrap",
+                "generator",
+                "sonata"
+            ],
+            "time": "2013-11-28 16:27:11"
+        },
+        {
+            "name": "sonata-project/exporter",
+            "version": "1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/exporter.git",
+                "reference": "dad681274e09854a972a0c882ebddd095b7837be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/dad681274e09854a972a0c882ebddd095b7837be",
+                "reference": "dad681274e09854a972a0c882ebddd095b7837be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "propel/propel1": "~1.6",
+                "symfony/property-access": "~2.2",
+                "symfony/routing": "*"
+            },
+            "suggest": {
+                "ext-curl": "*",
+                "propel/propel1": "~1.6",
+                "symfony/property-access": "~2.2",
+                "symfony/routing": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Exporter": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@gmail.com",
+                    "homepage": "http://sonata-project.org/"
+                }
+            ],
+            "description": "Lightweight Exporter library",
+            "homepage": "https://github.com/sonata-project/Exporter",
+            "keywords": [
+                "client",
+                "csv",
+                "data",
+                "export",
+                "xls"
+            ],
+            "time": "2013-10-24 13:43:33"
+        },
+        {
+            "name": "sonata-project/jquery-bundle",
+            "version": "1.8.3",
+            "target-dir": "Sonata/jQueryBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonatajQueryBundle.git",
+                "reference": "1b6dde1becb93b801e64b20e96bc76a110ead712"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonatajQueryBundle/zipball/1b6dde1becb93b801e64b20e96bc76a110ead712",
+                "reference": "1b6dde1becb93b801e64b20e96bc76a110ead712",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "2.*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Sonata\\jQueryBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonatajQueryBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonatajQueryBundle",
+            "homepage": "http://sonata-project.org/bundles/jquery",
+            "keywords": [
+                "jquery",
+                "sonata"
+            ],
+            "time": "2013-03-01 17:24:02"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.0.3",
             "source": {
@@ -2756,20 +3171,21 @@
         },
         {
             "name": "symfony/icu",
-            "version": "v1.0.0",
+            "version": "v1.2.0",
             "target-dir": "Symfony/Component/Icu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Icu.git",
-                "reference": "cac3fdfb111adbe590155f491594636d45129783"
+                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Icu/zipball/cac3fdfb111adbe590155f491594636d45129783",
-                "reference": "cac3fdfb111adbe590155f491594636d45129783",
+                "url": "https://api.github.com/repos/symfony/Icu/zipball/7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
+                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
                 "shasum": ""
             },
             "require": {
+                "lib-icu": ">=4.4",
                 "php": ">=5.3.3",
                 "symfony/intl": "~2.3"
             },
@@ -2799,7 +3215,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-06-03 18:32:07"
+            "time": "2013-06-03 18:32:58"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -3119,6 +3535,134 @@
             "time": "2013-12-06 07:47:10"
         },
         {
+            "name": "vifeed/campaign-bundle",
+            "version": "dev-master",
+            "target-dir": "Vifeed/CampaignBundle",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/vifeed/CampaignBundle",
+                "reference": "287c6058646b4ed1a9ae0e5b9fe97638bd5704e9"
+            },
+            "require": {
+                "friendsofsymfony/rest-bundle": "dev-master",
+                "sonata-project/doctrine-orm-admin-bundle": "2.2.*@dev"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Vifeed\\CampaignBundle": ""
+                }
+            },
+            "description": "Vifeed/CampaignBundle",
+            "time": "2013-12-06 15:44:56"
+        },
+        {
+            "name": "vifeed/frontend-bundle",
+            "version": "dev-master",
+            "target-dir": "Vifeed/FrontendBundle",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/vifeed/FrontendBundle",
+                "reference": "4a426c3451dd469222f0831b56e19699f5a64777"
+            },
+            "require": {
+                "friendsofsymfony/rest-bundle": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Vifeed\\FrontendBundle": ""
+                }
+            },
+            "description": "Vifeed/FrontendBundle",
+            "time": "2013-12-06 15:29:08"
+        },
+        {
+            "name": "vifeed/payment-bundle",
+            "version": "dev-master",
+            "target-dir": "Vifeed/PaymentBundle",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/vifeed/PaymentBundle",
+                "reference": "c7fd1f49e51da716aba825ae2bfb3f21ea4732db"
+            },
+            "require": {
+                "friendsofsymfony/rest-bundle": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Vifeed\\PaymentBundle": ""
+                }
+            },
+            "description": "Vifeed/PaymentBundle",
+            "time": "2013-12-06 15:32:20"
+        },
+        {
+            "name": "vifeed/platform-bundle",
+            "version": "dev-master",
+            "target-dir": "Vifeed/PlatformBundle",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/vifeed/PlatformBundle",
+                "reference": "1cb252dcdd3ea7a299d3b4644027b9cb169adfcd"
+            },
+            "require": {
+                "friendsofsymfony/rest-bundle": "dev-master",
+                "sonata-project/doctrine-orm-admin-bundle": "2.2.*@dev"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Vifeed\\PlatformBundle": ""
+                }
+            },
+            "description": "Vifeed/PlatformBundle",
+            "time": "2013-12-06 15:44:40"
+        },
+        {
+            "name": "vifeed/system-bundle",
+            "version": "dev-master",
+            "target-dir": "Vifeed/SystemBundle",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/vifeed/SystemBundle",
+                "reference": "263a735d42abc343893f97d8c6c0f81aadf5b425"
+            },
+            "require": {
+                "friendsofsymfony/rest-bundle": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Vifeed\\SystemBundle": ""
+                }
+            },
+            "description": "Vifeed/SystemBundle",
+            "time": "2013-12-06 15:31:16"
+        },
+        {
+            "name": "vifeed/user-bundle",
+            "version": "dev-master",
+            "target-dir": "Vifeed/UserBundle",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/vifeed/UserBundle",
+                "reference": "b5740c62c304be679889aa6fbe6bf5435dc99336"
+            },
+            "require": {
+                "friendsofsymfony/rest-bundle": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Vifeed\\UserBundle": ""
+                }
+            },
+            "description": "Vifeed/UserBundle",
+            "time": "2013-12-06 15:30:37"
+        },
+        {
             "name": "willdurand/jsonp-callback-validator",
             "version": "v1.0.0",
             "source": {
@@ -3247,6 +3791,12 @@
         "angular-ui/ui-select2": 20,
         "ivaynberg/select2": 20,
         "xapu/angularjs-cookies": 20
+        "vifeed/campaign-bundle": 20,
+        "vifeed/frontend-bundle": 20,
+        "vifeed/payment-bundle": 20,
+        "vifeed/platform-bundle": 20,
+        "vifeed/system-bundle": 20,
+        "vifeed/user-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
