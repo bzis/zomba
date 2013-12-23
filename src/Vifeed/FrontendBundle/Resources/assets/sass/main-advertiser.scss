@@ -1,11 +1,12 @@
 .bid-simulator tbody {
-	td {
-		text-align: right;
-	}
-	label {
-		display: block;
-	}
-	input {
-		float: left;
-	}
+  td {
+    text-align: right;
+    width:15%;
+  }
+  label {
+    display: block;
+  }
+  input {
+    float: left;
+  }
 }

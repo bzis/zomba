@@ -63,14 +63,24 @@ assetic:
                 #modal
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/modal/modal.js
                 - %kernel.root_dir%/../tmp/angular-ui-modal-templates.js
+        # todo rename to the underscore format "crypto_js"
         cryptoJs:
             inputs:
                 - %kernel.root_dir%/../vendor/google-code/crypto-js/build/rollups/sha1.js
                 - %kernel.root_dir%/../vendor/google-code/crypto-js/build/rollups/md5.js
                 - %kernel.root_dir%/../vendor/google-code/crypto-js/build/components/enc-base64-min.js
+        # todo rename to the underscore format "angularjs_cookies"
         angularjsCookies:
             inputs:
                 - %kernel.root_dir%/../vendor/xapu/angularjs-cookies/cookiesModule.js
+        angular_ui:
+            inputs:
+                - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/mask/mask.js
+                - %kernel.root_dir%/../vendor/angular-ui/ui-select2/src/select2.js
+        jquery_widget_select2_js:
+            inputs:
+                - %kernel.root_dir%/../vendor/ivaynberg/select2/select2.js
+                - %kernel.root_dir%/../vendor/ivaynberg/select2/select2_locale_ru.js
 # Doctrine Configuration
 doctrine:
     dbal:
