@@ -1,4 +1,3 @@
-require "flowdock"
 require 'flowdock/capistrano'
 # for Flowdock Gem notifications
 set :flowdock_project_name, "vifeed"
@@ -36,18 +35,15 @@ set :use_sudo,    false
 set :use_composer, true
 set :composer_options,  "--verbose --prefer-dist --optimize-autoloader"
 
+set :keep_releases,  3
 
-role :web,        domain                         # Your HTTP server, Apache/etc
-role :app,        domain, :primary => true       # This may be the same as your `Web` server
 
-set  :keep_releases,  3
+set :dump_assetic_assets, true
 
 # Be more verbose by uncommenting the following line
 logger.level = Logger::MAX_LEVEL
 
 deploy.start
-
-after :deploy, "deploy:notify_flow"
 
 namespace :deploy do
   task :start, :roles => :app, :except => { :no_release => true } do
@@ -65,17 +61,6 @@ namespace :deploy do
     # puts "--> Updating supervisord commands".green
     # run "sudo supervisorctl start all"
     # puts "--> Starting supervisord commands".green
-  end
-  desc "Notify flow about deployment using email"
-  task :notify_flow do
-    # create a new Flow object with target flow's api token and sender information
-    flow = Flowdock::Flow.new(:api_token => "99c0b1ff68ca7ff45786742d6430d6a7",
-      :source => "Capifony deployment", :project => "vifeed",
-      :from => {:name => "Dmitry Tsoy", :address => "hd.deman@gmail.com"})
-
-    # send message to the flow
-    flow.push_to_team_inbox(:format => "html", :subject => "Application deployed #deploy",
-      :content => "Application deployed successfully!", :tags => ["deploy", "frontend"])
   end
 end
 
