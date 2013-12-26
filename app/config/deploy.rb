@@ -1,7 +1,9 @@
+require "flowdock"
+require 'capistrano/ext/multistage'
+
 set :stages,        %w(prod preprod)
 set :default_stage, "preprod"
 set :stage_dir,     "app/config"
-require 'capistrano/ext/multistage'
 
 set :application, "vifeed"
 set :domain,      "#{application}.co"
@@ -40,6 +42,8 @@ logger.level = Logger::MAX_LEVEL
 
 deploy.start
 
+after :deploy, "deploy:notify_flow"
+
 namespace :deploy do
   task :start, :roles => :app, :except => { :no_release => true } do
   end
@@ -56,5 +60,16 @@ namespace :deploy do
     # puts "--> Updating supervisord commands".green
     # run "sudo supervisorctl start all"
     # puts "--> Starting supervisord commands".green
+  end
+  desc "Notify flow about deployment using email"
+  task :notify_flow do
+    # create a new Flow object with target flow's api token and sender information
+    flow = Flowdock::Flow.new(:api_token => "_YOUR_API_TOKEN_HERE_",
+      :source => "Capistrano deployment", :project => "My project",
+      :from => {:name => "John Doe", :address => "john.doe@yourdomain.com"})
+
+    # send message to the flow
+    flow.send_message(:format => "html", :subject => "Application deployed #deploy",
+      :content => "Application deployed successfully!", :tags => ["deploy", "frontend"])
   end
 end
