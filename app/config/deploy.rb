@@ -1,9 +1,14 @@
 require "flowdock"
-require 'capistrano/ext/multistage'
+require 'flowdock/capistrano'
+# for Flowdock Gem notifications
+set :flowdock_project_name, "vifeed"
+set :flowdock_deploy_tags, ["frontend"]
+set :flowdock_api_token, "99c0b1ff68ca7ff45786742d6430d6a7"
 
-set :stages,        %w(prod preprod)
-set :default_stage, "preprod"
+set :stages,        %w(prod staging)
+set :default_stage, "staging"
 set :stage_dir,     "app/config"
+require 'capistrano/ext/multistage'
 
 set :application, "vifeed"
 set :domain,      "#{application}.co"
@@ -64,12 +69,32 @@ namespace :deploy do
   desc "Notify flow about deployment using email"
   task :notify_flow do
     # create a new Flow object with target flow's api token and sender information
-    flow = Flowdock::Flow.new(:api_token => "_YOUR_API_TOKEN_HERE_",
-      :source => "Capistrano deployment", :project => "My project",
-      :from => {:name => "John Doe", :address => "john.doe@yourdomain.com"})
+    flow = Flowdock::Flow.new(:api_token => "99c0b1ff68ca7ff45786742d6430d6a7",
+      :source => "Capifony deployment", :project => "vifeed",
+      :from => {:name => "Dmitry Tsoy", :address => "hd.deman@gmail.com"})
 
     # send message to the flow
-    flow.send_message(:format => "html", :subject => "Application deployed #deploy",
+    flow.push_to_team_inbox(:format => "html", :subject => "Application deployed #deploy",
       :content => "Application deployed successfully!", :tags => ["deploy", "frontend"])
+  end
+end
+
+set :parameters_dir, "app/config/parameters"
+set :parameters_file, false
+
+task :upload_parameters do
+  origin_file = parameters_dir + "/" + parameters_file if parameters_dir && parameters_file
+  if origin_file && File.exists?(origin_file)
+    ext = File.extname(parameters_file)
+    relative_path = "app/config/parameters" + ext
+
+    if shared_files && shared_files.include?(relative_path)
+      destination_file = shared_path + "/" + relative_path
+    else
+      destination_file = latest_release + "/" + relative_path
+    end
+    try_sudo "mkdir -p #{File.dirname(destination_file)}"
+
+    top.upload(origin_file, destination_file)
   end
 end
