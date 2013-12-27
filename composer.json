@@ -15,6 +15,54 @@
         {
             "type": "package",
             "package": {
+                "name": "angular-ui/ui-utils",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/angular-ui/ui-utils.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "angular-ui/ui-select2",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/angular-ui/ui-select2.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ivaynberg/select2",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/ivaynberg/select2.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "fk/select2-bootstrap-css",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/fk/select2-bootstrap-css.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "xapu/angularjs-cookies",
                 "version": "dev-master",
                 "source": {
@@ -129,6 +177,10 @@
         "friendsofsymfony/jsrouting-bundle": "~1.1",
         "fortawesome/font-awesome": "4.0.x-dev",
         "angular-ui/bootstrap": "dev-master",
+        "angular-ui/ui-utils": "dev-master",
+        "angular-ui/ui-select2": "dev-master",
+        "ivaynberg/select2": "dev-master",
+        "fk/select2-bootstrap-css": "dev-master",
         "google-code/crypto-js": "3.1.2",
         "xapu/angularjs-cookies": "dev-master",
         "guzzle/guzzle": "~3.7",

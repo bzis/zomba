@@ -1,4 +1,7 @@
 /web/bundles/
+/web/assetic/
+/web/css/
+/web/js/
 /app/bootstrap.php.cache
 /app/cache/*
 /app/config/parameters.yml
@@ -16,3 +19,5 @@ tmp
 node_modules
 module
 app/Resources/java
+.DS_Store
+.idea

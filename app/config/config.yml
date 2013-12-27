@@ -63,14 +63,26 @@ assetic:
                 #modal
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/modal/modal.js
                 - %kernel.root_dir%/../tmp/angular-ui-modal-templates.js
-        cryptoJs:
+        crypto_js:
             inputs:
                 - %kernel.root_dir%/../vendor/google-code/crypto-js/build/rollups/sha1.js
                 - %kernel.root_dir%/../vendor/google-code/crypto-js/build/rollups/md5.js
                 - %kernel.root_dir%/../vendor/google-code/crypto-js/build/components/enc-base64-min.js
-        angularjsCookies:
+        angularjs_cookies:
             inputs:
                 - %kernel.root_dir%/../vendor/xapu/angularjs-cookies/cookiesModule.js
+        angular_ui:
+            inputs:
+                - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/mask/mask.js
+                - %kernel.root_dir%/../vendor/angular-ui/ui-select2/src/select2.js
+        jquery_widget_select2_js:
+            inputs:
+                - %kernel.root_dir%/../vendor/ivaynberg/select2/select2.js
+                - %kernel.root_dir%/../vendor/ivaynberg/select2/select2_locale_ru.js
+        select2_css:
+            inputs:
+                - %kernel.root_dir%/../vendor/ivaynberg/select2/select2.css
+                - %kernel.root_dir%/../vendor/fk/select2-bootstrap-css/select2-bootstrap.css
 # Doctrine Configuration
 doctrine:
     dbal:
