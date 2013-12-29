@@ -37,6 +37,7 @@ class AppKernel extends Kernel
             new Vifeed\PlatformBundle\VifeedPlatformBundle(),
             new Vifeed\PaymentBundle\VifeedPaymentBundle(),
             new Vifeed\FrontendBundle\VifeedFrontendBundle(),
+            new Vifeed\GeoBundle\VifeedGeoBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
