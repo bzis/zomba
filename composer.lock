@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7dd7a077146fda8e1e2f3a8e46de3a31",
+    "hash": "0b31c0465add2cdb34d27f875865e6e1",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -3606,7 +3606,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/CampaignBundle",
-                "reference": "3f3db01b457a5bc9dc180237c7bc6e2896fd56f5"
+                "reference": "323d48de0f7d2ab1185cac0268475aef9a6b0e21"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3619,7 +3619,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2013-12-25 21:21:59"
+            "time": "2013-12-29 11:59:55"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3638,24 +3638,6 @@
             },
             "description": "Vifeed/FrontendBundle",
             "time": "2013-12-29 11:29:12"
-        },
-        {
-            "name": "vifeed/geo-bundle",
-            "version": "dev-master",
-            "target-dir": "Vifeed/GeoBundle",
-            "source": {
-                "type": "git",
-                "url": "ssh://git@github.com/vifeed/GeoBundle",
-                "reference": "4dddc92cbdb17721c922ad47d97ec504f5780214"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Vifeed\\GeoBundle": ""
-                }
-            },
-            "description": "Vifeed/GeoBundle",
-            "time": "2013-12-19 13:50:10"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3874,8 +3856,7 @@
         "vifeed/payment-bundle": 20,
         "vifeed/platform-bundle": 20,
         "vifeed/system-bundle": 20,
-        "vifeed/user-bundle": 20,
-        "vifeed/geo-bundle": 20
+        "vifeed/user-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
