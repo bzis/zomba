@@ -195,8 +195,7 @@
         "vifeed/payment-bundle": "dev-master",
         "vifeed/platform-bundle": "dev-master",
         "vifeed/system-bundle": "dev-master",
-        "vifeed/user-bundle": "dev-master",
-        "vifeed/geo-bundle": "dev-master"
+        "vifeed/user-bundle": "dev-master"
     },
     "require-dev": {
     },
