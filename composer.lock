@@ -35,7 +35,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-11-25 09:09:28"
+            "time": "2013-12-29 02:32:55"
         },
         {
             "name": "dflydev/markdown",
@@ -136,8 +136,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -211,8 +210,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -276,10 +274,9 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -351,8 +348,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -430,8 +426,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 }
             ],
             "description": "Data Fixtures for all Doctrine Object Managers",
@@ -478,8 +473,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -723,8 +717,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -742,7 +735,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -914,8 +907,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -1062,12 +1054,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "c7adf7bd473997766b4154b9ea66457e6d5f470c"
+                "reference": "468a7738e9a95e97f63e10cd6e5a6eb269eda77c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/c7adf7bd473997766b4154b9ea66457e6d5f470c",
-                "reference": "c7adf7bd473997766b4154b9ea66457e6d5f470c",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/468a7738e9a95e97f63e10cd6e5a6eb269eda77c",
+                "reference": "468a7738e9a95e97f63e10cd6e5a6eb269eda77c",
                 "shasum": ""
             },
             "require": {
@@ -1130,7 +1122,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2013-12-23 15:26:07"
+            "time": "2013-12-27 19:50:05"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1139,12 +1131,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "6596b9d754b6cb094e10470967ed7b51e2aa9e12"
+                "reference": "a02f6fe3553391a84041ca11f02b781b2560b05b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/6596b9d754b6cb094e10470967ed7b51e2aa9e12",
-                "reference": "6596b9d754b6cb094e10470967ed7b51e2aa9e12",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/a02f6fe3553391a84041ca11f02b781b2560b05b",
+                "reference": "a02f6fe3553391a84041ca11f02b781b2560b05b",
                 "shasum": ""
             },
             "require": {
@@ -1199,7 +1191,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2013-12-16 16:36:36"
+            "time": "2013-12-26 16:09:25"
         },
         {
             "name": "google-code/crypto-js",
@@ -2262,12 +2254,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "4b6efc6631161f9ddb64aecfbcbc8d117a77df52"
+                "reference": "6038fe842f4031f720acec3d5ff2aa941517f7c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/4b6efc6631161f9ddb64aecfbcbc8d117a77df52",
-                "reference": "4b6efc6631161f9ddb64aecfbcbc8d117a77df52",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/6038fe842f4031f720acec3d5ff2aa941517f7c4",
+                "reference": "6038fe842f4031f720acec3d5ff2aa941517f7c4",
                 "shasum": ""
             },
             "require": {
@@ -2328,7 +2320,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2013-12-16 15:47:21"
+            "time": "2013-12-28 17:55:06"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3614,7 +3606,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/CampaignBundle",
-                "reference": "eddceaf23307dbdef2a49cf5b01c1696d2e1eaba"
+                "reference": "3f3db01b457a5bc9dc180237c7bc6e2896fd56f5"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3627,7 +3619,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2013-12-09 18:30:33"
+            "time": "2013-12-25 21:21:59"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3636,7 +3628,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/FrontendBundle",
-                "reference": "5f5d84e043bb595500c2c2131151380ba4ed0dde"
+                "reference": "9df4215db23f1366abd47c6f8d83b882ecea47da"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3645,7 +3637,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2013-12-09 18:35:50"
+            "time": "2013-12-29 11:29:12"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3675,7 +3667,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/PlatformBundle",
-                "reference": "37ea9d8e4ee3664fe361ece13bbc2ffb8e9040a9"
+                "reference": "3ee63ccca4b8aa943e15836cb40c6ebb14ffa99b"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3688,7 +3680,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2013-12-09 18:35:02"
+            "time": "2013-12-25 21:19:07"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3715,7 +3707,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/UserBundle",
-                "reference": "085ec0b8b259c8fb9c253ce86740590bb6ac2c8c"
+                "reference": "ff8cd4c33244930a4ffd7633c4307f9708f9b3c1"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3727,7 +3719,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2013-12-25 21:16:14"
+            "time": "2013-12-27 13:24:30"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -3761,7 +3753,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
