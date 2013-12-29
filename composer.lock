@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0b31c0465add2cdb34d27f875865e6e1",
+    "hash": "7dd7a077146fda8e1e2f3a8e46de3a31",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -3606,7 +3606,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/CampaignBundle",
-                "reference": "323d48de0f7d2ab1185cac0268475aef9a6b0e21"
+                "reference": "376d9f1c9091ec6417ed8c00157e30b7f953153e"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3619,7 +3619,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2013-12-29 11:59:55"
+            "time": "2013-12-29 12:31:11"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3638,6 +3638,24 @@
             },
             "description": "Vifeed/FrontendBundle",
             "time": "2013-12-29 11:29:12"
+        },
+        {
+            "name": "vifeed/geo-bundle",
+            "version": "dev-master",
+            "target-dir": "Vifeed/GeoBundle",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/vifeed/GeoBundle",
+                "reference": "98e363216951c8ae5fb33cd7b6ac075f8b17e791"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Vifeed\\GeoBundle": ""
+                }
+            },
+            "description": "Vifeed/GeoBundle",
+            "time": "2013-12-29 12:31:38"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3667,7 +3685,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/PlatformBundle",
-                "reference": "c50f760de5f7b72ec6202de7af50a964b541a83a"
+                "reference": "be5b1b1cb6ef25df5b7dc90e23949b8e069b3dc3"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3680,7 +3698,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2013-12-29 12:12:57"
+            "time": "2013-12-29 12:30:35"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3856,7 +3874,8 @@
         "vifeed/payment-bundle": 20,
         "vifeed/platform-bundle": 20,
         "vifeed/system-bundle": 20,
-        "vifeed/user-bundle": 20
+        "vifeed/user-bundle": 20,
+        "vifeed/geo-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
