@@ -119,6 +119,12 @@
             "name": "vifeed/user-bundle",
             "url": "ssh://git@github.com/vifeed/UserBundle",
             "version": "dev-master"
+        },
+        {
+            "type": "git",
+            "name": "vifeed/geo-bundle",
+            "url": "ssh://git@github.com/vifeed/GeoBundle",
+            "version": "dev-master"
         }
     ],
     "autoload": {
@@ -189,7 +195,8 @@
         "vifeed/payment-bundle": "dev-master",
         "vifeed/platform-bundle": "dev-master",
         "vifeed/system-bundle": "dev-master",
-        "vifeed/user-bundle": "dev-master"
+        "vifeed/user-bundle": "dev-master",
+        "vifeed/geo-bundle": "dev-master"
     },
     "require-dev": {
     },
