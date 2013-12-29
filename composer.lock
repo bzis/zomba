@@ -3667,7 +3667,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/PlatformBundle",
-                "reference": "3ee63ccca4b8aa943e15836cb40c6ebb14ffa99b"
+                "reference": "c50f760de5f7b72ec6202de7af50a964b541a83a"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3680,7 +3680,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2013-12-25 21:19:07"
+            "time": "2013-12-29 12:12:57"
         },
         {
             "name": "vifeed/system-bundle",
