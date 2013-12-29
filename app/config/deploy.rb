@@ -64,6 +64,11 @@ namespace :deploy do
   end
 end
 
+before "symfony:assetic:dump" do
+    run "sh -c 'cd #{latest_release} && npm install'"
+    run "sh -c 'cd #{latest_release} && grunt'"
+end
+
 set :parameters_dir, "app/config/parameters"
 set :parameters_file, false
 
