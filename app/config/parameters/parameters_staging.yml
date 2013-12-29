@@ -1,10 +1,10 @@
 parameters:
     database_driver: pdo_mysql
-    database_host: 127.0.0.1
+    database_host: stage.ctpklt153wwy.eu-west-1.rds.amazonaws.com
     database_port: null
     database_name: vifeed
-    database_user: root
-    database_password: rootpass
+    database_user: chief
+    database_password: DL6LR$db&cz4Qe
     mailer_transport: gmail
     mailer_host: null
     mailer_user: hd.deman@gmail.com
