@@ -3606,7 +3606,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/CampaignBundle",
-                "reference": "376d9f1c9091ec6417ed8c00157e30b7f953153e"
+                "reference": "038490bd8fb8d4eb9d6958a5e933820a6e9787b9"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3619,7 +3619,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2013-12-29 12:31:11"
+            "time": "2013-12-29 15:13:07"
         },
         {
             "name": "vifeed/frontend-bundle",
