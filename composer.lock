@@ -1132,12 +1132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "a02f6fe3553391a84041ca11f02b781b2560b05b"
+                "reference": "c66cb666ea98d101c3650279c545081a94e47d3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/a02f6fe3553391a84041ca11f02b781b2560b05b",
-                "reference": "a02f6fe3553391a84041ca11f02b781b2560b05b",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/c66cb666ea98d101c3650279c545081a94e47d3e",
+                "reference": "c66cb666ea98d101c3650279c545081a94e47d3e",
                 "shasum": ""
             },
             "require": {
@@ -1192,7 +1192,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2013-12-26 16:09:25"
+            "time": "2013-12-30 08:57:49"
         },
         {
             "name": "google-code/crypto-js",
@@ -3629,7 +3629,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/FrontendBundle",
-                "reference": "9df4215db23f1366abd47c6f8d83b882ecea47da"
+                "reference": "fe7ca27ffbe2d3e60d0fc6740d9de5bfd270f09c"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3638,7 +3638,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2013-12-29 11:29:12"
+            "time": "2013-12-30 09:06:59"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3726,7 +3726,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/UserBundle",
-                "reference": "ff8cd4c33244930a4ffd7633c4307f9708f9b3c1"
+                "reference": "9467b27d29ff082f23d65a71d32d6e62518319f2"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3738,7 +3738,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2013-12-27 13:24:30"
+            "time": "2013-12-30 09:06:35"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
