@@ -88,3 +88,5 @@ task :upload_parameters do
     top.upload(origin_file, destination_file)
   end
 end
+
+before "deploy:share_childs", "upload_parameters"
