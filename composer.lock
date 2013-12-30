@@ -3629,7 +3629,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@github.com/vifeed/FrontendBundle",
-                "reference": "fe7ca27ffbe2d3e60d0fc6740d9de5bfd270f09c"
+                "reference": "3283c850d6f0723b36049b3230a18314f3a6e6eb"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3638,7 +3638,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2013-12-30 09:06:59"
+            "time": "2013-12-30 10:26:00"
         },
         {
             "name": "vifeed/geo-bundle",
