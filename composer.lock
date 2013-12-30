@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7dd7a077146fda8e1e2f3a8e46de3a31",
+    "hash": "78b66d95d06db7543d5b1cb528d5842d",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -11,9 +11,10 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/angular-ui/bootstrap.git",
-                "reference": "bootstrap3"
+                "reference": "master"
             },
-            "type": "library"
+            "type": "library",
+            "time": "2013-12-29 22:01:13"
         },
         {
             "name": "angular-ui/ui-select2",
