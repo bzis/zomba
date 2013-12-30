@@ -148,7 +148,7 @@ snc_redis:
         default:
             type: predis
             alias: default
-            dsn: redis://localhost
+            dsn: %redis_dns%
 
 jms_payment_core:
     secret: %payment.secret%
