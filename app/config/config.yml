@@ -45,8 +45,8 @@ assetic:
             bin: %assetic.filter.compass.bin%
         cssrewrite:
             apply_to: "\.scss$"
-        closure:
-            jar: %kernel.root_dir%/Resources/java/compiler-latest/compiler.jar
+        closure: false
+            #jar: %kernel.root_dir%/Resources/java/compiler-latest/compiler.jar
         yui_css:
             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
     read_from:        %assetic.cdn_url%
