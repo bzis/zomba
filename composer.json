@@ -87,43 +87,43 @@
         {
             "type": "git",
             "name": "vifeed/campaign-bundle",
-            "url": "ssh://git@github.com/vifeed/CampaignBundle",
+            "url": "git@github.com/vifeed/CampaignBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/frontend-bundle",
-            "url": "ssh://git@github.com/vifeed/FrontendBundle",
+            "url": "git@github.com/vifeed/FrontendBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/payment-bundle",
-            "url": "ssh://git@github.com/vifeed/PaymentBundle",
+            "url": "git@github.com/vifeed/PaymentBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/platform-bundle",
-            "url": "ssh://git@github.com/vifeed/PlatformBundle",
+            "url": "git@github.com/vifeed/PlatformBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/system-bundle",
-            "url": "ssh://git@github.com/vifeed/SystemBundle",
+            "url": "git@github.com/vifeed/SystemBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/user-bundle",
-            "url": "ssh://git@github.com/vifeed/UserBundle",
+            "url": "git@github.com/vifeed/UserBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/geo-bundle",
-            "url": "ssh://git@github.com/vifeed/GeoBundle",
+            "url": "git@github.com/vifeed/GeoBundle.git",
             "version": "dev-master"
         }
     ],
