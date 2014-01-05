@@ -144,11 +144,17 @@ fos_user:
 nelmio_api_doc: ~
 
 snc_redis:
+    session:
+        client: session
     clients:
         default:
             type: predis
             alias: default
-            dsn: %redis_dns%
+            dsn: %redis_dns.default%
+        session:
+            type: predis
+            alias: session
+            dsn: %redis_dns.session%
 
 jms_payment_core:
     secret: %payment.secret%

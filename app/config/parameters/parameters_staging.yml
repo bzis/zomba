@@ -23,4 +23,5 @@ parameters:
     robokassa.login: 2ceea4871a6205c421dc3ce9b0a7b350aafe7000
     robokassa.password1: DZ1oZrZc9U8e
     robokassa.password2: dEv56kZLMA2X
-    redis_dns: 'redis://stage.nmhes6.0001.euw1.cache.amazonaws.com:6379'
+    redis_dns.default: 'redis://stage.nmhes6.0001.euw1.cache.amazonaws.com:6379/1'
+    redis_dns.session: 'redis://stage.nmhes6.0001.euw1.cache.amazonaws.com:6379/2'
