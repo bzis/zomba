@@ -20,7 +20,7 @@ framework:
     default_locale:  "%locale%"
     trusted_proxies: ~
     session:
-        save_path: %kernel.root_dir%/var/sessions
+        handler_id: snc_redis.session.handler
     fragments:       ~
     http_method_override: true
 
@@ -142,9 +142,6 @@ fos_user:
             template:   VifeedUserBundle:Registration:email.html.twig
 
 nelmio_api_doc: ~
-
-session:
-    handler_id: snc_redis.session.handler
 
 snc_redis:
     session:
