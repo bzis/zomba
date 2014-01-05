@@ -143,6 +143,9 @@ fos_user:
 
 nelmio_api_doc: ~
 
+session:
+    handler_id: snc_redis.session.handler
+
 snc_redis:
     session:
         client: session
