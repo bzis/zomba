@@ -1132,12 +1132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "c66cb666ea98d101c3650279c545081a94e47d3e"
+                "reference": "826f29a97d437e88558dd74e7e15a3e8519b241c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/c66cb666ea98d101c3650279c545081a94e47d3e",
-                "reference": "c66cb666ea98d101c3650279c545081a94e47d3e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/826f29a97d437e88558dd74e7e15a3e8519b241c",
+                "reference": "826f29a97d437e88558dd74e7e15a3e8519b241c",
                 "shasum": ""
             },
             "require": {
@@ -1192,7 +1192,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2013-12-30 08:57:49"
+            "time": "2014-01-06 17:33:34"
         },
         {
             "name": "google-code/crypto-js",
@@ -3647,7 +3647,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/GeoBundle.git",
-                "reference": "aafad6154df4661e0a623ecdd072cb7f515bbd5a"
+                "reference": "5f8fbbd309b88e510760b291c9219b388b5d61ae"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3656,7 +3656,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2013-12-22 18:23:03"
+            "time": "2014-01-06 19:06:46"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3686,7 +3686,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "a7b379631f4f5fdfe6a783be5db81525a7cab1d9"
+                "reference": "2c37a1ecd28e1b5e2217e058438482266e4045f6"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3699,7 +3699,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2013-12-29 16:17:18"
+            "time": "2014-01-06 19:48:50"
         },
         {
             "name": "vifeed/system-bundle",
