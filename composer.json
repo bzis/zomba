@@ -8,7 +8,55 @@
                 "source": {
                     "type": "git",
                     "url": "git://github.com/angular-ui/bootstrap.git",
-                    "reference": "bootstrap3"
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "angular-ui/ui-utils",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/angular-ui/ui-utils.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "angular-ui/ui-select2",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/angular-ui/ui-select2.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ivaynberg/select2",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/ivaynberg/select2.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "fk/select2-bootstrap-css",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/fk/select2-bootstrap-css.git",
+                    "reference": "master"
                 }
             }
         },
@@ -39,43 +87,49 @@
         {
             "type": "git",
             "name": "vifeed/campaign-bundle",
-            "url": "ssh://git@github.com/vifeed/CampaignBundle",
+            "url": "git@github.com:vifeed/CampaignBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/frontend-bundle",
-            "url": "ssh://git@github.com/vifeed/FrontendBundle",
+            "url": "git@github.com:vifeed/FrontendBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/payment-bundle",
-            "url": "ssh://git@github.com/vifeed/PaymentBundle",
+            "url": "git@github.com:vifeed/PaymentBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/platform-bundle",
-            "url": "ssh://git@github.com/vifeed/PlatformBundle",
+            "url": "git@github.com:vifeed/PlatformBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/system-bundle",
-            "url": "ssh://git@github.com/vifeed/SystemBundle",
+            "url": "git@github.com:vifeed/SystemBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/geo-bundle",
-            "url": "ssh://git@github.com/vifeed/GeoBundle",
+            "url": "git@github.com:vifeed/GeoBundle.git",
             "version": "dev-master"
         },
         {
             "type": "git",
             "name": "vifeed/user-bundle",
-            "url": "ssh://git@github.com/vifeed/UserBundle",
+            "url": "git@github.com:vifeed/UserBundle.git",
+            "version": "dev-master"
+        },
+        {
+            "type": "git",
+            "name": "vifeed/geo-bundle",
+            "url": "git@github.com:vifeed/GeoBundle.git",
             "version": "dev-master"
         }
     ],
@@ -135,6 +189,10 @@
         "friendsofsymfony/jsrouting-bundle": "~1.1",
         "fortawesome/font-awesome": "4.0.x-dev",
         "angular-ui/bootstrap": "dev-master",
+        "angular-ui/ui-utils": "dev-master",
+        "angular-ui/ui-select2": "dev-master",
+        "ivaynberg/select2": "dev-master",
+        "fk/select2-bootstrap-css": "dev-master",
         "google-code/crypto-js": "3.1.2",
         "xapu/angularjs-cookies": "dev-master",
         "guzzle/guzzle": "~3.7",
