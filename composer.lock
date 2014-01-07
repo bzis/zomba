@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ea36cf5a73371b3ed611234b70399add",
+    "hash": "33616fe1d8b24b474f51bae29e224590",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-31 17:12:09"
+            "time": "2014-01-05 18:40:22"
         },
         {
             "name": "angular-ui/ui-select2",
@@ -135,10 +135,9 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -154,7 +153,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -212,8 +211,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -279,8 +277,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -296,7 +293,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -352,8 +349,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -431,8 +427,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 }
             ],
             "description": "Data Fixtures for all Doctrine Object Managers",
@@ -479,8 +474,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -724,8 +718,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -743,7 +736,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -795,7 +788,7 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -915,8 +908,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -1140,12 +1132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "c66cb666ea98d101c3650279c545081a94e47d3e"
+                "reference": "826f29a97d437e88558dd74e7e15a3e8519b241c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/c66cb666ea98d101c3650279c545081a94e47d3e",
-                "reference": "c66cb666ea98d101c3650279c545081a94e47d3e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/826f29a97d437e88558dd74e7e15a3e8519b241c",
+                "reference": "826f29a97d437e88558dd74e7e15a3e8519b241c",
                 "shasum": ""
             },
             "require": {
@@ -1200,7 +1192,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2013-12-30 08:57:49"
+            "time": "2014-01-06 17:33:34"
         },
         {
             "name": "google-code/crypto-js",
@@ -1365,7 +1357,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-19 01:06:46"
+            "time": "2014-01-03 03:20:22"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -3650,12 +3642,12 @@
         },
         {
             "name": "vifeed/geo-bundle",
-            "version": "dev-master",
+            "version": "dev-hotfix",
             "target-dir": "Vifeed/GeoBundle",
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/GeoBundle.git",
-                "reference": "ab2d33f9d0d22d4a17d72a6052917440ae4b06a3"
+                "reference": "5f8fbbd309b88e510760b291c9219b388b5d61ae"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3664,7 +3656,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2013-12-29 12:39:34"
+            "time": "2014-01-06 19:06:46"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3694,7 +3686,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "a7b379631f4f5fdfe6a783be5db81525a7cab1d9"
+                "reference": "2c37a1ecd28e1b5e2217e058438482266e4045f6"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3707,7 +3699,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2013-12-29 16:17:18"
+            "time": "2014-01-06 19:48:50"
         },
         {
             "name": "vifeed/system-bundle",
