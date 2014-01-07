@@ -25,66 +25,6 @@
             }
         },
         {
-            "type": "package",
-            "package": {
-                "name": "angular-ui/ui-select2",
-                "version": "dev-master",
-                "source": {
-                    "type": "git",
-                    "url": "git://github.com/angular-ui/ui-select2.git",
-                    "reference": "master"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "ivaynberg/select2",
-                "version": "dev-master",
-                "source": {
-                    "type": "git",
-                    "url": "git://github.com/ivaynberg/select2.git",
-                    "reference": "master"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "fk/select2-bootstrap-css",
-                "version": "dev-master",
-                "source": {
-                    "type": "git",
-                    "url": "git://github.com/fk/select2-bootstrap-css.git",
-                    "reference": "master"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "xapu/angularjs-cookies",
-                "version": "dev-master",
-                "source": {
-                    "type": "git",
-                    "url": "git://github.com/xapu/angularjs-cookies.git",
-                    "reference": "master"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "google-code/crypto-js",
-                "version": "3.1.2",
-                "source": {
-                    "type": "svn",
-                    "url": "http://crypto-js.googlecode.com/svn/tags",
-                    "reference": "3.1.2"
-                }
-            }
-        },
-        {
             "type": "git",
             "name": "vifeed/campaign-bundle",
             "url": "git@github.com:vifeed/CampaignBundle.git",
@@ -174,7 +114,6 @@
         "doctrine/doctrine-fixtures-bundle": "dev-master",
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "sensio/buzz-bundle": "dev-master",
-        "jlong/sass-twitter-bootstrap": "dev-master",
         "snc/redis-bundle": "1.1.x-dev",
         "predis/predis": "0.8.x-dev",
         "jms/di-extra-bundle": "dev-master",
@@ -184,11 +123,6 @@
         "fortawesome/font-awesome": "4.0.x-dev",
         "angular-ui/bootstrap": "dev-master",
         "angular-ui/ui-utils": "dev-master",
-        "angular-ui/ui-select2": "dev-master",
-        "ivaynberg/select2": "dev-master",
-        "fk/select2-bootstrap-css": "dev-master",
-        "google-code/crypto-js": "3.1.2",
-        "xapu/angularjs-cookies": "dev-master",
         "guzzle/guzzle": "~3.7",
         "vifeed/campaign-bundle": "dev-master",
         "vifeed/frontend-bundle": "dev-master",
