@@ -30,13 +30,6 @@ security:
             logout:       true
             anonymous:    true
 
-#        pre_auth:
-#            pattern:  ^/api/user/(register|login)
-#            security: false
-#            form_login:
-#                provider: fos_userbundle
-#                csrf_provider: form.csrf_provider
-
 
 
         dev:
@@ -46,11 +39,10 @@ security:
 
     access_control:
             - { path: ^/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
-            - { path: ^/api/users$, role: IS_AUTHENTICATED_ANONYMOUSLY } # todo: разрулить открытые и закрытые зоны
-            - { path: ^/api/user/login_check$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+            - { path: ^/api/users$, role: IS_AUTHENTICATED_ANONYMOUSLY } # регистрация
             - { path: ^/api/users/confirm$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+            - { path: ^/api/user/login_check$, role: IS_AUTHENTICATED_ANONYMOUSLY }
 #            - { path: ^/api/user/(register|login), role: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/api/, role: ROLE_USER }
 
-#        - { path: ^/demo/secured/hello/admin/, roles: ROLE_ADMIN }
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
