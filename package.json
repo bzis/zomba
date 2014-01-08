@@ -1,10 +1,11 @@
 {
   "name": "vifeed",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "vifeed base project",
   "main": "index.js",
   "dependencies": {
-    "grunt": "~0.4"
+    "grunt": "~0.4.1",
+    "grunt-s3": "~0.2.0-alpha"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
