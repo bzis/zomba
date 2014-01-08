@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "33616fe1d8b24b474f51bae29e224590",
+    "hash": "ca5b4a8c598bfdd6a24ef7966729837c",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -14,18 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-01-05 18:40:22"
-        },
-        {
-            "name": "angular-ui/ui-select2",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/angular-ui/ui-select2.git",
-                "reference": "master"
-            },
-            "type": "library",
-            "time": "2013-12-20 15:59:50"
+            "time": "2013-12-31 17:12:09"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -135,9 +124,10 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -153,7 +143,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -211,7 +201,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -277,7 +268,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -293,7 +285,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -349,7 +341,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -427,7 +420,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 }
             ],
             "description": "Data Fixtures for all Doctrine Object Managers",
@@ -474,7 +468,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -718,7 +713,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -736,7 +732,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -788,7 +784,7 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -908,7 +904,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -931,17 +928,6 @@
                 "orm"
             ],
             "time": "2013-05-11 07:51:12"
-        },
-        {
-            "name": "fk/select2-bootstrap-css",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/fk/select2-bootstrap-css.git",
-                "reference": "master"
-            },
-            "type": "library",
-            "time": "2013-11-25 23:27:57"
         },
         {
             "name": "fortawesome/font-awesome",
@@ -1195,16 +1181,6 @@
             "time": "2014-01-06 17:33:34"
         },
         {
-            "name": "google-code/crypto-js",
-            "version": "3.1.2",
-            "source": {
-                "type": "svn",
-                "url": "http://crypto-js.googlecode.com/svn/tags",
-                "reference": "3.1.2"
-            },
-            "type": "library"
-        },
-        {
             "name": "guzzle/guzzle",
             "version": "v3.8.0",
             "source": {
@@ -1349,17 +1325,6 @@
             "time": "2013-12-07 10:10:39"
         },
         {
-            "name": "ivaynberg/select2",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/ivaynberg/select2.git",
-                "reference": "master"
-            },
-            "type": "library",
-            "time": "2014-01-03 03:20:22"
-        },
-        {
             "name": "jdorn/sql-formatter",
             "version": "v1.2.16",
             "source": {
@@ -1408,52 +1373,6 @@
                 "sql"
             ],
             "time": "2013-11-27 22:51:13"
-        },
-        {
-            "name": "jlong/sass-twitter-bootstrap",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jlong/sass-bootstrap.git",
-                "reference": "2b2bd7cce7693e25518cace258a89ad9621169d0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jlong/sass-bootstrap/zipball/2b2bd7cce7693e25518cace258a89ad9621169d0",
-                "reference": "2b2bd7cce7693e25518cace258a89ad9621169d0",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Jacob Thornton",
-                    "email": "jacobthornton@gmail.com"
-                },
-                {
-                    "name": "John W. Long"
-                },
-                {
-                    "name": "Mark Otto",
-                    "email": "markdotto@gmail.com"
-                }
-            ],
-            "description": "A sass port of the sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-            "homepage": "http://github.com/jlong/sass-bootstrap/",
-            "keywords": [
-                "bootstrap",
-                "css",
-                "sass"
-            ],
-            "time": "2013-11-10 13:07:00"
         },
         {
             "name": "jms/aop-bundle",
@@ -3629,7 +3548,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "3283c850d6f0723b36049b3230a18314f3a6e6eb"
+                "reference": "9b3a1ada04d1734fffefab4fa0df52322e174fd6"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3638,7 +3557,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2013-12-30 10:26:00"
+            "time": "2014-01-07 01:52:05"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3726,7 +3645,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "9467b27d29ff082f23d65a71d32d6e62518319f2"
+                "reference": "1926db9413aa779784835c670329ace93f63bc6e"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3738,7 +3657,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2013-12-30 09:06:35"
+            "time": "2014-01-06 21:08:06"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -3829,17 +3748,6 @@
                 "negotiation"
             ],
             "time": "2013-12-14 14:09:01"
-        },
-        {
-            "name": "xapu/angularjs-cookies",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/xapu/angularjs-cookies.git",
-                "reference": "master"
-            },
-            "type": "library",
-            "time": "2013-08-02 14:48:04"
         }
     ],
     "packages-dev": [
@@ -3857,7 +3765,6 @@
         "doctrine/doctrine-fixtures-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
         "sensio/buzz-bundle": 20,
-        "jlong/sass-twitter-bootstrap": 20,
         "snc/redis-bundle": 20,
         "predis/predis": 20,
         "jms/di-extra-bundle": 20,
@@ -3866,10 +3773,6 @@
         "fortawesome/font-awesome": 20,
         "angular-ui/bootstrap": 20,
         "angular-ui/ui-utils": 20,
-        "angular-ui/ui-select2": 20,
-        "ivaynberg/select2": 20,
-        "fk/select2-bootstrap-css": 20,
-        "xapu/angularjs-cookies": 20,
         "vifeed/campaign-bundle": 20,
         "vifeed/frontend-bundle": 20,
         "vifeed/payment-bundle": 20,

@@ -39,6 +39,7 @@ set :keep_releases,  3
 
 
 set :dump_assetic_assets, true
+set :assets_install,      true
 
 # Be more verbose by uncommenting the following line
 logger.level = Logger::MAX_LEVEL
@@ -66,7 +67,12 @@ end
 
 before 'symfony:assetic:dump' do
     run "sh -c 'cd #{latest_release} && npm install'"
+    run "sh -c 'cd #{latest_release} && bower install'"
     run "sh -c 'cd #{latest_release} && grunt'"
+end
+
+after 'symfony:assetic:dump' do
+    run "sh -c 'cd #{latest_release} && grunt s3'"
 end
 
 set :parameters_dir, 'app/config/parameters'
