@@ -14,7 +14,16 @@ module.exports = function(grunt) {
           "Expires": new Date(Date.now() + 63072000000).toUTCString()
         },
       },
-      prod: {
+      js_and_css: {
+        options: {
+          key: '<%= aws.key %>',
+          secret: '<%= aws.secret %>',
+          bucket: '<%= aws.bucket %>',
+          access: 'public-read',
+          headers: {
+            "Vary": "Accept-Encoding"
+          },
+        },
         upload: [{
           // The regular js files
           src: "web/js/**/*.js",
@@ -37,7 +46,10 @@ module.exports = function(grunt) {
           dest: "css",
           rel: "web/css",
           options: { gzip: true }
-        }, {
+        }]
+      },
+      assets: {
+        upload: [{
           // The gzip css files
           src: "web/bundles/**",
           dest: "bundles",
