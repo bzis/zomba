@@ -117,7 +117,9 @@ swiftmailer:
     host:      %mailer_host%
     username:  %mailer_user%
     password:  %mailer_password%
-    spool:     { type: memory }
+    spool:
+        type: service
+        id: snc_redis.swiftmailer.spool
 
 fos_rest:
     routing_loader:
@@ -163,6 +165,9 @@ snc_redis:
             type: predis
             alias: session
             dsn: %redis_dns.session%
+    swiftmailer:
+        client: default
+        key: swiftmailer
 
 jms_payment_core:
     secret: %payment.secret%
