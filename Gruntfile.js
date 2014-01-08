@@ -13,6 +13,7 @@ module.exports = function(grunt) {
           "Cache-Control": "max-age=630720000, public",
           "Expires": new Date(Date.now() + 63072000000).toUTCString()
         },
+      },
       prod: {
         upload: [{
           // The regular js files
