@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function(grunt) {
   grunt.initConfig({
-    aws: grunt.file.readJSON('~/grunt-aws.json'),
+    aws: grunt.file.readJSON('/home/deploy/grunt-aws.json'),
     s3: {
       options: {
         key: '<%= aws.key %>',
