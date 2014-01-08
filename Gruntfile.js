@@ -13,98 +13,28 @@ module.exports = function(grunt) {
           "Cache-Control": "max-age=630720000, public",
           "Expires": new Date(Date.now() + 63072000000).toUTCString()
         },
-        dev: {
-          // These options override the defaults
-          options: {
-            encodePaths: true,
-            maxOperations: 20
-          },
-          // Files to be uploaded.
-          upload: [
-            {
-              src: 'prod.rb',
-              dest: 'documents/prod.rb',
-              options: { gzip: true }
-            },
-            {
-              src: 'passwords.txt',
-              dest: 'documents/ignore.txt',
-
-              // These values will override the above settings.
-              options: {
-                bucket: 'some-specific-bucket',
-                access: 'authenticated-read'
-              }
-            },
-            {
-              // Wildcards are valid *for uploads only* until I figure out a good implementation
-              // for downloads.
-              src: 'documents/*.txt',
-
-              // But if you use wildcards, make sure your destination is a directory.
-              dest: 'documents/'
-            }
-          ],
-
-          // Files to be downloaded.
-          download: [
-            {
-              src: 'documents/important.txt',
-              dest: 'important_document_download.txt'
-            },
-            {
-              src: 'garbage/IGNORE.txt',
-              dest: 'passwords_download.txt'
-            }
-          ],
-
-          del: [
-            {
-              src: 'documents/launch_codes.txt'
-            },
-            {
-              src: 'documents/backup_plan.txt'
-            }
-          ],
-
-          sync: [
-            {
-              // only upload this document if it does not exist already
-              src: 'important_document.txt',
-              dest: 'documents/important.txt',
-              options: { gzip: true }
-            },
-            {
-              // make sure this document is newer than the one on S3 and replace it
-              options: { verify: true },
-              src: 'passwords.txt',
-              dest: 'documents/ignore.txt'
-            }
-          ]
-        }
-      },
       prod: {
         upload: [{
           // The regular js files
-          src: "tmp/assets/js/**/*.js",
+          src: "web/js/**/*.js",
           dest: "js",
-          rel:  "tmp/assets/js"
+          rel:  "web/js"
         }, {
           // The gzip js files
-          src: "tmp/assets/js/**/*.js",
+          src: "web/js/**/*.js",
           dest: "jsgz",
-          rel: "tmp/assets/js",
+          rel: "web/js",
           options: { gzip: true }
         }, {
           // The regular css files
-          src: "tmp/assets/css/**/*.css",
+          src: "web/css/**/*.css",
           dest: "css",
-          rel: "tmp/assets/css"
+          rel: "web/css"
         }, {
           // The gzip css files
-          src: "tmp/assets/css/**/*.css",
+          src: "web/css/**/*.css",
           dest: "cssgz",
-          rel: "tmp/assets/css",
+          rel: "web/css",
           options: { gzip: true }
         }, {
           // The gzip css files
@@ -113,7 +43,6 @@ module.exports = function(grunt) {
           rel: "web/bundles"
         }]
       }
-
     },
 
     html2js: {

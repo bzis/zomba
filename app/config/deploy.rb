@@ -39,6 +39,7 @@ set :keep_releases,  3
 
 
 set :dump_assetic_assets, true
+set :assets_install,      true
 
 # Be more verbose by uncommenting the following line
 logger.level = Logger::MAX_LEVEL
