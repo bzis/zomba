@@ -18,23 +18,23 @@ module.exports = function(grunt) {
         upload: [{
           // The regular js files
           src: "web/js/**/*.js",
-          dest: "js",
-          rel:  "web/js"
+          dest: "js-ungz",
+          rel: "web/js"
         }, {
           // The gzip js files
           src: "web/js/**/*.js",
-          dest: "jsgz",
+          dest: "js",
           rel: "web/js",
           options: { gzip: true }
         }, {
           // The regular css files
           src: "web/css/**/*.css",
-          dest: "css",
+          dest: "css-ungz",
           rel: "web/css"
         }, {
           // The gzip css files
           src: "web/css/**/*.css",
-          dest: "cssgz",
+          dest: "css",
           rel: "web/css",
           options: { gzip: true }
         }, {
