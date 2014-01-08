@@ -11,6 +11,7 @@
 !app/logs/.gitkeep
 /build/
 /vendor/
+/bower-vendor/
 /bin/
 /composer.phar
 atlassian-ide-plugin.xml
