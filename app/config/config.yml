@@ -93,7 +93,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.css
         fos_js_routes:
             inputs:
-                - %kernel.root_dir%/../web/bundles/fosjsrouting/js/router.js
+                - @FOSJsRoutingBundle/Resources/public/js/router.js
                 - %kernel.root_dir%/../web/js/fos_js_routes.js
             filters:
                 - ?closure
