@@ -1,12 +1,12 @@
 {
     "name": "vifeed",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "dependencies": {
         "jquery": "1.10.2",
-        "angular": "1.2.0",
-        "angular-route": "1.2.0",
-        "angular-resource": "1.2.0",
-        "angular-mocks": "1.2.0",
+        "angular": "1.2.7",
+        "angular-route": "1.2.7",
+        "angular-resource": "1.2.7",
+        "angular-mocks": "1.2.7",
         "xapu-angular-cookies": "https://github.com/xapu/angularjs-cookies.git",
         "select2": "3.4.5",
         "angular-ui-select2": "0.0.5",

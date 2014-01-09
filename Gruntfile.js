@@ -19,27 +19,14 @@ module.exports = function(grunt) {
           key: '<%= aws.key %>',
           secret: '<%= aws.secret %>',
           bucket: '<%= aws.bucket %>',
-          access: 'public-read',
-          headers: {
-            "Vary": "Accept-Encoding"
-          },
+          access: 'public-read'
         },
         upload: [{
-          // The regular js files
-          src: "web/js/**/*.js",
-          dest: "js-ungz",
-          rel: "web/js"
-        }, {
           // The gzip js files
           src: "web/js/**/*.js",
           dest: "js",
           rel: "web/js",
           options: { gzip: true }
-        }, {
-          // The regular css files
-          src: "web/css/**/*.css",
-          dest: "css-ungz",
-          rel: "web/css"
         }, {
           // The gzip css files
           src: "web/css/**/*.css",
