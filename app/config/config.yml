@@ -94,7 +94,7 @@ assetic:
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/js/router.js
-                - %kernel.root_dir%/../js/fos_js_routes.js
+                - %kernel.root_dir%/../web/js/fos_js_routes.js
 # Doctrine Configuration
 doctrine:
     dbal:
