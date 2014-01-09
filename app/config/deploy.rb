@@ -68,6 +68,7 @@ end
 before 'symfony:assetic:dump' do
     run "sh -c 'cd #{latest_release} && npm install'"
     run "sh -c 'cd #{latest_release} && bower install'"
+    run "sh -c 'cd #{latest_release} && php app/console fos:js-routing:dump --env=prod'"
     run "sh -c 'cd #{latest_release} && grunt'"
 end
 

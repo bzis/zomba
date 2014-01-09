@@ -2825,17 +2825,17 @@
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "target-dir": "Sonata/CoreBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "accd2c305d2636b3cb20e3a0eb12501911a5dac6"
+                "reference": "fadf268d4b2c23220b27c33389b6a6132085159e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/accd2c305d2636b3cb20e3a0eb12501911a5dac6",
-                "reference": "accd2c305d2636b3cb20e3a0eb12501911a5dac6",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/fadf268d4b2c23220b27c33389b6a6132085159e",
+                "reference": "fadf268d4b2c23220b27c33389b6a6132085159e",
                 "shasum": ""
             },
             "require": {
@@ -2879,7 +2879,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2013-12-16 10:13:27"
+            "time": "2014-01-07 11:35:59"
         },
         {
             "name": "sonata-project/doctrine-orm-admin-bundle",
@@ -3548,7 +3548,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "9b3a1ada04d1734fffefab4fa0df52322e174fd6"
+                "reference": "54e3a3d619f167c7f8a5e11948e33258c780059a"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3557,7 +3557,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-01-07 01:52:05"
+            "time": "2014-01-09 20:48:51"
         },
         {
             "name": "vifeed/geo-bundle",
