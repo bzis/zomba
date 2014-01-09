@@ -95,6 +95,8 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../web/bundles/fosjsrouting/js/router.js
                 - %kernel.root_dir%/../web/js/fos_js_routes.js
+            filters:
+                - ?closure
 # Doctrine Configuration
 doctrine:
     dbal:
