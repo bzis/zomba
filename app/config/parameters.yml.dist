@@ -12,7 +12,7 @@ parameters:
     mailer_password:   ~
 
     locale:            ru
-    secret:            ThisTokenIsNotSoSecretChangeIt
+    secret:            'R87iwvZtvpvcjbctdcbufLG[sbht7TKjW#ALeGQVMe@gUeah/JwB3QotuMr[it'
 
     assetic.filter.compass.bin: '/usr/local/bin/compass'
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
