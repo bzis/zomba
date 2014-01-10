@@ -57,7 +57,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/jquery/jquery.min.js
         angular:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/angular/angular.min.js
+                - %kernel.root_dir%/../bower-vendor/angular/angular.js
                 - %kernel.root_dir%/../bower-vendor/angular-route/angular-route.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-resource/angular-resource.min.js
                 # - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
