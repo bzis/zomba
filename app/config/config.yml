@@ -72,6 +72,8 @@ assetic:
                 #modal
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/modal/modal.js
                 - %kernel.root_dir%/../tmp/angular-ui-modal-templates.js
+                #transition
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/transition/transition.js
         crypto_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/crypto-js/components/core-min.js
