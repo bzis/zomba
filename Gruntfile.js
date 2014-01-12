@@ -53,15 +53,9 @@ module.exports = function(grunt) {
       }
     },
     curl: {
-      long: {
-        src: 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext',
-        dest: 'tmp/google-fonts/OpenSans.css'
-      },
-      long: {
-        src: 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps',
-        dest: 'tmp/google-fonts/OleoScriptSwashCaps.css'
-      }
-    }
+      'tmp/google-fonts/OpenSans.css': 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext',
+      'tmp/google-fonts/OleoScriptSwashCaps.css': 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps'
+    },
     html2js: {
       module: 'templates',
       options: {
