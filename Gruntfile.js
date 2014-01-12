@@ -42,6 +42,14 @@ module.exports = function(grunt) {
           dest: "bundles",
           rel: "web/bundles"
         }]
+      },
+      fonts: {
+        upload: [{
+          // The gzip css files
+          src: "bower-vendor/sass-bootstrap/fonts/**",
+          dest: "fonts",
+          rel: "bower-vendor/sass-bootstrap/fonts"
+        }]
       }
     },
 
