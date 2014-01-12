@@ -53,8 +53,8 @@ module.exports = function(grunt) {
       }
     },
     curl: {
-      'tmp/google-fonts/OpenSans.css': 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext',
-      'tmp/google-fonts/OleoScriptSwashCaps.css': 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps'
+      'tmp/google-fonts/OpenSans.scss': 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext',
+      'tmp/google-fonts/OleoScriptSwashCaps.scss': 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps'
     },
     html2js: {
       module: 'templates',
