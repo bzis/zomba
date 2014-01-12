@@ -52,7 +52,16 @@ module.exports = function(grunt) {
         }]
       }
     },
-
+    curl: {
+      long: {
+        src: 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext',
+        dest: 'tmp/google-fonts/OpenSans.css'
+      },
+      long: {
+        src: 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps',
+        dest: 'tmp/google-fonts/OleoScriptSwashCaps.css'
+      }
+    }
     html2js: {
       module: 'templates',
       options: {
@@ -76,7 +85,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-s3');
-  //grunt.loadTasks('tasks');
-  grunt.registerTask('default', ['html2js']);
+  grunt.loadNpmTasks('grunt-curl');
+  grunt.registerTask('default', ['html2js', 'curl']);
   grunt.registerTask('after_assetic_dump', ['s3:dev']);
 };
