@@ -42,9 +42,20 @@ module.exports = function(grunt) {
           dest: "bundles",
           rel: "web/bundles"
         }]
+      },
+      fonts: {
+        upload: [{
+          // The gzip css files
+          src: "bower-vendor/sass-bootstrap/fonts/**",
+          dest: "fonts",
+          rel: "bower-vendor/sass-bootstrap/fonts"
+        }]
       }
     },
-
+    curl: {
+      'tmp/google-fonts/OpenSans.scss': 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext',
+      'tmp/google-fonts/OleoScriptSwashCaps.scss': 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps'
+    },
     html2js: {
       module: 'templates',
       options: {
@@ -68,7 +79,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-s3');
-  //grunt.loadTasks('tasks');
-  grunt.registerTask('default', ['html2js']);
+  grunt.loadNpmTasks('grunt-curl');
+  grunt.registerTask('default', ['html2js', 'curl']);
   grunt.registerTask('after_assetic_dump', ['s3:dev']);
 };

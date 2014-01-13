@@ -1041,12 +1041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "5218769bda3de4c3ee35acf53518e2285b953ab4"
+                "reference": "9eaffdd50e13fdc12ae0a2f6456bc3eb825467e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/5218769bda3de4c3ee35acf53518e2285b953ab4",
-                "reference": "5218769bda3de4c3ee35acf53518e2285b953ab4",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/9eaffdd50e13fdc12ae0a2f6456bc3eb825467e1",
+                "reference": "9eaffdd50e13fdc12ae0a2f6456bc3eb825467e1",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1109,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-01-06 08:07:25"
+            "time": "2014-01-11 13:02:54"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1326,16 +1326,16 @@
         },
         {
             "name": "jdorn/sql-formatter",
-            "version": "v1.2.16",
+            "version": "v1.2.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jdorn/sql-formatter.git",
-                "reference": "8859d664737492d313c34796731b35eca851b362"
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/8859d664737492d313c34796731b35eca851b362",
-                "reference": "8859d664737492d313c34796731b35eca851b362",
+                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/64990d96e0959dff8e059dfcdc1af130728d92bc",
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc",
                 "shasum": ""
             },
             "require": {
@@ -1372,7 +1372,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2013-11-27 22:51:13"
+            "time": "2014-01-12 16:20:24"
         },
         {
             "name": "jms/aop-bundle",
@@ -1471,12 +1471,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSDiExtraBundle.git",
-                "reference": "01029f6a19c5a4131b80878311cd44a990ff923a"
+                "reference": "4361495ea88d2eccb5c43749168a2c88f3e6476b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSDiExtraBundle/zipball/01029f6a19c5a4131b80878311cd44a990ff923a",
-                "reference": "01029f6a19c5a4131b80878311cd44a990ff923a",
+                "url": "https://api.github.com/repos/schmittjoh/JMSDiExtraBundle/zipball/4361495ea88d2eccb5c43749168a2c88f3e6476b",
+                "reference": "4361495ea88d2eccb5c43749168a2c88f3e6476b",
                 "shasum": ""
             },
             "require": {
@@ -1529,7 +1529,7 @@
                 "annotations",
                 "dependency injection"
             ],
-            "time": "2013-10-02 11:10:43"
+            "time": "2014-01-10 21:31:29"
         },
         {
             "name": "jms/metadata",
@@ -2347,12 +2347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "9d0201ed9ef4fae09ed251897260941af230bed3"
+                "reference": "0f01b89d44368633e05da72db434df3cb078f08c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/9d0201ed9ef4fae09ed251897260941af230bed3",
-                "reference": "9d0201ed9ef4fae09ed251897260941af230bed3",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/0f01b89d44368633e05da72db434df3cb078f08c",
+                "reference": "0f01b89d44368633e05da72db434df3cb078f08c",
                 "shasum": ""
             },
             "require": {
@@ -2386,7 +2386,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-01-08 16:38:22"
+            "time": "2014-01-10 16:46:58"
         },
         {
             "name": "psr/log",
@@ -3549,7 +3549,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "f403595b79118f74a674005ea18442dd0bcb441b"
+                "reference": "fa8a8f767bc8a783120c97081c94a31a1eb96d94"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3558,7 +3558,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-01-09 23:02:36"
+            "time": "2014-01-12 20:33:32"
         },
         {
             "name": "vifeed/geo-bundle",
