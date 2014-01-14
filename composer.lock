@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8c6dc85b928bdcfc00daee6d94867682",
+    "hash": "cb63146e2e7c11c573a7826a1f98117e",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1041,12 +1041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "9eaffdd50e13fdc12ae0a2f6456bc3eb825467e1"
+                "reference": "5f8f2f812f510e79396bcb4f97eb7782eef3129a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/9eaffdd50e13fdc12ae0a2f6456bc3eb825467e1",
-                "reference": "9eaffdd50e13fdc12ae0a2f6456bc3eb825467e1",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/5f8f2f812f510e79396bcb4f97eb7782eef3129a",
+                "reference": "5f8f2f812f510e79396bcb4f97eb7782eef3129a",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1109,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-01-11 13:02:54"
+            "time": "2014-01-13 23:31:22"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1987,12 +1987,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "eaa2f74fe611d35d191283cda2578b8db68fecc2"
+                "reference": "e6ba983200723c74c554f725142094b3c42da7d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/eaa2f74fe611d35d191283cda2578b8db68fecc2",
-                "reference": "eaa2f74fe611d35d191283cda2578b8db68fecc2",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e6ba983200723c74c554f725142094b3c42da7d4",
+                "reference": "e6ba983200723c74c554f725142094b3c42da7d4",
                 "shasum": ""
             },
             "require": {
@@ -2050,7 +2050,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-01-09 20:35:16"
+            "time": "2014-01-14 13:38:30"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -2174,12 +2174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "5e1bf1fbdacf7e242b7aaf936017640a49d916eb"
+                "reference": "f45cc2565e3d0debbb8fadec104561101103bdc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/5e1bf1fbdacf7e242b7aaf936017640a49d916eb",
-                "reference": "5e1bf1fbdacf7e242b7aaf936017640a49d916eb",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/f45cc2565e3d0debbb8fadec104561101103bdc9",
+                "reference": "f45cc2565e3d0debbb8fadec104561101103bdc9",
                 "shasum": ""
             },
             "require": {
@@ -2240,7 +2240,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-01-10 10:29:52"
+            "time": "2014-01-13 21:35:37"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2622,12 +2622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "dc7aaaaa7f1e9d1c8edad62657efa4ac18088ae3"
+                "reference": "9773e1963ebe017fd6ea09b030a8730c783d94da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/dc7aaaaa7f1e9d1c8edad62657efa4ac18088ae3",
-                "reference": "dc7aaaaa7f1e9d1c8edad62657efa4ac18088ae3",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/9773e1963ebe017fd6ea09b030a8730c783d94da",
+                "reference": "9773e1963ebe017fd6ea09b030a8730c783d94da",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2677,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2013-11-24 12:43:35"
+            "time": "2014-01-14 08:50:40"
         },
         {
             "name": "sonata-project/admin-bundle",
@@ -3646,7 +3646,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "387ef91c8793512e43aa4ab83938279ea9cc2ca5"
+                "reference": "35b3ec19e2cf5ab3593ef0e1bc3252655d290d6d"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3658,7 +3658,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-01-10 16:29:11"
+            "time": "2014-01-14 06:55:31"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -3702,16 +3702,16 @@
         },
         {
             "name": "willdurand/negotiation",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Negotiation.git",
-                "reference": "1757fc48a77a85df6f7659a16b4522bf8da14e99"
+                "reference": "8b32a05c2cfd41c0b350de5ea03aba8b35dfc13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/1757fc48a77a85df6f7659a16b4522bf8da14e99",
-                "reference": "1757fc48a77a85df6f7659a16b4522bf8da14e99",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/8b32a05c2cfd41c0b350de5ea03aba8b35dfc13c",
+                "reference": "8b32a05c2cfd41c0b350de5ea03aba8b35dfc13c",
                 "shasum": ""
             },
             "require": {
@@ -3748,7 +3748,7 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2013-12-14 14:09:01"
+            "time": "2014-01-09 22:50:05"
         }
     ],
     "packages-dev": [
@@ -3759,30 +3759,30 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "symfony/assetic-bundle": 20,
-        "kriswallsmith/assetic": 20,
-        "friendsofsymfony/rest-bundle": 20,
-        "nelmio/api-doc-bundle": 20,
-        "doctrine/migrations": 20,
-        "doctrine/doctrine-migrations-bundle": 20,
+        "angular-ui/bootstrap": 20,
+        "angular-ui/ui-utils": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
+        "doctrine/doctrine-migrations-bundle": 20,
+        "doctrine/migrations": 20,
+        "fortawesome/font-awesome": 20,
+        "friendsofsymfony/rest-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
-        "sensio/buzz-bundle": 20,
-        "snc/redis-bundle": 20,
-        "predis/predis": 20,
         "jms/di-extra-bundle": 20,
         "jms/payment-core-bundle": 20,
         "karser/robokassa-bundle": 20,
-        "fortawesome/font-awesome": 20,
-        "angular-ui/bootstrap": 20,
-        "angular-ui/ui-utils": 20,
+        "kriswallsmith/assetic": 20,
+        "nelmio/api-doc-bundle": 20,
+        "predis/predis": 20,
+        "sensio/buzz-bundle": 20,
+        "snc/redis-bundle": 20,
+        "symfony/assetic-bundle": 20,
         "vifeed/campaign-bundle": 20,
         "vifeed/frontend-bundle": 20,
+        "vifeed/geo-bundle": 20,
         "vifeed/payment-bundle": 20,
         "vifeed/platform-bundle": 20,
         "vifeed/system-bundle": 20,
-        "vifeed/user-bundle": 20,
-        "vifeed/geo-bundle": 20
+        "vifeed/user-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
