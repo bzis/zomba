@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "cb63146e2e7c11c573a7826a1f98117e",
+    "hash": "8c6dc85b928bdcfc00daee6d94867682",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -3759,30 +3759,30 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "angular-ui/bootstrap": 20,
-        "angular-ui/ui-utils": 20,
-        "doctrine/doctrine-fixtures-bundle": 20,
-        "doctrine/doctrine-migrations-bundle": 20,
-        "doctrine/migrations": 20,
-        "fortawesome/font-awesome": 20,
+        "symfony/assetic-bundle": 20,
+        "kriswallsmith/assetic": 20,
         "friendsofsymfony/rest-bundle": 20,
+        "nelmio/api-doc-bundle": 20,
+        "doctrine/migrations": 20,
+        "doctrine/doctrine-migrations-bundle": 20,
+        "doctrine/doctrine-fixtures-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
+        "sensio/buzz-bundle": 20,
+        "snc/redis-bundle": 20,
+        "predis/predis": 20,
         "jms/di-extra-bundle": 20,
         "jms/payment-core-bundle": 20,
         "karser/robokassa-bundle": 20,
-        "kriswallsmith/assetic": 20,
-        "nelmio/api-doc-bundle": 20,
-        "predis/predis": 20,
-        "sensio/buzz-bundle": 20,
-        "snc/redis-bundle": 20,
-        "symfony/assetic-bundle": 20,
+        "fortawesome/font-awesome": 20,
+        "angular-ui/bootstrap": 20,
+        "angular-ui/ui-utils": 20,
         "vifeed/campaign-bundle": 20,
         "vifeed/frontend-bundle": 20,
-        "vifeed/geo-bundle": 20,
         "vifeed/payment-bundle": 20,
         "vifeed/platform-bundle": 20,
         "vifeed/system-bundle": 20,
-        "vifeed/user-bundle": 20
+        "vifeed/user-bundle": 20,
+        "vifeed/geo-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
