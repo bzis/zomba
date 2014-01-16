@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ca5b4a8c598bfdd6a24ef7966729837c",
+    "hash": "8c6dc85b928bdcfc00daee6d94867682",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1041,12 +1041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "5218769bda3de4c3ee35acf53518e2285b953ab4"
+                "reference": "5f8f2f812f510e79396bcb4f97eb7782eef3129a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/5218769bda3de4c3ee35acf53518e2285b953ab4",
-                "reference": "5218769bda3de4c3ee35acf53518e2285b953ab4",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/5f8f2f812f510e79396bcb4f97eb7782eef3129a",
+                "reference": "5f8f2f812f510e79396bcb4f97eb7782eef3129a",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1109,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-01-06 08:07:25"
+            "time": "2014-01-13 23:31:22"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1118,12 +1118,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "826f29a97d437e88558dd74e7e15a3e8519b241c"
+                "reference": "0828095234a23ccf678c24ec2947743060025429"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/826f29a97d437e88558dd74e7e15a3e8519b241c",
-                "reference": "826f29a97d437e88558dd74e7e15a3e8519b241c",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/0828095234a23ccf678c24ec2947743060025429",
+                "reference": "0828095234a23ccf678c24ec2947743060025429",
                 "shasum": ""
             },
             "require": {
@@ -1178,7 +1178,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-01-06 17:33:34"
+            "time": "2014-01-09 11:02:08"
         },
         {
             "name": "guzzle/guzzle",
@@ -1326,16 +1326,16 @@
         },
         {
             "name": "jdorn/sql-formatter",
-            "version": "v1.2.16",
+            "version": "v1.2.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jdorn/sql-formatter.git",
-                "reference": "8859d664737492d313c34796731b35eca851b362"
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/8859d664737492d313c34796731b35eca851b362",
-                "reference": "8859d664737492d313c34796731b35eca851b362",
+                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/64990d96e0959dff8e059dfcdc1af130728d92bc",
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc",
                 "shasum": ""
             },
             "require": {
@@ -1372,7 +1372,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2013-11-27 22:51:13"
+            "time": "2014-01-12 16:20:24"
         },
         {
             "name": "jms/aop-bundle",
@@ -1471,12 +1471,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSDiExtraBundle.git",
-                "reference": "01029f6a19c5a4131b80878311cd44a990ff923a"
+                "reference": "4361495ea88d2eccb5c43749168a2c88f3e6476b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSDiExtraBundle/zipball/01029f6a19c5a4131b80878311cd44a990ff923a",
-                "reference": "01029f6a19c5a4131b80878311cd44a990ff923a",
+                "url": "https://api.github.com/repos/schmittjoh/JMSDiExtraBundle/zipball/4361495ea88d2eccb5c43749168a2c88f3e6476b",
+                "reference": "4361495ea88d2eccb5c43749168a2c88f3e6476b",
                 "shasum": ""
             },
             "require": {
@@ -1529,7 +1529,7 @@
                 "annotations",
                 "dependency injection"
             ],
-            "time": "2013-10-02 11:10:43"
+            "time": "2014-01-10 21:31:29"
         },
         {
             "name": "jms/metadata",
@@ -1983,16 +1983,16 @@
         },
         {
             "name": "kriswallsmith/assetic",
-            "version": "v1.1.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f"
+                "reference": "e6ba983200723c74c554f725142094b3c42da7d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/735cffd3982c6e8cdebe292d5db39d077f65890f",
-                "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e6ba983200723c74c554f725142094b3c42da7d4",
+                "reference": "e6ba983200723c74c554f725142094b3c42da7d4",
                 "shasum": ""
             },
             "require": {
@@ -2021,7 +2021,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -2050,7 +2050,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-07-19 00:03:27"
+            "time": "2014-01-14 13:38:30"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -2174,12 +2174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "6038fe842f4031f720acec3d5ff2aa941517f7c4"
+                "reference": "f45cc2565e3d0debbb8fadec104561101103bdc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/6038fe842f4031f720acec3d5ff2aa941517f7c4",
-                "reference": "6038fe842f4031f720acec3d5ff2aa941517f7c4",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/f45cc2565e3d0debbb8fadec104561101103bdc9",
+                "reference": "f45cc2565e3d0debbb8fadec104561101103bdc9",
                 "shasum": ""
             },
             "require": {
@@ -2240,7 +2240,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2013-12-28 17:55:06"
+            "time": "2014-01-13 21:35:37"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2347,12 +2347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "d2debfd43eb8a5201204bb70275a0ef83b3d11ff"
+                "reference": "0f01b89d44368633e05da72db434df3cb078f08c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/d2debfd43eb8a5201204bb70275a0ef83b3d11ff",
-                "reference": "d2debfd43eb8a5201204bb70275a0ef83b3d11ff",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/0f01b89d44368633e05da72db434df3cb078f08c",
+                "reference": "0f01b89d44368633e05da72db434df3cb078f08c",
                 "shasum": ""
             },
             "require": {
@@ -2386,7 +2386,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2013-12-22 16:51:18"
+            "time": "2014-01-10 16:46:58"
         },
         {
             "name": "psr/log",
@@ -2622,12 +2622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "dc7aaaaa7f1e9d1c8edad62657efa4ac18088ae3"
+                "reference": "9773e1963ebe017fd6ea09b030a8730c783d94da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/dc7aaaaa7f1e9d1c8edad62657efa4ac18088ae3",
-                "reference": "dc7aaaaa7f1e9d1c8edad62657efa4ac18088ae3",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/9773e1963ebe017fd6ea09b030a8730c783d94da",
+                "reference": "9773e1963ebe017fd6ea09b030a8730c783d94da",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2677,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2013-11-24 12:43:35"
+            "time": "2014-01-14 08:50:40"
         },
         {
             "name": "sonata-project/admin-bundle",
@@ -2825,17 +2825,17 @@
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "target-dir": "Sonata/CoreBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "accd2c305d2636b3cb20e3a0eb12501911a5dac6"
+                "reference": "fadf268d4b2c23220b27c33389b6a6132085159e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/accd2c305d2636b3cb20e3a0eb12501911a5dac6",
-                "reference": "accd2c305d2636b3cb20e3a0eb12501911a5dac6",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/fadf268d4b2c23220b27c33389b6a6132085159e",
+                "reference": "fadf268d4b2c23220b27c33389b6a6132085159e",
                 "shasum": ""
             },
             "require": {
@@ -2879,7 +2879,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2013-12-16 10:13:27"
+            "time": "2014-01-07 11:35:59"
         },
         {
             "name": "sonata-project/doctrine-orm-admin-bundle",
@@ -3093,21 +3093,21 @@
         },
         {
             "name": "symfony/assetic-bundle",
-            "version": "v2.3.0",
+            "version": "dev-master",
             "target-dir": "Symfony/Bundle/AsseticBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "146dd3cb46b302bd471560471c6aaa930483dac1"
+                "reference": "82d5431a14cc7ec9ef3a1fcb3b452ac39d749831"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/146dd3cb46b302bd471560471c6aaa930483dac1",
-                "reference": "146dd3cb46b302bd471560471c6aaa930483dac1",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/82d5431a14cc7ec9ef3a1fcb3b452ac39d749831",
+                "reference": "82d5431a14cc7ec9ef3a1fcb3b452ac39d749831",
                 "shasum": ""
             },
             "require": {
-                "kriswallsmith/assetic": "~1.1",
+                "kriswallsmith/assetic": "~1.2",
                 "php": ">=5.3.0",
                 "symfony/framework-bundle": "~2.1"
             },
@@ -3121,12 +3121,13 @@
                 "symfony/yaml": "~2.1"
             },
             "suggest": {
+                "kriswallsmith/spork": "v0.2",
                 "symfony/twig-bundle": "~2.1"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -3152,7 +3153,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-05-16 05:32:23"
+            "time": "2013-12-04 10:40:40"
         },
         {
             "name": "symfony/icu",
@@ -3548,7 +3549,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "9b3a1ada04d1734fffefab4fa0df52322e174fd6"
+                "reference": "fa8a8f767bc8a783120c97081c94a31a1eb96d94"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3557,7 +3558,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-01-07 01:52:05"
+            "time": "2014-01-12 20:33:32"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3605,7 +3606,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "2c37a1ecd28e1b5e2217e058438482266e4045f6"
+                "reference": "385a72b0157f5a974a06b29f2ef53570f8d3b1bd"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3618,7 +3619,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-01-06 19:48:50"
+            "time": "2014-01-09 11:15:08"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3645,7 +3646,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "1926db9413aa779784835c670329ace93f63bc6e"
+                "reference": "35b3ec19e2cf5ab3593ef0e1bc3252655d290d6d"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3657,7 +3658,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-01-06 21:08:06"
+            "time": "2014-01-14 06:55:31"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -3701,16 +3702,16 @@
         },
         {
             "name": "willdurand/negotiation",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Negotiation.git",
-                "reference": "1757fc48a77a85df6f7659a16b4522bf8da14e99"
+                "reference": "8b32a05c2cfd41c0b350de5ea03aba8b35dfc13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/1757fc48a77a85df6f7659a16b4522bf8da14e99",
-                "reference": "1757fc48a77a85df6f7659a16b4522bf8da14e99",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/8b32a05c2cfd41c0b350de5ea03aba8b35dfc13c",
+                "reference": "8b32a05c2cfd41c0b350de5ea03aba8b35dfc13c",
                 "shasum": ""
             },
             "require": {
@@ -3747,7 +3748,7 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2013-12-14 14:09:01"
+            "time": "2014-01-09 22:50:05"
         }
     ],
     "packages-dev": [
@@ -3758,6 +3759,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "symfony/assetic-bundle": 20,
+        "kriswallsmith/assetic": 20,
         "friendsofsymfony/rest-bundle": 20,
         "nelmio/api-doc-bundle": 20,
         "doctrine/migrations": 20,

@@ -52,9 +52,9 @@ namespace :deploy do
   task :stop, :roles => :app, :except => { :no_release => true } do
   end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run 'sudo service nginx restart'
+    run 'sudo /etc/init.d/nginx restart'
     puts '--> Restarting nginx'.green
-    run 'sudo service php5-fpm restart'
+    run 'sudo /etc/init.d/php5-fpm restart'
     puts '--> Restarting php5-fpm'.green
     # run 'sudo service varnish restart'
     # puts '--> Restarting varnish'.green
@@ -68,6 +68,7 @@ end
 before 'symfony:assetic:dump' do
     run "sh -c 'cd #{latest_release} && npm install'"
     run "sh -c 'cd #{latest_release} && bower install'"
+    run "sh -c 'cd #{latest_release} && php app/console fos:js-routing:dump --env=prod'"
     run "sh -c 'cd #{latest_release} && grunt'"
 end
 

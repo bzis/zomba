@@ -57,9 +57,10 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/jquery/jquery.min.js
         angular:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/angular/angular.min.js
+                - %kernel.root_dir%/../bower-vendor/angular/angular.js
                 - %kernel.root_dir%/../bower-vendor/angular-route/angular-route.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-resource/angular-resource.min.js
+                # - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
         #Angular UI ~ Bootstrap
         #http://angular-ui.github.io/bootstrap/
         #https://github.com/angular-ui/bootstrap/
@@ -71,6 +72,8 @@ assetic:
                 #modal
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/modal/modal.js
                 - %kernel.root_dir%/../tmp/angular-ui-modal-templates.js
+                #transition
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/transition/transition.js
         crypto_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/crypto-js/components/core-min.js
@@ -91,6 +94,12 @@ assetic:
         select2_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.css
+        fos_js_routes:
+            inputs:
+                - @FOSJsRoutingBundle/Resources/public/js/router.js
+                - %kernel.root_dir%/../web/js/fos_js_routes.js
+            filters:
+                - ?closure
 # Doctrine Configuration
 doctrine:
     dbal:

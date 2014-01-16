@@ -10,7 +10,7 @@ parameters:
     mailer_user: hd.deman@gmail.com
     mailer_password: huy
     locale: ru
-    secret: aydiAQgxzRECfg9raqVD4fzPaYcFGxrpCFGXHRWarMjFA38EspxdBdVod
+    secret: 'YMnfCuNL[QXTmMsshpnnRjN6GgNPDosJR@JK4W.ugmHh%inc>p7nyzsCWV'
     developer_email: dev@example.com
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /

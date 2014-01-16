@@ -14,38 +14,48 @@ module.exports = function(grunt) {
           "Expires": new Date(Date.now() + 63072000000).toUTCString()
         },
       },
-      prod: {
+      js_and_css: {
+        options: {
+          key: '<%= aws.key %>',
+          secret: '<%= aws.secret %>',
+          bucket: '<%= aws.bucket %>',
+          access: 'public-read'
+        },
         upload: [{
-          // The regular js files
-          src: "web/js/**/*.js",
-          dest: "js",
-          rel:  "web/js"
-        }, {
           // The gzip js files
           src: "web/js/**/*.js",
-          dest: "jsgz",
+          dest: "js",
           rel: "web/js",
           options: { gzip: true }
         }, {
-          // The regular css files
-          src: "web/css/**/*.css",
-          dest: "css",
-          rel: "web/css"
-        }, {
           // The gzip css files
           src: "web/css/**/*.css",
-          dest: "cssgz",
+          dest: "css",
           rel: "web/css",
           options: { gzip: true }
-        }, {
+        }]
+      },
+      assets: {
+        upload: [{
           // The gzip css files
           src: "web/bundles/**",
           dest: "bundles",
           rel: "web/bundles"
         }]
+      },
+      fonts: {
+        upload: [{
+          // The gzip css files
+          src: "bower-vendor/sass-bootstrap/fonts/**",
+          dest: "fonts",
+          rel: "bower-vendor/sass-bootstrap/fonts"
+        }]
       }
     },
-
+    curl: {
+      'tmp/google-fonts/OpenSans.scss': 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext',
+      'tmp/google-fonts/OleoScriptSwashCaps.scss': 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps'
+    },
     html2js: {
       module: 'templates',
       options: {
@@ -69,7 +79,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-s3');
-  //grunt.loadTasks('tasks');
-  grunt.registerTask('default', ['html2js']);
+  grunt.loadNpmTasks('grunt-curl');
+  grunt.registerTask('default', ['html2js', 'curl']);
   grunt.registerTask('after_assetic_dump', ['s3:dev']);
 };
