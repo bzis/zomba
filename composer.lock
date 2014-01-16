@@ -1041,12 +1041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "9eaffdd50e13fdc12ae0a2f6456bc3eb825467e1"
+                "reference": "7c81a1879c5d8a3727932674509e96b2bb7a796e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/9eaffdd50e13fdc12ae0a2f6456bc3eb825467e1",
-                "reference": "9eaffdd50e13fdc12ae0a2f6456bc3eb825467e1",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/7c81a1879c5d8a3727932674509e96b2bb7a796e",
+                "reference": "7c81a1879c5d8a3727932674509e96b2bb7a796e",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1109,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-01-11 13:02:54"
+            "time": "2014-01-16 12:08:55"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1987,12 +1987,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "eaa2f74fe611d35d191283cda2578b8db68fecc2"
+                "reference": "e6ba983200723c74c554f725142094b3c42da7d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/eaa2f74fe611d35d191283cda2578b8db68fecc2",
-                "reference": "eaa2f74fe611d35d191283cda2578b8db68fecc2",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e6ba983200723c74c554f725142094b3c42da7d4",
+                "reference": "e6ba983200723c74c554f725142094b3c42da7d4",
                 "shasum": ""
             },
             "require": {
@@ -2050,7 +2050,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-01-09 20:35:16"
+            "time": "2014-01-14 13:38:30"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -2174,12 +2174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "5e1bf1fbdacf7e242b7aaf936017640a49d916eb"
+                "reference": "f45cc2565e3d0debbb8fadec104561101103bdc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/5e1bf1fbdacf7e242b7aaf936017640a49d916eb",
-                "reference": "5e1bf1fbdacf7e242b7aaf936017640a49d916eb",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/f45cc2565e3d0debbb8fadec104561101103bdc9",
+                "reference": "f45cc2565e3d0debbb8fadec104561101103bdc9",
                 "shasum": ""
             },
             "require": {
@@ -2240,7 +2240,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-01-10 10:29:52"
+            "time": "2014-01-13 21:35:37"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2347,12 +2347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "0f01b89d44368633e05da72db434df3cb078f08c"
+                "reference": "5f2eea628eb465d866ad2771927d83769c8f956c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/0f01b89d44368633e05da72db434df3cb078f08c",
-                "reference": "0f01b89d44368633e05da72db434df3cb078f08c",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/5f2eea628eb465d866ad2771927d83769c8f956c",
+                "reference": "5f2eea628eb465d866ad2771927d83769c8f956c",
                 "shasum": ""
             },
             "require": {
@@ -2386,7 +2386,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-01-10 16:46:58"
+            "time": "2014-01-16 14:10:29"
         },
         {
             "name": "psr/log",
@@ -2622,12 +2622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "dc7aaaaa7f1e9d1c8edad62657efa4ac18088ae3"
+                "reference": "9773e1963ebe017fd6ea09b030a8730c783d94da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/dc7aaaaa7f1e9d1c8edad62657efa4ac18088ae3",
-                "reference": "dc7aaaaa7f1e9d1c8edad62657efa4ac18088ae3",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/9773e1963ebe017fd6ea09b030a8730c783d94da",
+                "reference": "9773e1963ebe017fd6ea09b030a8730c783d94da",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2677,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2013-11-24 12:43:35"
+            "time": "2014-01-14 08:50:40"
         },
         {
             "name": "sonata-project/admin-bundle",
@@ -2883,22 +2883,23 @@
         },
         {
             "name": "sonata-project/doctrine-orm-admin-bundle",
-            "version": "2.2.5",
+            "version": "2.2.6",
             "target-dir": "Sonata/DoctrineORMAdminBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
-                "reference": "228b47b990f781422a45f478d65c821bdcac45f8"
+                "reference": "da9a1b2bee152b5fd90c27ef152006c0e5ead9d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/228b47b990f781422a45f478d65c821bdcac45f8",
-                "reference": "228b47b990f781422a45f478d65c821bdcac45f8",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/da9a1b2bee152b5fd90c27ef152006c0e5ead9d7",
+                "reference": "da9a1b2bee152b5fd90c27ef152006c0e5ead9d7",
                 "shasum": ""
             },
             "require": {
                 "doctrine/orm": "~2.3",
-                "sonata-project/admin-bundle": ">=2.2.2",
+                "sonata-project/admin-bundle": "~2.2,>=2.2.2",
+                "sonata-project/core-bundle": "~2.2@dev",
                 "symfony/symfony": "~2.2"
             },
             "type": "symfony-bundle",
@@ -2936,7 +2937,7 @@
                 "generator",
                 "sonata"
             ],
-            "time": "2013-11-28 16:27:11"
+            "time": "2014-01-15 16:57:35"
         },
         {
             "name": "sonata-project/exporter",
@@ -3549,7 +3550,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "fa8a8f767bc8a783120c97081c94a31a1eb96d94"
+                "reference": "2d7bf9cac2e8a43bd18de6d07852000ff88a6e70"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3558,7 +3559,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-01-12 20:33:32"
+            "time": "2014-01-16 09:08:08"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3567,7 +3568,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/GeoBundle.git",
-                "reference": "5f8fbbd309b88e510760b291c9219b388b5d61ae"
+                "reference": "ce3cf26b161ac305aab5c9a596ed779891be3b6a"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3576,7 +3577,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2014-01-06 19:06:46"
+            "time": "2014-01-16 11:00:07"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3646,7 +3647,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "387ef91c8793512e43aa4ab83938279ea9cc2ca5"
+                "reference": "35b3ec19e2cf5ab3593ef0e1bc3252655d290d6d"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3658,7 +3659,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-01-10 16:29:11"
+            "time": "2014-01-14 06:55:31"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -3702,16 +3703,16 @@
         },
         {
             "name": "willdurand/negotiation",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Negotiation.git",
-                "reference": "1757fc48a77a85df6f7659a16b4522bf8da14e99"
+                "reference": "8b32a05c2cfd41c0b350de5ea03aba8b35dfc13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/1757fc48a77a85df6f7659a16b4522bf8da14e99",
-                "reference": "1757fc48a77a85df6f7659a16b4522bf8da14e99",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/8b32a05c2cfd41c0b350de5ea03aba8b35dfc13c",
+                "reference": "8b32a05c2cfd41c0b350de5ea03aba8b35dfc13c",
                 "shasum": ""
             },
             "require": {
@@ -3748,7 +3749,7 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2013-12-14 14:09:01"
+            "time": "2014-01-09 22:50:05"
         }
     ],
     "packages-dev": [
