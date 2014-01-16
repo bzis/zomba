@@ -7,6 +7,7 @@
         "angular-route": "1.2.7",
         "angular-resource": "1.2.7",
         "angular-mocks": "1.2.7",
+        "angular-sanitize": "1.2.7",
         "xapu-angular-cookies": "https://github.com/xapu/angularjs-cookies.git",
         "select2": "3.4.5",
         "angular-ui-select2": "0.0.5",

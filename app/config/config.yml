@@ -60,6 +60,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/angular/angular.js
                 - %kernel.root_dir%/../bower-vendor/angular-route/angular-route.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-resource/angular-resource.min.js
+                - %kernel.root_dir%/../bower-vendor/angular-sanitize/angular-sanitize.min.js
                 # - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
         #Angular UI ~ Bootstrap
         #http://angular-ui.github.io/bootstrap/
@@ -72,8 +73,12 @@ assetic:
                 #modal
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/modal/modal.js
                 - %kernel.root_dir%/../tmp/angular-ui-modal-templates.js
-                #transition
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/transition/transition.js
+                #popover and tooltip
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/popover/popover.js
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/tooltip/tooltip.js
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/position/position.js
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/bindHtml/bindHtml.js
         crypto_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/crypto-js/components/core-min.js
