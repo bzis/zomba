@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-31 17:12:09"
+            "time": "2014-01-09 17:59:15"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -25,7 +25,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-30 19:48:25"
+            "time": "2013-11-25 09:09:28"
         },
         {
             "name": "dflydev/markdown",
@@ -124,7 +124,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -266,7 +266,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -1041,12 +1041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "5f8f2f812f510e79396bcb4f97eb7782eef3129a"
+                "reference": "7c81a1879c5d8a3727932674509e96b2bb7a796e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/5f8f2f812f510e79396bcb4f97eb7782eef3129a",
-                "reference": "5f8f2f812f510e79396bcb4f97eb7782eef3129a",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/7c81a1879c5d8a3727932674509e96b2bb7a796e",
+                "reference": "7c81a1879c5d8a3727932674509e96b2bb7a796e",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1109,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-01-13 23:31:22"
+            "time": "2014-01-16 12:08:55"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2347,12 +2347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "0f01b89d44368633e05da72db434df3cb078f08c"
+                "reference": "5f2eea628eb465d866ad2771927d83769c8f956c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/0f01b89d44368633e05da72db434df3cb078f08c",
-                "reference": "0f01b89d44368633e05da72db434df3cb078f08c",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/5f2eea628eb465d866ad2771927d83769c8f956c",
+                "reference": "5f2eea628eb465d866ad2771927d83769c8f956c",
                 "shasum": ""
             },
             "require": {
@@ -2386,7 +2386,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-01-10 16:46:58"
+            "time": "2014-01-16 14:10:29"
         },
         {
             "name": "psr/log",
@@ -2883,22 +2883,23 @@
         },
         {
             "name": "sonata-project/doctrine-orm-admin-bundle",
-            "version": "2.2.5",
+            "version": "2.2.6",
             "target-dir": "Sonata/DoctrineORMAdminBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
-                "reference": "228b47b990f781422a45f478d65c821bdcac45f8"
+                "reference": "da9a1b2bee152b5fd90c27ef152006c0e5ead9d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/228b47b990f781422a45f478d65c821bdcac45f8",
-                "reference": "228b47b990f781422a45f478d65c821bdcac45f8",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/da9a1b2bee152b5fd90c27ef152006c0e5ead9d7",
+                "reference": "da9a1b2bee152b5fd90c27ef152006c0e5ead9d7",
                 "shasum": ""
             },
             "require": {
                 "doctrine/orm": "~2.3",
-                "sonata-project/admin-bundle": ">=2.2.2",
+                "sonata-project/admin-bundle": "~2.2,>=2.2.2",
+                "sonata-project/core-bundle": "~2.2@dev",
                 "symfony/symfony": "~2.2"
             },
             "type": "symfony-bundle",
@@ -2936,7 +2937,7 @@
                 "generator",
                 "sonata"
             ],
-            "time": "2013-11-28 16:27:11"
+            "time": "2014-01-15 16:57:35"
         },
         {
             "name": "sonata-project/exporter",
@@ -3549,7 +3550,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "fa8a8f767bc8a783120c97081c94a31a1eb96d94"
+                "reference": "2d7bf9cac2e8a43bd18de6d07852000ff88a6e70"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3558,7 +3559,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-01-12 20:33:32"
+            "time": "2014-01-16 09:08:08"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3567,7 +3568,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/GeoBundle.git",
-                "reference": "5f8fbbd309b88e510760b291c9219b388b5d61ae"
+                "reference": "ce3cf26b161ac305aab5c9a596ed779891be3b6a"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3576,7 +3577,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2014-01-06 19:06:46"
+            "time": "2014-01-16 11:00:07"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3584,7 +3585,7 @@
             "target-dir": "Vifeed/PaymentBundle",
             "source": {
                 "type": "git",
-                "url": "git@github.com:vifeed/PaymentBundle.git",
+                "url": "ssh://git@github.com/vifeed/PaymentBundle",
                 "reference": "0c59397bbb5a5143ea9191353d6049b2cff36ac1"
             },
             "require": {
@@ -3627,7 +3628,7 @@
             "target-dir": "Vifeed/SystemBundle",
             "source": {
                 "type": "git",
-                "url": "git@github.com:vifeed/SystemBundle.git",
+                "url": "ssh://git@github.com/vifeed/SystemBundle",
                 "reference": "e4303f1d2a8f9ae16305092e385f1afd3b39efb7"
             },
             "type": "symfony-bundle",
