@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-31 17:12:09"
+            "time": "2014-01-09 17:59:15"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -25,7 +25,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-30 19:48:25"
+            "time": "2013-11-25 09:09:28"
         },
         {
             "name": "dflydev/markdown",
@@ -124,7 +124,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -266,7 +266,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -3585,7 +3585,7 @@
             "target-dir": "Vifeed/PaymentBundle",
             "source": {
                 "type": "git",
-                "url": "git@github.com:vifeed/PaymentBundle.git",
+                "url": "ssh://git@github.com/vifeed/PaymentBundle",
                 "reference": "0c59397bbb5a5143ea9191353d6049b2cff36ac1"
             },
             "require": {
@@ -3628,7 +3628,7 @@
             "target-dir": "Vifeed/SystemBundle",
             "source": {
                 "type": "git",
-                "url": "git@github.com:vifeed/SystemBundle.git",
+                "url": "ssh://git@github.com/vifeed/SystemBundle",
                 "reference": "e4303f1d2a8f9ae16305092e385f1afd3b39efb7"
             },
             "type": "symfony-bundle",
