@@ -17,6 +17,7 @@ set :app_path,    'app'
 set :repository,  "git@github.com:vifeed/#{application}.git"
 set :scm,         :git
 set :branch, 'master'
+set :interactive_mode, false
 
 default_run_options[:pty] = false
 
