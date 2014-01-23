@@ -11,7 +11,7 @@ require 'capistrano/ext/multistage'
 
 set :application, 'vifeed'
 set :domain,      "#{application}.co"
-set :deploy_to,   "/var/sites/#{domain}"
+set :deploy_to,   "/var/sites/#{application}"
 set :app_path,    'app'
 
 set :repository,  "git@github.com:vifeed/#{application}.git"
