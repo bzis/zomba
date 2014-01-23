@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-01-09 17:59:15"
+            "time": "2013-12-31 17:12:09"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -25,7 +25,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-11-25 09:09:28"
+            "time": "2013-12-30 19:48:25"
         },
         {
             "name": "dflydev/markdown",
@@ -124,7 +124,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -266,7 +266,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -3528,7 +3528,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "788e540d282974a022dfba2b604895819607b94a"
+                "reference": "dab0c2258d3dcbeddabed9f3136777881e9464bf"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3541,7 +3541,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-01-21 12:25:11"
+            "time": "2014-01-23 05:46:31"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3550,7 +3550,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "3aef775cc01dbe3909e37033d7057b87d96fc290"
+                "reference": "446b7b7d96c334bf645916de68ea0ac06f1ae003"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3559,7 +3559,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-01-21 18:37:49"
+            "time": "2014-01-23 05:42:56"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3628,8 +3628,8 @@
             "target-dir": "Vifeed/SystemBundle",
             "source": {
                 "type": "git",
-                "url": "ssh://git@github.com/vifeed/SystemBundle",
-                "reference": "e4303f1d2a8f9ae16305092e385f1afd3b39efb7"
+                "url": "git@github.com:vifeed/SystemBundle.git",
+                "reference": "bd80013be3b194ac86d13308c2a4e46e28dbce17"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3638,7 +3638,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2013-12-09 18:35:36"
+            "time": "2014-01-23 06:00:30"
         },
         {
             "name": "vifeed/user-bundle",
@@ -3647,7 +3647,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "933efe2644e9169ed833ad66a2c229fb39290f0d"
+                "reference": "a4c336c83fa8554728f102af2795c68004a12a0e"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3659,7 +3659,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-01-17 09:02:20"
+            "time": "2014-01-23 06:00:16"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
