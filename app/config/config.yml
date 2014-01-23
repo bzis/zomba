@@ -79,6 +79,8 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/tooltip/tooltip.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/position/position.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/bindHtml/bindHtml.js
+                #datepicker
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/datepicker/datepicker.js
         crypto_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/crypto-js/components/core-min.js
@@ -170,6 +172,7 @@ nelmio_api_doc: ~
 snc_redis:
     session:
         client: session
+        ttl: 7200
     clients:
         default:
             type: predis

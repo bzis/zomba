@@ -29,14 +29,9 @@ security:
                 require_previous_session: false
             logout:       true
             anonymous:    true
-
-
-
         dev:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
             security: false
-
-
     access_control:
             - { path: ^/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/api/users$, role: IS_AUTHENTICATED_ANONYMOUSLY } # регистрация
