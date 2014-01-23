@@ -2,6 +2,22 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     aws: grunt.file.readJSON('/home/deploy/grunt-aws.json'),
+    invalidate_cloudfront: {
+      options: {
+        key: '<%= aws.key %>',
+        secret: '<%= aws.secret %>',
+        distribution: 'EWM7POCBEJEWK'
+      },
+      production: {
+        files: [{
+          expand: true,
+          cwd: './web/',
+          src: ['js/**/*', 'css/**/*', 'bundles/**/*'],
+          filter: 'isFile',
+          dest: ''
+        }]
+      }
+    },
     s3: {
       options: {
         key: '<%= aws.key %>',
@@ -10,8 +26,8 @@ module.exports = function(grunt) {
         access: 'public-read',
         headers: {
           // Two Year cache policy (1000 * 60 * 60 * 24 * 730)
-          "Cache-Control": "max-age=630720000, public",
-          "Expires": new Date(Date.now() + 63072000000).toUTCString()
+          'Cache-Control': 'max-age=630720000, public',
+          'Expires': new Date(Date.now() + 63072000000).toUTCString()
         },
       },
       js_and_css: {
@@ -37,7 +53,6 @@ module.exports = function(grunt) {
       },
       assets: {
         upload: [{
-          // The gzip css files
           src: "web/bundles/**",
           dest: "bundles",
           rel: "web/bundles"
@@ -45,7 +60,6 @@ module.exports = function(grunt) {
       },
       fonts: {
         upload: [{
-          // The gzip css files
           src: "bower-vendor/sass-bootstrap/fonts/**",
           dest: "fonts",
           rel: "bower-vendor/sass-bootstrap/fonts"
@@ -80,6 +94,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-curl');
+  grunt.loadNpmTasks('grunt-invalidate-cloudfront');
   grunt.registerTask('default', ['html2js', 'curl']);
-  grunt.registerTask('after_assetic_dump', ['s3:dev']);
+  grunt.registerTask('after_assetic_dump', ['s3:dev', 'invalidate_cloudfront']);
 };

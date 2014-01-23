@@ -4,13 +4,11 @@
   "description": "vifeed base project",
   "main": "index.js",
   "dependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "~0.4.2",
     "grunt-s3": "~0.2.0-alpha",
-    "grunt-curl": "1.2.1"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-html2js": "~0.1.8"
+    "grunt-curl": "1.2.1",
+    "grunt-invalidate-cloudfront": "0.1.4",
+    "grunt-html2js": "~0.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
