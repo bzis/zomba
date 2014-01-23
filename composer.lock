@@ -1041,12 +1041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "7c81a1879c5d8a3727932674509e96b2bb7a796e"
+                "reference": "5d06a93a349cef14aaff7c09a0deac6a4f2791ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/7c81a1879c5d8a3727932674509e96b2bb7a796e",
-                "reference": "7c81a1879c5d8a3727932674509e96b2bb7a796e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/5d06a93a349cef14aaff7c09a0deac6a4f2791ce",
+                "reference": "5d06a93a349cef14aaff7c09a0deac6a4f2791ce",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1109,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-01-16 12:08:55"
+            "time": "2014-01-23 15:35:34"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -3528,7 +3528,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "dab0c2258d3dcbeddabed9f3136777881e9464bf"
+                "reference": "aed059035b04009603f22e42d7ff1d44642319db"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3541,7 +3541,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-01-23 05:46:31"
+            "time": "2014-01-23 15:50:04"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3586,7 +3586,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "5631d065f1b15c4ef1aa008d4cfa41453bcd315c"
+                "reference": "9562d1cbf55360f04e4c983c2e4ed94a3887963c"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3598,7 +3598,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-01-21 12:26:00"
+            "time": "2014-01-23 15:50:35"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3607,7 +3607,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "385a72b0157f5a974a06b29f2ef53570f8d3b1bd"
+                "reference": "e28a8240fb05d3bf47a7b743586e8d8e819508e0"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3620,7 +3620,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-01-09 11:15:08"
+            "time": "2014-01-23 15:50:54"
         },
         {
             "name": "vifeed/system-bundle",
