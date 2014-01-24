@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-01-09 17:59:15"
+            "time": "2013-12-31 17:12:09"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -25,7 +25,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-11-25 09:09:28"
+            "time": "2013-12-30 19:48:25"
         },
         {
             "name": "dflydev/markdown",
@@ -124,7 +124,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -266,7 +266,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -1041,12 +1041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "7c81a1879c5d8a3727932674509e96b2bb7a796e"
+                "reference": "5d06a93a349cef14aaff7c09a0deac6a4f2791ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/7c81a1879c5d8a3727932674509e96b2bb7a796e",
-                "reference": "7c81a1879c5d8a3727932674509e96b2bb7a796e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/5d06a93a349cef14aaff7c09a0deac6a4f2791ce",
+                "reference": "5d06a93a349cef14aaff7c09a0deac6a4f2791ce",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1109,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-01-16 12:08:55"
+            "time": "2014-01-23 15:35:34"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -3099,12 +3099,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "82d5431a14cc7ec9ef3a1fcb3b452ac39d749831"
+                "reference": "7d043d06344689f446dd49aedfcb7f45adebc9fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/82d5431a14cc7ec9ef3a1fcb3b452ac39d749831",
-                "reference": "82d5431a14cc7ec9ef3a1fcb3b452ac39d749831",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/7d043d06344689f446dd49aedfcb7f45adebc9fd",
+                "reference": "7d043d06344689f446dd49aedfcb7f45adebc9fd",
                 "shasum": ""
             },
             "require": {
@@ -3154,7 +3154,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-12-04 10:40:40"
+            "time": "2014-01-23 18:07:17"
         },
         {
             "name": "symfony/icu",
@@ -3528,7 +3528,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "788e540d282974a022dfba2b604895819607b94a"
+                "reference": "aed059035b04009603f22e42d7ff1d44642319db"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3541,7 +3541,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-01-21 12:25:11"
+            "time": "2014-01-23 15:50:04"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3550,7 +3550,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "3aef775cc01dbe3909e37033d7057b87d96fc290"
+                "reference": "446b7b7d96c334bf645916de68ea0ac06f1ae003"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3559,7 +3559,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-01-21 18:37:49"
+            "time": "2014-01-23 05:42:56"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3586,7 +3586,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "5631d065f1b15c4ef1aa008d4cfa41453bcd315c"
+                "reference": "9562d1cbf55360f04e4c983c2e4ed94a3887963c"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3598,7 +3598,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-01-21 12:26:00"
+            "time": "2014-01-23 15:50:35"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3607,7 +3607,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "385a72b0157f5a974a06b29f2ef53570f8d3b1bd"
+                "reference": "e28a8240fb05d3bf47a7b743586e8d8e819508e0"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3620,7 +3620,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-01-09 11:15:08"
+            "time": "2014-01-23 15:50:54"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3628,8 +3628,8 @@
             "target-dir": "Vifeed/SystemBundle",
             "source": {
                 "type": "git",
-                "url": "ssh://git@github.com/vifeed/SystemBundle",
-                "reference": "e4303f1d2a8f9ae16305092e385f1afd3b39efb7"
+                "url": "git@github.com:vifeed/SystemBundle.git",
+                "reference": "bd80013be3b194ac86d13308c2a4e46e28dbce17"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3638,7 +3638,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2013-12-09 18:35:36"
+            "time": "2014-01-23 06:00:30"
         },
         {
             "name": "vifeed/user-bundle",
@@ -3647,7 +3647,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "933efe2644e9169ed833ad66a2c229fb39290f0d"
+                "reference": "a4c336c83fa8554728f102af2795c68004a12a0e"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3659,7 +3659,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-01-17 09:02:20"
+            "time": "2014-01-23 06:00:16"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
