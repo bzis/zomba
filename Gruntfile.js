@@ -96,5 +96,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-curl');
   grunt.loadNpmTasks('grunt-invalidate-cloudfront');
   grunt.registerTask('default', ['html2js', 'curl']);
-  grunt.registerTask('after_assetic_dump', ['s3:dev', 'invalidate_cloudfront']);
+  grunt.registerTask('after_assetic_dump', ['s3', 'invalidate_cloudfront']);
 };
