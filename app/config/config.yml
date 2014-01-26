@@ -55,6 +55,9 @@ assetic:
         jquery:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/jquery/jquery.min.js
+        jquery_parallax:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/parallax/deploy/jquery.parallax.min.js
         angular:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular/angular.js
@@ -62,6 +65,10 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/angular-resource/angular-resource.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-sanitize/angular-sanitize.min.js
                 # - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
+        twitter_bootstrap_js:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/sass-bootstrap/js/carousel.js
+                - %kernel.root_dir%/../bower-vendor/sass-bootstrap/js/dropdown.js
         #Angular UI ~ Bootstrap
         #http://angular-ui.github.io/bootstrap/
         #https://github.com/angular-ui/bootstrap/
