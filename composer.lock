@@ -1118,12 +1118,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "da9a97314884275c77a741205bda9f86afe23ffd"
+                "reference": "23d15ad680fe5b695df1565e7854342e608bc483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/da9a97314884275c77a741205bda9f86afe23ffd",
-                "reference": "da9a97314884275c77a741205bda9f86afe23ffd",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/23d15ad680fe5b695df1565e7854342e608bc483",
+                "reference": "23d15ad680fe5b695df1565e7854342e608bc483",
                 "shasum": ""
             },
             "require": {
@@ -1178,7 +1178,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-01-22 08:58:14"
+            "time": "2014-01-26 23:20:11"
         },
         {
             "name": "guzzle/guzzle",
@@ -3528,7 +3528,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "aed059035b04009603f22e42d7ff1d44642319db"
+                "reference": "df17458a9f4072858c5d5033921d76409b8d5b11"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3541,7 +3541,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-01-23 15:50:04"
+            "time": "2014-01-26 19:58:22"
         },
         {
             "name": "vifeed/frontend-bundle",
