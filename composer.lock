@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1dbd0ccfa10fec2b73ddd25d1b961d33",
+    "hash": "d0078188d40f6883f09e0af75491e490",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1118,12 +1118,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "da9a97314884275c77a741205bda9f86afe23ffd"
+                "reference": "23d15ad680fe5b695df1565e7854342e608bc483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/da9a97314884275c77a741205bda9f86afe23ffd",
-                "reference": "da9a97314884275c77a741205bda9f86afe23ffd",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/23d15ad680fe5b695df1565e7854342e608bc483",
+                "reference": "23d15ad680fe5b695df1565e7854342e608bc483",
                 "shasum": ""
             },
             "require": {
@@ -1178,7 +1178,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-01-22 08:58:14"
+            "time": "2014-01-26 23:20:11"
         },
         {
             "name": "guzzle/guzzle",
@@ -1186,12 +1186,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "028195b32bb2e096b168baebe07c704473db81d4"
+                "reference": "cf95dff4da85f0458787544ae01cd82f9def1ef2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/028195b32bb2e096b168baebe07c704473db81d4",
-                "reference": "028195b32bb2e096b168baebe07c704473db81d4",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/cf95dff4da85f0458787544ae01cd82f9def1ef2",
+                "reference": "cf95dff4da85f0458787544ae01cd82f9def1ef2",
                 "shasum": ""
             },
             "require": {
@@ -1270,7 +1270,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-01-23 18:29:07"
+            "time": "2014-01-28 22:37:17"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2764,32 +2764,33 @@
         },
         {
             "name": "sonata-project/block-bundle",
-            "version": "2.2.8",
+            "version": "2.2.9",
             "target-dir": "Sonata/BlockBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle.git",
-                "reference": "a7838e10007513c51868ce989389c8fa6bda24e3"
+                "reference": "657ae74116ec03cc91c23ce1f15390af3bf943bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/a7838e10007513c51868ce989389c8fa6bda24e3",
-                "reference": "a7838e10007513c51868ce989389c8fa6bda24e3",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/657ae74116ec03cc91c23ce1f15390af3bf943bf",
+                "reference": "657ae74116ec03cc91c23ce1f15390af3bf943bf",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.3",
-                "knplabs/knp-menu-bundle": "~1.1",
                 "sonata-project/core-bundle": "~2.2",
                 "symfony/form": "~2.2",
-                "symfony/http-foundation": "~2.2"
+                "symfony/http-kernel": "~2.2"
             },
             "require-dev": {
-                "sonata-project/admin-bundle": "~2.2@dev",
+                "knplabs/knp-menu-bundle": "~1.1",
+                "sonata-project/admin-bundle": "~2.2",
                 "sonata-project/cache-bundle": "~2.1"
             },
             "suggest": {
-                "sonata-project/admin-bundle": "~2.2@dev",
+                "knplabs/knp-menu-bundle": "~1.1",
+                "sonata-project/admin-bundle": "~2.2",
                 "sonata-project/cache-bundle": "~2.1"
             },
             "type": "symfony-bundle",
@@ -2824,21 +2825,21 @@
                 "block",
                 "sonata"
             ],
-            "time": "2013-12-13 13:27:55"
+            "time": "2014-01-29 10:34:19"
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "target-dir": "Sonata/CoreBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "fadf268d4b2c23220b27c33389b6a6132085159e"
+                "reference": "991143570bf19ddd37f5bfb8af7382c4aa90de24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/fadf268d4b2c23220b27c33389b6a6132085159e",
-                "reference": "fadf268d4b2c23220b27c33389b6a6132085159e",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/991143570bf19ddd37f5bfb8af7382c4aa90de24",
+                "reference": "991143570bf19ddd37f5bfb8af7382c4aa90de24",
                 "shasum": ""
             },
             "require": {
@@ -2882,7 +2883,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2014-01-07 11:35:59"
+            "time": "2014-01-15 14:43:01"
         },
         {
             "name": "sonata-project/doctrine-orm-admin-bundle",
@@ -3267,17 +3268,17 @@
         },
         {
             "name": "symfony/swiftmailer-bundle",
-            "version": "v2.3.4",
+            "version": "v2.3.5",
             "target-dir": "Symfony/Bundle/SwiftmailerBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/SwiftmailerBundle.git",
-                "reference": "f5e5d12629c26a835c7aa1d74e2e041486b92d93"
+                "reference": "fcefa9dbd5a1ed20547b0f8a2afd5ad6837ea321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/f5e5d12629c26a835c7aa1d74e2e041486b92d93",
-                "reference": "f5e5d12629c26a835c7aa1d74e2e041486b92d93",
+                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/fcefa9dbd5a1ed20547b0f8a2afd5ad6837ea321",
+                "reference": "fcefa9dbd5a1ed20547b0f8a2afd5ad6837ea321",
                 "shasum": ""
             },
             "require": {
@@ -3318,7 +3319,7 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "time": "2013-08-22 13:32:58"
+            "time": "2013-11-21 12:29:01"
         },
         {
             "name": "symfony/symfony",
@@ -3531,7 +3532,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "aed059035b04009603f22e42d7ff1d44642319db"
+                "reference": "8be3bea12aacc5d5907716e0fe9787cf14c9af3a"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3544,7 +3545,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-01-23 15:50:04"
+            "time": "2014-01-29 12:06:08"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3566,12 +3567,12 @@
         },
         {
             "name": "vifeed/geo-bundle",
-            "version": "dev-hotfix",
+            "version": "dev-master",
             "target-dir": "Vifeed/GeoBundle",
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/GeoBundle.git",
-                "reference": "ce3cf26b161ac305aab5c9a596ed779891be3b6a"
+                "reference": "98b5065ed80eac52db47267d57c6b4e08a6ae8d2"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3580,7 +3581,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2014-01-16 11:00:07"
+            "time": "2014-01-21 12:27:22"
         },
         {
             "name": "vifeed/payment-bundle",
