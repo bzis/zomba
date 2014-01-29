@@ -3532,7 +3532,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "8be3bea12aacc5d5907716e0fe9787cf14c9af3a"
+                "reference": "ee466c76f28bbca8f2880d7ed261fcb4d268b7c4"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3545,7 +3545,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-01-29 12:06:08"
+            "time": "2014-01-29 14:58:00"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3611,7 +3611,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "e28a8240fb05d3bf47a7b743586e8d8e819508e0"
+                "reference": "5443952ca36e250812c51e2cc556a8722eb6c850"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3624,7 +3624,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-01-23 15:50:54"
+            "time": "2014-01-29 14:49:43"
         },
         {
             "name": "vifeed/system-bundle",
