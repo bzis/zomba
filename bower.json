@@ -3,6 +3,7 @@
     "version": "0.1.1",
     "dependencies": {
         "jquery": "1.10.2",
+        "parallax": "https://github.com/wagerfield/parallax.git",
         "angular": "1.2.7",
         "angular-route": "1.2.7",
         "angular-resource": "1.2.7",

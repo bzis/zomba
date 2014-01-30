@@ -76,7 +76,7 @@ before 'symfony:assetic:dump' do
 end
 
 after 'symfony:assetic:dump' do
-  run "sh -c 'cd #{latest_release} && grunt s3'"
+  run "sh -c 'cd #{latest_release} && grunt after_assetic_dump'"
 end
 
 set :parameters_dir, 'app/config/parameters'

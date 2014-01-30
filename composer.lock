@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8c6dc85b928bdcfc00daee6d94867682",
+    "hash": "d0078188d40f6883f09e0af75491e490",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -979,17 +979,17 @@
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
-            "version": "1.5.2",
+            "version": "1.5.3",
             "target-dir": "FOS/JsRoutingBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
-                "reference": "4ae129b7fbb073c6a22d56d0ff2e971e0326512e"
+                "reference": "dade3bb0b21007e5c0fb40f203ed197841eb913c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/4ae129b7fbb073c6a22d56d0ff2e971e0326512e",
-                "reference": "4ae129b7fbb073c6a22d56d0ff2e971e0326512e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/dade3bb0b21007e5c0fb40f203ed197841eb913c",
+                "reference": "dade3bb0b21007e5c0fb40f203ed197841eb913c",
                 "shasum": ""
             },
             "require": {
@@ -1032,7 +1032,7 @@
                 "javascript",
                 "routing"
             ],
-            "time": "2014-01-05 18:32:52"
+            "time": "2014-01-23 21:25:39"
         },
         {
             "name": "friendsofsymfony/rest-bundle",
@@ -1041,12 +1041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "5d06a93a349cef14aaff7c09a0deac6a4f2791ce"
+                "reference": "a1a1cbcdbcaea904db334423e6fc55189ab19856"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/5d06a93a349cef14aaff7c09a0deac6a4f2791ce",
-                "reference": "5d06a93a349cef14aaff7c09a0deac6a4f2791ce",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/a1a1cbcdbcaea904db334423e6fc55189ab19856",
+                "reference": "a1a1cbcdbcaea904db334423e6fc55189ab19856",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1109,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-01-23 15:35:34"
+            "time": "2014-01-25 11:53:12"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1182,16 +1182,16 @@
         },
         {
             "name": "guzzle/guzzle",
-            "version": "v3.8.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "b4a3ce8c05e777fa18b802956d5d0e38ad338a69"
+                "reference": "cf95dff4da85f0458787544ae01cd82f9def1ef2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b4a3ce8c05e777fa18b802956d5d0e38ad338a69",
-                "reference": "b4a3ce8c05e777fa18b802956d5d0e38ad338a69",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/cf95dff4da85f0458787544ae01cd82f9def1ef2",
+                "reference": "cf95dff4da85f0458787544ae01cd82f9def1ef2",
                 "shasum": ""
             },
             "require": {
@@ -1229,8 +1229,8 @@
                 "phpunit/phpunit": "3.7.*",
                 "psr/log": "1.0.*",
                 "symfony/class-loader": "*",
-                "zendframework/zend-cache": "2.0.*",
-                "zendframework/zend-log": "2.0.*"
+                "zendframework/zend-cache": "<2.3",
+                "zendframework/zend-log": "<2.3"
             },
             "type": "library",
             "extra": {
@@ -1240,8 +1240,8 @@
             },
             "autoload": {
                 "psr-0": {
-                    "Guzzle\\Tests": "tests/",
-                    "Guzzle": "src/"
+                    "Guzzle": "src/",
+                    "Guzzle\\Tests": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1270,7 +1270,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-12-05 23:39:20"
+            "time": "2014-01-28 22:37:17"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1832,15 +1832,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/karser/RobokassaBundle.git",
-                "reference": "25479e6d8f19e39cc8d70713d36df8c4eb79fb9e"
+                "reference": "bcdebf41397e46b97fd5ccf5d32454c2d654fa8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/karser/RobokassaBundle/zipball/25479e6d8f19e39cc8d70713d36df8c4eb79fb9e",
-                "reference": "25479e6d8f19e39cc8d70713d36df8c4eb79fb9e",
+                "url": "https://api.github.com/repos/karser/RobokassaBundle/zipball/bcdebf41397e46b97fd5ccf5d32454c2d654fa8f",
+                "reference": "bcdebf41397e46b97fd5ccf5d32454c2d654fa8f",
                 "shasum": ""
             },
             "require": {
+                "guzzle/guzzle": "dev-master",
                 "jms/payment-core-bundle": "dev-master",
                 "php": ">=5.3.2",
                 "symfony/framework-bundle": ">=2.1,<3.0"
@@ -1866,7 +1867,7 @@
                 "payment",
                 "robokassa"
             ],
-            "time": "2013-09-02 02:58:30"
+            "time": "2014-01-24 18:16:35"
         },
         {
             "name": "knplabs/knp-menu",
@@ -1987,12 +1988,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "e6ba983200723c74c554f725142094b3c42da7d4"
+                "reference": "9ca50832eee550b4f805032ff55b1f013e95d769"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e6ba983200723c74c554f725142094b3c42da7d4",
-                "reference": "e6ba983200723c74c554f725142094b3c42da7d4",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/9ca50832eee550b4f805032ff55b1f013e95d769",
+                "reference": "9ca50832eee550b4f805032ff55b1f013e95d769",
                 "shasum": ""
             },
             "require": {
@@ -2007,6 +2008,7 @@
                 "leafo/scssphp": "*",
                 "leafo/scssphp-compass": "*",
                 "mrclay/minify": "*",
+                "patchwork/jsqueeze": "*",
                 "phpunit/phpunit": "~3.7",
                 "ptachoire/cssembed": "*",
                 "twig/twig": "~1.6"
@@ -2015,6 +2017,7 @@
                 "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
                 "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
                 "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+                "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
                 "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
                 "twig/twig": "Assetic provides the integration with the Twig templating engine"
             },
@@ -2050,7 +2053,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-01-14 13:38:30"
+            "time": "2014-01-24 15:54:04"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -2761,32 +2764,33 @@
         },
         {
             "name": "sonata-project/block-bundle",
-            "version": "2.2.8",
+            "version": "2.2.9",
             "target-dir": "Sonata/BlockBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle.git",
-                "reference": "a7838e10007513c51868ce989389c8fa6bda24e3"
+                "reference": "657ae74116ec03cc91c23ce1f15390af3bf943bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/a7838e10007513c51868ce989389c8fa6bda24e3",
-                "reference": "a7838e10007513c51868ce989389c8fa6bda24e3",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/657ae74116ec03cc91c23ce1f15390af3bf943bf",
+                "reference": "657ae74116ec03cc91c23ce1f15390af3bf943bf",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.3",
-                "knplabs/knp-menu-bundle": "~1.1",
                 "sonata-project/core-bundle": "~2.2",
                 "symfony/form": "~2.2",
-                "symfony/http-foundation": "~2.2"
+                "symfony/http-kernel": "~2.2"
             },
             "require-dev": {
-                "sonata-project/admin-bundle": "~2.2@dev",
+                "knplabs/knp-menu-bundle": "~1.1",
+                "sonata-project/admin-bundle": "~2.2",
                 "sonata-project/cache-bundle": "~2.1"
             },
             "suggest": {
-                "sonata-project/admin-bundle": "~2.2@dev",
+                "knplabs/knp-menu-bundle": "~1.1",
+                "sonata-project/admin-bundle": "~2.2",
                 "sonata-project/cache-bundle": "~2.1"
             },
             "type": "symfony-bundle",
@@ -2821,21 +2825,21 @@
                 "block",
                 "sonata"
             ],
-            "time": "2013-12-13 13:27:55"
+            "time": "2014-01-29 10:34:19"
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "target-dir": "Sonata/CoreBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "fadf268d4b2c23220b27c33389b6a6132085159e"
+                "reference": "991143570bf19ddd37f5bfb8af7382c4aa90de24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/fadf268d4b2c23220b27c33389b6a6132085159e",
-                "reference": "fadf268d4b2c23220b27c33389b6a6132085159e",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/991143570bf19ddd37f5bfb8af7382c4aa90de24",
+                "reference": "991143570bf19ddd37f5bfb8af7382c4aa90de24",
                 "shasum": ""
             },
             "require": {
@@ -2879,7 +2883,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2014-01-07 11:35:59"
+            "time": "2014-01-15 14:43:01"
         },
         {
             "name": "sonata-project/doctrine-orm-admin-bundle",
@@ -3264,17 +3268,17 @@
         },
         {
             "name": "symfony/swiftmailer-bundle",
-            "version": "v2.3.4",
+            "version": "v2.3.5",
             "target-dir": "Symfony/Bundle/SwiftmailerBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/SwiftmailerBundle.git",
-                "reference": "f5e5d12629c26a835c7aa1d74e2e041486b92d93"
+                "reference": "fcefa9dbd5a1ed20547b0f8a2afd5ad6837ea321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/f5e5d12629c26a835c7aa1d74e2e041486b92d93",
-                "reference": "f5e5d12629c26a835c7aa1d74e2e041486b92d93",
+                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/fcefa9dbd5a1ed20547b0f8a2afd5ad6837ea321",
+                "reference": "fcefa9dbd5a1ed20547b0f8a2afd5ad6837ea321",
                 "shasum": ""
             },
             "require": {
@@ -3315,7 +3319,7 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "time": "2013-08-22 13:32:58"
+            "time": "2013-11-21 12:29:01"
         },
         {
             "name": "symfony/symfony",
@@ -3528,7 +3532,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "df17458a9f4072858c5d5033921d76409b8d5b11"
+                "reference": "ee466c76f28bbca8f2880d7ed261fcb4d268b7c4"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3541,7 +3545,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-01-26 19:58:22"
+            "time": "2014-01-29 14:58:00"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3550,7 +3554,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "446b7b7d96c334bf645916de68ea0ac06f1ae003"
+                "reference": "a538c24adfbc57847a8c0ee44f3d6bc485f07cd2"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3559,16 +3563,16 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-01-23 05:42:56"
+            "time": "2014-01-26 19:52:19"
         },
         {
             "name": "vifeed/geo-bundle",
-            "version": "dev-hotfix",
+            "version": "dev-master",
             "target-dir": "Vifeed/GeoBundle",
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/GeoBundle.git",
-                "reference": "ce3cf26b161ac305aab5c9a596ed779891be3b6a"
+                "reference": "98b5065ed80eac52db47267d57c6b4e08a6ae8d2"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3577,7 +3581,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2014-01-16 11:00:07"
+            "time": "2014-01-21 12:27:22"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3607,7 +3611,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "e28a8240fb05d3bf47a7b743586e8d8e819508e0"
+                "reference": "c3261b0813e23f8ac84bcaac022327d8353194bb"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3620,7 +3624,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-01-23 15:50:54"
+            "time": "2014-01-29 15:15:40"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3777,6 +3781,7 @@
         "fortawesome/font-awesome": 20,
         "angular-ui/bootstrap": 20,
         "angular-ui/ui-utils": 20,
+        "guzzle/guzzle": 20,
         "vifeed/campaign-bundle": 20,
         "vifeed/frontend-bundle": 20,
         "vifeed/payment-bundle": 20,

@@ -124,14 +124,14 @@
         "fortawesome/font-awesome": "4.0.x-dev",
         "angular-ui/bootstrap": "dev-master",
         "angular-ui/ui-utils": "dev-master",
-        "guzzle/guzzle": "~3.7",
+        "guzzle/guzzle": "dev-master",
         "vifeed/campaign-bundle": "dev-master",
         "vifeed/frontend-bundle": "dev-master",
         "vifeed/payment-bundle": "dev-master",
         "vifeed/platform-bundle": "dev-master",
         "vifeed/system-bundle": "dev-master",
         "vifeed/user-bundle": "dev-master",
-        "vifeed/geo-bundle": "dev-hotfix"
+        "vifeed/geo-bundle": "dev-master"
     },
     "require-dev": {
     },
