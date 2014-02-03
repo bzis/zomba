@@ -201,3 +201,7 @@ karser_robokassa:
     password1: %robokassa.password1%
     password2: %robokassa.password2%
     test: false
+
+cayetanosoriano_hashids:
+    salt: %cayetanosoriano_hashids.salt%
+    min_hash_length: %cayetanosoriano_hashids.min_hash_length%
