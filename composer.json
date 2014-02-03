@@ -65,6 +65,11 @@
             "name": "vifeed/geo-bundle",
             "url": "git@github.com:vifeed/GeoBundle.git",
             "version": "dev-master"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/chewbacco/hashidsBundle.git",
+            "version": "dev-master"
         }
     ],
     "autoload": {

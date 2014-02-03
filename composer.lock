@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1627f451e66f8ccf84e737012792b742",
+    "hash": "5b5193ad93c105c9d000932952d76f46",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -33,18 +33,18 @@
             "target-dir": "cayetanosoriano/HashidsBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/neoshadybeat/hashidsBundle.git",
-                "reference": "7f871b58a427ff3f8195a39a0e5803c3800431cb"
+                "url": "https://github.com/chewbacco/hashidsBundle.git",
+                "reference": "332deece8a95eef0e238da3bb5c17c0d4e3f7819"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neoshadybeat/hashidsBundle/zipball/7f871b58a427ff3f8195a39a0e5803c3800431cb",
-                "reference": "7f871b58a427ff3f8195a39a0e5803c3800431cb",
+                "url": "https://api.github.com/repos/chewbacco/hashidsBundle/zipball/332deece8a95eef0e238da3bb5c17c0d4e3f7819",
+                "reference": "332deece8a95eef0e238da3bb5c17c0d4e3f7819",
                 "shasum": ""
             },
             "require": {
                 "hashids/hashids": "0.3.*@dev",
-                "symfony/framework-standard-edition": ">= 2.1.0"
+                "symfony/framework-bundle": ">= 2.1.0"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -52,7 +52,6 @@
                     "cayetanosoriano\\HashidsBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -66,7 +65,10 @@
             "keywords": [
                 "hashids"
             ],
-            "time": "2014-01-09 21:54:37"
+            "support": {
+                "source": "https://github.com/chewbacco/hashidsBundle/tree/master"
+            },
+            "time": "2014-02-03 17:06:41"
         },
         {
             "name": "dflydev/markdown",
