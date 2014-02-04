@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d0078188d40f6883f09e0af75491e490",
+    "hash": "5b5193ad93c105c9d000932952d76f46",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-31 17:12:09"
+            "time": "2014-01-05 18:40:22"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -26,6 +26,49 @@
             },
             "type": "library",
             "time": "2013-12-30 19:48:25"
+        },
+        {
+            "name": "cayetanosoriano/hashids-bundle",
+            "version": "dev-master",
+            "target-dir": "cayetanosoriano/HashidsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chewbacco/hashidsBundle.git",
+                "reference": "332deece8a95eef0e238da3bb5c17c0d4e3f7819"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chewbacco/hashidsBundle/zipball/332deece8a95eef0e238da3bb5c17c0d4e3f7819",
+                "reference": "332deece8a95eef0e238da3bb5c17c0d4e3f7819",
+                "shasum": ""
+            },
+            "require": {
+                "hashids/hashids": "0.3.*@dev",
+                "symfony/framework-bundle": ">= 2.1.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "cayetanosoriano\\HashidsBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cayetano Soriano",
+                    "email": "neoshadybeat@gmail.com"
+                }
+            ],
+            "description": "Bundle for integration of hashids lib to the container",
+            "keywords": [
+                "hashids"
+            ],
+            "support": {
+                "source": "https://github.com/chewbacco/hashidsBundle/tree/master"
+            },
+            "time": "2014-02-03 17:06:41"
         },
         {
             "name": "dflydev/markdown",
@@ -124,10 +167,9 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -143,7 +185,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -201,8 +243,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -268,8 +309,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -285,7 +325,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -341,8 +381,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -420,8 +459,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 }
             ],
             "description": "Data Fixtures for all Doctrine Object Managers",
@@ -468,8 +506,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -713,8 +750,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -732,7 +768,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -784,7 +820,7 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -904,8 +940,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -1041,12 +1076,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "a1a1cbcdbcaea904db334423e6fc55189ab19856"
+                "reference": "6ef729cbd4f6f5ae35919a46ebafe552639cd182"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/a1a1cbcdbcaea904db334423e6fc55189ab19856",
-                "reference": "a1a1cbcdbcaea904db334423e6fc55189ab19856",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/6ef729cbd4f6f5ae35919a46ebafe552639cd182",
+                "reference": "6ef729cbd4f6f5ae35919a46ebafe552639cd182",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1144,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-01-25 11:53:12"
+            "time": "2014-02-01 19:09:20"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1186,12 +1221,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "cf95dff4da85f0458787544ae01cd82f9def1ef2"
+                "reference": "dce090bdeeea701bb95f68f2ea66b4e532c68207"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/cf95dff4da85f0458787544ae01cd82f9def1ef2",
-                "reference": "cf95dff4da85f0458787544ae01cd82f9def1ef2",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/dce090bdeeea701bb95f68f2ea66b4e532c68207",
+                "reference": "dce090bdeeea701bb95f68f2ea66b4e532c68207",
                 "shasum": ""
             },
             "require": {
@@ -1270,7 +1305,64 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-01-28 22:37:17"
+            "time": "2014-01-29 18:20:08"
+        },
+        {
+            "name": "hashids/hashids",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivanakimov/hashids.php.git",
+                "reference": "6bc5e99a9d7f3aa09eb1b4ada2189fbf882abdf0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/6bc5e99a9d7f3aa09eb1b4ada2189fbf882abdf0",
+                "reference": "6bc5e99a9d7f3aa09eb1b4ada2189fbf882abdf0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Hashids": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Akimov",
+                    "email": "ivan@barreleye.com",
+                    "homepage": "https://twitter.com/ivanakimov",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Generate hashes like YouTube or Bitly from numbers to obfuscate your database IDs, or navigate to the right shard.",
+            "homepage": "http://www.hashids.org/php/",
+            "keywords": [
+                "bitly",
+                "decrypt",
+                "encrypt",
+                "hash",
+                "hashids",
+                "ids",
+                "obfuscate",
+                "youtube"
+            ],
+            "time": "2014-01-08 00:03:57"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2625,12 +2717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "9773e1963ebe017fd6ea09b030a8730c783d94da"
+                "reference": "52549acbfa4dc3f1bd5e23aad3c92de6de4258d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/9773e1963ebe017fd6ea09b030a8730c783d94da",
-                "reference": "9773e1963ebe017fd6ea09b030a8730c783d94da",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/52549acbfa4dc3f1bd5e23aad3c92de6de4258d1",
+                "reference": "52549acbfa4dc3f1bd5e23aad3c92de6de4258d1",
                 "shasum": ""
             },
             "require": {
@@ -2680,7 +2772,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2014-01-14 08:50:40"
+            "time": "2014-02-01 09:46:23"
         },
         {
             "name": "sonata-project/admin-bundle",
@@ -3532,7 +3624,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "ee466c76f28bbca8f2880d7ed261fcb4d268b7c4"
+                "reference": "ed210b5962d256761ff2d9e719071ec4de972ee0"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3545,7 +3637,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-01-29 14:58:00"
+            "time": "2014-02-01 08:56:39"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3611,7 +3703,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "c3261b0813e23f8ac84bcaac022327d8353194bb"
+                "reference": "ca460eaf258fb0e2c12c162d7bc74fae5f7bd9af"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3624,7 +3716,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-01-29 15:15:40"
+            "time": "2014-02-02 16:07:34"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3782,6 +3874,8 @@
         "angular-ui/bootstrap": 20,
         "angular-ui/ui-utils": 20,
         "guzzle/guzzle": 20,
+        "cayetanosoriano/hashids-bundle": 20,
+        "hashids/hashids": 20,
         "vifeed/campaign-bundle": 20,
         "vifeed/frontend-bundle": 20,
         "vifeed/payment-bundle": 20,
