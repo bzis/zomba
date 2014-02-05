@@ -86,8 +86,8 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/tooltip/tooltip.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/position/position.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/bindHtml/bindHtml.js
-                #datepicker
-                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/datepicker/datepicker.js
+                #alert
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/alert/alert.js
         crypto_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/crypto-js/components/core-min.js
@@ -108,6 +108,14 @@ assetic:
         select2_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.css
+        ng_progress:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/ngprogress/src/directive.js
+                - %kernel.root_dir%/../bower-vendor/ngprogress/src/module.js
+                - %kernel.root_dir%/../bower-vendor/ngprogress/src/provider.js
+        ng_progress_css:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/ngprogress/ngProgress.css
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
