@@ -87,10 +87,10 @@ module.exports = function(grunt) {
     },
     replace: {
       select2: {
-        src: ['bower-vendor/select2/*.css'],
+        src: ['web/css/**'],
         overwrite: true,                 // overwrite matched source files
         replacements: [{
-          from: /(select2\.png|select2x2\.png|select2-spinner\.gif)/g,
+          from: /(?:\.\.\/)(select2\.png|select2x2\.png|select2-spinner\.gif)/g,
           to: 'http://stage-cdn.vifeed.co/images/select2/$1'
         }]
       }
