@@ -64,11 +64,36 @@ module.exports = function(grunt) {
           dest: "fonts",
           rel: "bower-vendor/sass-bootstrap/fonts"
         }]
+      },
+      select2: {
+        upload: [
+        {
+          src: "bower-vendor/select2/select2.png",
+          dest: "/images/select2",
+          rel: "bower-vendor/select2/select2.png"
+        },
+        {
+          src: "bower-vendor/select2/select-spinner.gif",
+          dest: "/images/select2",
+          rel: "bower-vendor/select2/select-spinner.gif"
+        }
+        ],
       }
     },
     curl: {
       'tmp/google-fonts/OpenSans.scss': 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext',
-      'tmp/google-fonts/OleoScriptSwashCaps.scss': 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps'
+      'tmp/google-fonts/OleoScriptSwashCaps.scss': 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps',
+      'tmp/google-fonts/Lora.scss': 'http://fonts.googleapis.com/css?family=Lora:400,700&subset=cyrillic,latin',
+    },
+    replace: {
+      select2: {
+        src: ['bower-vendor/select2/*.css'],
+        overwrite: true,                 // overwrite matched source files
+        replacements: [{
+          from: /(select2\.png|select-spinner\.gif)/g,
+          to: 'http://stage-cdn.vifeed.co/images/select2/$1'
+        }]
+      }
     },
     html2js: {
       module: 'templates',
@@ -90,11 +115,11 @@ module.exports = function(grunt) {
 
 
 
-
+  grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-curl');
   grunt.loadNpmTasks('grunt-invalidate-cloudfront');
-  grunt.registerTask('default', ['html2js', 'curl']);
+  grunt.registerTask('default', ['html2js', 'curl', 'replace']);
   grunt.registerTask('after_assetic_dump', ['s3', 'invalidate_cloudfront']);
 };

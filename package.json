@@ -8,7 +8,8 @@
     "grunt-s3": "~0.2.0-alpha",
     "grunt-curl": "1.2.1",
     "grunt-invalidate-cloudfront": "0.1.4",
-    "grunt-html2js": "~0.2.4"
+    "grunt-html2js": "~0.2.4",
+    "grunt-text-replace": "~0.3.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
