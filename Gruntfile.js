@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: './web/',
-          src: ['js/**/*', 'css/**/*', 'bundles/**/*'],
+          src: ['js/**/*', 'css/**/*', 'bundles/**/*', , 'images/**/*'],
           filter: 'isFile',
           dest: ''
         }]
