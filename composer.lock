@@ -3655,7 +3655,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "aef701948a156aef1744c43e5b44826e39ee2c24"
+                "reference": "530f64fe81b01b3dc35a4ec70c5413e7c8c056fa"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3664,7 +3664,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-02-10 08:49:07"
+            "time": "2014-02-10 12:08:45"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3752,7 +3752,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "a4c336c83fa8554728f102af2795c68004a12a0e"
+                "reference": "24bf0125f3411393362f4c9fef85dc5e79914e7b"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3764,7 +3764,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-01-23 06:00:16"
+            "time": "2014-02-10 12:05:38"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
