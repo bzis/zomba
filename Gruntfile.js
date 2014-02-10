@@ -87,7 +87,7 @@ module.exports = function(grunt) {
     },
     replace: {
       select2: {
-        src: ['web/css/**'],
+        src: ['web/css/**/*.css'],
         overwrite: true,                 // overwrite matched source files
         replacements: [{
           from: /(?:\.\.\/)(select2\.png|select2x2\.png|select2-spinner\.gif)/g,
