@@ -903,16 +903,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.3.4",
+            "version": "2.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "a41b02c080114c0de3da4ee9fba61f7d18fae7d0"
+                "reference": "2c31ec4809a28a549bf22d7cb7504add98156cd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/a41b02c080114c0de3da4ee9fba61f7d18fae7d0",
-                "reference": "a41b02c080114c0de3da4ee9fba61f7d18fae7d0",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/2c31ec4809a28a549bf22d7cb7504add98156cd6",
+                "reference": "2c31ec4809a28a549bf22d7cb7504add98156cd6",
                 "shasum": ""
             },
             "require": {
@@ -970,7 +970,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-05-11 07:51:12"
+            "time": "2014-02-08 16:28:24"
         },
         {
             "name": "fortawesome/font-awesome",
@@ -1084,17 +1084,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "6ef729cbd4f6f5ae35919a46ebafe552639cd182"
+                "reference": "2e2e1e98908060f53960cc3172261134c4db4ede"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/6ef729cbd4f6f5ae35919a46ebafe552639cd182",
-                "reference": "6ef729cbd4f6f5ae35919a46ebafe552639cd182",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/2e2e1e98908060f53960cc3172261134c4db4ede",
+                "reference": "2e2e1e98908060f53960cc3172261134c4db4ede",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "1.0.*",
                 "php": ">=5.3.2",
+                "psr/log": "~1.0",
                 "symfony/framework-bundle": "~2.2",
                 "willdurand/jsonp-callback-validator": "~1.0.0",
                 "willdurand/negotiation": "~1.2.0"
@@ -1120,7 +1121,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -1152,7 +1153,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-02-01 19:09:20"
+            "time": "2014-02-09 15:56:45"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1229,12 +1230,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "476bfb12acc5fe8dc2f25cf10795f41087fb193b"
+                "reference": "63c8b10b98ca42ff5779b3fd76f33e51b153d206"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/476bfb12acc5fe8dc2f25cf10795f41087fb193b",
-                "reference": "476bfb12acc5fe8dc2f25cf10795f41087fb193b",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/63c8b10b98ca42ff5779b3fd76f33e51b153d206",
+                "reference": "63c8b10b98ca42ff5779b3fd76f33e51b153d206",
                 "shasum": ""
             },
             "require": {
@@ -1313,7 +1314,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-02-05 06:00:12"
+            "time": "2014-02-08 21:41:59"
         },
         {
             "name": "hashids/hashids",
@@ -1725,12 +1726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSPaymentCoreBundle.git",
-                "reference": "1bde57ad5629c139ee298bc842f982028a6a6383"
+                "reference": "b88758e392684d9a34bdcffee1c4941014f61bfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/1bde57ad5629c139ee298bc842f982028a6a6383",
-                "reference": "1bde57ad5629c139ee298bc842f982028a6a6383",
+                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/b88758e392684d9a34bdcffee1c4941014f61bfa",
+                "reference": "b88758e392684d9a34bdcffee1c4941014f61bfa",
                 "shasum": ""
             },
             "require": {
@@ -1783,7 +1784,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-01-21 07:45:46"
+            "time": "2014-02-07 11:33:05"
         },
         {
             "name": "jms/serializer",
@@ -2277,12 +2278,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "d177862b4db55ac00f4d1a778ec2d065b7339697"
+                "reference": "5bd455f955dfa0ad66527a078ba1c718be39c590"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/d177862b4db55ac00f4d1a778ec2d065b7339697",
-                "reference": "d177862b4db55ac00f4d1a778ec2d065b7339697",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/5bd455f955dfa0ad66527a078ba1c718be39c590",
+                "reference": "5bd455f955dfa0ad66527a078ba1c718be39c590",
                 "shasum": ""
             },
             "require": {
@@ -2343,7 +2344,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-01-21 16:15:19"
+            "time": "2014-02-07 00:05:59"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3654,7 +3655,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "eb4dee28b4b7f55d48e8672304951a1155e03dae"
+                "reference": "aef701948a156aef1744c43e5b44826e39ee2c24"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3663,7 +3664,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-02-05 07:46:56"
+            "time": "2014-02-10 08:49:07"
         },
         {
             "name": "vifeed/geo-bundle",
