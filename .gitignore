@@ -22,4 +22,3 @@ module
 .DS_Store
 .idea
 *.sublime-*
-vagrant_boxes
