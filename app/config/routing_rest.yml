@@ -13,3 +13,11 @@ users_rest:
 payments_rest:
   type: rest
   resource: "@VifeedPaymentBundle/Resources/config/routing_rest.yml"
+
+system_rest:
+  type: rest
+  resource: "@VifeedSystemBundle/Resources/config/routing_rest.yml"
+
+geo_rest:
+  type: rest
+  resource: "@VifeedGeoBundle/Resources/config/routing_rest.yml"
