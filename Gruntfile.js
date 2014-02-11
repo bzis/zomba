@@ -68,14 +68,14 @@ module.exports = function(grunt) {
       select2: {
         upload: [
         {
-          src: "bower-vendor/select2/select2.png",
+          src: "bower-vendor/select2/*.png",
           dest: "images/select2",
-          rel: "bower-vendor/select2/select2.png"
+          rel: "bower-vendor/select2"
         },
         {
-          src: "bower-vendor/select2/select-spinner.gif",
+          src: "bower-vendor/select2/*.gif",
           dest: "images/select2",
-          rel: "bower-vendor/select2/select-spinner.gif"
+          rel: "bower-vendor/select2"
         }
         ],
       }
