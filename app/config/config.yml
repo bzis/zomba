@@ -67,8 +67,8 @@ assetic:
                 # - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
         twitter_bootstrap_js:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/sass-bootstrap/js/carousel.js
-                - %kernel.root_dir%/../bower-vendor/sass-bootstrap/js/dropdown.js
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass/js/carousel.js
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass/js/dropdown.js
         #Angular UI ~ Bootstrap
         #http://angular-ui.github.io/bootstrap/
         #https://github.com/angular-ui/bootstrap/
