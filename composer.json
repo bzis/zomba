@@ -67,6 +67,12 @@
             "version": "dev-master"
         },
         {
+            "type": "git",
+            "name": "vifeed/tag-bundle",
+            "url": "git@github.com:vifeed/TagBundle.git",
+            "version": "dev-master"
+        },
+        {
             "type": "vcs",
             "url": "https://github.com/chewbacco/hashidsBundle.git",
             "version": "dev-master"
@@ -138,7 +144,8 @@
         "vifeed/platform-bundle": "dev-master",
         "vifeed/system-bundle": "dev-master",
         "vifeed/user-bundle": "dev-master",
-        "vifeed/geo-bundle": "dev-master"
+        "vifeed/geo-bundle": "dev-master",
+        "vifeed/tag-bundle": "dev-master"
     },
     "require-dev": {
     },
