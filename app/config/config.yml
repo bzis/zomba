@@ -110,12 +110,10 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.css
         ng_progress:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/ngprogress/src/directive.js
-                - %kernel.root_dir%/../bower-vendor/ngprogress/src/module.js
-                - %kernel.root_dir%/../bower-vendor/ngprogress/src/provider.js
+                - %kernel.root_dir%/../bower-vendor/ngprogress-lite/ngprogress-lite.min.js
         ng_progress_css:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/ngprogress/ngProgress.css
+                - %kernel.root_dir%/../bower-vendor/ngprogress-lite/ngprogress-lite.css
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
