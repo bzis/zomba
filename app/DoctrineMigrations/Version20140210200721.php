@@ -16,7 +16,7 @@ class Version20140210200721 extends AbstractMigration
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != "mysql", "Migration can only be executed safely on 'mysql'.");
         
         $this->addSql("CREATE UNIQUE INDEX UNIQ_389B7835E237E06 ON tag (name)");
-        $this->addSql("CREATE TABLE tagging (id INT AUTO_INCREMENT NOT NULL, tag_id INT DEFAULT NULL, resource_type VARCHAR(50) NOT NULL, resource_id VARCHAR(50) NOT NULL, INDEX IDX_A4AED123BAD26311 (tag_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
+        $this->addSql("CREATE TABLE tagging (resource_type VARCHAR(50) NOT NULL, resource_id VARCHAR(50) NOT NULL, tag_id INT NOT NULL, INDEX IDX_A4AED123BAD26311 (tag_id), PRIMARY KEY(resource_type, resource_id, tag_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
         $this->addSql("ALTER TABLE tagging ADD CONSTRAINT FK_A4AED123BAD26311 FOREIGN KEY (tag_id) REFERENCES tag (id)");
         $this->addSql("DROP TABLE campaign_tag");
         $this->addSql("DROP TABLE platform_tag");
