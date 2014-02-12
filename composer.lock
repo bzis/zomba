@@ -3424,16 +3424,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.9",
+            "version": "v2.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "ee1e0f2ef882ccd6a53ff91e5ffc39a22b6a6b74"
+                "reference": "e4b9ff28b7c357971947ed12f99fbc68ff116830"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/ee1e0f2ef882ccd6a53ff91e5ffc39a22b6a6b74",
-                "reference": "ee1e0f2ef882ccd6a53ff91e5ffc39a22b6a6b74",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/e4b9ff28b7c357971947ed12f99fbc68ff116830",
+                "reference": "e4b9ff28b7c357971947ed12f99fbc68ff116830",
                 "shasum": ""
             },
             "require": {
@@ -3516,7 +3516,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -3528,7 +3530,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-01-05 01:24:54"
+            "time": "2014-02-12 08:18:23"
         },
         {
             "name": "twig/extensions",
@@ -3655,7 +3657,14 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
+<<<<<<< Updated upstream
                 "reference": "f3d887b4cd417c5671ee7f89a76feda8cff95f99"
+=======
+                "reference": "5364113ca31a98a8006fb611eb841abb4431a0f2"
+            },
+            "require": {
+                "friendsofsymfony/jsrouting-bundle": "~1.1"
+>>>>>>> Stashed changes
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3664,7 +3673,11 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
+<<<<<<< Updated upstream
             "time": "2014-02-11 15:10:44"
+=======
+            "time": "2014-02-12 11:30:51"
+>>>>>>> Stashed changes
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3691,7 +3704,11 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
+<<<<<<< Updated upstream
                 "reference": "d38bf3f63dd2ab676eeea428a51ec54629e1464c"
+=======
+                "reference": "d6c25d92a4016851c457455e2cfc0cdf2987038c"
+>>>>>>> Stashed changes
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3703,7 +3720,11 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
+<<<<<<< Updated upstream
             "time": "2014-02-11 08:08:42"
+=======
+            "time": "2014-02-12 08:30:09"
+>>>>>>> Stashed changes
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3734,7 +3755,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "be848ac2ebb68bbf2ebaa4f12d03317b0f97f90c"
+                "reference": "868e0963e38525d93d60566fb6ac2b8ef6edeebc"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3743,7 +3764,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-02-11 08:18:27"
+            "time": "2014-02-12 08:30:41"
         },
         {
             "name": "vifeed/user-bundle",
@@ -3752,7 +3773,11 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
+<<<<<<< Updated upstream
                 "reference": "6672a1cfd10691b4bcb0ea7170abea0ef6602094"
+=======
+                "reference": "c05455dac0289050360f0bd3a51e8dee792fd493"
+>>>>>>> Stashed changes
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3764,7 +3789,11 @@
                 }
             },
             "description": "Vifeed/UserBundle",
+<<<<<<< Updated upstream
             "time": "2014-02-11 08:08:24"
+=======
+            "time": "2014-02-12 08:37:22"
+>>>>>>> Stashed changes
         },
         {
             "name": "willdurand/jsonp-callback-validator",
