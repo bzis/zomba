@@ -19,10 +19,6 @@ web/dev
 tmp
 node_modules
 module
-vagrant_boxes/.SyncID
-vagrant_boxes/.SyncIgnore
-vagrant_boxes/packer_virtualbox_0.1.2.box
-vagrant_boxes/packer_virtualbox_virtualbox.box
 .DS_Store
 .idea
 *.sublime-*
