@@ -76,6 +76,11 @@
             "type": "vcs",
             "url": "https://github.com/chewbacco/hashidsBundle.git",
             "version": "dev-master"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/vifeed/DoctrineExtensions-Taggable",
+            "version": "dev-master"
         }
     ],
     "autoload": {
