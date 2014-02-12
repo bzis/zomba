@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6fc4657a628eaacd53633f24f0503ab5",
+    "hash": "6d14297f66e61521f2871bd9a06b090d",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1020,13 +1020,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FabienPennequin/DoctrineExtensions-Taggable.git",
-                "reference": "ee7245fc7c3012ea1b1ed932f62ca258b39d8bea"
+                "url": "https://github.com/vifeed/DoctrineExtensions-Taggable.git",
+                "reference": "346622a677779dbe7bb73c68410e3b7a97765759"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FabienPennequin/DoctrineExtensions-Taggable/zipball/ee7245fc7c3012ea1b1ed932f62ca258b39d8bea",
-                "reference": "ee7245fc7c3012ea1b1ed932f62ca258b39d8bea",
+                "url": "https://api.github.com/repos/vifeed/DoctrineExtensions-Taggable/zipball/346622a677779dbe7bb73c68410e3b7a97765759",
+                "reference": "346622a677779dbe7bb73c68410e3b7a97765759",
                 "shasum": ""
             },
             "require": {
@@ -1038,7 +1038,6 @@
                     "DoctrineExtensions": "lib/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1050,10 +1049,13 @@
             ],
             "description": "Tag system using Doctrine ORM",
             "keywords": [
-                "Taggable",
-                "tag"
+                "tag",
+                "taggable"
             ],
-            "time": "2012-09-20 19:58:42"
+            "support": {
+                "source": "https://github.com/vifeed/DoctrineExtensions-Taggable/tree/master"
+            },
+            "time": "2014-02-12 12:57:14"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
