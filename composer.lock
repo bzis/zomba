@@ -3192,7 +3192,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "634afbaa20d9773d0884aa20730eb11a68ebaf04"
+                "reference": "67f037f965c350c4f88a268aaaedee0bb1baef51"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3204,7 +3204,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-02-12 13:58:24"
+            "time": "2014-02-12 15:06:37"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3275,7 +3275,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "df458ddfb8980149d7a32caa0dc6115540310712"
+                "reference": "781cabf71b0203d75c19cc2be52817fcfeee1206"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3288,7 +3288,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-02-12 07:35:24"
+            "time": "2014-02-12 15:06:23"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3315,7 +3315,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/TagBundle.git",
-                "reference": "b56444e8c6c261bebd1042eb661a860b6cf898b2"
+                "reference": "558655daf06a8c717c649463d9f0a9abf7074468"
             },
             "require": {
                 "fpn/doctrine-extensions-taggable": "*@dev"
@@ -3327,7 +3327,7 @@
                 }
             },
             "description": "Vifeed/TagBundle",
-            "time": "2014-02-11 17:45:26"
+            "time": "2014-02-12 14:33:45"
         },
         {
             "name": "vifeed/user-bundle",
