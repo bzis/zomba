@@ -1267,12 +1267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "01a5dddefab2b15cc98a714967881d7e5b44835a"
+                "reference": "b4c0948f1e6d1c73047895f9432fa83a69a176c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/01a5dddefab2b15cc98a714967881d7e5b44835a",
-                "reference": "01a5dddefab2b15cc98a714967881d7e5b44835a",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b4c0948f1e6d1c73047895f9432fa83a69a176c7",
+                "reference": "b4c0948f1e6d1c73047895f9432fa83a69a176c7",
                 "shasum": ""
             },
             "require": {
@@ -1351,7 +1351,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-02-11 18:14:34"
+            "time": "2014-02-12 17:53:56"
         },
         {
             "name": "hashids/hashids",
