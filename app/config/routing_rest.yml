@@ -21,3 +21,7 @@ system_rest:
 geo_rest:
   type: rest
   resource: "@VifeedGeoBundle/Resources/config/routing_rest.yml"
+
+tag_rest:
+  type: rest
+  resource: "@VifeedTagBundle/Resources/config/routing_rest.yml"

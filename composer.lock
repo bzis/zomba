@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6fc4657a628eaacd53633f24f0503ab5",
+    "hash": "6d14297f66e61521f2871bd9a06b090d",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1020,13 +1020,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FabienPennequin/DoctrineExtensions-Taggable.git",
-                "reference": "ee7245fc7c3012ea1b1ed932f62ca258b39d8bea"
+                "url": "https://github.com/vifeed/DoctrineExtensions-Taggable.git",
+                "reference": "346622a677779dbe7bb73c68410e3b7a97765759"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FabienPennequin/DoctrineExtensions-Taggable/zipball/ee7245fc7c3012ea1b1ed932f62ca258b39d8bea",
-                "reference": "ee7245fc7c3012ea1b1ed932f62ca258b39d8bea",
+                "url": "https://api.github.com/repos/vifeed/DoctrineExtensions-Taggable/zipball/346622a677779dbe7bb73c68410e3b7a97765759",
+                "reference": "346622a677779dbe7bb73c68410e3b7a97765759",
                 "shasum": ""
             },
             "require": {
@@ -1038,7 +1038,6 @@
                     "DoctrineExtensions": "lib/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1050,10 +1049,13 @@
             ],
             "description": "Tag system using Doctrine ORM",
             "keywords": [
-                "Taggable",
-                "tag"
+                "tag",
+                "taggable"
             ],
-            "time": "2012-09-20 19:58:42"
+            "support": {
+                "source": "https://github.com/vifeed/DoctrineExtensions-Taggable/tree/master"
+            },
+            "time": "2014-02-12 12:57:14"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1265,12 +1267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "01a5dddefab2b15cc98a714967881d7e5b44835a"
+                "reference": "b4c0948f1e6d1c73047895f9432fa83a69a176c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/01a5dddefab2b15cc98a714967881d7e5b44835a",
-                "reference": "01a5dddefab2b15cc98a714967881d7e5b44835a",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b4c0948f1e6d1c73047895f9432fa83a69a176c7",
+                "reference": "b4c0948f1e6d1c73047895f9432fa83a69a176c7",
                 "shasum": ""
             },
             "require": {
@@ -1349,7 +1351,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-02-11 18:14:34"
+            "time": "2014-02-12 17:53:56"
         },
         {
             "name": "hashids/hashids",
@@ -3192,7 +3194,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "fc344e2fd4d4245bbc0eb6d540ad93f6f8eda94b"
+                "reference": "67f037f965c350c4f88a268aaaedee0bb1baef51"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3204,7 +3206,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-02-12 07:36:22"
+            "time": "2014-02-12 15:06:37"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3213,7 +3215,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "12ae332b047141522e40a6d2b7007b9183b6f3e1"
+                "reference": "b0cb2df4808488d4d42583e9c4810cbccf343eae"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3225,7 +3227,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-02-12 12:14:09"
+            "time": "2014-02-12 13:50:05"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3275,7 +3277,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "df458ddfb8980149d7a32caa0dc6115540310712"
+                "reference": "781cabf71b0203d75c19cc2be52817fcfeee1206"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3288,7 +3290,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-02-12 07:35:24"
+            "time": "2014-02-12 15:06:23"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3297,7 +3299,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "868e0963e38525d93d60566fb6ac2b8ef6edeebc"
+                "reference": "645e5bf144e7a009197a97b5d22458140f67b686"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3306,7 +3308,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-02-12 08:30:41"
+            "time": "2014-02-12 13:58:07"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -3315,7 +3317,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/TagBundle.git",
-                "reference": "b56444e8c6c261bebd1042eb661a860b6cf898b2"
+                "reference": "558655daf06a8c717c649463d9f0a9abf7074468"
             },
             "require": {
                 "fpn/doctrine-extensions-taggable": "*@dev"
@@ -3327,7 +3329,7 @@
                 }
             },
             "description": "Vifeed/TagBundle",
-            "time": "2014-02-11 17:45:26"
+            "time": "2014-02-12 14:33:45"
         },
         {
             "name": "vifeed/user-bundle",
