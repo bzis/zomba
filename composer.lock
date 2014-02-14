@@ -3140,16 +3140,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.15.0",
+            "version": "v1.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "85e4ff98000157ff753d934b9f13659a953f5666"
+                "reference": "1fb5784662f438d7d96a541e305e28b812e2eeed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/85e4ff98000157ff753d934b9f13659a953f5666",
-                "reference": "85e4ff98000157ff753d934b9f13659a953f5666",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/1fb5784662f438d7d96a541e305e28b812e2eeed",
+                "reference": "1fb5784662f438d7d96a541e305e28b812e2eeed",
                 "shasum": ""
             },
             "require": {
@@ -3173,11 +3173,19 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com"
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "https://github.com/fabpot/Twig/graphs/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -3185,7 +3193,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-12-06 07:47:10"
+            "time": "2014-02-13 10:19:29"
         },
         {
             "name": "vifeed/campaign-bundle",
@@ -3215,7 +3223,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "b0cb2df4808488d4d42583e9c4810cbccf343eae"
+                "reference": "33528c6fff607e0598c79aa81d56a2ebba704883"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3227,7 +3235,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-02-12 13:50:05"
+            "time": "2014-02-13 13:55:30"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3277,7 +3285,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "781cabf71b0203d75c19cc2be52817fcfeee1206"
+                "reference": "5cbbb78f2c91a6522941021d6273f2d06c0de6fb"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3290,7 +3298,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-02-12 15:06:23"
+            "time": "2014-02-13 11:52:42"
         },
         {
             "name": "vifeed/system-bundle",
