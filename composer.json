@@ -144,7 +144,8 @@
         "vifeed/system-bundle": "dev-master",
         "vifeed/user-bundle": "dev-master",
         "vifeed/geo-bundle": "dev-master",
-        "vifeed/tag-bundle": "dev-master"
+        "vifeed/tag-bundle": "dev-master",
+        "kunstmaan/sentry-bundle": "2.3.2"
     },
     "require-dev": {
     },

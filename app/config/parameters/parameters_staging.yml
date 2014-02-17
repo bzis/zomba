@@ -5,13 +5,14 @@ parameters:
     database_name: vifeed
     database_user: chief
     database_password: DL6LR$db&cz4Qe
-    mailer_transport: gmail
-    mailer_host: null
-    mailer_user: hd.deman@gmail.com
-    mailer_password: huy
+    mailer_transport: smtp
+    mailer_encryption: tls
+    mailer_host: email-smtp.eu-west-1.amazonaws.com
+    mailer_user: AKIAI4BLDCAYTRD6DSZA
+    mailer_password: Ap70NrgTyvBYmJ06hGATIcfeA96oWIG/utKvijhewKD5
     locale: ru
     secret: 'YMnfCuNL[QXTmMsshpnnRjN6GgNPDosJR@JK4W.ugmHh%inc>p7nyzsCWV'
-    developer_email: dev@example.com
+    developer_email: no-reply@vifeed.co
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
     assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/images/'

@@ -21,3 +21,7 @@ monolog:
             type:  stream
             path:  %kernel.logs_dir%/%kernel.environment%.log
             level: debug
+
+kunstmaan_sentry:
+    enabled: true
+    dsn: "https://6269461d6540477c86824631f7758762:268ddc43168440a5a76e75addd09c435@app.getsentry.com/17730"
