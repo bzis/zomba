@@ -3299,7 +3299,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "6a9f4035d7b2290f351ddab1cbd7609f3d122a26"
+                "reference": "601f6a5313e07f24a452877c861b31108a0e0de6"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3311,7 +3311,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-02-18 07:26:54"
+            "time": "2014-02-18 12:54:40"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3320,7 +3320,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "56f3aa40e2422c38da198812d565b4c90138fa1f"
+                "reference": "918c1faa57bee7fe293318af1d6a3d8d7bd84066"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3332,7 +3332,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-02-17 08:46:24"
+            "time": "2014-02-18 14:39:05"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3443,7 +3443,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "023e88bd75003ae6983c9dff06a430eb027a4d9b"
+                "reference": "4486b96152899432d6c6c677a7bc67c204a56c7b"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3456,7 +3456,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-02-14 11:22:15"
+            "time": "2014-02-18 14:39:19"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
