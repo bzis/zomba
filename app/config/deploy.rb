@@ -24,7 +24,8 @@ default_run_options[:pty] = false
 # Automatically set proper permissions
 # http://capifony.org/cookbook/set-permissions.html
 set :writable_dirs,       [app_path + '/cache', app_path + '/logs']
-set :shared_children,     [app_path + '/config/supervisord']
+#set :shared_children,     [app_path + '/config/supervisor']
+#set :shared_files,        [app_path + '/config/supervisor/deamons.conf']
 set :webserver_user,      'www-data'
 set :permission_method,   :acl
 set :use_set_permissions, true
