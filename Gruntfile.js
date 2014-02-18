@@ -93,6 +93,14 @@ module.exports = function(grunt) {
           from: /(?:\.\.\/)(select2\.png|select2x2\.png|select2-spinner\.gif)/g,
           to: 'http://stage-cdn.vifeed.co/images/select2/$1'
         }]
+      },
+      bundles: {
+        src: ['web/css/**/*.css'],
+        overwrite: true,                 // overwrite matched source files
+        replacements: [{
+          from: /url\((["'])\/bundles\//,
+          to: 'url($1http://stage-cdn.vifeed.co/bundles/'
+        }]
       }
     },
     html2js: {
