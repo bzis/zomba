@@ -100,6 +100,7 @@ assetic:
         angular_ui:
             inputs:
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/mask/mask.js
+                - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/event/event.js
                 - %kernel.root_dir%/../bower-vendor/angular-ui-select2/src/select2.js
         jquery_widget_select2_js:
             inputs:
