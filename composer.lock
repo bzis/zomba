@@ -71,65 +71,6 @@
             "time": "2014-02-03 17:06:41"
         },
         {
-            "name": "dflydev/markdown",
-            "version": "v1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dflydev/dflydev-markdown.git",
-                "reference": "6baed9b50f29c980795b6656d43722aadb126f7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dflydev/dflydev-markdown/zipball/6baed9b50f29c980795b6656d43722aadb126f7e",
-                "reference": "6baed9b50f29c980795b6656d43722aadb126f7e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "dflydev\\markdown": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Dragonfly Development Inc.",
-                    "email": "info@dflydev.com",
-                    "homepage": "http://dflydev.com"
-                },
-                {
-                    "name": "Beau Simensen",
-                    "email": "beau@dflydev.com",
-                    "homepage": "http://beausimensen.com"
-                },
-                {
-                    "name": "Michel Fortin",
-                    "homepage": "http://michelf.com"
-                },
-                {
-                    "name": "John Gruber",
-                    "homepage": "http://daringfireball.net"
-                }
-            ],
-            "description": "PHP Markdown & Extra",
-            "homepage": "http://github.com/dflydev/dflydev-markdown",
-            "keywords": [
-                "markdown"
-            ],
-            "time": "2013-09-23 12:00:18"
-        },
-        {
             "name": "doctrine/annotations",
             "version": "v1.1.2",
             "source": {
@@ -1199,12 +1140,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "23d15ad680fe5b695df1565e7854342e608bc483"
+                "reference": "ae2be6ca5886696ec6b20e31340387a3fd7d676e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/23d15ad680fe5b695df1565e7854342e608bc483",
-                "reference": "23d15ad680fe5b695df1565e7854342e608bc483",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/ae2be6ca5886696ec6b20e31340387a3fd7d676e",
+                "reference": "ae2be6ca5886696ec6b20e31340387a3fd7d676e",
                 "shasum": ""
             },
             "require": {
@@ -1259,7 +1200,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-01-26 23:20:11"
+            "time": "2014-02-19 14:32:53"
         },
         {
             "name": "guzzle/guzzle",
@@ -2174,6 +2115,57 @@
             "time": "2013-10-23 14:05:35"
         },
         {
+            "name": "michelf/php-markdown",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "96d8150406f67e683ef4acc09fef91785fef1266"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/96d8150406f67e683ef4acc09fef91785fef1266",
+                "reference": "96d8150406f67e683ef4acc09fef91785fef1266",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-lib": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Michelf": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "http://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net/"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "http://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2013-11-29 17:09:24"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.7.0",
             "source": {
@@ -2247,16 +2239,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "ee68eabe0cfd4529aa473d853020fa2cc70ee85a"
+                "reference": "eca9d25ca7541b5522fde1d3640d3c22b43504d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/ee68eabe0cfd4529aa473d853020fa2cc70ee85a",
-                "reference": "ee68eabe0cfd4529aa473d853020fa2cc70ee85a",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/eca9d25ca7541b5522fde1d3640d3c22b43504d6",
+                "reference": "eca9d25ca7541b5522fde1d3640d3c22b43504d6",
                 "shasum": ""
             },
             "require": {
-                "dflydev/markdown": "~1.0",
+                "michelf/php-markdown": "~1.4",
                 "symfony/console": "~2.1",
                 "symfony/framework-bundle": "~2.1",
                 "symfony/twig-bundle": "~2.1"
@@ -2313,7 +2305,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-02-11 15:44:12"
+            "time": "2014-02-19 21:34:43"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3299,7 +3291,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "6a9f4035d7b2290f351ddab1cbd7609f3d122a26"
+                "reference": "60d3826c898013e605db5fee9b35011d274bd16f"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master"
@@ -3311,7 +3303,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-02-18 07:26:54"
+            "time": "2014-02-20 06:02:56"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3320,7 +3312,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "56f3aa40e2422c38da198812d565b4c90138fa1f"
+                "reference": "fbedf57880d55074fa04afbfe76e364b0172195a"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3332,7 +3324,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-02-17 08:46:24"
+            "time": "2014-02-19 07:30:19"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3382,7 +3374,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "bf4fa94f0b1355309e0ce9705f9684c887d2ea8c"
+                "reference": "58613159d9932d9bfea4b66ab0f83fe2673155ee"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3395,7 +3387,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-02-18 07:26:25"
+            "time": "2014-02-20 06:02:36"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3404,7 +3396,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "49ee483b525a4fbbed60f467bcdb19820e267ea9"
+                "reference": "2a9eaa83c852e7e0c00a46044ac077ff392c0c02"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3413,7 +3405,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-02-14 11:15:56"
+            "time": "2014-02-20 06:03:17"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -3443,7 +3435,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "023e88bd75003ae6983c9dff06a430eb027a4d9b"
+                "reference": "926b2b555897570b6db0b7726e152069b9a4d3f6"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3456,7 +3448,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-02-14 11:22:15"
+            "time": "2014-02-19 07:30:01"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
