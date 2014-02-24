@@ -147,6 +147,10 @@ doctrine:
     orm:
         auto_generate_proxy_classes: %kernel.debug%
         auto_mapping: true
+        dql:
+            datetime_functions:
+                from_unixtime: Vifeed\SystemBundle\DQL\FromUnixtimeFunction
+                date_format: Vifeed\SystemBundle\DQL\DateFormatFunction
 
 # Swiftmailer Configuration
 swiftmailer:
