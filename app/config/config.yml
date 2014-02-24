@@ -115,6 +115,13 @@ assetic:
         ng_progress_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/ngprogress-lite/ngprogress-lite.css
+        ladda_bootstrap:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/ladda-bootstrap/dist/spin.min.js
+                - %kernel.root_dir%/../bower-vendor/ladda-bootstrap/dist/ladda.min.js
+        ladda_bootstrap_css:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/ladda-bootstrap/dist/ladda-themeless.min.css
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
