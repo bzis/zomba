@@ -15,6 +15,7 @@
         "angular-ui-select2": "0.0.5",
         "select2-bootstrap-css": "https://github.com/t0m/select2-bootstrap-css.git#bootstrap3",
         "bootstrap-sass": "*",
-        "crypto-js": "http://crypto-js.googlecode.com/files/CryptoJS%20v3.1.2.zip"
+        "crypto-js": "http://crypto-js.googlecode.com/files/CryptoJS%20v3.1.2.zip",
+        "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git"
     }
 }
