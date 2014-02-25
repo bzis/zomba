@@ -26,6 +26,7 @@ parameters:
     robokassa.password2: dEv56kZLMA2X
     redis_dns.default: 'redis://stage.nmhes6.0001.euw1.cache.amazonaws.com:6379/1'
     redis_dns.session: 'redis://stage.nmhes6.0001.euw1.cache.amazonaws.com:6379/2'
+    redis_dns.doctrine: 'redis://stage.nmhes6.0001.euw1.cache.amazonaws.com:6379/3'
     cayetanosoriano_hashids.salt: 'randomsalt'
     cayetanosoriano_hashids.min_hash_length: 6
     vifeed: { comission: 0.3, min_view_time: 30, delta: 1 }
