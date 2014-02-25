@@ -88,6 +88,10 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/bindHtml/bindHtml.js
                 #alert
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/alert/alert.js
+                #dropdownToggle
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdownToggle/dropdownToggle.js
+                #pagination
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
         crypto_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/crypto-js/components/core-min.js
