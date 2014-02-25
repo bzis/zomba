@@ -115,6 +115,13 @@ assetic:
         ng_progress_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/ngprogress-lite/ngprogress-lite.css
+        ladda_bootstrap:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/ladda-bootstrap/dist/spin.min.js
+                - %kernel.root_dir%/../bower-vendor/ladda-bootstrap/dist/ladda.min.js
+        ladda_bootstrap_css:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/ladda-bootstrap/dist/ladda-themeless.min.css
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
@@ -144,6 +151,8 @@ doctrine:
             datetime_functions:
                 from_unixtime: Vifeed\SystemBundle\DQL\FromUnixtimeFunction
                 date_format: Vifeed\SystemBundle\DQL\DateFormatFunction
+        result_cache_driver: redis
+
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -204,9 +213,24 @@ snc_redis:
             type: predis
             alias: session
             dsn: %redis_dns.session%
+        doctrine:
+            type: predis
+            alias: doctrine
+            dsn: %redis_dns.doctrine%
     swiftmailer:
         client: default
         key: swiftmailer
+    doctrine:
+#        metadata_cache:
+#            client: doctrine
+#            entity_manager: default          # the name of your entity_manager connection
+#            document_manager: default        # the name of your document_manager connection
+        result_cache:
+            client: doctrine
+            entity_manager: default  # you may specify multiple entity_managers
+#        query_cache:
+#            client: doctrine
+#            entity_manager: default
 
 jms_payment_core:
     secret: %payment.secret%
