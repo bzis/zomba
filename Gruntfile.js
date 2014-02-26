@@ -80,6 +80,15 @@ module.exports = function(grunt) {
         ],
       }
     },
+    imagemin: {                          // Task
+      dynamic: {                         // Another target
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'web/bundles/',                   // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif}']   // Actual patterns to match
+        }]
+      }
+    },
     curl: {
       'tmp/google-fonts/OpenSans.scss': 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext',
       'tmp/google-fonts/OleoScriptSwashCaps.scss': 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps',
@@ -126,8 +135,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-s3');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-curl');
   grunt.loadNpmTasks('grunt-invalidate-cloudfront');
-  grunt.registerTask('default', ['html2js', 'curl']);
+  grunt.registerTask('default', ['html2js', 'curl', 'imagemin']);
   grunt.registerTask('after_assetic_dump', ['replace', 's3', 'invalidate_cloudfront']);
 };
