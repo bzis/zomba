@@ -3416,7 +3416,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/TagBundle.git",
-                "reference": "c433cce310a1004a61b0166a935484f63484c35a"
+                "reference": "bdccf2483848fc46d5719433d1f535a9a0660373"
             },
             "require": {
                 "fpn/doctrine-extensions-taggable": "*@dev"
@@ -3428,7 +3428,7 @@
                 }
             },
             "description": "Vifeed/TagBundle",
-            "time": "2014-02-25 13:00:33"
+            "time": "2014-02-27 08:32:10"
         },
         {
             "name": "vifeed/user-bundle",
