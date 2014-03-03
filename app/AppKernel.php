@@ -36,7 +36,6 @@ class AppKernel extends Kernel
             new JMS\Payment\CoreBundle\JMSPaymentCoreBundle(),
             new Karser\RobokassaBundle\KarserRobokassaBundle(),
             new cayetanosoriano\HashidsBundle\cayetanosorianoHashidsBundle(),
-            new Kunstmaan\SentryBundle\KunstmaanSentryBundle(),
 
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\VifeedUserBundle(),
