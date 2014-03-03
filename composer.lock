@@ -1064,12 +1064,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "4b6ac2e8c40ef6ad2a76f0c206b29594c078470f"
+                "reference": "924c43d096ddad2e97dad2c6d98631000deea28b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/4b6ac2e8c40ef6ad2a76f0c206b29594c078470f",
-                "reference": "4b6ac2e8c40ef6ad2a76f0c206b29594c078470f",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/924c43d096ddad2e97dad2c6d98631000deea28b",
+                "reference": "924c43d096ddad2e97dad2c6d98631000deea28b",
                 "shasum": ""
             },
             "require": {
@@ -1133,7 +1133,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-02-23 01:16:41"
+            "time": "2014-03-02 21:08:52"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1210,12 +1210,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "edbcaaa5d38267a499289da215d3a9702c65ab1f"
+                "reference": "dd3e6c0e3f0d5de9347fd9c9efb71597577c9a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/edbcaaa5d38267a499289da215d3a9702c65ab1f",
-                "reference": "edbcaaa5d38267a499289da215d3a9702c65ab1f",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/dd3e6c0e3f0d5de9347fd9c9efb71597577c9a92",
+                "reference": "dd3e6c0e3f0d5de9347fd9c9efb71597577c9a92",
                 "shasum": ""
             },
             "require": {
@@ -1294,7 +1294,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-02-26 01:49:03"
+            "time": "2014-03-02 21:31:45"
         },
         {
             "name": "hashids/hashids",
@@ -1956,12 +1956,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "d013aae51baf893fe8d38b41f2d24db03e1cfbf7"
+                "reference": "8342a250cd6e8d693332e7899b2e9c62c8187156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/d013aae51baf893fe8d38b41f2d24db03e1cfbf7",
-                "reference": "d013aae51baf893fe8d38b41f2d24db03e1cfbf7",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/8342a250cd6e8d693332e7899b2e9c62c8187156",
+                "reference": "8342a250cd6e8d693332e7899b2e9c62c8187156",
                 "shasum": ""
             },
             "require": {
@@ -2021,7 +2021,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-02-04 10:36:39"
+            "time": "2014-02-28 18:17:10"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -3029,16 +3029,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.10",
+            "version": "v2.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "e4b9ff28b7c357971947ed12f99fbc68ff116830"
+                "reference": "aa5b228e87dde1a1a9c7c3c78ad538739da05fe1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/e4b9ff28b7c357971947ed12f99fbc68ff116830",
-                "reference": "e4b9ff28b7c357971947ed12f99fbc68ff116830",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/aa5b228e87dde1a1a9c7c3c78ad538739da05fe1",
+                "reference": "aa5b228e87dde1a1a9c7c3c78ad538739da05fe1",
                 "shasum": ""
             },
             "require": {
@@ -3135,7 +3135,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-02-12 08:18:23"
+            "time": "2014-02-27 14:55:30"
         },
         {
             "name": "twig/extensions",
@@ -3269,7 +3269,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "24487597536832825f20f024a687ecdc3d37ca15"
+                "reference": "c1f16eacf86d620e2b0bb5d20b00d2b0d89f0f6a"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3281,7 +3281,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-02-25 15:27:37"
+            "time": "2014-03-03 12:09:39"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3308,7 +3308,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "31f7b481b3fd98345ed35bd3ba6cf437be405755"
+                "reference": "62072830d0e43db54cc2fb50b5ce0de27a77b026"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3322,7 +3322,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-02-25 13:00:57"
+            "time": "2014-02-28 11:20:27"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3331,7 +3331,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "b9aafb346906c968237c84da5be10ea3bc48e7ff"
+                "reference": "d5e325545b7ba40705531653b0a0b0cfde0a69bb"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3344,7 +3344,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-02-27 08:18:15"
+            "time": "2014-03-03 10:52:45"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3353,7 +3353,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "20c14d6a465ced189a0750fe9766c16bad6d5322"
+                "reference": "f76d635a15ce18f767972627fe9ff9c3ca58fd59"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3362,7 +3362,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-02-24 07:41:21"
+            "time": "2014-03-03 10:52:59"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -3392,7 +3392,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "45f83fbb9b1826b4b1c399a2a5768b3c248ddd54"
+                "reference": "af2826617e02e374d3ceb86c88eaa56fe6aaa9ac"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3405,7 +3405,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-02-25 12:06:37"
+            "time": "2014-02-27 14:56:31"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -3449,16 +3449,16 @@
         },
         {
             "name": "willdurand/negotiation",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Negotiation.git",
-                "reference": "84c855a0a9318b29b2535ca88a86e899d7ac4bda"
+                "reference": "d1347ba8208a449c5aa0bf13cd7b65298c59257e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/84c855a0a9318b29b2535ca88a86e899d7ac4bda",
-                "reference": "84c855a0a9318b29b2535ca88a86e899d7ac4bda",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/d1347ba8208a449c5aa0bf13cd7b65298c59257e",
+                "reference": "d1347ba8208a449c5aa0bf13cd7b65298c59257e",
                 "shasum": ""
             },
             "require": {
@@ -3495,7 +3495,7 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2014-02-11 15:51:10"
+            "time": "2014-02-28 14:39:44"
         }
     ],
     "packages-dev": [
