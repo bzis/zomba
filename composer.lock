@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "86a6e33a8f8bd3febbf2563426a39f02",
+    "hash": "faf2f32b8fc85c9ae2653b21cf559dc3",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -2070,51 +2070,6 @@
                 "http client"
             ],
             "time": "2013-05-19 03:41:15"
-        },
-        {
-            "name": "kunstmaan/sentry-bundle",
-            "version": "v2.3.2",
-            "target-dir": "Kunstmaan/SentryBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Kunstmaan/KunstmaanSentryBundle.git",
-                "reference": "d4ce12fe019f707029b749737688346817eadafa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Kunstmaan/KunstmaanSentryBundle/zipball/d4ce12fe019f707029b749737688346817eadafa",
-                "reference": "d4ce12fe019f707029b749737688346817eadafa",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "raven/raven": "0.7.*",
-                "symfony/framework-bundle": ">=2.1,<2.4.0"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Kunstmaan\\SentryBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kunstmaan Team",
-                    "email": "support@kunstmaan.be",
-                    "homepage": "http://www.kunstmaan.be/"
-                }
-            ],
-            "description": "The SentryBundle for Symfony2 helps binds the raven-php module into a Symfony2 bundle for easy use with the framework. It will autoload an exception handler into the framework, so that all uncaught errors are sent to a Sentry server.",
-            "homepage": "https://github.com/Kunstmaan/KunstmaanSentryBundle",
-            "keywords": [
-                "exceptions",
-                "sentry"
-            ],
-            "time": "2013-10-23 14:05:35"
         },
         {
             "name": "michelf/php-markdown",
