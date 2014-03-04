@@ -138,9 +138,6 @@ assetic:
         daterangepicker_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker-bs3.css
-        ng_daterangepicker:
-            inputs:
-                - %kernel.root_dir%/../bower-vendor/ng-bs-daterangepicker/dist/ng-bs-daterangepicker.min.js
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js

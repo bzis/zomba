@@ -18,7 +18,6 @@
         "crypto-js": "http://crypto-js.googlecode.com/files/CryptoJS%20v3.1.2.zip",
         "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git",
         "bootstrap-daterangepicker": "https://github.com/dangrossman/bootstrap-daterangepicker.git",
-        "ng-bs-daterangepicker": "0.0.2",
         "angular-moment": "0.6.2"
     }
 }
