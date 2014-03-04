@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-31 17:12:09"
+            "time": "2014-02-27 22:02:00"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -3269,7 +3269,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "55372c0e30646b8d52b98ede258ebf6943dedb41"
+                "reference": "52de4b821a1bdcf38abef55380e0be8b9be13e01"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3281,7 +3281,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-03-04 10:49:35"
+            "time": "2014-03-04 14:40:13"
         },
         {
             "name": "vifeed/geo-bundle",
