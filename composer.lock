@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-02-27 22:02:00"
+            "time": "2013-12-31 17:12:09"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -25,7 +25,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-02-17 23:26:16"
+            "time": "2013-12-30 19:48:25"
         },
         {
             "name": "cayetanosoriano/hashids-bundle",
@@ -108,7 +108,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
