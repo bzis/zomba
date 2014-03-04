@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-01-09 17:59:15"
+            "time": "2013-12-31 17:12:09"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -25,7 +25,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-11-25 09:09:28"
+            "time": "2013-12-30 19:48:25"
         },
         {
             "name": "cayetanosoriano/hashids-bundle",
@@ -108,7 +108,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -3269,7 +3269,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "bc067866e65c57dbbe9e1a1875b3ab26b4db91e7"
+                "reference": "c1f16eacf86d620e2b0bb5d20b00d2b0d89f0f6a"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3281,7 +3281,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-02-28 11:47:04"
+            "time": "2014-03-03 12:09:39"
         },
         {
             "name": "vifeed/geo-bundle",
