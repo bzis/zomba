@@ -89,7 +89,7 @@ assetic:
                 #alert
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/alert/alert.js
                 #dropdownToggle
-                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdownToggle/dropdownToggle.js
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdown/dropdown.js
                 #pagination
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
         crypto_js:
