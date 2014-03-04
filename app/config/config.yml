@@ -89,7 +89,7 @@ assetic:
                 #alert
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/alert/alert.js
                 #dropdownToggle
-                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdownToggle/dropdownToggle.js
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdown/dropdown.js
                 #pagination
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
         crypto_js:
@@ -126,6 +126,21 @@ assetic:
         ladda_bootstrap_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/ladda-bootstrap/dist/ladda-themeless.min.css
+        moment_js:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/momentjs/min/moment-with-langs.min.js
+        angular_moment:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/angular-moment/angular-moment.min.js
+        daterangepicker:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker.js
+        daterangepicker_css:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker-bs3.css
+        ng_daterangepicker:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/ng-bs-daterangepicker/dist/ng-bs-daterangepicker.min.js
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js

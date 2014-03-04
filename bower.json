@@ -1,14 +1,14 @@
 {
     "name": "vifeed",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "dependencies": {
         "jquery": "1.10.2",
         "parallax": "https://github.com/wagerfield/parallax.git",
-        "angular": "1.2.7",
-        "angular-route": "1.2.7",
-        "angular-resource": "1.2.7",
-        "angular-mocks": "1.2.7",
-        "angular-sanitize": "1.2.7",
+        "angular": "1.2.13",
+        "angular-route": "1.2.13",
+        "angular-resource": "1.2.13",
+        "angular-mocks": "1.2.13",
+        "angular-sanitize": "1.2.13",
         "xapu-angular-cookies": "https://github.com/xapu/angularjs-cookies.git",
         "ngprogress-lite": "https://github.com/voronianski/ngprogress-lite.git",
         "select2": "3.4.5",
@@ -16,6 +16,9 @@
         "select2-bootstrap-css": "https://github.com/t0m/select2-bootstrap-css.git#bootstrap3",
         "bootstrap-sass": "*",
         "crypto-js": "http://crypto-js.googlecode.com/files/CryptoJS%20v3.1.2.zip",
-        "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git"
+        "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git",
+        "bootstrap-daterangepicker": "https://github.com/dangrossman/bootstrap-daterangepicker.git",
+        "ng-bs-daterangepicker": "0.0.2",
+        "angular-moment": "0.6.2"
     }
 }
