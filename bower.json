@@ -19,5 +19,8 @@
         "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git",
         "bootstrap-daterangepicker": "https://github.com/dangrossman/bootstrap-daterangepicker.git",
         "angular-moment": "0.6.2"
+    },
+    "resolutions": {
+        "jquery": "2.1.0"
     }
 }
