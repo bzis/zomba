@@ -2,7 +2,7 @@
     "name": "vifeed",
     "version": "0.1.2",
     "dependencies": {
-        "jquery": "1.10.2",
+        "jquery": "2.1.0",
         "parallax": "https://github.com/wagerfield/parallax.git",
         "angular": "1.2.13",
         "angular-route": "1.2.13",
