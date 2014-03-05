@@ -3392,7 +3392,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "af2826617e02e374d3ceb86c88eaa56fe6aaa9ac"
+                "reference": "8311a022607e9afd554bf2be4823d61fdf8c154b"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3405,7 +3405,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-02-27 14:56:31"
+            "time": "2014-03-05 10:01:17"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
