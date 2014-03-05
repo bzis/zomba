@@ -3308,7 +3308,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "8d151b1351b15ddfb1179c9d41da56eefa79d05d"
+                "reference": "42c93b51882407608b50e2bcbcc232a34cb52a92"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3322,7 +3322,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-03-05 09:04:00"
+            "time": "2014-03-05 14:14:10"
         },
         {
             "name": "vifeed/platform-bundle",
