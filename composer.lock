@@ -1064,12 +1064,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "924c43d096ddad2e97dad2c6d98631000deea28b"
+                "reference": "e443de2a62472d64415f2cfa6ab496c4d98c6038"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/924c43d096ddad2e97dad2c6d98631000deea28b",
-                "reference": "924c43d096ddad2e97dad2c6d98631000deea28b",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/e443de2a62472d64415f2cfa6ab496c4d98c6038",
+                "reference": "e443de2a62472d64415f2cfa6ab496c4d98c6038",
                 "shasum": ""
             },
             "require": {
@@ -1133,7 +1133,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-03-02 21:08:52"
+            "time": "2014-03-05 19:43:05"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1913,12 +1913,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/karser/RobokassaBundle.git",
-                "reference": "bcdebf41397e46b97fd5ccf5d32454c2d654fa8f"
+                "reference": "ef713308f41f5aebdf4e3b6269c92d809b7a64c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/karser/RobokassaBundle/zipball/bcdebf41397e46b97fd5ccf5d32454c2d654fa8f",
-                "reference": "bcdebf41397e46b97fd5ccf5d32454c2d654fa8f",
+                "url": "https://api.github.com/repos/karser/RobokassaBundle/zipball/ef713308f41f5aebdf4e3b6269c92d809b7a64c3",
+                "reference": "ef713308f41f5aebdf4e3b6269c92d809b7a64c3",
                 "shasum": ""
             },
             "require": {
@@ -1948,7 +1948,7 @@
                 "payment",
                 "robokassa"
             ],
-            "time": "2014-01-24 18:16:35"
+            "time": "2014-03-06 22:46:28"
         },
         {
             "name": "kriswallsmith/assetic",
