@@ -1064,12 +1064,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "e443de2a62472d64415f2cfa6ab496c4d98c6038"
+                "reference": "ed28a056225d911de4be4686326339a1a51b7fa9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/e443de2a62472d64415f2cfa6ab496c4d98c6038",
-                "reference": "e443de2a62472d64415f2cfa6ab496c4d98c6038",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/ed28a056225d911de4be4686326339a1a51b7fa9",
+                "reference": "ed28a056225d911de4be4686326339a1a51b7fa9",
                 "shasum": ""
             },
             "require": {
@@ -1077,8 +1077,8 @@
                 "php": ">=5.3.2",
                 "psr/log": "~1.0",
                 "symfony/framework-bundle": "~2.2",
-                "willdurand/jsonp-callback-validator": "~1.0.0",
-                "willdurand/negotiation": "~1.2.0"
+                "willdurand/jsonp-callback-validator": "~1.0",
+                "willdurand/negotiation": "~1.2"
             },
             "conflict": {
                 "jms/serializer": "<0.12",
@@ -1101,7 +1101,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -1133,7 +1133,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-03-05 19:43:05"
+            "time": "2014-03-11 15:28:34"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1210,12 +1210,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "dd3e6c0e3f0d5de9347fd9c9efb71597577c9a92"
+                "reference": "eb1f3693243e1686ce4014c6de32ae7295883d76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/dd3e6c0e3f0d5de9347fd9c9efb71597577c9a92",
-                "reference": "dd3e6c0e3f0d5de9347fd9c9efb71597577c9a92",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/eb1f3693243e1686ce4014c6de32ae7295883d76",
+                "reference": "eb1f3693243e1686ce4014c6de32ae7295883d76",
                 "shasum": ""
             },
             "require": {
@@ -1294,7 +1294,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-03-02 21:31:45"
+            "time": "2014-03-09 16:11:27"
         },
         {
             "name": "hashids/hashids",
@@ -1913,12 +1913,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/karser/RobokassaBundle.git",
-                "reference": "ef713308f41f5aebdf4e3b6269c92d809b7a64c3"
+                "reference": "b851c323e026390aa059b3c814efb3a12624d1eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/karser/RobokassaBundle/zipball/ef713308f41f5aebdf4e3b6269c92d809b7a64c3",
-                "reference": "ef713308f41f5aebdf4e3b6269c92d809b7a64c3",
+                "url": "https://api.github.com/repos/karser/RobokassaBundle/zipball/b851c323e026390aa059b3c814efb3a12624d1eb",
+                "reference": "b851c323e026390aa059b3c814efb3a12624d1eb",
                 "shasum": ""
             },
             "require": {
@@ -1948,7 +1948,7 @@
                 "payment",
                 "robokassa"
             ],
-            "time": "2014-03-06 22:46:28"
+            "time": "2014-03-07 12:09:30"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -2196,12 +2196,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "eca9d25ca7541b5522fde1d3640d3c22b43504d6"
+                "reference": "855f95afd1851759b82bc1994329c53add71afce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/eca9d25ca7541b5522fde1d3640d3c22b43504d6",
-                "reference": "eca9d25ca7541b5522fde1d3640d3c22b43504d6",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/855f95afd1851759b82bc1994329c53add71afce",
+                "reference": "855f95afd1851759b82bc1994329c53add71afce",
                 "shasum": ""
             },
             "require": {
@@ -2262,7 +2262,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-02-19 21:34:43"
+            "time": "2014-03-10 09:04:00"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3248,9 +3248,10 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "9703d48856118294d00a0119d0c1c3d45e962669"
+                "reference": "538d5fcd36accc4daebab1a000f2099508b1d2c4"
             },
             "require": {
+                "cayetanosoriano/hashids-bundle": "dev-master",
                 "friendsofsymfony/rest-bundle": "dev-master"
             },
             "type": "symfony-bundle",
@@ -3260,7 +3261,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-03-04 15:37:38"
+            "time": "2014-03-07 14:10:01"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3269,7 +3270,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "6f7205851e0c1988a6a2e3ee8b9c779b7bd77d73"
+                "reference": "839f3ea5e2119cc83cdcc964059a564add339009"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3281,7 +3282,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-03-05 13:10:15"
+            "time": "2014-03-11 08:19:34"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3308,7 +3309,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "42c93b51882407608b50e2bcbcc232a34cb52a92"
+                "reference": "98d19ed7b33ad9b57f11d04d7c45656b6b62a994"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3322,7 +3323,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-03-05 14:14:10"
+            "time": "2014-03-07 13:19:33"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3409,16 +3410,16 @@
         },
         {
             "name": "willdurand/jsonp-callback-validator",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/JsonpCallbackValidator.git",
-                "reference": "58c0a6c76718794856f7049cf066fdda4e984c49"
+                "reference": "1a7d388bb521959e612ef50c5c7b1691b097e909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/JsonpCallbackValidator/zipball/58c0a6c76718794856f7049cf066fdda4e984c49",
-                "reference": "58c0a6c76718794856f7049cf066fdda4e984c49",
+                "url": "https://api.github.com/repos/willdurand/JsonpCallbackValidator/zipball/1a7d388bb521959e612ef50c5c7b1691b097e909",
+                "reference": "1a7d388bb521959e612ef50c5c7b1691b097e909",
                 "shasum": ""
             },
             "require": {
@@ -3439,26 +3440,26 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
             ],
             "description": "JSONP callback validator.",
-            "time": "2013-10-21 12:01:32"
+            "time": "2014-01-20 22:35:06"
         },
         {
             "name": "willdurand/negotiation",
-            "version": "1.2.3",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Negotiation.git",
-                "reference": "d1347ba8208a449c5aa0bf13cd7b65298c59257e"
+                "reference": "cda64e26a980f433ce98200ba1b2301850489aab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/d1347ba8208a449c5aa0bf13cd7b65298c59257e",
-                "reference": "d1347ba8208a449c5aa0bf13cd7b65298c59257e",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/cda64e26a980f433ce98200ba1b2301850489aab",
+                "reference": "cda64e26a980f433ce98200ba1b2301850489aab",
                 "shasum": ""
             },
             "require": {
@@ -3467,7 +3468,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -3495,7 +3496,7 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2014-02-28 14:39:44"
+            "time": "2014-02-26 13:56:25"
         }
     ],
     "packages-dev": [
