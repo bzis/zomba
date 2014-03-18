@@ -1212,12 +1212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "8a0a8d72cbff0c58752af0badd6820f5f87c9c84"
+                "reference": "b32e2b328028ce70da5c2d61cccf4c2c49a6a83f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/8a0a8d72cbff0c58752af0badd6820f5f87c9c84",
-                "reference": "8a0a8d72cbff0c58752af0badd6820f5f87c9c84",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/b32e2b328028ce70da5c2d61cccf4c2c49a6a83f",
+                "reference": "b32e2b328028ce70da5c2d61cccf4c2c49a6a83f",
                 "shasum": ""
             },
             "require": {
@@ -1296,7 +1296,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-03-15 23:37:34"
+            "time": "2014-03-18 02:38:07"
         },
         {
             "name": "hashids/hashids",
@@ -3250,7 +3250,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "538d5fcd36accc4daebab1a000f2099508b1d2c4"
+                "reference": "4f0a3324b3e8e43c3c30185f96d76982bd895e17"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3263,7 +3263,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-03-07 14:10:01"
+            "time": "2014-03-18 08:45:22"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3334,7 +3334,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "f4908483d80f280f860b9f8b0ea546a5d0370b35"
+                "reference": "b71f6732d402ff82fbfee8df0e05551f5e805e40"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3347,7 +3347,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-03-04 15:44:35"
+            "time": "2014-03-18 08:45:51"
         },
         {
             "name": "vifeed/system-bundle",
