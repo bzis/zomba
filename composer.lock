@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "faf2f32b8fc85c9ae2653b21cf559dc3",
+    "hash": "b439c4e87c653804d987f1560afa5248",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -528,7 +528,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -788,20 +790,20 @@
         },
         {
             "name": "doctrine/migrations",
-            "version": "v1.0-ALPHA1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "b38ddb190ec78d389b2c2de838b2a4d646ad1ce2"
+                "reference": "46a031ddaea47d0685200027cfe8c83b02aee6f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/b38ddb190ec78d389b2c2de838b2a4d646ad1ce2",
-                "reference": "b38ddb190ec78d389b2c2de838b2a4d646ad1ce2",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/46a031ddaea47d0685200027cfe8c83b02aee6f6",
+                "reference": "46a031ddaea47d0685200027cfe8c83b02aee6f6",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": ">=2.0,<2.5.x-dev",
+                "doctrine/dbal": "~2.0",
                 "php": ">=5.3.2"
             },
             "require-dev": {
@@ -812,6 +814,11 @@
                 "symfony/console": "to run the migration from the console"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Doctrine\\DBAL\\Migrations": "lib"
@@ -839,7 +846,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2012-10-05 11:15:13"
+            "time": "2014-03-16 19:02:43"
         },
         {
             "name": "doctrine/orm",
@@ -1144,12 +1151,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "9b8bbbcf50620f7c8af9c7588d9fe29247c2fa42"
+                "reference": "f8e9255eedc91bc53195de288c9fe640719b2817"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/9b8bbbcf50620f7c8af9c7588d9fe29247c2fa42",
-                "reference": "9b8bbbcf50620f7c8af9c7588d9fe29247c2fa42",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/f8e9255eedc91bc53195de288c9fe640719b2817",
+                "reference": "f8e9255eedc91bc53195de288c9fe640719b2817",
                 "shasum": ""
             },
             "require": {
@@ -1204,7 +1211,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-03-16 19:14:47"
+            "time": "2014-03-18 08:55:34"
         },
         {
             "name": "guzzle/guzzle",
@@ -1212,12 +1219,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "b32e2b328028ce70da5c2d61cccf4c2c49a6a83f"
+                "reference": "2be45eff422162fea0b1cf5f2f62987409789270"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/b32e2b328028ce70da5c2d61cccf4c2c49a6a83f",
-                "reference": "b32e2b328028ce70da5c2d61cccf4c2c49a6a83f",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/2be45eff422162fea0b1cf5f2f62987409789270",
+                "reference": "2be45eff422162fea0b1cf5f2f62987409789270",
                 "shasum": ""
             },
             "require": {
@@ -1296,7 +1303,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-03-18 02:38:07"
+            "time": "2014-03-19 04:39:36"
         },
         {
             "name": "hashids/hashids",
@@ -1958,12 +1965,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "70a1d422ee712a2384732b48d415e3680440acb5"
+                "reference": "c501da7ffbf311a7133113186540a572d9fe5135"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/70a1d422ee712a2384732b48d415e3680440acb5",
-                "reference": "70a1d422ee712a2384732b48d415e3680440acb5",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/c501da7ffbf311a7133113186540a572d9fe5135",
+                "reference": "c501da7ffbf311a7133113186540a572d9fe5135",
                 "shasum": ""
             },
             "require": {
@@ -2023,7 +2030,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-03-16 18:25:42"
+            "time": "2014-03-18 09:11:56"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -3250,7 +3257,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "4f0a3324b3e8e43c3c30185f96d76982bd895e17"
+                "reference": "f9a2dfd9c3dccded2057d873b8d07b74eaf01a27"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3263,7 +3270,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-03-18 08:45:22"
+            "time": "2014-03-19 15:59:34"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3272,7 +3279,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "7122958cde6b44785b7441aca83e50015133692c"
+                "reference": "e2c3f4bbc14616f7544cdc25ee3dc7dbd87617fd"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3284,7 +3291,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-03-17 09:53:15"
+            "time": "2014-03-20 08:52:06"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3334,7 +3341,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "b71f6732d402ff82fbfee8df0e05551f5e805e40"
+                "reference": "7d51674b82bd29fc97c8ae97d1530f3249012dad"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3347,7 +3354,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-03-18 08:45:51"
+            "time": "2014-03-19 12:31:33"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3356,7 +3363,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "46ef5a7ce76f456d3286bf9593b5afdfb5fd382b"
+                "reference": "baa9f3276b25eae5cd4bf7dfaac0b0ad2046c196"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3365,7 +3372,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-03-04 10:23:04"
+            "time": "2014-03-19 12:16:40"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -3395,7 +3402,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "28fa0aa32547e6fc129d2167b81ae62ece41eeb1"
+                "reference": "5b074369220b363f6a2eef09a1038ab360f5813d"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3408,7 +3415,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-03-05 18:25:45"
+            "time": "2014-03-19 12:22:07"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -3514,6 +3521,7 @@
         "friendsofsymfony/rest-bundle": 20,
         "nelmio/api-doc-bundle": 20,
         "doctrine/doctrine-migrations-bundle": 20,
+        "doctrine/migrations": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
         "snc/redis-bundle": 20,
