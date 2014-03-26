@@ -3272,7 +3272,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "1039ab77902cdd7a3f0e49c09afdb706ce2ef4ec"
+                "reference": "d56ef82721e6b28e8956949dcc6c87684286249c"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3285,7 +3285,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-03-24 08:11:31"
+            "time": "2014-03-26 14:31:27"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3356,7 +3356,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "916892c0272cab5593be7088609b70c93ae3a398"
+                "reference": "d4639d6230f2b6b0c9bf5c4cd5e8fff972348963"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3369,7 +3369,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-03-24 08:07:50"
+            "time": "2014-03-26 14:31:33"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3417,7 +3417,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "8e6a4ba3a28cc8512c6cfa1b9cdbe658b20b8100"
+                "reference": "fc6f4f72a1f096c25e140d2affb21c2173886145"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3430,7 +3430,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-03-24 13:15:16"
+            "time": "2014-03-26 14:31:19"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
