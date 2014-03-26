@@ -144,6 +144,15 @@ assetic:
                 - %kernel.root_dir%/../web/js/fos_js_routes.js
             filters:
                 - ?closure
+        d3:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/d3/d3.min.js
+        c3:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/c3/c3.min.js
+        c3_css:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/c3/c3.css
 # Doctrine Configuration
 doctrine:
     dbal:
