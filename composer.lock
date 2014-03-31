@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1432f4f282038345f5b2a3b6d35bd125",
+    "hash": "764ef84cd75b097ceeb3d1575163ec2e",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
