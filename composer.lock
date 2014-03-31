@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1432f4f282038345f5b2a3b6d35bd125",
+    "hash": "8c054e832adf44988ca1b87e9348adf3",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1219,12 +1219,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "39167b340ad1e4bfeceab8692195648699c4ca56"
+                "reference": "f5ff2107333dff8ce984946d506929d9172c3573"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/39167b340ad1e4bfeceab8692195648699c4ca56",
-                "reference": "39167b340ad1e4bfeceab8692195648699c4ca56",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/f5ff2107333dff8ce984946d506929d9172c3573",
+                "reference": "f5ff2107333dff8ce984946d506929d9172c3573",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1303,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-03-25 18:33:43"
+            "time": "2014-03-26 17:17:05"
         },
         {
             "name": "hashids/hashids",

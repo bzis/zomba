@@ -19,7 +19,9 @@
         "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git",
         "bootstrap-daterangepicker": "https://github.com/dangrossman/bootstrap-daterangepicker.git",
         "angular-moment": "0.6.2",
-        "c3": "0.1.16"
+        "highcharts.com": "https://github.com/highslide-software/highcharts.com.git",
+        "highcharts-ng": "https://github.com/pablojim/highcharts-ng.git",
+        "twix": "https://github.com/icambron/twix.js.git"
     },
     "resolutions": {
         "jquery": "2.1.0"
