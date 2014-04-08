@@ -58,6 +58,9 @@ assetic:
         jquery_parallax:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/parallax/deploy/jquery.parallax.min.js
+        underscore:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/underscore/underscore-min.js
         angular:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular/angular.js
@@ -92,6 +95,9 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdown/dropdown.js
                 #pagination
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
+        angular_maps:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/angular-google-maps/dist/angular-google-maps.min.js
         crypto_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/crypto-js/components/core-min.js

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8c054e832adf44988ca1b87e9348adf3",
+    "hash": "764ef84cd75b097ceeb3d1575163ec2e",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1073,12 +1073,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "74dcf0465b19f2c3082693a875850897241851ef"
+                "reference": "0f9f719b5b1cbcb18e40b6a13a9f700c0b1e5bb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/74dcf0465b19f2c3082693a875850897241851ef",
-                "reference": "74dcf0465b19f2c3082693a875850897241851ef",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/0f9f719b5b1cbcb18e40b6a13a9f700c0b1e5bb8",
+                "reference": "0f9f719b5b1cbcb18e40b6a13a9f700c0b1e5bb8",
                 "shasum": ""
             },
             "require": {
@@ -1142,7 +1142,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-03-23 17:58:22"
+            "time": "2014-03-28 23:58:47"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1965,12 +1965,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "c501da7ffbf311a7133113186540a572d9fe5135"
+                "reference": "f7ee64e4497543bfec45101dac34907c415459af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/c501da7ffbf311a7133113186540a572d9fe5135",
-                "reference": "c501da7ffbf311a7133113186540a572d9fe5135",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/f7ee64e4497543bfec45101dac34907c415459af",
+                "reference": "f7ee64e4497543bfec45101dac34907c415459af",
                 "shasum": ""
             },
             "require": {
@@ -2030,7 +2030,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-03-18 09:11:56"
+            "time": "2014-03-30 18:38:34"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -2206,12 +2206,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "eddba56c66dd740b541d3f4f80dc16b6ab8b098f"
+                "reference": "fd126c1a0101a7703489b2fd65c91526d2b75774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/eddba56c66dd740b541d3f4f80dc16b6ab8b098f",
-                "reference": "eddba56c66dd740b541d3f4f80dc16b6ab8b098f",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/fd126c1a0101a7703489b2fd65c91526d2b75774",
+                "reference": "fd126c1a0101a7703489b2fd65c91526d2b75774",
                 "shasum": ""
             },
             "require": {
@@ -2272,7 +2272,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-03-12 13:46:04"
+            "time": "2014-03-28 12:48:20"
         },
         {
             "name": "phpcollection/phpcollection",
