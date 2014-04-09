@@ -41,6 +41,7 @@ class AppKernel extends Kernel
             new Vifeed\UserBundle\VifeedUserBundle(),
             new Vifeed\SystemBundle\VifeedSystemBundle(),
             new Vifeed\PlatformBundle\VifeedPlatformBundle(),
+            new Vifeed\VideoViewBundle\VifeedVideoViewBundle(),
             new Vifeed\PaymentBundle\VifeedPaymentBundle(),
             new Vifeed\FrontendBundle\VifeedFrontendBundle(),
             new Vifeed\GeoBundle\VifeedGeoBundle(),

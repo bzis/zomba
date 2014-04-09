@@ -73,6 +73,12 @@
             "version": "dev-master"
         },
         {
+            "type": "git",
+            "name": "vifeed/video-view-bundle",
+            "url": "git@github.com:vifeed/VideoViewBundle.git",
+            "version": "dev-master"
+        },
+        {
             "type": "vcs",
             "url": "https://github.com/chewbacco/hashidsBundle.git",
             "version": "dev-master"
@@ -146,6 +152,7 @@
         "vifeed/user-bundle": "dev-master",
         "vifeed/geo-bundle": "dev-master",
         "vifeed/tag-bundle": "dev-master",
+        "vifeed/video-view-bundle": "dev-master",
         "raven/raven": "0.7.1"
     },
     "require-dev": {
