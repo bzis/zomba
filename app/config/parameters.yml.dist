@@ -41,6 +41,8 @@ parameters:
     cayetanosoriano_hashids.salt: 'randomsalt'
     cayetanosoriano_hashids.min_hash_length: 6
 
+    google.api.key: ''
+
     vifeed:
         # комиссия системы
         comission: 0.3
