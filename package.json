@@ -4,10 +4,10 @@
   "description": "vifeed base project",
   "main": "index.js",
   "dependencies": {
-    "grunt": "~0.4.2",
+    "grunt": "~0.4.4",
     "grunt-s3": "~0.2.0-alpha.3",
-    "grunt-curl": "1.4.0",
-    "grunt-invalidate-cloudfront": "0.1.4",
+    "grunt-curl": "~1.4.0",
+    "grunt-invalidate-cloudfront": "~0.1.4",
     "grunt-html2js": "~0.2.4",
     "grunt-text-replace": "~0.3.11",
     "grunt-contrib-imagemin": "~0.6.1"
