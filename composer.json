@@ -153,8 +153,7 @@
         "vifeed/geo-bundle": "dev-master",
         "vifeed/tag-bundle": "dev-master",
         "vifeed/video-view-bundle": "dev-master",
-        "raven/raven": "0.7.1",
-        "google/apiclient": "dev-master"
+        "raven/raven": "0.7.1"
     },
     "require-dev": {
     },
