@@ -58,6 +58,9 @@ assetic:
         jquery_parallax:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/parallax/deploy/jquery.parallax.min.js
+        underscore:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/underscore/underscore-min.js
         angular:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular/angular.js
@@ -92,6 +95,9 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdown/dropdown.js
                 #pagination
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
+        angular_maps:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/angular-google-maps/dist/angular-google-maps.min.js
         crypto_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/crypto-js/components/core-min.js
@@ -129,6 +135,9 @@ assetic:
         moment_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/momentjs/min/moment-with-langs.min.js
+        moment_twix_js:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/twix/bin/twix.min.js
         angular_moment:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular-moment/angular-moment.min.js
@@ -138,21 +147,18 @@ assetic:
         daterangepicker_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker-bs3.css
+        highcharts:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/highcharts.com/js/highcharts.src.js
+        highcharts_ng:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/highcharts-ng/dist/highcharts-ng.min.js
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
                 - %kernel.root_dir%/../web/js/fos_js_routes.js
             filters:
                 - ?closure
-        d3:
-            inputs:
-                - %kernel.root_dir%/../bower-vendor/d3/d3.min.js
-        c3:
-            inputs:
-                - %kernel.root_dir%/../bower-vendor/c3/c3.min.js
-        c3_css:
-            inputs:
-                - %kernel.root_dir%/../bower-vendor/c3/c3.css
 # Doctrine Configuration
 doctrine:
     dbal:
