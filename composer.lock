@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e69f62e67acdeccd244b0f38d66e2895",
+    "hash": "f69c8e4eb561a2afb0dc291660b6ebf2",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -69,6 +69,57 @@
                 "source": "https://github.com/chewbacco/hashidsBundle/tree/master"
             },
             "time": "2014-02-03 17:06:41"
+        },
+        {
+            "name": "chewbacco/payment-qiwi-wallet-bundle",
+            "version": "dev-master",
+            "target-dir": "Chewbacco/Payment/QiwiWalletBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chewbacco/ChewbaccoPaymentQiwiWalletBundle.git",
+                "reference": "faf2192f968d353363c68687041399a72724f0fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chewbacco/ChewbaccoPaymentQiwiWalletBundle/zipball/faf2192f968d353363c68687041399a72724f0fd",
+                "reference": "faf2192f968d353363c68687041399a72724f0fd",
+                "shasum": ""
+            },
+            "require": {
+                "jms/payment-core-bundle": "dev-master",
+                "php": ">=5.3.2",
+                "sensio/framework-extra-bundle": "2.3.*",
+                "werkint/qiwi": "dev-master"
+            },
+            "require-dev": {
+                "sensio/framework-extra-bundle": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Chewbacco\\Payment\\QiwiWalletBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Tsoy Dmitry",
+                    "email": "hd.deman@gmail.com",
+                    "homepage": "http://lacroco.ru/"
+                }
+            ],
+            "description": "Payment Bundle providing access to the Qiwi Wallet",
+            "homepage": "https://github.com/chewbacco/ChewbaccoPaymentQiwiWalletBundle",
+            "keywords": [
+                "ishop",
+                "payment",
+                "qiwi",
+                "qiwi wallet"
+            ],
+            "time": "2014-04-14 15:19:53"
         },
         {
             "name": "doctrine/annotations",
@@ -1073,12 +1124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "f84f6303a2fea137d5e1d15cfb87418cc1c5db1e"
+                "reference": "292891740390ec5bdddc95340dec3a2b3c687e0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/f84f6303a2fea137d5e1d15cfb87418cc1c5db1e",
-                "reference": "f84f6303a2fea137d5e1d15cfb87418cc1c5db1e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/292891740390ec5bdddc95340dec3a2b3c687e0d",
+                "reference": "292891740390ec5bdddc95340dec3a2b3c687e0d",
                 "shasum": ""
             },
             "require": {
@@ -1143,7 +1194,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-04-13 10:12:19"
+            "time": "2014-04-14 18:21:20"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1220,12 +1271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "85e361f074687b2cd374872d10e7b3309ab8d108"
+                "reference": "042423bf73a8a819902399a4ad9a4f0402bb4011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/85e361f074687b2cd374872d10e7b3309ab8d108",
-                "reference": "85e361f074687b2cd374872d10e7b3309ab8d108",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/042423bf73a8a819902399a4ad9a4f0402bb4011",
+                "reference": "042423bf73a8a819902399a4ad9a4f0402bb4011",
                 "shasum": ""
             },
             "require": {
@@ -1252,7 +1303,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-04-14 13:40:19"
+            "time": "2014-04-16 06:14:17"
         },
         {
             "name": "guzzle/guzzle",
@@ -1260,12 +1311,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "840683b88b637a5310aefceac3722c6fd6b4c043"
+                "reference": "fa0046309160ea52aeed51b5608adfd263dfa0a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/840683b88b637a5310aefceac3722c6fd6b4c043",
-                "reference": "840683b88b637a5310aefceac3722c6fd6b4c043",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/fa0046309160ea52aeed51b5608adfd263dfa0a2",
+                "reference": "fa0046309160ea52aeed51b5608adfd263dfa0a2",
                 "shasum": ""
             },
             "require": {
@@ -1344,7 +1395,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-04-09 22:38:44"
+            "time": "2014-04-14 23:10:44"
         },
         {
             "name": "hashids/hashids",
@@ -3303,11 +3354,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "77c3e3e93ec055cdd45037f7f02b256e71a3a5bb"
+                "reference": "f3215287399e9dfc0e4388a4c8c245da79175282"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
-                "friendsofsymfony/rest-bundle": "dev-master"
+                "friendsofsymfony/rest-bundle": "dev-master",
+                "google/apiclient": "dev-master"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3316,7 +3368,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-04-11 10:53:30"
+            "time": "2014-04-15 13:49:59"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3325,7 +3377,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "fc2e334ca09f3d0a76d103c4f85e3d853c5ab244"
+                "reference": "237f6b48ea5df1a4d8fca19884c64745e242adf8"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3337,7 +3389,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-04-14 14:00:01"
+            "time": "2014-04-14 14:25:26"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3364,9 +3416,10 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "afca39febd8881a7ff5eddb22fff9daf5a222c86"
+                "reference": "cff2eb3bf0fe17153bd5e43835252f9d0672feb7"
             },
             "require": {
+                "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
                 "friendsofsymfony/rest-bundle": "dev-master",
                 "jms/payment-core-bundle": "master-dev",
                 "karser/robokassa-bundle": "dev-master"
@@ -3378,7 +3431,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-04-04 10:03:11"
+            "time": "2014-04-16 10:09:29"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3409,7 +3462,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "baa9f3276b25eae5cd4bf7dfaac0b0ad2046c196"
+                "reference": "f5ac4055ebd25753d6fd48fc2d53aaf1eb80ab3d"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3418,7 +3471,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-03-19 12:16:40"
+            "time": "2014-04-16 10:12:25"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -3480,6 +3533,45 @@
             },
             "description": "Vifeed/VideoViewBundle",
             "time": "2014-03-31 14:12:20"
+        },
+        {
+            "name": "werkint/qiwi",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Werkint/Qiwi.git",
+                "reference": "7bbfbc3019aec0a6e194e9999d9cd14a630bd9c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Werkint/Qiwi/zipball/7bbfbc3019aec0a6e194e9999d9cd14a630bd9c4",
+                "reference": "7bbfbc3019aec0a6e194e9999d9cd14a630bd9c4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Werkint\\Qiwi": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "own"
+            ],
+            "authors": [
+                {
+                    "name": "Bogdan Yurov",
+                    "email": "bogdan@yurov.me"
+                },
+                {
+                    "name": "ООО \"КИВИ Кошелек\""
+                }
+            ],
+            "description": "Платежная библиотека для QIWI через SOAP",
+            "time": "2013-06-30 15:33:25"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -3603,8 +3695,7 @@
         "vifeed/user-bundle": 20,
         "vifeed/geo-bundle": 20,
         "vifeed/tag-bundle": 20,
-        "vifeed/video-view-bundle": 20,
-        "google/apiclient": 20
+        "vifeed/video-view-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
