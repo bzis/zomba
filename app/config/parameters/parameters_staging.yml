@@ -33,3 +33,6 @@ parameters:
     vifeed: { comission: 0.3, min_view_time: 10, delta: 1 }
     qiwi.login: ''
     qiwi.password: ''
+    paypal.username: ''
+    paypal.password: ''
+    paypal.api_signature: ''

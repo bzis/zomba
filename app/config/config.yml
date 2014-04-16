@@ -276,6 +276,12 @@ chewbacco_payment_qiwi_wallet:
     login: %qiwi.login%
     password: %qiwi.password%
 
+jms_payment_paypal:
+    username: %paypal.username%
+    password: %paypal.password%
+    signature: %paypal.api_signature%
+    debug: false
+
 cayetanosoriano_hashids:
     salt: %cayetanosoriano_hashids.salt%
     min_hash_length: %cayetanosoriano_hashids.min_hash_length%
