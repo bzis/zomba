@@ -1311,12 +1311,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "fa0046309160ea52aeed51b5608adfd263dfa0a2"
+                "reference": "dc4a4af0ba585522863f75324bbfe2e0009f2893"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/fa0046309160ea52aeed51b5608adfd263dfa0a2",
-                "reference": "fa0046309160ea52aeed51b5608adfd263dfa0a2",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/dc4a4af0ba585522863f75324bbfe2e0009f2893",
+                "reference": "dc4a4af0ba585522863f75324bbfe2e0009f2893",
                 "shasum": ""
             },
             "require": {
@@ -1395,7 +1395,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-04-14 23:10:44"
+            "time": "2014-04-16 17:46:30"
         },
         {
             "name": "hashids/hashids",
@@ -3377,7 +3377,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "64f98fd7ebbccf03f6e3af10ed41a9f110f2d774"
+                "reference": "6033a42c35732c8465a321e49fa2c71f45094800"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3389,7 +3389,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-04-16 15:34:22"
+            "time": "2014-04-16 18:16:11"
         },
         {
             "name": "vifeed/geo-bundle",
