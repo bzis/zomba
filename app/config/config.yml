@@ -272,6 +272,11 @@ karser_robokassa:
     password2: %robokassa.password2%
     test: false
 
+chewbacco_payment_qiwi_wallet:
+    login: 9440844
+    password: kHVcQyMVi96jlyjQBXP1
+
 cayetanosoriano_hashids:
     salt: %cayetanosoriano_hashids.salt%
     min_hash_length: %cayetanosoriano_hashids.min_hash_length%
+
