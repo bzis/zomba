@@ -1271,12 +1271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "85e361f074687b2cd374872d10e7b3309ab8d108"
+                "reference": "042423bf73a8a819902399a4ad9a4f0402bb4011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/85e361f074687b2cd374872d10e7b3309ab8d108",
-                "reference": "85e361f074687b2cd374872d10e7b3309ab8d108",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/042423bf73a8a819902399a4ad9a4f0402bb4011",
+                "reference": "042423bf73a8a819902399a4ad9a4f0402bb4011",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1303,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-04-14 13:40:19"
+            "time": "2014-04-16 06:14:17"
         },
         {
             "name": "guzzle/guzzle",
@@ -3416,7 +3416,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "cd1bdca6b575e3bfaccb09c7db603dd065990bf4"
+                "reference": "cff2eb3bf0fe17153bd5e43835252f9d0672feb7"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3431,7 +3431,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-04-15 13:52:51"
+            "time": "2014-04-16 10:09:29"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3462,7 +3462,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "baa9f3276b25eae5cd4bf7dfaac0b0ad2046c196"
+                "reference": "f5ac4055ebd25753d6fd48fc2d53aaf1eb80ab3d"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3471,7 +3471,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-03-19 12:16:40"
+            "time": "2014-04-16 10:12:25"
         },
         {
             "name": "vifeed/tag-bundle",
