@@ -30,5 +30,8 @@ assetic:
 karser_robokassa:
     test: true
 
+jms_payment_paypal:
+    debug: true # when true, connect to PayPal sandbox; uses kernel debug value when not specified
+
 #swiftmailer:
 #    delivery_address: me@example.com
