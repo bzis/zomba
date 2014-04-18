@@ -31,3 +31,8 @@ parameters:
     cayetanosoriano_hashids.min_hash_length: 6
     google.api.key: 'AIzaSyBrcW_Q9-soi0XD3cU-nZPYOI_wo0JZvLI'
     vifeed: { comission: 0.3, min_view_time: 10, delta: 1 }
+    qiwi.login: ''
+    qiwi.password: ''
+    paypal.username: ''
+    paypal.password: ''
+    paypal.api_signature: ''

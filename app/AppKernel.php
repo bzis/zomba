@@ -37,6 +37,7 @@ class AppKernel extends Kernel
             new Karser\RobokassaBundle\KarserRobokassaBundle(),
             new cayetanosoriano\HashidsBundle\cayetanosorianoHashidsBundle(),
             new Chewbacco\Payment\QiwiWalletBundle\ChewbaccoPaymentQiwiWalletBundle(),
+            new JMS\Payment\PaypalBundle\JMSPaymentPaypalBundle(),
 
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\VifeedUserBundle(),

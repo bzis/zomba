@@ -1311,12 +1311,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "fa0046309160ea52aeed51b5608adfd263dfa0a2"
+                "reference": "dc4a4af0ba585522863f75324bbfe2e0009f2893"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/fa0046309160ea52aeed51b5608adfd263dfa0a2",
-                "reference": "fa0046309160ea52aeed51b5608adfd263dfa0a2",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/dc4a4af0ba585522863f75324bbfe2e0009f2893",
+                "reference": "dc4a4af0ba585522863f75324bbfe2e0009f2893",
                 "shasum": ""
             },
             "require": {
@@ -1395,7 +1395,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-04-14 23:10:44"
+            "time": "2014-04-16 17:46:30"
         },
         {
             "name": "hashids/hashids",
@@ -1866,6 +1866,55 @@
                 "payment"
             ],
             "time": "2014-04-10 10:21:55"
+        },
+        {
+            "name": "jms/payment-paypal-bundle",
+            "version": "dev-master",
+            "target-dir": "JMS/Payment/PaypalBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/JMSPaymentPaypalBundle.git",
+                "reference": "5c58d9957814d83712b1e07a0acbf97c4f7d1f5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentPaypalBundle/zipball/5c58d9957814d83712b1e07a0acbf97c4f7d1f5b",
+                "reference": "5c58d9957814d83712b1e07a0acbf97c4f7d1f5b",
+                "shasum": ""
+            },
+            "require": {
+                "jms/payment-core-bundle": "~1.0",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "~2.0"
+            },
+            "require-dev": {
+                "symfony/browser-kit": "*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "JMS\\Payment\\PaypalBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "https://github.com/schmittjoh",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Payment Bundle providing access to the PayPal API",
+            "homepage": "http://jmsyst.com/bundles/JMSPaymentPaypalBundle",
+            "keywords": [
+                "payment",
+                "paypal"
+            ],
+            "time": "2013-08-14 16:58:12"
         },
         {
             "name": "jms/serializer",
@@ -3387,7 +3436,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "237f6b48ea5df1a4d8fca19884c64745e242adf8"
+                "reference": "7836d2691174e32da81f0fe02fd8f4e3ebd1872c"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3399,7 +3448,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-04-14 14:25:26"
+            "time": "2014-04-17 14:20:34"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3426,12 +3475,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "cff2eb3bf0fe17153bd5e43835252f9d0672feb7"
+                "reference": "837075012ede97ad05fb46e8a4dc6b6c6ac3352e"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
                 "friendsofsymfony/rest-bundle": "dev-master",
                 "jms/payment-core-bundle": "master-dev",
+                "jms/payment-paypal-bundle": "dev-master",
                 "karser/robokassa-bundle": "dev-master"
             },
             "type": "symfony-bundle",
@@ -3441,7 +3491,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-04-16 10:09:29"
+            "time": "2014-04-17 14:26:34"
         },
         {
             "name": "vifeed/platform-bundle",
