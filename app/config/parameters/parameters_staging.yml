@@ -31,8 +31,8 @@ parameters:
     cayetanosoriano_hashids.min_hash_length: 6
     google.api.key: 'AIzaSyBrcW_Q9-soi0XD3cU-nZPYOI_wo0JZvLI'
     vifeed: { comission: 0.3, min_view_time: 10, delta: 1 }
-    qiwi.login: ''
-    qiwi.password: ''
-    paypal.username: ''
-    paypal.password: ''
-    paypal.api_signature: ''
+    qiwi.login: 8586
+    qiwi.password: '8]Eo7xXp52kH7H6j'
+    paypal.username: hd.deman@gmail.co
+    paypal.password: weeqw
+    paypal.api_signature: dsfsdf

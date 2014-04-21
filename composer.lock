@@ -3413,7 +3413,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "f3215287399e9dfc0e4388a4c8c245da79175282"
+                "reference": "21a17a91685e32a25b11671b0df4f03660ab0f8e"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3427,7 +3427,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-04-15 13:49:59"
+            "time": "2014-04-21 09:27:17"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3436,7 +3436,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "71f32fdeb70105b1e3ab7ed0ea12d34778a18b7f"
+                "reference": "8f469e0ff2596aed85b435035a6d570aed7adde7"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3448,7 +3448,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-04-17 15:44:08"
+            "time": "2014-04-21 12:36:58"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3475,7 +3475,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "1d3c75a38936260ee7b9c2c016fbe5d39b4d1c8d"
+                "reference": "7bf68d41e377b294b4a35c710e08bb6090bc3b15"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3491,7 +3491,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-04-19 12:44:12"
+            "time": "2014-04-21 09:28:28"
         },
         {
             "name": "vifeed/platform-bundle",
