@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $TRAVIS_BRANCH == 'master' ]]
-  gem install capistrano --no-ri --no-rdoc
+  bundle install
   cap staging deploy
 fi
 
