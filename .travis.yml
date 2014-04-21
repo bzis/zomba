@@ -10,16 +10,13 @@ before_script:
   - echo "USE mysql;\nUPDATE user SET password=PASSWORD('rootpass') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
   - composer install -n
 
-script:
-  - phpunit -c app vendor/vifeed/
-  - phpunit -c app --coverage-clover=coverage.clover
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --access-token="2087e8c79ea31fd94006200b4885c35ae54067c19d477ccc1f8d584de6f35876" --format=php-clover coverage.clover
 
 after_failure:
   - echo log file; cat app/logs/test.log
 
 after_success:
+  - pwd
+  - ls
   - sh ./travis/deploy.sh
 
 notifications:
