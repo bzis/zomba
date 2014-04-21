@@ -1271,12 +1271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "042423bf73a8a819902399a4ad9a4f0402bb4011"
+                "reference": "9ee1980689c5447cdd761fdd3b88f01d62691c1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/042423bf73a8a819902399a4ad9a4f0402bb4011",
-                "reference": "042423bf73a8a819902399a4ad9a4f0402bb4011",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/9ee1980689c5447cdd761fdd3b88f01d62691c1c",
+                "reference": "9ee1980689c5447cdd761fdd3b88f01d62691c1c",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1303,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-04-16 06:14:17"
+            "time": "2014-04-19 06:16:50"
         },
         {
             "name": "guzzle/guzzle",
@@ -3475,7 +3475,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "837075012ede97ad05fb46e8a4dc6b6c6ac3352e"
+                "reference": "1d3c75a38936260ee7b9c2c016fbe5d39b4d1c8d"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3491,7 +3491,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-04-17 14:26:34"
+            "time": "2014-04-19 12:44:12"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3500,7 +3500,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "5c5e5bcc983860434caef1a4618aa173fce4b791"
+                "reference": "4061eb05dac4685e404c436043a2bc8e45da7b31"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3513,7 +3513,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-04-04 10:03:29"
+            "time": "2014-04-19 12:45:10"
         },
         {
             "name": "vifeed/system-bundle",

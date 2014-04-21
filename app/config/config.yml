@@ -70,8 +70,8 @@ assetic:
                 # - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
         twitter_bootstrap_js:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/bootstrap-sass/js/carousel.js
-                - %kernel.root_dir%/../bower-vendor/bootstrap-sass/js/dropdown.js
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/carousel.js
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/dropdown.js
         #Angular UI ~ Bootstrap
         #http://angular-ui.github.io/bootstrap/
         #https://github.com/angular-ui/bootstrap/
@@ -287,4 +287,3 @@ jms_payment_paypal:
 cayetanosoriano_hashids:
     salt: %cayetanosoriano_hashids.salt%
     min_hash_length: %cayetanosoriano_hashids.min_hash_length%
-
