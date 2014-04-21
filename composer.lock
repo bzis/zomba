@@ -1124,12 +1124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "2bec4fb62203449fc4639e7f8752a58026fe1d17"
+                "reference": "dc5517a005ad25c0703db536ea8de98bbf2d8821"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/2bec4fb62203449fc4639e7f8752a58026fe1d17",
-                "reference": "2bec4fb62203449fc4639e7f8752a58026fe1d17",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/dc5517a005ad25c0703db536ea8de98bbf2d8821",
+                "reference": "dc5517a005ad25c0703db536ea8de98bbf2d8821",
                 "shasum": ""
             },
             "require": {
@@ -1194,7 +1194,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-04-17 20:04:12"
+            "time": "2014-04-21 07:07:52"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2274,16 +2274,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174"
+                "reference": "1afc39690e7414412face1f8cbf67b73db34485c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/392ef35fd470638e08d0160d6b1cbab63cb23174",
-                "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1afc39690e7414412face1f8cbf67b73db34485c",
+                "reference": "1afc39690e7414412face1f8cbf67b73db34485c",
                 "shasum": ""
             },
             "require": {
@@ -2311,7 +2311,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8.x-dev"
+                    "dev-master": "1.9.x-dev"
                 }
             },
             "autoload": {
@@ -2338,7 +2338,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-03-23 19:50:26"
+            "time": "2014-04-20 16:41:26"
         },
         {
             "name": "nelmio/api-doc-bundle",
