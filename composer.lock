@@ -1124,12 +1124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "2bec4fb62203449fc4639e7f8752a58026fe1d17"
+                "reference": "6e5017a66437fdf54c88db75edeec25e4354b4f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/2bec4fb62203449fc4639e7f8752a58026fe1d17",
-                "reference": "2bec4fb62203449fc4639e7f8752a58026fe1d17",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/6e5017a66437fdf54c88db75edeec25e4354b4f6",
+                "reference": "6e5017a66437fdf54c88db75edeec25e4354b4f6",
                 "shasum": ""
             },
             "require": {
@@ -1194,7 +1194,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-04-17 20:04:12"
+            "time": "2014-04-21 08:26:51"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2274,16 +2274,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174"
+                "reference": "1afc39690e7414412face1f8cbf67b73db34485c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/392ef35fd470638e08d0160d6b1cbab63cb23174",
-                "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1afc39690e7414412face1f8cbf67b73db34485c",
+                "reference": "1afc39690e7414412face1f8cbf67b73db34485c",
                 "shasum": ""
             },
             "require": {
@@ -2311,7 +2311,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8.x-dev"
+                    "dev-master": "1.9.x-dev"
                 }
             },
             "autoload": {
@@ -2338,7 +2338,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-03-23 19:50:26"
+            "time": "2014-04-20 16:41:26"
         },
         {
             "name": "nelmio/api-doc-bundle",
@@ -3403,7 +3403,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "f3215287399e9dfc0e4388a4c8c245da79175282"
+                "reference": "21a17a91685e32a25b11671b0df4f03660ab0f8e"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3417,7 +3417,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-04-15 13:49:59"
+            "time": "2014-04-21 09:27:17"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3465,7 +3465,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "1d3c75a38936260ee7b9c2c016fbe5d39b4d1c8d"
+                "reference": "7bf68d41e377b294b4a35c710e08bb6090bc3b15"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3481,7 +3481,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-04-19 12:44:12"
+            "time": "2014-04-21 09:28:28"
         },
         {
             "name": "vifeed/platform-bundle",
