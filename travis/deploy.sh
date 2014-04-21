@@ -3,6 +3,5 @@
 if [[ $TRAVIS_BRANCH == 'master' ]]
   gem bundle install
   bundle install
-  cap staging deploy
+  bundle exec cap staging deploy
 fi
-
