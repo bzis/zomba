@@ -95,6 +95,8 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdown/dropdown.js
                 #pagination
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
+                #buttons
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/buttons/buttons.js
         angular_maps:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular-google-maps/dist/angular-google-maps.min.js
