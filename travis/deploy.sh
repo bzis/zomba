@@ -2,7 +2,7 @@
 
 if [ "${TRAVIS_BRANCH}" = 'master' ];
 then
-  gem bundle install
+  gem install bundle
   bundle install
   bundle exec cap staging deploy
 fi
