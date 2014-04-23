@@ -1311,12 +1311,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "dc4a4af0ba585522863f75324bbfe2e0009f2893"
+                "reference": "e4d12d7d6acccf75a5e504114e2df9195e494108"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/dc4a4af0ba585522863f75324bbfe2e0009f2893",
-                "reference": "dc4a4af0ba585522863f75324bbfe2e0009f2893",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/e4d12d7d6acccf75a5e504114e2df9195e494108",
+                "reference": "e4d12d7d6acccf75a5e504114e2df9195e494108",
                 "shasum": ""
             },
             "require": {
@@ -1395,7 +1395,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-04-16 17:46:30"
+            "time": "2014-04-23 21:43:40"
         },
         {
             "name": "hashids/hashids",
@@ -3426,7 +3426,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "4d67e57054a7c872269be45d403bad3737f83d67"
+                "reference": "670286884c91ddc6f98b4a692d1b8b42925695e9"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3438,7 +3438,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-04-23 14:56:27"
+            "time": "2014-04-23 22:05:20"
         },
         {
             "name": "vifeed/geo-bundle",
