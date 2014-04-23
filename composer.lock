@@ -1271,12 +1271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "9ee1980689c5447cdd761fdd3b88f01d62691c1c"
+                "reference": "a5b9d0cac497e9679acde78a369c61e45d0ea68c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/9ee1980689c5447cdd761fdd3b88f01d62691c1c",
-                "reference": "9ee1980689c5447cdd761fdd3b88f01d62691c1c",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a5b9d0cac497e9679acde78a369c61e45d0ea68c",
+                "reference": "a5b9d0cac497e9679acde78a369c61e45d0ea68c",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1303,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-04-19 06:16:50"
+            "time": "2014-04-23 06:20:18"
         },
         {
             "name": "guzzle/guzzle",
@@ -2347,12 +2347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "fd126c1a0101a7703489b2fd65c91526d2b75774"
+                "reference": "1c553e93ecc09fff64a393ddb139e25785b1ff20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/fd126c1a0101a7703489b2fd65c91526d2b75774",
-                "reference": "fd126c1a0101a7703489b2fd65c91526d2b75774",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/1c553e93ecc09fff64a393ddb139e25785b1ff20",
+                "reference": "1c553e93ecc09fff64a393ddb139e25785b1ff20",
                 "shasum": ""
             },
             "require": {
@@ -2413,7 +2413,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-03-28 12:48:20"
+            "time": "2014-04-23 10:13:35"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3426,7 +3426,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "eecfdb0701414196268e11213728f2ae678628c5"
+                "reference": "75ee37e43574a3be95de7bb82c5fa86690f8e3ae"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3438,7 +3438,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-04-22 13:25:10"
+            "time": "2014-04-23 11:44:13"
         },
         {
             "name": "vifeed/geo-bundle",
