@@ -1124,12 +1124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "6e5017a66437fdf54c88db75edeec25e4354b4f6"
+                "reference": "8072b992807d0fc278ffb4dc9485c9d422664b29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/6e5017a66437fdf54c88db75edeec25e4354b4f6",
-                "reference": "6e5017a66437fdf54c88db75edeec25e4354b4f6",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/8072b992807d0fc278ffb4dc9485c9d422664b29",
+                "reference": "8072b992807d0fc278ffb4dc9485c9d422664b29",
                 "shasum": ""
             },
             "require": {
@@ -1194,7 +1194,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-04-21 08:26:51"
+            "time": "2014-04-23 14:33:46"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1271,12 +1271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a5b9d0cac497e9679acde78a369c61e45d0ea68c"
+                "reference": "adb700c86bd63fbb98d4bf0d68cc25bffd3401bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a5b9d0cac497e9679acde78a369c61e45d0ea68c",
-                "reference": "a5b9d0cac497e9679acde78a369c61e45d0ea68c",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/adb700c86bd63fbb98d4bf0d68cc25bffd3401bd",
+                "reference": "adb700c86bd63fbb98d4bf0d68cc25bffd3401bd",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1303,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-04-23 06:20:18"
+            "time": "2014-04-23 17:56:52"
         },
         {
             "name": "guzzle/guzzle",
@@ -3426,7 +3426,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "75ee37e43574a3be95de7bb82c5fa86690f8e3ae"
+                "reference": "4d67e57054a7c872269be45d403bad3737f83d67"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3438,7 +3438,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-04-23 11:44:13"
+            "time": "2014-04-23 14:56:27"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3465,7 +3465,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "7bf68d41e377b294b4a35c710e08bb6090bc3b15"
+                "reference": "7547ee57bf38e5a94771b6976c263fa38c26b2d4"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3481,7 +3481,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-04-21 09:28:28"
+            "time": "2014-04-23 18:50:48"
         },
         {
             "name": "vifeed/platform-bundle",
