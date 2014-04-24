@@ -128,16 +128,41 @@ module.exports = function(grunt) {
         dest: 'tmp/angular-ui-modal-templates.js'
       }
     },
+    ngconstant: {
+      options: {
+        space: '  ',
+        wrap: '"use strict";\n\n {%= __ngModule %}',
+        name: 'zmbk.config',
+        dest: 'tmp/frontend_config.js',
+        constants: {
+          'APP.CONFIG': '',
+        }
+      },
+      development: {
+        constants: {
+          'APP.CONFIG': grunt.file.readJSON('app/config/frontend_dev.json'),
+        }
+      },
+      production: {
+        constants: {
+          'APP.CONFIG': grunt.file.readJSON('app/config/frontend_prod.json'),
+        }
+      },
+      staging: {
+        constants: {
+          'APP.CONFIG': grunt.file.readJSON('app/config/frontend_stage.json'),
+        }
+      }
+    }
   });
 
-
-
+  grunt.loadNpmTasks('grunt-ng-constant');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-curl');
   grunt.loadNpmTasks('grunt-invalidate-cloudfront');
-  grunt.registerTask('default', ['html2js', 'curl', 'imagemin']);
+  grunt.registerTask('default', ['html2js', 'ngconstant:production', 'curl', 'imagemin']);
   grunt.registerTask('after_assetic_dump', ['replace', 's3', 'invalidate_cloudfront']);
 };
