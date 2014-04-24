@@ -8,11 +8,20 @@ module.exports = function(grunt) {
         secret: '<%= aws.secret %>',
         distribution: 'EWM7POCBEJEWK'
       },
-      production: {
+      assets: {
         files: [{
           expand: true,
           cwd: './web/',
-          src: ['js/**/*', 'css/**/*', 'bundles/**/*', 'images/**/*'],
+          src: ['js/**/*', 'css/**/*', 'bundles/**/*', 'images/**/*', 'videos/**/*'],
+          filter: 'isFile',
+          dest: ''
+        }]
+      },
+      videos: {
+        files: [{
+          expand: true,
+          cwd: './tmp/',
+          src: ['videos/**/*'],
           filter: 'isFile',
           dest: ''
         }]
@@ -78,7 +87,14 @@ module.exports = function(grunt) {
           rel: "bower-vendor/select2"
         }
         ],
-      }
+      },
+      videos: {
+        upload: [{
+          src: "tmp/videos/**",
+          dest: "videos",
+          rel: "tmp/videos"
+        }]
+      },
     },
     imagemin: {                          // Task
       dynamic: {                         // Another target
@@ -128,6 +144,7 @@ module.exports = function(grunt) {
         dest: 'tmp/angular-ui-modal-templates.js'
       }
     },
+
     ngconstant: {
       options: {
         space: '  ',
@@ -153,7 +170,34 @@ module.exports = function(grunt) {
           'APP.CONFIG': grunt.file.readJSON('app/config/frontend_stage.json'),
         }
       }
-    }
+    },
+
+    responsive_videos: {
+      myTask: {
+        options: {
+          sizes: [{
+            width: 846,
+            poster: true
+          }]
+          // ,
+          // encodes:[{
+          //   webm: [
+          //     {'-vcodec': 'libvpx'},
+          //     {'-acodec': 'libvorbis'},
+          //     {'-crf': '12'},
+          //     {'-b:v': '1.5M',},
+          //     {'-q:a': '100'}
+          //   ]
+          // }]
+        },
+        files: [{
+          expand: true,
+          src: ['*.{mov,mp4}'],
+          cwd: '../videos',
+          dest: 'tmp/videos'
+        }]
+      }
+    },
   });
 
   grunt.loadNpmTasks('grunt-ng-constant');
@@ -162,7 +206,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-curl');
+  grunt.loadNpmTasks('grunt-responsive-videos');
   grunt.loadNpmTasks('grunt-invalidate-cloudfront');
   grunt.registerTask('default', ['html2js', 'ngconstant:production', 'curl', 'imagemin']);
-  grunt.registerTask('after_assetic_dump', ['replace', 's3', 'invalidate_cloudfront']);
+  grunt.registerTask('release_videos', ['responsive_videos', 's3:videos', 'invalidate_cloudfront:videos']);
+  grunt.registerTask('after_assetic_dump', ['replace', 's3:js_and_css', 's3:assets', 's3:fonts', 's3:select2', 'invalidate_cloudfront:assets']);
 };
