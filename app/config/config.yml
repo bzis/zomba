@@ -114,6 +114,9 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/mask/mask.js
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/event/event.js
                 - %kernel.root_dir%/../bower-vendor/angular-ui-select2/src/select2.js
+        frontend_config:
+            inputs:
+                - %kernel.root_dir%/../tmp/frontend_config.js
         jquery_widget_select2_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.min.js

@@ -1,6 +1,6 @@
 {
   "name": "vifeed",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "vifeed base project",
   "main": "index.js",
   "dependencies": {
@@ -10,7 +10,8 @@
     "grunt-invalidate-cloudfront": "~0.1.4",
     "grunt-html2js": "~0.2.4",
     "grunt-text-replace": "~0.3.11",
-    "grunt-contrib-imagemin": "~0.6.1"
+    "grunt-contrib-imagemin": "~0.6.1",
+    "grunt-ng-constant": "~0.5.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +26,8 @@
   "gitHead": "030b9b7855d6c2dab99afc87ee6c5f37bc574638",
   "bugs": {
     "url": "https://github.com/vifeed/vifeed/issues"
+  },
+  "devDependencies": {
+    "grunt-ng-constant": "^0.5.0"
   }
 }

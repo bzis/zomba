@@ -1,0 +1,6 @@
+{
+  "ENV": "staging",
+  "trackerPath": "http://tracker.vifeed.co",
+  "apiPath": "/api",
+  "vkKey": "4325637"
+}
