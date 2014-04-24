@@ -131,7 +131,7 @@
         "symfony/symfony": "2.3.*",
         "twig/extensions": "1.0.*",
         "friendsofsymfony/rest-bundle": "dev-master",
-        "jms/serializer-bundle": "0.12.*",
+        "jms/serializer-bundle": "0.13.*",
         "nelmio/api-doc-bundle": "dev-master",
         "doctrine/migrations": "dev-master",
         "doctrine/doctrine-migrations-bundle": "dev-master",
