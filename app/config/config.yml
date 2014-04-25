@@ -58,6 +58,9 @@ assetic:
         jquery_parallax:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/parallax/deploy/jquery.parallax.min.js
+        jquery_easy_pie_chart:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js
         underscore:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/underscore/underscore-min.js
