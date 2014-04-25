@@ -3465,7 +3465,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "78836b646d8a2e99fef9983bf6c7b123322af923"
+                "reference": "72db92c2b1103ebc634f97b88425c03f81c74d8b"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3481,7 +3481,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-04-25 08:42:15"
+            "time": "2014-04-25 12:37:16"
         },
         {
             "name": "vifeed/platform-bundle",
