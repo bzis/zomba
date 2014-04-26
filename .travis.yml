@@ -20,7 +20,8 @@ after_failure:
   - echo log file; cat app/logs/test.log
 
 after_success:
-  - sh travis/deploy.sh
+#  - sh travis/deploy.sh
+  - php travis/deploy.php
 
 notifications:
   flowdock: 99c0b1ff68ca7ff45786742d6430d6a7
