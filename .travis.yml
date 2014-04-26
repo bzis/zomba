@@ -21,7 +21,7 @@ after_failure:
 
 after_success:
   - sh travis/deploy.sh
-  - php travis/deploy.php
+#  - php travis/deploy.php
 
 notifications:
   flowdock: 99c0b1ff68ca7ff45786742d6430d6a7
