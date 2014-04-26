@@ -20,6 +20,7 @@ after_failure:
   - echo log file; cat app/logs/test.log
 
 after_success:
+  - sh travis/deploy.sh
   - php travis/deploy.php
 
 notifications:
