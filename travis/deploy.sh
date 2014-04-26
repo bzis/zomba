@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ["${TRAVIS_BRANCH}" = 'master'] && [ "${TRAVIS_PULL_REQUEST}" ] ];
+if ["${TRAVIS_BRANCH}" = 'master'] && [ "${TRAVIS_PULL_REQUEST}" != true ];
 then
   GIT_USER=$(git log -1 $TRAVIS_COMMIT --pretty=format:"%an")
   GIT_EMAIL=$(git log -1 $TRAVIS_COMMIT --pretty=format:"%ae")
