@@ -14,7 +14,7 @@ script:
   - phpunit -c app vendor/vifeed/
   - phpunit -c app --coverage-clover=coverage.clover
   - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --access-token="2087e8c79ea31fd94006200b4885c35ae54067c19d477ccc1f8d584de6f35876" --format=php-clover coverage.clover
+#  - php ocular.phar code-coverage:upload --access-token="2087e8c79ea31fd94006200b4885c35ae54067c19d477ccc1f8d584de6f35876" --format=php-clover coverage.clover
 
 after_failure:
   - echo log file; cat app/logs/test.log
