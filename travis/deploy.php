@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-
+var_dump($_SERVER['TRAVIS_PULL_REQUEST']);
 if ($_SERVER['TRAVIS_BRANCH'] == 'master' && $_SERVER['TRAVIS_PULL_REQUEST'] !== 'true') {
     $GIT_USER = `git log -1 \$TRAVIS_COMMIT --pretty=format:"%an"`;
     $GIT_EMAIL = `git log -1 \$TRAVIS_COMMIT --pretty=format:"%ae"`;
