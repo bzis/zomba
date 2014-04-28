@@ -5,6 +5,8 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 
 class AppKernel extends Kernel
 {
+    protected $kernelModifier;
+
     public function getCharset()
     {
         return 'UTF-8';
@@ -62,5 +64,25 @@ class AppKernel extends Kernel
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
         $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
+    }
+
+    /**
+     * для тестовой среды, чтобы можно было впихнуть свои моки сервисов
+     */
+    public function boot()
+    {
+        parent::boot();
+        if ($kernelModifier = $this->kernelModifier) {
+            $kernelModifier($this);
+            $this->kernelModifier = null;
+        };
+    }
+
+    public function setKernelModifier(\Closure $kernelModifier)
+    {
+        $this->kernelModifier = $kernelModifier;
+
+        // We force the kernel to shutdown to be sure the next request will boot it
+        $this->shutdown();
     }
 }
