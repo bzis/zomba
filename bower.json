@@ -22,7 +22,9 @@
     "highcharts.com": "https://github.com/highslide-software/highcharts.com.git",
     "highcharts-ng": "https://github.com/pablojim/highcharts-ng.git",
     "twix": "https://github.com/icambron/twix.js.git",
-    "angular-google-maps": "https://github.com/nlaplante/angular-google-maps.git"
+    "angular-google-maps": "https://github.com/nlaplante/angular-google-maps.git",
+    "skrollr": "0.6.23",
+    "jquery.easy-pie-chart": "2.1.4"
   },
   "resolutions": {
     "jquery": "2.1.0"
