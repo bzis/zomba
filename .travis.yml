@@ -15,7 +15,7 @@ script:
   - phpunit -c app --coverage-clover=coverage.clover
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --access-token="2087e8c79ea31fd94006200b4885c35ae54067c19d477ccc1f8d584de6f35876" --format=php-clover coverage.clover
-  - php ./app/console doctrine:migrations:migrate 20140123131601 --env=test
+  - php ./app/console doctrine:migrations:migrate 20140123131601 --env=test --no-interaction
 
 after_failure:
   - echo log file; cat app/logs/test.log
