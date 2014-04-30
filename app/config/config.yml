@@ -70,7 +70,8 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/angular-route/angular-route.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-resource/angular-resource.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-sanitize/angular-sanitize.min.js
-                # - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
+                - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
+                #- %kernel.root_dir%/../bower-vendor/angular-scenario/angular-scenario.js
         twitter_bootstrap_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/carousel.js
