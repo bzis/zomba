@@ -1271,12 +1271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "e4e828e25860a0dbb0e8bdb8bbd401d51a93a5d1"
+                "reference": "e6cd3ac0ed36d9d102709c2060a1c60abb8f2269"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e4e828e25860a0dbb0e8bdb8bbd401d51a93a5d1",
-                "reference": "e4e828e25860a0dbb0e8bdb8bbd401d51a93a5d1",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e6cd3ac0ed36d9d102709c2060a1c60abb8f2269",
+                "reference": "e6cd3ac0ed36d9d102709c2060a1c60abb8f2269",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1303,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-04-25 06:22:17"
+            "time": "2014-04-30 06:27:45"
         },
         {
             "name": "guzzle/guzzle",
@@ -3426,7 +3426,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "9962f149b2103c676e96c1d49c5d9f0929413434"
+                "reference": "f204c05a5e27362924704cea79ecdc494fe54431"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3438,7 +3438,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-04-29 15:39:07"
+            "time": "2014-04-30 12:24:16"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3573,7 +3573,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "d462a57947cb429ca07756226c9c81c97641770f"
+                "reference": "777e9619a0e85122914bbb828bf31591757c2a23"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3582,7 +3582,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-03-31 14:12:20"
+            "time": "2014-04-30 12:25:02"
         },
         {
             "name": "werkint/qiwi",
