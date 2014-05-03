@@ -37,7 +37,7 @@ assetic:
     debug:          %kernel.debug%
     use_controller: false
     bundles:        [ VifeedUserBundle, VifeedFrontendBundle ]
-    #java: /usr/bin/java
+    ruby:  %assetic.filter.ruby.bin%
     filters:
         sass: ~
         compass:
