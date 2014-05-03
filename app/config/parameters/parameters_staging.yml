@@ -13,13 +13,14 @@ parameters:
     locale: ru
     secret: 'YMnfCuNL[QXTmMsshpnnRjN6GgNPDosJR@JK4W.ugmHh%inc>p7nyzsCWV'
     developer_email: no-reply@vifeed.co
+    assetic.ruby.bin: /opt/rbenv/versions/2.1.1/bin/ruby
+    assetic.filter.compass.bin: /opt/rbenv/versions/2.1.1/bin/compass
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
     assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/images/'
     assetic.cdn_url: '//vifeed.co'
     assetic.cdn_path: "%kernel.root_dir%/../web"
     social: { VKAppID: '', VKAppSecret: '' }
-    assetic.filter.compass.bin: /usr/local/bin/compass
     payment.secret: 2ceea4871a6205c421dc3ce9b0a7b350aafe7000
     robokassa.login: 2ceea4871a6205c421dc3ce9b0a7b350aafe7000
     robokassa.password1: DZ1oZrZc9U8e
