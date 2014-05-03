@@ -15,6 +15,7 @@ parameters:
     locale:            ru
     secret:            'R87iwvZtvpvcjbctdcbufLG[sbht7TKjW#ALeGQVMe@gUeah/JwB3QotuMr[it'
 
+    assetic.ruby.bin: /usr/bin/ruby
     assetic.filter.compass.bin: '/usr/local/bin/compass'
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
