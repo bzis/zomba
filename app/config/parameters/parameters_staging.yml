@@ -16,7 +16,7 @@ parameters:
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
     assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/images/'
-    assetic.cdn_url: '//stage-frontend-cdn.s3.amazonaws.com'
+    assetic.cdn_url: '//vifeed.co'
     assetic.cdn_path: "%kernel.root_dir%/../web"
     social: { VKAppID: '', VKAppSecret: '' }
     assetic.filter.compass.bin: /usr/local/bin/compass
