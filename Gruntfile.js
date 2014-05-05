@@ -210,5 +210,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-invalidate-cloudfront');
   grunt.registerTask('default', ['html2js', 'ngconstant:production', 'curl', 'imagemin']);
   grunt.registerTask('release_videos', ['responsive_videos', 's3:videos', 'invalidate_cloudfront:videos']);
-  grunt.registerTask('after_assetic_dump', ['replace', 's3:js_and_css', 's3:assets', 's3:fonts', 's3:select2', 'invalidate_cloudfront:assets']);
+  grunt.registerTask('after_assetic_dump', ['s3:js_and_css', 's3:assets', 's3:fonts', 's3:select2', 'invalidate_cloudfront:assets']);
 };

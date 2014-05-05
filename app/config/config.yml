@@ -37,7 +37,7 @@ assetic:
     debug:          %kernel.debug%
     use_controller: false
     bundles:        [ VifeedUserBundle, VifeedFrontendBundle ]
-    #java: /usr/bin/java
+    ruby:  %assetic.ruby.bin%
     filters:
         sass: ~
         compass:
@@ -61,6 +61,9 @@ assetic:
         jquery_easy_pie_chart:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js
+        skrollr:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/skrollr/dist/skrollr.min.js
         underscore:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/underscore/underscore-min.js
