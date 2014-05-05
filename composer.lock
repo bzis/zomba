@@ -2963,12 +2963,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "ea2424a1ea11dd276eaecdbacd188de637fd904a"
+                "reference": "ff46000dd73411bbe812238f38bcacaf3f94b504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/ea2424a1ea11dd276eaecdbacd188de637fd904a",
-                "reference": "ea2424a1ea11dd276eaecdbacd188de637fd904a",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/ff46000dd73411bbe812238f38bcacaf3f94b504",
+                "reference": "ff46000dd73411bbe812238f38bcacaf3f94b504",
                 "shasum": ""
             },
             "require": {
@@ -3018,7 +3018,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-04-01 18:02:48"
+            "time": "2014-05-05 14:19:41"
         },
         {
             "name": "symfony/icu",
@@ -3427,7 +3427,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "f7ccce36b40276a1ba5e791725297843188f1268"
+                "reference": "6c3c9d9f40dc060ad930d16413f3bdd34e6ff577"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3439,7 +3439,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-05 13:59:06"
+            "time": "2014-05-05 14:56:57"
         },
         {
             "name": "vifeed/geo-bundle",
