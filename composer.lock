@@ -1271,12 +1271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "e6cd3ac0ed36d9d102709c2060a1c60abb8f2269"
+                "reference": "2b8fc32209f22891273a7b74f593c92b062e013e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e6cd3ac0ed36d9d102709c2060a1c60abb8f2269",
-                "reference": "e6cd3ac0ed36d9d102709c2060a1c60abb8f2269",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/2b8fc32209f22891273a7b74f593c92b062e013e",
+                "reference": "2b8fc32209f22891273a7b74f593c92b062e013e",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1303,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-04-30 06:27:45"
+            "time": "2014-05-02 06:29:49"
         },
         {
             "name": "guzzle/guzzle",
@@ -1311,12 +1311,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "e4d12d7d6acccf75a5e504114e2df9195e494108"
+                "reference": "0faed3abffffbd3018f0dac6261fa1b59000bfee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/e4d12d7d6acccf75a5e504114e2df9195e494108",
-                "reference": "e4d12d7d6acccf75a5e504114e2df9195e494108",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/0faed3abffffbd3018f0dac6261fa1b59000bfee",
+                "reference": "0faed3abffffbd3018f0dac6261fa1b59000bfee",
                 "shasum": ""
             },
             "require": {
@@ -1395,7 +1395,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-04-23 21:43:40"
+            "time": "2014-05-01 21:56:28"
         },
         {
             "name": "hashids/hashids",
@@ -2223,16 +2223,16 @@
         },
         {
             "name": "michelf/php-markdown",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michelf/php-markdown.git",
-                "reference": "96d8150406f67e683ef4acc09fef91785fef1266"
+                "reference": "de9a19c7bf352d41cc99ed86c3c0ef17e87394b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/96d8150406f67e683ef4acc09fef91785fef1266",
-                "reference": "96d8150406f67e683ef4acc09fef91785fef1266",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/de9a19c7bf352d41cc99ed86c3c0ef17e87394b6",
+                "reference": "de9a19c7bf352d41cc99ed86c3c0ef17e87394b6",
                 "shasum": ""
             },
             "require": {
@@ -2270,7 +2270,7 @@
             "keywords": [
                 "markdown"
             ],
-            "time": "2013-11-29 17:09:24"
+            "time": "2014-05-05 02:43:50"
         },
         {
             "name": "monolog/monolog",
@@ -3426,7 +3426,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "f204c05a5e27362924704cea79ecdc494fe54431"
+                "reference": "0fa606de15a0fb39e7fd4041b78343eaf72e4bfc"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3438,7 +3438,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-04-30 12:24:16"
+            "time": "2014-05-05 09:49:17"
         },
         {
             "name": "vifeed/geo-bundle",
