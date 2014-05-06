@@ -73,7 +73,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/angular-route/angular-route.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-resource/angular-resource.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-sanitize/angular-sanitize.min.js
-                # - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
+                - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
         twitter_bootstrap_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/carousel.js
@@ -95,13 +95,9 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/tooltip/tooltip.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/position/position.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/bindHtml/bindHtml.js
-                #alert
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/alert/alert.js
-                #dropdownToggle
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdown/dropdown.js
-                #pagination
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
-                #buttons
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/buttons/buttons.js
         angular_maps:
             inputs:
@@ -119,14 +115,14 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/mask/mask.js
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/event/event.js
-                - %kernel.root_dir%/../bower-vendor/angular-ui-select2/src/select2.js
         frontend_config:
             inputs:
                 - %kernel.root_dir%/../tmp/frontend_config.js
-        jquery_widget_select2_js:
+        select2_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.min.js
                 - %kernel.root_dir%/../bower-vendor/select2/select2_locale_ru.js
+                - %kernel.root_dir%/../bower-vendor/angular-ui-select2/src/select2.js
         select2_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.css
@@ -146,11 +142,7 @@ assetic:
         moment_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/momentjs/min/moment-with-langs.min.js
-        moment_twix_js:
-            inputs:
                 - %kernel.root_dir%/../bower-vendor/twix/bin/twix.min.js
-        angular_moment:
-            inputs:
                 - %kernel.root_dir%/../bower-vendor/angular-moment/angular-moment.min.js
         daterangepicker:
             inputs:
@@ -161,8 +153,6 @@ assetic:
         highcharts:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/highcharts.com/js/highcharts.src.js
-        highcharts_ng:
-            inputs:
                 - %kernel.root_dir%/../bower-vendor/highcharts-ng/dist/highcharts-ng.min.js
         fos_js_routes:
             inputs:
