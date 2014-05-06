@@ -1,6 +1,6 @@
 {
   "ENV": "production",
-  "trackerPath": "http://tracker.vifeed.co",
+  "trackerPath": "http://tracker.zombakka.com",
   "apiPath": "/api",
-  "vkKey": "4325637"
+  "vkKey": "4345643"
 }

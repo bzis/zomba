@@ -9,6 +9,7 @@
     "angular-resource": "1.2.13",
     "angular-mocks": "1.2.13",
     "angular-sanitize": "1.2.13",
+    "angular-scenario": "1.2.13",
     "xapu-angular-cookies": "https://github.com/xapu/angularjs-cookies.git",
     "ngprogress-lite": "https://github.com/voronianski/ngprogress-lite.git",
     "select2": "3.4.5",
