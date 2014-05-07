@@ -13,7 +13,7 @@
     "grunt-contrib-imagemin": "~0.7.0",
     "grunt-ng-constant": "~0.5.0",
     "grunt-responsive-videos": "~0.1.1",
-    "jpegtran-bin": "0.2.6"
+    "imagemin": "0.4.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
