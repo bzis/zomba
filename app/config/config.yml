@@ -49,6 +49,10 @@ assetic:
             jar: %kernel.root_dir%/Resources/java/compiler-latest/compiler.jar
         yui_css:
             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
+        coffee:
+            bin: /usr/local/bin/coffee
+            node: /usr/local/bin/node
+            apply_to: "\.coffee$"
     read_from:        %assetic.cdn_url%
     write_to:         %assetic.cdn_path%
     assets:
