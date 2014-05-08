@@ -1020,16 +1020,16 @@
         },
         {
             "name": "fpn/doctrine-extensions-taggable",
-            "version": "dev-master",
+            "version": "v0.9.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vifeed/DoctrineExtensions-Taggable.git",
-                "reference": "346622a677779dbe7bb73c68410e3b7a97765759"
+                "url": "https://github.com/FabienPennequin/DoctrineExtensions-Taggable.git",
+                "reference": "ee7245fc7c3012ea1b1ed932f62ca258b39d8bea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vifeed/DoctrineExtensions-Taggable/zipball/346622a677779dbe7bb73c68410e3b7a97765759",
-                "reference": "346622a677779dbe7bb73c68410e3b7a97765759",
+                "url": "https://api.github.com/repos/FabienPennequin/DoctrineExtensions-Taggable/zipball/ee7245fc7c3012ea1b1ed932f62ca258b39d8bea",
+                "reference": "ee7245fc7c3012ea1b1ed932f62ca258b39d8bea",
                 "shasum": ""
             },
             "require": {
@@ -1041,6 +1041,7 @@
                     "DoctrineExtensions": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1052,13 +1053,10 @@
             ],
             "description": "Tag system using Doctrine ORM",
             "keywords": [
-                "tag",
-                "taggable"
+                "Taggable",
+                "tag"
             ],
-            "support": {
-                "source": "https://github.com/vifeed/DoctrineExtensions-Taggable/tree/master"
-            },
-            "time": "2014-02-12 12:57:14"
+            "time": "2012-09-20 19:58:42"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1203,12 +1201,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "e4c000a9b19096be0135d0773b56f7c757c93542"
+                "reference": "13c173ff60eef8e32c10f76225eacca00a430826"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/e4c000a9b19096be0135d0773b56f7c757c93542",
-                "reference": "e4c000a9b19096be0135d0773b56f7c757c93542",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/13c173ff60eef8e32c10f76225eacca00a430826",
+                "reference": "13c173ff60eef8e32c10f76225eacca00a430826",
                 "shasum": ""
             },
             "require": {
@@ -1263,7 +1261,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-04-08 21:21:16"
+            "time": "2014-05-07 23:51:03"
         },
         {
             "name": "google/apiclient",
@@ -1271,12 +1269,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "2b8fc32209f22891273a7b74f593c92b062e013e"
+                "reference": "3757970113b0445271790359f8e944bec6a751fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/2b8fc32209f22891273a7b74f593c92b062e013e",
-                "reference": "2b8fc32209f22891273a7b74f593c92b062e013e",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/3757970113b0445271790359f8e944bec6a751fe",
+                "reference": "3757970113b0445271790359f8e944bec6a751fe",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1301,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-05-02 06:29:49"
+            "time": "2014-05-06 18:49:16"
         },
         {
             "name": "guzzle/guzzle",
@@ -1311,12 +1309,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "0faed3abffffbd3018f0dac6261fa1b59000bfee"
+                "reference": "92d9934f2fca1da15178c91239576ae26e505e60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/0faed3abffffbd3018f0dac6261fa1b59000bfee",
-                "reference": "0faed3abffffbd3018f0dac6261fa1b59000bfee",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/92d9934f2fca1da15178c91239576ae26e505e60",
+                "reference": "92d9934f2fca1da15178c91239576ae26e505e60",
                 "shasum": ""
             },
             "require": {
@@ -1395,7 +1393,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-05-01 21:56:28"
+            "time": "2014-05-07 17:04:22"
         },
         {
             "name": "hashids/hashids",
@@ -2907,25 +2905,28 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.1.0",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "748c01c1144713ac0118396935d10b6ceec91b68"
+                "reference": "043e336b871f17a117f76ef8e190eddfc04c8d48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/748c01c1144713ac0118396935d10b6ceec91b68",
-                "reference": "748c01c1144713ac0118396935d10b6ceec91b68",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/043e336b871f17a117f76ef8e190eddfc04c8d48",
+                "reference": "043e336b871f17a117f76ef8e190eddfc04c8d48",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
+            "require-dev": {
+                "mockery/mockery": "~0.9.1"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.1-dev"
+                    "dev-master": "5.2-dev"
                 }
             },
             "autoload": {
@@ -2954,7 +2955,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-03-18 09:03:27"
+            "time": "2014-05-08 08:11:19"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -3427,7 +3428,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "eb95557eae5fe1a826dce221c0b1a427672412be"
+                "reference": "63d9f2945e6c2db7c8eed52eb537ae8d7ef8a47d"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3439,7 +3440,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-06 15:30:05"
+            "time": "2014-05-08 10:09:17"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3466,7 +3467,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "72db92c2b1103ebc634f97b88425c03f81c74d8b"
+                "reference": "e777e31c9116b4fa685d0a4bf3e99e4b3d2d51e3"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3482,7 +3483,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-04-25 12:37:16"
+            "time": "2014-05-08 08:58:53"
         },
         {
             "name": "vifeed/platform-bundle",
