@@ -131,20 +131,42 @@ module.exports = function(grunt) {
     html2js: {
       module: 'templates',
       options: {
-        rename: function(modulePath) {
-          return modulePath.replace('../vendor/angular-ui/bootstrap/', '');
+        rename: function (modulePath) {
+          return modulePath.
+            replace('../vendor/angular-ui/bootstrap/', '').
+            replace('../vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/popover', 'template/popover').
+            replace('../vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials', '/bundles/vifeedfrontend/partials');
         }
       },
-      angularUiBootstrapTabs: {
+      angularUiTabs: {
         src: ['vendor/angular-ui/bootstrap/template/tabs/*.html'],
         dest: 'tmp/angular-ui-tabs-templates.js'
       },
-      angularUiBootstrapModal: {
+      angularUiModal: {
         src: ['vendor/angular-ui/bootstrap/template/modal/*.html'],
         dest: 'tmp/angular-ui-modal-templates.js'
-      }
+      },
+      angularUiTooltip: {
+        src: ['vendor/angular-ui/bootstrap/template/tooltip/*.html'],
+        dest: 'tmp/angular-ui-tooltip-templates.js'
+      },
+      angularUiPopover: {
+        src: ['vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/popover/*.html'],
+        dest: 'tmp/angular-ui-popover-templates.js'
+      },
+      angularUiAlert: {
+        src: ['vendor/angular-ui/bootstrap/template/alert/*.html'],
+        dest: 'tmp/angular-ui-alert-templates.js'
+      },
+      angularUiPagination: {
+        src: ['vendor/angular-ui/bootstrap/template/pagination/*.html'],
+        dest: 'tmp/angular-ui-pagination-templates.js'
+      },
+      analytics: {
+        src: ['vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/analytics/*.html'],
+        dest: 'tmp/analytics-templates.js'
+      },
     },
-
     ngconstant: {
       options: {
         space: '  ',
@@ -171,7 +193,6 @@ module.exports = function(grunt) {
         }
       }
     },
-
     responsive_videos: {
       myTask: {
         options: {
