@@ -49,6 +49,10 @@ assetic:
             jar: %kernel.root_dir%/Resources/java/compiler-latest/compiler.jar
         yui_css:
             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
+        coffee:
+            bin: /usr/local/bin/coffee
+            node: /usr/local/bin/node
+            apply_to: "\.coffee$"
     read_from:        %assetic.cdn_url%
     write_to:         %assetic.cdn_path%
     assets:
@@ -90,14 +94,18 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/modal/modal.js
                 - %kernel.root_dir%/../tmp/angular-ui-modal-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/transition/transition.js
-                #popover and tooltip
+                #other bootstrap directives
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/popover/popover.js
+                - %kernel.root_dir%/../tmp/angular-ui-popover-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/tooltip/tooltip.js
+                - %kernel.root_dir%/../tmp/angular-ui-tooltip-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/position/position.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/bindHtml/bindHtml.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/alert/alert.js
+                - %kernel.root_dir%/../tmp/angular-ui-alert-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdown/dropdown.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
+                - %kernel.root_dir%/../tmp/angular-ui-pagination-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/buttons/buttons.js
         angular_maps:
             inputs:
@@ -154,6 +162,9 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/highcharts.com/js/highcharts.src.js
                 - %kernel.root_dir%/../bower-vendor/highcharts-ng/dist/highcharts-ng.min.js
+        analytics_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/analytics-templates.js
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
