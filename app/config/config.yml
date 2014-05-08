@@ -36,7 +36,7 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    bundles:        [ VifeedUserBundle, VifeedFrontendBundle ]
+    bundles:        [ VifeedUserBundle, VifeedFrontendBundle, VifeedVideoPromoBundle]
     ruby:  %assetic.ruby.bin%
     filters:
         sass: ~

@@ -3,12 +3,16 @@ rest:
   prefix: /api
 
 vifeed_public:
-    resource: "@VifeedFrontendBundle/Resources/config/routing.yml"
-    prefix:   /
+  resource: "@VifeedFrontendBundle/Resources/config/routing.yml"
+  prefix:   /
 
 vifeed_payment:
-    resource: "@VifeedPaymentBundle/Resources/config/routing.yml"
-    prefix:   /
+  resource: "@VifeedPaymentBundle/Resources/config/routing.yml"
+  prefix:   /
+
+vifeed_video_promo:
+  resource: "@VifeedVideoPromoBundle/Resources/config/routing.yml"
+  prefix:   /
 
 default:
   pattern: /

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f7eb7bfa26f8eea46c309ecf043d6335",
+    "hash": "35fa09dfd20c73a9d696a365b4c4ddcc",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -3569,6 +3569,24 @@
             "time": "2014-05-06 15:16:46"
         },
         {
+            "name": "vifeed/video-promo-bundle",
+            "version": "dev-master",
+            "target-dir": "Vifeed/VideoPromoBundle",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:vifeed/VideoPromoBundle.git",
+                "reference": "7b1df101099116351844177456a5702d8078aac1"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Vifeed\\VideoPromoBundle": ""
+                }
+            },
+            "description": "Vifeed/VideoPromoBundle",
+            "time": "2014-05-06 15:12:50"
+        },
+        {
             "name": "vifeed/video-view-bundle",
             "version": "dev-master",
             "target-dir": "Vifeed/VideoViewBundle",
@@ -3747,7 +3765,8 @@
         "vifeed/user-bundle": 20,
         "vifeed/geo-bundle": 20,
         "vifeed/tag-bundle": 20,
-        "vifeed/video-view-bundle": 20
+        "vifeed/video-view-bundle": 20,
+        "vifeed/video-promo-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
