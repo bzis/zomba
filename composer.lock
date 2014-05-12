@@ -1269,12 +1269,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "3757970113b0445271790359f8e944bec6a751fe"
+                "reference": "f24a5dd06e55b7219098c816b88315f209b02cde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/3757970113b0445271790359f8e944bec6a751fe",
-                "reference": "3757970113b0445271790359f8e944bec6a751fe",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/f24a5dd06e55b7219098c816b88315f209b02cde",
+                "reference": "f24a5dd06e55b7219098c816b88315f209b02cde",
                 "shasum": ""
             },
             "require": {
@@ -1301,7 +1301,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-05-06 18:49:16"
+            "time": "2014-05-10 06:35:49"
         },
         {
             "name": "guzzle/guzzle",
@@ -3428,7 +3428,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "63d9f2945e6c2db7c8eed52eb537ae8d7ef8a47d"
+                "reference": "c7fd2ceb01206a15f0ff31057772fff6d2504ccd"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3440,7 +3440,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-08 10:09:17"
+            "time": "2014-05-12 09:31:48"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3575,7 +3575,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "7b1df101099116351844177456a5702d8078aac1"
+                "reference": "64ff77f53a6def236156df5d63bbd6bb9dd23285"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3584,7 +3584,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-05-06 15:12:50"
+            "time": "2014-05-12 09:03:31"
         },
         {
             "name": "vifeed/video-view-bundle",
