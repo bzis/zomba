@@ -3514,7 +3514,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "f5ac4055ebd25753d6fd48fc2d53aaf1eb80ab3d"
+                "reference": "bfa917adc0b5bd8270451d442475a899ad9a85c3"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3523,7 +3523,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-04-16 10:12:25"
+            "time": "2014-05-12 15:08:07"
         },
         {
             "name": "vifeed/tag-bundle",
