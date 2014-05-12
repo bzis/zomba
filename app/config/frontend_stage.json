@@ -1,6 +1,6 @@
 {
   "ENV": "staging",
-  "trackerPath": "http://tracker.zombakka.com",
+  "trackerPath": "http://zombakka.com/videos",
   "apiPath": "/api",
   "vkKey": "4325637"
 }
