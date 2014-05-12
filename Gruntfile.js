@@ -162,9 +162,34 @@ module.exports = function(grunt) {
         src: ['vendor/angular-ui/bootstrap/template/pagination/*.html'],
         dest: 'tmp/angular-ui-pagination-templates.js'
       },
+      advertiser: {
+        src: ['vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/advertiser/*.html'],
+        dest: 'tmp/advertiser-templates.js'
+      },
       analytics: {
         src: ['vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/analytics/*.html'],
         dest: 'tmp/analytics-templates.js'
+      },
+      profile: {
+        src: ['vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/profile/*.html'],
+        dest: 'tmp/profile-templates.js'
+      },
+      publisher: {
+        src: ['vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/publisher/*.html'],
+        dest: 'tmp/publisher-templates.js'
+      },
+      security: {
+        src: ['vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/security/*.html'],
+        dest: 'tmp/security-templates.js'
+      }
+    },
+    watch: {
+      html: {
+        files: ['vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/**/*.html'],
+        tasks: ['html2js:analytics', 'html2js:advertiser', 'html2js:profile', 'html2js:publisher', 'html2js:security'],
+        options: {
+          spawn: false,
+        },
       },
     },
     ngconstant: {
@@ -229,6 +254,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-curl');
   grunt.loadNpmTasks('grunt-responsive-videos');
   grunt.loadNpmTasks('grunt-invalidate-cloudfront');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('default', ['html2js', 'ngconstant:production', 'curl', 'imagemin']);
   grunt.registerTask('release_videos', ['responsive_videos', 's3:videos', 'invalidate_cloudfront:videos']);
   grunt.registerTask('after_assetic_dump', ['s3:js_and_css', 's3:assets', 's3:fonts', 's3:select2', 'invalidate_cloudfront:assets']);

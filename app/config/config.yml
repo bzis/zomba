@@ -165,6 +165,18 @@ assetic:
         analytics_template:
             inputs:
                 - %kernel.root_dir%/../tmp/analytics-templates.js
+        advertiser_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/advertiser-templates.js
+        profile_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/profile-templates.js
+        publisher_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/publisher-templates.js
+        security_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/security-templates.js
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
