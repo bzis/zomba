@@ -195,6 +195,10 @@ doctrine:
                 from_unixtime: Vifeed\SystemBundle\DQL\FromUnixtimeFunction
                 date_format: Vifeed\SystemBundle\DQL\DateFormatFunction
         result_cache_driver: redis
+        filters:
+            softdeleteable:
+                class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
+                enabled: true
 
 
 # Swiftmailer Configuration
@@ -297,3 +301,9 @@ jms_payment_paypal:
 cayetanosoriano_hashids:
     salt: %cayetanosoriano_hashids.salt%
     min_hash_length: %cayetanosoriano_hashids.min_hash_length%
+
+stof_doctrine_extensions:
+    default_locale: ru_RU
+    orm:
+        default:
+            softdeleteable: true
