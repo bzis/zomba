@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-02-27 22:02:00"
+            "time": "2014-03-21 12:13:55"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -25,7 +25,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-30 19:48:25"
+            "time": "2014-03-21 21:05:24"
         },
         {
             "name": "cayetanosoriano/hashids-bundle",
@@ -1902,7 +1902,7 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2734,7 +2734,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 }
             ],
             "description": "The base bundle for the Symfony Distributions",
@@ -2781,7 +2783,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 }
             ],
             "description": "This bundle provides a way to configure your controllers with annotations",
@@ -2833,7 +2837,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 }
             ],
             "description": "This bundle generates code for you",
@@ -3112,7 +3118,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -3329,7 +3337,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 }
             ],
             "description": "Common additional features for Twig that do not directly belong in core",
@@ -3428,7 +3438,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "8d0f3ffc172b69c1e9ccf5647d1a1d85445ec6cd"
+                "reference": "92c98e994b8bd0d30585257f688eb010c71dba1a"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3440,7 +3450,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-13 13:04:05"
+            "time": "2014-05-13 15:28:04"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3492,7 +3502,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "7534c528a55f1e8f0f5f447a5649d06028aa4cb4"
+                "reference": "5c9f21d3226289003cf0a572de79046eca046341"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3505,7 +3515,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-04-28 20:07:56"
+            "time": "2014-05-13 15:26:29"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3675,7 +3685,7 @@
             ],
             "authors": [
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
