@@ -38,6 +38,7 @@ class AppKernel extends Kernel
             new cayetanosoriano\HashidsBundle\cayetanosorianoHashidsBundle(),
             new Chewbacco\Payment\QiwiWalletBundle\ChewbaccoPaymentQiwiWalletBundle(),
             new JMS\Payment\PaypalBundle\JMSPaymentPaypalBundle(),
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\VifeedUserBundle(),
