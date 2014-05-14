@@ -160,7 +160,8 @@
         "vifeed/tag-bundle": "dev-master",
         "vifeed/video-view-bundle": "dev-master",
         "vifeed/video-promo-bundle": "dev-master",
-        "raven/raven": "0.7.1"
+        "raven/raven": "0.7.1",
+        "stof/doctrine-extensions-bundle": "~1.1@dev"
     },
     "require-dev": {
     },

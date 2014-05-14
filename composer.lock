@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "35fa09dfd20c73a9d696a365b4c4ddcc",
+    "hash": "fd446bb868d64312861dd9152be27607",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1264,17 +1264,97 @@
             "time": "2014-05-07 23:51:03"
         },
         {
+            "name": "gedmo/doctrine-extensions",
+            "version": "v2.3.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Atlantic18/DoctrineExtensions.git",
+                "reference": "35adcaae1a3f50d0d5b73aa50ed8fd28ee35ce54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/35adcaae1a3f50d0d5b73aa50ed8fd28ee35ce54",
+                "reference": "35adcaae1a3f50d0d5b73aa50ed8fd28ee35ce54",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": ">=2.2,<2.5-dev",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "doctrine/common": ">=2.4.0-RC3",
+                "doctrine/dbal": ">=2.4.0-RC1",
+                "doctrine/mongodb": ">=1.0.3",
+                "doctrine/mongodb-odm": ">=1.0.0-BETA9",
+                "doctrine/orm": ">=2.4.0-RC1",
+                "symfony/yaml": "2.3.1"
+            },
+            "suggest": {
+                "doctrine/dbal": ">=2.3.2",
+                "doctrine/mongodb": ">=1.0.1",
+                "doctrine/mongodb-odm": ">=1.0.0-BETA7",
+                "doctrine/orm": ">=2.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Gedmo\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Buchmann",
+                    "email": "david@liip.ch"
+                },
+                {
+                    "name": "Gediminas Morkevicius",
+                    "email": "gediminas.morkevicius@gmail.com"
+                },
+                {
+                    "name": "Gustavo Falco",
+                    "email": "comfortablynumb84@gmail.com"
+                }
+            ],
+            "description": "Doctrine2 behavioral extensions",
+            "homepage": "http://gediminasm.org/",
+            "keywords": [
+                "Blameable",
+                "behaviors",
+                "doctrine2",
+                "extensions",
+                "gedmo",
+                "loggable",
+                "nestedset",
+                "sluggable",
+                "sortable",
+                "timestampable",
+                "translatable",
+                "tree",
+                "uploadable"
+            ],
+            "time": "2014-01-12 16:34:06"
+        },
+        {
             "name": "google/apiclient",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "8ac3a0eb80ce91fe54b684e15162686d1735f7e1"
+                "reference": "d29ea499231758804875d05ddb81e8195d3548d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/8ac3a0eb80ce91fe54b684e15162686d1735f7e1",
-                "reference": "8ac3a0eb80ce91fe54b684e15162686d1735f7e1",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/d29ea499231758804875d05ddb81e8195d3548d3",
+                "reference": "d29ea499231758804875d05ddb81e8195d3548d3",
                 "shasum": ""
             },
             "require": {
@@ -1301,7 +1381,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-05-13 06:38:32"
+            "time": "2014-05-14 10:49:25"
         },
         {
             "name": "guzzle/guzzle",
@@ -2910,6 +2990,68 @@
             "time": "2014-04-18 07:38:06"
         },
         {
+            "name": "stof/doctrine-extensions-bundle",
+            "version": "v1.1.0",
+            "target-dir": "Stof/DoctrineExtensionsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stof/StofDoctrineExtensionsBundle.git",
+                "reference": "0aa21137bcae43241ffa047946bbdd46b91a2b0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/0aa21137bcae43241ffa047946bbdd46b91a2b0a",
+                "reference": "0aa21137bcae43241ffa047946bbdd46b91a2b0a",
+                "shasum": ""
+            },
+            "require": {
+                "gedmo/doctrine-extensions": "2.3.*",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "~2.1"
+            },
+            "suggest": {
+                "doctrine/doctrine-bundle": "to use the ORM extensions",
+                "doctrine/mongodb-odm-bundle": "to use the MongoDB ODM extensions"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Stof\\DoctrineExtensionsBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                }
+            ],
+            "description": "Integration of the gedmo/doctrine-extensions with Symfony2",
+            "homepage": "https://github.com/stof/StofDoctrineExtensionsBundle",
+            "keywords": [
+                "behaviors",
+                "doctrine2",
+                "extensions",
+                "gedmo",
+                "loggable",
+                "nestedset",
+                "sluggable",
+                "sortable",
+                "timestampable",
+                "translatable",
+                "tree"
+            ],
+            "time": "2013-06-23 16:53:41"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.2.0",
             "source": {
@@ -3438,7 +3580,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "92c98e994b8bd0d30585257f688eb010c71dba1a"
+                "reference": "c2a532cb5995859c1b6b5e63ff02ee245c8a2d7d"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3450,7 +3592,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-13 15:28:04"
+            "time": "2014-05-14 12:12:33"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3477,7 +3619,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "e777e31c9116b4fa685d0a4bf3e99e4b3d2d51e3"
+                "reference": "13088618b1807a5a66ebdf93798b017f768d573a"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3493,7 +3635,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-05-08 08:58:53"
+            "time": "2014-05-14 09:47:47"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3502,7 +3644,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "5c9f21d3226289003cf0a572de79046eca046341"
+                "reference": "dca268656a5e7129b7fe7dd5e39e1115e82c2c5c"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3515,7 +3657,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-05-13 15:26:29"
+            "time": "2014-05-14 09:40:56"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3524,7 +3666,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "bfa917adc0b5bd8270451d442475a899ad9a85c3"
+                "reference": "2a0cb62636c3b62f602c534d323878727b37a8b8"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3533,7 +3675,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-05-12 15:08:07"
+            "time": "2014-05-14 09:41:21"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -3776,7 +3918,8 @@
         "vifeed/geo-bundle": 20,
         "vifeed/tag-bundle": 20,
         "vifeed/video-view-bundle": 20,
-        "vifeed/video-promo-bundle": 20
+        "vifeed/video-promo-bundle": 20,
+        "stof/doctrine-extensions-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
