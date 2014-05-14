@@ -96,6 +96,7 @@ module.exports = function(grunt) {
         }]
       },
     },
+
     imagemin: {                          // Task
       dynamic: {                         // Another target
         files: [{
@@ -105,11 +106,13 @@ module.exports = function(grunt) {
         }]
       }
     },
+
     curl: {
       'tmp/google-fonts/OpenSans.scss': 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext',
       'tmp/google-fonts/OleoScriptSwashCaps.scss': 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps',
       'tmp/google-fonts/Lora.scss': 'http://fonts.googleapis.com/css?family=Lora:400,700&subset=cyrillic,latin',
     },
+
     replace: {
       select2: {
         src: ['web/css/**/*.css'],
@@ -128,6 +131,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+
     html2js: {
       module: 'templates',
       options: {
@@ -183,6 +187,7 @@ module.exports = function(grunt) {
         dest: 'tmp/security-templates.js'
       }
     },
+
     watch: {
       html: {
         files: ['vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/**/*.html'],
@@ -192,6 +197,7 @@ module.exports = function(grunt) {
         },
       },
     },
+
     ngconstant: {
       options: {
         space: '  ',
@@ -218,6 +224,24 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    favicons: {
+        production: {
+            options: {
+                html: 'vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/views/Default/layout.html.twig',
+                HTMLPrefix: "//stage-cdn.vifeed.co/bundles/vifeedfrontend/images/favicons/",
+                trueColor: true,
+                precomposed: true,
+                appleTouchBackgroundColor: "auto", // none, auto, #color
+                windowsTile: true,
+                tileBlackWhite: true,
+                tileColor: "auto" // none, auto, #color
+            },
+            src: 'vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/images/favicons/original.png',
+            dest: 'vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/images/favicons'
+        }
+    },
+
     responsive_videos: {
       myTask: {
         options: {
@@ -246,6 +270,7 @@ module.exports = function(grunt) {
     },
   });
 
+  grunt.loadNpmTasks('grunt-favicons');
   grunt.loadNpmTasks('grunt-ng-constant');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-html2js');
