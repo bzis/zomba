@@ -976,12 +976,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6"
+                "reference": "2649d91d18629bab071449b3bc4cb02761037a57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
-                "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/2649d91d18629bab071449b3bc4cb02761037a57",
+                "reference": "2649d91d18629bab071449b3bc4cb02761037a57",
                 "shasum": ""
             },
             "require-dev": {
@@ -1007,7 +1007,7 @@
                     "role": "Developer"
                 }
             ],
-            "description": "The iconic font designed for Bootstrap",
+            "description": "The iconic font and CSS framework",
             "homepage": "http://fontawesome.io/",
             "keywords": [
                 "FontAwesome",
@@ -1016,7 +1016,7 @@
                 "font",
                 "icon"
             ],
-            "time": "2013-11-05 12:35:21"
+            "time": "2014-05-14 20:37:30"
         },
         {
             "name": "fpn/doctrine-extensions-taggable",
@@ -3570,7 +3570,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "1a8dfcb6ef5cae0c50077d8157e81114ba66070e"
+                "reference": "5b8d32057a04c4927fceedd151143649ad202737"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3582,7 +3582,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-15 11:40:25"
+            "time": "2014-05-15 12:54:25"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3656,7 +3656,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "2a0cb62636c3b62f602c534d323878727b37a8b8"
+                "reference": "74f45c37242665548e1ed731fb5c26b8e3a6a3a3"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3665,7 +3665,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-05-14 09:41:21"
+            "time": "2014-05-15 12:53:33"
         },
         {
             "name": "vifeed/tag-bundle",
