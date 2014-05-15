@@ -3570,7 +3570,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "5b8d32057a04c4927fceedd151143649ad202737"
+                "reference": "f801be1e7af15f09a0700e1d7b0e3c937190dd57"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3582,7 +3582,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-15 12:54:25"
+            "time": "2014-05-15 14:51:53"
         },
         {
             "name": "vifeed/geo-bundle",
