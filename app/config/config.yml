@@ -36,7 +36,7 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    bundles:        [ VifeedUserBundle, VifeedFrontendBundle, VifeedVideoPromoBundle]
+    bundles:        [VifeedUserBundle, VifeedFrontendBundle, VifeedVideoPromoBundle]
     ruby:  %assetic.ruby.bin%
     filters:
         sass: ~
@@ -123,6 +123,9 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/mask/mask.js
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/event/event.js
+        angular_socket:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/angular-socket-io/socket.min.js
         frontend_config:
             inputs:
                 - %kernel.root_dir%/../tmp/frontend_config.js
