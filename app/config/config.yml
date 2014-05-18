@@ -253,6 +253,10 @@ fos_user:
         confirmation:
             enabled:    true
             template:   VifeedUserBundle:Registration:email.html.twig
+    resetting:
+         form:
+             type: resetting
+             name: resetting
     from_email:
         address: no-reply@vifeed.co
         sender_name: vifeed
