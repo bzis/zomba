@@ -3557,7 +3557,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "21a17a91685e32a25b11671b0df4f03660ab0f8e"
+                "reference": "3f9ad238bb5b18070560c0a2725cd8adebc2ceac"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3571,7 +3571,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-04-21 09:27:17"
+            "time": "2014-05-19 10:41:56"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3580,7 +3580,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "b9b060c69854204442c879f077d259548eb0664f"
+                "reference": "dcd3a948ee43af4d7f1850b17824c47d44c70a17"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3592,7 +3592,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-19 10:01:39"
+            "time": "2014-05-19 10:43:30"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3619,7 +3619,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "13088618b1807a5a66ebdf93798b017f768d573a"
+                "reference": "5058ea347c71e3cdc8a86d49098244310cf6439b"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3635,7 +3635,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-05-14 09:47:47"
+            "time": "2014-05-19 10:41:37"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3644,7 +3644,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "456c12b5f8d7d0058901bc25052a1ffc9b00e7f1"
+                "reference": "a412ed1442f09557aaf4b637f6c80497bc5f4a46"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3657,7 +3657,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-05-19 10:07:43"
+            "time": "2014-05-19 10:41:08"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3666,7 +3666,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "74f45c37242665548e1ed731fb5c26b8e3a6a3a3"
+                "reference": "4d39c760950697cfa543b3bca847d74e4ee528ca"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3675,7 +3675,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-05-15 12:53:33"
+            "time": "2014-05-19 10:42:38"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -3705,7 +3705,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "f34fd9ed6f7d24407db9ed1d0f63932ccfecd489"
+                "reference": "e66ec0586a685be54f2216ebb46b86d54e60c856"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3718,7 +3718,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-05-16 13:27:35"
+            "time": "2014-05-19 10:40:52"
         },
         {
             "name": "vifeed/video-promo-bundle",
