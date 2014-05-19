@@ -36,7 +36,7 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    bundles:        [ VifeedUserBundle, VifeedFrontendBundle, VifeedVideoPromoBundle]
+    bundles:        [VifeedUserBundle, VifeedFrontendBundle, VifeedVideoPromoBundle]
     ruby:  %assetic.ruby.bin%
     filters:
         sass: ~
@@ -80,6 +80,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
         twitter_bootstrap_js:
             inputs:
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/collapse.js
                 - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/carousel.js
                 - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/dropdown.js
         #Angular UI ~ Bootstrap
@@ -123,6 +124,9 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/mask/mask.js
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/event/event.js
+        angular_socket:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/angular-socket-io/socket.min.js
         frontend_config:
             inputs:
                 - %kernel.root_dir%/../tmp/frontend_config.js

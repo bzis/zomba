@@ -17,8 +17,9 @@ parameters:
     assetic.filter.compass.bin: /opt/rbenv/versions/2.1.1/bin/compass
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
-    assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/images/'
-    assetic.cdn_url: '//vifeed.co'
+    assetic.filter.compass.http_generated_images_path: /
+    assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/'
+    assetic.cdn_url: '//stage-cdn.vifeed.co'
     assetic.cdn_path: "%kernel.root_dir%/../web"
     social: { VKAppID: '', VKAppSecret: '' }
     payment.secret: 2ceea4871a6205c421dc3ce9b0a7b350aafe7000
