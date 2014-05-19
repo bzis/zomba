@@ -14,7 +14,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-03-21 12:13:55"
+            "time": "2014-02-27 22:02:00"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -25,7 +25,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-03-21 21:05:24"
+            "time": "2013-12-30 19:48:25"
         },
         {
             "name": "cayetanosoriano/hashids-bundle",
@@ -1982,7 +1982,7 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2814,9 +2814,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "The base bundle for the Symfony Distributions",
@@ -2863,9 +2861,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "This bundle provides a way to configure your controllers with annotations",
@@ -2917,9 +2913,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "This bundle generates code for you",
@@ -3260,9 +3254,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 },
                 {
                     "name": "Symfony Community",
@@ -3479,9 +3471,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Common additional features for Twig that do not directly belong in core",
@@ -3580,7 +3570,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "dcd3a948ee43af4d7f1850b17824c47d44c70a17"
+                "reference": "b37f81088a8d942143ec4950ccca7f3d4d046e0b"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3592,7 +3582,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-19 10:43:30"
+            "time": "2014-05-19 12:36:32"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3827,7 +3817,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
