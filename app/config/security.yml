@@ -13,7 +13,7 @@ security:
     firewalls:
 
         wsse_secured:
-            pattern:   ^/api/(?!(users$|user/login_check$|users/confirm$))
+            pattern:   ^/api/(?!(users$|user/login_check$|users/confirm$|user/reset))
             stateless: true
             wsse:      true
 
@@ -32,10 +32,12 @@ security:
         dev:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
             security: false
+
     access_control:
             - { path: ^/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/api/users$, role: IS_AUTHENTICATED_ANONYMOUSLY } # регистрация
             - { path: ^/api/users/confirm$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+            - { path: ^/api/user/reset$, role: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/api/user/login_check$, role: IS_AUTHENTICATED_ANONYMOUSLY }
 #            - { path: ^/api/user/(register|login), role: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/api/, role: ROLE_USER }
