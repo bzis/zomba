@@ -68,9 +68,6 @@ assetic:
         skrollr:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/skrollr/dist/skrollr.min.js
-        underscore:
-            inputs:
-                - %kernel.root_dir%/../bower-vendor/underscore/underscore-min.js
         angular:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular/angular.js
