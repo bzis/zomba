@@ -1349,12 +1349,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "f3ed3e4e89a286e617d29d43d4108def899474ea"
+                "reference": "298ca99336e66c4e9d3549cf746fe3d731fdfde6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/f3ed3e4e89a286e617d29d43d4108def899474ea",
-                "reference": "f3ed3e4e89a286e617d29d43d4108def899474ea",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/298ca99336e66c4e9d3549cf746fe3d731fdfde6",
+                "reference": "298ca99336e66c4e9d3549cf746fe3d731fdfde6",
                 "shasum": ""
             },
             "require": {
@@ -1381,7 +1381,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-05-17 06:42:28"
+            "time": "2014-05-19 19:01:59"
         },
         {
             "name": "guzzle/guzzle",
@@ -1885,12 +1885,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSPaymentCoreBundle.git",
-                "reference": "79df2c39fe09b109b85aee7a91534b7cb777e429"
+                "reference": "437f6db5aba890971c6cba44ee598d8771e4ed48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/79df2c39fe09b109b85aee7a91534b7cb777e429",
-                "reference": "79df2c39fe09b109b85aee7a91534b7cb777e429",
+                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/437f6db5aba890971c6cba44ee598d8771e4ed48",
+                "reference": "437f6db5aba890971c6cba44ee598d8771e4ed48",
                 "shasum": ""
             },
             "require": {
@@ -1943,7 +1943,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-04-10 10:21:55"
+            "time": "2014-05-19 14:26:25"
         },
         {
             "name": "jms/payment-paypal-bundle",
@@ -2926,12 +2926,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "6503cfc692c6a5dee81bd32277c45c251694608a"
+                "reference": "e6ea2d0e23535b849acadb44ba226eb125941aed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/6503cfc692c6a5dee81bd32277c45c251694608a",
-                "reference": "6503cfc692c6a5dee81bd32277c45c251694608a",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/e6ea2d0e23535b849acadb44ba226eb125941aed",
+                "reference": "e6ea2d0e23535b849acadb44ba226eb125941aed",
                 "shasum": ""
             },
             "require": {
@@ -2981,7 +2981,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2014-04-18 07:38:06"
+            "time": "2014-05-20 09:20:22"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -3570,7 +3570,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "b37f81088a8d942143ec4950ccca7f3d4d046e0b"
+                "reference": "824eb02ddc6e730b3e58ba13bd3927e2df576836"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3582,7 +3582,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-19 12:36:32"
+            "time": "2014-05-20 13:12:58"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3695,7 +3695,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "e66ec0586a685be54f2216ebb46b86d54e60c856"
+                "reference": "cd08c208794a9fb29109e29ecb73b454c1585330"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3708,7 +3708,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-05-19 10:40:52"
+            "time": "2014-05-19 13:31:47"
         },
         {
             "name": "vifeed/video-promo-bundle",
