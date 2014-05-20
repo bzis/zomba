@@ -289,6 +289,7 @@ module.exports = (grunt) ->
     "invalidate_cloudfront:videos"
   ]
   grunt.registerTask "after_assetic_dump", [
+    "replace"
     "s3:js_and_css"
     "s3:assets"
     "s3:fonts"

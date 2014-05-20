@@ -77,9 +77,18 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
         twitter_bootstrap_js:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/collapse.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/affix.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/alert.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/button.js
                 - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/carousel.js
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/collapse.js
                 - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/dropdown.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/tab.js
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/transition.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/scrollspy.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/modal.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/tooltip.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/popover.js
         #Angular UI ~ Bootstrap
         #http://angular-ui.github.io/bootstrap/
         #https://github.com/angular-ui/bootstrap/
@@ -124,6 +133,9 @@ assetic:
         angular_socket:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular-socket-io/socket.min.js
+        lodash:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/lodash/dist/lodash.underscore.min.js
         frontend_config:
             inputs:
                 - %kernel.root_dir%/../tmp/frontend_config.js
