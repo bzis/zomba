@@ -133,6 +133,9 @@ assetic:
         angular_socket:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular-socket-io/socket.min.js
+        lodash:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/lodash/dist/lodash.underscore.min.js
         frontend_config:
             inputs:
                 - %kernel.root_dir%/../tmp/frontend_config.js
