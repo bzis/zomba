@@ -25,3 +25,7 @@ geo_rest:
 tag_rest:
   type: rest
   resource: "@VifeedTagBundle/Resources/config/routing_rest.yml"
+
+frontend_rest:
+  type: rest
+  resource: "@VifeedFrontendBundle/Resources/config/routing_rest.yml"
