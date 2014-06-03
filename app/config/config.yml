@@ -31,6 +31,7 @@ twig:
     exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
     globals:
         social: %social%
+        tracker_host: %tracker.host%
 
 # Assetic Configuration
 assetic:

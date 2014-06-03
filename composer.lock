@@ -1,7 +1,8 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
     "hash": "fd446bb868d64312861dd9152be27607",
     "packages": [
@@ -337,16 +338,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "v2.4.1",
+            "version": "v2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "ceb18cf9b0230f3ea208b6238130fd415abda0a7"
+                "reference": "5db6ab40e4c531f14dad4ca96a394dfce5d4255b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/ceb18cf9b0230f3ea208b6238130fd415abda0a7",
-                "reference": "ceb18cf9b0230f3ea208b6238130fd415abda0a7",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/5db6ab40e4c531f14dad4ca96a394dfce5d4255b",
+                "reference": "5db6ab40e4c531f14dad4ca96a394dfce5d4255b",
                 "shasum": ""
             },
             "require": {
@@ -356,6 +357,9 @@
                 "doctrine/inflector": "1.*",
                 "doctrine/lexer": "1.*",
                 "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
             },
             "type": "library",
             "extra": {
@@ -408,7 +412,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2013-09-07 10:20:34"
+            "time": "2014-05-21 19:28:51"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -1122,12 +1126,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "68ba59b11d5e1cf8e83aa0bf684b6a4f2d0050b7"
+                "reference": "57d9e604c99eb0271ab0d664176523c969295b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/68ba59b11d5e1cf8e83aa0bf684b6a4f2d0050b7",
-                "reference": "68ba59b11d5e1cf8e83aa0bf684b6a4f2d0050b7",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/57d9e604c99eb0271ab0d664176523c969295b6a",
+                "reference": "57d9e604c99eb0271ab0d664176523c969295b6a",
                 "shasum": ""
             },
             "require": {
@@ -1192,7 +1196,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-05-15 16:34:45"
+            "time": "2014-06-02 11:56:40"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1349,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "298ca99336e66c4e9d3549cf746fe3d731fdfde6"
+                "reference": "1f3435189a303ae4f037131294dde0066ae38663"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/298ca99336e66c4e9d3549cf746fe3d731fdfde6",
-                "reference": "298ca99336e66c4e9d3549cf746fe3d731fdfde6",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/1f3435189a303ae4f037131294dde0066ae38663",
+                "reference": "1f3435189a303ae4f037131294dde0066ae38663",
                 "shasum": ""
             },
             "require": {
@@ -1364,6 +1368,11 @@
                 "phpunit/phpunit": "3.7.*"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1381,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-05-19 19:01:59"
+            "time": "2014-06-03 07:00:01"
         },
         {
             "name": "guzzle/guzzle",
@@ -2426,12 +2435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "221f109ad63bfd8777dc9f6619ea3a375adabfa6"
+                "reference": "56124e7c409e80c486c291c624e0f048d2d0184d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/221f109ad63bfd8777dc9f6619ea3a375adabfa6",
-                "reference": "221f109ad63bfd8777dc9f6619ea3a375adabfa6",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/56124e7c409e80c486c291c624e0f048d2d0184d",
+                "reference": "56124e7c409e80c486c291c624e0f048d2d0184d",
                 "shasum": ""
             },
             "require": {
@@ -2492,7 +2501,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-05-19 10:03:46"
+            "time": "2014-06-01 13:56:45"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2599,16 +2608,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "83df2ef11c18ea490daf6a7a8789315f57f555a8"
+                "reference": "c4b592298c8b83e05da3c791a2e0ab26e49708aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/83df2ef11c18ea490daf6a7a8789315f57f555a8",
-                "reference": "83df2ef11c18ea490daf6a7a8789315f57f555a8",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/c4b592298c8b83e05da3c791a2e0ab26e49708aa",
+                "reference": "c4b592298c8b83e05da3c791a2e0ab26e49708aa",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
             },
             "suggest": {
                 "ext-curl": "Allows access to Webdis when paired with phpiredis",
@@ -2638,7 +2650,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-03-25 14:02:22"
+            "time": "2014-05-30 10:22:12"
         },
         {
             "name": "psr/log",
@@ -3336,16 +3348,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.13",
+            "version": "v2.3.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "9c4b11915d7409a9cecd155d954f2ade273f3359"
+                "reference": "069683a14eb361f892c9bdc9d10d4f5dac3c0ee3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/9c4b11915d7409a9cecd155d954f2ade273f3359",
-                "reference": "9c4b11915d7409a9cecd155d954f2ade273f3359",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/069683a14eb361f892c9bdc9d10d4f5dac3c0ee3",
+                "reference": "069683a14eb361f892c9bdc9d10d4f5dac3c0ee3",
                 "shasum": ""
             },
             "require": {
@@ -3442,7 +3454,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-04-27 08:34:33"
+            "time": "2014-05-31 02:04:21"
         },
         {
             "name": "twig/extensions",
@@ -3580,7 +3592,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "824eb02ddc6e730b3e58ba13bd3927e2df576836"
+                "reference": "659f0379e5a9a3c5a951a3b264d6c30491cea64b"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3592,7 +3604,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-05-20 13:12:58"
+            "time": "2014-06-03 09:09:25"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3705,7 +3717,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "cd08c208794a9fb29109e29ecb73b454c1585330"
+                "reference": "289bdd32d1cfd29dee092d28cf15c374cc604847"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3718,7 +3730,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-05-19 13:31:47"
+            "time": "2014-05-22 11:45:39"
         },
         {
             "name": "vifeed/video-promo-bundle",

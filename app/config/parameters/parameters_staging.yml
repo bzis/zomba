@@ -37,6 +37,7 @@ parameters:
     paypal.username: hd.deman@gmail.co
     paypal.password: weeqw
     paypal.api_signature: dsfsdf
+    tracker.host: 'tracker.vifeed.co'
     vifeed:
         comission: 0.3
         min_view_time: 10

@@ -52,6 +52,8 @@ parameters:
 
     google.api.key: ''
 
+    tracker.host: node-app.dev
+
     vifeed:
         # комиссия системы
         comission: 0.3

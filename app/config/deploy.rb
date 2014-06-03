@@ -1,4 +1,5 @@
-require 'flowdock/capistrano'
+require 'capistrano/flowdock'
+
 # for Flowdock Gem notifications
 set :flowdock_project_name, 'vifeed'
 set :flowdock_deploy_tags, ['frontend']
@@ -85,7 +86,7 @@ set :parameters_file, false
 
 task :upload_parameters do
   origin_file = parameters_dir + '/' + parameters_file if parameters_dir && parameters_file
-  if origin_file && File.exists?(origin_file)
+  if origin_file && File.exist?(origin_file)
     ext = File.extname(parameters_file)
     relative_path = 'app/config/parameters' + ext
 
