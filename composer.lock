@@ -1,7 +1,8 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
     "hash": "fd446bb868d64312861dd9152be27607",
     "packages": [
@@ -2607,12 +2608,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "c4b592298c8b83e05da3c791a2e0ab26e49708aa"
+                "reference": "a8862f0fdd716f0d99d6cce3b2eacbd1342b0132"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/c4b592298c8b83e05da3c791a2e0ab26e49708aa",
-                "reference": "c4b592298c8b83e05da3c791a2e0ab26e49708aa",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/a8862f0fdd716f0d99d6cce3b2eacbd1342b0132",
+                "reference": "a8862f0fdd716f0d99d6cce3b2eacbd1342b0132",
                 "shasum": ""
             },
             "require": {
@@ -2649,7 +2650,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-05-30 10:22:12"
+            "time": "2014-06-03 14:57:22"
         },
         {
             "name": "psr/log",
@@ -3581,7 +3582,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "659f0379e5a9a3c5a951a3b264d6c30491cea64b"
+                "reference": "9db0f1b49941536706866bc0420c9385728cde6e"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3593,7 +3594,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-03 09:09:25"
+            "time": "2014-06-03 16:08:57"
         },
         {
             "name": "vifeed/geo-bundle",
