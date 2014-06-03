@@ -336,3 +336,8 @@ stof_doctrine_extensions:
     orm:
         default:
             softdeleteable: true
+
+bank_plugin:
+    templates:
+        receipt: ::receipt.html.twig
+        transfer: ::transfer.html.twig
