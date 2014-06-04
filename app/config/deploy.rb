@@ -68,6 +68,8 @@ namespace :deploy do
   end
 end
 
+after "deploy:update", "deploy:cleanup"
+
 before 'symfony:cache:warmup', 'symfony:doctrine:migrations:migrate'
 
 before 'symfony:assetic:dump' do
