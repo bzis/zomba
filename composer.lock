@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "1f3435189a303ae4f037131294dde0066ae38663"
+                "reference": "407282dd0ee3644c2bef01085650d50dd8ad0cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/1f3435189a303ae4f037131294dde0066ae38663",
-                "reference": "1f3435189a303ae4f037131294dde0066ae38663",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/407282dd0ee3644c2bef01085650d50dd8ad0cca",
+                "reference": "407282dd0ee3644c2bef01085650d50dd8ad0cca",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-03 07:00:01"
+            "time": "2014-06-04 07:01:18"
         },
         {
             "name": "guzzle/guzzle",
