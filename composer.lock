@@ -1,8 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
-        "This file is @generated automatically"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
     "hash": "fd446bb868d64312861dd9152be27607",
     "packages": [
@@ -1126,12 +1125,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "b07203b3895fb30545526a723cc8f5207181b4a8"
+                "reference": "d37f4410e6a97e81c720840b56e35c3a44942723"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/b07203b3895fb30545526a723cc8f5207181b4a8",
-                "reference": "b07203b3895fb30545526a723cc8f5207181b4a8",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/d37f4410e6a97e81c720840b56e35c3a44942723",
+                "reference": "d37f4410e6a97e81c720840b56e35c3a44942723",
                 "shasum": ""
             },
             "require": {
@@ -1196,7 +1195,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-06-03 11:47:03"
+            "time": "2014-06-04 13:11:41"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -3582,7 +3581,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "9db0f1b49941536706866bc0420c9385728cde6e"
+                "reference": "f6e2fe605a87bac331cb85ae2ac5a4af2090eec2"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3594,7 +3593,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-03 16:08:57"
+            "time": "2014-06-04 14:04:02"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3707,7 +3706,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "289bdd32d1cfd29dee092d28cf15c374cc604847"
+                "reference": "e2087b1388ed12dc1b1f0959da34df0b5acec2f3"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3720,7 +3719,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-05-22 11:45:39"
+            "time": "2014-06-04 15:07:57"
         },
         {
             "name": "vifeed/video-promo-bundle",
