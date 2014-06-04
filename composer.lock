@@ -1490,12 +1490,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanakimov/hashids.php.git",
-                "reference": "6bc5e99a9d7f3aa09eb1b4ada2189fbf882abdf0"
+                "reference": "8587e301d86217666d341e8c68ee3051ef23aaaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/6bc5e99a9d7f3aa09eb1b4ada2189fbf882abdf0",
-                "reference": "6bc5e99a9d7f3aa09eb1b4ada2189fbf882abdf0",
+                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/8587e301d86217666d341e8c68ee3051ef23aaaa",
+                "reference": "8587e301d86217666d341e8c68ee3051ef23aaaa",
                 "shasum": ""
             },
             "require": {
@@ -1539,7 +1539,7 @@
                 "obfuscate",
                 "youtube"
             ],
-            "time": "2014-01-08 00:03:57"
+            "time": "2014-06-04 01:56:32"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -3118,12 +3118,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "ff46000dd73411bbe812238f38bcacaf3f94b504"
+                "reference": "df10fae8852a5733e671b4ba37cf2f4beafa7561"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/ff46000dd73411bbe812238f38bcacaf3f94b504",
-                "reference": "ff46000dd73411bbe812238f38bcacaf3f94b504",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/df10fae8852a5733e671b4ba37cf2f4beafa7561",
+                "reference": "df10fae8852a5733e671b4ba37cf2f4beafa7561",
                 "shasum": ""
             },
             "require": {
@@ -3173,7 +3173,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-05-05 14:19:41"
+            "time": "2014-06-04 01:48:14"
         },
         {
             "name": "symfony/icu",
