@@ -86,8 +86,8 @@
         },
         {
             "type": "git",
-            "name": "vifeed/bank-plugin-bundle",
-            "url": "git@github.com:vifeed/BankPluginBundle.git",
+            "name": "vifeed/bank-payment-bundle",
+            "url": "git@github.com:vifeed/BankPaymentBundle.git",
             "version": "dev-master"
         },
         {
@@ -166,7 +166,7 @@
         "vifeed/tag-bundle": "dev-master",
         "vifeed/video-view-bundle": "dev-master",
         "vifeed/video-promo-bundle": "dev-master",
-        "vifeed/bank-plugin-bundle": "dev-master",
+        "vifeed/bank-payment-bundle": "dev-master",
         "raven/raven": "0.7.1",
         "stof/doctrine-extensions-bundle": "~1.1@dev",
         "mpdf/mpdf": "5.7.*"
