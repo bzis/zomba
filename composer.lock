@@ -1352,12 +1352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "407282dd0ee3644c2bef01085650d50dd8ad0cca"
+                "reference": "83742556c82f2eeb1de4d63d411fa44e254ab80b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/407282dd0ee3644c2bef01085650d50dd8ad0cca",
-                "reference": "407282dd0ee3644c2bef01085650d50dd8ad0cca",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/83742556c82f2eeb1de4d63d411fa44e254ab80b",
+                "reference": "83742556c82f2eeb1de4d63d411fa44e254ab80b",
                 "shasum": ""
             },
             "require": {
@@ -1389,7 +1389,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-04 07:01:18"
+            "time": "2014-06-05 07:02:10"
         },
         {
             "name": "guzzle/guzzle",
@@ -1397,12 +1397,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "92d9934f2fca1da15178c91239576ae26e505e60"
+                "reference": "49104c619b663038e636a819718adce3b27ba6f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/92d9934f2fca1da15178c91239576ae26e505e60",
-                "reference": "92d9934f2fca1da15178c91239576ae26e505e60",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/49104c619b663038e636a819718adce3b27ba6f2",
+                "reference": "49104c619b663038e636a819718adce3b27ba6f2",
                 "shasum": ""
             },
             "require": {
@@ -1481,7 +1481,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-05-07 17:04:22"
+            "time": "2014-06-04 19:49:37"
         },
         {
             "name": "hashids/hashids",
@@ -2361,16 +2361,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.9.1",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "65026b610f8c19e61d7242f600530677b0466aac"
+                "reference": "25b16e801979098cb2f120e697bfce454b18bf23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/65026b610f8c19e61d7242f600530677b0466aac",
-                "reference": "65026b610f8c19e61d7242f600530677b0466aac",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/25b16e801979098cb2f120e697bfce454b18bf23",
+                "reference": "25b16e801979098cb2f120e697bfce454b18bf23",
                 "shasum": ""
             },
             "require": {
@@ -2398,7 +2398,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9.x-dev"
+                    "dev-master": "1.10.x-dev"
                 }
             },
             "autoload": {
@@ -2425,7 +2425,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-04-24 13:29:03"
+            "time": "2014-06-04 16:30:04"
         },
         {
             "name": "nelmio/api-doc-bundle",
@@ -3581,7 +3581,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "f6e2fe605a87bac331cb85ae2ac5a4af2090eec2"
+                "reference": "df3a61c45cfd6a89659b6a45e3d1a7f26c9b6739"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3593,7 +3593,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-04 14:04:02"
+            "time": "2014-06-04 20:59:11"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3746,7 +3746,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "777e9619a0e85122914bbb828bf31591757c2a23"
+                "reference": "bb91931fe73041b4d0ed8da148feda47cef805f2"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3755,7 +3755,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-04-30 12:25:02"
+            "time": "2014-06-05 09:33:34"
         },
         {
             "name": "werkint/qiwi",
