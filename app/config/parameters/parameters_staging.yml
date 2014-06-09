@@ -13,8 +13,8 @@ parameters:
     locale: ru
     secret: 'YMnfCuNL[QXTmMsshpnnRjN6GgNPDosJR@JK4W.ugmHh%inc>p7nyzsCWV'
     developer_email: no-reply@vifeed.co
-    assetic.ruby.bin: /opt/rbenv/versions/2.1.1/bin/ruby
-    assetic.filter.compass.bin: /opt/rbenv/versions/2.1.1/bin/compass
+    assetic.ruby.bin: /opt/rbenv/versions/2.1.2/bin/ruby
+    assetic.filter.compass.bin: /opt/rbenv/versions/2.1.2/bin/compass
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
     assetic.filter.compass.http_generated_images_path: /
