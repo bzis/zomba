@@ -4,3 +4,12 @@ parameters:
         comission: 0.3
         min_view_time: 30
         delta: 1
+        company_name: 'ООО "Вифид"'
+        inn: '12345668'
+        bank_name: 'Банк'
+        corr_number: '12345'
+        bik: '21245436'
+        account_number: '12121212121'
+        bank_account_nubmer: '121212121' # оно надо?
+        kpp: '12121212121'
+
