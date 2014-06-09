@@ -2651,12 +2651,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "a8862f0fdd716f0d99d6cce3b2eacbd1342b0132"
+                "reference": "aa8fd5cea4869fef560d6d7319796af9e8b86551"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/a8862f0fdd716f0d99d6cce3b2eacbd1342b0132",
-                "reference": "a8862f0fdd716f0d99d6cce3b2eacbd1342b0132",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/aa8fd5cea4869fef560d6d7319796af9e8b86551",
+                "reference": "aa8fd5cea4869fef560d6d7319796af9e8b86551",
                 "shasum": ""
             },
             "require": {
@@ -2693,7 +2693,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-06-03 14:57:22"
+            "time": "2014-06-09 12:50:09"
         },
         {
             "name": "psr/log",
@@ -3659,7 +3659,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "df3a61c45cfd6a89659b6a45e3d1a7f26c9b6739"
+                "reference": "ee37d1409a51cf22ffbf9eb066c552d1c5377539"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3671,7 +3671,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-04 20:59:11"
+            "time": "2014-06-09 13:31:34"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3784,7 +3784,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "e2087b1388ed12dc1b1f0959da34df0b5acec2f3"
+                "reference": "813c2bfb1ea66520558a660d4162e8f8b27dcbc5"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3797,7 +3797,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-06-04 15:07:57"
+            "time": "2014-06-09 13:48:29"
         },
         {
             "name": "vifeed/video-promo-bundle",
