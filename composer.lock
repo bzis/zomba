@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fd446bb868d64312861dd9152be27607",
+    "hash": "f932a982a1ddd9259021e1fa1ab54da5",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -2429,6 +2429,49 @@
             "time": "2014-06-04 16:30:04"
         },
         {
+            "name": "mpdf/mpdf",
+            "version": "v5.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/finwe/mpdf.git",
+                "reference": "1627f9e7d2ef0f635a886f611079216ed2929717"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/finwe/mpdf/zipball/1627f9e7d2ef0f635a886f611079216ed2929717",
+                "reference": "1627f9e7d2ef0f635a886f611079216ed2929717",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=4.3.10"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "mpdf.php",
+                    "classes"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-1.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ian Back"
+                }
+            ],
+            "description": "A PHP class to generate PDF files from HTML with Unicode/UTF-8 and CJK support",
+            "homepage": "http://www.mpdf1.com/mpdf/index.php",
+            "keywords": [
+                "pdf",
+                "php",
+                "utf-8"
+            ],
+            "time": "2014-05-16 07:18:10"
+        },
+        {
             "name": "nelmio/api-doc-bundle",
             "version": "dev-master",
             "target-dir": "Nelmio/ApiDocBundle",
@@ -3563,6 +3606,40 @@
             "time": "2014-02-13 10:19:29"
         },
         {
+            "name": "vifeed/bank-payment-bundle",
+            "version": "dev-master",
+            "target-dir": "Vifeed/BankPaymentBundle",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:vifeed/BankPaymentBundle.git",
+                "reference": "b0d20ce13f675214bba7780d94c18241b9dce236"
+            },
+            "require": {
+                "jms/payment-core-bundle": "dev-master",
+                "php": ">=5.4",
+                "symfony/framework-bundle": ">=2.1,<3.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Vifeed\\BankPaymentBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Boris Ziskin",
+                    "email": "bmziskin@gmail.com"
+                }
+            ],
+            "keywords": [
+                "payment"
+            ],
+            "time": "2014-06-05 17:24:07"
+        },
+        {
             "name": "vifeed/campaign-bundle",
             "version": "dev-master",
             "target-dir": "Vifeed/CampaignBundle",
@@ -3931,6 +4008,7 @@
         "vifeed/tag-bundle": 20,
         "vifeed/video-view-bundle": 20,
         "vifeed/video-promo-bundle": 20,
+        "vifeed/bank-payment-bundle": 20,
         "stof/doctrine-extensions-bundle": 20
     },
     "platform": {
