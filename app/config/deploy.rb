@@ -59,8 +59,8 @@ namespace :deploy do
     puts '--> Restarting nginx'.green
     run 'sudo /etc/init.d/php5-fpm restart'
     puts '--> Restarting php5-fpm'.green
-    # run 'sudo service varnish restart'
-    # puts '--> Restarting varnish'.green
+    run 'sudo service varnish restart'
+    puts '--> Restarting varnish'.green
     run 'sudo supervisorctl update'
     puts '--> Updating supervisord commands'.green
     run 'sudo supervisorctl start all'
