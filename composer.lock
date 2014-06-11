@@ -3602,7 +3602,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/BankPaymentBundle.git",
-                "reference": "b0d20ce13f675214bba7780d94c18241b9dce236"
+                "reference": "e63009480034903b6b1a8152f0168cee18dad3bf"
             },
             "require": {
                 "jms/payment-core-bundle": "dev-master",
@@ -3627,7 +3627,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-06-05 17:24:07"
+            "time": "2014-06-11 15:36:24"
         },
         {
             "name": "vifeed/campaign-bundle",
@@ -3698,7 +3698,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "63cb4ca881893249b59fae831910d943e629ba4e"
+                "reference": "17814b09272709f61bfd62ced808386101681def"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3714,7 +3714,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-06-06 15:26:31"
+            "time": "2014-06-11 15:35:56"
         },
         {
             "name": "vifeed/platform-bundle",
