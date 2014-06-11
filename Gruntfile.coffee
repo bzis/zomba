@@ -116,7 +116,7 @@ module.exports = (grunt) ->
         files: [
           expand: true # Enable dynamic expansion
           cwd: "web/bundles/" # Src matches are relative to this path
-          src: ["**/*.{jpg,gif}"] # Actual patterns to match
+          src: ["**/*.{png,jpg,gif}"] # Actual patterns to match
         ]
 
     curl:

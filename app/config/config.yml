@@ -48,6 +48,7 @@ assetic:
             apply_to: "\.scss$"
         closure:
             jar: %kernel.root_dir%/Resources/java/compiler-latest/compiler.jar
+            apply_to: "\.coffee$"
         yui_css:
             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
         coffee:
@@ -71,7 +72,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/skrollr/dist/skrollr.min.js
         angular:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/angular/angular.js
+                - %kernel.root_dir%/../bower-vendor/angular/angular.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-route/angular-route.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-resource/angular-resource.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-sanitize/angular-sanitize.min.js
@@ -90,6 +91,8 @@ assetic:
                 # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/modal.js
                 # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/tooltip.js
                 # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/popover.js
+            filters:
+                - ?closure
         #Angular UI ~ Bootstrap
         #http://angular-ui.github.io/bootstrap/
         #https://github.com/angular-ui/bootstrap/
@@ -115,6 +118,8 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
                 - %kernel.root_dir%/../tmp/angular-ui-pagination-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/buttons/buttons.js
+            filters:
+                - ?closure
         angular_maps:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular-google-maps/dist/angular-google-maps.min.js
@@ -131,6 +136,8 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/mask/mask.js
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/event/event.js
+            filters:
+                - ?closure
         angular_socket:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular-socket-io/socket.min.js
@@ -140,11 +147,15 @@ assetic:
         frontend_config:
             inputs:
                 - %kernel.root_dir%/../tmp/frontend_config.js
+            filters:
+                - ?closure
         select2_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.min.js
                 - %kernel.root_dir%/../bower-vendor/select2/select2_locale_ru.js
                 - %kernel.root_dir%/../bower-vendor/angular-ui-select2/src/select2.js
+            filters:
+                - ?closure
         select2_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.css
@@ -169,6 +180,8 @@ assetic:
         daterangepicker:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker.js
+            filters:
+                - ?closure
         daterangepicker_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker-bs3.css
@@ -176,21 +189,33 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/highcharts.com/js/highcharts.src.js
                 - %kernel.root_dir%/../bower-vendor/highcharts-ng/dist/highcharts-ng.min.js
+            filters:
+                - ?closure
         analytics_template:
             inputs:
                 - %kernel.root_dir%/../tmp/analytics-templates.js
+            filters:
+                - ?closure
         advertiser_template:
             inputs:
                 - %kernel.root_dir%/../tmp/advertiser-templates.js
+            filters:
+                - ?closure
         profile_template:
             inputs:
                 - %kernel.root_dir%/../tmp/profile-templates.js
+            filters:
+                - ?closure
         publisher_template:
             inputs:
                 - %kernel.root_dir%/../tmp/publisher-templates.js
+            filters:
+                - ?closure
         security_template:
             inputs:
                 - %kernel.root_dir%/../tmp/security-templates.js
+            filters:
+                - ?closure
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
