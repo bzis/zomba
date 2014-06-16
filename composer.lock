@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f932a982a1ddd9259021e1fa1ab54da5",
+    "hash": "517860a66299e15716827676b19266e3",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1205,12 +1205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "a93c355d70fd57a8171faece7969a13cb9387efb"
+                "reference": "71ed2505443f375876a38e82ff0d1929d6078270"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/a93c355d70fd57a8171faece7969a13cb9387efb",
-                "reference": "a93c355d70fd57a8171faece7969a13cb9387efb",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/71ed2505443f375876a38e82ff0d1929d6078270",
+                "reference": "71ed2505443f375876a38e82ff0d1929d6078270",
                 "shasum": ""
             },
             "require": {
@@ -1265,7 +1265,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-06-08 14:16:45"
+            "time": "2014-06-13 14:56:35"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "2d1d56260f3da47a7ef34231551f7b1e0a0b2d81"
+                "reference": "a88dcec6833ac2de4798c13a24abe30c90feb057"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/2d1d56260f3da47a7ef34231551f7b1e0a0b2d81",
-                "reference": "2d1d56260f3da47a7ef34231551f7b1e0a0b2d81",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a88dcec6833ac2de4798c13a24abe30c90feb057",
+                "reference": "a88dcec6833ac2de4798c13a24abe30c90feb057",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-10 07:07:04"
+            "time": "2014-06-14 07:10:57"
         },
         {
             "name": "guzzle/guzzle",
@@ -1740,12 +1740,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSDiExtraBundle.git",
-                "reference": "4361495ea88d2eccb5c43749168a2c88f3e6476b"
+                "reference": "d282aa46c84a2723db0dab6940ea4399e6aa3313"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSDiExtraBundle/zipball/4361495ea88d2eccb5c43749168a2c88f3e6476b",
-                "reference": "4361495ea88d2eccb5c43749168a2c88f3e6476b",
+                "url": "https://api.github.com/repos/schmittjoh/JMSDiExtraBundle/zipball/d282aa46c84a2723db0dab6940ea4399e6aa3313",
+                "reference": "d282aa46c84a2723db0dab6940ea4399e6aa3313",
                 "shasum": ""
             },
             "require": {
@@ -1798,7 +1798,7 @@
                 "annotations",
                 "dependency injection"
             ],
-            "time": "2014-01-10 21:31:29"
+            "time": "2014-06-13 07:11:35"
         },
         {
             "name": "jms/metadata",
@@ -3102,16 +3102,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.2.0",
+            "version": "v5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "043e336b871f17a117f76ef8e190eddfc04c8d48"
+                "reference": "2b9af56cc676c338d52fca4c657e5bdff73bb7af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/043e336b871f17a117f76ef8e190eddfc04c8d48",
-                "reference": "043e336b871f17a117f76ef8e190eddfc04c8d48",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/2b9af56cc676c338d52fca4c657e5bdff73bb7af",
+                "reference": "2b9af56cc676c338d52fca4c657e5bdff73bb7af",
                 "shasum": ""
             },
             "require": {
@@ -3152,7 +3152,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-05-08 08:11:19"
+            "time": "2014-06-13 11:44:54"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -3602,7 +3602,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/BankPaymentBundle.git",
-                "reference": "b0d20ce13f675214bba7780d94c18241b9dce236"
+                "reference": "e63009480034903b6b1a8152f0168cee18dad3bf"
             },
             "require": {
                 "jms/payment-core-bundle": "dev-master",
@@ -3627,7 +3627,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-06-05 17:24:07"
+            "time": "2014-06-11 15:36:24"
         },
         {
             "name": "vifeed/campaign-bundle",
@@ -3636,7 +3636,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "3f9ad238bb5b18070560c0a2725cd8adebc2ceac"
+                "reference": "d0e774a15a3877ae223be69343c14d709931f587"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3650,7 +3650,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-05-19 10:41:56"
+            "time": "2014-06-16 12:25:02"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3698,7 +3698,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "63cb4ca881893249b59fae831910d943e629ba4e"
+                "reference": "17814b09272709f61bfd62ced808386101681def"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3714,7 +3714,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-06-06 15:26:31"
+            "time": "2014-06-11 15:35:56"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3723,7 +3723,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "a412ed1442f09557aaf4b637f6c80497bc5f4a46"
+                "reference": "8a9f684856dd9bf4a343e46aee0050bc4ff7d49e"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3736,7 +3736,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-05-19 10:41:08"
+            "time": "2014-06-16 12:24:30"
         },
         {
             "name": "vifeed/system-bundle",
@@ -3988,6 +3988,7 @@
         "angular-ui/bootstrap": 20,
         "angular-ui/ui-utils": 20,
         "cayetanosoriano/hashids-bundle": 20,
+        "hashids/hashids": 20,
         "vifeed/campaign-bundle": 20,
         "vifeed/frontend-bundle": 20,
         "vifeed/payment-bundle": 20,
