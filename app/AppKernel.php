@@ -37,19 +37,22 @@ class AppKernel extends Kernel
             new Karser\RobokassaBundle\KarserRobokassaBundle(),
             new cayetanosoriano\HashidsBundle\cayetanosorianoHashidsBundle(),
             new Uecode\Bundle\DaemonBundle\DaemonBundle(),
-            new Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle(),
-            new Mmoreram\GearmanBundle\GearmanBundle(),
             new OldSound\RabbitMqBundle\OldSoundRabbitMqBundle(),
+            new Chewbacco\Payment\QiwiWalletBundle\ChewbaccoPaymentQiwiWalletBundle(),
+            new JMS\Payment\PaypalBundle\JMSPaymentPaypalBundle(),
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\VifeedUserBundle(),
             new Vifeed\SystemBundle\VifeedSystemBundle(),
             new Vifeed\PlatformBundle\VifeedPlatformBundle(),
             new Vifeed\VideoViewBundle\VifeedVideoViewBundle(),
+            new Vifeed\VideoPromoBundle\VifeedVideoPromoBundle(),
             new Vifeed\PaymentBundle\VifeedPaymentBundle(),
             new Vifeed\FrontendBundle\VifeedFrontendBundle(),
             new Vifeed\GeoBundle\VifeedGeoBundle(),
             new Vifeed\TagBundle\VifeedTagBundle(),
+            new Vifeed\BankPaymentBundle\BankPaymentBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

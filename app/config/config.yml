@@ -31,13 +31,14 @@ twig:
     exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
     globals:
         social: %social%
+        tracker_host: %tracker.host%
 
 # Assetic Configuration
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    bundles:        [ VifeedUserBundle, VifeedFrontendBundle ]
-    #java: /usr/bin/java
+    bundles:        [VifeedUserBundle, VifeedFrontendBundle, VifeedVideoPromoBundle]
+    ruby:  %assetic.ruby.bin%
     filters:
         sass: ~
         compass:
@@ -47,8 +48,13 @@ assetic:
             apply_to: "\.scss$"
         closure:
             jar: %kernel.root_dir%/Resources/java/compiler-latest/compiler.jar
+            apply_to: "\.coffee$"
         yui_css:
             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
+        coffee:
+            bin: %kernel.root_dir%/../node_modules/.bin/coffee
+            node: /usr/local/bin/node
+            apply_to: "\.coffee$"
     read_from:        %assetic.cdn_url%
     write_to:         %assetic.cdn_path%
     assets:
@@ -58,17 +64,35 @@ assetic:
         jquery_parallax:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/parallax/deploy/jquery.parallax.min.js
+        jquery_easy_pie_chart:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js
+        skrollr:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/skrollr/dist/skrollr.min.js
         angular:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/angular/angular.js
+                - %kernel.root_dir%/../bower-vendor/angular/angular.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-route/angular-route.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-resource/angular-resource.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-sanitize/angular-sanitize.min.js
-                # - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
+                - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
         twitter_bootstrap_js:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/bootstrap-sass/js/carousel.js
-                - %kernel.root_dir%/../bower-vendor/bootstrap-sass/js/dropdown.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/affix.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/alert.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/button.js
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/carousel.js
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/collapse.js
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/dropdown.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/tab.js
+                - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/transition.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/scrollspy.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/modal.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/tooltip.js
+                # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/popover.js
+            filters:
+                - ?closure
         #Angular UI ~ Bootstrap
         #http://angular-ui.github.io/bootstrap/
         #https://github.com/angular-ui/bootstrap/
@@ -81,17 +105,24 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/modal/modal.js
                 - %kernel.root_dir%/../tmp/angular-ui-modal-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/transition/transition.js
-                #popover and tooltip
+                #other bootstrap directives
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/popover/popover.js
+                - %kernel.root_dir%/../tmp/angular-ui-popover-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/tooltip/tooltip.js
+                - %kernel.root_dir%/../tmp/angular-ui-tooltip-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/position/position.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/bindHtml/bindHtml.js
-                #alert
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/alert/alert.js
-                #dropdownToggle
+                - %kernel.root_dir%/../tmp/angular-ui-alert-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/dropdown/dropdown.js
-                #pagination
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
+                - %kernel.root_dir%/../tmp/angular-ui-pagination-templates.js
+                - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/buttons/buttons.js
+            filters:
+                - ?closure
+        angular_maps:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/angular-google-maps/dist/angular-google-maps.min.js
         crypto_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/crypto-js/components/core-min.js
@@ -105,11 +136,26 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/mask/mask.js
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/event/event.js
-                - %kernel.root_dir%/../bower-vendor/angular-ui-select2/src/select2.js
-        jquery_widget_select2_js:
+            filters:
+                - ?closure
+        angular_socket:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/angular-socket-io/socket.min.js
+        lodash:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/lodash/dist/lodash.underscore.min.js
+        frontend_config:
+            inputs:
+                - %kernel.root_dir%/../tmp/frontend_config.js
+            filters:
+                - ?closure
+        select2_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.min.js
                 - %kernel.root_dir%/../bower-vendor/select2/select2_locale_ru.js
+                - %kernel.root_dir%/../bower-vendor/angular-ui-select2/src/select2.js
+            filters:
+                - ?closure
         select2_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.css
@@ -129,30 +175,53 @@ assetic:
         moment_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/momentjs/min/moment-with-langs.min.js
-        angular_moment:
-            inputs:
+                - %kernel.root_dir%/../bower-vendor/twix/bin/twix.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-moment/angular-moment.min.js
         daterangepicker:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker.js
+            filters:
+                - ?closure
         daterangepicker_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker-bs3.css
+        highcharts:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/highcharts.com/js/highcharts.src.js
+                - %kernel.root_dir%/../bower-vendor/highcharts-ng/dist/highcharts-ng.min.js
+            filters:
+                - ?closure
+        analytics_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/analytics-templates.js
+            filters:
+                - ?closure
+        advertiser_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/advertiser-templates.js
+            filters:
+                - ?closure
+        profile_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/profile-templates.js
+            filters:
+                - ?closure
+        publisher_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/publisher-templates.js
+            filters:
+                - ?closure
+        security_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/security-templates.js
+            filters:
+                - ?closure
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
                 - %kernel.root_dir%/../web/js/fos_js_routes.js
             filters:
                 - ?closure
-        d3:
-            inputs:
-                - %kernel.root_dir%/../bower-vendor/d3/d3.min.js
-        c3:
-            inputs:
-                - %kernel.root_dir%/../bower-vendor/c3/c3.min.js
-        c3_css:
-            inputs:
-                - %kernel.root_dir%/../bower-vendor/c3/c3.css
 # Doctrine Configuration
 doctrine:
     dbal:
@@ -177,6 +246,10 @@ doctrine:
                 from_unixtime: Vifeed\SystemBundle\DQL\FromUnixtimeFunction
                 date_format: Vifeed\SystemBundle\DQL\DateFormatFunction
         result_cache_driver: redis
+        filters:
+            softdeleteable:
+                class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
+                enabled: true
 
 
 # Swiftmailer Configuration
@@ -219,6 +292,10 @@ fos_user:
         confirmation:
             enabled:    true
             template:   VifeedUserBundle:Registration:email.html.twig
+    resetting:
+         form:
+             type: resetting
+             name: resetting
     from_email:
         address: no-reply@vifeed.co
         sender_name: vifeed
@@ -266,84 +343,19 @@ karser_robokassa:
     password2: %robokassa.password2%
     test: false
 
+chewbacco_payment_qiwi_wallet:
+    login: %qiwi.login%
+    password: %qiwi.password%
+
+jms_payment_paypal:
+    username: %paypal.username%
+    password: %paypal.password%
+    signature: %paypal.api_signature%
+    debug: false
+
 cayetanosoriano_hashids:
     salt: %cayetanosoriano_hashids.salt%
     min_hash_length: %cayetanosoriano_hashids.min_hash_length%
-
-doctrine_cache:
-    providers:
-        gearman_cache:
-            type: file_system
-            namespace: doctrine_cache.ns.gearman
-
-gearman:
-   # Bundles will parsed searching workers
-#   bundles:
-#      # Name of bundle
-#      AcmeBundle:
-#
-#         # Bundle name
-#         name: MmoreramerinoTestBundle
-#
-#         # Bundle search can be enabled or disabled
-#         active: true
-#
-#         # If any include is defined, Only these namespaces will be parsed
-#         # Otherwise, full Bundle will be parsed
-#         include:
-#            - Services
-#            - EventListener
-#
-#         # Namespaces this Bundle will ignore when parsing
-#         ignore:
-#            - DependencyInjection
-#            - Resources
-
-   # default values
-   # All these values will be used if are not overwritten in Workers or jobs
-   defaults:
-
-      # Default method related with all jobs
-      # do // deprecated as of pecl/gearman 1.0.0. Use doNormal
-      # doNormal
-      # doBackground
-      # doHigh
-      # doHighBackground
-      # doLow
-      # doLowBackground
-      method: doNormal
-
-      # Default number of executions before job dies.
-      # If annotations defined, will be overwritten
-      # If empty, 0 is defined by default
-      iterations: 150
-
-      # execute callbacks after operations using Kernel events
-      callbacks: true
-
-      # Prefix in all jobs
-      # If empty name will not be modified
-      # Useful for rename jobs in different environments
-      job_prefix: null
-
-      # Autogenerate unique key in jobs/tasks if not set
-      # This key is unique given a Job name and a payload serialized
-      generate_unique_key: true
-
-      # Prepend namespace when callableName is built
-      # By default this variable is set as true
-      workers_name_prepend_namespace: true
-
-   # Server list where workers and clients will connect to
-   # Each server must contain host and port
-   # If annotations defined, will be full overwritten
-   #
-   # If servers empty, simple localhost server is defined by default
-   # If port empty, 4730 is defined by efault
-   servers:
-      localhost:
-         host: 127.0.0.1
-         port: 4730
 
 old_sound_rabbit_mq:
     connections:
@@ -386,3 +398,14 @@ daemon:
 #uecode:
 #    daemons:
 #        test: ~
+
+stof_doctrine_extensions:
+    default_locale: ru_RU
+    orm:
+        default:
+            softdeleteable: true
+
+bank_payment:
+    templates:
+        receipt: ::receipt.html.twig
+        transfer: ::transfer.html.twig

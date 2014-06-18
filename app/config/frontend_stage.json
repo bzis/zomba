@@ -1,0 +1,8 @@
+{
+  "ENV": "staging",
+  "nodeHost": "tracker.vifeed.co",
+  "trackerPath": "http://zombakka.com/videos",
+  "apiPath": "/api",
+  "statsPath": "http://tracker.vifeed.co:8081",
+  "vkKey": "4325637"
+}

@@ -1,0 +1,8 @@
+{
+  "ENV": "production",
+  "nodeHost": "tracker.vifeed.co",
+  "trackerPath": "http://zomba.me",
+  "apiPath": "/api",
+  "statsPath": "http://tracker.vifeed.co:8081",
+  "vkKey": "4345643"
+}

@@ -30,11 +30,8 @@ assetic:
 karser_robokassa:
     test: true
 
-doctrine_cache:
-    providers:
-        gearman_cache:
-            type: array
-            namespace: doctrine_cache.ns.gearman
+jms_payment_paypal:
+    debug: true # when true, connect to PayPal sandbox; uses kernel debug value when not specified
 
 #swiftmailer:
 #    delivery_address: me@example.com

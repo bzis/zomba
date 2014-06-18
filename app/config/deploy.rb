@@ -1,4 +1,5 @@
-require 'flowdock/capistrano'
+require 'capistrano/flowdock'
+
 # for Flowdock Gem notifications
 set :flowdock_project_name, 'vifeed'
 set :flowdock_deploy_tags, ['frontend']
@@ -58,8 +59,8 @@ namespace :deploy do
     puts '--> Restarting nginx'.green
     run 'sudo /etc/init.d/php5-fpm restart'
     puts '--> Restarting php5-fpm'.green
-    # run 'sudo service varnish restart'
-    # puts '--> Restarting varnish'.green
+    run 'sudo service varnish restart'
+    puts '--> Restarting varnish'.green
     run 'sudo supervisorctl update'
     puts '--> Updating supervisord commands'.green
     run 'sudo supervisorctl start all'
@@ -67,10 +68,12 @@ namespace :deploy do
   end
 end
 
+after "deploy:update", "deploy:cleanup"
+
 before 'symfony:cache:warmup', 'symfony:doctrine:migrations:migrate'
 
 before 'symfony:assetic:dump' do
-  run "sh -c 'cd #{latest_release} && npm install'"
+  run "sh -c 'cd #{latest_release} && npm cache clear && npm install'"
   run "sh -c 'cd #{latest_release} && bower cache clean && bower install'"
   run "sh -c 'cd #{latest_release} && php app/console fos:js-routing:dump --env=prod'"
   run "sh -c 'cd #{latest_release} && grunt'"
@@ -85,7 +88,7 @@ set :parameters_file, false
 
 task :upload_parameters do
   origin_file = parameters_dir + '/' + parameters_file if parameters_dir && parameters_file
-  if origin_file && File.exists?(origin_file)
+  if origin_file && File.exist?(origin_file)
     ext = File.extname(parameters_file)
     relative_path = 'app/config/parameters' + ext
 

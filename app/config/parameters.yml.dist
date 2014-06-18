@@ -15,10 +15,12 @@ parameters:
     locale:            ru
     secret:            'R87iwvZtvpvcjbctdcbufLG[sbht7TKjW#ALeGQVMe@gUeah/JwB3QotuMr[it'
 
+    assetic.ruby.bin: /usr/bin/ruby
     assetic.filter.compass.bin: '/usr/local/bin/compass'
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
-    assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/images/'
+    assetic.filter.compass.http_generated_images_path: /
+    assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/'
     assetic.cdn_url: 'http://vifeed.dev'
     assetic.cdn_path: "%kernel.root_dir%/../web"
 
@@ -34,12 +36,23 @@ parameters:
     robokassa.password1: 'DZ1oZrZc9U8e'
     robokassa.password2: 'dEv56kZLMA2X'
 
+    qiwi.login: 'qiwi_login'
+    qiwi.password: 'qiwi_pass'
+
+    paypal.username: 'paypal_username'
+    paypal.password: 'paypal_pass'
+    paypal.api_signature: 'paypal.api_signature'
+
     redis_dns.default: redis://localhost/1
     redis_dns.session: redis://localhost/2
     redis_dns.doctrine: redis://localhost/3
 
     cayetanosoriano_hashids.salt: 'randomsalt'
     cayetanosoriano_hashids.min_hash_length: 6
+
+    google.api.key: ''
+
+    tracker.host: node-app.dev
 
     vifeed:
         # комиссия системы
@@ -50,3 +63,11 @@ parameters:
         # фактически, это количество показов, стоимость которых резервируется системой
         # например, если стоимость просмотра 2 рубля и delta=3, то кампания перестанет показываться, когда на счёту меньше 6 рублей
         delta: 1
+        company_name: ''
+        inn: ''
+        bank_name: ''
+        corr_number: ''
+        bik: ''
+        account_number: ''
+        bank_account_nubmer: ''
+        kpp: ''

@@ -1,27 +1,36 @@
 {
-    "name": "vifeed",
-    "version": "0.1.2",
-    "dependencies": {
-        "jquery": "2.1.0",
-        "parallax": "https://github.com/wagerfield/parallax.git",
-        "angular": "1.2.13",
-        "angular-route": "1.2.13",
-        "angular-resource": "1.2.13",
-        "angular-mocks": "1.2.13",
-        "angular-sanitize": "1.2.13",
-        "xapu-angular-cookies": "https://github.com/xapu/angularjs-cookies.git",
-        "ngprogress-lite": "https://github.com/voronianski/ngprogress-lite.git",
-        "select2": "3.4.5",
-        "angular-ui-select2": "0.0.5",
-        "select2-bootstrap-css": "https://github.com/t0m/select2-bootstrap-css.git#bootstrap3",
-        "bootstrap-sass": "*",
-        "crypto-js": "http://crypto-js.googlecode.com/files/CryptoJS%20v3.1.2.zip",
-        "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git",
-        "bootstrap-daterangepicker": "https://github.com/dangrossman/bootstrap-daterangepicker.git",
-        "angular-moment": "0.6.2",
-        "c3": "0.1.16"
-    },
-    "resolutions": {
-        "jquery": "2.1.0"
-    }
+  "name": "vifeed",
+  "version": "0.1.3",
+  "dependencies": {
+    "jquery": "2.1.0",
+    "parallax": "https://github.com/wagerfield/parallax.git",
+    "angular": "1.2.16",
+    "angular-route": "1.2.16",
+    "angular-resource": "1.2.16",
+    "angular-sanitize": "1.2.16",
+    "angular-socket-io": "https://github.com/btford/angular-socket-io.git",
+    "xapu-angular-cookies": "https://github.com/xapu/angularjs-cookies.git",
+    "ngprogress-lite": "https://github.com/voronianski/ngprogress-lite.git",
+    "select2": "3.4.5",
+    "angular-ui-select2": "0.0.5",
+    "select2-bootstrap-css": "https://github.com/t0m/select2-bootstrap-css.git#bootstrap3",
+    "bootstrap-sass-twbs": "3.1.1",
+    "crypto-js": "http://crypto-js.googlecode.com/files/CryptoJS%20v3.1.2.zip",
+    "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git",
+    "bootstrap-daterangepicker": "https://github.com/dangrossman/bootstrap-daterangepicker.git",
+    "angular-moment": "0.6.2",
+    "highcharts.com": "https://github.com/highslide-software/highcharts.com.git",
+    "highcharts-ng": "https://github.com/pablojim/highcharts-ng.git",
+    "twix": "https://github.com/icambron/twix.js.git",
+    "angular-google-maps": "https://github.com/nlaplante/angular-google-maps.git",
+    "skrollr": "0.6.23",
+    "jquery.easy-pie-chart": "2.1.4"
+  },
+  "devDependencies": {
+    "socket.io-client": "latest",
+    "angular-mocks": "1.2.16"
+  },
+  "resolutions": {
+    "angular": "1.2.16"
+   }
 }
