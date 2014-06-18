@@ -83,24 +83,26 @@ after 'symfony:assetic:dump' do
   run "sh -c 'cd #{latest_release} && grunt after_assetic_dump'"
 end
 
-set :parameters_dir, 'app/config/parameters'
-set :parameters_file, false
+set :parameters_dir, 'app/config'
+set :parameters_files, []
 
 task :upload_parameters do
-  origin_file = parameters_dir + '/' + parameters_file if parameters_dir && parameters_file
-  if origin_file && File.exist?(origin_file)
-    ext = File.extname(parameters_file)
-    relative_path = 'app/config/parameters' + ext
+  parameters_files.each { |file_name, source|
+    origin_file = parameters_dir + '/' + source if parameters_dir && source
+    if origin_file && File.exist?(origin_file)
+      ext = File.extname(source)
+      relative_path = 'app/config/' + file_name + ext
 
-    if shared_files && shared_files.include?(relative_path)
-      destination_file = shared_path + '/' + relative_path
-    else
-      destination_file = latest_release + '/' + relative_path
+      if shared_files && shared_files.include?(relative_path)
+        destination_file = shared_path + '/' + relative_path
+      else
+        destination_file = latest_release + '/' + relative_path
+      end
+      try_sudo "mkdir -p #{File.dirname(destination_file)}"
+
+      top.upload(origin_file, destination_file)
     end
-    try_sudo "mkdir -p #{File.dirname(destination_file)}"
-
-    top.upload(origin_file, destination_file)
-  end
+  }
 end
 
 before 'deploy:share_childs', 'upload_parameters'

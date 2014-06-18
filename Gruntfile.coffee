@@ -2,13 +2,14 @@
 module.exports = (grunt) ->
   grunt.initConfig
 
-    aws: grunt.file.readJSON('/home/deploy/grunt-aws.json'),
+    grunt_config: grunt.file.readJSON('./app/config/grunt.json'),
     invalidate_cloudfront:
       options:
-        key: "<%= aws.key %>"
-        secret: "<%= aws.secret %>"
-        distribution: "EWM7POCBEJEWK"
-        bucket: "stage-frontend-cdn"
+        aws_key: "<%= grunt_config.aws_key %>"
+        aws_secret: "<%= grunt_config.aws_secret %>"
+        aws_bucket: "<%= grunt_config.aws_s3_bucket %>"
+        aws_cdn_host: "<%= grunt_config.aws_cdn_host %>"
+        aws_cloudfront_distribution: "<%= grunt_config.aws_cloudfront_distribution %>"
 
       assets:
         files: [
@@ -36,10 +37,10 @@ module.exports = (grunt) ->
 
     s3:
       options:
-        key: "<%= aws.key %>"
-        secret: "<%= aws.secret %>"
-        distribution: "EWM7POCBEJEWK"
-        bucket: "stage-frontend-cdn"
+        key: "<%= grunt_config.aws_key %>"
+        secret: "<%= grunt_config.aws_secret %>"
+        distribution: "<%= grunt_config.aws_cloudfront_distribution %>"
+        bucket: "<%= grunt_config.aws_s3_bucket %>"
         access: "public-read"
         headers:
 
@@ -49,10 +50,10 @@ module.exports = (grunt) ->
 
       js_and_css:
         options:
-          key: "<%= aws.key %>"
-          secret: "<%= aws.secret %>"
-          distribution: "EWM7POCBEJEWK"
-          bucket: "stage-frontend-cdn"
+          key: "<%= grunt_config.aws_key %>"
+          secret: "<%= grunt_config.aws_secret %>"
+          distribution: "<%= grunt_config.aws_cloudfront_distribution %>"
+          bucket: "<%= grunt_config.aws_s3_bucket %>"
           access: "public-read"
 
         upload: [
@@ -130,7 +131,7 @@ module.exports = (grunt) ->
         overwrite: true # overwrite matched source files
         replacements: [
           from: /(?:\.\.\/)(select2\.png|select2x2\.png|select2-spinner\.gif)/g
-          to: "http://stage-cdn.vifeed.co/images/select2/$1"
+          to: "http://<%= grunt_config.aws_cdn_host %>/images/select2/$1"
         ]
 
       bundles:
@@ -138,7 +139,7 @@ module.exports = (grunt) ->
         overwrite: true # overwrite matched source files
         replacements: [
           from: /url\((["'])\/bundles\//
-          to: "url($1http://stage-cdn.vifeed.co/bundles/"
+          to: "url($1http://<%= grunt_config.aws_cdn_host %>/bundles/"
         ]
 
     html2js:
@@ -229,7 +230,7 @@ module.exports = (grunt) ->
       production:
         options:
           html: "vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/views/Default/favicon.html.twig"
-          HTMLPrefix: "//stage-cdn.vifeed.co/bundles/vifeedfrontend/images/favicons/"
+          HTMLPrefix: "//<%= grunt_config.aws_cdn_host %>/bundles/vifeedfrontend/images/favicons/"
           trueColor: true
           precomposed: true
           appleTouchBackgroundColor: "auto" # none, auto, #color
