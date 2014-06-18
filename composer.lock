@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a88dcec6833ac2de4798c13a24abe30c90feb057"
+                "reference": "7fb0c301724e3ae2bc9a6d9e42afc8478b89fde8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a88dcec6833ac2de4798c13a24abe30c90feb057",
-                "reference": "a88dcec6833ac2de4798c13a24abe30c90feb057",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/7fb0c301724e3ae2bc9a6d9e42afc8478b89fde8",
+                "reference": "7fb0c301724e3ae2bc9a6d9e42afc8478b89fde8",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-14 07:10:57"
+            "time": "2014-06-18 07:15:04"
         },
         {
             "name": "guzzle/guzzle",
@@ -2981,12 +2981,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "e6ea2d0e23535b849acadb44ba226eb125941aed"
+                "reference": "75ce2775212d40b5d8d98ac83b413468b00841ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/e6ea2d0e23535b849acadb44ba226eb125941aed",
-                "reference": "e6ea2d0e23535b849acadb44ba226eb125941aed",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/75ce2775212d40b5d8d98ac83b413468b00841ae",
+                "reference": "75ce2775212d40b5d8d98ac83b413468b00841ae",
                 "shasum": ""
             },
             "require": {
@@ -3036,7 +3036,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2014-05-20 09:20:22"
+            "time": "2014-06-18 06:10:26"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -3659,7 +3659,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "43e51473b69f70d7f7ff9572f6b699c945e0a82c"
+                "reference": "f3f800e78ed7bed4d69bdf0d8a102f55c0edcde1"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3671,7 +3671,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-11 12:51:56"
+            "time": "2014-06-17 08:34:46"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3698,7 +3698,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "17814b09272709f61bfd62ced808386101681def"
+                "reference": "4af8a80f5d87f0d0bdfdbd2e0521767ef90e9e28"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3714,7 +3714,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-06-11 15:35:56"
+            "time": "2014-06-18 09:20:04"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3784,7 +3784,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "813c2bfb1ea66520558a660d4162e8f8b27dcbc5"
+                "reference": "b20acb004e234238ce64d03264cf4d88aa6a5477"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3797,7 +3797,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-06-09 13:48:29"
+            "time": "2014-06-18 09:20:11"
         },
         {
             "name": "vifeed/video-promo-bundle",
