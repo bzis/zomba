@@ -213,7 +213,6 @@ module.exports = (grunt) ->
         dest: "tmp/frontend_config.js"
         constants:
           "APP.CONFIG": ""
-
       development:
         constants:
           "APP.CONFIG": grunt.file.readJSON("app/config/frontend_dev.json")
@@ -267,6 +266,7 @@ module.exports = (grunt) ->
           dest: "tmp/videos"
         ]
 
+
   grunt.loadNpmTasks "grunt-favicons"
   grunt.loadNpmTasks "grunt-ng-constant"
   grunt.loadNpmTasks "grunt-text-replace"
@@ -278,11 +278,14 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-invalidate-cloudfront"
   grunt.loadNpmTasks "grunt-contrib-watch"
 
+  # grunt.registerTask 'deploy', "Deploy web app", ->
+  #   console.log grunt.config.get('grunt_config').env
+
   grunt.registerTask "default", [
     "html2js"
-    "ngconstant:production"
     "curl"
     "imagemin"
+    "ngconstant:" + grunt.config.get('grunt_config').env
   ]
   grunt.registerTask "release_videos", [
     "responsive_videos"
