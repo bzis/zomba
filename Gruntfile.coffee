@@ -2,14 +2,12 @@
 module.exports = (grunt) ->
   grunt.initConfig
 
-    grunt_config: grunt.file.readJSON('./app/config/grunt.json'),
+    grunt_config: grunt.file.readJSON('app/config/grunt.json'),
     invalidate_cloudfront:
       options:
-        aws_key: "<%= grunt_config.aws_key %>"
-        aws_secret: "<%= grunt_config.aws_secret %>"
-        aws_bucket: "<%= grunt_config.aws_s3_bucket %>"
-        aws_cdn_host: "<%= grunt_config.aws_cdn_host %>"
-        aws_cloudfront_distribution: "<%= grunt_config.aws_cloudfront_distribution %>"
+        key: "<%= grunt_config.aws_key %>"
+        secret: "<%= grunt_config.aws_secret %>"
+        distribution: "<%= grunt_config.aws_cloudfront_distribution %>"
 
       assets:
         files: [
@@ -43,7 +41,6 @@ module.exports = (grunt) ->
         bucket: "<%= grunt_config.aws_s3_bucket %>"
         access: "public-read"
         headers:
-
           # Two Year cache policy (1000 * 60 * 60 * 24 * 730)
           "Cache-Control": "max-age=630720000, public"
           Expires: new Date(Date.now() + 63072000000).toUTCString()
