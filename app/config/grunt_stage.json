@@ -1,0 +1,7 @@
+{
+  "aws_key": "AKIAI7D3BDMGHMHROLSA",
+  "aws_secret": "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",
+  "aws_s3_bucket": "frontend-cdn-stage",
+  "aws_cdn_host": "cdn-stage.vifeed.co",
+  "aws_cloudfront_distribution": "E1DUJBKE7P5MDY"
+}
