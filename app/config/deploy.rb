@@ -92,13 +92,9 @@ namespace :frontend do
       run "sh -c 'cd #{latest_release} && grunt --verbose'"
       puts '--> grunt default'.green
     end
-    task :ngconstant, role: :app do
-      run "sh -c 'cd #{latest_release} && grunt ngconstant:production --verbose'"
-      puts '--> grunt default'.green
-    end
     task :after_assetic_dump, role: :app do
       run "sh -c 'cd #{latest_release} && grunt after_assetic_dump'"
-      puts '--> grunt default'.green
+      puts '--> grunt after_assetic_dump'.green
     end
   end
 end
