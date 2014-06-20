@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "7fb0c301724e3ae2bc9a6d9e42afc8478b89fde8"
+                "reference": "a62fc373aebd78160db4dff4a8fd63aae5ea9cc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/7fb0c301724e3ae2bc9a6d9e42afc8478b89fde8",
-                "reference": "7fb0c301724e3ae2bc9a6d9e42afc8478b89fde8",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a62fc373aebd78160db4dff4a8fd63aae5ea9cc9",
+                "reference": "a62fc373aebd78160db4dff4a8fd63aae5ea9cc9",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-18 07:15:04"
+            "time": "2014-06-20 07:17:19"
         },
         {
             "name": "guzzle/guzzle",
@@ -3602,7 +3602,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/BankPaymentBundle.git",
-                "reference": "e63009480034903b6b1a8152f0168cee18dad3bf"
+                "reference": "d736a9e4122368ec3bfcd33e662c089758591004"
             },
             "require": {
                 "jms/payment-core-bundle": "dev-master",
@@ -3627,7 +3627,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-06-11 15:36:24"
+            "time": "2014-06-20 21:13:46"
         },
         {
             "name": "vifeed/campaign-bundle",
@@ -3698,7 +3698,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "4af8a80f5d87f0d0bdfdbd2e0521767ef90e9e28"
+                "reference": "19fbad2b2701105e196f27f128b073ae3c94c890"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3714,7 +3714,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-06-18 09:20:04"
+            "time": "2014-06-20 21:12:20"
         },
         {
             "name": "vifeed/platform-bundle",
