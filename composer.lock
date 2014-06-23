@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "b0b24e01e514f19060a91a928c773c805ef8208f"
+                "reference": "a62fc373aebd78160db4dff4a8fd63aae5ea9cc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/b0b24e01e514f19060a91a928c773c805ef8208f",
-                "reference": "b0b24e01e514f19060a91a928c773c805ef8208f",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a62fc373aebd78160db4dff4a8fd63aae5ea9cc9",
+                "reference": "a62fc373aebd78160db4dff4a8fd63aae5ea9cc9",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-19 07:16:11"
+            "time": "2014-06-20 07:17:19"
         },
         {
             "name": "guzzle/guzzle",
@@ -3163,16 +3163,15 @@
         {
             "name": "symfony/assetic-bundle",
             "version": "dev-master",
-            "target-dir": "Symfony/Bundle/AsseticBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "df10fae8852a5733e671b4ba37cf2f4beafa7561"
+                "reference": "08dcf50de5dd2411dcb8732fa96e0f95ff16628e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/df10fae8852a5733e671b4ba37cf2f4beafa7561",
-                "reference": "df10fae8852a5733e671b4ba37cf2f4beafa7561",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/08dcf50de5dd2411dcb8732fa96e0f95ff16628e",
+                "reference": "08dcf50de5dd2411dcb8732fa96e0f95ff16628e",
                 "shasum": ""
             },
             "require": {
@@ -3200,8 +3199,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Symfony\\Bundle\\AsseticBundle": ""
+                "psr-4": {
+                    "Symfony\\Bundle\\AsseticBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3222,7 +3221,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-06-04 01:48:14"
+            "time": "2014-06-21 16:10:11"
         },
         {
             "name": "symfony/icu",
@@ -3612,7 +3611,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/BankPaymentBundle.git",
-                "reference": "e63009480034903b6b1a8152f0168cee18dad3bf"
+                "reference": "d736a9e4122368ec3bfcd33e662c089758591004"
             },
             "require": {
                 "jms/payment-core-bundle": "dev-master",
@@ -3637,7 +3636,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-06-11 15:36:24"
+            "time": "2014-06-20 21:13:46"
         },
         {
             "name": "vifeed/campaign-bundle",
@@ -3708,7 +3707,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "4af8a80f5d87f0d0bdfdbd2e0521767ef90e9e28"
+                "reference": "19fbad2b2701105e196f27f128b073ae3c94c890"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3724,7 +3723,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-06-18 09:20:04"
+            "time": "2014-06-20 21:12:20"
         },
         {
             "name": "vifeed/platform-bundle",
