@@ -2651,12 +2651,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "18853d1dbb7d35f7c60bcb161447b16c0753e2a3"
+                "reference": "8373663486b836813987ab7f0ef03d388e8fc146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/18853d1dbb7d35f7c60bcb161447b16c0753e2a3",
-                "reference": "18853d1dbb7d35f7c60bcb161447b16c0753e2a3",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/8373663486b836813987ab7f0ef03d388e8fc146",
+                "reference": "8373663486b836813987ab7f0ef03d388e8fc146",
                 "shasum": ""
             },
             "require": {
@@ -2693,7 +2693,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-06-10 08:58:02"
+            "time": "2014-06-23 12:25:30"
         },
         {
             "name": "psr/log",
@@ -3658,7 +3658,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "fe77496aaeb8f05fa309266f6d1d5de48e51e9b9"
+                "reference": "c56bf0c9fa0e26d3d06822d53fb7fb0a8af90069"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3670,7 +3670,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-23 12:11:21"
+            "time": "2014-06-23 19:23:37"
         },
         {
             "name": "vifeed/geo-bundle",
