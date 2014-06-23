@@ -3157,16 +3157,15 @@
         {
             "name": "symfony/assetic-bundle",
             "version": "dev-master",
-            "target-dir": "Symfony/Bundle/AsseticBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "df10fae8852a5733e671b4ba37cf2f4beafa7561"
+                "reference": "08dcf50de5dd2411dcb8732fa96e0f95ff16628e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/df10fae8852a5733e671b4ba37cf2f4beafa7561",
-                "reference": "df10fae8852a5733e671b4ba37cf2f4beafa7561",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/08dcf50de5dd2411dcb8732fa96e0f95ff16628e",
+                "reference": "08dcf50de5dd2411dcb8732fa96e0f95ff16628e",
                 "shasum": ""
             },
             "require": {
@@ -3194,8 +3193,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Symfony\\Bundle\\AsseticBundle": ""
+                "psr-4": {
+                    "Symfony\\Bundle\\AsseticBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3216,7 +3215,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-06-04 01:48:14"
+            "time": "2014-06-21 16:10:11"
         },
         {
             "name": "symfony/icu",
@@ -3659,7 +3658,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "f3f800e78ed7bed4d69bdf0d8a102f55c0edcde1"
+                "reference": "fe77496aaeb8f05fa309266f6d1d5de48e51e9b9"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3671,7 +3670,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-17 08:34:46"
+            "time": "2014-06-23 12:11:21"
         },
         {
             "name": "vifeed/geo-bundle",
