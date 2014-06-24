@@ -12,7 +12,7 @@ parameters:
     mailer_password: Ap70NrgTyvBYmJ06hGATIcfeA96oWIG/utKvijhewKD5
     locale: ru
     secret: 'YMnfCuNL[QXTmMsshpnnRjN6GgNPDosJR@JK4W.ugmHh%inc>p7nyzsCWV'
-    developer_email: no-reply@vifeed.co
+    developer_email: no-reply@zombakka.com
     assetic.ruby.bin: /opt/rbenv/versions/2.1.2/bin/ruby
     assetic.filter.compass.bin: /opt/rbenv/versions/2.1.2/bin/compass
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
