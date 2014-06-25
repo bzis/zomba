@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a62fc373aebd78160db4dff4a8fd63aae5ea9cc9"
+                "reference": "a1eac083b801e3d694fc7116685f28981413c9f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a62fc373aebd78160db4dff4a8fd63aae5ea9cc9",
-                "reference": "a62fc373aebd78160db4dff4a8fd63aae5ea9cc9",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a1eac083b801e3d694fc7116685f28981413c9f0",
+                "reference": "a1eac083b801e3d694fc7116685f28981413c9f0",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-20 07:17:19"
+            "time": "2014-06-25 07:22:40"
         },
         {
             "name": "guzzle/guzzle",
@@ -2478,12 +2478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "56124e7c409e80c486c291c624e0f048d2d0184d"
+                "reference": "ea2201762d5b7b209bbd211a045c236d65ae998f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/56124e7c409e80c486c291c624e0f048d2d0184d",
-                "reference": "56124e7c409e80c486c291c624e0f048d2d0184d",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/ea2201762d5b7b209bbd211a045c236d65ae998f",
+                "reference": "ea2201762d5b7b209bbd211a045c236d65ae998f",
                 "shasum": ""
             },
             "require": {
@@ -2544,7 +2544,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-06-01 13:56:45"
+            "time": "2014-06-25 08:56:43"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2651,12 +2651,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "18853d1dbb7d35f7c60bcb161447b16c0753e2a3"
+                "reference": "8373663486b836813987ab7f0ef03d388e8fc146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/18853d1dbb7d35f7c60bcb161447b16c0753e2a3",
-                "reference": "18853d1dbb7d35f7c60bcb161447b16c0753e2a3",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/8373663486b836813987ab7f0ef03d388e8fc146",
+                "reference": "8373663486b836813987ab7f0ef03d388e8fc146",
                 "shasum": ""
             },
             "require": {
@@ -2693,7 +2693,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-06-10 08:58:02"
+            "time": "2014-06-23 12:25:30"
         },
         {
             "name": "psr/log",
@@ -2932,17 +2932,17 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.3.4",
+            "version": "v2.3.5",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee"
+                "reference": "8b7a33aa3d22388443b6de0b0cf184122e9f60d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
-                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/8b7a33aa3d22388443b6de0b0cf184122e9f60d2",
+                "reference": "8b7a33aa3d22388443b6de0b0cf184122e9f60d2",
                 "shasum": ""
             },
             "require": {
@@ -2978,7 +2978,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2013-08-21 18:09:35"
+            "time": "2014-04-28 14:01:06"
         },
         {
             "name": "snc/redis-bundle",
@@ -3645,7 +3645,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "d0e774a15a3877ae223be69343c14d709931f587"
+                "reference": "d12543a0f5e2c91dea7a9323aabcdc89606b461c"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3659,7 +3659,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-06-16 12:25:02"
+            "time": "2014-06-25 08:58:58"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3668,7 +3668,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "f3f800e78ed7bed4d69bdf0d8a102f55c0edcde1"
+                "reference": "a710008a44223358c63cc54ec15331617e6cd604"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3680,7 +3680,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-17 08:34:46"
+            "time": "2014-06-25 08:51:29"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3707,7 +3707,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "19fbad2b2701105e196f27f128b073ae3c94c890"
+                "reference": "02b1e075093728eee4ac135f4f3b7753cf5f0484"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3723,7 +3723,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-06-20 21:12:20"
+            "time": "2014-06-25 08:58:55"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3793,7 +3793,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "b20acb004e234238ce64d03264cf4d88aa6a5477"
+                "reference": "f09a8f54cc9a3a642b7fe4f4faf83b3658b0202c"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3806,7 +3806,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-06-18 09:20:11"
+            "time": "2014-06-24 06:20:33"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -3815,7 +3815,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "5ac09dbba1c20c41c2f2725f00b9b8cbe316a39a"
+                "reference": "0ddb55d24b8624386863b8b7594f498ff2fb6094"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3824,7 +3824,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-06-10 08:57:18"
+            "time": "2014-06-23 12:21:44"
         },
         {
             "name": "vifeed/video-view-bundle",
