@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a62fc373aebd78160db4dff4a8fd63aae5ea9cc9"
+                "reference": "a1eac083b801e3d694fc7116685f28981413c9f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a62fc373aebd78160db4dff4a8fd63aae5ea9cc9",
-                "reference": "a62fc373aebd78160db4dff4a8fd63aae5ea9cc9",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a1eac083b801e3d694fc7116685f28981413c9f0",
+                "reference": "a1eac083b801e3d694fc7116685f28981413c9f0",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-20 07:17:19"
+            "time": "2014-06-25 07:22:40"
         },
         {
             "name": "guzzle/guzzle",
@@ -2478,12 +2478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "56124e7c409e80c486c291c624e0f048d2d0184d"
+                "reference": "ea2201762d5b7b209bbd211a045c236d65ae998f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/56124e7c409e80c486c291c624e0f048d2d0184d",
-                "reference": "56124e7c409e80c486c291c624e0f048d2d0184d",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/ea2201762d5b7b209bbd211a045c236d65ae998f",
+                "reference": "ea2201762d5b7b209bbd211a045c236d65ae998f",
                 "shasum": ""
             },
             "require": {
@@ -2544,7 +2544,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-06-01 13:56:45"
+            "time": "2014-06-25 08:56:43"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3637,7 +3637,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "d0e774a15a3877ae223be69343c14d709931f587"
+                "reference": "d12543a0f5e2c91dea7a9323aabcdc89606b461c"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3651,7 +3651,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-06-16 12:25:02"
+            "time": "2014-06-25 08:58:58"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3660,7 +3660,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "cdba3c14380eb96941196f4b57d870ec99fc3368"
+                "reference": "a710008a44223358c63cc54ec15331617e6cd604"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3672,7 +3672,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-24 12:04:39"
+            "time": "2014-06-25 08:51:29"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3699,7 +3699,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "19fbad2b2701105e196f27f128b073ae3c94c890"
+                "reference": "02b1e075093728eee4ac135f4f3b7753cf5f0484"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3715,7 +3715,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-06-20 21:12:20"
+            "time": "2014-06-25 08:58:55"
         },
         {
             "name": "vifeed/platform-bundle",
