@@ -3603,7 +3603,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/BankPaymentBundle.git",
-                "reference": "d736a9e4122368ec3bfcd33e662c089758591004"
+                "reference": "a53a0a7a45f9a4c352e920f69be3d6044d94fa83"
             },
             "require": {
                 "jms/payment-core-bundle": "dev-master",
@@ -3628,7 +3628,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-06-20 21:13:46"
+            "time": "2014-06-25 14:28:58"
         },
         {
             "name": "vifeed/campaign-bundle",
