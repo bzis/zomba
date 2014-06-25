@@ -21,7 +21,7 @@ parameters:
     assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/'
     assetic.cdn_url: '//cdn-stage.vifeed.co'
     assetic.cdn_path: "%kernel.root_dir%/../web"
-    social: { VKAppID: '', VKAppSecret: '' }
+    social: { VKAppID: '4325637', VKAppSecret: '' }
     payment.secret: 2ceea4871a6205c421dc3ce9b0a7b350aafe7000
     robokassa.login: 2ceea4871a6205c421dc3ce9b0a7b350aafe7000
     robokassa.password1: DZ1oZrZc9U8e
