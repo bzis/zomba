@@ -2478,12 +2478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "ea2201762d5b7b209bbd211a045c236d65ae998f"
+                "reference": "df7387aec9a471372db3998d67edd739d73b618e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/ea2201762d5b7b209bbd211a045c236d65ae998f",
-                "reference": "ea2201762d5b7b209bbd211a045c236d65ae998f",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/df7387aec9a471372db3998d67edd739d73b618e",
+                "reference": "df7387aec9a471372db3998d67edd739d73b618e",
                 "shasum": ""
             },
             "require": {
@@ -2544,7 +2544,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-06-25 08:56:43"
+            "time": "2014-06-25 22:04:36"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3637,7 +3637,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "d12543a0f5e2c91dea7a9323aabcdc89606b461c"
+                "reference": "88fda783b725fe80e5ff439a9c6706bbfd27d4e0"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3651,7 +3651,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-06-25 08:58:58"
+            "time": "2014-06-25 20:27:01"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3660,7 +3660,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "a088c5f5066186cd3df4d198a417dd8a1d2faf60"
+                "reference": "686763f73058bf6e2799f584df4601005a442f7c"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3672,7 +3672,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-25 15:15:29"
+            "time": "2014-06-25 22:36:32"
         },
         {
             "name": "vifeed/geo-bundle",
