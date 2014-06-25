@@ -27,7 +27,7 @@ parameters:
     developer_email:   dev@example.com
 
     social:
-        VKAppID: ''
+        VKAppID: '4310780'
         VKAppSecret: ''
 
     payment.secret: 'secret'
