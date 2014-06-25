@@ -282,7 +282,7 @@ module.exports = (grunt) ->
     "html2js"
     "curl"
     "imagemin"
-    "ngconstant:" + grunt.config.get('grunt_config').env
+    "ngconstant:" + (grunt.config.get('grunt_config')?.env? || 'development')
   ]
   grunt.registerTask "release_videos", [
     "responsive_videos"
