@@ -44,3 +44,4 @@ security:
             - { path: ^/api/users/reset$, role: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/api/users/login_check$, role: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/api/, role: ROLE_USER }
+            - { path: ^/orders/\d+/bill, role: ROLE_USER }

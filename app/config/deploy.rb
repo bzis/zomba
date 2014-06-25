@@ -5,7 +5,7 @@ set :flowdock_project_name, 'vifeed'
 set :flowdock_deploy_tags, ['frontend']
 set :flowdock_api_token, '99c0b1ff68ca7ff45786742d6430d6a7'
 
-set :stages,        %w(prod staging)
+set :stages,        %w(production staging)
 set :default_stage, 'staging'
 set :stage_dir,     'app/config'
 require 'capistrano/ext/multistage'
@@ -54,12 +54,12 @@ namespace :deploy do
   end
   task :stop, roles: :app, except: { no_release: true } do
   end
-  task :restart, roles: :app, except: { no_release: true } do
+  task :restart, roles: :app do
     run 'sudo /etc/init.d/nginx restart'
     puts '--> Restarting nginx'.green
     run 'sudo /etc/init.d/php5-fpm restart'
     puts '--> Restarting php5-fpm'.green
-    run 'sudo service varnish restart'
+    run 'sudo /etc/init.d/varnish restart'
     puts '--> Restarting varnish'.green
     run 'sudo supervisorctl update'
     puts '--> Updating supervisord commands'.green
@@ -68,39 +68,65 @@ namespace :deploy do
   end
 end
 
+namespace :frontend do
+  task :before_assetic_dump, role: :app do
+    npm_install
+    bower_install
+    fos_js_routing_dump
+    grunt.default
+  end
+  task :npm_install, role: :app do
+    run "sh -c 'cd #{latest_release} && npm cache clear && npm install'"
+    puts '--> bower install'.green
+  end
+  task :bower_install, role: :app do
+    run "sh -c 'cd #{latest_release} && bower cache clean && bower install'"
+    puts '--> npm install'.green
+  end
+  task :fos_js_routing_dump, role: :app do
+    run "sh -c 'cd #{latest_release} && php app/console fos:js-routing:dump --env=prod'"
+    puts '--> fos js routing dump'.green
+  end
+  namespace :grunt do
+    task :default, role: :app do
+      run "sh -c 'cd #{latest_release} && grunt --verbose'"
+      puts '--> grunt default'.green
+    end
+    task :after_assetic_dump, role: :app do
+      run "sh -c 'cd #{latest_release} && grunt after_assetic_dump'"
+      puts '--> grunt after_assetic_dump'.green
+    end
+  end
+end
 after "deploy:update", "deploy:cleanup"
 
 before 'symfony:cache:warmup', 'symfony:doctrine:migrations:migrate'
 
-before 'symfony:assetic:dump' do
-  run "sh -c 'cd #{latest_release} && npm cache clear && npm install'"
-  run "sh -c 'cd #{latest_release} && bower cache clean && bower install'"
-  run "sh -c 'cd #{latest_release} && php app/console fos:js-routing:dump --env=prod'"
-  run "sh -c 'cd #{latest_release} && grunt'"
-end
+before 'symfony:assetic:dump', 'frontend:before_assetic_dump'
 
-after 'symfony:assetic:dump' do
-  run "sh -c 'cd #{latest_release} && grunt after_assetic_dump'"
-end
+after 'symfony:assetic:dump', 'frontend:grunt:after_assetic_dump'
 
-set :parameters_dir, 'app/config/parameters'
-set :parameters_file, false
+set :parameters_dir, 'app/config'
+set :parameters_files, []
 
 task :upload_parameters do
-  origin_file = parameters_dir + '/' + parameters_file if parameters_dir && parameters_file
-  if origin_file && File.exist?(origin_file)
-    ext = File.extname(parameters_file)
-    relative_path = 'app/config/parameters' + ext
+  parameters_files.each { |destination_file_name, origin|
+    origin_file = parameters_dir + '/' + origin if parameters_dir && origin
+    if origin_file && File.exist?(origin_file)
+      ext = File.extname(origin)
+      relative_path = 'app/config/' + destination_file_name.to_s + ext
 
-    if shared_files && shared_files.include?(relative_path)
-      destination_file = shared_path + '/' + relative_path
-    else
-      destination_file = latest_release + '/' + relative_path
+      if shared_files && shared_files.include?(relative_path)
+        destination_file = shared_path + '/' + relative_path
+      else
+        destination_file = latest_release + '/' + relative_path
+      end
+      try_sudo "mkdir -p #{File.dirname(destination_file)}"
+      try_sudo "ls -l #{latest_release}/app/config"
+
+      top.upload(origin_file, destination_file)
     end
-    try_sudo "mkdir -p #{File.dirname(destination_file)}"
-
-    top.upload(origin_file, destination_file)
-  end
+  }
 end
 
 before 'deploy:share_childs', 'upload_parameters'
