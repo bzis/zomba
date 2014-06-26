@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a1eac083b801e3d694fc7116685f28981413c9f0"
+                "reference": "b36dbab9e18c7457afc27fdfe281415cb867d639"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a1eac083b801e3d694fc7116685f28981413c9f0",
-                "reference": "a1eac083b801e3d694fc7116685f28981413c9f0",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/b36dbab9e18c7457afc27fdfe281415cb867d639",
+                "reference": "b36dbab9e18c7457afc27fdfe281415cb867d639",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-25 07:22:40"
+            "time": "2014-06-26 07:23:40"
         },
         {
             "name": "guzzle/guzzle",
@@ -2983,12 +2983,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "75ce2775212d40b5d8d98ac83b413468b00841ae"
+                "reference": "43f8bb8109b6c419b5e8be4b76369e41a9a6070c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/75ce2775212d40b5d8d98ac83b413468b00841ae",
-                "reference": "75ce2775212d40b5d8d98ac83b413468b00841ae",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/43f8bb8109b6c419b5e8be4b76369e41a9a6070c",
+                "reference": "43f8bb8109b6c419b5e8be4b76369e41a9a6070c",
                 "shasum": ""
             },
             "require": {
@@ -3038,7 +3038,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2014-06-18 06:10:26"
+            "time": "2014-06-26 07:48:05"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
