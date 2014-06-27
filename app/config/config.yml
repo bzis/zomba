@@ -32,7 +32,7 @@ twig:
     globals:
         social: %social%
         tracker_host: %tracker.host%
-
+        cdn_url: %assetic.cdn_url%
 # Assetic Configuration
 assetic:
     debug:          %kernel.debug%
@@ -297,7 +297,7 @@ fos_user:
              type: resetting
              name: resetting
     from_email:
-        address: no-reply@zombakka.ru
+        address: no-reply@zombakka.com
         sender_name: zombakka
 
 nelmio_api_doc: ~

@@ -12,7 +12,7 @@ parameters:
     mailer_password: Ap70NrgTyvBYmJ06hGATIcfeA96oWIG/utKvijhewKD5
     locale: ru
     secret: 'YMnfCuNL[QXTmMsshpnnRjN6GgNPDosJR@JK4W.ugmHh%inc>p7nyzsCWV'
-    developer_email: no-reply@vifeed.co
+    developer_email: no-reply@zombakka.com
     assetic.ruby.bin: /opt/rbenv/versions/2.1.2/bin/ruby
     assetic.filter.compass.bin: /opt/rbenv/versions/2.1.2/bin/compass
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
@@ -21,9 +21,9 @@ parameters:
     assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/'
     assetic.cdn_url: '//cdn-stage.vifeed.co'
     assetic.cdn_path: "%kernel.root_dir%/../web"
-    social: { VKAppID: '', VKAppSecret: '' }
+    social: { VKAppID: 4325637, VKAppSecret: '' }
     payment.secret: 2ceea4871a6205c421dc3ce9b0a7b350aafe7000
-    robokassa.login: 2ceea4871a6205c421dc3ce9b0a7b350aafe7000
+    robokassa.login: Zombakka
     robokassa.password1: DZ1oZrZc9U8e
     robokassa.password2: dEv56kZLMA2X
     redis_dns.default: 'redis://stage.nmhes6.0001.euw1.cache.amazonaws.com:6379/1'
@@ -39,8 +39,8 @@ parameters:
     paypal.api_signature: dsfsdf
     tracker.host: 'tracker-stage.vifeed.co'
     vifeed:
-        comission: 0.3
-        min_view_time: 10
+        comission: 0.5
+        min_view_time: 5
         delta: 1
         company_name: ''
         inn: ''

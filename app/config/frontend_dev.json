@@ -1,7 +1,7 @@
 {
   "ENV": "development",
   "nodeHost": "node-app.dev",
-  "trackerPath": "http://vifeed.dev/videos",
+  "trackerPath": "http://videos.vifeed.dev",
   "apiPath": "/api",
   "statsPath": "http://node-app.dev:8081",
   "vkKey": "4310780"
