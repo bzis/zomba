@@ -15,7 +15,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-03-21 12:13:55"
+            "time": "2014-02-27 22:02:00"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -26,7 +26,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-03-21 21:05:24"
+            "time": "2013-12-30 19:48:25"
         },
         {
             "name": "cayetanosoriano/hashids-bundle",
@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a1eac083b801e3d694fc7116685f28981413c9f0"
+                "reference": "b36dbab9e18c7457afc27fdfe281415cb867d639"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a1eac083b801e3d694fc7116685f28981413c9f0",
-                "reference": "a1eac083b801e3d694fc7116685f28981413c9f0",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/b36dbab9e18c7457afc27fdfe281415cb867d639",
+                "reference": "b36dbab9e18c7457afc27fdfe281415cb867d639",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-25 07:22:40"
+            "time": "2014-06-26 07:23:40"
         },
         {
             "name": "guzzle/guzzle",
@@ -1991,7 +1991,7 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2478,12 +2478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "ea2201762d5b7b209bbd211a045c236d65ae998f"
+                "reference": "df7387aec9a471372db3998d67edd739d73b618e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/ea2201762d5b7b209bbd211a045c236d65ae998f",
-                "reference": "ea2201762d5b7b209bbd211a045c236d65ae998f",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/df7387aec9a471372db3998d67edd739d73b618e",
+                "reference": "df7387aec9a471372db3998d67edd739d73b618e",
                 "shasum": ""
             },
             "require": {
@@ -2544,7 +2544,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-06-25 08:56:43"
+            "time": "2014-06-25 22:04:36"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2869,9 +2869,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "The base bundle for the Symfony Distributions",
@@ -2918,9 +2916,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "This bundle provides a way to configure your controllers with annotations",
@@ -2987,12 +2983,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "75ce2775212d40b5d8d98ac83b413468b00841ae"
+                "reference": "43f8bb8109b6c419b5e8be4b76369e41a9a6070c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/75ce2775212d40b5d8d98ac83b413468b00841ae",
-                "reference": "75ce2775212d40b5d8d98ac83b413468b00841ae",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/43f8bb8109b6c419b5e8be4b76369e41a9a6070c",
+                "reference": "43f8bb8109b6c419b5e8be4b76369e41a9a6070c",
                 "shasum": ""
             },
             "require": {
@@ -3042,7 +3038,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2014-06-18 06:10:26"
+            "time": "2014-06-26 07:48:05"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -3314,9 +3310,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 },
                 {
                     "name": "Symfony Community",
@@ -3533,9 +3527,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Common additional features for Twig that do not directly belong in core",
@@ -3611,7 +3603,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/BankPaymentBundle.git",
-                "reference": "d736a9e4122368ec3bfcd33e662c089758591004"
+                "reference": "a53a0a7a45f9a4c352e920f69be3d6044d94fa83"
             },
             "require": {
                 "jms/payment-core-bundle": "dev-master",
@@ -3636,7 +3628,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-06-20 21:13:46"
+            "time": "2014-06-25 14:28:58"
         },
         {
             "name": "vifeed/campaign-bundle",
@@ -3645,7 +3637,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "d12543a0f5e2c91dea7a9323aabcdc89606b461c"
+                "reference": "88fda783b725fe80e5ff439a9c6706bbfd27d4e0"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3659,7 +3651,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-06-25 08:58:58"
+            "time": "2014-06-25 20:27:01"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3668,7 +3660,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "a710008a44223358c63cc54ec15331617e6cd604"
+                "reference": "686763f73058bf6e2799f584df4601005a442f7c"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3680,7 +3672,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-25 08:51:29"
+            "time": "2014-06-25 22:36:32"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3707,7 +3699,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "02b1e075093728eee4ac135f4f3b7753cf5f0484"
+                "reference": "87404ad284752cfe7417521d32b08fcdc21f59ef"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3723,7 +3715,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-06-25 08:58:55"
+            "time": "2014-06-25 22:40:59"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3815,7 +3807,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "0ddb55d24b8624386863b8b7594f498ff2fb6094"
+                "reference": "b4a9107bd19b902e2edc21c20459f90f07e5fdec"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3824,7 +3816,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-06-23 12:21:44"
+            "time": "2014-06-25 15:57:27"
         },
         {
             "name": "vifeed/video-view-bundle",
@@ -3915,7 +3907,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }

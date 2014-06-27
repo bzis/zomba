@@ -15,7 +15,7 @@ vifeed_video_promo:
   prefix: /
   host: "{domain}"
   requirements:
-    domain: zomba.me|videos.vifeed.dev
+    domain: zomba.me|videos.vifeed.dev|videos.vifeed.co
 
 default:
   pattern: /
