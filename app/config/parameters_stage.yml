@@ -38,6 +38,10 @@ parameters:
     paypal.password: weeqw
     paypal.api_signature: dsfsdf
     tracker.host: 'tracker-stage.vifeed.co'
+    rabbitmq.host: 'localhost'
+    rabbitmq.port: 5672
+    rabbitmq.user: 'guest'
+    rabbitmq.password: 'guest'
     vifeed:
         comission: 0.5
         min_view_time: 5

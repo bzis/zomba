@@ -71,3 +71,8 @@ parameters:
         account_number: ''
         bank_account_nubmer: ''
         kpp: ''
+
+    rabbitmq.host: 'localhost'
+    rabbitmq.port: 5672
+    rabbitmq.user: 'guest'
+    rabbitmq.password: 'guest'
