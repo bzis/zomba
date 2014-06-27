@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "b36dbab9e18c7457afc27fdfe281415cb867d639"
+                "reference": "5083c8f353d532514743a792d2fee4a781310815"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/b36dbab9e18c7457afc27fdfe281415cb867d639",
-                "reference": "b36dbab9e18c7457afc27fdfe281415cb867d639",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/5083c8f353d532514743a792d2fee4a781310815",
+                "reference": "5083c8f353d532514743a792d2fee4a781310815",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-26 07:23:40"
+            "time": "2014-06-27 07:24:47"
         },
         {
             "name": "guzzle/guzzle",
@@ -2478,12 +2478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "df7387aec9a471372db3998d67edd739d73b618e"
+                "reference": "c92789e00fd6889751d8939656de974605053017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/df7387aec9a471372db3998d67edd739d73b618e",
-                "reference": "df7387aec9a471372db3998d67edd739d73b618e",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/c92789e00fd6889751d8939656de974605053017",
+                "reference": "c92789e00fd6889751d8939656de974605053017",
                 "shasum": ""
             },
             "require": {
@@ -2544,7 +2544,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-06-25 22:04:36"
+            "time": "2014-06-27 12:43:22"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3681,7 +3681,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/GeoBundle.git",
-                "reference": "443738d06b4ac62d675c547572ae20dd2caecfbe"
+                "reference": "56db3ed864d96d07c3fdeb7fb0428c52f45b24e9"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3690,7 +3690,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2014-04-21 14:06:04"
+            "time": "2014-06-27 12:46:04"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3825,7 +3825,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "bb91931fe73041b4d0ed8da148feda47cef805f2"
+                "reference": "804a32a7f330233dd60f57df3c459b9185004e94"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3834,7 +3834,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-06-05 09:33:34"
+            "time": "2014-06-27 13:21:34"
         },
         {
             "name": "werkint/qiwi",
