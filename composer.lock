@@ -849,12 +849,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "46a031ddaea47d0685200027cfe8c83b02aee6f6"
+                "reference": "77d9ffeb4702a8d2daab2888869786b01e609e0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/46a031ddaea47d0685200027cfe8c83b02aee6f6",
-                "reference": "46a031ddaea47d0685200027cfe8c83b02aee6f6",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/77d9ffeb4702a8d2daab2888869786b01e609e0c",
+                "reference": "77d9ffeb4702a8d2daab2888869786b01e609e0c",
                 "shasum": ""
             },
             "require": {
@@ -901,7 +901,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2014-03-16 19:02:43"
+            "time": "2014-06-29 17:28:09"
         },
         {
             "name": "doctrine/orm",
@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "5083c8f353d532514743a792d2fee4a781310815"
+                "reference": "aebac022061ebf56cf2bd7899245676d6badd501"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/5083c8f353d532514743a792d2fee4a781310815",
-                "reference": "5083c8f353d532514743a792d2fee4a781310815",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/aebac022061ebf56cf2bd7899245676d6badd501",
+                "reference": "aebac022061ebf56cf2bd7899245676d6badd501",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-27 07:24:47"
+            "time": "2014-06-30 07:28:16"
         },
         {
             "name": "guzzle/guzzle",
@@ -1894,12 +1894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSPaymentCoreBundle.git",
-                "reference": "437f6db5aba890971c6cba44ee598d8771e4ed48"
+                "reference": "b086110041dfb749fb5e3132fc31c84c5b23c7f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/437f6db5aba890971c6cba44ee598d8771e4ed48",
-                "reference": "437f6db5aba890971c6cba44ee598d8771e4ed48",
+                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/b086110041dfb749fb5e3132fc31c84c5b23c7f3",
+                "reference": "b086110041dfb749fb5e3132fc31c84c5b23c7f3",
                 "shasum": ""
             },
             "require": {
@@ -1952,7 +1952,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-05-19 14:26:25"
+            "time": "2014-06-30 01:11:02"
         },
         {
             "name": "jms/payment-paypal-bundle",
@@ -3660,7 +3660,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "686763f73058bf6e2799f584df4601005a442f7c"
+                "reference": "0fef12ec0790ec1c65a49999fceff31c83fed299"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3672,7 +3672,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-25 22:36:32"
+            "time": "2014-06-29 11:36:09"
         },
         {
             "name": "vifeed/geo-bundle",
