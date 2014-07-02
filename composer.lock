@@ -3800,7 +3800,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "bcb16f110f418410053d588ec966da6cb75a0bec"
+                "reference": "d4771cf6c5c6d6d242cd8daaeb6e0cf5011a085d"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3809,7 +3809,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-07-02 10:24:50"
+            "time": "2014-07-02 11:26:24"
         },
         {
             "name": "vifeed/video-view-bundle",
