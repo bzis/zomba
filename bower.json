@@ -19,7 +19,7 @@
     "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git",
     "bootstrap-daterangepicker": "https://github.com/dangrossman/bootstrap-daterangepicker.git",
     "angular-moment": "0.6.2",
-    "highcharts.com": "https://github.com/highslide-software/highcharts.com.git",
+    "highcharts-release": "4.0.3",
     "highcharts-ng": "https://github.com/pablojim/highcharts-ng.git",
     "twix": "https://github.com/icambron/twix.js.git",
     "angular-google-maps": "https://github.com/nlaplante/angular-google-maps.git",
