@@ -15,7 +15,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-02-27 22:02:00"
+            "time": "2014-01-05 18:40:22"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -160,10 +160,9 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -179,7 +178,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -237,8 +236,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -459,8 +457,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 }
             ],
             "description": "Data Fixtures for all Doctrine Object Managers",
@@ -507,8 +504,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -583,9 +579,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 },
                 {
                     "name": "Symfony Community",
@@ -758,8 +752,7 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -777,7 +770,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -829,7 +822,7 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -849,12 +842,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "46a031ddaea47d0685200027cfe8c83b02aee6f6"
+                "reference": "77d9ffeb4702a8d2daab2888869786b01e609e0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/46a031ddaea47d0685200027cfe8c83b02aee6f6",
-                "reference": "46a031ddaea47d0685200027cfe8c83b02aee6f6",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/77d9ffeb4702a8d2daab2888869786b01e609e0c",
+                "reference": "77d9ffeb4702a8d2daab2888869786b01e609e0c",
                 "shasum": ""
             },
             "require": {
@@ -901,7 +894,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2014-03-16 19:02:43"
+            "time": "2014-06-29 17:28:09"
         },
         {
             "name": "doctrine/orm",
@@ -1353,12 +1346,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "b36dbab9e18c7457afc27fdfe281415cb867d639"
+                "reference": "816d07d18f38a6af8e087280608ee2c171ded9c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/b36dbab9e18c7457afc27fdfe281415cb867d639",
-                "reference": "b36dbab9e18c7457afc27fdfe281415cb867d639",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/816d07d18f38a6af8e087280608ee2c171ded9c2",
+                "reference": "816d07d18f38a6af8e087280608ee2c171ded9c2",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1383,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-26 07:23:40"
+            "time": "2014-07-01 17:14:54"
         },
         {
             "name": "guzzle/guzzle",
@@ -1894,12 +1887,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSPaymentCoreBundle.git",
-                "reference": "437f6db5aba890971c6cba44ee598d8771e4ed48"
+                "reference": "b086110041dfb749fb5e3132fc31c84c5b23c7f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/437f6db5aba890971c6cba44ee598d8771e4ed48",
-                "reference": "437f6db5aba890971c6cba44ee598d8771e4ed48",
+                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/b086110041dfb749fb5e3132fc31c84c5b23c7f3",
+                "reference": "b086110041dfb749fb5e3132fc31c84c5b23c7f3",
                 "shasum": ""
             },
             "require": {
@@ -1952,7 +1945,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-05-19 14:26:25"
+            "time": "2014-06-30 01:11:02"
         },
         {
             "name": "jms/payment-paypal-bundle",
@@ -2128,7 +2121,7 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2478,12 +2471,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "df7387aec9a471372db3998d67edd739d73b618e"
+                "reference": "c92789e00fd6889751d8939656de974605053017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/df7387aec9a471372db3998d67edd739d73b618e",
-                "reference": "df7387aec9a471372db3998d67edd739d73b618e",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/c92789e00fd6889751d8939656de974605053017",
+                "reference": "c92789e00fd6889751d8939656de974605053017",
                 "shasum": ""
             },
             "require": {
@@ -2544,7 +2537,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-06-25 22:04:36"
+            "time": "2014-06-27 12:43:22"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3162,12 +3155,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "08dcf50de5dd2411dcb8732fa96e0f95ff16628e"
+                "reference": "02d4ba289d2e758bb69dc4d78cd4e99160673132"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/08dcf50de5dd2411dcb8732fa96e0f95ff16628e",
-                "reference": "08dcf50de5dd2411dcb8732fa96e0f95ff16628e",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/02d4ba289d2e758bb69dc4d78cd4e99160673132",
+                "reference": "02d4ba289d2e758bb69dc4d78cd4e99160673132",
                 "shasum": ""
             },
             "require": {
@@ -3217,7 +3210,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-06-21 16:10:11"
+            "time": "2014-06-30 11:57:15"
         },
         {
             "name": "symfony/icu",
@@ -3579,7 +3572,7 @@
                     "role": "Lead Developer"
                 },
                 {
-                    "name": "Armin Ronacher",
+                    "name": "Armin Ronacher2",
                     "email": "armin.ronacher@active-4.com",
                     "role": "Project Founder"
                 },
@@ -3660,7 +3653,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "686763f73058bf6e2799f584df4601005a442f7c"
+                "reference": "0fef12ec0790ec1c65a49999fceff31c83fed299"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3672,7 +3665,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-25 22:36:32"
+            "time": "2014-06-29 11:36:09"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3681,7 +3674,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/GeoBundle.git",
-                "reference": "443738d06b4ac62d675c547572ae20dd2caecfbe"
+                "reference": "3f0f0413d2472db64dc0d725707c976c9d8c1e61"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3690,7 +3683,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2014-04-21 14:06:04"
+            "time": "2014-06-30 09:50:01"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3807,7 +3800,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "b4a9107bd19b902e2edc21c20459f90f07e5fdec"
+                "reference": "d4771cf6c5c6d6d242cd8daaeb6e0cf5011a085d"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3816,7 +3809,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-06-25 15:57:27"
+            "time": "2014-07-02 11:26:24"
         },
         {
             "name": "vifeed/video-view-bundle",
@@ -3825,7 +3818,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "bb91931fe73041b4d0ed8da148feda47cef805f2"
+                "reference": "804a32a7f330233dd60f57df3c459b9185004e94"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3834,7 +3827,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-06-05 09:33:34"
+            "time": "2014-06-27 13:21:34"
         },
         {
             "name": "werkint/qiwi",
@@ -3907,7 +3900,7 @@
             ],
             "authors": [
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
@@ -3966,12 +3959,8 @@
             "time": "2014-05-16 12:34:51"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4006,7 +3995,5 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }

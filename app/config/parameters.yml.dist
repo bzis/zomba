@@ -76,3 +76,6 @@ parameters:
     rabbitmq.port: 5672
     rabbitmq.user: 'guest'
     rabbitmq.password: 'guest'
+
+    withdrawal.notification.email: withdrawal@zombakka.com
+    backend.host: backend.zombakka.com
