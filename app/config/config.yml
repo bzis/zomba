@@ -33,6 +33,7 @@ twig:
         social: %social%
         tracker_host: %tracker.host%
         cdn_url: %assetic.cdn_url%
+        backend_host: %backend.host%
 # Assetic Configuration
 assetic:
     debug:          %kernel.debug%

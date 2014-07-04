@@ -71,3 +71,6 @@ parameters:
         account_number: ''
         bank_account_nubmer: ''
         kpp: ''
+
+    withdrawal.notification.email: withdrawal@zombakka.com
+    backend.host: backend.zombakka.com
