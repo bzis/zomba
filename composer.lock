@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "517860a66299e15716827676b19266e3",
+    "hash": "76e0397f78ccf2738a1e6f6f9e0cfbc1",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "aebac022061ebf56cf2bd7899245676d6badd501"
+                "reference": "e2090308ff327007ccb0afe6e80894b4f45e7ab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/aebac022061ebf56cf2bd7899245676d6badd501",
-                "reference": "aebac022061ebf56cf2bd7899245676d6badd501",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e2090308ff327007ccb0afe6e80894b4f45e7ab6",
+                "reference": "e2090308ff327007ccb0afe6e80894b4f45e7ab6",
                 "shasum": ""
             },
             "require": {
@@ -1390,7 +1390,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-06-30 07:28:16"
+            "time": "2014-07-04 07:32:47"
         },
         {
             "name": "guzzle/guzzle",
@@ -2310,6 +2310,47 @@
             "time": "2013-05-19 03:41:15"
         },
         {
+            "name": "kriswallsmith/spork",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/spork.git",
+                "reference": "70a466937572d59b20b8356d75f19e7abbeb5b0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/spork/zipball/70a466937572d59b20b8356d75f19e7abbeb5b0a",
+                "reference": "70a466937572d59b20b8356d75f19e7abbeb5b0a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcntl": "*",
+                "ext-posix": "*",
+                "php": ">=5.3.0",
+                "symfony/event-dispatcher": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Spork": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Asynchronous PHP",
+            "homepage": "https://github.com/kriswallsmith/spork",
+            "time": "2013-07-14 20:18:13"
+        },
+        {
             "name": "michelf/php-markdown",
             "version": "1.4.1",
             "source": {
@@ -2478,12 +2519,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "c92789e00fd6889751d8939656de974605053017"
+                "reference": "94243f0a3e26f9ddb484e3bd51b125ad32453a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/c92789e00fd6889751d8939656de974605053017",
-                "reference": "c92789e00fd6889751d8939656de974605053017",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/94243f0a3e26f9ddb484e3bd51b125ad32453a9f",
+                "reference": "94243f0a3e26f9ddb484e3bd51b125ad32453a9f",
                 "shasum": ""
             },
             "require": {
@@ -2544,7 +2585,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-06-27 12:43:22"
+            "time": "2014-07-04 07:38:41"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3162,12 +3203,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "08dcf50de5dd2411dcb8732fa96e0f95ff16628e"
+                "reference": "02d4ba289d2e758bb69dc4d78cd4e99160673132"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/08dcf50de5dd2411dcb8732fa96e0f95ff16628e",
-                "reference": "08dcf50de5dd2411dcb8732fa96e0f95ff16628e",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/02d4ba289d2e758bb69dc4d78cd4e99160673132",
+                "reference": "02d4ba289d2e758bb69dc4d78cd4e99160673132",
                 "shasum": ""
             },
             "require": {
@@ -3217,7 +3258,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-06-21 16:10:11"
+            "time": "2014-06-30 11:57:15"
         },
         {
             "name": "symfony/icu",
@@ -3637,7 +3678,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "88fda783b725fe80e5ff439a9c6706bbfd27d4e0"
+                "reference": "53fec7b5c3358e39e0000aa133ac7994be6a0860"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3651,7 +3692,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-06-25 20:27:01"
+            "time": "2014-07-04 10:04:39"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3660,7 +3701,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "0fef12ec0790ec1c65a49999fceff31c83fed299"
+                "reference": "f15a337580cea9a0047daf35762149ab5c1be383"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3672,7 +3713,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-29 11:36:09"
+            "time": "2014-07-04 10:33:35"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3681,7 +3722,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/GeoBundle.git",
-                "reference": "56db3ed864d96d07c3fdeb7fb0428c52f45b24e9"
+                "reference": "3f0f0413d2472db64dc0d725707c976c9d8c1e61"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3690,7 +3731,7 @@
                 }
             },
             "description": "Vifeed/GeoBundle",
-            "time": "2014-06-27 12:46:04"
+            "time": "2014-06-30 09:50:01"
         },
         {
             "name": "vifeed/payment-bundle",
@@ -3699,7 +3740,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "87404ad284752cfe7417521d32b08fcdc21f59ef"
+                "reference": "e157e86fbab3b997b1a44fb620c78ac84509ba43"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3715,7 +3756,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-06-25 22:40:59"
+            "time": "2014-07-04 10:05:17"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3807,7 +3848,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "b4a9107bd19b902e2edc21c20459f90f07e5fdec"
+                "reference": "d4771cf6c5c6d6d242cd8daaeb6e0cf5011a085d"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3816,7 +3857,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-06-25 15:57:27"
+            "time": "2014-07-02 11:26:24"
         },
         {
             "name": "vifeed/video-view-bundle",
@@ -4001,6 +4042,7 @@
         "vifeed/video-view-bundle": 20,
         "vifeed/video-promo-bundle": 20,
         "vifeed/bank-payment-bundle": 20,
+        "kriswallsmith/spork": 20,
         "stof/doctrine-extensions-bundle": 20
     },
     "platform": {
