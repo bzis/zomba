@@ -188,7 +188,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker-bs3.css
         highcharts:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/highcharts-release/js/highcharts.js
+                - %kernel.root_dir%/../bower-vendor/highcharts-release/highcharts.js
                 - %kernel.root_dir%/../bower-vendor/highcharts-ng/dist/highcharts-ng.min.js
             filters:
                 - ?closure
