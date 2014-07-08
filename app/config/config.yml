@@ -358,15 +358,15 @@ cayetanosoriano_hashids:
     salt: %cayetanosoriano_hashids.salt%
     min_hash_length: %cayetanosoriano_hashids.min_hash_length%
 
-old_sound_rabbit_mq:
-    connections:
-        default:
-            host:     'localhost'
-            port:     5672
-            user:     'guest'
-            password: 'guest'
-            vhost:    '/'
-            lazy:     false
+#old_sound_rabbit_mq:
+#    connections:
+#        default:
+#            host:     'localhost'
+#            port:     5672
+#            user:     'guest'
+#            password: 'guest'
+#            vhost:    '/'
+#            lazy:     false
 #    producers:
 #        upload_picture:
 #            connection:       default
@@ -378,10 +378,10 @@ old_sound_rabbit_mq:
 #            queue_options:    {name: 'upload-picture'}
 #            callback:         upload_picture_service
 
-daemon:
-    daemons:
-        atest: ~
-        btest: ~
+#daemon:
+#    daemons:
+#        atest: ~
+#        btest: ~
 #        example:
 #            appName: example
 #            appDir: %kernel.root_dir%

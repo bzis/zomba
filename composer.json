@@ -99,6 +99,11 @@
             "type": "vcs",
             "url": "https://github.com/vifeed/DoctrineExtensions-Taggable",
             "version": "dev-master"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bzis/DaemonBundle",
+            "version": "dev-master"
         }
     ],
     "autoload": {
@@ -173,7 +178,9 @@
         "raven/raven": "0.7.1",
         "stof/doctrine-extensions-bundle": "~1.1@dev",
         "mpdf/mpdf": "5.7.*",
-        "videlalvaro/php-amqplib"  : "2.2.*"
+        "videlalvaro/php-amqplib"  : "2.2.*",
+        "bzis/daemon-bundle": "dev-master"
+
     },
     "require-dev": {
     },

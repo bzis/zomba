@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "517860a66299e15716827676b19266e3",
+    "hash": "2b72133861a4a8545a8ed9cdcf3c7315",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -27,6 +27,50 @@
             },
             "type": "library",
             "time": "2013-12-30 19:48:25"
+        },
+        {
+            "name": "bzis/daemon-bundle",
+            "version": "dev-master",
+            "target-dir": "zis/DaemonBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bzis/DaemonBundle.git",
+                "reference": "70f732a5a49deb19bdaff213e670978df238fb60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bzis/DaemonBundle/zipball/70f732a5a49deb19bdaff213e670978df238fb60",
+                "reference": "70f732a5a49deb19bdaff213e670978df238fb60",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcntl": "*",
+                "php": ">=5.4",
+                "symfony/framework-bundle": ">=2.1,<3.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "zis\\DaemonBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Boris Ziskin",
+                    "email": "bmziskin@gmail.com"
+                }
+            ],
+            "keywords": [
+                "daemon"
+            ],
+            "support": {
+                "source": "https://github.com/bzis/DaemonBundle/tree/master",
+                "issues": "https://github.com/bzis/DaemonBundle/issues"
+            },
+            "time": "2014-06-27 10:05:28"
         },
         {
             "name": "cayetanosoriano/hashids-bundle",
@@ -1346,12 +1390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "816d07d18f38a6af8e087280608ee2c171ded9c2"
+                "reference": "e2090308ff327007ccb0afe6e80894b4f45e7ab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/816d07d18f38a6af8e087280608ee2c171ded9c2",
-                "reference": "816d07d18f38a6af8e087280608ee2c171ded9c2",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e2090308ff327007ccb0afe6e80894b4f45e7ab6",
+                "reference": "e2090308ff327007ccb0afe6e80894b4f45e7ab6",
                 "shasum": ""
             },
             "require": {
@@ -1383,7 +1427,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-07-01 17:14:54"
+            "time": "2014-07-04 07:32:47"
         },
         {
             "name": "guzzle/guzzle",
@@ -2471,12 +2515,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "c92789e00fd6889751d8939656de974605053017"
+                "reference": "94243f0a3e26f9ddb484e3bd51b125ad32453a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/c92789e00fd6889751d8939656de974605053017",
-                "reference": "c92789e00fd6889751d8939656de974605053017",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/94243f0a3e26f9ddb484e3bd51b125ad32453a9f",
+                "reference": "94243f0a3e26f9ddb484e3bd51b125ad32453a9f",
                 "shasum": ""
             },
             "require": {
@@ -2537,7 +2581,60 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-06-27 12:43:22"
+            "time": "2014-07-04 07:38:41"
+        },
+        {
+            "name": "oldsound/rabbitmq-bundle",
+            "version": "v1.3.2",
+            "target-dir": "OldSound/RabbitMqBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/videlalvaro/RabbitMqBundle.git",
+                "reference": "f21d8698129486a3b569a155d4d8d18ee403fbba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/videlalvaro/RabbitMqBundle/zipball/f21d8698129486a3b569a155d4d8d18ee403fbba",
+                "reference": "f21d8698129486a3b569a155d4d8d18ee403fbba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/framework-bundle": "~2.0",
+                "symfony/yaml": "~2.0",
+                "videlalvaro/php-amqplib": "2.2.*"
+            },
+            "require-dev": {
+                "symfony/console": "~2.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "OldSound\\RabbitMqBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alvaro Videla"
+                }
+            ],
+            "description": "Integrates php-amqplib with Symfony2 and RabbitMq",
+            "keywords": [
+                "Symfony2",
+                "message",
+                "queue",
+                "rabbitmq"
+            ],
+            "time": "2014-03-17 14:38:17"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3590,6 +3687,243 @@
             "time": "2014-02-13 10:19:29"
         },
         {
+            "name": "uecode/daemon",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uecode/daemon.git",
+                "reference": "f47d96fc9073423e6fc267ad9e9fcd0be296f137"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uecode/daemon/zipball/f47d96fc9073423e6fc267ad9e9fcd0be296f137",
+                "reference": "f47d96fc9073423e6fc267ad9e9fcd0be296f137",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Uecode\\Daemon": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Scherer",
+                    "email": "aequasi@gmail.com",
+                    "homepage": "https://github.com/aequasi",
+                    "role": "developer"
+                }
+            ],
+            "description": "Daemon Class",
+            "homepage": "https://github.com/uecode/daemon",
+            "keywords": [
+                "daemon",
+                "php"
+            ],
+            "time": "2013-12-02 18:32:52"
+        },
+        {
+            "name": "uecode/daemon-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uecode/daemon-bundle.git",
+                "reference": "405e267883af0115f00b093d3f03450a962671a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uecode/daemon-bundle/zipball/405e267883af0115f00b093d3f03450a962671a2",
+                "reference": "405e267883af0115f00b093d3f03450a962671a2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.3.0",
+                "uecode/daemon": "dev-master",
+                "uecode/uecode-bundle": "dev-master"
+            },
+            "require-dev": {
+                "symfony/symfony": "dev-master"
+            },
+            "suggest": {
+                "monolog/monolog": "Allows more advanced logging of the application flow",
+                "react/react": "Enables react support - use ReactCommand instead of ExtendCommand"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Uecode\\Bundle\\DaemonBundle": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Scherer",
+                    "email": "aequasi@gmail.com",
+                    "homepage": "https://github.com/aequasi",
+                    "role": "developer"
+                },
+                {
+                    "name": "Michał Matulka",
+                    "email": "therealmikz@gmail.com",
+                    "homepage": "https://github.com/therealmikz",
+                    "role": "developer"
+                }
+            ],
+            "description": "Symfony2 Daemon Bundle",
+            "homepage": "https://github.com/uecode/daemon-bundle",
+            "keywords": [
+                "daemon",
+                "php"
+            ],
+            "time": "2014-05-11 07:00:09"
+        },
+        {
+            "name": "uecode/uecode",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uecode/uecode.git",
+                "reference": "f69c1ec58a42c4db14a68c7db3d48561e6200c18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uecode/uecode/zipball/f69c1ec58a42c4db14a68c7db3d48561e6200c18",
+                "reference": "f69c1ec58a42c4db14a68c7db3d48561e6200c18",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/dependency-injection": ">2.2.0,<2.4.*-dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Uecode": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Scherer",
+                    "email": "aequasi@gmail.com",
+                    "homepage": "https://github.com/aequasi",
+                    "role": "developer"
+                }
+            ],
+            "description": "Uecode Library",
+            "homepage": "https://github.com/uecode/uecode",
+            "keywords": [
+                "php",
+                "uecode"
+            ],
+            "time": "2013-06-03 17:08:13"
+        },
+        {
+            "name": "uecode/uecode-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uecode/uecode-bundle.git",
+                "reference": "9582831ebd7e1f0addadac37eb7187e2dc4b1e6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uecode/uecode-bundle/zipball/9582831ebd7e1f0addadac37eb7187e2dc4b1e6e",
+                "reference": "9582831ebd7e1f0addadac37eb7187e2dc4b1e6e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/symfony": ">=2.1.0,<2.5.0",
+                "uecode/uecode": ">=1.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Uecode\\Bundle\\UecodeBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Scherer",
+                    "email": "aequasi@gmail.com",
+                    "homepage": "https://github.com/aequasi",
+                    "role": "developer"
+                }
+            ],
+            "description": "Symfony2 Uecode Bundle",
+            "homepage": "https://github.com/uecode/uecode-bundle",
+            "keywords": [
+                "php",
+                "uecode"
+            ],
+            "time": "2014-01-02 03:21:28"
+        },
+        {
+            "name": "videlalvaro/php-amqplib",
+            "version": "v2.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/videlalvaro/php-amqplib.git",
+                "reference": "6ef2ca9a45bb9fb20872f824f4c7c1518315bd3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/videlalvaro/php-amqplib/zipball/6ef2ca9a45bb9fb20872f824f4c7c1518315bd3f",
+                "reference": "6ef2ca9a45bb9fb20872f824f4c7c1518315bd3f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PhpAmqpLib": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Alvaro Videla"
+                }
+            ],
+            "description": "This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
+            "homepage": "https://github.com/videlalvaro/php-amqplib/",
+            "keywords": [
+                "message",
+                "queue",
+                "rabbitmq"
+            ],
+            "time": "2013-12-22 12:49:53"
+        },
+        {
             "name": "vifeed/bank-payment-bundle",
             "version": "dev-master",
             "target-dir": "Vifeed/BankPaymentBundle",
@@ -3630,7 +3964,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "88fda783b725fe80e5ff439a9c6706bbfd27d4e0"
+                "reference": "53fec7b5c3358e39e0000aa133ac7994be6a0860"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3644,7 +3978,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-06-25 20:27:01"
+            "time": "2014-07-04 10:04:39"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3653,7 +3987,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "0fef12ec0790ec1c65a49999fceff31c83fed299"
+                "reference": "f15a337580cea9a0047daf35762149ab5c1be383"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3665,7 +3999,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-06-29 11:36:09"
+            "time": "2014-07-04 10:33:35"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3692,7 +4026,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "87404ad284752cfe7417521d32b08fcdc21f59ef"
+                "reference": "e157e86fbab3b997b1a44fb620c78ac84509ba43"
             },
             "require": {
                 "chewbacco/payment-qiwi-wallet-bundle": "dev-master",
@@ -3708,7 +4042,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-06-25 22:40:59"
+            "time": "2014-07-04 10:05:17"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -3978,6 +4312,7 @@
         "angular-ui/bootstrap": 20,
         "angular-ui/ui-utils": 20,
         "cayetanosoriano/hashids-bundle": 20,
+        "uecode/daemon-bundle": 20,
         "hashids/hashids": 20,
         "vifeed/campaign-bundle": 20,
         "vifeed/frontend-bundle": 20,
@@ -3990,7 +4325,8 @@
         "vifeed/video-view-bundle": 20,
         "vifeed/video-promo-bundle": 20,
         "vifeed/bank-payment-bundle": 20,
-        "stof/doctrine-extensions-bundle": 20
+        "stof/doctrine-extensions-bundle": 20,
+        "bzis/daemon-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"

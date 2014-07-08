@@ -56,3 +56,4 @@ parameters:
         kpp: ''
     withdrawal.notification.email: withdrawal@zombakka.com
     backend.host: backend.zombakka.com
+    daemon.pid_file_location: '/tmp'
