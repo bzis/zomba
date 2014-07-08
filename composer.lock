@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "76e0397f78ccf2738a1e6f6f9e0cfbc1",
+    "hash": "a2fc8e050dae6bc06ead426321d635db",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1206,12 +1206,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "ba3e09980f348be691915ce0dc63964033162e6c"
+                "reference": "27b6ac343645da30f89bb5928a467101acb5601e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/ba3e09980f348be691915ce0dc63964033162e6c",
-                "reference": "ba3e09980f348be691915ce0dc63964033162e6c",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/27b6ac343645da30f89bb5928a467101acb5601e",
+                "reference": "27b6ac343645da30f89bb5928a467101acb5601e",
                 "shasum": ""
             },
             "require": {
@@ -1266,7 +1266,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-07-04 14:20:21"
+            "time": "2014-07-08 07:00:18"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -3426,16 +3426,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.17",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "c02f56f7948f2699c8cc8b118c7faeb13470e357"
+                "reference": "59365832a09a1d914d14cbca6a21a7f572760c3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/c02f56f7948f2699c8cc8b118c7faeb13470e357",
-                "reference": "c02f56f7948f2699c8cc8b118c7faeb13470e357",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/59365832a09a1d914d14cbca6a21a7f572760c3b",
+                "reference": "59365832a09a1d914d14cbca6a21a7f572760c3b",
                 "shasum": ""
             },
             "require": {
@@ -3443,7 +3443,7 @@
                 "php": ">=5.3.3",
                 "psr/log": "~1.0",
                 "symfony/icu": "~1.0",
-                "twig/twig": "~1.12"
+                "twig/twig": "~1.11"
             },
             "replace": {
                 "symfony/browser-kit": "self.version",
@@ -3456,6 +3456,7 @@
                 "symfony/doctrine-bridge": "self.version",
                 "symfony/dom-crawler": "self.version",
                 "symfony/event-dispatcher": "self.version",
+                "symfony/expression-language": "self.version",
                 "symfony/filesystem": "self.version",
                 "symfony/finder": "self.version",
                 "symfony/form": "self.version",
@@ -3472,7 +3473,11 @@
                 "symfony/proxy-manager-bridge": "self.version",
                 "symfony/routing": "self.version",
                 "symfony/security": "self.version",
+                "symfony/security-acl": "self.version",
                 "symfony/security-bundle": "self.version",
+                "symfony/security-core": "self.version",
+                "symfony/security-csrf": "self.version",
+                "symfony/security-http": "self.version",
                 "symfony/serializer": "self.version",
                 "symfony/stopwatch": "self.version",
                 "symfony/swiftmailer-bridge": "self.version",
@@ -3488,15 +3493,16 @@
                 "doctrine/data-fixtures": "1.0.*",
                 "doctrine/dbal": "~2.2",
                 "doctrine/orm": "~2.2,>=2.2.3",
+                "egulias/email-validator": "1.1.0",
                 "ircmaxell/password-compat": "1.0.*",
                 "monolog/monolog": "~1.3",
-                "ocramius/proxy-manager": ">=0.3.1,<0.4-dev",
+                "ocramius/proxy-manager": ">=0.3.1,<0.6-dev",
                 "propel/propel1": "1.6.*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -3532,7 +3538,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-07-07 12:59:36"
+            "time": "2014-05-31 18:45:50"
         },
         {
             "name": "twig/extensions",
