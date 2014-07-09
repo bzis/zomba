@@ -78,18 +78,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chewbacco/ChewbaccoPaymentQiwiWalletBundle.git",
-                "reference": "faf2192f968d353363c68687041399a72724f0fd"
+                "reference": "349b0a367b35df874125766550bf358758f912fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chewbacco/ChewbaccoPaymentQiwiWalletBundle/zipball/faf2192f968d353363c68687041399a72724f0fd",
-                "reference": "faf2192f968d353363c68687041399a72724f0fd",
+                "url": "https://api.github.com/repos/chewbacco/ChewbaccoPaymentQiwiWalletBundle/zipball/349b0a367b35df874125766550bf358758f912fa",
+                "reference": "349b0a367b35df874125766550bf358758f912fa",
                 "shasum": ""
             },
             "require": {
                 "jms/payment-core-bundle": "dev-master",
                 "php": ">=5.3.2",
-                "sensio/framework-extra-bundle": "2.3.*",
+                "sensio/framework-extra-bundle": ">=2.3",
                 "werkint/qiwi": "dev-master"
             },
             "require-dev": {
@@ -120,7 +120,7 @@
                 "qiwi",
                 "qiwi wallet"
             ],
-            "time": "2014-04-14 15:19:53"
+            "time": "2014-07-08 15:52:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1127,12 +1127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "33fc33f3a22b0b8d2a74a50a44b530012972c23a"
+                "reference": "1ca8cbef698c295ba4e5e60c1c448aaab613d9fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/33fc33f3a22b0b8d2a74a50a44b530012972c23a",
-                "reference": "33fc33f3a22b0b8d2a74a50a44b530012972c23a",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/1ca8cbef698c295ba4e5e60c1c448aaab613d9fe",
+                "reference": "1ca8cbef698c295ba4e5e60c1c448aaab613d9fe",
                 "shasum": ""
             },
             "require": {
@@ -1197,7 +1197,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-07-04 11:32:09"
+            "time": "2014-07-09 08:01:04"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1206,12 +1206,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "27b6ac343645da30f89bb5928a467101acb5601e"
+                "reference": "ef7ca325929ff102fff521653a2e3b88c7a40361"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/27b6ac343645da30f89bb5928a467101acb5601e",
-                "reference": "27b6ac343645da30f89bb5928a467101acb5601e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/ef7ca325929ff102fff521653a2e3b88c7a40361",
+                "reference": "ef7ca325929ff102fff521653a2e3b88c7a40361",
                 "shasum": ""
             },
             "require": {
@@ -1266,7 +1266,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-07-08 07:00:18"
+            "time": "2014-07-09 10:33:42"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1354,12 +1354,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "e2090308ff327007ccb0afe6e80894b4f45e7ab6"
+                "reference": "e194f8d448c1277c50917fd2f502052e2cdb8e9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e2090308ff327007ccb0afe6e80894b4f45e7ab6",
-                "reference": "e2090308ff327007ccb0afe6e80894b4f45e7ab6",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e194f8d448c1277c50917fd2f502052e2cdb8e9c",
+                "reference": "e194f8d448c1277c50917fd2f502052e2cdb8e9c",
                 "shasum": ""
             },
             "require": {
@@ -1391,7 +1391,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-07-04 07:32:47"
+            "time": "2014-07-09 13:40:28"
         },
         {
             "name": "guzzle/guzzle",
@@ -1399,12 +1399,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "49104c619b663038e636a819718adce3b27ba6f2"
+                "reference": "f7f3c2e66c9e60e6cc5b40298880588af52edf56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/49104c619b663038e636a819718adce3b27ba6f2",
-                "reference": "49104c619b663038e636a819718adce3b27ba6f2",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/f7f3c2e66c9e60e6cc5b40298880588af52edf56",
+                "reference": "f7f3c2e66c9e60e6cc5b40298880588af52edf56",
                 "shasum": ""
             },
             "require": {
@@ -1483,7 +1483,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-06-04 19:49:37"
+            "time": "2014-07-08 18:26:17"
         },
         {
             "name": "hashids/hashids",
@@ -2194,12 +2194,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "964340e69361802eddf51e8eaa85acbd1c621edf"
+                "reference": "5bea57990f7ddbeb3d57e7ef96eae9ddd56c4297"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/964340e69361802eddf51e8eaa85acbd1c621edf",
-                "reference": "964340e69361802eddf51e8eaa85acbd1c621edf",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/5bea57990f7ddbeb3d57e7ef96eae9ddd56c4297",
+                "reference": "5bea57990f7ddbeb3d57e7ef96eae9ddd56c4297",
                 "shasum": ""
             },
             "require": {
@@ -2260,7 +2260,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-05-05 12:59:42"
+            "time": "2014-07-08 11:30:40"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -2520,12 +2520,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "ae877d74a0954424309e877adba894948099ec1a"
+                "reference": "b9b453c8578a9334080fbdc16bff92e7cb488561"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/ae877d74a0954424309e877adba894948099ec1a",
-                "reference": "ae877d74a0954424309e877adba894948099ec1a",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/b9b453c8578a9334080fbdc16bff92e7cb488561",
+                "reference": "b9b453c8578a9334080fbdc16bff92e7cb488561",
                 "shasum": ""
             },
             "require": {
@@ -2586,7 +2586,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-07-07 09:38:47"
+            "time": "2014-07-09 08:29:17"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3426,16 +3426,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.5.0",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "59365832a09a1d914d14cbca6a21a7f572760c3b"
+                "reference": "e3d2844abc988bc467bb1593cd340700096b0ac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/59365832a09a1d914d14cbca6a21a7f572760c3b",
-                "reference": "59365832a09a1d914d14cbca6a21a7f572760c3b",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/e3d2844abc988bc467bb1593cd340700096b0ac0",
+                "reference": "e3d2844abc988bc467bb1593cd340700096b0ac0",
                 "shasum": ""
             },
             "require": {
@@ -3443,7 +3443,7 @@
                 "php": ">=5.3.3",
                 "psr/log": "~1.0",
                 "symfony/icu": "~1.0",
-                "twig/twig": "~1.11"
+                "twig/twig": "~1.12"
             },
             "replace": {
                 "symfony/browser-kit": "self.version",
@@ -3538,7 +3538,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-05-31 18:45:50"
+            "time": "2014-07-08 14:42:08"
         },
         {
             "name": "twig/extensions",
@@ -3708,7 +3708,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "a82565d3cf99e6c606d638859b4670d5bcfd7ece"
+                "reference": "1b68624d594770c588d63c5b63aff45c780aec98"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3720,7 +3720,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-07-07 14:38:32"
+            "time": "2014-07-09 15:16:00"
         },
         {
             "name": "vifeed/geo-bundle",
