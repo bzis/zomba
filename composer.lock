@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a2fc8e050dae6bc06ead426321d635db",
+    "hash": "76e0397f78ccf2738a1e6f6f9e0cfbc1",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -15,7 +15,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-02-27 22:02:00"
+            "time": "2014-07-08 17:00:19"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -26,7 +26,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-30 19:48:25"
+            "time": "2014-06-27 12:01:29"
         },
         {
             "name": "cayetanosoriano/hashids-bundle",
@@ -850,12 +850,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "77d9ffeb4702a8d2daab2888869786b01e609e0c"
+                "reference": "4256449c5e2603a6b6ee5a78c7c4521d4d4430b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/77d9ffeb4702a8d2daab2888869786b01e609e0c",
-                "reference": "77d9ffeb4702a8d2daab2888869786b01e609e0c",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/4256449c5e2603a6b6ee5a78c7c4521d4d4430b8",
+                "reference": "4256449c5e2603a6b6ee5a78c7c4521d4d4430b8",
                 "shasum": ""
             },
             "require": {
@@ -886,7 +886,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -902,7 +902,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2014-06-29 17:28:09"
+            "time": "2014-07-09 07:58:02"
         },
         {
             "name": "doctrine/orm",
@@ -1354,12 +1354,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "e194f8d448c1277c50917fd2f502052e2cdb8e9c"
+                "reference": "8ffd93f266fb3597f13927d4d4e1ac442c90b9a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e194f8d448c1277c50917fd2f502052e2cdb8e9c",
-                "reference": "e194f8d448c1277c50917fd2f502052e2cdb8e9c",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/8ffd93f266fb3597f13927d4d4e1ac442c90b9a3",
+                "reference": "8ffd93f266fb3597f13927d4d4e1ac442c90b9a3",
                 "shasum": ""
             },
             "require": {
@@ -1391,7 +1391,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-07-09 13:40:28"
+            "time": "2014-07-11 07:40:35"
         },
         {
             "name": "guzzle/guzzle",
@@ -3426,16 +3426,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.5.1",
+            "version": "v2.3.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "e3d2844abc988bc467bb1593cd340700096b0ac0"
+                "reference": "c02f56f7948f2699c8cc8b118c7faeb13470e357"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/e3d2844abc988bc467bb1593cd340700096b0ac0",
-                "reference": "e3d2844abc988bc467bb1593cd340700096b0ac0",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/c02f56f7948f2699c8cc8b118c7faeb13470e357",
+                "reference": "c02f56f7948f2699c8cc8b118c7faeb13470e357",
                 "shasum": ""
             },
             "require": {
@@ -3456,7 +3456,6 @@
                 "symfony/doctrine-bridge": "self.version",
                 "symfony/dom-crawler": "self.version",
                 "symfony/event-dispatcher": "self.version",
-                "symfony/expression-language": "self.version",
                 "symfony/filesystem": "self.version",
                 "symfony/finder": "self.version",
                 "symfony/form": "self.version",
@@ -3473,11 +3472,7 @@
                 "symfony/proxy-manager-bridge": "self.version",
                 "symfony/routing": "self.version",
                 "symfony/security": "self.version",
-                "symfony/security-acl": "self.version",
                 "symfony/security-bundle": "self.version",
-                "symfony/security-core": "self.version",
-                "symfony/security-csrf": "self.version",
-                "symfony/security-http": "self.version",
                 "symfony/serializer": "self.version",
                 "symfony/stopwatch": "self.version",
                 "symfony/swiftmailer-bridge": "self.version",
@@ -3493,16 +3488,15 @@
                 "doctrine/data-fixtures": "1.0.*",
                 "doctrine/dbal": "~2.2",
                 "doctrine/orm": "~2.2,>=2.2.3",
-                "egulias/email-validator": "1.1.0",
                 "ircmaxell/password-compat": "1.0.*",
                 "monolog/monolog": "~1.3",
-                "ocramius/proxy-manager": ">=0.3.1,<0.6-dev",
+                "ocramius/proxy-manager": ">=0.3.1,<0.4-dev",
                 "propel/propel1": "1.6.*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -3538,7 +3532,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-07-08 14:42:08"
+            "time": "2014-07-07 12:59:36"
         },
         {
             "name": "twig/extensions",
@@ -3708,7 +3702,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "943fefaf99a256da069451891537da549588d7da"
+                "reference": "c78a578791e504452d1c071bbbef7f5eb7b6172a"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3720,7 +3714,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-07-09 15:43:28"
+            "time": "2014-07-11 14:22:58"
         },
         {
             "name": "vifeed/geo-bundle",

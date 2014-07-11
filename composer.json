@@ -140,7 +140,7 @@
         "kriswallsmith/assetic": "1.2.*@dev",
         "symfony/monolog-bundle": "2.3.*",
         "symfony/swiftmailer-bundle": "2.3.*",
-        "symfony/symfony": "2.5.*",
+        "symfony/symfony": "2.3.*",
         "twig/extensions": "1.0.*",
         "friendsofsymfony/rest-bundle": "dev-master",
         "jms/serializer-bundle": "0.13.*",
