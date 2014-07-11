@@ -18,7 +18,7 @@
     "crypto-js": "http://crypto-js.googlecode.com/files/CryptoJS%20v3.1.2.zip",
     "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git",
     "bootstrap-daterangepicker": "https://github.com/dangrossman/bootstrap-daterangepicker.git",
-    "angular-moment": "0.6.2",
+    "angular-moment": "0.7.1",
     "highcharts-release": "4.0.3",
     "highcharts-ng": "https://github.com/pablojim/highcharts-ng.git",
     "twix": "https://github.com/icambron/twix.js.git",
