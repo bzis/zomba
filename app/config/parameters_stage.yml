@@ -19,6 +19,7 @@ parameters:
     assetic.filter.compass.http_path: /
     assetic.filter.compass.http_generated_images_path: /
     assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/'
+    assetic.filter.compass.timeout: 600
     assetic.cdn_url: '//cdn-stage.vifeed.co'
     assetic.cdn_path: "%kernel.root_dir%/../web"
     social: { VKAppID: 4325637, VKAppSecret: '' }
