@@ -217,6 +217,11 @@ assetic:
                 - %kernel.root_dir%/../tmp/security-templates.js
             filters:
                 - ?closure
+        sexy_modal_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/sexy-modal-templates.js
+            filters:
+                - ?closure
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
