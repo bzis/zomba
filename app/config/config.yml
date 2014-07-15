@@ -11,13 +11,17 @@ framework:
         strict_requirements: ~
     form:            ~
     csrf_protection: ~
-    validation:      { enable_annotations: true }
+    validation:
+        enabled: true
+        api: auto
+        enable_annotations: true
     templating:
         engines: ['twig']
         assets_base_urls:
             http: [%assetic.cdn_url%]
         #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
+    trusted_hosts:   ~
     trusted_proxies: ~
     session:
         handler_id: snc_redis.session.handler

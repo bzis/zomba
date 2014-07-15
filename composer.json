@@ -100,6 +100,7 @@
             "url": "https://github.com/vifeed/DoctrineExtensions-Taggable",
             "version": "dev-master"
         }
+
     ],
     "autoload": {
         "psr-0": {
@@ -115,7 +116,7 @@
     "description": "The \"Symfony Standard Edition\" distribution",
     "extra": {
         "branch-alias": {
-            "dev-master": "2.3-dev"
+            "dev-master": "2.5-dev"
         },
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
@@ -129,19 +130,19 @@
     "prefer-stable": true,
     "name": "symfony/framework-standard-edition",
     "require": {
-        "doctrine/doctrine-bundle": "1.2.*",
-        "doctrine/orm": ">=2.2.3,<2.4-dev",
-        "incenteev/composer-parameter-handler": "~2.0",
         "php": ">=5.3.3",
-        "sensio/distribution-bundle": "2.3.*",
-        "sensio/framework-extra-bundle": "2.3.*",
-        "sensio/generator-bundle": "2.3.*",
+        "symfony/symfony": "2.5.*",
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle": "~1.2",
+        "twig/extensions": "~1.0",
         "symfony/assetic-bundle": "2.4.*@dev",
+        "symfony/swiftmailer-bundle": "~2.3",
+        "symfony/monolog-bundle": "~2.4",
+        "sensio/distribution-bundle": "~3.0",
+        "sensio/framework-extra-bundle": "~3.0",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "sensio/generator-bundle": "2.3.*",
         "kriswallsmith/assetic": "1.2.*@dev",
-        "symfony/monolog-bundle": "2.3.*",
-        "symfony/swiftmailer-bundle": "2.3.*",
-        "symfony/symfony": "2.3.*",
-        "twig/extensions": "1.0.*",
         "friendsofsymfony/rest-bundle": "dev-master",
         "jms/serializer-bundle": "0.13.*",
         "nelmio/api-doc-bundle": "dev-master",
