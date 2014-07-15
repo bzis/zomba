@@ -1,6 +1,6 @@
 {
   "name": "vifeed",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "dependencies": {
     "jquery": "2.1.0",
     "parallax": "https://github.com/wagerfield/parallax.git",
@@ -29,5 +29,8 @@
   "devDependencies": {
     "socket.io-client": "latest",
     "angular-mocks": "1.2.18"
+  },
+  "resolutions": {
+    "moment": "2.7.0"
   }
 }
