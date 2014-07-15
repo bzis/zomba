@@ -189,6 +189,10 @@ module.exports = (grunt) ->
         src: ["vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/security/*.html"]
         dest: "tmp/security-templates.js"
 
+      modal:
+        src: ["vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/modal/*.html"]
+        dest: "tmp/sexy-modal-templates.js"
+
     watch:
       html:
         files: ["vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/**/*.html"]
@@ -198,6 +202,7 @@ module.exports = (grunt) ->
           "html2js:profile"
           "html2js:publisher"
           "html2js:security"
+          "html2js:modal"
         ]
         options:
           spawn: false
