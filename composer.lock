@@ -1354,12 +1354,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "cfb1eeac62d0c738534975e18ddb1ee06dd9c499"
+                "reference": "14d379397e9e9d0364dbd47bdd308c0850a57d2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/cfb1eeac62d0c738534975e18ddb1ee06dd9c499",
-                "reference": "cfb1eeac62d0c738534975e18ddb1ee06dd9c499",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/14d379397e9e9d0364dbd47bdd308c0850a57d2a",
+                "reference": "14d379397e9e9d0364dbd47bdd308c0850a57d2a",
                 "shasum": ""
             },
             "require": {
@@ -1391,7 +1391,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-07-15 07:44:41"
+            "time": "2014-07-17 07:46:51"
         },
         {
             "name": "guzzle/guzzle",
@@ -2693,12 +2693,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "5fde716098bb5c7abe1443337e58bc74bb8cbd54"
+                "reference": "adb4d82ea8d0d84b90a301aaaf646b9b118cbc2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/5fde716098bb5c7abe1443337e58bc74bb8cbd54",
-                "reference": "5fde716098bb5c7abe1443337e58bc74bb8cbd54",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/adb4d82ea8d0d84b90a301aaaf646b9b118cbc2c",
+                "reference": "adb4d82ea8d0d84b90a301aaaf646b9b118cbc2c",
                 "shasum": ""
             },
             "require": {
@@ -2735,7 +2735,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-07-15 10:38:13"
+            "time": "2014-07-17 14:21:29"
         },
         {
             "name": "psr/log",
@@ -3710,7 +3710,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "9dc394e7f90a328de9befbd195f8568905e9c4e6"
+                "reference": "3aedc82a199157e6b3cc59d5a02f4885c985a913"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3722,7 +3722,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-07-15 15:31:33"
+            "time": "2014-07-17 14:41:41"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3796,7 +3796,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "c7793eba29f6c593d054e8c010e1958496d0ad40"
+                "reference": "60c5fff3d5dc44e442276a2a992fe2a653e98fa8"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3805,7 +3805,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-06-06 15:24:27"
+            "time": "2014-07-17 09:29:04"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -3835,7 +3835,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "f09a8f54cc9a3a642b7fe4f4faf83b3658b0202c"
+                "reference": "8bc5b0c5ff844537e12afade6ee24762e382b938"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3848,7 +3848,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-06-24 06:20:33"
+            "time": "2014-07-17 09:28:09"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -3857,7 +3857,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "16ff31d0f05aaa159f05f9aa884c4cb09b9c1d28"
+                "reference": "26c15a066ec5df800afbb14239e210bf1922508f"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3866,7 +3866,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-07-15 08:03:06"
+            "time": "2014-07-17 14:40:01"
         },
         {
             "name": "vifeed/video-view-bundle",
