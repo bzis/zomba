@@ -1354,12 +1354,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "14d379397e9e9d0364dbd47bdd308c0850a57d2a"
+                "reference": "cab95eeba6de613b2dc1d19c7d71d1311fd8a809"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/14d379397e9e9d0364dbd47bdd308c0850a57d2a",
-                "reference": "14d379397e9e9d0364dbd47bdd308c0850a57d2a",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/cab95eeba6de613b2dc1d19c7d71d1311fd8a809",
+                "reference": "cab95eeba6de613b2dc1d19c7d71d1311fd8a809",
                 "shasum": ""
             },
             "require": {
@@ -1391,7 +1391,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-07-17 07:46:51"
+            "time": "2014-07-19 07:49:00"
         },
         {
             "name": "guzzle/guzzle",
@@ -2693,12 +2693,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "adb4d82ea8d0d84b90a301aaaf646b9b118cbc2c"
+                "reference": "d6bd47ca478efab29262f2d824878699af29fff1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/adb4d82ea8d0d84b90a301aaaf646b9b118cbc2c",
-                "reference": "adb4d82ea8d0d84b90a301aaaf646b9b118cbc2c",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/d6bd47ca478efab29262f2d824878699af29fff1",
+                "reference": "d6bd47ca478efab29262f2d824878699af29fff1",
                 "shasum": ""
             },
             "require": {
@@ -2735,7 +2735,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-07-17 14:21:29"
+            "time": "2014-07-21 08:43:38"
         },
         {
             "name": "psr/log",
@@ -3687,7 +3687,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "53fec7b5c3358e39e0000aa133ac7994be6a0860"
+                "reference": "65ab8ed0576fccb2620d0b43683f18af73a0a257"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3701,7 +3701,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-07-04 10:04:39"
+            "time": "2014-07-21 10:18:50"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3710,7 +3710,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "3aedc82a199157e6b3cc59d5a02f4885c985a913"
+                "reference": "1ab391ee49b1355247c052e9741259844064f158"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3722,7 +3722,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-07-17 14:41:41"
+            "time": "2014-07-21 11:51:36"
         },
         {
             "name": "vifeed/geo-bundle",
