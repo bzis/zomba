@@ -1,6 +1,6 @@
 {
   "name": "vifeed",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "dependencies": {
     "jquery": "2.1.0",
     "parallax": "https://github.com/wagerfield/parallax.git",
@@ -18,8 +18,8 @@
     "crypto-js": "http://crypto-js.googlecode.com/files/CryptoJS%20v3.1.2.zip",
     "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git",
     "bootstrap-daterangepicker": "https://github.com/dangrossman/bootstrap-daterangepicker.git",
-    "angular-moment": "0.6.2",
-    "highcharts.com": "https://github.com/highslide-software/highcharts.com.git",
+    "angular-moment": "0.7.1",
+    "highcharts-release": "4.0.3",
     "highcharts-ng": "https://github.com/pablojim/highcharts-ng.git",
     "twix": "https://github.com/icambron/twix.js.git",
     "angular-google-maps": "https://github.com/nlaplante/angular-google-maps.git",
@@ -29,5 +29,8 @@
   "devDependencies": {
     "socket.io-client": "latest",
     "angular-mocks": "1.2.18"
+  },
+  "resolutions": {
+    "moment": "2.7.0"
   }
 }

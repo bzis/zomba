@@ -175,7 +175,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/ladda-bootstrap/dist/ladda-themeless.min.css
         moment_js:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/momentjs/min/moment-with-langs.min.js
+                - %kernel.root_dir%/../bower-vendor/moment/min/moment-with-langs.min.js
                 - %kernel.root_dir%/../bower-vendor/twix/bin/twix.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-moment/angular-moment.min.js
         daterangepicker:
@@ -188,7 +188,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker-bs3.css
         highcharts:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/highcharts.com/js/highcharts.src.js
+                - %kernel.root_dir%/../bower-vendor/highcharts-release/highcharts.js
                 - %kernel.root_dir%/../bower-vendor/highcharts-ng/dist/highcharts-ng.min.js
             filters:
                 - ?closure
@@ -215,6 +215,11 @@ assetic:
         security_template:
             inputs:
                 - %kernel.root_dir%/../tmp/security-templates.js
+            filters:
+                - ?closure
+        sexy_modal_template:
+            inputs:
+                - %kernel.root_dir%/../tmp/sexy-modal-templates.js
             filters:
                 - ?closure
         fos_js_routes:
