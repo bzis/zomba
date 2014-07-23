@@ -1491,12 +1491,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanakimov/hashids.php.git",
-                "reference": "8587e301d86217666d341e8c68ee3051ef23aaaa"
+                "reference": "11895b4c33cc390d7faa4aab40f4cd17f05b23a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/8587e301d86217666d341e8c68ee3051ef23aaaa",
-                "reference": "8587e301d86217666d341e8c68ee3051ef23aaaa",
+                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/11895b4c33cc390d7faa4aab40f4cd17f05b23a2",
+                "reference": "11895b4c33cc390d7faa4aab40f4cd17f05b23a2",
                 "shasum": ""
             },
             "require": {
@@ -1540,7 +1540,7 @@
                 "obfuscate",
                 "youtube"
             ],
-            "time": "2014-06-04 01:56:32"
+            "time": "2014-07-22 05:42:05"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1962,12 +1962,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSPaymentPaypalBundle.git",
-                "reference": "5c58d9957814d83712b1e07a0acbf97c4f7d1f5b"
+                "reference": "ed66e955d661693ef1d99f7cf63b496a2c4dbf4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentPaypalBundle/zipball/5c58d9957814d83712b1e07a0acbf97c4f7d1f5b",
-                "reference": "5c58d9957814d83712b1e07a0acbf97c4f7d1f5b",
+                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentPaypalBundle/zipball/ed66e955d661693ef1d99f7cf63b496a2c4dbf4b",
+                "reference": "ed66e955d661693ef1d99f7cf63b496a2c4dbf4b",
                 "shasum": ""
             },
             "require": {
@@ -1991,9 +1991,7 @@
             "authors": [
                 {
                     "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Payment Bundle providing access to the PayPal API",
@@ -2002,7 +2000,7 @@
                 "payment",
                 "paypal"
             ],
-            "time": "2013-08-14 16:58:12"
+            "time": "2014-07-23 10:36:21"
         },
         {
             "name": "jms/serializer",
@@ -2693,12 +2691,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "7bb85cae1c45bdd16e692a9c3d98edfe0e2c9961"
+                "reference": "8dd7f40d2110083724f6672035e04d85132eea9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/7bb85cae1c45bdd16e692a9c3d98edfe0e2c9961",
-                "reference": "7bb85cae1c45bdd16e692a9c3d98edfe0e2c9961",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/8dd7f40d2110083724f6672035e04d85132eea9f",
+                "reference": "8dd7f40d2110083724f6672035e04d85132eea9f",
                 "shasum": ""
             },
             "require": {
@@ -2735,7 +2733,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-07-21 12:41:13"
+            "time": "2014-07-23 10:43:29"
         },
         {
             "name": "psr/log",
@@ -3710,7 +3708,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "a21a4332f3e0e8a61c35a0eafbcc7d77eb3bbfa9"
+                "reference": "0695187ec91962745748d3370125bbd397ff09fd"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3722,7 +3720,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-07-21 13:26:41"
+            "time": "2014-07-23 11:57:29"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3857,7 +3855,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "26c15a066ec5df800afbb14239e210bf1922508f"
+                "reference": "4debaf52b844669a0b5cf24e0039637d8ad52f3e"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3866,7 +3864,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-07-17 14:40:01"
+            "time": "2014-07-23 11:55:29"
         },
         {
             "name": "vifeed/video-view-bundle",
