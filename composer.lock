@@ -3833,7 +3833,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "8bc5b0c5ff844537e12afade6ee24762e382b938"
+                "reference": "94471bbdb78a8f2eacfc80e7aae611ce2a1787ec"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3846,7 +3846,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-07-17 09:28:09"
+            "time": "2014-07-25 09:29:37"
         },
         {
             "name": "vifeed/video-promo-bundle",
