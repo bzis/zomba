@@ -73,5 +73,13 @@ parameters:
         bank_account_nubmer: ''
         kpp: ''
 
+    rabbitmq.host: 'localhost'
+    rabbitmq.port: 5672
+    rabbitmq.user: 'guest'
+    rabbitmq.password: 'guest'
+
+    feedback.notification.email: feedback@zombakka.com
+    partnership.notification.email: partnership@zombakka.com
     withdrawal.notification.email: withdrawal@zombakka.com
     backend.host: backend.zombakka.com
+    daemon.pid_file_location: '/tmp'

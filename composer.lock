@@ -1354,12 +1354,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "cfb1eeac62d0c738534975e18ddb1ee06dd9c499"
+                "reference": "cab95eeba6de613b2dc1d19c7d71d1311fd8a809"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/cfb1eeac62d0c738534975e18ddb1ee06dd9c499",
-                "reference": "cfb1eeac62d0c738534975e18ddb1ee06dd9c499",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/cab95eeba6de613b2dc1d19c7d71d1311fd8a809",
+                "reference": "cab95eeba6de613b2dc1d19c7d71d1311fd8a809",
                 "shasum": ""
             },
             "require": {
@@ -1391,7 +1391,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-07-15 07:44:41"
+            "time": "2014-07-19 07:49:00"
         },
         {
             "name": "guzzle/guzzle",
@@ -1491,12 +1491,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanakimov/hashids.php.git",
-                "reference": "8587e301d86217666d341e8c68ee3051ef23aaaa"
+                "reference": "11895b4c33cc390d7faa4aab40f4cd17f05b23a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/8587e301d86217666d341e8c68ee3051ef23aaaa",
-                "reference": "8587e301d86217666d341e8c68ee3051ef23aaaa",
+                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/11895b4c33cc390d7faa4aab40f4cd17f05b23a2",
+                "reference": "11895b4c33cc390d7faa4aab40f4cd17f05b23a2",
                 "shasum": ""
             },
             "require": {
@@ -1540,7 +1540,7 @@
                 "obfuscate",
                 "youtube"
             ],
-            "time": "2014-06-04 01:56:32"
+            "time": "2014-07-22 05:42:05"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1962,12 +1962,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSPaymentPaypalBundle.git",
-                "reference": "5c58d9957814d83712b1e07a0acbf97c4f7d1f5b"
+                "reference": "ed66e955d661693ef1d99f7cf63b496a2c4dbf4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentPaypalBundle/zipball/5c58d9957814d83712b1e07a0acbf97c4f7d1f5b",
-                "reference": "5c58d9957814d83712b1e07a0acbf97c4f7d1f5b",
+                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentPaypalBundle/zipball/ed66e955d661693ef1d99f7cf63b496a2c4dbf4b",
+                "reference": "ed66e955d661693ef1d99f7cf63b496a2c4dbf4b",
                 "shasum": ""
             },
             "require": {
@@ -1991,9 +1991,7 @@
             "authors": [
                 {
                     "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Payment Bundle providing access to the PayPal API",
@@ -2002,7 +2000,7 @@
                 "payment",
                 "paypal"
             ],
-            "time": "2013-08-14 16:58:12"
+            "time": "2014-07-23 10:36:21"
         },
         {
             "name": "jms/serializer",
@@ -2693,12 +2691,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "239864d9a0929f29bf8c5a8370ef743537c4953d"
+                "reference": "8dd7f40d2110083724f6672035e04d85132eea9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/239864d9a0929f29bf8c5a8370ef743537c4953d",
-                "reference": "239864d9a0929f29bf8c5a8370ef743537c4953d",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/8dd7f40d2110083724f6672035e04d85132eea9f",
+                "reference": "8dd7f40d2110083724f6672035e04d85132eea9f",
                 "shasum": ""
             },
             "require": {
@@ -2735,7 +2733,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-07-15 09:54:33"
+            "time": "2014-07-23 10:43:29"
         },
         {
             "name": "psr/log",
@@ -3432,16 +3430,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.17",
+            "version": "v2.3.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "c02f56f7948f2699c8cc8b118c7faeb13470e357"
+                "reference": "75e07e6bde6391a6f49c8546a43740c80ac1b06b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/c02f56f7948f2699c8cc8b118c7faeb13470e357",
-                "reference": "c02f56f7948f2699c8cc8b118c7faeb13470e357",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/75e07e6bde6391a6f49c8546a43740c80ac1b06b",
+                "reference": "75e07e6bde6391a6f49c8546a43740c80ac1b06b",
                 "shasum": ""
             },
             "require": {
@@ -3538,7 +3536,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-07-07 12:59:36"
+            "time": "2014-07-15 14:20:44"
         },
         {
             "name": "twig/extensions",
@@ -3687,7 +3685,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "53fec7b5c3358e39e0000aa133ac7994be6a0860"
+                "reference": "65ab8ed0576fccb2620d0b43683f18af73a0a257"
             },
             "require": {
                 "cayetanosoriano/hashids-bundle": "dev-master",
@@ -3701,7 +3699,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-07-04 10:04:39"
+            "time": "2014-07-21 10:18:50"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3710,7 +3708,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "7f03d7e63b9eb25873904f12f9194ba6ffa5feaa"
+                "reference": "0695187ec91962745748d3370125bbd397ff09fd"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3722,7 +3720,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-07-15 10:20:26"
+            "time": "2014-07-23 11:57:29"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3796,7 +3794,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "c7793eba29f6c593d054e8c010e1958496d0ad40"
+                "reference": "60c5fff3d5dc44e442276a2a992fe2a653e98fa8"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3805,7 +3803,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-06-06 15:24:27"
+            "time": "2014-07-17 09:29:04"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -3835,7 +3833,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "f09a8f54cc9a3a642b7fe4f4faf83b3658b0202c"
+                "reference": "8bc5b0c5ff844537e12afade6ee24762e382b938"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3848,7 +3846,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-06-24 06:20:33"
+            "time": "2014-07-17 09:28:09"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -3857,7 +3855,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "16ff31d0f05aaa159f05f9aa884c4cb09b9c1d28"
+                "reference": "4debaf52b844669a0b5cf24e0039637d8ad52f3e"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3866,7 +3864,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-07-15 08:03:06"
+            "time": "2014-07-23 11:55:29"
         },
         {
             "name": "vifeed/video-view-bundle",
