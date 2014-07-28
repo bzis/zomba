@@ -37,7 +37,7 @@ class AppKernel extends Kernel
             new Karser\RobokassaBundle\KarserRobokassaBundle(),
             new cayetanosoriano\HashidsBundle\cayetanosorianoHashidsBundle(),
 //            new Uecode\Bundle\DaemonBundle\DaemonBundle(),
-//            new OldSound\RabbitMqBundle\OldSoundRabbitMqBundle(),
+            new OldSound\RabbitMqBundle\OldSoundRabbitMqBundle(),
             new Chewbacco\Payment\QiwiWalletBundle\ChewbaccoPaymentQiwiWalletBundle(),
             new JMS\Payment\PaypalBundle\JMSPaymentPaypalBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),

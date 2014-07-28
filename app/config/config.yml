@@ -367,25 +367,29 @@ cayetanosoriano_hashids:
     salt: %cayetanosoriano_hashids.salt%
     min_hash_length: %cayetanosoriano_hashids.min_hash_length%
 
-#old_sound_rabbit_mq:
-#    connections:
-#        default:
-#            host:     'localhost'
-#            port:     5672
-#            user:     'guest'
-#            password: 'guest'
-#            vhost:    '/'
-#            lazy:     false
-#    producers:
-#        upload_picture:
-#            connection:       default
-#            exchange_options: {name: 'upload-picture', type: direct}
-#    consumers:
-#        upload_picture:
-#            connection:       default
-#            exchange_options: {name: 'upload-picture', type: direct}
-#            queue_options:    {name: 'upload-picture'}
-#            callback:         upload_picture_service
+old_sound_rabbit_mq:
+    connections:
+        default:
+            host:     'localhost'
+            port:     5672
+            user:     'guest'
+            password: 'guest'
+            vhost:    '/'
+            lazy:     false
+    producers:
+        video_view:
+            connection:       default
+            exchange_options: {name: 'video-view', type: direct}
+        campaign_status_change:
+            connection:       default
+            exchange_options: {name: 'campaign-change', type: direct}
+            queue_options:    {name: 'new-campaign'}
+    consumers:
+        new_campaign_notify:
+            connection:       default
+            exchange_options: {name: 'campaign-change', type: direct}
+            queue_options:    {name: 'new-campaign'}
+            callback:         vifeed.rabbit.new_campaign_notify.consumer
 
 #daemon:
 #    daemons:
