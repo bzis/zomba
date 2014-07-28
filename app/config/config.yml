@@ -370,11 +370,11 @@ cayetanosoriano_hashids:
 old_sound_rabbit_mq:
     connections:
         default:
-            host:     'localhost'
-            port:     5672
-            user:     'guest'
-            password: 'guest'
-            vhost:    '/'
+            host:     %rabbitmq.host%
+            port:     %rabbitmq.port%
+            user:     %rabbitmq.user%
+            password: %rabbitmq.password%
+            vhost:    %rabbitmq.vhost%
             lazy:     false
     producers:
         video_view:

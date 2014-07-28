@@ -43,6 +43,7 @@ parameters:
     rabbitmq.port: 5672
     rabbitmq.user: 'guest'
     rabbitmq.password: 'guest'
+    rabbitmq.vhost: '/'
     vifeed:
         comission: 0.5
         min_view_time: 5
