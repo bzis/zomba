@@ -1354,12 +1354,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "cab95eeba6de613b2dc1d19c7d71d1311fd8a809"
+                "reference": "697a0fe34fdd9a1e9f5d8fd0a21d9533318f6663"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/cab95eeba6de613b2dc1d19c7d71d1311fd8a809",
-                "reference": "cab95eeba6de613b2dc1d19c7d71d1311fd8a809",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/697a0fe34fdd9a1e9f5d8fd0a21d9533318f6663",
+                "reference": "697a0fe34fdd9a1e9f5d8fd0a21d9533318f6663",
                 "shasum": ""
             },
             "require": {
@@ -1391,7 +1391,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-07-19 07:49:00"
+            "time": "2014-07-27 07:56:48"
         },
         {
             "name": "guzzle/guzzle",
@@ -2188,7 +2188,7 @@
         },
         {
             "name": "kriswallsmith/assetic",
-            "version": "dev-master",
+            "version": "v1.2.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
@@ -2262,16 +2262,16 @@
         },
         {
             "name": "kriswallsmith/buzz",
-            "version": "v0.10",
+            "version": "v0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/Buzz.git",
-                "reference": "759432d66387e3433d3b06cb6f773b97225b9b17"
+                "reference": "a0f207ac4939978b604be9bec5d5b19baecd8165"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/759432d66387e3433d3b06cb6f773b97225b9b17",
-                "reference": "759432d66387e3433d3b06cb6f773b97225b9b17",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/a0f207ac4939978b604be9bec5d5b19baecd8165",
+                "reference": "a0f207ac4939978b604be9bec5d5b19baecd8165",
                 "shasum": ""
             },
             "require": {
@@ -2306,7 +2306,7 @@
                 "curl",
                 "http client"
             ],
-            "time": "2013-05-19 03:41:15"
+            "time": "2014-03-24 21:56:09"
         },
         {
             "name": "kriswallsmith/spork",
@@ -2691,12 +2691,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "8dd7f40d2110083724f6672035e04d85132eea9f"
+                "reference": "7155dfdfb4d43e3e4cae1820353ba3ec2dced882"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/8dd7f40d2110083724f6672035e04d85132eea9f",
-                "reference": "8dd7f40d2110083724f6672035e04d85132eea9f",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/7155dfdfb4d43e3e4cae1820353ba3ec2dced882",
+                "reference": "7155dfdfb4d43e3e4cae1820353ba3ec2dced882",
                 "shasum": ""
             },
             "require": {
@@ -2733,7 +2733,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-07-23 10:43:29"
+            "time": "2014-07-27 13:49:49"
         },
         {
             "name": "psr/log",
@@ -3202,7 +3202,7 @@
         },
         {
             "name": "symfony/assetic-bundle",
-            "version": "dev-master",
+            "version": "v2.4.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
@@ -3265,20 +3265,21 @@
         },
         {
             "name": "symfony/icu",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "target-dir": "Symfony/Component/Icu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Icu.git",
-                "reference": "98e197da54df1f966dd5e8a4992135703569c987"
+                "reference": "d4d85d6055b87f394d941b45ddd3a9173e1e3d2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Icu/zipball/98e197da54df1f966dd5e8a4992135703569c987",
-                "reference": "98e197da54df1f966dd5e8a4992135703569c987",
+                "url": "https://api.github.com/repos/symfony/Icu/zipball/d4d85d6055b87f394d941b45ddd3a9173e1e3d2a",
+                "reference": "d4d85d6055b87f394d941b45ddd3a9173e1e3d2a",
                 "shasum": ""
             },
             "require": {
+                "ext-intl": "*",
                 "lib-icu": ">=4.4",
                 "php": ">=5.3.3",
                 "symfony/intl": "~2.3"
@@ -3309,7 +3310,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-10-04 10:06:38"
+            "time": "2014-07-25 09:58:17"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -3708,7 +3709,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "0695187ec91962745748d3370125bbd397ff09fd"
+                "reference": "a2a1f1b33fea7af336dc2741ce6c5eb3729602de"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3720,7 +3721,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-07-23 11:57:29"
+            "time": "2014-07-25 12:34:08"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -3833,7 +3834,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "8bc5b0c5ff844537e12afade6ee24762e382b938"
+                "reference": "94471bbdb78a8f2eacfc80e7aae611ce2a1787ec"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -3846,7 +3847,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-07-17 09:28:09"
+            "time": "2014-07-25 09:29:37"
         },
         {
             "name": "vifeed/video-promo-bundle",
