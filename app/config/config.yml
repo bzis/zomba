@@ -380,6 +380,7 @@ old_sound_rabbit_mq:
         video_view:
             connection:       default
             exchange_options: {name: 'video-view', type: direct}
+            queue_options:    {name: 'video-view-payment'}
         campaign_status_change:
             connection:       default
             exchange_options: {name: 'campaign-change', type: direct}
@@ -390,6 +391,11 @@ old_sound_rabbit_mq:
             exchange_options: {name: 'campaign-change', type: direct}
             queue_options:    {name: 'new-campaign'}
             callback:         vifeed.rabbit.new_campaign_notify.consumer
+        pay_video_view:
+            exchange_options: {name: 'video-view', type: direct}
+            queue_options:    {name: 'video-view-payment'}
+            qos_options:      {prefetch_size: 0, prefetch_count: 3, global: false}
+            callback:         vifeed.payment.pay_video_view.consumer
 
 stof_doctrine_extensions:
     default_locale: ru_RU
