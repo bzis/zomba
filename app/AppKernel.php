@@ -40,6 +40,7 @@ class AppKernel extends Kernel
             new Chewbacco\Payment\QiwiWalletBundle\ChewbaccoPaymentQiwiWalletBundle(),
             new JMS\Payment\PaypalBundle\JMSPaymentPaypalBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Vresh\TwilioBundle\VreshTwilioBundle(),
 
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\VifeedUserBundle(),

@@ -363,6 +363,10 @@ jms_payment_paypal:
     signature: %paypal.api_signature%
     debug: false
 
+vresh_twilio:
+    sid: %twilio.sid%
+    authToken: %twilio.token%
+
 cayetanosoriano_hashids:
     salt: %cayetanosoriano_hashids.salt%
     min_hash_length: %cayetanosoriano_hashids.min_hash_length%
@@ -407,3 +411,4 @@ bank_payment:
     templates:
         receipt: ::receipt.html.twig
         transfer: ::transfer.html.twig
+

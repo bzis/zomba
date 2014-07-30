@@ -84,3 +84,7 @@ parameters:
     withdrawal.notification.email: withdrawal@zombakka.com
     backend.host: backend.zombakka.com
     daemon.pid_file_location: '/tmp'
+
+    twilio.sid: AC668d221231b47c2f7db6c19ced65b584
+    twilio.token: 8b9610584c29edcbb87bca3647235569
+    twilio.phone_number: +14846536503
