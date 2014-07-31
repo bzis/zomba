@@ -1,7 +1,7 @@
 {
   "ENV": "staging",
-  "nodeHost": "tracker-stage.vifeed.co",
-  "trackerPath": "http://videos.vifeed.co",
+  "trackerHost": "tracker-stage.vifeed.co",
+  "videoHost": "videos.vifeed.co",
   "apiPath": "/api",
   "statsPath": "http://tracker-stage.vifeed.co:8081",
   "vkKey": "4325637"
