@@ -53,7 +53,7 @@ parameters:
 
     google.api.key: ''
 
-    tracker.host: node-app.dev
+    tracker.host: tracker.vifeed.dev
 
     vifeed:
         # комиссия системы
