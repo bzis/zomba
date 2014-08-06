@@ -150,7 +150,7 @@
         "doctrine/doctrine-fixtures-bundle": "dev-master",
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "snc/redis-bundle": "1.1.x-dev",
-        "predis/predis": "0.8.x-dev",
+        "predis/predis": "0.8.7",
         "jms/di-extra-bundle": "dev-master",
         "fortawesome/font-awesome": "4.0.x-dev",
         "angular-ui/bootstrap": "dev-master",
