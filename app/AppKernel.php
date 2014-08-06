@@ -36,9 +36,11 @@ class AppKernel extends Kernel
             new JMS\Payment\CoreBundle\JMSPaymentCoreBundle(),
             new Karser\RobokassaBundle\KarserRobokassaBundle(),
             new cayetanosoriano\HashidsBundle\cayetanosorianoHashidsBundle(),
+            new OldSound\RabbitMqBundle\OldSoundRabbitMqBundle(),
             new Chewbacco\Payment\QiwiWalletBundle\ChewbaccoPaymentQiwiWalletBundle(),
             new JMS\Payment\PaypalBundle\JMSPaymentPaypalBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Vresh\TwilioBundle\VreshTwilioBundle(),
 
             new Vifeed\CampaignBundle\VifeedCampaignBundle(),
             new Vifeed\UserBundle\VifeedUserBundle(),
