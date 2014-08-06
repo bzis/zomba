@@ -932,7 +932,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -1887,9 +1887,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -3790,7 +3790,7 @@
                     "role": "Lead Developer"
                 },
                 {
-                    "name": "Armin Ronacher2",
+                    "name": "Armin Ronacher",
                     "email": "armin.ronacher@active-4.com",
                     "role": "Project Founder"
                 },
@@ -4031,7 +4031,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "8a9f684856dd9bf4a343e46aee0050bc4ff7d49e"
+                "reference": "11d76504da634b5ca24730b35d2a9792bd8ea29a"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4044,7 +4044,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-06-16 12:24:30"
+            "time": "2014-08-06 11:16:17"
         },
         {
             "name": "vifeed/system-bundle",
@@ -4262,7 +4262,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
