@@ -63,7 +63,7 @@ namespace :deploy do
     puts '--> Restarting varnish'.green
     run 'sudo supervisorctl update'
     puts '--> Updating supervisord commands'.green
-    run 'sudo supervisorctl start all'
+    run 'sudo supervisorctl restart all'
     puts '--> Starting supervisord commands'.green
   end
 end
