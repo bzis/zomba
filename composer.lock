@@ -35,12 +35,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bzis/DaemonBundle.git",
-                "reference": "ed25cc87db27aa8d7255a584c5c3301d14d454fd"
+                "reference": "e95512f9a70b07ee78c3d8d83b88450fa183ff26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bzis/DaemonBundle/zipball/ed25cc87db27aa8d7255a584c5c3301d14d454fd",
-                "reference": "ed25cc87db27aa8d7255a584c5c3301d14d454fd",
+                "url": "https://api.github.com/repos/bzis/DaemonBundle/zipball/e95512f9a70b07ee78c3d8d83b88450fa183ff26",
+                "reference": "e95512f9a70b07ee78c3d8d83b88450fa183ff26",
                 "shasum": ""
             },
             "require": {
@@ -70,7 +70,7 @@
                 "source": "https://github.com/bzis/DaemonBundle/tree/master",
                 "issues": "https://github.com/bzis/DaemonBundle/issues"
             },
-            "time": "2014-07-29 14:46:51"
+            "time": "2014-08-06 14:14:10"
         },
         {
             "name": "cayetanosoriano/hashids-bundle",
@@ -1448,12 +1448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "55ac3a0eda562f9d961dcd7dc4813713397c96a0"
+                "reference": "13e577cd52b836ebaf5e09c2938bdffb6b913d65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/55ac3a0eda562f9d961dcd7dc4813713397c96a0",
-                "reference": "55ac3a0eda562f9d961dcd7dc4813713397c96a0",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/13e577cd52b836ebaf5e09c2938bdffb6b913d65",
+                "reference": "13e577cd52b836ebaf5e09c2938bdffb6b913d65",
                 "shasum": ""
             },
             "require": {
@@ -1532,7 +1532,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-07-29 19:57:57"
+            "time": "2014-08-06 20:57:30"
         },
         {
             "name": "hashids/hashids",
@@ -2567,12 +2567,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "80d1c266f6d13d5b7f18291166ab8313ea25e4b2"
+                "reference": "eb08b7af277a388fe0114250dd21370605c54272"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/80d1c266f6d13d5b7f18291166ab8313ea25e4b2",
-                "reference": "80d1c266f6d13d5b7f18291166ab8313ea25e4b2",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/eb08b7af277a388fe0114250dd21370605c54272",
+                "reference": "eb08b7af277a388fe0114250dd21370605c54272",
                 "shasum": ""
             },
             "require": {
@@ -2633,7 +2633,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-08-06 01:45:37"
+            "time": "2014-08-06 20:41:22"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3966,7 +3966,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "d71717e393171c852486e74b01b8e99c1746f275"
+                "reference": "4f0014d4419c651b6d4c9020cd7750bb8fd8598a"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3978,7 +3978,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-08-05 15:18:14"
+            "time": "2014-08-06 15:36:32"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4005,7 +4005,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "d1cd74b11c9ec191bb468ef3b8f25702cf7b7280"
+                "reference": "6cf23c0d652841f0aa06df853899e63011b71f5c"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4022,7 +4022,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-08-06 10:28:00"
+            "time": "2014-08-06 14:16:50"
         },
         {
             "name": "vifeed/platform-bundle",
