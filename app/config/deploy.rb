@@ -129,4 +129,12 @@ task :upload_parameters do
   }
 end
 
+
+task :fix_logs do
+  run "sh -c 'cd #{latest_release} && test -f app/logs/prod.log || touch app/logs/prod.log'"
+  run "sh -c 'cd #{latest_release} && chown deploy:www-data app/logs/* && chmod 664 app/logs/*'"
+end
+
+after 'deploy', 'fix_logs'
+
 before 'deploy:share_childs', 'upload_parameters'
