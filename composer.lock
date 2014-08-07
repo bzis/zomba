@@ -4005,7 +4005,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "6cf23c0d652841f0aa06df853899e63011b71f5c"
+                "reference": "b96b48be8525179bfd39ea54e07b618287c4792b"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4022,7 +4022,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-08-06 14:16:50"
+            "time": "2014-08-07 19:52:14"
         },
         {
             "name": "vifeed/platform-bundle",
