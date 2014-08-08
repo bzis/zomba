@@ -84,6 +84,11 @@ parameters:
     withdrawal.notification.email: withdrawal@zombakka.com
     backend.host: backend.zombakka.com
     daemon.pid_file_location: '/tmp'
+    promo_domain: zomba.me
+    facebook.app_id: ''
+    facebook.app_secret: ''
+    vk.app_id: ''
+    vk.app_secret: ''
 
     twilio.sid: AC668d221231b47c2f7db6c19ced65b584
     twilio.token: 8b9610584c29edcbb87bca3647235569
