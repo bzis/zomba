@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5012a43773a8d6724234d789e8fb0a27",
+    "hash": "6648db2d3972e0d4cab06da6614d2e99",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1403,12 +1403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "6a19712f0bac10753310e2064facd084d7c0f8e0"
+                "reference": "a3b552de85e652fb6836503e428d76edda726987"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/6a19712f0bac10753310e2064facd084d7c0f8e0",
-                "reference": "6a19712f0bac10753310e2064facd084d7c0f8e0",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a3b552de85e652fb6836503e428d76edda726987",
+                "reference": "a3b552de85e652fb6836503e428d76edda726987",
                 "shasum": ""
             },
             "require": {
@@ -1440,7 +1440,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-08-06 08:06:14"
+            "time": "2014-08-08 08:07:55"
         },
         {
             "name": "guzzle/guzzle",
@@ -2789,7 +2789,7 @@
         },
         {
             "name": "predis/predis",
-            "version": "0.8.x-dev",
+            "version": "v0.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
@@ -3187,12 +3187,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "43f8bb8109b6c419b5e8be4b76369e41a9a6070c"
+                "reference": "ec06b361a618301bcf95ffc7ca323d09e8a73395"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/43f8bb8109b6c419b5e8be4b76369e41a9a6070c",
-                "reference": "43f8bb8109b6c419b5e8be4b76369e41a9a6070c",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/ec06b361a618301bcf95ffc7ca323d09e8a73395",
+                "reference": "ec06b361a618301bcf95ffc7ca323d09e8a73395",
                 "shasum": ""
             },
             "require": {
@@ -3242,7 +3242,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2014-06-26 07:48:05"
+            "time": "2014-08-08 07:14:17"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -4338,7 +4338,6 @@
         "doctrine/doctrine-fixtures-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
         "snc/redis-bundle": 20,
-        "predis/predis": 20,
         "jms/di-extra-bundle": 20,
         "fortawesome/font-awesome": 20,
         "angular-ui/bootstrap": 20,
