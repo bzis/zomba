@@ -179,7 +179,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/ladda-bootstrap/dist/ladda-themeless.min.css
         moment_js:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/moment/min/moment-with-langs.min.js
+                - %kernel.root_dir%/../bower-vendor/moment/min/moment-with-locales.min.js
                 - %kernel.root_dir%/../bower-vendor/twix/bin/twix.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-moment/angular-moment.min.js
         daterangepicker:
