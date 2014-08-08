@@ -379,7 +379,7 @@ old_sound_rabbit_mq:
             user:     %rabbitmq.user%
             password: %rabbitmq.password%
             vhost:    %rabbitmq.vhost%
-            lazy:     false
+            lazy:     true
     producers:
         video_view:
             connection:       default
