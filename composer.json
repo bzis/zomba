@@ -181,7 +181,8 @@
         "videlalvaro/php-amqplib"  : "2.2.*",
         "oldsound/rabbitmq-bundle": "1.3.*",
         "bzis/daemon-bundle": "dev-master",
-        "vresh/twilio-bundle": "dev-master"
+        "vresh/twilio-bundle": "dev-master",
+        "facebook/php-sdk-v4": "4.0.*"
     },
     "require-dev": {
     },

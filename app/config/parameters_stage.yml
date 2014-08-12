@@ -51,6 +51,11 @@ parameters:
         account_number: ''
         bank_account_nubmer: ''
         kpp: ''
+    promo_domain: zomba.me
+    facebook.app_id: ''
+    facebook.app_secret: ''
+    vk.app_id: ''
+    vk.app_secret: ''
     feedback.notification.email: feedback@zombakka.com
     partnership.notification.email: partnership@zombakka.com
     withdrawal.notification.email: withdrawal@zombakka.com
