@@ -3987,7 +3987,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "f4a829f38c91fc3367bd71160615cf254a786ef0"
+                "reference": "52eeae460bd92f561d9c1c27f00eeadccf2f1684"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4002,7 +4002,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-08-12 08:49:43"
+            "time": "2014-08-12 14:04:37"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4177,7 +4177,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "804a32a7f330233dd60f57df3c459b9185004e94"
+                "reference": "a7f992612b5f47de69c4fcbcaaa686efd3326321"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4186,7 +4186,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-06-27 13:21:34"
+            "time": "2014-08-12 13:32:15"
         },
         {
             "name": "vresh/twilio-bundle",
