@@ -35,12 +35,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bzis/DaemonBundle.git",
-                "reference": "e95512f9a70b07ee78c3d8d83b88450fa183ff26"
+                "reference": "15debf0c0588fb26178f753784d543a081535064"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bzis/DaemonBundle/zipball/e95512f9a70b07ee78c3d8d83b88450fa183ff26",
-                "reference": "e95512f9a70b07ee78c3d8d83b88450fa183ff26",
+                "url": "https://api.github.com/repos/bzis/DaemonBundle/zipball/15debf0c0588fb26178f753784d543a081535064",
+                "reference": "15debf0c0588fb26178f753784d543a081535064",
                 "shasum": ""
             },
             "require": {
@@ -70,7 +70,7 @@
                 "source": "https://github.com/bzis/DaemonBundle/tree/master",
                 "issues": "https://github.com/bzis/DaemonBundle/issues"
             },
-            "time": "2014-08-06 14:14:10"
+            "time": "2014-08-12 16:33:05"
         },
         {
             "name": "cayetanosoriano/hashids-bundle",
@@ -1227,12 +1227,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "33606306a4f1b1bf9e421af825f85639f4125405"
+                "reference": "b7f01feb500808aff5dc41a7aeda1e688c0791b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/33606306a4f1b1bf9e421af825f85639f4125405",
-                "reference": "33606306a4f1b1bf9e421af825f85639f4125405",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/b7f01feb500808aff5dc41a7aeda1e688c0791b1",
+                "reference": "b7f01feb500808aff5dc41a7aeda1e688c0791b1",
                 "shasum": ""
             },
             "require": {
@@ -1296,7 +1296,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-08-12 07:05:34"
+            "time": "2014-08-12 16:20:35"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -3987,7 +3987,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "52eeae460bd92f561d9c1c27f00eeadccf2f1684"
+                "reference": "9bf56c9e82630843d622851a68a52a99b5a667af"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4002,7 +4002,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-08-12 14:04:37"
+            "time": "2014-08-12 17:18:02"
         },
         {
             "name": "vifeed/frontend-bundle",
