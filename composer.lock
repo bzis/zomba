@@ -1403,12 +1403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a3b552de85e652fb6836503e428d76edda726987"
+                "reference": "4ae272683e18888362e1f935b813e345b99e23b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a3b552de85e652fb6836503e428d76edda726987",
-                "reference": "a3b552de85e652fb6836503e428d76edda726987",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/4ae272683e18888362e1f935b813e345b99e23b8",
+                "reference": "4ae272683e18888362e1f935b813e345b99e23b8",
                 "shasum": ""
             },
             "require": {
@@ -1440,7 +1440,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-08-08 08:07:55"
+            "time": "2014-08-09 08:09:06"
         },
         {
             "name": "guzzle/guzzle",
@@ -1448,12 +1448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "13e577cd52b836ebaf5e09c2938bdffb6b913d65"
+                "reference": "54991459675c1a2924122afbb0e5609ade581155"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/13e577cd52b836ebaf5e09c2938bdffb6b913d65",
-                "reference": "13e577cd52b836ebaf5e09c2938bdffb6b913d65",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/54991459675c1a2924122afbb0e5609ade581155",
+                "reference": "54991459675c1a2924122afbb0e5609ade581155",
                 "shasum": ""
             },
             "require": {
@@ -1532,7 +1532,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-08-06 20:57:30"
+            "time": "2014-08-11 04:32:36"
         },
         {
             "name": "hashids/hashids",
@@ -2567,12 +2567,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "eb08b7af277a388fe0114250dd21370605c54272"
+                "reference": "38f0bec7059daa801e477b78b4672c88cb8108e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/eb08b7af277a388fe0114250dd21370605c54272",
-                "reference": "eb08b7af277a388fe0114250dd21370605c54272",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/38f0bec7059daa801e477b78b4672c88cb8108e9",
+                "reference": "38f0bec7059daa801e477b78b4672c88cb8108e9",
                 "shasum": ""
             },
             "require": {
@@ -2633,7 +2633,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-08-06 20:41:22"
+            "time": "2014-08-08 15:46:19"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3187,12 +3187,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "ec06b361a618301bcf95ffc7ca323d09e8a73395"
+                "reference": "abf57d5d5287c67ebd95b8d8b963a6a0744f16df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/ec06b361a618301bcf95ffc7ca323d09e8a73395",
-                "reference": "ec06b361a618301bcf95ffc7ca323d09e8a73395",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/abf57d5d5287c67ebd95b8d8b963a6a0744f16df",
+                "reference": "abf57d5d5287c67ebd95b8d8b963a6a0744f16df",
                 "shasum": ""
             },
             "require": {
@@ -3213,7 +3213,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -3242,7 +3242,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2014-08-08 07:14:17"
+            "time": "2014-08-09 10:53:56"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -3966,7 +3966,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "3daf0738d4561e4f4a15d7493bd9001102166131"
+                "reference": "5c2cd54636082d36e8e7f3db530b505225a0fa3d"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3978,7 +3978,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-08-07 13:55:11"
+            "time": "2014-08-08 10:21:01"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4005,7 +4005,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "b96b48be8525179bfd39ea54e07b618287c4792b"
+                "reference": "1c1d898413cd468003876eaaa1a66480c48c53d4"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4022,7 +4022,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-08-07 19:52:14"
+            "time": "2014-08-10 14:59:18"
         },
         {
             "name": "vifeed/platform-bundle",
