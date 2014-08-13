@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5012a43773a8d6724234d789e8fb0a27",
+    "hash": "2fea15e504f24373b3fa5158b0032440",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -35,12 +35,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bzis/DaemonBundle.git",
-                "reference": "e95512f9a70b07ee78c3d8d83b88450fa183ff26"
+                "reference": "15debf0c0588fb26178f753784d543a081535064"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bzis/DaemonBundle/zipball/e95512f9a70b07ee78c3d8d83b88450fa183ff26",
-                "reference": "e95512f9a70b07ee78c3d8d83b88450fa183ff26",
+                "url": "https://api.github.com/repos/bzis/DaemonBundle/zipball/15debf0c0588fb26178f753784d543a081535064",
+                "reference": "15debf0c0588fb26178f753784d543a081535064",
                 "shasum": ""
             },
             "require": {
@@ -70,7 +70,7 @@
                 "source": "https://github.com/bzis/DaemonBundle/tree/master",
                 "issues": "https://github.com/bzis/DaemonBundle/issues"
             },
-            "time": "2014-08-06 14:14:10"
+            "time": "2014-08-12 16:33:05"
         },
         {
             "name": "cayetanosoriano/hashids-bundle",
@@ -1027,6 +1027,55 @@
             "time": "2014-07-11 03:05:53"
         },
         {
+            "name": "facebook/php-sdk-v4",
+            "version": "4.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facebook/facebook-php-sdk-v4.git",
+                "reference": "ea577e1c3e5e4be894cddcadc09e5645c9e40f1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facebook/facebook-php-sdk-v4/zipball/ea577e1c3e5e4be894cddcadc09e5645c9e40f1a",
+                "reference": "ea577e1c3e5e4be894cddcadc09e5645c9e40f1a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "~4.0",
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Allows for implementation of the Guzzle HTTP client"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Facebook\\": "src/Facebook/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Facebook Platform"
+            ],
+            "authors": [
+                {
+                    "name": "Facebook",
+                    "homepage": "https://github.com/facebook/facebook-php-sdk-v4/contributors"
+                }
+            ],
+            "description": "Facebook SDK for PHP",
+            "homepage": "https://github.com/facebook/facebook-php-sdk-v4",
+            "keywords": [
+                "facebook",
+                "sdk"
+            ],
+            "time": "2014-08-12 22:10:16"
+        },
+        {
             "name": "fortawesome/font-awesome",
             "version": "dev-master",
             "source": {
@@ -1178,12 +1227,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "dcd601879b2e03c9615dfc2455d5bd70f59f9fb6"
+                "reference": "4df33da7dfdad1d6721ef56a770bb9d691c44fd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/dcd601879b2e03c9615dfc2455d5bd70f59f9fb6",
-                "reference": "dcd601879b2e03c9615dfc2455d5bd70f59f9fb6",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/4df33da7dfdad1d6721ef56a770bb9d691c44fd5",
+                "reference": "4df33da7dfdad1d6721ef56a770bb9d691c44fd5",
                 "shasum": ""
             },
             "require": {
@@ -1247,7 +1296,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-08-07 11:22:31"
+            "time": "2014-08-13 05:52:08"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1403,12 +1452,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "4ae272683e18888362e1f935b813e345b99e23b8"
+                "reference": "d5aef57715c52593f3ad77a30518cb82480615c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/4ae272683e18888362e1f935b813e345b99e23b8",
-                "reference": "4ae272683e18888362e1f935b813e345b99e23b8",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/d5aef57715c52593f3ad77a30518cb82480615c9",
+                "reference": "d5aef57715c52593f3ad77a30518cb82480615c9",
                 "shasum": ""
             },
             "require": {
@@ -1440,7 +1489,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-08-09 08:09:06"
+            "time": "2014-08-13 08:13:50"
         },
         {
             "name": "guzzle/guzzle",
@@ -1448,12 +1497,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155"
+                "reference": "4b4a8ff3ae2998227f856800b3c0879883474614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/54991459675c1a2924122afbb0e5609ade581155",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/4b4a8ff3ae2998227f856800b3c0879883474614",
+                "reference": "4b4a8ff3ae2998227f856800b3c0879883474614",
                 "shasum": ""
             },
             "require": {
@@ -1532,7 +1581,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-08-11 04:32:36"
+            "time": "2014-08-13 08:01:25"
         },
         {
             "name": "hashids/hashids",
@@ -3182,17 +3231,17 @@
         },
         {
             "name": "snc/redis-bundle",
-            "version": "dev-master",
+            "version": "1.1.x-dev",
             "target-dir": "Snc/RedisBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "abf57d5d5287c67ebd95b8d8b963a6a0744f16df"
+                "reference": "732bfa62ea1e30dbbda12486f971573274d3b48f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/abf57d5d5287c67ebd95b8d8b963a6a0744f16df",
-                "reference": "abf57d5d5287c67ebd95b8d8b963a6a0744f16df",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/732bfa62ea1e30dbbda12486f971573274d3b48f",
+                "reference": "732bfa62ea1e30dbbda12486f971573274d3b48f",
                 "shasum": ""
             },
             "require": {
@@ -3211,11 +3260,6 @@
                 "symfony/console": "If you want to use commands to interact with the redis database"
             },
             "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Snc\\RedisBundle": ""
@@ -3242,7 +3286,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2014-08-09 10:53:56"
+            "time": "2014-08-09 09:54:28"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -3943,9 +3987,10 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "18914b3980a4de06335dda06b24ee0e28901ece6"
+                "reference": "9bf56c9e82630843d622851a68a52a99b5a667af"
             },
             "require": {
+                "bzis/daemon-bundle": "dev-master",
                 "cayetanosoriano/hashids-bundle": "dev-master",
                 "friendsofsymfony/rest-bundle": "dev-master",
                 "google/apiclient": "dev-master"
@@ -3957,7 +4002,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-08-06 09:56:26"
+            "time": "2014-08-12 17:18:02"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3966,7 +4011,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "5c2cd54636082d36e8e7f3db530b505225a0fa3d"
+                "reference": "84a694116cffc3e7fa2d67a50ab9407ff5be54d7"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3978,7 +4023,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-08-08 10:21:01"
+            "time": "2014-08-12 12:16:35"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4053,7 +4098,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "9136814db96a4bf608bd7e8d53d6bb90c9000a6e"
+                "reference": "ce62c83d913785f6ee0e00c5c456a32cd2a126ae"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4062,7 +4107,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-08-06 10:01:27"
+            "time": "2014-08-12 08:19:40"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -4092,7 +4137,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "b471b1117a09e5cd12be9c6883d8858dca20d56d"
+                "reference": "7e86266ab2b4ccced97eb0371c465e7610cc9fb3"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4105,7 +4150,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-08-06 10:37:35"
+            "time": "2014-08-12 12:16:08"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -4132,7 +4177,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "804a32a7f330233dd60f57df3c459b9185004e94"
+                "reference": "a7f992612b5f47de69c4fcbcaaa686efd3326321"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4141,7 +4186,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-06-27 13:21:34"
+            "time": "2014-08-12 13:32:15"
         },
         {
             "name": "vresh/twilio-bundle",
