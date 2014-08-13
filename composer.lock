@@ -1028,16 +1028,16 @@
         },
         {
             "name": "facebook/php-sdk-v4",
-            "version": "4.0.9",
+            "version": "4.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/facebook-php-sdk-v4.git",
-                "reference": "a20dc24e0536ba7332f79b74c5a4deb45fa998f8"
+                "reference": "ea577e1c3e5e4be894cddcadc09e5645c9e40f1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/facebook-php-sdk-v4/zipball/a20dc24e0536ba7332f79b74c5a4deb45fa998f8",
-                "reference": "a20dc24e0536ba7332f79b74c5a4deb45fa998f8",
+                "url": "https://api.github.com/repos/facebook/facebook-php-sdk-v4/zipball/ea577e1c3e5e4be894cddcadc09e5645c9e40f1a",
+                "reference": "ea577e1c3e5e4be894cddcadc09e5645c9e40f1a",
                 "shasum": ""
             },
             "require": {
@@ -1073,7 +1073,7 @@
                 "facebook",
                 "sdk"
             ],
-            "time": "2014-06-27 11:59:52"
+            "time": "2014-08-12 22:10:16"
         },
         {
             "name": "fortawesome/font-awesome",
@@ -1227,12 +1227,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "b7f01feb500808aff5dc41a7aeda1e688c0791b1"
+                "reference": "4df33da7dfdad1d6721ef56a770bb9d691c44fd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/b7f01feb500808aff5dc41a7aeda1e688c0791b1",
-                "reference": "b7f01feb500808aff5dc41a7aeda1e688c0791b1",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/4df33da7dfdad1d6721ef56a770bb9d691c44fd5",
+                "reference": "4df33da7dfdad1d6721ef56a770bb9d691c44fd5",
                 "shasum": ""
             },
             "require": {
@@ -1296,7 +1296,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-08-12 16:20:35"
+            "time": "2014-08-13 05:52:08"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1452,12 +1452,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "e063e3fa514b514d45cbd886c44bc2515345b908"
+                "reference": "d5aef57715c52593f3ad77a30518cb82480615c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e063e3fa514b514d45cbd886c44bc2515345b908",
-                "reference": "e063e3fa514b514d45cbd886c44bc2515345b908",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/d5aef57715c52593f3ad77a30518cb82480615c9",
+                "reference": "d5aef57715c52593f3ad77a30518cb82480615c9",
                 "shasum": ""
             },
             "require": {
@@ -1489,7 +1489,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-08-12 09:24:49"
+            "time": "2014-08-13 08:13:50"
         },
         {
             "name": "guzzle/guzzle",
@@ -1497,12 +1497,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155"
+                "reference": "4b4a8ff3ae2998227f856800b3c0879883474614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/54991459675c1a2924122afbb0e5609ade581155",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/4b4a8ff3ae2998227f856800b3c0879883474614",
+                "reference": "4b4a8ff3ae2998227f856800b3c0879883474614",
                 "shasum": ""
             },
             "require": {
@@ -1581,7 +1581,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-08-11 04:32:36"
+            "time": "2014-08-13 08:01:25"
         },
         {
             "name": "hashids/hashids",
