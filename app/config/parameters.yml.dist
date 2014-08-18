@@ -1,4 +1,5 @@
 parameters:
+    project: main
     database_driver:   pdo_mysql
     database_host:     127.0.0.1
     database_port:     ~
@@ -53,7 +54,7 @@ parameters:
 
     google.api.key: ''
 
-    tracker.host: node-app.dev
+    tracker.host: tracker.vifeed.dev
 
     vifeed:
         # комиссия системы
@@ -73,7 +74,23 @@ parameters:
         bank_account_nubmer: ''
         kpp: ''
 
+    rabbitmq.host: 'localhost'
+    rabbitmq.port: 5672
+    rabbitmq.user: 'guest'
+    rabbitmq.password: 'guest'
+    rabbitmq.vhost: '/'
+
     feedback.notification.email: feedback@zombakka.com
     partnership.notification.email: partnership@zombakka.com
     withdrawal.notification.email: withdrawal@zombakka.com
     backend.host: backend.zombakka.com
+    daemon.pid_file_location: '/tmp'
+    promo_domain: zomba.me
+    facebook.app_id: ''
+    facebook.app_secret: ''
+    vk.app_id: ''
+    vk.app_secret: ''
+
+    twilio.sid: AC668d221231b47c2f7db6c19ced65b584
+    twilio.token: 8b9610584c29edcbb87bca3647235569
+    twilio.phone_number: +14846536503

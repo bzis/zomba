@@ -1,4 +1,5 @@
 parameters:
+    project: main
     database_driver: pdo_mysql
     database_host: stage.ctpklt153wwy.eu-west-1.rds.amazonaws.com
     database_port: null
@@ -51,7 +52,22 @@ parameters:
         account_number: ''
         bank_account_nubmer: ''
         kpp: ''
+    promo_domain: zomba.me
     feedback.notification.email: feedback@zombakka.com
     partnership.notification.email: partnership@zombakka.com
     withdrawal.notification.email: withdrawal@zombakka.com
     backend.host: backend.zombakka.com
+    rabbitmq.host: 'hot-giraffe.rmq.cloudamqp.com'
+    rabbitmq.port: 5672
+    rabbitmq.user: 'qlqfznst'
+    rabbitmq.password: 'MQbk9FIj2QhHlob0P8bQy7JsdBNF6vSB'
+    rabbitmq.vhost: 'stage'
+    daemon.pid_file_location: /tmp
+    twilio.sid: AC668d221231b47c2f7db6c19ced65b584
+    twilio.token: 8b9610584c29edcbb87bca3647235569
+    twilio.phone_number: 14846536503
+    promo_domain: zomba.me
+    facebook.app_id: 297198780441139
+    facebook.app_secret: dd9fb9783437d289f0ac0e0adc559092
+    vk.app_id: 4345643
+    vk.app_secret: 69YPxuys9WNktkxyGIm7

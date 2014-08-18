@@ -63,7 +63,7 @@ namespace :deploy do
     puts '--> Restarting varnish'.green
     run 'sudo supervisorctl update'
     puts '--> Updating supervisord commands'.green
-    run 'sudo supervisorctl start all'
+    run 'sudo supervisorctl restart all'
     puts '--> Starting supervisord commands'.green
   end
 end
@@ -128,5 +128,13 @@ task :upload_parameters do
     end
   }
 end
+
+
+task :fix_logs do
+  run "sh -c 'cd #{latest_release} && test -f app/logs/prod.log || touch app/logs/prod.log'"
+  run "sh -c 'cd #{latest_release} && chown deploy:www-data app/logs/* && chmod 664 app/logs/*'"
+end
+
+after 'deploy', 'fix_logs'
 
 before 'deploy:share_childs', 'upload_parameters'

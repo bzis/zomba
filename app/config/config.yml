@@ -11,13 +11,17 @@ framework:
         strict_requirements: ~
     form:            ~
     csrf_protection: ~
-    validation:      { enable_annotations: true }
+    validation:
+        enabled: true
+        api: auto
+        enable_annotations: true
     templating:
         engines: ['twig']
         assets_base_urls:
             http: [%assetic.cdn_url%]
         #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
+    trusted_hosts:   ~
     trusted_proxies: ~
     session:
         handler_id: snc_redis.session.handler
@@ -175,7 +179,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/ladda-bootstrap/dist/ladda-themeless.min.css
         moment_js:
             inputs:
-                - %kernel.root_dir%/../bower-vendor/moment/min/moment-with-langs.min.js
+                - %kernel.root_dir%/../bower-vendor/moment/min/moment-with-locales.min.js
                 - %kernel.root_dir%/../bower-vendor/twix/bin/twix.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-moment/angular-moment.min.js
         daterangepicker:
@@ -359,9 +363,43 @@ jms_payment_paypal:
     signature: %paypal.api_signature%
     debug: false
 
+vresh_twilio:
+    sid: %twilio.sid%
+    authToken: %twilio.token%
+
 cayetanosoriano_hashids:
     salt: %cayetanosoriano_hashids.salt%
     min_hash_length: %cayetanosoriano_hashids.min_hash_length%
+
+old_sound_rabbit_mq:
+    connections:
+        default:
+            host:     %rabbitmq.host%
+            port:     %rabbitmq.port%
+            user:     %rabbitmq.user%
+            password: %rabbitmq.password%
+            vhost:    %rabbitmq.vhost%
+            lazy:     true
+    producers:
+        video_view:
+            connection:       default
+            exchange_options: {name: 'video-view', type: direct}
+            queue_options:    {name: 'video-view-payment'}
+        campaign_status_change:
+            connection:       default
+            exchange_options: {name: 'campaign-change', type: direct}
+            queue_options:    {name: 'new-campaign'}
+    consumers:
+        new_campaign_notify:
+            connection:       default
+            exchange_options: {name: 'campaign-change', type: direct}
+            queue_options:    {name: 'new-campaign'}
+            callback:         vifeed.rabbit.new_campaign_notify.consumer
+        pay_video_view:
+            exchange_options: {name: 'video-view', type: direct}
+            queue_options:    {name: 'video-view-payment'}
+            qos_options:      {prefetch_size: 0, prefetch_count: 3, global: false}
+            callback:         vifeed.payment.pay_video_view.consumer
 
 stof_doctrine_extensions:
     default_locale: ru_RU
@@ -373,3 +411,4 @@ bank_payment:
     templates:
         receipt: ::receipt.html.twig
         transfer: ::transfer.html.twig
+
