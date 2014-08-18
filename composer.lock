@@ -720,12 +720,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
-                "reference": "f7138381aa884c0f679da4de41e369b94ead9cd3"
+                "reference": "81575a4316951125ce408c70f30547c77d98f78a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/f7138381aa884c0f679da4de41e369b94ead9cd3",
-                "reference": "f7138381aa884c0f679da4de41e369b94ead9cd3",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/81575a4316951125ce408c70f30547c77d98f78a",
+                "reference": "81575a4316951125ce408c70f30547c77d98f78a",
                 "shasum": ""
             },
             "require": {
@@ -751,18 +751,16 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
                 },
                 {
                     "name": "Doctrine Project",
                     "homepage": "http://www.doctrine-project.org"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony DoctrineMigrationsBundle",
@@ -772,7 +770,7 @@
                 "migrations",
                 "schema"
             ],
-            "time": "2014-03-20 14:48:55"
+            "time": "2014-08-17 07:53:47"
         },
         {
             "name": "doctrine/inflector",
@@ -1227,12 +1225,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "4df33da7dfdad1d6721ef56a770bb9d691c44fd5"
+                "reference": "0649a4c1d8cecd27885b09c1cddddb497a0d3ca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/4df33da7dfdad1d6721ef56a770bb9d691c44fd5",
-                "reference": "4df33da7dfdad1d6721ef56a770bb9d691c44fd5",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/0649a4c1d8cecd27885b09c1cddddb497a0d3ca3",
+                "reference": "0649a4c1d8cecd27885b09c1cddddb497a0d3ca3",
                 "shasum": ""
             },
             "require": {
@@ -1296,7 +1294,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-08-13 05:52:08"
+            "time": "2014-08-15 12:18:54"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1452,12 +1450,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "d5aef57715c52593f3ad77a30518cb82480615c9"
+                "reference": "3c8f3ca7b688e8073ec3ba63f7aff9e80797edd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/d5aef57715c52593f3ad77a30518cb82480615c9",
-                "reference": "d5aef57715c52593f3ad77a30518cb82480615c9",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/3c8f3ca7b688e8073ec3ba63f7aff9e80797edd1",
+                "reference": "3c8f3ca7b688e8073ec3ba63f7aff9e80797edd1",
                 "shasum": ""
             },
             "require": {
@@ -1489,7 +1487,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-08-13 08:13:50"
+            "time": "2014-08-15 08:16:04"
         },
         {
             "name": "guzzle/guzzle",
@@ -2616,12 +2614,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "38f0bec7059daa801e477b78b4672c88cb8108e9"
+                "reference": "d32381d18d9ff9d32200e7f2b5b885e3de26f9fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/38f0bec7059daa801e477b78b4672c88cb8108e9",
-                "reference": "38f0bec7059daa801e477b78b4672c88cb8108e9",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/d32381d18d9ff9d32200e7f2b5b885e3de26f9fe",
+                "reference": "d32381d18d9ff9d32200e7f2b5b885e3de26f9fe",
                 "shasum": ""
             },
             "require": {
@@ -2682,7 +2680,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-08-08 15:46:19"
+            "time": "2014-08-16 12:29:11"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3987,7 +3985,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "9bf56c9e82630843d622851a68a52a99b5a667af"
+                "reference": "bb092c1dd5a33c809fdf20e940ae0c1418541edc"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4002,7 +4000,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-08-12 17:18:02"
+            "time": "2014-08-13 10:32:55"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4011,7 +4009,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "84a694116cffc3e7fa2d67a50ab9407ff5be54d7"
+                "reference": "dcaf16ea57ed2d4978936f8074b910d232d6a92c"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4023,7 +4021,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-08-12 12:16:35"
+            "time": "2014-08-15 14:31:57"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4159,7 +4157,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "e110d68bb6d28f954d89c19723694ee3334fc3e4"
+                "reference": "ddf40c4df854aba2bf824e24f16299cd285e6b87"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4168,7 +4166,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-08-07 13:55:07"
+            "time": "2014-08-14 14:47:34"
         },
         {
             "name": "vifeed/video-view-bundle",
@@ -4406,6 +4404,7 @@
         "bzis/daemon-bundle": 20,
         "vresh/twilio-bundle": 20
     },
+    "prefer-stable": true,
     "platform": {
         "php": ">=5.3.3"
     },
