@@ -720,12 +720,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
-                "reference": "f7138381aa884c0f679da4de41e369b94ead9cd3"
+                "reference": "81575a4316951125ce408c70f30547c77d98f78a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/f7138381aa884c0f679da4de41e369b94ead9cd3",
-                "reference": "f7138381aa884c0f679da4de41e369b94ead9cd3",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/81575a4316951125ce408c70f30547c77d98f78a",
+                "reference": "81575a4316951125ce408c70f30547c77d98f78a",
                 "shasum": ""
             },
             "require": {
@@ -751,18 +751,16 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
                 },
                 {
                     "name": "Doctrine Project",
                     "homepage": "http://www.doctrine-project.org"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony DoctrineMigrationsBundle",
@@ -772,7 +770,7 @@
                 "migrations",
                 "schema"
             ],
-            "time": "2014-03-20 14:48:55"
+            "time": "2014-08-17 07:53:47"
         },
         {
             "name": "doctrine/inflector",
@@ -2616,12 +2614,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "bc1d3f6f7fcba03166da0b3babadd68099af4d1b"
+                "reference": "d32381d18d9ff9d32200e7f2b5b885e3de26f9fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/bc1d3f6f7fcba03166da0b3babadd68099af4d1b",
-                "reference": "bc1d3f6f7fcba03166da0b3babadd68099af4d1b",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/d32381d18d9ff9d32200e7f2b5b885e3de26f9fe",
+                "reference": "d32381d18d9ff9d32200e7f2b5b885e3de26f9fe",
                 "shasum": ""
             },
             "require": {
@@ -2682,7 +2680,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-08-14 19:44:53"
+            "time": "2014-08-16 12:29:11"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3987,7 +3985,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "bb092c1dd5a33c809fdf20e940ae0c1418541edc"
+                "reference": "0cf1207046930bd182930b76c6fc8d533cf36df6"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4002,7 +4000,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-08-13 10:32:55"
+            "time": "2014-08-18 15:16:45"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4050,7 +4048,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "1c1d898413cd468003876eaaa1a66480c48c53d4"
+                "reference": "3ccc0f9255c56d9d5718da3e8e3857b9f4e99a33"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4067,7 +4065,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-08-10 14:59:18"
+            "time": "2014-08-18 15:35:15"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4098,7 +4096,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "ce62c83d913785f6ee0e00c5c456a32cd2a126ae"
+                "reference": "a3a2e1cfdc88062600c06795a9a45e4a3aed83d6"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4107,7 +4105,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-08-12 08:19:40"
+            "time": "2014-08-18 15:17:24"
         },
         {
             "name": "vifeed/tag-bundle",
