@@ -42,19 +42,13 @@ $input = new ArrayInput(array(
                               'command' => 'doctrine:database:create',
                         ));
 $command->run($input, new ConsoleOutput());
-$command = new \Doctrine\Bundle\DoctrineBundle\Command\Proxy\CreateSchemaDoctrineCommand();
+
+$command = new MigrationsMigrateDoctrineCommand();
 $application->add($command);
 $input = new ArrayInput(array(
-                              'command' => 'doctrine:schema:create',
+                              'command' => 'doctrine:migrations:migrate',
                         ));
 $input->setInteractive(false);
-
-//$command = new MigrationsMigrateDoctrineCommand();
-//$application->add($command);
-//$input = new ArrayInput(array(
-//                              'command' => 'doctrine:migrations:migrate',
-//                        ));
-//$input->setInteractive(false);
 $command->run($input, new ConsoleOutput());
 
 $command = new LoadDataFixturesDoctrineCommand();
