@@ -894,12 +894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "4256449c5e2603a6b6ee5a78c7c4521d4d4430b8"
+                "reference": "1a9dffa64e33fdc10f4b4c3f5d7230b74d4a1021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/4256449c5e2603a6b6ee5a78c7c4521d4d4430b8",
-                "reference": "4256449c5e2603a6b6ee5a78c7c4521d4d4430b8",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/1a9dffa64e33fdc10f4b4c3f5d7230b74d4a1021",
+                "reference": "1a9dffa64e33fdc10f4b4c3f5d7230b74d4a1021",
                 "shasum": ""
             },
             "require": {
@@ -930,14 +930,12 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
                 }
             ],
             "description": "Database Schema migrations using Doctrine DBAL",
@@ -946,7 +944,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2014-07-09 07:58:02"
+            "time": "2014-08-18 18:03:07"
         },
         {
             "name": "doctrine/orm",
@@ -2614,12 +2612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "d32381d18d9ff9d32200e7f2b5b885e3de26f9fe"
+                "reference": "fd0d78e0a8a3fb29b43c0783ddc2cad00f736715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/d32381d18d9ff9d32200e7f2b5b885e3de26f9fe",
-                "reference": "d32381d18d9ff9d32200e7f2b5b885e3de26f9fe",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/fd0d78e0a8a3fb29b43c0783ddc2cad00f736715",
+                "reference": "fd0d78e0a8a3fb29b43c0783ddc2cad00f736715",
                 "shasum": ""
             },
             "require": {
@@ -2680,7 +2678,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-08-16 12:29:11"
+            "time": "2014-08-18 15:28:42"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -4009,7 +4007,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "dcaf16ea57ed2d4978936f8074b910d232d6a92c"
+                "reference": "373e663991ab642dc434824b9175981c88a16506"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4021,7 +4019,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-08-15 14:31:57"
+            "time": "2014-08-19 13:30:11"
         },
         {
             "name": "vifeed/geo-bundle",
