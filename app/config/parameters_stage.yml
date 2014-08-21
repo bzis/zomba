@@ -43,6 +43,7 @@ parameters:
     vifeed:
         comission: 0.5
         min_view_time: 5
+        short_video_duration: 5
         delta: 1
         company_name: ''
         inn: ''
@@ -52,7 +53,6 @@ parameters:
         account_number: ''
         bank_account_nubmer: ''
         kpp: ''
-    promo_domain: zomba.me
     feedback.notification.email: feedback@zombakka.com
     partnership.notification.email: partnership@zombakka.com
     withdrawal.notification.email: withdrawal@zombakka.com
