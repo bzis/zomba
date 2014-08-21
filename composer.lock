@@ -660,12 +660,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
-                "reference": "ccd69d9ec90013955a412a21125672afc09738dc"
+                "reference": "3ffa2184c94d94477d5bb625b94597ed0d44ebe0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/ccd69d9ec90013955a412a21125672afc09738dc",
-                "reference": "ccd69d9ec90013955a412a21125672afc09738dc",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/3ffa2184c94d94477d5bb625b94597ed0d44ebe0",
+                "reference": "3ffa2184c94d94477d5bb625b94597ed0d44ebe0",
                 "shasum": ""
             },
             "require": {
@@ -691,18 +691,16 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
                 },
                 {
                     "name": "Doctrine Project",
                     "homepage": "http://www.doctrine-project.org"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony DoctrineFixturesBundle",
@@ -711,7 +709,7 @@
                 "Fixture",
                 "persistence"
             ],
-            "time": "2014-03-05 01:11:31"
+            "time": "2014-08-20 20:34:54"
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
@@ -1223,17 +1221,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "0649a4c1d8cecd27885b09c1cddddb497a0d3ca3"
+                "reference": "917c940d0c7599c84935c653054f86b158a17393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/0649a4c1d8cecd27885b09c1cddddb497a0d3ca3",
-                "reference": "0649a4c1d8cecd27885b09c1cddddb497a0d3ca3",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/917c940d0c7599c84935c653054f86b158a17393",
+                "reference": "917c940d0c7599c84935c653054f86b158a17393",
                 "shasum": ""
             },
             "require": {
-                "doctrine/inflector": "1.0.*",
-                "php": ">=5.3.2",
+                "doctrine/inflector": "~1.0",
+                "php": ">=5.3.3",
                 "psr/log": "~1.0",
                 "symfony/framework-bundle": "~2.2",
                 "willdurand/jsonp-callback-validator": "~1.0",
@@ -1261,7 +1259,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -1292,7 +1290,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-08-15 12:18:54"
+            "time": "2014-08-21 06:15:59"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1448,12 +1446,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "3c8f3ca7b688e8073ec3ba63f7aff9e80797edd1"
+                "reference": "0df848bc2ae9905257586574760b72423c3c11fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/3c8f3ca7b688e8073ec3ba63f7aff9e80797edd1",
-                "reference": "3c8f3ca7b688e8073ec3ba63f7aff9e80797edd1",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/0df848bc2ae9905257586574760b72423c3c11fe",
+                "reference": "0df848bc2ae9905257586574760b72423c3c11fe",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1483,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-08-15 08:16:04"
+            "time": "2014-08-21 08:22:28"
         },
         {
             "name": "guzzle/guzzle",
@@ -2612,12 +2610,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "fd0d78e0a8a3fb29b43c0783ddc2cad00f736715"
+                "reference": "ce54848c318a154e84deee3dec34d82e1c997757"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/fd0d78e0a8a3fb29b43c0783ddc2cad00f736715",
-                "reference": "fd0d78e0a8a3fb29b43c0783ddc2cad00f736715",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/ce54848c318a154e84deee3dec34d82e1c997757",
+                "reference": "ce54848c318a154e84deee3dec34d82e1c997757",
                 "shasum": ""
             },
             "require": {
@@ -2678,7 +2676,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-08-18 15:28:42"
+            "time": "2014-08-21 08:40:20"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -4094,7 +4092,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "a3a2e1cfdc88062600c06795a9a45e4a3aed83d6"
+                "reference": "fb5386ab3bb1b8db87bc5dfc9f1c51ca6d1b6983"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4103,7 +4101,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-08-18 15:17:24"
+            "time": "2014-08-19 19:46:59"
         },
         {
             "name": "vifeed/tag-bundle",
