@@ -12,4 +12,4 @@ parameters:
         account_number: '12121212121'
         bank_account_nubmer: '121212121' # оно надо?
         kpp: '12121212121'
-
+        short_video_duration: 5
