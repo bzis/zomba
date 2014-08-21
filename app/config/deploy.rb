@@ -129,12 +129,70 @@ task :upload_parameters do
   }
 end
 
-
-task :fix_logs do
-  run "sh -c 'cd #{latest_release} && test -f app/logs/prod.log || touch app/logs/prod.log'"
-  run "sh -c 'cd #{latest_release} && chown deploy:www-data app/logs/* && chmod 664 app/logs/*'"
-end
-
-after 'deploy', 'fix_logs'
-
 before 'deploy:share_childs', 'upload_parameters'
+
+namespace :deploy do
+  desc <<-DESC
+    Sets permissions for writable_dirs folders as described in the Symfony documentation
+    (http://symfony.com/doc/master/book/installation.html#configuration-and-setup)
+  DESC
+  task :set_permissions, :roles => :app, :except => { :no_release => true } do
+    if writable_dirs && permission_method
+      dirs = []
+
+      writable_dirs.each do |link|
+        if shared_children && shared_children.include?(link)
+          absolute_link = shared_path + "/" + link
+        else
+          absolute_link = latest_release + "/" + link
+        end
+
+        dirs << absolute_link
+      end
+
+      methods = {
+        :chmod => [
+          "chmod +a \"#{user} allow delete,write,append,file_inherit,directory_inherit\" %s",
+          "chmod +a \"#{webserver_user} allow delete,write,append,file_inherit,directory_inherit\" %s"
+        ],
+        :acl   => [
+          "setfacl -R -m u:#{user}:rwX -m u:#{webserver_user}:rwX %s",
+          "setfacl -dR -m u:#{user}:rwx -m u:#{webserver_user}:rwx %s"
+        ],
+        :chmod_alt => [
+          "chmod -R a+w %s"
+        ],
+        :chown => ["chown -R #{webserver_user} %s"]
+      }
+
+      if methods[permission_method]
+        capifony_pretty_print "--> Setting permissions"
+
+        if fetch(:use_sudo, false)
+          methods[permission_method].each do |cmd|
+            sudo sprintf(cmd, dirs.join(' '))
+          end
+        elsif permission_method == :chown
+          puts "    You can't use chown method without sudoing"
+        else
+          dirs.each do |dir|
+            is_owner = (capture "`echo stat #{dir} -c %U`").chomp == user
+            if is_owner && permission_method != :chown
+              # has_facl = (capture "getfacl --absolute-names --tabular #{dir} | grep #{webserver_user}.*rwx | wc -l").chomp != "0"
+              # if (!has_facl)
+              methods[permission_method].each do |cmd|
+                sudo sprintf(cmd, dir)
+              end
+              # end
+            else
+              puts "    #{dir} is not owned by #{user} or you are using 'chown' method without ':use_sudo'"
+            end
+          end
+        end
+        capifony_puts_ok
+      else
+        puts "    Permission method '#{permission_method}' does not exist.".yellow
+      end
+    end
+  end
+end
