@@ -15,7 +15,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-01-05 18:40:22"
+            "time": "2014-07-08 17:00:19"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -26,7 +26,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-30 19:48:25"
+            "time": "2014-06-27 12:01:29"
         },
         {
             "name": "bzis/daemon-bundle",
@@ -282,7 +282,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -503,7 +504,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 }
             ],
             "description": "Data Fixtures for all Doctrine Object Managers",
@@ -628,7 +630,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -799,7 +803,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -817,7 +822,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -869,7 +874,7 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -1218,17 +1223,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "917c940d0c7599c84935c653054f86b158a17393"
+                "reference": "f35a33889b8295cd024a12b053ba0884f685e920"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/917c940d0c7599c84935c653054f86b158a17393",
-                "reference": "917c940d0c7599c84935c653054f86b158a17393",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/f35a33889b8295cd024a12b053ba0884f685e920",
+                "reference": "f35a33889b8295cd024a12b053ba0884f685e920",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "~1.0",
-                "php": ">=5.3.3",
+                "php": ">=5.3.9",
                 "psr/log": "~1.0",
                 "symfony/framework-bundle": "~2.2",
                 "willdurand/jsonp-callback-validator": "~1.0",
@@ -1287,7 +1292,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-08-21 06:15:59"
+            "time": "2014-08-22 07:37:22"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1443,12 +1448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "0df848bc2ae9905257586574760b72423c3c11fe"
+                "reference": "f0fbc4f098444f194c7957235f14b1a23b0d7ee3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/0df848bc2ae9905257586574760b72423c3c11fe",
-                "reference": "0df848bc2ae9905257586574760b72423c3c11fe",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/f0fbc4f098444f194c7957235f14b1a23b0d7ee3",
+                "reference": "f0fbc4f098444f194c7957235f14b1a23b0d7ee3",
                 "shasum": ""
             },
             "require": {
@@ -1480,7 +1485,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-08-21 08:22:28"
+            "time": "2014-08-22 08:23:37"
         },
         {
             "name": "guzzle/guzzle",
@@ -2216,7 +2221,7 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2607,12 +2612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "ce54848c318a154e84deee3dec34d82e1c997757"
+                "reference": "6952c4b32c1fca390945b9158ae171757e6a93cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/ce54848c318a154e84deee3dec34d82e1c997757",
-                "reference": "ce54848c318a154e84deee3dec34d82e1c997757",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/6952c4b32c1fca390945b9158ae171757e6a93cf",
+                "reference": "6952c4b32c1fca390945b9158ae171757e6a93cf",
                 "shasum": ""
             },
             "require": {
@@ -2673,7 +2678,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-08-21 08:40:20"
+            "time": "2014-08-21 20:44:19"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3993,7 +3998,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-08-21 15:11:08"
+            "time": "2014-08-21 20:07:56"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4002,7 +4007,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "88852e85ba859f318b2804acddb02c45247e45da"
+                "reference": "787a55b8407c21c0d1a66eec353e6a3f43fc2028"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4014,7 +4019,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-08-21 15:53:39"
+            "time": "2014-08-22 17:26:25"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4089,7 +4094,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "fb5386ab3bb1b8db87bc5dfc9f1c51ca6d1b6983"
+                "reference": "6bd7deaa9503596c18e741dad004957ba6a787b5"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4098,7 +4103,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-08-19 19:46:59"
+            "time": "2014-08-22 17:25:59"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -4128,7 +4133,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "185d94b97866c031f5b8c537fe7e1079dd6b22df"
+                "reference": "baad7da7d50e82e5d9249deff672a26d7329e035"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4141,7 +4146,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-08-19 14:43:33"
+            "time": "2014-08-22 08:37:37"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -4150,7 +4155,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "a1329e3c68ea306db5b116e3e7abde6819c80aed"
+                "reference": "8fa42947d58bc0b2c19ef7c6bb036fa9ca117cdc"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4159,7 +4164,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-08-21 15:12:00"
+            "time": "2014-08-22 17:26:51"
         },
         {
             "name": "vifeed/video-view-bundle",
@@ -4298,7 +4303,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
@@ -4357,8 +4362,12 @@
             "time": "2014-05-16 12:34:51"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4396,5 +4405,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
