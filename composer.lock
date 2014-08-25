@@ -1301,12 +1301,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "27a84cec3ea4daa32cd6fe308c0847ca9644f588"
+                "reference": "094bea6f318fbb067db3ddf6d26a62af0bf13442"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/27a84cec3ea4daa32cd6fe308c0847ca9644f588",
-                "reference": "27a84cec3ea4daa32cd6fe308c0847ca9644f588",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/094bea6f318fbb067db3ddf6d26a62af0bf13442",
+                "reference": "094bea6f318fbb067db3ddf6d26a62af0bf13442",
                 "shasum": ""
             },
             "require": {
@@ -1360,7 +1360,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-08-04 23:04:17"
+            "time": "2014-08-23 11:32:38"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1493,12 +1493,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "4b4a8ff3ae2998227f856800b3c0879883474614"
+                "reference": "4c1b96a39933e0a4433337da874764b817bf2822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/4b4a8ff3ae2998227f856800b3c0879883474614",
-                "reference": "4b4a8ff3ae2998227f856800b3c0879883474614",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/4c1b96a39933e0a4433337da874764b817bf2822",
+                "reference": "4c1b96a39933e0a4433337da874764b817bf2822",
                 "shasum": ""
             },
             "require": {
@@ -1577,7 +1577,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-08-13 08:01:25"
+            "time": "2014-08-22 21:56:27"
         },
         {
             "name": "hashids/hashids",
@@ -2564,16 +2564,16 @@
         },
         {
             "name": "mpdf/mpdf",
-            "version": "v5.7.2",
+            "version": "v5.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/finwe/mpdf.git",
-                "reference": "1627f9e7d2ef0f635a886f611079216ed2929717"
+                "reference": "ace190986978df40b9c416cf7ba8761945fc1758"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/finwe/mpdf/zipball/1627f9e7d2ef0f635a886f611079216ed2929717",
-                "reference": "1627f9e7d2ef0f635a886f611079216ed2929717",
+                "url": "https://api.github.com/repos/finwe/mpdf/zipball/ace190986978df40b9c416cf7ba8761945fc1758",
+                "reference": "ace190986978df40b9c416cf7ba8761945fc1758",
                 "shasum": ""
             },
             "require": {
@@ -2603,7 +2603,7 @@
                 "php",
                 "utf-8"
             ],
-            "time": "2014-05-16 07:18:10"
+            "time": "2014-08-24 08:33:20"
         },
         {
             "name": "nelmio/api-doc-bundle",
@@ -2612,12 +2612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "6952c4b32c1fca390945b9158ae171757e6a93cf"
+                "reference": "f8793d2439d8dfaae8726c247b6e3548d9bc1270"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/6952c4b32c1fca390945b9158ae171757e6a93cf",
-                "reference": "6952c4b32c1fca390945b9158ae171757e6a93cf",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/f8793d2439d8dfaae8726c247b6e3548d9bc1270",
+                "reference": "f8793d2439d8dfaae8726c247b6e3548d9bc1270",
                 "shasum": ""
             },
             "require": {
@@ -2678,7 +2678,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-08-21 20:44:19"
+            "time": "2014-08-25 08:46:49"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
