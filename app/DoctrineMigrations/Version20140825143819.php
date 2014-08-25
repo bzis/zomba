@@ -16,7 +16,7 @@ class Version20140825143819 extends AbstractMigration
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != 'mysql', 'Migration can only be executed safely on \'mysql\'.');
         
         $this->addSql('ALTER TABLE campaign ADD created_at DATETIME NOT NULL, ADD updated_at DATETIME NOT NULL, CHANGE deletedat deleted_at DATETIME DEFAULT NULL');
-        $this->addSql('ALTER TABLE platform ADD created_at DATETIME NOT NULL, ADD updated_at DATETIME NOT NULL');
+        $this->addSql('ALTER TABLE platform ADD created_at DATETIME NOT NULL, ADD updated_at DATETIME NOT NULL, CHANGE deletedat deleted_at DATETIME DEFAULT NULL');
     }
 
     public function down(Schema $schema)
@@ -25,6 +25,6 @@ class Version20140825143819 extends AbstractMigration
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != 'mysql', 'Migration can only be executed safely on \'mysql\'.');
         
         $this->addSql('ALTER TABLE campaign DROP created_at, DROP updated_at, CHANGE deleted_at deletedAt DATETIME DEFAULT NULL');
-        $this->addSql('ALTER TABLE platform DROP created_at, DROP updated_at');
+        $this->addSql('ALTER TABLE platform DROP created_at, DROP updated_at, CHANGE deleted_at deletedAt DATETIME DEFAULT NULL');
     }
 }
