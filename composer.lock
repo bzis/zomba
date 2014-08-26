@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b0758a3fed8ebdf724cb7a1baf7865c9",
+    "hash": "3c2c2eaa8a144d629d8d771ab93aff0f",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1024,16 +1024,16 @@
         },
         {
             "name": "facebook/php-sdk-v4",
-            "version": "4.0.10",
+            "version": "4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/facebook-php-sdk-v4.git",
-                "reference": "ea577e1c3e5e4be894cddcadc09e5645c9e40f1a"
+                "reference": "e2dc662c4ab4da680434b6b777d56461a9bd2563"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/facebook-php-sdk-v4/zipball/ea577e1c3e5e4be894cddcadc09e5645c9e40f1a",
-                "reference": "ea577e1c3e5e4be894cddcadc09e5645c9e40f1a",
+                "url": "https://api.github.com/repos/facebook/facebook-php-sdk-v4/zipball/e2dc662c4ab4da680434b6b777d56461a9bd2563",
+                "reference": "e2dc662c4ab4da680434b6b777d56461a9bd2563",
                 "shasum": ""
             },
             "require": {
@@ -1069,7 +1069,7 @@
                 "facebook",
                 "sdk"
             ],
-            "time": "2014-08-12 22:10:16"
+            "time": "2014-08-25 18:58:37"
         },
         {
             "name": "fortawesome/font-awesome",
@@ -2564,16 +2564,16 @@
         },
         {
             "name": "mpdf/mpdf",
-            "version": "v5.7.3",
+            "version": "v5.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/finwe/mpdf.git",
-                "reference": "ace190986978df40b9c416cf7ba8761945fc1758"
+                "reference": "1627f9e7d2ef0f635a886f611079216ed2929717"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/finwe/mpdf/zipball/ace190986978df40b9c416cf7ba8761945fc1758",
-                "reference": "ace190986978df40b9c416cf7ba8761945fc1758",
+                "url": "https://api.github.com/repos/finwe/mpdf/zipball/1627f9e7d2ef0f635a886f611079216ed2929717",
+                "reference": "1627f9e7d2ef0f635a886f611079216ed2929717",
                 "shasum": ""
             },
             "require": {
@@ -2603,7 +2603,7 @@
                 "php",
                 "utf-8"
             ],
-            "time": "2014-08-24 08:33:20"
+            "time": "2014-05-16 07:18:10"
         },
         {
             "name": "nelmio/api-doc-bundle",
@@ -2612,12 +2612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "f8793d2439d8dfaae8726c247b6e3548d9bc1270"
+                "reference": "d6777b881b54da747eb6c7c09eb35c9c071e4544"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/f8793d2439d8dfaae8726c247b6e3548d9bc1270",
-                "reference": "f8793d2439d8dfaae8726c247b6e3548d9bc1270",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/d6777b881b54da747eb6c7c09eb35c9c071e4544",
+                "reference": "d6777b881b54da747eb6c7c09eb35c9c071e4544",
                 "shasum": ""
             },
             "require": {
@@ -2678,7 +2678,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-08-25 08:46:49"
+            "time": "2014-08-26 13:39:14"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3022,17 +3022,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "df82b1ee2b833be97677c0b95fca27e68fd4a344"
+                "reference": "ad10123f2532f6e311e583cce203ef368eedc469"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/df82b1ee2b833be97677c0b95fca27e68fd4a344",
-                "reference": "df82b1ee2b833be97677c0b95fca27e68fd4a344",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/ad10123f2532f6e311e583cce203ef368eedc469",
+                "reference": "ad10123f2532f6e311e583cce203ef368eedc469",
                 "shasum": ""
             },
             "require": {
@@ -3071,7 +3071,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2014-08-06 09:24:35"
+            "time": "2014-08-26 13:14:47"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -3983,7 +3983,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "6b542b0611ba4427a3a633ea94f98ab11f791ba3"
+                "reference": "022b6d95e6d7bb308372393f31782498de62e4db"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3998,7 +3998,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-08-21 20:07:56"
+            "time": "2014-08-25 10:55:41"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4007,7 +4007,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "787a55b8407c21c0d1a66eec353e6a3f43fc2028"
+                "reference": "65949df4a73acffed97551b74eb7409057578c3a"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4019,7 +4019,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-08-22 17:26:25"
+            "time": "2014-08-26 13:50:20"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4072,7 +4072,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "11d76504da634b5ca24730b35d2a9792bd8ea29a"
+                "reference": "f91d2043f5289fd9f79f02f2883bcef22212156b"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4085,7 +4085,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-08-06 11:16:17"
+            "time": "2014-08-25 10:53:53"
         },
         {
             "name": "vifeed/system-bundle",
