@@ -15,6 +15,7 @@ before_script:
   - bower install
   - npm install
   - php app/console fos:js-routing:dump
+  - cp app/config/grunt_stage.json app/config/grunt.json
   - grunt html2js
   - grunt ngconstant:development
   - php app/console assetic:dump
