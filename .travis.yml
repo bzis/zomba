@@ -9,22 +9,8 @@ services:
 before_script:
   - echo "USE mysql;\nUPDATE user SET password=PASSWORD('rootpass') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
   - composer install -n
-  # Install frontend for testing
-  - npm install -g bower
-  - npm install -g grunt-cli
-  - bower install
-  - npm install
-  - php app/console fos:js-routing:dump
-  - cp app/config/grunt_stage.json app/config/grunt.json
-  - grunt html2js
-  - grunt ngconstant:development
-  - php app/console assetic:dump
-  # Setup Firefox browser before run "npm test" command
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
 
 script:
-  - npm test
   - phpunit -c app vendor/vifeed/
   - phpunit -c app --coverage-clover=coverage.clover
   - wget https://scrutinizer-ci.com/ocular.phar
