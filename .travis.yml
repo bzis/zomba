@@ -9,10 +9,15 @@ services:
 before_script:
   - echo "USE mysql;\nUPDATE user SET password=PASSWORD('rootpass') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
   - composer install -n
-  # Setup Firefox browser before run "npm test" command
+  # Install frontend for testing
   - npm install -g bower
-  - npm install
   - bower install
+  - npm install
+  - php app/console fos:js-routing:dump
+  - grunt html2js
+  - grunt ngconstant:development
+  - php app/console assetic:dump
+  # Setup Firefox browser before run "npm test" command
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 
