@@ -11,7 +11,7 @@ before_script:
   - composer install -n
   # Install frontend for testing
   - npm install -g bower
-  - npm install -g grunt
+  - npm install -g grunt-cli
   - bower install
   - npm install
   - php app/console fos:js-routing:dump
