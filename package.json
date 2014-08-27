@@ -16,7 +16,7 @@
     "coffee-script": "1.7.1"
   },
   "scripts": {
-    "test": "karma start vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Tests/karma.conf.js --browsers Firefox"
+    "test": "./node_modules/karma/bin/karma start vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Tests/karma.conf.js --browsers Firefox"
   },
   "repository": {
     "type": "git",
