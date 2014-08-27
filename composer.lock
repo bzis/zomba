@@ -1077,12 +1077,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "2649d91d18629bab071449b3bc4cb02761037a57"
+                "reference": "a65bd93d81e9e6bd5ebfa41757a4474960b973b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/2649d91d18629bab071449b3bc4cb02761037a57",
-                "reference": "2649d91d18629bab071449b3bc4cb02761037a57",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/a65bd93d81e9e6bd5ebfa41757a4474960b973b4",
+                "reference": "a65bd93d81e9e6bd5ebfa41757a4474960b973b4",
                 "shasum": ""
             },
             "require-dev": {
@@ -1117,7 +1117,7 @@
                 "font",
                 "icon"
             ],
-            "time": "2014-05-14 20:37:30"
+            "time": "2014-08-26 16:36:44"
         },
         {
             "name": "fpn/doctrine-extensions-taggable",
@@ -1223,12 +1223,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "f35a33889b8295cd024a12b053ba0884f685e920"
+                "reference": "454e401108eefebb4c8dd9ebbf150dcebd8b26b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/f35a33889b8295cd024a12b053ba0884f685e920",
-                "reference": "f35a33889b8295cd024a12b053ba0884f685e920",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/454e401108eefebb4c8dd9ebbf150dcebd8b26b0",
+                "reference": "454e401108eefebb4c8dd9ebbf150dcebd8b26b0",
                 "shasum": ""
             },
             "require": {
@@ -1292,7 +1292,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-08-22 07:37:22"
+            "time": "2014-08-26 18:59:29"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2612,12 +2612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "d6777b881b54da747eb6c7c09eb35c9c071e4544"
+                "reference": "72a1418b7d791ba1f2f1c7e018fe1c7bcf89edb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/d6777b881b54da747eb6c7c09eb35c9c071e4544",
-                "reference": "d6777b881b54da747eb6c7c09eb35c9c071e4544",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/72a1418b7d791ba1f2f1c7e018fe1c7bcf89edb0",
+                "reference": "72a1418b7d791ba1f2f1c7e018fe1c7bcf89edb0",
                 "shasum": ""
             },
             "require": {
@@ -2678,7 +2678,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-08-26 13:39:14"
+            "time": "2014-08-27 06:59:42"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3849,16 +3849,16 @@
         },
         {
             "name": "twilio/sdk",
-            "version": "3.12.5",
+            "version": "3.12.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "be6b2eec33ec665827cfd780f98f732a6e0e84eb"
+                "reference": "51ab2929a66d4455ecb470eafdfe2bab798945ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/be6b2eec33ec665827cfd780f98f732a6e0e84eb",
-                "reference": "be6b2eec33ec665827cfd780f98f732a6e0e84eb",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/51ab2929a66d4455ecb470eafdfe2bab798945ff",
+                "reference": "51ab2929a66d4455ecb470eafdfe2bab798945ff",
                 "shasum": ""
             },
             "require": {
@@ -3895,7 +3895,7 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2014-07-15 17:12:48"
+            "time": "2014-08-26 21:31:03"
         },
         {
             "name": "videlalvaro/php-amqplib",
@@ -4007,7 +4007,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "65949df4a73acffed97551b74eb7409057578c3a"
+                "reference": "3c3704bc481f26f3c156af3c29d52f393ca73e18"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4019,7 +4019,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-08-26 13:50:20"
+            "time": "2014-08-26 15:47:41"
         },
         {
             "name": "vifeed/geo-bundle",
