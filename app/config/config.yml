@@ -301,7 +301,6 @@ fos_user:
     registration:
         confirmation:
             enabled:    true
-            template:   VifeedUserBundle:Registration:email.html.twig
     resetting:
          form:
              type: resetting
