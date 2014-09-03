@@ -1,6 +1,6 @@
 {
   "name": "vifeed",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "dependencies": {
     "jquery": "2.1.0",
     "parallax": "https://github.com/wagerfield/parallax.git",
@@ -24,7 +24,8 @@
     "twix": "0.5.1",
     "angular-google-maps": "https://github.com/nlaplante/angular-google-maps.git",
     "skrollr": "0.6.23",
-    "jquery.easy-pie-chart": "2.1.4"
+    "jquery.easy-pie-chart": "2.1.4",
+    "angulartics": "0.16.4"
   },
   "devDependencies": {
     "socket.io-client": "latest",
