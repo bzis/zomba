@@ -16,14 +16,14 @@ parameters:
     locale:            ru
     secret:            'R87iwvZtvpvcjbctdcbufLG[sbht7TKjW#ALeGQVMe@gUeah/JwB3QotuMr[it'
 
-    assetic.ruby.bin: /usr/bin/ruby
-    assetic.filter.compass.bin: /opt/rbenv/shims/compass
+    assetic.ruby.bin: /opt/rbenv/versions/2.1.2/bin/ruby
+    assetic.filter.compass.bin: /opt/rbenv/versions/2.1.2/bin/compass
     assetic.filter.compass.images_dir: '%kernel.root_dir%/../web/'
     assetic.filter.compass.http_path: /
     assetic.filter.compass.http_generated_images_path: /
     assetic.filter.compass.generated_images_path: '%kernel.root_dir%/../web/'
     assetic.filter.compass.timeout: 600
-    assetic.cdn_url: 'http://vifeed.dev'
+    assetic.cdn_url: 'http://vifeed.dev:8888'
     assetic.cdn_path: "%kernel.root_dir%/../web"
 
     developer_email:   dev@example.com
