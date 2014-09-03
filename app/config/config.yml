@@ -82,6 +82,10 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/angular-resource/angular-resource.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-sanitize/angular-sanitize.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
+        angulartics:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/angulartics/dist/angulartics.min.js
+                - %kernel.root_dir%/../bower-vendor/angulartics/dist/angulartics-ga.min.js
         twitter_bootstrap_js:
             inputs:
                 # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/affix.js

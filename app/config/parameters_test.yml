@@ -2,7 +2,7 @@
 parameters:
     vifeed:
         comission: 0.3
-        min_view_time: 30
+        min_view_time: 5
         delta: 1
         company_name: 'ООО "Вифид"'
         inn: '12345668'
