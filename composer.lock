@@ -1932,9 +1932,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -3828,7 +3828,7 @@
                     "role": "Lead Developer"
                 },
                 {
-                    "name": "Armin Ronacher",
+                    "name": "Armin Ronacher2",
                     "email": "armin.ronacher@active-4.com",
                     "role": "Project Founder"
                 },
@@ -4301,7 +4301,7 @@
             ],
             "authors": [
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
@@ -4360,8 +4360,12 @@
             "time": "2014-05-16 12:34:51"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4399,5 +4403,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
