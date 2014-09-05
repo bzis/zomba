@@ -72,6 +72,9 @@ assetic:
         jquery_easy_pie_chart:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js
+        jquery_fitvids:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/jquery.fitvids/jquery.fitvids.js
         skrollr:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/skrollr/dist/skrollr.min.js
