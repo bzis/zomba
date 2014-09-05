@@ -1448,12 +1448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "4229ce09554c022d1cb7980f501a4e1697e79d4d"
+                "reference": "c2d8dc70fceeb727c1752ffb0f895ca461b151e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/4229ce09554c022d1cb7980f501a4e1697e79d4d",
-                "reference": "4229ce09554c022d1cb7980f501a4e1697e79d4d",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/c2d8dc70fceeb727c1752ffb0f895ca461b151e7",
+                "reference": "c2d8dc70fceeb727c1752ffb0f895ca461b151e7",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1485,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-04 08:39:17"
+            "time": "2014-09-05 08:40:31"
         },
         {
             "name": "guzzle/guzzle",
@@ -4131,7 +4131,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "af0c262b289aa9709308eb18360132ca75aae31e"
+                "reference": "836ed0e4aeef32bcf30922af98b9a84841564077"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4144,7 +4144,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-09-04 09:55:22"
+            "time": "2014-09-05 08:51:22"
         },
         {
             "name": "vifeed/video-promo-bundle",
