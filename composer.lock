@@ -1448,12 +1448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "c2d8dc70fceeb727c1752ffb0f895ca461b151e7"
+                "reference": "e00f70d76f1b52235fff8f8e8e0ed3acb250f55e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/c2d8dc70fceeb727c1752ffb0f895ca461b151e7",
-                "reference": "c2d8dc70fceeb727c1752ffb0f895ca461b151e7",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e00f70d76f1b52235fff8f8e8e0ed3acb250f55e",
+                "reference": "e00f70d76f1b52235fff8f8e8e0ed3acb250f55e",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1485,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-05 08:40:31"
+            "time": "2014-09-07 08:42:50"
         },
         {
             "name": "guzzle/guzzle",
@@ -2612,12 +2612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "8fe99a9c451f4ee491a41671108fedcf1d583937"
+                "reference": "4b163e1b80d6e978c1004421a67529fcd6087fe1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/8fe99a9c451f4ee491a41671108fedcf1d583937",
-                "reference": "8fe99a9c451f4ee491a41671108fedcf1d583937",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/4b163e1b80d6e978c1004421a67529fcd6087fe1",
+                "reference": "4b163e1b80d6e978c1004421a67529fcd6087fe1",
                 "shasum": ""
             },
             "require": {
@@ -2678,7 +2678,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-09-04 08:12:53"
+            "time": "2014-09-06 09:33:45"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3981,7 +3981,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "858c666f65ea71b764ebed708cf00d28eb021343"
+                "reference": "97de6bef89f0eb9fdded580b476451793f7d6122"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3996,7 +3996,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-04 12:42:54"
+            "time": "2014-09-08 13:40:59"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4005,7 +4005,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "36ed8c56cf9d538fded82533051a27638840594c"
+                "reference": "72720043a94975cd924b1ce92860f6077281c42b"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4017,7 +4017,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-04 10:36:33"
+            "time": "2014-09-08 13:40:49"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4044,7 +4044,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "abffa7ed833c08fa7241ced9ad8a40e666e36c50"
+                "reference": "a40ced5d42beaadc64bd375652bfcec1cdbbfa0f"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4061,7 +4061,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-04 09:55:49"
+            "time": "2014-09-08 13:38:43"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4070,7 +4070,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "67c5eeba7182040e92694899238c6d4110d011e0"
+                "reference": "061319a2eacef4f6e6a83d7f4de93aa7c1f37f87"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4083,7 +4083,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-09-04 12:42:47"
+            "time": "2014-09-08 13:38:29"
         },
         {
             "name": "vifeed/system-bundle",
@@ -4092,7 +4092,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "e811e46ffc4fd2b5e6f3a19aca40820c292da61d"
+                "reference": "d7d93ab74ccccf83252c55acc088067726d16a76"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4101,7 +4101,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-09-01 09:01:04"
+            "time": "2014-09-08 11:02:34"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -4360,8 +4360,12 @@
             "time": "2014-05-16 12:34:51"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4399,5 +4403,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
