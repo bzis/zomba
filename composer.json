@@ -34,7 +34,7 @@
             "type": "git",
             "name": "vifeed/frontend-bundle",
             "url": "git@github.com:vifeed/FrontendBundle.git",
-            "version": "dev-master"
+            "version": "dev-284_responsive_view"
         },
         {
             "type": "git",
@@ -164,7 +164,7 @@
         "cayetanosoriano/hashids-bundle": "dev-master",
         "hashids/hashids": "0.3.*@dev",
         "vifeed/campaign-bundle": "dev-master",
-        "vifeed/frontend-bundle": "dev-master",
+        "vifeed/frontend-bundle": "dev-bug/284_responsive_view",
         "vifeed/payment-bundle": "dev-master",
         "vifeed/platform-bundle": "dev-master",
         "vifeed/system-bundle": "dev-master",
