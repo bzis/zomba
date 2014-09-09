@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c63bfa733b9679a2c15159c2af1f47fa",
+    "hash": "370891740d9852e66a567f110305dc58",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -4359,8 +4359,12 @@
             "time": "2014-05-16 12:34:51"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4398,5 +4402,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
