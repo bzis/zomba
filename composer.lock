@@ -3946,7 +3946,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/BankPaymentBundle.git",
-                "reference": "a53a0a7a45f9a4c352e920f69be3d6044d94fa83"
+                "reference": "c0b576d2108ebd0697c4eaaab87be474aaebcd2d"
             },
             "require": {
                 "jms/payment-core-bundle": "dev-master",
@@ -3971,7 +3971,7 @@
             "keywords": [
                 "payment"
             ],
-            "time": "2014-06-25 14:28:58"
+            "time": "2014-09-09 08:25:08"
         },
         {
             "name": "vifeed/campaign-bundle",
@@ -3980,7 +3980,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "84368f1ab4210b666e0b47fe8458104ea747f5ab"
+                "reference": "1624ab651e7feaf6547b145ea93f67cd8a0cb649"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3995,7 +3995,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-08 14:25:38"
+            "time": "2014-09-09 08:25:43"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4043,7 +4043,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "a40ced5d42beaadc64bd375652bfcec1cdbbfa0f"
+                "reference": "b1e10ed4c2608ba299bf4ca568dedfa77c5148c9"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4060,7 +4060,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-08 13:38:43"
+            "time": "2014-09-09 08:24:03"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4130,7 +4130,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "836ed0e4aeef32bcf30922af98b9a84841564077"
+                "reference": "ef7e335341c0661e5a3528b51d12e828db548ae1"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4143,7 +4143,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-09-05 08:51:22"
+            "time": "2014-09-09 08:24:21"
         },
         {
             "name": "vifeed/video-promo-bundle",
