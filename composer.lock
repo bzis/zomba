@@ -3980,7 +3980,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "1624ab651e7feaf6547b145ea93f67cd8a0cb649"
+                "reference": "16a263389ee5d7b7835c5868801a16ca44a10344"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3995,7 +3995,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-09 08:25:43"
+            "time": "2014-09-09 13:03:22"
         },
         {
             "name": "vifeed/frontend-bundle",
