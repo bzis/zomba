@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3c2c2eaa8a144d629d8d771ab93aff0f",
+    "hash": "c63bfa733b9679a2c15159c2af1f47fa",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -3999,12 +3999,12 @@
         },
         {
             "name": "vifeed/frontend-bundle",
-            "version": "dev-master",
+            "version": "dev-bug/284_responsive_view",
             "target-dir": "Vifeed/FrontendBundle",
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "e166d26c3d3c15ed04274b33b6156ba6916f53d3"
+                "reference": "d100f7310540b33feba46b409c8ea9116d26a9d4"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4016,7 +4016,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-08 15:22:25"
+            "time": "2014-09-08 17:16:45"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4130,7 +4130,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "ef7e335341c0661e5a3528b51d12e828db548ae1"
+                "reference": "faa3658b3f7dac71459af2bab282bfa8ae22a0b4"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4143,7 +4143,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-09-09 08:24:21"
+            "time": "2014-09-09 10:18:02"
         },
         {
             "name": "vifeed/video-promo-bundle",
