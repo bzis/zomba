@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3c2c2eaa8a144d629d8d771ab93aff0f",
+    "hash": "d01ec84b7435c97319ce51db10773289",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -78,13 +78,13 @@
             "target-dir": "cayetanosoriano/HashidsBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/chewbacco/hashidsBundle.git",
-                "reference": "332deece8a95eef0e238da3bb5c17c0d4e3f7819"
+                "url": "https://github.com/neoshadybeat/hashidsBundle.git",
+                "reference": "5dfc6b7ae8fc8179625bc84bda463859017ddc61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chewbacco/hashidsBundle/zipball/332deece8a95eef0e238da3bb5c17c0d4e3f7819",
-                "reference": "332deece8a95eef0e238da3bb5c17c0d4e3f7819",
+                "url": "https://api.github.com/repos/neoshadybeat/hashidsBundle/zipball/5dfc6b7ae8fc8179625bc84bda463859017ddc61",
+                "reference": "5dfc6b7ae8fc8179625bc84bda463859017ddc61",
                 "shasum": ""
             },
             "require": {
@@ -97,6 +97,7 @@
                     "cayetanosoriano\\HashidsBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -110,10 +111,7 @@
             "keywords": [
                 "hashids"
             ],
-            "support": {
-                "source": "https://github.com/chewbacco/hashidsBundle/tree/master"
-            },
-            "time": "2014-02-03 17:06:41"
+            "time": "2014-04-21 14:07:45"
         },
         {
             "name": "chewbacco/payment-qiwi-wallet-bundle",
@@ -1448,12 +1446,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "c05d454790460f0c851c42298ea239ec5e631d76"
+                "reference": "a414aceb0af4da17240f0c17df097ecd841d17e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/c05d454790460f0c851c42298ea239ec5e631d76",
-                "reference": "c05d454790460f0c851c42298ea239ec5e631d76",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a414aceb0af4da17240f0c17df097ecd841d17e8",
+                "reference": "a414aceb0af4da17240f0c17df097ecd841d17e8",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1483,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-08 20:57:18"
+            "time": "2014-09-10 08:46:02"
         },
         {
             "name": "guzzle/guzzle",
@@ -1585,12 +1583,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanakimov/hashids.php.git",
-                "reference": "11895b4c33cc390d7faa4aab40f4cd17f05b23a2"
+                "reference": "e55430c88ccc6808bcf55be32fa84f37674f41f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/11895b4c33cc390d7faa4aab40f4cd17f05b23a2",
-                "reference": "11895b4c33cc390d7faa4aab40f4cd17f05b23a2",
+                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/e55430c88ccc6808bcf55be32fa84f37674f41f4",
+                "reference": "e55430c88ccc6808bcf55be32fa84f37674f41f4",
                 "shasum": ""
             },
             "require": {
@@ -1602,7 +1600,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
@@ -1618,23 +1616,23 @@
                 {
                     "name": "Ivan Akimov",
                     "email": "ivan@barreleye.com",
-                    "homepage": "https://twitter.com/ivanakimov",
-                    "role": "Developer"
+                    "homepage": "https://twitter.com/IvanAkimov"
                 }
             ],
-            "description": "Generate hashes like YouTube or Bitly from numbers to obfuscate your database IDs, or navigate to the right shard.",
-            "homepage": "http://www.hashids.org/php/",
+            "description": "Generate hashids like YouTube or Bitly from numbers to obfuscate your database primary ids, or navigate to the right shard.",
+            "homepage": "http://hashids.org/php",
             "keywords": [
                 "bitly",
                 "decrypt",
                 "encrypt",
                 "hash",
+                "hashid",
                 "hashids",
                 "ids",
                 "obfuscate",
                 "youtube"
             ],
-            "time": "2014-07-22 05:42:05"
+            "time": "2014-09-09 20:20:33"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -3980,7 +3978,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "e8fe9824d3a82bd8e1ca0f631e7f0a9ae0f1abee"
+                "reference": "325548394f4b00095879b68cbb0fcb681432aac6"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3995,7 +3993,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-09 13:28:02"
+            "time": "2014-09-10 13:50:11"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4004,7 +4002,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "61c6ec1219c390c636901ae35e7204b5402d3d14"
+                "reference": "f910884665544471232fc6fe1c6be0cb68c802f5"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4016,7 +4014,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-09 12:57:28"
+            "time": "2014-09-09 14:00:23"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4043,7 +4041,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "b1e10ed4c2608ba299bf4ca568dedfa77c5148c9"
+                "reference": "314e0c931f84795a81d429998e1f1c3ffaf2b1d5"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4060,7 +4058,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-09 08:24:03"
+            "time": "2014-09-10 09:32:33"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4069,7 +4067,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "061319a2eacef4f6e6a83d7f4de93aa7c1f37f87"
+                "reference": "f10d348f6ed3172a782ffe65e5a963f2ddeb1cc9"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4082,7 +4080,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-09-08 13:38:29"
+            "time": "2014-09-10 13:48:54"
         },
         {
             "name": "vifeed/system-bundle",
@@ -4170,7 +4168,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "23eeff53e33f709bdd1ea3ca6cf623bb88772bb5"
+                "reference": "2a1519ce1bb627947b47b22e672129d90e198e2b"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4179,7 +4177,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-09-04 09:56:00"
+            "time": "2014-09-10 09:33:06"
         },
         {
             "name": "vresh/twilio-bundle",
