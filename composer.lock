@@ -1585,12 +1585,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanakimov/hashids.php.git",
-                "reference": "11895b4c33cc390d7faa4aab40f4cd17f05b23a2"
+                "reference": "e55430c88ccc6808bcf55be32fa84f37674f41f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/11895b4c33cc390d7faa4aab40f4cd17f05b23a2",
-                "reference": "11895b4c33cc390d7faa4aab40f4cd17f05b23a2",
+                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/e55430c88ccc6808bcf55be32fa84f37674f41f4",
+                "reference": "e55430c88ccc6808bcf55be32fa84f37674f41f4",
                 "shasum": ""
             },
             "require": {
@@ -1602,7 +1602,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
@@ -1618,23 +1618,23 @@
                 {
                     "name": "Ivan Akimov",
                     "email": "ivan@barreleye.com",
-                    "homepage": "https://twitter.com/ivanakimov",
-                    "role": "Developer"
+                    "homepage": "https://twitter.com/IvanAkimov"
                 }
             ],
-            "description": "Generate hashes like YouTube or Bitly from numbers to obfuscate your database IDs, or navigate to the right shard.",
-            "homepage": "http://www.hashids.org/php/",
+            "description": "Generate hashids like YouTube or Bitly from numbers to obfuscate your database primary ids, or navigate to the right shard.",
+            "homepage": "http://hashids.org/php",
             "keywords": [
                 "bitly",
                 "decrypt",
                 "encrypt",
                 "hash",
+                "hashid",
                 "hashids",
                 "ids",
                 "obfuscate",
                 "youtube"
             ],
-            "time": "2014-07-22 05:42:05"
+            "time": "2014-09-09 20:20:33"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -3980,7 +3980,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "16a263389ee5d7b7835c5868801a16ca44a10344"
+                "reference": "e8fe9824d3a82bd8e1ca0f631e7f0a9ae0f1abee"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3995,7 +3995,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-09 13:03:22"
+            "time": "2014-09-09 13:28:02"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4004,7 +4004,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "61c6ec1219c390c636901ae35e7204b5402d3d14"
+                "reference": "f910884665544471232fc6fe1c6be0cb68c802f5"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4016,7 +4016,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-09 12:57:28"
+            "time": "2014-09-09 14:00:23"
         },
         {
             "name": "vifeed/geo-bundle",
