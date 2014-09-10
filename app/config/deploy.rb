@@ -17,14 +17,14 @@ set :app_path,    'app'
 
 set :repository,  "git@github.com:vifeed/#{application}.git"
 set :scm,         :git
-set :branch, 'master'
+set :branch, fetch(:branch, "master")
 set :interactive_mode, false
 
 default_run_options[:pty] = false
 
 # Automatically set proper permissions
 # http://capifony.org/cookbook/set-permissions.html
-set :writable_dirs,       [app_path + '/cache', app_path + '/logs']
+set :writable_dirs,       ['node_modules', app_path + '/logs', app_path + '/cache']
 set :shared_children,     []
 # set :shared_files,        [app_path + '/config/supervisor/deamons.conf']
 set :webserver_user,      'www-data'
@@ -51,20 +51,21 @@ deploy.start
 
 namespace :deploy do
   task :start, roles: :app, except: { no_release: true } do
+    sudo 'service nginx restart'
+    puts 'Restarting nginx'.green
+    sudo 'service php5-fpm restart'
+    puts 'Restarting php5-fpm'.green
+    sudo 'service varnish restart'
+    puts 'Restarting varnish'.green
+    sudo 'supervisorctl update'
+    puts 'Updating supervisord commands'.green
+    sudo 'supervisorctl restart all || sudo supervisorctl start all '
+    puts 'Starting supervisord commands'.green
   end
   task :stop, roles: :app, except: { no_release: true } do
   end
   task :restart, roles: :app do
-    run 'sudo /etc/init.d/nginx restart'
-    puts '--> Restarting nginx'.green
-    run 'sudo /etc/init.d/php5-fpm restart'
-    puts '--> Restarting php5-fpm'.green
-    run 'sudo /etc/init.d/varnish restart'
-    puts '--> Restarting varnish'.green
-    run 'sudo supervisorctl update'
-    puts '--> Updating supervisord commands'.green
-    run 'sudo supervisorctl restart all'
-    puts '--> Starting supervisord commands'.green
+    start
   end
 end
 

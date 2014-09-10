@@ -92,7 +92,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/chewbacco/hashidsBundle.git",
+            "url": "https://github.com/bzis/hashidsBundle.git",
             "version": "dev-master"
         },
         {
