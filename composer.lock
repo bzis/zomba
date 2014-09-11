@@ -2612,12 +2612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "4b163e1b80d6e978c1004421a67529fcd6087fe1"
+                "reference": "3f3580f9c3d0fc379f0c0851d35d78397eb474bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/4b163e1b80d6e978c1004421a67529fcd6087fe1",
-                "reference": "4b163e1b80d6e978c1004421a67529fcd6087fe1",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/3f3580f9c3d0fc379f0c0851d35d78397eb474bd",
+                "reference": "3f3580f9c3d0fc379f0c0851d35d78397eb474bd",
                 "shasum": ""
             },
             "require": {
@@ -2678,7 +2678,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-09-06 09:33:45"
+            "time": "2014-09-11 08:34:36"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3980,7 +3980,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "325548394f4b00095879b68cbb0fcb681432aac6"
+                "reference": "a4dc2b85746097dfb76ae7b23a2d28ae4b2155d9"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3995,7 +3995,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-10 13:50:11"
+            "time": "2014-09-11 09:40:09"
         },
         {
             "name": "vifeed/frontend-bundle",
