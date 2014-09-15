@@ -1301,12 +1301,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "e009ce7e3d42ed0578544ad65ece869e2a7c9734"
+                "reference": "7001669bccb3fcedfc1c5411ecb2157715e92dd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/e009ce7e3d42ed0578544ad65ece869e2a7c9734",
-                "reference": "e009ce7e3d42ed0578544ad65ece869e2a7c9734",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/7001669bccb3fcedfc1c5411ecb2157715e92dd6",
+                "reference": "7001669bccb3fcedfc1c5411ecb2157715e92dd6",
                 "shasum": ""
             },
             "require": {
@@ -1360,7 +1360,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-09-08 21:45:10"
+            "time": "2014-09-12 11:18:14"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1448,12 +1448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "c6b9d2db76f647906dee7d2bf2fd325f6b0ada48"
+                "reference": "2463d80b0e6e4b59c87b731f4662f19bee3a9925"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/c6b9d2db76f647906dee7d2bf2fd325f6b0ada48",
-                "reference": "c6b9d2db76f647906dee7d2bf2fd325f6b0ada48",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/2463d80b0e6e4b59c87b731f4662f19bee3a9925",
+                "reference": "2463d80b0e6e4b59c87b731f4662f19bee3a9925",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1485,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-12 08:48:30"
+            "time": "2014-09-13 08:49:57"
         },
         {
             "name": "guzzle/guzzle",
@@ -3980,7 +3980,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "a4dc2b85746097dfb76ae7b23a2d28ae4b2155d9"
+                "reference": "0b50d7a471123cc6c6d7d418e4b80dbe5b081319"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3995,7 +3995,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-11 09:40:09"
+            "time": "2014-09-15 06:49:01"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4004,7 +4004,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "a4595f5f8e3b8bd3524c5b010d952af7f6cf2ce6"
+                "reference": "ddd5e95bf6b85bde34e84a81e711499405204f3c"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4016,7 +4016,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-11 13:23:35"
+            "time": "2014-09-15 07:26:15"
         },
         {
             "name": "vifeed/geo-bundle",
