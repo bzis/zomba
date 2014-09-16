@@ -1301,12 +1301,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "e009ce7e3d42ed0578544ad65ece869e2a7c9734"
+                "reference": "7001669bccb3fcedfc1c5411ecb2157715e92dd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/e009ce7e3d42ed0578544ad65ece869e2a7c9734",
-                "reference": "e009ce7e3d42ed0578544ad65ece869e2a7c9734",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/7001669bccb3fcedfc1c5411ecb2157715e92dd6",
+                "reference": "7001669bccb3fcedfc1c5411ecb2157715e92dd6",
                 "shasum": ""
             },
             "require": {
@@ -1360,7 +1360,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-09-08 21:45:10"
+            "time": "2014-09-12 11:18:14"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1448,12 +1448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a414aceb0af4da17240f0c17df097ecd841d17e8"
+                "reference": "180a62524da45669dcdda33796cf351cf89b7ade"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a414aceb0af4da17240f0c17df097ecd841d17e8",
-                "reference": "a414aceb0af4da17240f0c17df097ecd841d17e8",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/180a62524da45669dcdda33796cf351cf89b7ade",
+                "reference": "180a62524da45669dcdda33796cf351cf89b7ade",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1485,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-10 08:46:02"
+            "time": "2014-09-16 08:53:41"
         },
         {
             "name": "guzzle/guzzle",
@@ -3980,7 +3980,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "a4dc2b85746097dfb76ae7b23a2d28ae4b2155d9"
+                "reference": "b2f9c5d316b89a4c7bbd1c3489d85919ffe81d1c"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3995,7 +3995,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-11 09:40:09"
+            "time": "2014-09-15 11:52:05"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4004,7 +4004,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "a4595f5f8e3b8bd3524c5b010d952af7f6cf2ce6"
+                "reference": "a1bfd9e3d1c187b914f04765d94d3da68f040d7e"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4016,7 +4016,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-11 13:23:35"
+            "time": "2014-09-16 08:42:25"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4043,7 +4043,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "314e0c931f84795a81d429998e1f1c3ffaf2b1d5"
+                "reference": "9e28cc15f95b52afbd6b574cf0bdf95d33b25bd3"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4060,7 +4060,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-10 09:32:33"
+            "time": "2014-09-16 13:10:02"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4069,7 +4069,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "f10d348f6ed3172a782ffe65e5a963f2ddeb1cc9"
+                "reference": "cb2922ea9f0a34e92a10f10fff738f6563d65ff8"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4082,7 +4082,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-09-10 13:48:54"
+            "time": "2014-09-15 11:51:40"
         },
         {
             "name": "vifeed/system-bundle",
@@ -4130,7 +4130,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "faa3658b3f7dac71459af2bab282bfa8ae22a0b4"
+                "reference": "46d133d51d5a241b7274c9e384815a745b419e47"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4143,7 +4143,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-09-09 10:18:02"
+            "time": "2014-09-15 08:45:42"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -4170,7 +4170,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "2a1519ce1bb627947b47b22e672129d90e198e2b"
+                "reference": "cec5a62967e73b104e88f7450ed24d107d1f885a"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4179,7 +4179,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-09-10 09:33:06"
+            "time": "2014-09-16 13:09:56"
         },
         {
             "name": "vresh/twilio-bundle",
