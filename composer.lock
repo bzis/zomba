@@ -4043,7 +4043,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "314e0c931f84795a81d429998e1f1c3ffaf2b1d5"
+                "reference": "9e28cc15f95b52afbd6b574cf0bdf95d33b25bd3"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4060,7 +4060,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-10 09:32:33"
+            "time": "2014-09-16 13:10:02"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4170,7 +4170,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "2a1519ce1bb627947b47b22e672129d90e198e2b"
+                "reference": "cec5a62967e73b104e88f7450ed24d107d1f885a"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4179,7 +4179,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-09-10 09:33:06"
+            "time": "2014-09-16 13:09:56"
         },
         {
             "name": "vresh/twilio-bundle",
