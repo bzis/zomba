@@ -1,7 +1,7 @@
 Symfony Standard Edition
 ========================
 
-[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/vifeed/vifeed/badges/quality-score.png?s=e41e7271739489aafe18bb962095b4bd78985b36)](https://scrutinizer-ci.com/g/vifeed/vifeed/)
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/vifeed/vifeed/badges/quality-score.png?s=e41e7271739489aafe18bb962095b4bd78985b36)](https://scrutinizer-ci.com/g/vifeed/vifeed/) [![Dependency Status](https://david-dm.org/vifeed/vifeed.svg)](https://david-dm.org/vifeed/vifeed)
 
 Welcome to the Symfony Standard Edition - a fully-functional Symfony2
 application that you can use as the skeleton for your new applications.
