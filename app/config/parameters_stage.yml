@@ -1,5 +1,5 @@
 parameters:
-    project_environment: stage
+    project.environment: stage
     database_driver: pdo_mysql
     database_host: stage.ctpklt153wwy.eu-west-1.rds.amazonaws.com
     database_port: null
