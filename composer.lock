@@ -1448,12 +1448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "180a62524da45669dcdda33796cf351cf89b7ade"
+                "reference": "f52640fe2f8ccc2e2beb2ae438626dce9ebbc5af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/180a62524da45669dcdda33796cf351cf89b7ade",
-                "reference": "180a62524da45669dcdda33796cf351cf89b7ade",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/f52640fe2f8ccc2e2beb2ae438626dce9ebbc5af",
+                "reference": "f52640fe2f8ccc2e2beb2ae438626dce9ebbc5af",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1485,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-16 08:53:41"
+            "time": "2014-09-17 00:03:37"
         },
         {
             "name": "guzzle/guzzle",
@@ -1493,12 +1493,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "305592b667786335ce6f438ac4b352932be703d1"
+                "reference": "d27346b6c8cb6a42092e763f8a2f674dfc560956"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/305592b667786335ce6f438ac4b352932be703d1",
-                "reference": "305592b667786335ce6f438ac4b352932be703d1",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/d27346b6c8cb6a42092e763f8a2f674dfc560956",
+                "reference": "d27346b6c8cb6a42092e763f8a2f674dfc560956",
                 "shasum": ""
             },
             "require": {
@@ -1577,7 +1577,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-08-28 21:08:09"
+            "time": "2014-09-16 21:19:27"
         },
         {
             "name": "hashids/hashids",
