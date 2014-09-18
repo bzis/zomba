@@ -287,13 +287,15 @@ module.exports = (grunt) ->
   grunt.registerTask "default", [
     "html2js"
     "curl"
-    "imagemin"
     "ngconstant:" + (grunt.config.get('grunt_config')?.env || 'development')
   ]
   grunt.registerTask "release_videos", [
     "responsive_videos"
     "s3:videos"
     "invalidate_cloudfront:videos"
+  ]
+  grunt.registerTask "after_assets_install", [
+    "imagemin"
   ]
   grunt.registerTask "after_assetic_dump", [
     "replace"
