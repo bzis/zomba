@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cfdfbb347107e897d358f353e0a47e75",
+    "hash": "ccce7b319a628f3503dc1490b3dc47f9",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -241,16 +241,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449"
+                "reference": "cf483685798a72c93bf4206e3dd6358ea07d64e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/e16d7adf45664a50fa86f515b6d5e7f670130449",
-                "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/cf483685798a72c93bf4206e3dd6358ea07d64e7",
+                "reference": "cf483685798a72c93bf4206e3dd6358ea07d64e7",
                 "shasum": ""
             },
             "require": {
@@ -266,7 +266,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.4.x-dev"
                 }
             },
             "autoload": {
@@ -280,17 +280,6 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
@@ -299,10 +288,16 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Caching library offering an object-oriented API for many cache backends",
@@ -311,7 +306,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2013-10-25 19:04:14"
+            "time": "2014-09-17 14:24:04"
         },
         {
             "name": "doctrine/collections",
@@ -1223,12 +1218,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "03e3663f447b4432a088a7dab27a1ff9e3722d75"
+                "reference": "d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/03e3663f447b4432a088a7dab27a1ff9e3722d75",
-                "reference": "03e3663f447b4432a088a7dab27a1ff9e3722d75",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22",
+                "reference": "d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22",
                 "shasum": ""
             },
             "require": {
@@ -1292,7 +1287,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-09-08 14:32:15"
+            "time": "2014-09-17 11:43:09"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1301,12 +1296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "7001669bccb3fcedfc1c5411ecb2157715e92dd6"
+                "reference": "1813840f0e3edccc76746e0b9e3e28e684e1f13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/7001669bccb3fcedfc1c5411ecb2157715e92dd6",
-                "reference": "7001669bccb3fcedfc1c5411ecb2157715e92dd6",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/1813840f0e3edccc76746e0b9e3e28e684e1f13c",
+                "reference": "1813840f0e3edccc76746e0b9e3e28e684e1f13c",
                 "shasum": ""
             },
             "require": {
@@ -1360,7 +1355,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-09-12 11:18:14"
+            "time": "2014-09-17 16:47:17"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -2922,16 +2917,16 @@
         },
         {
             "name": "raven/raven",
-            "version": "0.7.1",
+            "version": "0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/raven-php.git",
-                "reference": "5e5cb95beeb95b4065e7bffe719a588015dff50f"
+                "reference": "8534b131f296597c163cbc408ac2d914f43a1a2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/raven-php/zipball/5e5cb95beeb95b4065e7bffe719a588015dff50f",
-                "reference": "5e5cb95beeb95b4065e7bffe719a588015dff50f",
+                "url": "https://api.github.com/repos/getsentry/raven-php/zipball/8534b131f296597c163cbc408ac2d914f43a1a2c",
+                "reference": "8534b131f296597c163cbc408ac2d914f43a1a2c",
                 "shasum": ""
             },
             "require": {
@@ -2946,7 +2941,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.7.x-dev"
+                    "dev-master": "0.8.x-dev"
                 }
             },
             "autoload": {
@@ -2970,7 +2965,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2013-09-17 19:35:03"
+            "time": "2014-09-03 04:10:36"
         },
         {
             "name": "sensio/buzz-bundle",
@@ -3980,7 +3975,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "b2f9c5d316b89a4c7bbd1c3489d85919ffe81d1c"
+                "reference": "2f1835194b8f63eff7f0f3dead44e372d418c71c"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3995,7 +3990,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-15 11:52:05"
+            "time": "2014-09-18 08:52:40"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4004,7 +3999,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "5a123bad81686a24f6ab489c70045538ea468d25"
+                "reference": "70a7b3e6308f1499c81c4ec42c2039c1c1dfae99"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4016,7 +4011,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-16 17:28:45"
+            "time": "2014-09-18 08:59:43"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4043,7 +4038,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "0b7b2c0ad90306b0eaf083e13a2958963fbf4285"
+                "reference": "2a9f729ca68bbd5dc000930114e6053aabd05e7f"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4060,7 +4055,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-16 14:53:40"
+            "time": "2014-09-18 10:48:21"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4091,7 +4086,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "d7d93ab74ccccf83252c55acc088067726d16a76"
+                "reference": "902d3a5bb6837c947c369adb800366b273a6b2a2"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4100,7 +4095,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-09-08 11:02:34"
+            "time": "2014-09-18 10:48:12"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -4170,7 +4165,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "cec5a62967e73b104e88f7450ed24d107d1f885a"
+                "reference": "82cf19004ebd2f300c5cbb198375a67ed32ced6b"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4179,7 +4174,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-09-16 13:09:56"
+            "time": "2014-09-18 08:52:56"
         },
         {
             "name": "vresh/twilio-bundle",

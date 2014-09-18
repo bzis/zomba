@@ -76,6 +76,12 @@ namespace :frontend do
     fos_js_routing_dump
     grunt.default
   end
+  task :after_assetic_dump, role: :app do
+    grunt.after_assetic_dump
+  end
+  task :after_assets_install, role: :app do
+    grunt.after_assets_install
+  end
   task :npm_install, role: :app do
     run "sh -c 'cd #{latest_release} && npm cache clear && npm install'"
     puts '--> bower install'.green
@@ -93,6 +99,10 @@ namespace :frontend do
       run "sh -c 'cd #{latest_release} && grunt --verbose'"
       puts '--> grunt default'.green
     end
+    task :after_assets_install, role: :app do
+      run "sh -c 'cd #{latest_release} && grunt after_assets_install --verbose'"
+      puts '--> grunt after_assets_install'.green
+    end
     task :after_assetic_dump, role: :app do
       run "sh -c 'cd #{latest_release} && grunt after_assetic_dump'"
       puts '--> grunt after_assetic_dump'.green
@@ -105,7 +115,8 @@ before 'symfony:cache:warmup', 'symfony:doctrine:migrations:migrate'
 
 before 'symfony:assetic:dump', 'frontend:before_assetic_dump'
 
-after 'symfony:assetic:dump', 'frontend:grunt:after_assetic_dump'
+after 'symfony:assetic:dump', 'frontend:after_assetic_dump'
+after 'symfony:assets:install', 'frontend:after_assets_install'
 
 set :parameters_dir, 'app/config'
 set :parameters_files, []
