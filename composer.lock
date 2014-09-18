@@ -4038,7 +4038,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "0b7b2c0ad90306b0eaf083e13a2958963fbf4285"
+                "reference": "2a9f729ca68bbd5dc000930114e6053aabd05e7f"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4055,7 +4055,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-16 14:53:40"
+            "time": "2014-09-18 10:48:21"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4086,7 +4086,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "0aa25fc1296f4a61bfdd58b30d32807159005738"
+                "reference": "902d3a5bb6837c947c369adb800366b273a6b2a2"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4095,7 +4095,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-09-17 09:45:47"
+            "time": "2014-09-18 10:48:12"
         },
         {
             "name": "vifeed/tag-bundle",
