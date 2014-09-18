@@ -102,7 +102,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/getsentry/raven-php",
+            "url": "https://github.com/getsentry/raven-php.git",
             "version": "dev-master"
         },
         {
