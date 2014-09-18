@@ -102,11 +102,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/getsentry/raven-php.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/bzis/DaemonBundle",
             "version": "dev-master"
         }
