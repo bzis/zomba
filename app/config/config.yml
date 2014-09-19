@@ -81,6 +81,12 @@ assetic:
         skrollr:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/skrollr/dist/skrollr.min.js
+        scrollmagic:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/ScrollMagic/js/jquery.scrollmagic.min.js
+        odometer:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/odometer/odometer.min.js
         angular:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular/angular.min.js
