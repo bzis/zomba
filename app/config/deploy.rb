@@ -70,7 +70,7 @@ namespace :deploy do
 end
 
 namespace :frontend do
-  task :before_assetic_dump, role: :app do
+  task :before_assets_install, role: :app do
     npm_install
     bower_install
     fos_js_routing_dump
@@ -113,8 +113,7 @@ after "deploy:update", "deploy:cleanup"
 
 before 'symfony:cache:warmup', 'symfony:doctrine:migrations:migrate'
 
-before 'symfony:assetic:dump', 'frontend:before_assetic_dump'
-
+before 'symfony:assets:install', 'frontend:before_assets_install'
 after 'symfony:assetic:dump', 'frontend:after_assetic_dump'
 after 'symfony:assets:install', 'frontend:after_assets_install'
 

@@ -1296,12 +1296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "1813840f0e3edccc76746e0b9e3e28e684e1f13c"
+                "reference": "353216fea9c3f5182095782f444b62d344285a50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/1813840f0e3edccc76746e0b9e3e28e684e1f13c",
-                "reference": "1813840f0e3edccc76746e0b9e3e28e684e1f13c",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/353216fea9c3f5182095782f444b62d344285a50",
+                "reference": "353216fea9c3f5182095782f444b62d344285a50",
                 "shasum": ""
             },
             "require": {
@@ -1355,7 +1355,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-09-17 16:47:17"
+            "time": "2014-09-19 10:03:53"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -3999,7 +3999,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "fc520a2600194dbfb92eed3b6e64ef024297a19c"
+                "reference": "d6a84a24c00b89846a8c8a1944cbfd9a2bede2b7"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4011,7 +4011,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-18 13:47:44"
+            "time": "2014-09-19 12:49:12"
         },
         {
             "name": "vifeed/geo-bundle",
