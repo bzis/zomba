@@ -1443,12 +1443,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "f52640fe2f8ccc2e2beb2ae438626dce9ebbc5af"
+                "reference": "aedf68c67d4a1607d5741284b3b4e6b930b437d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/f52640fe2f8ccc2e2beb2ae438626dce9ebbc5af",
-                "reference": "f52640fe2f8ccc2e2beb2ae438626dce9ebbc5af",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/aedf68c67d4a1607d5741284b3b4e6b930b437d6",
+                "reference": "aedf68c67d4a1607d5741284b3b4e6b930b437d6",
                 "shasum": ""
             },
             "require": {
@@ -1480,7 +1480,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-17 00:03:37"
+            "time": "2014-09-19 08:56:46"
         },
         {
             "name": "guzzle/guzzle",
@@ -4147,7 +4147,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "c12e5a53b5a00795050e40130141f1afbeac525d"
+                "reference": "508d4348e62cc69d005aeeeda1ab536b5eb6e991"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4156,7 +4156,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-09-01 12:43:28"
+            "time": "2014-09-18 21:18:48"
         },
         {
             "name": "vifeed/video-view-bundle",
