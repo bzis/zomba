@@ -3999,7 +3999,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "9d2f6e93a01187f90ef877db34fc4ef2785d74fa"
+                "reference": "d6a84a24c00b89846a8c8a1944cbfd9a2bede2b7"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
