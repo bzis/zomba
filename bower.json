@@ -3,6 +3,8 @@
   "version": "0.5.0",
   "dependencies": {
     "jquery": "2.1.0",
+    "ScrollMagic": "1.1.2",
+    "odometer": "0.4.7",
     "parallax": "https://github.com/wagerfield/parallax.git",
     "angular": "1.2.18",
     "angular-route": "1.2.18",
@@ -33,6 +35,7 @@
     "angular-mocks": "1.2.18"
   },
   "resolutions": {
-    "moment": "2.8.3"
+    "moment": "2.8.3",
+    "jquery": "2.1.0"
   }
 }
