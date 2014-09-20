@@ -1296,12 +1296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "353216fea9c3f5182095782f444b62d344285a50"
+                "reference": "349b637b2a5f6ec1e871d17b79e01b072fbb081c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/353216fea9c3f5182095782f444b62d344285a50",
-                "reference": "353216fea9c3f5182095782f444b62d344285a50",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/349b637b2a5f6ec1e871d17b79e01b072fbb081c",
+                "reference": "349b637b2a5f6ec1e871d17b79e01b072fbb081c",
                 "shasum": ""
             },
             "require": {
@@ -1355,7 +1355,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-09-19 10:03:53"
+            "time": "2014-09-20 00:36:25"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1443,12 +1443,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "aedf68c67d4a1607d5741284b3b4e6b930b437d6"
+                "reference": "b01bb42aad69b539dc108e6449b9e48596ca056a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/aedf68c67d4a1607d5741284b3b4e6b930b437d6",
-                "reference": "aedf68c67d4a1607d5741284b3b4e6b930b437d6",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/b01bb42aad69b539dc108e6449b9e48596ca056a",
+                "reference": "b01bb42aad69b539dc108e6449b9e48596ca056a",
                 "shasum": ""
             },
             "require": {
@@ -1480,7 +1480,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-19 08:56:46"
+            "time": "2014-09-20 08:58:19"
         },
         {
             "name": "guzzle/guzzle",
@@ -3341,16 +3341,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.2.1",
+            "version": "v5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "2b9af56cc676c338d52fca4c657e5bdff73bb7af"
+                "reference": "e02f71a35436af4bd58a1bd90116089e632e29e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/2b9af56cc676c338d52fca4c657e5bdff73bb7af",
-                "reference": "2b9af56cc676c338d52fca4c657e5bdff73bb7af",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/e02f71a35436af4bd58a1bd90116089e632e29e1",
+                "reference": "e02f71a35436af4bd58a1bd90116089e632e29e1",
                 "shasum": ""
             },
             "require": {
@@ -3376,13 +3376,11 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "name": "Chris Corbyn"
                 },
                 {
-                    "name": "Chris Corbyn"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Swiftmailer, free feature-rich PHP mailer",
@@ -3391,7 +3389,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-06-13 11:44:54"
+            "time": "2014-09-20 07:17:36"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -3975,7 +3973,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "2f1835194b8f63eff7f0f3dead44e372d418c71c"
+                "reference": "533dd7b39b20e7672feeb886cdaf11c82826a920"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3990,7 +3988,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-18 08:52:40"
+            "time": "2014-09-20 11:27:04"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4038,7 +4036,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "2a9f729ca68bbd5dc000930114e6053aabd05e7f"
+                "reference": "c5bb84ec47325c2238033937b2e067988e99041b"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4055,7 +4053,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-18 10:48:21"
+            "time": "2014-09-20 11:26:30"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4064,7 +4062,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PlatformBundle.git",
-                "reference": "cb2922ea9f0a34e92a10f10fff738f6563d65ff8"
+                "reference": "4b75a14bd29f67254740920753bb0d7c048ba3b5"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4077,7 +4075,7 @@
                 }
             },
             "description": "Vifeed/PlatformBundle",
-            "time": "2014-09-15 11:51:40"
+            "time": "2014-09-20 11:26:36"
         },
         {
             "name": "vifeed/system-bundle",
@@ -4125,7 +4123,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "46d133d51d5a241b7274c9e384815a745b419e47"
+                "reference": "de685f4f56a63ac371b39d3b904ffc9fa48c4834"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4138,7 +4136,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-09-15 08:45:42"
+            "time": "2014-09-20 11:26:21"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -4354,8 +4352,12 @@
             "time": "2014-05-16 12:34:51"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4392,5 +4394,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
