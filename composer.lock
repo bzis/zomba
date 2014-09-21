@@ -1443,12 +1443,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "b01bb42aad69b539dc108e6449b9e48596ca056a"
+                "reference": "43c1aa0ce8ce29d6652a8b3d3f480c10de6d111b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/b01bb42aad69b539dc108e6449b9e48596ca056a",
-                "reference": "b01bb42aad69b539dc108e6449b9e48596ca056a",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/43c1aa0ce8ce29d6652a8b3d3f480c10de6d111b",
+                "reference": "43c1aa0ce8ce29d6652a8b3d3f480c10de6d111b",
                 "shasum": ""
             },
             "require": {
@@ -1480,7 +1480,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-20 08:58:19"
+            "time": "2014-09-21 08:59:42"
         },
         {
             "name": "guzzle/guzzle",
@@ -3997,7 +3997,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "88c1b6f16b1a7a980e677c38fd7372881b0e6b9d"
+                "reference": "a353c8e8df8fe6fdb7f30662e438a11b774e3c55"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4009,7 +4009,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-19 13:35:11"
+            "time": "2014-09-21 09:39:47"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4352,8 +4352,12 @@
             "time": "2014-05-16 12:34:51"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4390,5 +4394,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
