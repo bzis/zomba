@@ -3975,7 +3975,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "c51e8b3ce3cde4d1d9b05cf903589f1938a28e8c"
+                "reference": "37059c5e3edae33e1d836a06ea6a91a91466a723"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3990,7 +3990,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-21 08:17:55"
+            "time": "2014-09-21 17:00:34"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4038,7 +4038,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "8f2b6693a182c6cf54c66a558b3d5d6fcd261420"
+                "reference": "919c462e689510d34a7c8455b9c268f654e9cccb"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4055,7 +4055,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-21 11:07:55"
+            "time": "2014-09-21 17:01:22"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4125,7 +4125,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "de685f4f56a63ac371b39d3b904ffc9fa48c4834"
+                "reference": "2bfb81bb8f8e031d7ae408b58ed3d63671c160f7"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4138,7 +4138,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-09-20 11:26:21"
+            "time": "2014-09-21 17:01:01"
         },
         {
             "name": "vifeed/video-promo-bundle",
