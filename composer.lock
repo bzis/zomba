@@ -3973,7 +3973,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "533dd7b39b20e7672feeb886cdaf11c82826a920"
+                "reference": "c51e8b3ce3cde4d1d9b05cf903589f1938a28e8c"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3988,7 +3988,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-20 11:27:04"
+            "time": "2014-09-21 08:17:55"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4036,7 +4036,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "c5bb84ec47325c2238033937b2e067988e99041b"
+                "reference": "82881ac9ea438f1dee2d4cc67a0ee4cdfebf64e2"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4053,7 +4053,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-20 11:26:30"
+            "time": "2014-09-21 08:17:24"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4352,12 +4352,8 @@
             "time": "2014-05-16 12:34:51"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4394,7 +4390,5 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
