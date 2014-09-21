@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ccce7b319a628f3503dc1490b3dc47f9",
+    "hash": "fe0fbc736e6f74dcf33a30ad3f7ea05c",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -1576,16 +1576,16 @@
         },
         {
             "name": "hashids/hashids",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanakimov/hashids.php.git",
-                "reference": "a3b9873d56c0878aaa640f21c385f88a3adfad07"
+                "reference": "69ea4bb3dda89f37ab5bf3ffd568863e5c5b5742"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/a3b9873d56c0878aaa640f21c385f88a3adfad07",
-                "reference": "a3b9873d56c0878aaa640f21c385f88a3adfad07",
+                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/69ea4bb3dda89f37ab5bf3ffd568863e5c5b5742",
+                "reference": "69ea4bb3dda89f37ab5bf3ffd568863e5c5b5742",
                 "shasum": ""
             },
             "require": {
@@ -1597,7 +1597,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
@@ -1629,7 +1629,7 @@
                 "obfuscate",
                 "youtube"
             ],
-            "time": "2014-09-09 19:31:50"
+            "time": "2014-09-11 19:17:41"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -4036,7 +4036,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "82881ac9ea438f1dee2d4cc67a0ee4cdfebf64e2"
+                "reference": "8f2b6693a182c6cf54c66a558b3d5d6fcd261420"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4053,7 +4053,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-21 08:17:24"
+            "time": "2014-09-21 11:07:55"
         },
         {
             "name": "vifeed/platform-bundle",
