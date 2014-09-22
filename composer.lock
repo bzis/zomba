@@ -943,16 +943,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.4",
+            "version": "v2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "fc19c3b53dcd00e6584db40669fdd699c4671f97"
+                "reference": "c0d3cdbdfbf873871167050ab077e49b1ad02ab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/fc19c3b53dcd00e6584db40669fdd699c4671f97",
-                "reference": "fc19c3b53dcd00e6584db40669fdd699c4671f97",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/c0d3cdbdfbf873871167050ab077e49b1ad02ab0",
+                "reference": "c0d3cdbdfbf873871167050ab077e49b1ad02ab0",
                 "shasum": ""
             },
             "require": {
@@ -990,23 +990,20 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
                 }
             ],
             "description": "Object-Relational-Mapper for PHP",
@@ -1015,7 +1012,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-07-11 03:05:53"
+            "time": "2014-09-22 21:58:51"
         },
         {
             "name": "facebook/php-sdk-v4",
@@ -1443,12 +1440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "43c1aa0ce8ce29d6652a8b3d3f480c10de6d111b"
+                "reference": "9ee04e219287be53805ecf59388e07dffcc867d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/43c1aa0ce8ce29d6652a8b3d3f480c10de6d111b",
-                "reference": "43c1aa0ce8ce29d6652a8b3d3f480c10de6d111b",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/9ee04e219287be53805ecf59388e07dffcc867d2",
+                "reference": "9ee04e219287be53805ecf59388e07dffcc867d2",
                 "shasum": ""
             },
             "require": {
@@ -1480,7 +1477,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-21 08:59:42"
+            "time": "2014-09-22 09:01:03"
         },
         {
             "name": "guzzle/guzzle",
@@ -2607,12 +2604,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "3f3580f9c3d0fc379f0c0851d35d78397eb474bd"
+                "reference": "6bcd5e8d8132d3eab8c0c750e88454fc78aeed26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/3f3580f9c3d0fc379f0c0851d35d78397eb474bd",
-                "reference": "3f3580f9c3d0fc379f0c0851d35d78397eb474bd",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/6bcd5e8d8132d3eab8c0c750e88454fc78aeed26",
+                "reference": "6bcd5e8d8132d3eab8c0c750e88454fc78aeed26",
                 "shasum": ""
             },
             "require": {
@@ -2673,7 +2670,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-09-11 08:34:36"
+            "time": "2014-09-22 08:19:00"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
