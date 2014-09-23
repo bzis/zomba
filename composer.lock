@@ -1215,12 +1215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22"
+                "reference": "350743cb704e8ec933b8475ba6caf0b9c1547a8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22",
-                "reference": "d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/350743cb704e8ec933b8475ba6caf0b9c1547a8e",
+                "reference": "350743cb704e8ec933b8475ba6caf0b9c1547a8e",
                 "shasum": ""
             },
             "require": {
@@ -1284,7 +1284,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-09-17 11:43:09"
+            "time": "2014-09-23 09:30:42"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -4035,7 +4035,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "919c462e689510d34a7c8455b9c268f654e9cccb"
+                "reference": "25856ff7df3a48e031c17f4690a5c519830f503f"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4052,7 +4052,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-21 17:01:22"
+            "time": "2014-09-23 11:14:43"
         },
         {
             "name": "vifeed/platform-bundle",
