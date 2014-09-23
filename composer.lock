@@ -3996,7 +3996,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "a353c8e8df8fe6fdb7f30662e438a11b774e3c55"
+                "reference": "c146392eeea5947e931344fef1ea3d9c51bfb4c5"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4008,7 +4008,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-21 09:39:47"
+            "time": "2014-09-23 14:48:55"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4035,7 +4035,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "25856ff7df3a48e031c17f4690a5c519830f503f"
+                "reference": "d11234d3c75fb548fb488d54955334922bdfbe2e"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4052,7 +4052,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-23 11:14:43"
+            "time": "2014-09-23 11:51:13"
         },
         {
             "name": "vifeed/platform-bundle",
