@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ccce7b319a628f3503dc1490b3dc47f9",
+    "hash": "30e250160cc9a7213076dc66e6af9c0a",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -943,16 +943,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.4",
+            "version": "v2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "fc19c3b53dcd00e6584db40669fdd699c4671f97"
+                "reference": "c0d3cdbdfbf873871167050ab077e49b1ad02ab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/fc19c3b53dcd00e6584db40669fdd699c4671f97",
-                "reference": "fc19c3b53dcd00e6584db40669fdd699c4671f97",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/c0d3cdbdfbf873871167050ab077e49b1ad02ab0",
+                "reference": "c0d3cdbdfbf873871167050ab077e49b1ad02ab0",
                 "shasum": ""
             },
             "require": {
@@ -990,23 +990,20 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
                 }
             ],
             "description": "Object-Relational-Mapper for PHP",
@@ -1015,7 +1012,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-07-11 03:05:53"
+            "time": "2014-09-22 21:58:51"
         },
         {
             "name": "facebook/php-sdk-v4",
@@ -1218,12 +1215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22"
+                "reference": "350743cb704e8ec933b8475ba6caf0b9c1547a8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22",
-                "reference": "d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/350743cb704e8ec933b8475ba6caf0b9c1547a8e",
+                "reference": "350743cb704e8ec933b8475ba6caf0b9c1547a8e",
                 "shasum": ""
             },
             "require": {
@@ -1287,7 +1284,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-09-17 11:43:09"
+            "time": "2014-09-23 09:30:42"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1443,12 +1440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "b01bb42aad69b539dc108e6449b9e48596ca056a"
+                "reference": "9ee04e219287be53805ecf59388e07dffcc867d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/b01bb42aad69b539dc108e6449b9e48596ca056a",
-                "reference": "b01bb42aad69b539dc108e6449b9e48596ca056a",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/9ee04e219287be53805ecf59388e07dffcc867d2",
+                "reference": "9ee04e219287be53805ecf59388e07dffcc867d2",
                 "shasum": ""
             },
             "require": {
@@ -1480,7 +1477,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-20 08:58:19"
+            "time": "2014-09-22 09:01:03"
         },
         {
             "name": "guzzle/guzzle",
@@ -1576,16 +1573,16 @@
         },
         {
             "name": "hashids/hashids",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanakimov/hashids.php.git",
-                "reference": "a3b9873d56c0878aaa640f21c385f88a3adfad07"
+                "reference": "69ea4bb3dda89f37ab5bf3ffd568863e5c5b5742"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/a3b9873d56c0878aaa640f21c385f88a3adfad07",
-                "reference": "a3b9873d56c0878aaa640f21c385f88a3adfad07",
+                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/69ea4bb3dda89f37ab5bf3ffd568863e5c5b5742",
+                "reference": "69ea4bb3dda89f37ab5bf3ffd568863e5c5b5742",
                 "shasum": ""
             },
             "require": {
@@ -1597,7 +1594,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
@@ -1629,7 +1626,7 @@
                 "obfuscate",
                 "youtube"
             ],
-            "time": "2014-09-09 19:31:50"
+            "time": "2014-09-11 19:17:41"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2607,12 +2604,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "3f3580f9c3d0fc379f0c0851d35d78397eb474bd"
+                "reference": "6bcd5e8d8132d3eab8c0c750e88454fc78aeed26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/3f3580f9c3d0fc379f0c0851d35d78397eb474bd",
-                "reference": "3f3580f9c3d0fc379f0c0851d35d78397eb474bd",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/6bcd5e8d8132d3eab8c0c750e88454fc78aeed26",
+                "reference": "6bcd5e8d8132d3eab8c0c750e88454fc78aeed26",
                 "shasum": ""
             },
             "require": {
@@ -2673,7 +2670,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-09-11 08:34:36"
+            "time": "2014-09-22 08:19:00"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3341,16 +3338,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.2.2",
+            "version": "v5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "e02f71a35436af4bd58a1bd90116089e632e29e1"
+                "reference": "2b9af56cc676c338d52fca4c657e5bdff73bb7af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/e02f71a35436af4bd58a1bd90116089e632e29e1",
-                "reference": "e02f71a35436af4bd58a1bd90116089e632e29e1",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/2b9af56cc676c338d52fca4c657e5bdff73bb7af",
+                "reference": "2b9af56cc676c338d52fca4c657e5bdff73bb7af",
                 "shasum": ""
             },
             "require": {
@@ -3376,11 +3373,13 @@
             ],
             "authors": [
                 {
-                    "name": "Chris Corbyn"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "name": "Chris Corbyn"
                 }
             ],
             "description": "Swiftmailer, free feature-rich PHP mailer",
@@ -3389,7 +3388,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-09-20 07:17:36"
+            "time": "2014-06-13 11:44:54"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -3973,7 +3972,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "c51e8b3ce3cde4d1d9b05cf903589f1938a28e8c"
+                "reference": "37059c5e3edae33e1d836a06ea6a91a91466a723"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3988,7 +3987,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-21 08:17:55"
+            "time": "2014-09-21 17:00:34"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3997,7 +3996,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "88c1b6f16b1a7a980e677c38fd7372881b0e6b9d"
+                "reference": "c146392eeea5947e931344fef1ea3d9c51bfb4c5"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4009,7 +4008,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-19 13:35:11"
+            "time": "2014-09-23 14:48:55"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4036,7 +4035,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "82881ac9ea438f1dee2d4cc67a0ee4cdfebf64e2"
+                "reference": "d11234d3c75fb548fb488d54955334922bdfbe2e"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4053,7 +4052,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-21 08:17:24"
+            "time": "2014-09-23 11:51:13"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4123,7 +4122,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "de685f4f56a63ac371b39d3b904ffc9fa48c4834"
+                "reference": "2bfb81bb8f8e031d7ae408b58ed3d63671c160f7"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4136,7 +4135,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-09-20 11:26:21"
+            "time": "2014-09-21 17:01:01"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -4293,7 +4292,7 @@
             ],
             "authors": [
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
