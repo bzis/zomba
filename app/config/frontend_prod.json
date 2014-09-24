@@ -4,5 +4,8 @@
   "videoHost": "zomba.me",
   "apiPath": "/api",
   "statsPath": "http://tracker.vifeed.co:8081",
-  "vkKey": "4345643"
+  "vkKey": "4345643",
+  "withdrawal": {
+    "limit": 1000
+  }
 }
