@@ -57,6 +57,8 @@ parameters:
     tracker.host: tracker.vifeed.dev
 
     vifeed:
+        # максимальное количество воркеров-обработчиков просмотров
+        payment_max_workers: 2
         # комиссия системы
         comission: 0.3
         # минимальное зачётное время просмотра видео

@@ -41,10 +41,11 @@ parameters:
     paypal.api_signature: dsfsdf
     tracker.host: 'tracker-stage.vifeed.co'
     vifeed:
+        payment_max_workers: 2
         comission: 0.5
         min_view_time: 5
         short_video_duration: 5
-        delta: 1
+        delta: 2
         company_name: ''
         inn: ''
         bank_name: ''
