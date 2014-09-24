@@ -1440,12 +1440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "9ee04e219287be53805ecf59388e07dffcc867d2"
+                "reference": "5bb4c3d2fc8d03058ba9e9e545336ff7c2a04d2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/9ee04e219287be53805ecf59388e07dffcc867d2",
-                "reference": "9ee04e219287be53805ecf59388e07dffcc867d2",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/5bb4c3d2fc8d03058ba9e9e545336ff7c2a04d2b",
+                "reference": "5bb4c3d2fc8d03058ba9e9e545336ff7c2a04d2b",
                 "shasum": ""
             },
             "require": {
@@ -1477,7 +1477,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-22 09:01:03"
+            "time": "2014-09-24 09:03:52"
         },
         {
             "name": "guzzle/guzzle",
@@ -3972,7 +3972,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "37059c5e3edae33e1d836a06ea6a91a91466a723"
+                "reference": "a17fe9757a348e80674b9067848544027e0d48ee"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3987,7 +3987,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-21 17:00:34"
+            "time": "2014-09-24 09:25:27"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4292,7 +4292,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
@@ -4351,8 +4351,12 @@
             "time": "2014-05-16 12:34:51"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4389,5 +4393,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
