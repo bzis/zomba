@@ -4,5 +4,8 @@
   "videoHost": "videos.vifeed.co",
   "apiPath": "/api",
   "statsPath": "http://tracker-stage.vifeed.co:8081",
-  "vkKey": "4325637"
+  "vkKey": "4325637",
+  "withdrawal": {
+    "limit": 1000
+  }
 }
