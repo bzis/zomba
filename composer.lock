@@ -943,16 +943,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.4",
+            "version": "v2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "fc19c3b53dcd00e6584db40669fdd699c4671f97"
+                "reference": "c0d3cdbdfbf873871167050ab077e49b1ad02ab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/fc19c3b53dcd00e6584db40669fdd699c4671f97",
-                "reference": "fc19c3b53dcd00e6584db40669fdd699c4671f97",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/c0d3cdbdfbf873871167050ab077e49b1ad02ab0",
+                "reference": "c0d3cdbdfbf873871167050ab077e49b1ad02ab0",
                 "shasum": ""
             },
             "require": {
@@ -990,23 +990,20 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
                 }
             ],
             "description": "Object-Relational-Mapper for PHP",
@@ -1015,7 +1012,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-07-11 03:05:53"
+            "time": "2014-09-22 21:58:51"
         },
         {
             "name": "facebook/php-sdk-v4",
@@ -1218,12 +1215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22"
+                "reference": "350743cb704e8ec933b8475ba6caf0b9c1547a8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22",
-                "reference": "d0f8d2fc9ca5285f11aa54d9cf65076455d6fa22",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/350743cb704e8ec933b8475ba6caf0b9c1547a8e",
+                "reference": "350743cb704e8ec933b8475ba6caf0b9c1547a8e",
                 "shasum": ""
             },
             "require": {
@@ -1287,7 +1284,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-09-17 11:43:09"
+            "time": "2014-09-23 09:30:42"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1443,12 +1440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "43c1aa0ce8ce29d6652a8b3d3f480c10de6d111b"
+                "reference": "5bb4c3d2fc8d03058ba9e9e545336ff7c2a04d2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/43c1aa0ce8ce29d6652a8b3d3f480c10de6d111b",
-                "reference": "43c1aa0ce8ce29d6652a8b3d3f480c10de6d111b",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/5bb4c3d2fc8d03058ba9e9e545336ff7c2a04d2b",
+                "reference": "5bb4c3d2fc8d03058ba9e9e545336ff7c2a04d2b",
                 "shasum": ""
             },
             "require": {
@@ -1480,7 +1477,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-21 08:59:42"
+            "time": "2014-09-24 09:03:52"
         },
         {
             "name": "guzzle/guzzle",
@@ -2607,12 +2604,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "3f3580f9c3d0fc379f0c0851d35d78397eb474bd"
+                "reference": "6bcd5e8d8132d3eab8c0c750e88454fc78aeed26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/3f3580f9c3d0fc379f0c0851d35d78397eb474bd",
-                "reference": "3f3580f9c3d0fc379f0c0851d35d78397eb474bd",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/6bcd5e8d8132d3eab8c0c750e88454fc78aeed26",
+                "reference": "6bcd5e8d8132d3eab8c0c750e88454fc78aeed26",
                 "shasum": ""
             },
             "require": {
@@ -2673,7 +2670,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-09-11 08:34:36"
+            "time": "2014-09-22 08:19:00"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3975,7 +3972,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "37059c5e3edae33e1d836a06ea6a91a91466a723"
+                "reference": "a17fe9757a348e80674b9067848544027e0d48ee"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3990,7 +3987,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-21 17:00:34"
+            "time": "2014-09-24 09:25:27"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3999,7 +3996,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "a353c8e8df8fe6fdb7f30662e438a11b774e3c55"
+                "reference": "c146392eeea5947e931344fef1ea3d9c51bfb4c5"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4011,7 +4008,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-21 09:39:47"
+            "time": "2014-09-23 14:48:55"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4038,7 +4035,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "919c462e689510d34a7c8455b9c268f654e9cccb"
+                "reference": "d11234d3c75fb548fb488d54955334922bdfbe2e"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4055,7 +4052,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-21 17:01:22"
+            "time": "2014-09-23 11:51:13"
         },
         {
             "name": "vifeed/platform-bundle",
