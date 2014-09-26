@@ -44,7 +44,7 @@ parameters:
         comission: 0.5
         min_view_time: 11
         short_video_duration: 5
-        delta: 2
+        delta: 1
         company_name: ''
         inn: ''
         bank_name: ''

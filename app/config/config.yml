@@ -242,6 +242,11 @@ assetic:
                 - %kernel.root_dir%/../tmp/sexy-modal-templates.js
             filters:
                 - ?closure
+        vifeed_tracker_css:
+            inputs:
+                - @VifeedVideoPromoBundle/Resources/assets/sass/tracker.scss
+            filters:
+                - ?yui_css
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
