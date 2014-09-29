@@ -79,6 +79,9 @@ parameters:
     # максимальное количество воркеров-обработчиков просмотров
     vifeed.payment.max_workers: 2
 
+    vifeed.mailer.sender.name: zombakka
+    vifeed.mailer.sender.email: no-reply@zombakka.com
+
     rabbitmq.host: 'localhost'
     rabbitmq.port: 5672
     rabbitmq.user: 'guest'

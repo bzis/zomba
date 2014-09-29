@@ -327,8 +327,8 @@ fos_user:
              type: resetting
              name: resetting
     from_email:
-        address: no-reply@zombakka.com
-        sender_name: zombakka
+        address: %vifeed.mailer.sender.email%
+        sender_name: %vifeed.mailer.sender.name%
 
 nelmio_api_doc: ~
 

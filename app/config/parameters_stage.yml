@@ -54,6 +54,8 @@ parameters:
         bank_account_nubmer: ''
         kpp: ''
     vifeed.payment.max_workers: 2
+    vifeed.mailer.sender.name: zombakka
+    vifeed.mailer.sender.email: no-reply@zombakka.com
     feedback.notification.email: feedback@zombakka.com
     partnership.notification.email: partnership@zombakka.com
     withdrawal.notification.email: withdrawal@zombakka.com
