@@ -5,7 +5,11 @@ rest:
 vifeed_public:
   resource: "@VifeedFrontendBundle/Resources/config/routing.yml"
   prefix: /
-
+  host: "{domain}"
+  requirements:
+    domain: zombakka.com|vifeed.dev|vifeed.co
+  defaults:
+    domain: %public_domain%
 vifeed_payment:
   resource: "@VifeedPaymentBundle/Resources/config/routing.yml"
   prefix: /

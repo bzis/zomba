@@ -67,9 +67,9 @@ parameters:
     twilio.sid: AC668d221231b47c2f7db6c19ced65b584
     twilio.token: 8b9610584c29edcbb87bca3647235569
     twilio.phone_number: 14846536503
+    public_domain: vifeed.co
     promo_domain: zomba.me
     facebook.app_id: 297198780441139
     facebook.app_secret: dd9fb9783437d289f0ac0e0adc559092
     vk.app_id: 4345643
     vk.app_secret: 69YPxuys9WNktkxyGIm7
-    
