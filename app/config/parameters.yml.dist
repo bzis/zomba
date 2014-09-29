@@ -91,6 +91,7 @@ parameters:
     backend.host: backend.zombakka.com
     daemon.pid_file_location: '/tmp'
     promo_domain: zomba.me
+    public_domain: vifeed.dev
     facebook.app_id: ''
     facebook.app_secret: ''
     vk.app_id: ''
