@@ -2597,12 +2597,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "6bcd5e8d8132d3eab8c0c750e88454fc78aeed26"
+                "reference": "3889e7ff245dde6ad802e3c61d73fdf1bf4d3329"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/6bcd5e8d8132d3eab8c0c750e88454fc78aeed26",
-                "reference": "6bcd5e8d8132d3eab8c0c750e88454fc78aeed26",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/3889e7ff245dde6ad802e3c61d73fdf1bf4d3329",
+                "reference": "3889e7ff245dde6ad802e3c61d73fdf1bf4d3329",
                 "shasum": ""
             },
             "require": {
@@ -2663,7 +2663,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-09-22 08:19:00"
+            "time": "2014-09-29 15:12:56"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3989,7 +3989,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "7e5672ecc4a4db3a8b517f2bad2a5355ac721464"
+                "reference": "0ea4a766efcc8c6ad8b5163884233b0d20bea936"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4001,7 +4001,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-29 11:24:51"
+            "time": "2014-09-29 17:22:13"
         },
         {
             "name": "vifeed/geo-bundle",
