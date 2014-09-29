@@ -168,16 +168,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd"
+                "reference": "6a6bec0670bb6e71a263b08bc1b98ea242928633"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
-                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/6a6bec0670bb6e71a263b08bc1b98ea242928633",
+                "reference": "6a6bec0670bb6e71a263b08bc1b98ea242928633",
                 "shasum": ""
             },
             "require": {
@@ -205,17 +205,6 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
@@ -224,10 +213,16 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Docblock Annotations Parser",
@@ -237,7 +232,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2014-07-06 15:52:21"
+            "time": "2014-09-25 16:45:30"
         },
         {
             "name": "doctrine/cache",
@@ -1288,17 +1283,17 @@
         },
         {
             "name": "friendsofsymfony/user-bundle",
-            "version": "dev-master",
+            "version": "v2.0.0-alpha1",
             "target-dir": "FOS/UserBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "349b637b2a5f6ec1e871d17b79e01b072fbb081c"
+                "reference": "5a53273c3ae4e3f128c71522cd8398515718bbb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/349b637b2a5f6ec1e871d17b79e01b072fbb081c",
-                "reference": "349b637b2a5f6ec1e871d17b79e01b072fbb081c",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/5a53273c3ae4e3f128c71522cd8398515718bbb8",
+                "reference": "5a53273c3ae4e3f128c71522cd8398515718bbb8",
                 "shasum": ""
             },
             "require": {
@@ -1352,7 +1347,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-09-20 00:36:25"
+            "time": "2014-09-26 15:02:08"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1440,12 +1435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "add64cebc6176bda978a51ede3c6c7ad163d84f0"
+                "reference": "769f98a28585cb05ce0283c64c7cb49b482db911"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/add64cebc6176bda978a51ede3c6c7ad163d84f0",
-                "reference": "add64cebc6176bda978a51ede3c6c7ad163d84f0",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/769f98a28585cb05ce0283c64c7cb49b482db911",
+                "reference": "769f98a28585cb05ce0283c64c7cb49b482db911",
                 "shasum": ""
             },
             "require": {
@@ -1477,7 +1472,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-25 09:05:13"
+            "time": "2014-09-27 09:07:10"
         },
         {
             "name": "guzzle/guzzle",
@@ -1827,12 +1822,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSDiExtraBundle.git",
-                "reference": "d282aa46c84a2723db0dab6940ea4399e6aa3313"
+                "reference": "49fd39537cd0cbc6f76e4261f2549562d753cd82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSDiExtraBundle/zipball/d282aa46c84a2723db0dab6940ea4399e6aa3313",
-                "reference": "d282aa46c84a2723db0dab6940ea4399e6aa3313",
+                "url": "https://api.github.com/repos/schmittjoh/JMSDiExtraBundle/zipball/49fd39537cd0cbc6f76e4261f2549562d753cd82",
+                "reference": "49fd39537cd0cbc6f76e4261f2549562d753cd82",
                 "shasum": ""
             },
             "require": {
@@ -1873,10 +1868,8 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Allows to configure dependency injection using annotations",
@@ -1885,7 +1878,7 @@
                 "annotations",
                 "dependency injection"
             ],
-            "time": "2014-06-13 07:11:35"
+            "time": "2014-09-26 09:56:26"
         },
         {
             "name": "jms/metadata",
@@ -2348,16 +2341,16 @@
         },
         {
             "name": "kriswallsmith/buzz",
-            "version": "v0.12",
+            "version": "v0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/Buzz.git",
-                "reference": "9d56d36a58c47e2f612f4b856ff9baa0e3375ff6"
+                "reference": "487760b05d6269a4c2c374364325326cfa65b12c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/9d56d36a58c47e2f612f4b856ff9baa0e3375ff6",
-                "reference": "9d56d36a58c47e2f612f4b856ff9baa0e3375ff6",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/487760b05d6269a4c2c374364325326cfa65b12c",
+                "reference": "487760b05d6269a4c2c374364325326cfa65b12c",
                 "shasum": ""
             },
             "require": {
@@ -2392,7 +2385,7 @@
                 "curl",
                 "http client"
             ],
-            "time": "2014-07-29 23:52:21"
+            "time": "2014-09-15 12:42:36"
         },
         {
             "name": "kriswallsmith/spork",
@@ -3619,16 +3612,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.5.4",
+            "version": "v2.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "3a369dddea56596df91977d8c2083e70784852f2"
+                "reference": "2aef97bbc95d0c4ae63537cca81bd6d984427d81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/3a369dddea56596df91977d8c2083e70784852f2",
-                "reference": "3a369dddea56596df91977d8c2083e70784852f2",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/2aef97bbc95d0c4ae63537cca81bd6d984427d81",
+                "reference": "2aef97bbc95d0c4ae63537cca81bd6d984427d81",
                 "shasum": ""
             },
             "require": {
@@ -3729,7 +3722,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-09-03 09:51:48"
+            "time": "2014-09-28 17:33:53"
         },
         {
             "name": "twig/extensions",
@@ -3972,7 +3965,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "726a875b8053631138701797ac861abaed6782d8"
+                "reference": "af96188d15a34bad1db23709b9182c016696ff51"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3987,7 +3980,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-25 09:18:24"
+            "time": "2014-09-26 17:27:33"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4035,7 +4028,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "c197be2e4450322d2cf0aec58295e47a95339056"
+                "reference": "1ec75d611ab69b9314924c718f59a64f80fab078"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4052,7 +4045,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-25 09:19:52"
+            "time": "2014-09-26 17:28:20"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4144,7 +4137,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "508d4348e62cc69d005aeeeda1ab536b5eb6e991"
+                "reference": "22eb15e175a2c0b5bb428ec23b59cacef4d64661"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4153,7 +4146,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-09-18 21:18:48"
+            "time": "2014-09-26 15:36:48"
         },
         {
             "name": "vifeed/video-view-bundle",

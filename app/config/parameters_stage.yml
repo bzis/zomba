@@ -41,11 +41,10 @@ parameters:
     paypal.api_signature: dsfsdf
     tracker.host: 'tracker-stage.vifeed.co'
     vifeed:
-        payment_max_workers: 2
         comission: 0.5
         min_view_time: 11
         short_video_duration: 5
-        delta: 2
+        delta: 1
         company_name: ''
         inn: ''
         bank_name: ''
@@ -54,6 +53,7 @@ parameters:
         account_number: ''
         bank_account_nubmer: ''
         kpp: ''
+    vifeed.payment.max_workers: 2
     feedback.notification.email: feedback@zombakka.com
     partnership.notification.email: partnership@zombakka.com
     withdrawal.notification.email: withdrawal@zombakka.com
@@ -72,3 +72,4 @@ parameters:
     facebook.app_secret: dd9fb9783437d289f0ac0e0adc559092
     vk.app_id: 4345643
     vk.app_secret: 69YPxuys9WNktkxyGIm7
+    

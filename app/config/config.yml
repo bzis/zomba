@@ -242,6 +242,11 @@ assetic:
                 - %kernel.root_dir%/../tmp/sexy-modal-templates.js
             filters:
                 - ?closure
+        vifeed_tracker_css:
+            inputs:
+                - @VifeedVideoPromoBundle/Resources/assets/sass/tracker.scss
+            filters:
+                - ?yui_css
         fos_js_routes:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
@@ -427,3 +432,6 @@ bank_payment:
     templates:
         receipt: ::receipt.html.twig
         transfer: ::transfer.html.twig
+
+vifeed_payment:
+    max_workers: %vifeed.payment.max_workers%
