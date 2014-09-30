@@ -1435,12 +1435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "769f98a28585cb05ce0283c64c7cb49b482db911"
+                "reference": "e5d1d21d503ce5e115101bd7672283f8ae43a910"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/769f98a28585cb05ce0283c64c7cb49b482db911",
-                "reference": "769f98a28585cb05ce0283c64c7cb49b482db911",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/e5d1d21d503ce5e115101bd7672283f8ae43a910",
+                "reference": "e5d1d21d503ce5e115101bd7672283f8ae43a910",
                 "shasum": ""
             },
             "require": {
@@ -1472,7 +1472,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-27 09:07:10"
+            "time": "2014-09-30 09:11:56"
         },
         {
             "name": "guzzle/guzzle",
@@ -3965,7 +3965,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "c57dda2ee9f5be030ebef66a275e52be688cc87f"
+                "reference": "080a2a87db3bf40fe1db88a2642194d6e3cff02f"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3980,7 +3980,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-29 08:50:22"
+            "time": "2014-09-30 10:38:32"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -3989,7 +3989,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "3dd5d4c73a7900edce116b7e85fa0708b40c1cfd"
+                "reference": "cb174e30a467e7f4e0f09ea03d15203c190f1a3a"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4001,7 +4001,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-09-29 17:34:31"
+            "time": "2014-09-29 19:30:13"
         },
         {
             "name": "vifeed/geo-bundle",
