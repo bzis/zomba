@@ -5,6 +5,9 @@
   "apiPath": "/api",
   "statsPath": "http://tracker.vifeed.dev:8081",
   "vkKey": "4310780",
+  "campaign": {
+    "minDailyLimit": 100
+  },
   "withdrawal": {
     "limit": 1000
   },
