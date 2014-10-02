@@ -3969,7 +3969,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/CampaignBundle.git",
-                "reference": "e7f4d75b0e0af018e17a5eace9e7e93a71cc2a08"
+                "reference": "94de0068d3ae433996beb65274566b5182972f53"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -3984,7 +3984,7 @@
                 }
             },
             "description": "Vifeed/CampaignBundle",
-            "time": "2014-09-30 12:32:54"
+            "time": "2014-10-02 09:16:45"
         },
         {
             "name": "vifeed/frontend-bundle",
@@ -4032,7 +4032,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "b2520e86657bb6cb5ded66b7862392e28411466e"
+                "reference": "90ef69dcba1db734193a6f9086cd6733fd399452"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4049,7 +4049,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-09-29 17:45:26"
+            "time": "2014-10-02 09:21:04"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4080,7 +4080,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/SystemBundle.git",
-                "reference": "902d3a5bb6837c947c369adb800366b273a6b2a2"
+                "reference": "a1ea683095c109b435c50def2a2c34126e80ad2d"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4089,7 +4089,7 @@
                 }
             },
             "description": "Vifeed/SystemBundle",
-            "time": "2014-09-18 10:48:12"
+            "time": "2014-10-02 09:18:53"
         },
         {
             "name": "vifeed/tag-bundle",
@@ -4119,7 +4119,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "2bfb81bb8f8e031d7ae408b58ed3d63671c160f7"
+                "reference": "f1286b69dd3d52bb1ac669e1935c1bc00f8bed4b"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4132,7 +4132,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-09-21 17:01:01"
+            "time": "2014-10-02 09:15:33"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -4159,7 +4159,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "82cf19004ebd2f300c5cbb198375a67ed32ced6b"
+                "reference": "39321703dafba162350ffaa6b79c2b1b6e009fe9"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4168,7 +4168,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-09-18 08:52:56"
+            "time": "2014-10-02 09:22:04"
         },
         {
             "name": "vresh/twilio-bundle",
@@ -4299,16 +4299,16 @@
         },
         {
             "name": "willdurand/negotiation",
-            "version": "1.3.3",
+            "version": "1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Negotiation.git",
-                "reference": "a98fb6b9808610c1aa326c736893d3d77d9383b6"
+                "reference": "d7fa4ce4a0436915b9ba9f7cb5ff37719f0a834c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/a98fb6b9808610c1aa326c736893d3d77d9383b6",
-                "reference": "a98fb6b9808610c1aa326c736893d3d77d9383b6",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/d7fa4ce4a0436915b9ba9f7cb5ff37719f0a834c",
+                "reference": "d7fa4ce4a0436915b9ba9f7cb5ff37719f0a834c",
                 "shasum": ""
             },
             "require": {
@@ -4332,8 +4332,7 @@
             "authors": [
                 {
                     "name": "William Durand",
-                    "email": "william.durand1@gmail.com",
-                    "homepage": "http://www.willdurand.fr"
+                    "email": "william.durand1@gmail.com"
                 }
             ],
             "description": "Content Negotiation tools for PHP provided as a standalone library.",
@@ -4345,7 +4344,7 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2014-05-16 12:34:51"
+            "time": "2014-10-02 07:26:00"
         }
     ],
     "packages-dev": [
