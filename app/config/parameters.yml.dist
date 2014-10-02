@@ -75,6 +75,13 @@ parameters:
         account_number: ''
         bank_account_nubmer: ''
         kpp: ''
+        ip_filter:
+            # минимальный промежуток между просмотрами с одного IP
+            short_skip_time: 600
+            # промежуток, на который перестают засчитываться просмотры после long_skip_views просмотров
+            long_skip_time: 86400
+            # максимальное количество просмотров с одного IP за период long_skip_time
+            long_skip_views: 5
 
     # максимальное количество воркеров-обработчиков просмотров
     vifeed.payment.max_workers: 2

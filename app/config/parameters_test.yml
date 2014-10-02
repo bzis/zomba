@@ -13,3 +13,7 @@ parameters:
         bank_account_nubmer: '121212121' # оно надо?
         kpp: '12121212121'
         short_video_duration: 5
+        ip_filter:
+            short_skip_time: 600
+            long_skip_time: 86400
+            long_skip_views: 5
