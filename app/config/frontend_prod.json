@@ -7,5 +7,13 @@
   "vkKey": "4345643",
   "withdrawal": {
     "limit": 1000
-  }
+  },
+  "publicRoutes": [
+    "publisher",
+    "partnership",
+    "form",
+    "confirm",
+    "forgot",
+    "update"
+  ]
 }
