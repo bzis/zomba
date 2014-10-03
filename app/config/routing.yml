@@ -11,9 +11,9 @@ vifeed_public:
   defaults:
     domain: %public_domain%
 
-vifeed_frontend_mirrow:
+vifeed_frontend_mirror:
   pattern:  /
-  defaults: { _controller: VifeedFrontendBundle:Default:index }
+  defaults: { _controller: VifeedFrontendBundle:Default:mirror }
   host: "{domain}"
   requirements:
     domain: www.zombakka.ru|www.zombakka.com|www.zombaka.ru|www.zombaka.com|zombakka.ru|zombaka.ru zombaka.com|www.zomba.me|zomba.me|videos.vifeed.co|videos.vifeed.dev
