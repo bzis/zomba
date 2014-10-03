@@ -15,7 +15,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-01-05 18:40:22"
+            "time": "2014-07-08 17:00:19"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -26,7 +26,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-12-30 19:48:25"
+            "time": "2014-06-27 12:01:29"
         },
         {
             "name": "bzis/daemon-bundle",
@@ -494,7 +494,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 }
             ],
             "description": "Data Fixtures for all Doctrine Object Managers",
@@ -619,7 +620,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -790,7 +793,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -808,7 +812,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -860,7 +864,7 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -1431,12 +1435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a41a9dc0662e36420030eaab802dbb1f85459479"
+                "reference": "5ad4812fd5007ea72894ca9a99c02bad6c28e751"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a41a9dc0662e36420030eaab802dbb1f85459479",
-                "reference": "a41a9dc0662e36420030eaab802dbb1f85459479",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/5ad4812fd5007ea72894ca9a99c02bad6c28e751",
+                "reference": "5ad4812fd5007ea72894ca9a99c02bad6c28e751",
                 "shasum": ""
             },
             "require": {
@@ -1468,7 +1472,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-09-30 19:33:59"
+            "time": "2014-10-03 09:13:56"
         },
         {
             "name": "guzzle/guzzle",
@@ -2202,7 +2206,7 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -3989,7 +3993,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "053e7873bd3ed243594deebfb03c1e9cf4750174"
+                "reference": "b9f8cc195fa87d0f1f830f2470dd89a957309b58"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4001,7 +4005,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-02 14:36:55"
+            "time": "2014-10-03 11:42:59"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4285,7 +4289,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
@@ -4343,8 +4347,12 @@
             "time": "2014-10-02 07:26:00"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4381,5 +4389,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
