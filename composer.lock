@@ -938,16 +938,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.5",
+            "version": "v2.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "c0d3cdbdfbf873871167050ab077e49b1ad02ab0"
+                "reference": "bebacf79d8d4dae9168f0f9bc6811e6c2cb6a4d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/c0d3cdbdfbf873871167050ab077e49b1ad02ab0",
-                "reference": "c0d3cdbdfbf873871167050ab077e49b1ad02ab0",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/bebacf79d8d4dae9168f0f9bc6811e6c2cb6a4d9",
+                "reference": "bebacf79d8d4dae9168f0f9bc6811e6c2cb6a4d9",
                 "shasum": ""
             },
             "require": {
@@ -1007,7 +1007,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-09-22 21:58:51"
+            "time": "2014-10-06 13:22:50"
         },
         {
             "name": "facebook/php-sdk-v4",
@@ -1210,12 +1210,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "350743cb704e8ec933b8475ba6caf0b9c1547a8e"
+                "reference": "a26be0ceb134b15168538974e1cb62bb769c1b75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/350743cb704e8ec933b8475ba6caf0b9c1547a8e",
-                "reference": "350743cb704e8ec933b8475ba6caf0b9c1547a8e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/a26be0ceb134b15168538974e1cb62bb769c1b75",
+                "reference": "a26be0ceb134b15168538974e1cb62bb769c1b75",
                 "shasum": ""
             },
             "require": {
@@ -1279,7 +1279,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-09-23 09:30:42"
+            "time": "2014-10-06 10:13:20"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1435,12 +1435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "5ad4812fd5007ea72894ca9a99c02bad6c28e751"
+                "reference": "825b4cec28a7d24f1acdd340b1c9919b5faf0fda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/5ad4812fd5007ea72894ca9a99c02bad6c28e751",
-                "reference": "5ad4812fd5007ea72894ca9a99c02bad6c28e751",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/825b4cec28a7d24f1acdd340b1c9919b5faf0fda",
+                "reference": "825b4cec28a7d24f1acdd340b1c9919b5faf0fda",
                 "shasum": ""
             },
             "require": {
@@ -1461,9 +1461,6 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                "src/"
-            ],
             "license": [
                 "Apache-2.0"
             ],
@@ -1472,7 +1469,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-10-03 09:13:56"
+            "time": "2014-10-06 17:30:58"
         },
         {
             "name": "guzzle/guzzle",
@@ -2601,12 +2598,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "3889e7ff245dde6ad802e3c61d73fdf1bf4d3329"
+                "reference": "ff5c201880117e87bf41851adad2054944f7edb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/3889e7ff245dde6ad802e3c61d73fdf1bf4d3329",
-                "reference": "3889e7ff245dde6ad802e3c61d73fdf1bf4d3329",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/ff5c201880117e87bf41851adad2054944f7edb5",
+                "reference": "ff5c201880117e87bf41851adad2054944f7edb5",
                 "shasum": ""
             },
             "require": {
@@ -2667,7 +2664,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-09-29 15:12:56"
+            "time": "2014-10-06 09:47:14"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -4119,7 +4116,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "b9579310cc3b87aaf80d040865b4083f4dde50c1"
+                "reference": "677d6521274f6abd0b865c65a53da732624e0345"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4132,7 +4129,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-10-02 10:41:09"
+            "time": "2014-10-06 16:54:32"
         },
         {
             "name": "vifeed/video-promo-bundle",
