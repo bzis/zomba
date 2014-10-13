@@ -253,6 +253,9 @@ assetic:
                 - %kernel.root_dir%/../web/js/fos_js_routes.js
             filters:
                 - ?closure
+        snapsvg:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/Snap.svg/dist/snap.svg-min.js
 # Doctrine Configuration
 doctrine:
     dbal:
