@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "30e250160cc9a7213076dc66e6af9c0a",
+    "hash": "8d97745f877656a84bc1f82ebdff6033",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -3985,12 +3985,12 @@
         },
         {
             "name": "vifeed/frontend-bundle",
-            "version": "dev-master",
+            "version": "dev-sexy_animation",
             "target-dir": "Vifeed/FrontendBundle",
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "bc190b2d865ce8803f391645171755e0e2211bfa"
+                "reference": "d045b14a649204c3252e9ce913396cac84ba4e5e"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4002,7 +4002,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-13 18:38:12"
+            "time": "2014-10-13 20:54:01"
         },
         {
             "name": "vifeed/geo-bundle",
