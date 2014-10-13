@@ -28,7 +28,8 @@
     "skrollr": "0.6.26",
     "jquery.easy-pie-chart": "2.1.4",
     "jquery.fitvids": "git://github.com/davatron5000/FitVids.js#~1.1.0",
-    "angulartics": "0.16.4"
+    "angulartics": "0.16.4",
+    "Snap.svg": "0.3.0"
   },
   "devDependencies": {
     "socket.io-client": "latest",
