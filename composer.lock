@@ -1210,12 +1210,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "a81b4ba6f8bfae9a971404512e71b994b41b8171"
+                "reference": "41ebd9cad4979ee784022951aa90ac5b05bf4bf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/a81b4ba6f8bfae9a971404512e71b994b41b8171",
-                "reference": "a81b4ba6f8bfae9a971404512e71b994b41b8171",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/41ebd9cad4979ee784022951aa90ac5b05bf4bf1",
+                "reference": "41ebd9cad4979ee784022951aa90ac5b05bf4bf1",
                 "shasum": ""
             },
             "require": {
@@ -1279,7 +1279,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-10-07 10:04:14"
+            "time": "2014-10-14 13:49:56"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -3990,7 +3990,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "dd407eabd646b7dee32669d1faf51d45c33aa702"
+                "reference": "1b1b2539d9cfac092424f0eb60b67bf01f8544d7"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4002,7 +4002,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-14 10:16:45"
+            "time": "2014-10-14 13:53:22"
         },
         {
             "name": "vifeed/geo-bundle",
