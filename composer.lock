@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8d97745f877656a84bc1f82ebdff6033",
+    "hash": "30e250160cc9a7213076dc66e6af9c0a",
     "packages": [
         {
             "name": "angular-ui/bootstrap",
@@ -3985,12 +3985,12 @@
         },
         {
             "name": "vifeed/frontend-bundle",
-            "version": "dev-sexy_animation",
+            "version": "dev-master",
             "target-dir": "Vifeed/FrontendBundle",
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "d045b14a649204c3252e9ce913396cac84ba4e5e"
+                "reference": "dd407eabd646b7dee32669d1faf51d45c33aa702"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4002,7 +4002,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-13 20:54:01"
+            "time": "2014-10-14 10:16:45"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4344,8 +4344,12 @@
             "time": "2014-10-02 07:26:00"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4382,5 +4386,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
