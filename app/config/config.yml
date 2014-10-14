@@ -254,7 +254,7 @@ assetic:
                 - @VifeedFrontendBundle/Resources/assets/js/security/security.js
                 - @VifeedFrontendBundle/Resources/assets/js/security/wsse.js
                 - @VifeedFrontendBundle/Resources/assets/js/security/login/login.js
-                - @VifeedFrontendBundle/Resources/assets/js/security/login/LoginFormController.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/login/login-form-controller.coffee
                 - @VifeedFrontendBundle/Resources/assets/js/security/login/toolbar.coffee
                 - @VifeedFrontendBundle/Resources/assets/js/kernel/kernel.coffee
                 - @VifeedFrontendBundle/Resources/assets/js/kernel/ui-bootstrap.coffee

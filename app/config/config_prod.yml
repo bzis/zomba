@@ -21,8 +21,3 @@ monolog:
             type:  stream
             path:  %kernel.logs_dir%/%kernel.environment%.log
             level: warning
-
-assetic:
-    filters:
-        closure:
-            apply_to: "\.coffee$"
