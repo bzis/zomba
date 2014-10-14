@@ -231,6 +231,44 @@ assetic:
         snapsvg:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/Snap.svg/dist/snap.svg-min.js
+        frontend_common_js:
+            inputs:
+                - @jquery
+                - @ladda_bootstrap
+                - @twitter_bootstrap_js
+                - @angular
+                - @angular_ui
+                - @angular_ui_bootstrap
+                - @angularjs_cookies
+                - @angulartics
+                - @fos_js_routes
+                - @crypto_js
+                - @ng_progress
+                - @frontend_config
+                - @security_template
+                - @VifeedFrontendBundle/Resources/assets/js/i18n/services/*.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/i18n/i18n.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/security/index.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/authorization.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/interceptor.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/retryQueue.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/security.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/wsse.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/login/login.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/login/LoginFormController.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/login/toolbar.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/kernel.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/ui-bootstrap.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/radio-choice.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/textarea-limiter.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/error-message.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/submit-form.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/ladda.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/password-match.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/services/progress-bar.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/services/utility.js
+                - @VifeedFrontendBundle/Resources/assets/js/index-app.coffee 
+
 # Doctrine Configuration
 doctrine:
     dbal:
