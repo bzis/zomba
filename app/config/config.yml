@@ -267,7 +267,7 @@ assetic:
                 - @VifeedFrontendBundle/Resources/assets/js/kernel/services/progress-bar.js
                 - @VifeedFrontendBundle/Resources/assets/js/kernel/services/utility.js
                 - @VifeedFrontendBundle/Resources/assets/js/index-app.coffee
-        frontend_common_js:
+        frontend_common_css:
             inputs:
                 - @ng_progress_css
                 - @ladda_bootstrap_css
