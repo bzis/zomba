@@ -47,6 +47,7 @@ assetic:
     use_controller: false
     bundles:        [VifeedUserBundle, VifeedFrontendBundle, VifeedVideoPromoBundle]
     ruby:  %assetic.ruby.bin%
+    node: /usr/bin/node
     filters:
         sass: ~
         compass:
@@ -56,13 +57,15 @@ assetic:
             apply_to: "\.scss$"
         closure:
             jar: %kernel.root_dir%/Resources/java/compiler-latest/compiler.jar
-            apply_to: "\.coffee$"
         yui_css:
             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
         coffee:
             bin: %kernel.root_dir%/../node_modules/.bin/coffee
-            node: /usr/bin/node
             apply_to: "\.coffee$"
+        uglifyjs2:
+            bin: %kernel.root_dir%/../node_modules/.bin/uglifyjs
+        uglifycss:
+            bin: %kernel.root_dir%/../node_modules/.bin/uglifycss
     read_from:        %assetic.cdn_url%
     write_to:         %assetic.cdn_path%
     assets:
@@ -93,7 +96,7 @@ assetic:
                 - %kernel.root_dir%/../bower-vendor/angular-route/angular-route.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-resource/angular-resource.min.js
                 - %kernel.root_dir%/../bower-vendor/angular-sanitize/angular-sanitize.min.js
-                - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
+                # - %kernel.root_dir%/../bower-vendor/angular-mocks/angular-mocks.js
         angulartics:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angulartics/dist/angulartics.min.js
@@ -112,8 +115,6 @@ assetic:
                 # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/modal.js
                 # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/tooltip.js
                 # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/popover.js
-            filters:
-                - ?closure
         #Angular UI ~ Bootstrap
         #http://angular-ui.github.io/bootstrap/
         #https://github.com/angular-ui/bootstrap/
@@ -139,8 +140,6 @@ assetic:
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/pagination/pagination.js
                 - %kernel.root_dir%/../tmp/angular-ui-pagination-templates.js
                 - %kernel.root_dir%/../vendor/angular-ui/bootstrap/src/buttons/buttons.js
-            filters:
-                - ?closure
         angular_maps:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular-google-maps/dist/angular-google-maps.min.js
@@ -157,8 +156,6 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/mask/mask.js
                 - %kernel.root_dir%/../vendor/angular-ui/ui-utils/modules/event/event.js
-            filters:
-                - ?closure
         angular_socket:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angular-socket-io/socket.min.js
@@ -168,15 +165,11 @@ assetic:
         frontend_config:
             inputs:
                 - %kernel.root_dir%/../tmp/frontend_config.js
-            filters:
-                - ?closure
         select2_js:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.min.js
                 - %kernel.root_dir%/../bower-vendor/select2/select2_locale_ru.js
                 - %kernel.root_dir%/../bower-vendor/angular-ui-select2/src/select2.js
-            filters:
-                - ?closure
         select2_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/select2/select2.css
@@ -201,8 +194,6 @@ assetic:
         daterangepicker:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker.js
-            filters:
-                - ?closure
         daterangepicker_css:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/bootstrap-daterangepicker/daterangepicker-bs3.css
@@ -210,38 +201,24 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/highcharts-release/highcharts.js
                 - %kernel.root_dir%/../bower-vendor/highcharts-ng/dist/highcharts-ng.min.js
-            filters:
-                - ?closure
         analytics_template:
             inputs:
                 - %kernel.root_dir%/../tmp/analytics-templates.js
-            filters:
-                - ?closure
         advertiser_template:
             inputs:
                 - %kernel.root_dir%/../tmp/advertiser-templates.js
-            filters:
-                - ?closure
         profile_template:
             inputs:
                 - %kernel.root_dir%/../tmp/profile-templates.js
-            filters:
-                - ?closure
         publisher_template:
             inputs:
                 - %kernel.root_dir%/../tmp/publisher-templates.js
-            filters:
-                - ?closure
         security_template:
             inputs:
                 - %kernel.root_dir%/../tmp/security-templates.js
-            filters:
-                - ?closure
         sexy_modal_template:
             inputs:
                 - %kernel.root_dir%/../tmp/sexy-modal-templates.js
-            filters:
-                - ?closure
         vifeed_tracker_css:
             inputs:
                 - @VifeedVideoPromoBundle/Resources/assets/sass/tracker.scss
@@ -251,11 +228,52 @@ assetic:
             inputs:
                 - @FOSJsRoutingBundle/Resources/public/js/router.js
                 - %kernel.root_dir%/../web/js/fos_js_routes.js
-            filters:
-                - ?closure
         snapsvg:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/Snap.svg/dist/snap.svg-min.js
+        frontend_common_js:
+            inputs:
+                - @jquery
+                - @ladda_bootstrap
+                - @twitter_bootstrap_js
+                - @angular
+                - @angular_ui
+                - @angular_ui_bootstrap
+                - @angularjs_cookies
+                - @angulartics
+                - @fos_js_routes
+                - @crypto_js
+                - @ng_progress
+                - @frontend_config
+                - @security_template
+                - @VifeedFrontendBundle/Resources/assets/js/i18n/services/*.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/i18n/i18n.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/security/index.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/authorization.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/interceptor.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/retryQueue.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/security.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/wsse.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/login/login.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/login/LoginFormController.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/login/toolbar.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/kernel.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/ui-bootstrap.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/radio-choice.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/textarea-limiter.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/error-message.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/submit-form.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/ladda.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/password-match.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/services/progress-bar.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/services/utility.js
+                - @VifeedFrontendBundle/Resources/assets/js/index-app.coffee
+        frontend_common_js:
+            inputs:
+                - @ng_progress_css
+                - @ladda_bootstrap_css
+                - @VifeedFrontendBundle/Resources/assets/sass/common.scss
+
 # Doctrine Configuration
 doctrine:
     dbal:
