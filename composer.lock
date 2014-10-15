@@ -4029,7 +4029,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "90ef69dcba1db734193a6f9086cd6733fd399452"
+                "reference": "72d91b7cb57f0fbaffce20bcfe7830d010608431"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4046,7 +4046,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-10-02 09:21:04"
+            "time": "2014-10-15 10:03:52"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4138,7 +4138,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "66839084f2b065181a41dc08971c2fef8c634d51"
+                "reference": "8bada41a4632a7d7794743cfe1088c4cb9aac434"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4147,7 +4147,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-09-29 12:41:21"
+            "time": "2014-10-15 09:29:45"
         },
         {
             "name": "vifeed/video-view-bundle",
@@ -4156,7 +4156,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoViewBundle.git",
-                "reference": "cc2625a6e62de6842677529144b7c1eced75627e"
+                "reference": "68799677f6d587f91d7259ba718bb459f6aa24c7"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4165,7 +4165,7 @@
                 }
             },
             "description": "Vifeed/VideoViewBundle",
-            "time": "2014-10-02 12:46:25"
+            "time": "2014-10-15 09:37:50"
         },
         {
             "name": "vresh/twilio-bundle",
@@ -4344,12 +4344,8 @@
             "time": "2014-10-02 07:26:00"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4386,7 +4382,5 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
