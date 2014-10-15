@@ -15,7 +15,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-07-08 17:00:19"
+            "time": "2014-08-26 06:22:06"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -26,7 +26,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-06-27 12:01:29"
+            "time": "2014-08-07 21:12:00"
         },
         {
             "name": "bzis/daemon-bundle",
@@ -151,7 +151,7 @@
             ],
             "authors": [
                 {
-                    "name": "Tsoy Dmitry",
+                    "name": "Dmitry Tsoy",
                     "email": "hd.deman@gmail.com",
                     "homepage": "http://lacroco.ru/"
                 }
@@ -358,7 +358,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -434,7 +434,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -812,7 +812,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -866,7 +866,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -1758,9 +1758,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -1800,9 +1800,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2018,9 +2018,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2131,7 +2131,7 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -2201,9 +2201,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2264,16 +2264,16 @@
         },
         {
             "name": "kriswallsmith/assetic",
-            "version": "v1.2.0-alpha1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "5bea57990f7ddbeb3d57e7ef96eae9ddd56c4297"
+                "reference": "df991c124a2212371443b586a1be767500036dee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/5bea57990f7ddbeb3d57e7ef96eae9ddd56c4297",
-                "reference": "5bea57990f7ddbeb3d57e7ef96eae9ddd56c4297",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/df991c124a2212371443b586a1be767500036dee",
+                "reference": "df991c124a2212371443b586a1be767500036dee",
                 "shasum": ""
             },
             "require": {
@@ -2288,8 +2288,8 @@
                 "leafo/scssphp": "*",
                 "leafo/scssphp-compass": "*",
                 "mrclay/minify": "*",
-                "patchwork/jsqueeze": "*",
-                "phpunit/phpunit": "~3.7",
+                "patchwork/jsqueeze": "~1.0",
+                "phpunit/phpunit": "~4",
                 "psr/log": "~1.0",
                 "ptachoire/cssembed": "*",
                 "twig/twig": "~1.6"
@@ -2334,7 +2334,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-07-08 11:30:40"
+            "time": "2014-10-14 14:45:32"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -2753,9 +2753,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2803,9 +2803,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
