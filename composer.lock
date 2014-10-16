@@ -4135,7 +4135,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "8bada41a4632a7d7794743cfe1088c4cb9aac434"
+                "reference": "6b676274f4c4c479181623bfdfc4cb9a27a7a5cd"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4144,7 +4144,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-10-15 09:29:45"
+            "time": "2014-10-16 15:46:51"
         },
         {
             "name": "vifeed/video-view-bundle",
