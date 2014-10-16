@@ -1,6 +1,6 @@
 {
   "name": "vifeed",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "vifeed base project",
   "main": "index.js",
   "dependencies": {
@@ -15,7 +15,7 @@
     "grunt-responsive-videos": "~0.1.1",
     "uglify-js": "2.4.15",
     "uglifycss": "0.0.9",
-    "coffee-script": "1.7.1"
+    "coffee-script": "1.8.0"
   },
   "scripts": {
     "test": "./node_modules/karma/bin/karma start vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Tests/karma.conf.js --browsers Firefox"
