@@ -3987,7 +3987,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "9e956e185d349fcf9ae41f71a659a3fb9575f93f"
+                "reference": "74fece9de22fbbf9b746d3eb1a361b65cc61a02e"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3999,7 +3999,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-16 13:02:44"
+            "time": "2014-10-16 15:33:04"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4113,7 +4113,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "ae3bc053d363bbcb96e34ee18ab6e6d34e1bda3d"
+                "reference": "e4853a74970b5b5f8ca0c3760a4c82f2d96d4151"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4126,7 +4126,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-10-16 12:37:37"
+            "time": "2014-10-16 15:40:02"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -4341,8 +4341,12 @@
             "time": "2014-10-02 07:26:00"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4379,5 +4383,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
