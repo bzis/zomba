@@ -58,6 +58,7 @@ parameters:
     vifeed.ip_filter.long_skip_views: 5
     vifeed.ip_filter.timeout_per_campaign: 0
     vifeed.payment.max_workers: 2
+    vifeed.min_balance_for_sms: 0
     feedback.notification.email: feedback@zombakka.com
     partnership.notification.email: partnership@zombakka.com
     withdrawal.notification.email: withdrawal@zombakka.com
