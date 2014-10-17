@@ -53,11 +53,12 @@ parameters:
         account_number: ''
         bank_account_nubmer: ''
         kpp: ''
-        ip_filter:
-            short_skip_time: 600
-            long_skip_time: 86400
-            long_skip_views: 5
+    vifeed.ip_filter.short_skip_time: 600
+    vifeed.ip_filter.long_skip_time: 86400
+    vifeed.ip_filter.long_skip_views: 5
+    vifeed.ip_filter.timeout_per_campaign: 0
     vifeed.payment.max_workers: 2
+    vifeed.min_balance_for_sms: 0
     feedback.notification.email: feedback@zombakka.com
     partnership.notification.email: partnership@zombakka.com
     withdrawal.notification.email: withdrawal@zombakka.com

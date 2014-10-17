@@ -13,7 +13,8 @@ parameters:
         bank_account_nubmer: '121212121' # оно надо?
         kpp: '12121212121'
         short_video_duration: 5
-        ip_filter:
-            short_skip_time: 600
-            long_skip_time: 86400
-            long_skip_views: 5
+    vifeed.ip_filter.short_skip_time: 600
+    vifeed.ip_filter.long_skip_time: 86400
+    vifeed.ip_filter.long_skip_views: 5
+    vifeed.ip_filter.timeout_per_campaign: 0
+    vifeed.min_balance_for_sms: 100

@@ -1,10 +1,10 @@
 {
   "name": "vifeed",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "vifeed base project",
   "main": "index.js",
   "dependencies": {
-    "grunt": "~0.4.4",
+    "grunt": "~0.4.5",
     "grunt-s3": "~0.2.0-alpha.3",
     "grunt-curl": "~1.5.1",
     "grunt-invalidate-cloudfront": "~0.1.5",
@@ -13,7 +13,9 @@
     "grunt-contrib-imagemin": "~0.7.1",
     "grunt-ng-constant": "~0.5.0",
     "grunt-responsive-videos": "~0.1.1",
-    "coffee-script": "1.7.1"
+    "uglify-js": "2.4.15",
+    "uglifycss": "0.0.9",
+    "coffee-script": "1.8.0"
   },
   "scripts": {
     "test": "./node_modules/karma/bin/karma start vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Tests/karma.conf.js --browsers Firefox"
@@ -33,7 +35,6 @@
     "chai": "^1.9.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-favicons": "^0.6.4",
-    "grunt-ng-constant": "^0.5.0",
     "karma": "^0.12.14",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.1.3",
