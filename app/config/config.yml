@@ -249,7 +249,7 @@ assetic:
                 - @VifeedFrontendBundle/Resources/assets/js/i18n/i18n.coffee
                 - @VifeedFrontendBundle/Resources/assets/js/security/index.js
                 - @VifeedFrontendBundle/Resources/assets/js/security/authorization.js
-                - @VifeedFrontendBundle/Resources/assets/js/security/interceptor.js
+                - @VifeedFrontendBundle/Resources/assets/js/security/interceptor.coffee
                 - @VifeedFrontendBundle/Resources/assets/js/security/retryQueue.js
                 - @VifeedFrontendBundle/Resources/assets/js/security/security.js
                 - @VifeedFrontendBundle/Resources/assets/js/security/wsse.js
