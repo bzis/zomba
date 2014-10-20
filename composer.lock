@@ -1432,12 +1432,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a1b7e9f7b727de46d0d7ffaaa43e9e7b9a0475a2"
+                "reference": "1321213f5c1d6cedc34d70cd08e7a256082c0444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a1b7e9f7b727de46d0d7ffaaa43e9e7b9a0475a2",
-                "reference": "a1b7e9f7b727de46d0d7ffaaa43e9e7b9a0475a2",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/1321213f5c1d6cedc34d70cd08e7a256082c0444",
+                "reference": "1321213f5c1d6cedc34d70cd08e7a256082c0444",
                 "shasum": ""
             },
             "require": {
@@ -1466,7 +1466,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-10-17 09:30:31"
+            "time": "2014-10-19 09:32:53"
         },
         {
             "name": "guzzle/guzzle",
@@ -3772,16 +3772,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.16.1",
+            "version": "v1.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "7c4c01dcf578523cfcddf383641a4f12790270ec"
+                "reference": "42f758d9fe2146d1f0470604fc05ee43580873fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7c4c01dcf578523cfcddf383641a4f12790270ec",
-                "reference": "7c4c01dcf578523cfcddf383641a4f12790270ec",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/42f758d9fe2146d1f0470604fc05ee43580873fc",
+                "reference": "42f758d9fe2146d1f0470604fc05ee43580873fc",
                 "shasum": ""
             },
             "require": {
@@ -3825,7 +3825,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-10-10 14:09:53"
+            "time": "2014-10-17 12:53:44"
         },
         {
             "name": "twilio/sdk",
@@ -4341,12 +4341,8 @@
             "time": "2014-10-02 07:26:00"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4383,7 +4379,5 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
