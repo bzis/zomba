@@ -1432,12 +1432,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "1321213f5c1d6cedc34d70cd08e7a256082c0444"
+                "reference": "9f8233f72c2f861eade21f5850c0c3468d5baac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/1321213f5c1d6cedc34d70cd08e7a256082c0444",
-                "reference": "1321213f5c1d6cedc34d70cd08e7a256082c0444",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/9f8233f72c2f861eade21f5850c0c3468d5baac0",
+                "reference": "9f8233f72c2f861eade21f5850c0c3468d5baac0",
                 "shasum": ""
             },
             "require": {
@@ -1466,7 +1466,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-10-19 09:32:53"
+            "time": "2014-10-20 10:00:14"
         },
         {
             "name": "guzzle/guzzle",
@@ -4341,12 +4341,8 @@
             "time": "2014-10-02 07:26:00"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4383,7 +4379,5 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
