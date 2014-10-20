@@ -3987,7 +3987,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "b10ddd64571ab86b8cf58a7089bf70f98236d9b3"
+                "reference": "18edcaa08e1abe63d8ed558a65d303450a9b13b9"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3999,7 +3999,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-17 09:53:32"
+            "time": "2014-10-20 09:06:23"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4283,7 +4283,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
