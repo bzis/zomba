@@ -174,10 +174,6 @@ module.exports = (grunt) ->
         src: ["vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/advertiser/*.html"]
         dest: "tmp/advertiser-templates.js"
 
-      analytics:
-        src: ["vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/analytics/*.html"]
-        dest: "tmp/analytics-templates.js"
-
       profile:
         src: ["vendor/vifeed/frontend-bundle/Vifeed/FrontendBundle/Resources/public/partials/profile/*.html"]
         dest: "tmp/profile-templates.js"

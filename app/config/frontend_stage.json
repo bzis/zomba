@@ -13,11 +13,10 @@
   },
   "publicRoutes": [
     "publisher",
-    "partnership",
-    "form",
     "confirm",
     "forgot",
     "update",
-    "carousel"
+    "carousel",
+    "trusted"
   ]
 }
