@@ -328,7 +328,10 @@ fos_rest:
         default_engine: twig
     param_fetcher_listener: force
     serializer:
-            serialize_null: true
+        serialize_null: true
+    exception:
+        messages:
+            'Symfony\Component\HttpKernel\Exception\BadRequestHttpException': true
 #    format_listener:
 #        rules:
 #            - { path: '^/', fallback_format: json, prefer_extension: false }
