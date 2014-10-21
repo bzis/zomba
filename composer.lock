@@ -1432,12 +1432,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "9f8233f72c2f861eade21f5850c0c3468d5baac0"
+                "reference": "ef8f08d8a0cfef5e9d4525e66e0c1eae098a5972"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/9f8233f72c2f861eade21f5850c0c3468d5baac0",
-                "reference": "9f8233f72c2f861eade21f5850c0c3468d5baac0",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/ef8f08d8a0cfef5e9d4525e66e0c1eae098a5972",
+                "reference": "ef8f08d8a0cfef5e9d4525e66e0c1eae098a5972",
                 "shasum": ""
             },
             "require": {
@@ -1466,7 +1466,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-10-20 10:00:14"
+            "time": "2014-10-21 09:35:47"
         },
         {
             "name": "guzzle/guzzle",
@@ -4113,7 +4113,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "e4853a74970b5b5f8ca0c3760a4c82f2d96d4151"
+                "reference": "ca5085a0d65b81bb3932ef566fb518fa8d4412e4"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4126,7 +4126,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-10-16 15:40:02"
+            "time": "2014-10-21 09:40:03"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -4341,8 +4341,12 @@
             "time": "2014-10-02 07:26:00"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4379,5 +4383,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
