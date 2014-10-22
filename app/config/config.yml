@@ -332,6 +332,7 @@ fos_rest:
     exception:
         messages:
             'Symfony\Component\HttpKernel\Exception\BadRequestHttpException': true
+            'Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException': true
 #    format_listener:
 #        rules:
 #            - { path: '^/', fallback_format: json, prefer_extension: false }
