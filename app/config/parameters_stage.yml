@@ -42,17 +42,17 @@ parameters:
     tracker.host: 'tracker-stage.vifeed.co'
     vifeed:
         comission: 0.5
-        min_view_time: 11
+        min_view_time: 6
         short_video_duration: 5
         delta: 1
-        company_name: ''
-        inn: ''
-        bank_name: ''
-        corr_number: ''
-        bik: ''
+        company_name: 'ООО «Бинго Студио»'
+        inn: '7715923440'
+        bank_name: '«Промсвязьбанк» (ОАО) Г. МОСКВА'
+        corr_number: '30101810400000000555'
+        bik: '044525555'
         account_number: ''
         bank_account_nubmer: ''
-        kpp: ''
+        kpp: '771501001'
     vifeed.ip_filter.short_skip_time: 600
     vifeed.ip_filter.long_skip_time: 86400
     vifeed.ip_filter.long_skip_views: 5
