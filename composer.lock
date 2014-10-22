@@ -1432,12 +1432,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "ef8f08d8a0cfef5e9d4525e66e0c1eae098a5972"
+                "reference": "23042e426f0d619dc39eee281087de991384582e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/ef8f08d8a0cfef5e9d4525e66e0c1eae098a5972",
-                "reference": "ef8f08d8a0cfef5e9d4525e66e0c1eae098a5972",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/23042e426f0d619dc39eee281087de991384582e",
+                "reference": "23042e426f0d619dc39eee281087de991384582e",
                 "shasum": ""
             },
             "require": {
@@ -1466,7 +1466,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-10-21 09:35:47"
+            "time": "2014-10-22 09:57:01"
         },
         {
             "name": "guzzle/guzzle",
@@ -2595,12 +2595,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "888705cd232476909ceaa97c26db37571646381e"
+                "reference": "4beb08e58745f1c39aefdf35d9df293136668ba0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/888705cd232476909ceaa97c26db37571646381e",
-                "reference": "888705cd232476909ceaa97c26db37571646381e",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/4beb08e58745f1c39aefdf35d9df293136668ba0",
+                "reference": "4beb08e58745f1c39aefdf35d9df293136668ba0",
                 "shasum": ""
             },
             "require": {
@@ -2661,7 +2661,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-10-12 13:38:01"
+            "time": "2014-10-21 20:24:58"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -3987,7 +3987,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "18edcaa08e1abe63d8ed558a65d303450a9b13b9"
+                "reference": "8dc0dce362543c3311ff678900138c8af3483ad5"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3999,7 +3999,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-20 09:06:23"
+            "time": "2014-10-22 11:18:38"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4113,7 +4113,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "ca5085a0d65b81bb3932ef566fb518fa8d4412e4"
+                "reference": "a4c3260af18f5e8d2c1b547a5d7c53b2483b246d"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4126,7 +4126,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-10-21 09:40:03"
+            "time": "2014-10-22 10:41:45"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -4135,7 +4135,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "6b676274f4c4c479181623bfdfc4cb9a27a7a5cd"
+                "reference": "e96acff31cb03ac397645b9d6f4796630432f563"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4144,7 +4144,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-10-16 15:46:51"
+            "time": "2014-10-22 10:41:15"
         },
         {
             "name": "vifeed/video-view-bundle",

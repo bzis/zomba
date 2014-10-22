@@ -7,7 +7,7 @@ vifeed_public:
   prefix: /
   host: "{domain}"
   requirements:
-    domain: zombakka.com|vifeed.dev|vifeed.co
+    domain: zombakka.com|vifeed.dev|vifeed.co|.*.vagrantshare.com
   defaults:
     domain: %public_domain%
 
