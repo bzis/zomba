@@ -1207,12 +1207,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "c3a72fa9c7e866b8988f609f8fd291fdd39b4565"
+                "reference": "f5491a956629282c6962a34087d21dd5f86d2d71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/c3a72fa9c7e866b8988f609f8fd291fdd39b4565",
-                "reference": "c3a72fa9c7e866b8988f609f8fd291fdd39b4565",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/f5491a956629282c6962a34087d21dd5f86d2d71",
+                "reference": "f5491a956629282c6962a34087d21dd5f86d2d71",
                 "shasum": ""
             },
             "require": {
@@ -1276,7 +1276,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-10-17 08:29:55"
+            "time": "2014-10-20 12:40:34"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1432,12 +1432,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "1321213f5c1d6cedc34d70cd08e7a256082c0444"
+                "reference": "23042e426f0d619dc39eee281087de991384582e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/1321213f5c1d6cedc34d70cd08e7a256082c0444",
-                "reference": "1321213f5c1d6cedc34d70cd08e7a256082c0444",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/23042e426f0d619dc39eee281087de991384582e",
+                "reference": "23042e426f0d619dc39eee281087de991384582e",
                 "shasum": ""
             },
             "require": {
@@ -1466,7 +1466,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-10-19 09:32:53"
+            "time": "2014-10-22 09:57:01"
         },
         {
             "name": "guzzle/guzzle",
@@ -2595,12 +2595,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "888705cd232476909ceaa97c26db37571646381e"
+                "reference": "4beb08e58745f1c39aefdf35d9df293136668ba0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/888705cd232476909ceaa97c26db37571646381e",
-                "reference": "888705cd232476909ceaa97c26db37571646381e",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/4beb08e58745f1c39aefdf35d9df293136668ba0",
+                "reference": "4beb08e58745f1c39aefdf35d9df293136668ba0",
                 "shasum": ""
             },
             "require": {
@@ -2661,7 +2661,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-10-12 13:38:01"
+            "time": "2014-10-21 20:24:58"
         },
         {
             "name": "oldsound/rabbitmq-bundle",
@@ -4026,7 +4026,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/PaymentBundle.git",
-                "reference": "6ef145b2fb9c8bb31da74bdae1d1d2c3841e07e5"
+                "reference": "dcf0b67722b180bc20c20e4e11a85e6536241f64"
             },
             "require": {
                 "bzis/daemon-bundle": "dev-master",
@@ -4043,7 +4043,7 @@
                 }
             },
             "description": "Vifeed/PaymentBundle",
-            "time": "2014-10-16 13:25:32"
+            "time": "2014-10-20 12:44:43"
         },
         {
             "name": "vifeed/platform-bundle",
@@ -4113,7 +4113,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "e4853a74970b5b5f8ca0c3760a4c82f2d96d4151"
+                "reference": "ca5085a0d65b81bb3932ef566fb518fa8d4412e4"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4126,7 +4126,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-10-16 15:40:02"
+            "time": "2014-10-21 09:40:03"
         },
         {
             "name": "vifeed/video-promo-bundle",
