@@ -295,6 +295,7 @@ doctrine:
         # path:     %database_path%
         mapping_types:
             enum: string
+        schema_filter: ~^(?!net_city_ip|net_country_ip|net_euro|net_ru|daily_stats)~
 
     orm:
         auto_generate_proxy_classes: %kernel.debug%
