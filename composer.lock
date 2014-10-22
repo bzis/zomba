@@ -15,7 +15,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-08-26 06:22:06"
+            "time": "2014-07-08 17:00:19"
         },
         {
             "name": "angular-ui/ui-utils",
@@ -26,7 +26,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2014-08-07 21:12:00"
+            "time": "2014-06-27 12:01:29"
         },
         {
             "name": "bzis/daemon-bundle",
@@ -151,7 +151,7 @@
             ],
             "authors": [
                 {
-                    "name": "Dmitry Tsoy",
+                    "name": "Tsoy Dmitry",
                     "email": "hd.deman@gmail.com",
                     "homepage": "http://lacroco.ru/"
                 }
@@ -358,7 +358,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -434,7 +434,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -809,7 +809,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -863,7 +863,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -1755,9 +1755,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -1797,9 +1797,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2015,9 +2015,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2128,7 +2128,7 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -2198,9 +2198,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2750,9 +2750,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2800,9 +2800,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -3987,7 +3987,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "18edcaa08e1abe63d8ed558a65d303450a9b13b9"
+                "reference": "d6f1b986b14bd6e88713461d2e731418a037b4c7"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3999,7 +3999,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-20 09:06:23"
+            "time": "2014-10-22 10:40:52"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4113,7 +4113,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "ca5085a0d65b81bb3932ef566fb518fa8d4412e4"
+                "reference": "a4c3260af18f5e8d2c1b547a5d7c53b2483b246d"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4126,7 +4126,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-10-21 09:40:03"
+            "time": "2014-10-22 10:41:45"
         },
         {
             "name": "vifeed/video-promo-bundle",
@@ -4135,7 +4135,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "6b676274f4c4c479181623bfdfc4cb9a27a7a5cd"
+                "reference": "e96acff31cb03ac397645b9d6f4796630432f563"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4144,7 +4144,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-10-16 15:46:51"
+            "time": "2014-10-22 10:41:15"
         },
         {
             "name": "vifeed/video-view-bundle",
@@ -4341,8 +4341,12 @@
             "time": "2014-10-02 07:26:00"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4379,5 +4383,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
