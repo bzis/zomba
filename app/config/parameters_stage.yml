@@ -50,7 +50,7 @@ parameters:
         bank_name: '«Промсвязьбанк» (ОАО) Г. МОСКВА'
         corr_number: '30101810400000000555'
         bik: '044525555'
-        account_number: ''
+        account_number: '40702810500000016898'
         bank_account_nubmer: ''
         kpp: '771501001'
     vifeed.ip_filter.short_skip_time: 600
