@@ -100,6 +100,9 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/angulartics/dist/angulartics.min.js
                 - %kernel.root_dir%/../bower-vendor/angulartics/dist/angulartics-ga.min.js
+        angular_odometer:
+            inputs:
+                - %kernel.root_dir%/../bower-vendor/angular-odometer-js/dist/angular-odometer.min.js
         twitter_bootstrap_js:
             inputs:
                 # - %kernel.root_dir%/../bower-vendor/bootstrap-sass-twbs/vendor/assets/javascripts/bootstrap/affix.js
@@ -200,9 +203,6 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../bower-vendor/highcharts-release/highcharts.js
                 - %kernel.root_dir%/../bower-vendor/highcharts-ng/dist/highcharts-ng.min.js
-        analytics_template:
-            inputs:
-                - %kernel.root_dir%/../tmp/analytics-templates.js
         advertiser_template:
             inputs:
                 - %kernel.root_dir%/../tmp/advertiser-templates.js
@@ -245,28 +245,35 @@ assetic:
                 - @ng_progress
                 - @frontend_config
                 - @security_template
-                - @VifeedFrontendBundle/Resources/assets/js/i18n/services/*.coffee
-                - @VifeedFrontendBundle/Resources/assets/js/i18n/i18n.coffee
-                - @VifeedFrontendBundle/Resources/assets/js/security/index.js
-                - @VifeedFrontendBundle/Resources/assets/js/security/authorization.js
-                - @VifeedFrontendBundle/Resources/assets/js/security/interceptor.coffee
-                - @VifeedFrontendBundle/Resources/assets/js/security/retryQueue.js
-                - @VifeedFrontendBundle/Resources/assets/js/security/security.js
-                - @VifeedFrontendBundle/Resources/assets/js/security/wsse.js
-                - @VifeedFrontendBundle/Resources/assets/js/security/login/login.js
-                - @VifeedFrontendBundle/Resources/assets/js/security/login/login-form-controller.coffee
-                - @VifeedFrontendBundle/Resources/assets/js/security/login/toolbar.coffee
-                - @VifeedFrontendBundle/Resources/assets/js/kernel/kernel.coffee
+                - @odometer
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/i18n/services/*.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/i18n/i18n.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/security/index.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/security/authorization.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/security/interceptor.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/security/retryQueue.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/security/security.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/security/wsse.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/security/login/login.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/security/login/login-form-controller.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/security/login/toolbar.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/origin.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/directives/error-message.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/directives/ladda.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/directives/password-match.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/directives/radio-choice.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/directives/submit-form.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/directives/textarea-limiter.js
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/directives/zmbk-float-formatter.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/directives/zmbk-max.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/directives/zmbk-min.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/directives/zmbk-range.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/services/error-processor.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/services/progress-bar.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/origin/services/youtube-fetcher.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/mixin/mixer.coffee
                 - @VifeedFrontendBundle/Resources/assets/js/kernel/ui-bootstrap.coffee
-                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/radio-choice.coffee
-                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/textarea-limiter.js
-                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/error-message.js
-                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/submit-form.js
-                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/ladda.js
-                - @VifeedFrontendBundle/Resources/assets/js/kernel/directives/password-match.js
-                - @VifeedFrontendBundle/Resources/assets/js/kernel/services/progress-bar.js
-                - @VifeedFrontendBundle/Resources/assets/js/kernel/services/utility.js
-                - @VifeedFrontendBundle/Resources/assets/js/index-app.coffee
+                - @VifeedFrontendBundle/Resources/assets/js/kernel/kernel.coffee
         frontend_common_css:
             inputs:
                 - @ng_progress_css
