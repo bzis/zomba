@@ -1432,21 +1432,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-<<<<<<< HEAD
-                "reference": "f34ccd6e273d1d918805e02ac53206cab6bb0709"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/f34ccd6e273d1d918805e02ac53206cab6bb0709",
-                "reference": "f34ccd6e273d1d918805e02ac53206cab6bb0709",
-=======
                 "reference": "b892dcd68954745b9c894080a469616f4272d03b"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/google/google-api-php-client/zipball/b892dcd68954745b9c894080a469616f4272d03b",
                 "reference": "b892dcd68954745b9c894080a469616f4272d03b",
->>>>>>> 9b3f65e0d9c24f97056673fddab2b7b77e8fef9c
                 "shasum": ""
             },
             "require": {
@@ -1475,11 +1466,7 @@
             "keywords": [
                 "google"
             ],
-<<<<<<< HEAD
-            "time": "2014-10-22 11:47:13"
-=======
             "time": "2014-10-22 18:16:10"
->>>>>>> 9b3f65e0d9c24f97056673fddab2b7b77e8fef9c
         },
         {
             "name": "guzzle/guzzle",
@@ -4000,7 +3987,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "a10ddedadb9db74545b1aec6d56645994caa8ede"
+                "reference": "38b8d682c00c4cd994248c2c147a21771e7120b2"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4012,7 +3999,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-23 14:25:53"
+            "time": "2014-10-23 14:35:45"
         },
         {
             "name": "vifeed/geo-bundle",
