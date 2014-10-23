@@ -59,7 +59,7 @@ namespace :deploy do
     puts 'Restarting varnish'.green
     sudo 'supervisorctl update'
     puts 'Updating supervisord commands'.green
-    sudo 'supervisorctl restart all || sudo supervisorctl start all '
+    sudo 'supervisorctl restart deamons:* || sudo supervisorctl start deamons:*'
     puts 'Starting supervisord commands'.green
   end
   task :stop, roles: :app, except: { no_release: true } do
