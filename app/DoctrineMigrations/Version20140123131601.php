@@ -168,7 +168,7 @@ class Version20140123131601 extends AbstractMigration
   KEY `IDX_C64440A4F639F774` (`campaign_id`),
   KEY `IDX_C64440A490B22C2E` (`agerange_id`),
   CONSTRAINT `FK_C64440A490B22C2E` FOREIGN KEY (`agerange_id`) REFERENCES `age_range` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `FK_C64440A4F639F774` FOREIGN KEY (`campaign_id`) REFERENCES `Campaign` (`id`) ON DELETE CASCADE
+  CONSTRAINT `FK_C64440A4F639F774` FOREIGN KEY (`campaign_id`) REFERENCES `campaign` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
 
         $this->addSql("CREATE TABLE `campaign_ban` (
