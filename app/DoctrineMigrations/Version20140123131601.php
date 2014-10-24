@@ -14,72 +14,437 @@ class Version20140123131601 extends AbstractMigration
     {
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != "mysql", "Migration can only be executed safely on 'mysql'.");
-        
-        $this->addSql("CREATE TABLE credits (id INT AUTO_INCREMENT NOT NULL, payment_instruction_id INT NOT NULL, payment_id INT DEFAULT NULL, attention_required TINYINT(1) NOT NULL, created_at DATETIME NOT NULL, credited_amount NUMERIC(10, 5) NOT NULL, crediting_amount NUMERIC(10, 5) NOT NULL, reversing_amount NUMERIC(10, 5) NOT NULL, state SMALLINT NOT NULL, target_amount NUMERIC(10, 5) NOT NULL, updated_at DATETIME DEFAULT NULL, INDEX IDX_4117D17E8789B572 (payment_instruction_id), INDEX IDX_4117D17E4C3A3BB (payment_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE financial_transactions (id INT AUTO_INCREMENT NOT NULL, credit_id INT DEFAULT NULL, payment_id INT DEFAULT NULL, extended_data LONGTEXT DEFAULT NULL COMMENT '(DC2Type:extended_payment_data)', processed_amount NUMERIC(10, 5) NOT NULL, reason_code VARCHAR(100) DEFAULT NULL, reference_number VARCHAR(100) DEFAULT NULL, requested_amount NUMERIC(10, 5) NOT NULL, response_code VARCHAR(100) DEFAULT NULL, state SMALLINT NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME DEFAULT NULL, tracking_id VARCHAR(100) DEFAULT NULL, transaction_type SMALLINT NOT NULL, INDEX IDX_1353F2D9CE062FF9 (credit_id), INDEX IDX_1353F2D94C3A3BB (payment_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE payments (id INT AUTO_INCREMENT NOT NULL, payment_instruction_id INT NOT NULL, approved_amount NUMERIC(10, 5) NOT NULL, approving_amount NUMERIC(10, 5) NOT NULL, credited_amount NUMERIC(10, 5) NOT NULL, crediting_amount NUMERIC(10, 5) NOT NULL, deposited_amount NUMERIC(10, 5) NOT NULL, depositing_amount NUMERIC(10, 5) NOT NULL, expiration_date DATETIME DEFAULT NULL, reversing_approved_amount NUMERIC(10, 5) NOT NULL, reversing_credited_amount NUMERIC(10, 5) NOT NULL, reversing_deposited_amount NUMERIC(10, 5) NOT NULL, state SMALLINT NOT NULL, target_amount NUMERIC(10, 5) NOT NULL, attention_required TINYINT(1) NOT NULL, expired TINYINT(1) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME DEFAULT NULL, INDEX IDX_65D29B328789B572 (payment_instruction_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE payment_instructions (id INT AUTO_INCREMENT NOT NULL, amount NUMERIC(10, 5) NOT NULL, approved_amount NUMERIC(10, 5) NOT NULL, approving_amount NUMERIC(10, 5) NOT NULL, created_at DATETIME NOT NULL, credited_amount NUMERIC(10, 5) NOT NULL, crediting_amount NUMERIC(10, 5) NOT NULL, currency VARCHAR(3) NOT NULL, deposited_amount NUMERIC(10, 5) NOT NULL, depositing_amount NUMERIC(10, 5) NOT NULL, extended_data LONGTEXT NOT NULL COMMENT '(DC2Type:extended_payment_data)', payment_system_name VARCHAR(100) NOT NULL, reversing_approved_amount NUMERIC(10, 5) NOT NULL, reversing_credited_amount NUMERIC(10, 5) NOT NULL, reversing_deposited_amount NUMERIC(10, 5) NOT NULL, state SMALLINT NOT NULL, updated_at DATETIME DEFAULT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE age_range (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(10) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE campaign (id INT AUTO_INCREMENT NOT NULL, user_id INT NOT NULL, name VARCHAR(255) NOT NULL, hash VARCHAR(255) NOT NULL, description VARCHAR(255) DEFAULT NULL, gender ENUM('male', 'female'), max_bid NUMERIC(5, 2) NOT NULL, budget NUMERIC(8, 2) NOT NULL, daily_budget NUMERIC(8, 2) NOT NULL, budget_used NUMERIC(8, 2) NOT NULL, daily_budget_used NUMERIC(8, 2) NOT NULL, start_at DATETIME DEFAULT NULL, end_at DATETIME DEFAULT NULL, total_views INT DEFAULT NULL, bid NUMERIC(5, 2) NOT NULL, duration INT DEFAULT NULL, status ENUM('on', 'paused', 'ended', 'awaiting', 'archived') NOT NULL, INDEX IDX_1F1512DDA76ED395 (user_id), INDEX status (status), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE campaign_country (campaign_id INT NOT NULL, country_id INT NOT NULL, INDEX IDX_FBC9554AF639F774 (campaign_id), INDEX IDX_FBC9554AF92F3E70 (country_id), PRIMARY KEY(campaign_id, country_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE campaign_tag (campaign_id INT NOT NULL, tag_id INT NOT NULL, INDEX IDX_3FC353C2F639F774 (campaign_id), INDEX IDX_3FC353C2BAD26311 (tag_id), PRIMARY KEY(campaign_id, tag_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE campaign_age_range (campaign_id INT NOT NULL, agerange_id INT NOT NULL, INDEX IDX_C64440A4F639F774 (campaign_id), INDEX IDX_C64440A490B22C2E (agerange_id), PRIMARY KEY(campaign_id, agerange_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE tag (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE vifeed_group (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, roles LONGTEXT NOT NULL COMMENT '(DC2Type:array)', UNIQUE INDEX UNIQ_E0FE35C95E237E06 (name), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE vifeed_user (id INT AUTO_INCREMENT NOT NULL, username VARCHAR(255) NOT NULL, username_canonical VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, email_canonical VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, salt VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, last_login DATETIME DEFAULT NULL, locked TINYINT(1) NOT NULL, expired TINYINT(1) NOT NULL, expires_at DATETIME DEFAULT NULL, confirmation_token VARCHAR(255) DEFAULT NULL, password_requested_at DATETIME DEFAULT NULL, roles LONGTEXT NOT NULL COMMENT '(DC2Type:array)', credentials_expired TINYINT(1) NOT NULL, credentials_expire_at DATETIME DEFAULT NULL, type ENUM('advertiser', 'publisher'), vk_id VARCHAR(255) DEFAULT NULL, social_data TEXT DEFAULT NULL COMMENT '(DC2Type:array)', balance NUMERIC(9, 2) NOT NULL, UNIQUE INDEX UNIQ_BBEF2F5692FC23A8 (username_canonical), UNIQUE INDEX UNIQ_BBEF2F56A0D96FBF (email_canonical), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE vifeed_user_groups (user_id INT NOT NULL, group_id INT NOT NULL, INDEX IDX_DF562C08A76ED395 (user_id), INDEX IDX_DF562C08FE54D947 (group_id), PRIMARY KEY(user_id, group_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE platform (id INT AUTO_INCREMENT NOT NULL, user_id INT DEFAULT NULL, type_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, url VARCHAR(255) NOT NULL, description VARCHAR(255) NOT NULL, discr VARCHAR(255) NOT NULL, vk_id INT DEFAULT NULL, INDEX IDX_3952D0CBA76ED395 (user_id), INDEX IDX_3952D0CBC54C8C93 (type_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE platform_country (platform_id INT NOT NULL, country_id INT NOT NULL, INDEX IDX_46430334FFE6496F (platform_id), INDEX IDX_46430334F92F3E70 (country_id), PRIMARY KEY(platform_id, country_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE platform_tag (platform_id INT NOT NULL, tag_id INT NOT NULL, INDEX IDX_B5AF4590FFE6496F (platform_id), INDEX IDX_B5AF4590BAD26311 (tag_id), PRIMARY KEY(platform_id, tag_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE platform_type (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE platform_video (id INT AUTO_INCREMENT NOT NULL, platform_id INT DEFAULT NULL, campaign_id INT DEFAULT NULL, discr VARCHAR(255) NOT NULL, vk_id INT DEFAULT NULL, INDEX IDX_4E9BBEA8FFE6496F (platform_id), INDEX IDX_4E9BBEA8F639F774 (campaign_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE video_views (id INT AUTO_INCREMENT NOT NULL, platform_id INT DEFAULT NULL, campaign_id INT DEFAULT NULL, country_id INT DEFAULT NULL, city_id INT DEFAULT NULL, `current_time` INT NOT NULL, timestamp INT NOT NULL, track_number INT NOT NULL, ip INT DEFAULT NULL, is_geo_detected TINYINT(1) NOT NULL, is_paid TINYINT(1) NOT NULL, INDEX IDX_9E929525FFE6496F (platform_id), INDEX IDX_9E929525F639F774 (campaign_id), INDEX IDX_9E929525F92F3E70 (country_id), INDEX IDX_9E9295258BAC62AF (city_id), INDEX is_geo_detected (is_geo_detected), INDEX is_paid (is_paid), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE payment_order (id INT AUTO_INCREMENT NOT NULL, payment_instruction_id INT DEFAULT NULL, user_id INT DEFAULT NULL, created_at DATETIME NOT NULL, amount NUMERIC(9, 2) NOT NULL, UNIQUE INDEX UNIQ_A260A52A8789B572 (payment_instruction_id), INDEX IDX_A260A52AA76ED395 (user_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE video_view_payment (id INT AUTO_INCREMENT NOT NULL, video_view_id INT DEFAULT NULL, charged NUMERIC(5, 2) NOT NULL, comission NUMERIC(5, 2) NOT NULL, paid NUMERIC(5, 2) NOT NULL, UNIQUE INDEX UNIQ_E5868038E6F8F16A (video_view_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE wallet (id INT AUTO_INCREMENT NOT NULL, user_id INT NOT NULL, type VARCHAR(10) NOT NULL, number VARCHAR(20) NOT NULL, INDEX IDX_7C68921FA76ED395 (user_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE withdrawal (id INT AUTO_INCREMENT NOT NULL, user_id INT DEFAULT NULL, wallet_id INT NOT NULL, amount NUMERIC(9, 2) NOT NULL, status INT NOT NULL, updated_at DATETIME NOT NULL, created_at DATETIME NOT NULL, INDEX IDX_6D2D3B45A76ED395 (user_id), INDEX IDX_6D2D3B45712520F3 (wallet_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE net_city (id INT AUTO_INCREMENT NOT NULL, country_id INT DEFAULT NULL, name_ru VARCHAR(100) DEFAULT NULL, name_en VARCHAR(100) DEFAULT NULL, region VARCHAR(2) DEFAULT NULL, postal_code VARCHAR(10) DEFAULT NULL, latitude VARCHAR(10) DEFAULT NULL, longitude VARCHAR(10) DEFAULT NULL, INDEX IDX_5F22C447F92F3E70 (country_id), INDEX name_ru (name_ru), INDEX name_en (name_en), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("CREATE TABLE net_country (id INT AUTO_INCREMENT NOT NULL, name_ru VARCHAR(100) DEFAULT NULL, name_en VARCHAR(100) DEFAULT NULL, code VARCHAR(2) DEFAULT NULL, INDEX code (code), INDEX name_ru (name_ru), INDEX name_en (name_en), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB");
-        $this->addSql("ALTER TABLE credits ADD CONSTRAINT FK_4117D17E8789B572 FOREIGN KEY (payment_instruction_id) REFERENCES payment_instructions (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE credits ADD CONSTRAINT FK_4117D17E4C3A3BB FOREIGN KEY (payment_id) REFERENCES payments (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE financial_transactions ADD CONSTRAINT FK_1353F2D9CE062FF9 FOREIGN KEY (credit_id) REFERENCES credits (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE financial_transactions ADD CONSTRAINT FK_1353F2D94C3A3BB FOREIGN KEY (payment_id) REFERENCES payments (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE payments ADD CONSTRAINT FK_65D29B328789B572 FOREIGN KEY (payment_instruction_id) REFERENCES payment_instructions (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE campaign ADD CONSTRAINT FK_1F1512DDA76ED395 FOREIGN KEY (user_id) REFERENCES vifeed_user (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE campaign_country ADD CONSTRAINT FK_FBC9554AF639F774 FOREIGN KEY (campaign_id) REFERENCES campaign (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE campaign_country ADD CONSTRAINT FK_FBC9554AF92F3E70 FOREIGN KEY (country_id) REFERENCES net_country (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE campaign_tag ADD CONSTRAINT FK_3FC353C2F639F774 FOREIGN KEY (campaign_id) REFERENCES campaign (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE campaign_tag ADD CONSTRAINT FK_3FC353C2BAD26311 FOREIGN KEY (tag_id) REFERENCES tag (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE campaign_age_range ADD CONSTRAINT FK_C64440A4F639F774 FOREIGN KEY (campaign_id) REFERENCES campaign (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE campaign_age_range ADD CONSTRAINT FK_C64440A490B22C2E FOREIGN KEY (agerange_id) REFERENCES age_range (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE vifeed_user_groups ADD CONSTRAINT FK_DF562C08A76ED395 FOREIGN KEY (user_id) REFERENCES vifeed_user (id)");
-        $this->addSql("ALTER TABLE vifeed_user_groups ADD CONSTRAINT FK_DF562C08FE54D947 FOREIGN KEY (group_id) REFERENCES vifeed_group (id)");
-        $this->addSql("ALTER TABLE platform ADD CONSTRAINT FK_3952D0CBA76ED395 FOREIGN KEY (user_id) REFERENCES vifeed_user (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE platform ADD CONSTRAINT FK_3952D0CBC54C8C93 FOREIGN KEY (type_id) REFERENCES platform_type (id)");
-        $this->addSql("ALTER TABLE platform_country ADD CONSTRAINT FK_46430334FFE6496F FOREIGN KEY (platform_id) REFERENCES platform (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE platform_country ADD CONSTRAINT FK_46430334F92F3E70 FOREIGN KEY (country_id) REFERENCES net_country (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE platform_tag ADD CONSTRAINT FK_B5AF4590FFE6496F FOREIGN KEY (platform_id) REFERENCES platform (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE platform_tag ADD CONSTRAINT FK_B5AF4590BAD26311 FOREIGN KEY (tag_id) REFERENCES tag (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE platform_video ADD CONSTRAINT FK_4E9BBEA8FFE6496F FOREIGN KEY (platform_id) REFERENCES platform (id)");
-        $this->addSql("ALTER TABLE platform_video ADD CONSTRAINT FK_4E9BBEA8F639F774 FOREIGN KEY (campaign_id) REFERENCES campaign (id)");
-        $this->addSql("ALTER TABLE video_views ADD CONSTRAINT FK_9E929525FFE6496F FOREIGN KEY (platform_id) REFERENCES platform (id)");
-        $this->addSql("ALTER TABLE video_views ADD CONSTRAINT FK_9E929525F639F774 FOREIGN KEY (campaign_id) REFERENCES campaign (id)");
-        $this->addSql("ALTER TABLE video_views ADD CONSTRAINT FK_9E929525F92F3E70 FOREIGN KEY (country_id) REFERENCES net_country (id)");
-        $this->addSql("ALTER TABLE video_views ADD CONSTRAINT FK_9E9295258BAC62AF FOREIGN KEY (city_id) REFERENCES net_city (id)");
-        $this->addSql("ALTER TABLE payment_order ADD CONSTRAINT FK_A260A52A8789B572 FOREIGN KEY (payment_instruction_id) REFERENCES payment_instructions (id)");
-        $this->addSql("ALTER TABLE payment_order ADD CONSTRAINT FK_A260A52AA76ED395 FOREIGN KEY (user_id) REFERENCES vifeed_user (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE video_view_payment ADD CONSTRAINT FK_E5868038E6F8F16A FOREIGN KEY (video_view_id) REFERENCES video_views (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE wallet ADD CONSTRAINT FK_7C68921FA76ED395 FOREIGN KEY (user_id) REFERENCES vifeed_user (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE withdrawal ADD CONSTRAINT FK_6D2D3B45A76ED395 FOREIGN KEY (user_id) REFERENCES vifeed_user (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE withdrawal ADD CONSTRAINT FK_6D2D3B45712520F3 FOREIGN KEY (wallet_id) REFERENCES wallet (id) ON DELETE CASCADE");
-        $this->addSql("ALTER TABLE net_city ADD CONSTRAINT FK_5F22C447F92F3E70 FOREIGN KEY (country_id) REFERENCES net_country (id) ON DELETE CASCADE");
+        $this->addSql("CREATE TABLE `net_city` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) DEFAULT NULL,
+  `name_ru` varchar(100) DEFAULT NULL,
+  `name_en` varchar(100) DEFAULT NULL,
+  `region` varchar(2) DEFAULT NULL,
+  `postal_code` varchar(10) DEFAULT NULL,
+  `latitude` varchar(10) DEFAULT NULL,
+  `longitude` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `country_id` (`country_id`),
+  KEY `name_ru` (`name_ru`),
+  KEY `name_en` (`name_en`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;");
+
+        $this->addSql("CREATE TABLE `net_city_ip` (
+    `city_id` int(11) DEFAULT NULL,
+  `begin_ip` bigint(11) DEFAULT NULL,
+  `end_ip` bigint(11) DEFAULT NULL,
+  KEY `city_id` (`city_id`),
+  KEY `ip` (`begin_ip`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;");
+
+        $this->addSql("CREATE TABLE `net_country` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name_ru` varchar(100) DEFAULT NULL,
+  `name_en` varchar(100) DEFAULT NULL,
+  `code` varchar(2) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `code` (`code`),
+  KEY `name_en` (`name_en`),
+  KEY `name_ru` (`name_ru`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;");
+
+        $this->addSql("CREATE TABLE `net_country_ip` (
+    `country_id` int(11) DEFAULT '0',
+  `begin_ip` bigint(11) DEFAULT NULL,
+  `end_ip` bigint(11) DEFAULT '0',
+  KEY `country_id` (`country_id`),
+  KEY `ip` (`begin_ip`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;");
+
+        $this->addSql("CREATE TABLE `net_euro` (
+    `country_id` int(11) DEFAULT '0',
+  `begin_ip` bigint(11) DEFAULT NULL,
+  `end_ip` bigint(11) DEFAULT '0',
+  KEY `country_id` (`country_id`),
+  KEY `ip` (`begin_ip`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;");
+
+        $this->addSql("CREATE TABLE `net_ru` (
+    `city_id` int(11) DEFAULT '0',
+  `begin_ip` bigint(11) DEFAULT NULL,
+  `end_ip` bigint(11) DEFAULT NULL,
+  KEY `city_id` (`city_id`),
+  KEY `ip` (`begin_ip`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;");
+
+        $this->addSql("CREATE TABLE `vifeed_user` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `username_canonical` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `email_canonical` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `enabled` tinyint(1) NOT NULL,
+  `salt` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_login` datetime DEFAULT NULL,
+  `locked` tinyint(1) NOT NULL,
+  `expired` tinyint(1) NOT NULL,
+  `expires_at` datetime DEFAULT NULL,
+  `confirmation_token` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `password_requested_at` datetime DEFAULT NULL,
+  `roles` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
+  `credentials_expired` tinyint(1) NOT NULL,
+  `credentials_expire_at` datetime DEFAULT NULL,
+  `type` enum('advertiser','publisher') COLLATE utf8_unicode_ci DEFAULT NULL,
+  `vk_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `social_data` text COLLATE utf8_unicode_ci COMMENT '(DC2Type:array)',
+  `balance` decimal(11,2) NOT NULL,
+  `email_confirmed` tinyint(1) NOT NULL,
+  `first_name` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `surname` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `phone` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `notification` smallint(6) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_BBEF2F5692FC23A8` (`username_canonical`),
+  UNIQUE KEY `UNIQ_BBEF2F56A0D96FBF` (`email_canonical`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `platform` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `discr` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `vk_id` int(11) DEFAULT NULL,
+  `user_id` int(11) NOT NULL,
+  `deleted_at` datetime DEFAULT NULL,
+  `hash_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_3952D0CB3F7D58D2` (`hash_id`),
+  KEY `IDX_3952D0CBA76ED395` (`user_id`),
+  KEY `url_idx` (`url`),
+  CONSTRAINT `FK_3952D0CBA76ED395` FOREIGN KEY (`user_id`) REFERENCES `vifeed_user` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `age_range` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `campaign` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `hash` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(1024) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `gender` enum('male','female') COLLATE utf8_unicode_ci DEFAULT NULL,
+  `budget` decimal(8,2) NOT NULL,
+  `start_at` datetime DEFAULT NULL,
+  `end_at` datetime DEFAULT NULL,
+  `total_views` int(11) DEFAULT NULL,
+  `bid` decimal(5,2) NOT NULL,
+  `budget_used` decimal(8,2) NOT NULL,
+  `status` enum('on','paused','ended','awaiting','archived') COLLATE utf8_unicode_ci NOT NULL,
+  `daily_budget` decimal(8,2) NOT NULL,
+  `daily_budget_used` decimal(8,2) NOT NULL,
+  `hash_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `paid_views` int(11) DEFAULT NULL,
+  `social_data` text COLLATE utf8_unicode_ci COMMENT '(DC2Type:array)',
+  `deleted_at` datetime DEFAULT NULL,
+  `is_new` tinyint(1) NOT NULL,
+  `youtube_data` text CHARACTER SET utf8 COMMENT '(DC2Type:array)',
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  `balance` decimal(8,2) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_1F1512DD3F7D58D2` (`hash_id`),
+  KEY `IDX_1F1512DDA76ED395` (`user_id`),
+  KEY `status` (`status`),
+  CONSTRAINT `FK_1F1512DDA76ED395` FOREIGN KEY (`user_id`) REFERENCES `vifeed_user` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `campaign_age_range` (
+    `campaign_id` int(11) NOT NULL,
+  `agerange_id` int(11) NOT NULL,
+  PRIMARY KEY (`campaign_id`,`agerange_id`),
+  KEY `IDX_C64440A4F639F774` (`campaign_id`),
+  KEY `IDX_C64440A490B22C2E` (`agerange_id`),
+  CONSTRAINT `FK_C64440A490B22C2E` FOREIGN KEY (`agerange_id`) REFERENCES `age_range` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_C64440A4F639F774` FOREIGN KEY (`campaign_id`) REFERENCES `Campaign` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `campaign_ban` (
+    `platform_id` int(11) NOT NULL,
+  `campaign_id` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  PRIMARY KEY (`platform_id`,`campaign_id`),
+  KEY `IDX_5EB434A4F639F774` (`campaign_id`),
+  KEY `IDX_5EB434A4FFE6496F` (`platform_id`),
+  CONSTRAINT `FK_5EB434A4F639F774` FOREIGN KEY (`campaign_id`) REFERENCES `campaign` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_5EB434A4FFE6496F` FOREIGN KEY (`platform_id`) REFERENCES `platform` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `campaign_country` (
+    `campaign_id` int(11) NOT NULL,
+  `country_id` int(11) NOT NULL,
+  PRIMARY KEY (`campaign_id`,`country_id`),
+  KEY `IDX_FBC9554AF639F774` (`campaign_id`),
+  KEY `IDX_FBC9554AF92F3E70` (`country_id`),
+  CONSTRAINT `FK_FBC9554AF639F774` FOREIGN KEY (`campaign_id`) REFERENCES `campaign` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_FBC9554AF92F3E70` FOREIGN KEY (`country_id`) REFERENCES `net_country` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `company` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `system` enum('ОСН','УСН') COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `address` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `position` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `inn` varchar(12) COLLATE utf8_unicode_ci NOT NULL,
+  `kpp` varchar(9) COLLATE utf8_unicode_ci NOT NULL,
+  `bic` varchar(9) COLLATE utf8_unicode_ci NOT NULL,
+  `bank_account` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `correspondent_account` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `is_approved` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_4FBF094FA76ED395` (`user_id`),
+  CONSTRAINT `FK_4FBF094FA76ED395` FOREIGN KEY (`user_id`) REFERENCES `vifeed_user` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `payment_instructions` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `amount` decimal(11,2) NOT NULL,
+  `approved_amount` decimal(11,2) NOT NULL,
+  `approving_amount` decimal(11,2) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `credited_amount` decimal(11,2) NOT NULL,
+  `crediting_amount` decimal(11,2) NOT NULL,
+  `currency` varchar(3) COLLATE utf8_unicode_ci NOT NULL,
+  `deposited_amount` decimal(11,2) NOT NULL,
+  `depositing_amount` decimal(11,2) NOT NULL,
+  `extended_data` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:extended_payment_data)',
+  `payment_system_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `reversing_approved_amount` decimal(11,2) NOT NULL,
+  `reversing_credited_amount` decimal(11,2) NOT NULL,
+  `reversing_deposited_amount` decimal(11,2) NOT NULL,
+  `state` smallint(6) NOT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `payments` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `payment_instruction_id` int(11) NOT NULL,
+  `approved_amount` decimal(11,2) NOT NULL,
+  `approving_amount` decimal(11,2) NOT NULL,
+  `credited_amount` decimal(11,2) NOT NULL,
+  `crediting_amount` decimal(11,2) NOT NULL,
+  `deposited_amount` decimal(11,2) NOT NULL,
+  `depositing_amount` decimal(11,2) NOT NULL,
+  `expiration_date` datetime DEFAULT NULL,
+  `reversing_approved_amount` decimal(11,2) NOT NULL,
+  `reversing_credited_amount` decimal(11,2) NOT NULL,
+  `reversing_deposited_amount` decimal(11,2) NOT NULL,
+  `state` smallint(6) NOT NULL,
+  `target_amount` decimal(11,2) NOT NULL,
+  `attention_required` tinyint(1) NOT NULL,
+  `expired` tinyint(1) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_65D29B328789B572` (`payment_instruction_id`),
+  CONSTRAINT `FK_65D29B328789B572` FOREIGN KEY (`payment_instruction_id`) REFERENCES `payment_instructions` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `credits` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `payment_instruction_id` int(11) NOT NULL,
+  `payment_id` int(11) DEFAULT NULL,
+  `attention_required` tinyint(1) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `credited_amount` decimal(11,2) NOT NULL,
+  `crediting_amount` decimal(11,2) NOT NULL,
+  `reversing_amount` decimal(11,2) NOT NULL,
+  `state` smallint(6) NOT NULL,
+  `target_amount` decimal(11,2) NOT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_4117D17E8789B572` (`payment_instruction_id`),
+  KEY `IDX_4117D17E4C3A3BB` (`payment_id`),
+  CONSTRAINT `FK_4117D17E4C3A3BB` FOREIGN KEY (`payment_id`) REFERENCES `payments` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_4117D17E8789B572` FOREIGN KEY (`payment_instruction_id`) REFERENCES `payment_instructions` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `financial_transactions` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `credit_id` int(11) DEFAULT NULL,
+  `payment_id` int(11) DEFAULT NULL,
+  `extended_data` longtext COLLATE utf8_unicode_ci COMMENT '(DC2Type:extended_payment_data)',
+  `processed_amount` decimal(11,2) NOT NULL,
+  `reason_code` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `reference_number` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `requested_amount` decimal(11,2) NOT NULL,
+  `response_code` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `state` smallint(6) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `tracking_id` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `transaction_type` smallint(6) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_1353F2D9CE062FF9` (`credit_id`),
+  KEY `IDX_1353F2D94C3A3BB` (`payment_id`),
+  CONSTRAINT `FK_1353F2D94C3A3BB` FOREIGN KEY (`payment_id`) REFERENCES `payments` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_1353F2D9CE062FF9` FOREIGN KEY (`credit_id`) REFERENCES `credits` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+         $this->addSql("CREATE TABLE `payment_order` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `amount` decimal(11,2) NOT NULL,
+  `payment_instruction_id` int(11) DEFAULT NULL,
+  `updated_at` datetime NOT NULL,
+  `status` enum('new','pending','paid','cancelled') COLLATE utf8_unicode_ci NOT NULL,
+  `bill_data` tinytext COLLATE utf8_unicode_ci COMMENT '(DC2Type:array)',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_A260A52A8789B572` (`payment_instruction_id`),
+  KEY `IDX_A260A52AA76ED395` (`user_id`),
+  CONSTRAINT `FK_A260A52A8789B572` FOREIGN KEY (`payment_instruction_id`) REFERENCES `payment_instructions` (`id`),
+  CONSTRAINT `FK_A260A52AA76ED395` FOREIGN KEY (`user_id`) REFERENCES `vifeed_user` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+
+        $this->addSql("CREATE TABLE `platform_country` (
+    `platform_id` int(11) NOT NULL,
+  `country_id` int(11) NOT NULL,
+  PRIMARY KEY (`platform_id`,`country_id`),
+  KEY `IDX_46430334FFE6496F` (`platform_id`),
+  KEY `IDX_46430334F92F3E70` (`country_id`),
+  CONSTRAINT `FK_46430334F92F3E70` FOREIGN KEY (`country_id`) REFERENCES `net_country` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_46430334FFE6496F` FOREIGN KEY (`platform_id`) REFERENCES `platform` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `referer_black_list` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `domain` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `tag` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_389B7835E237E06` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `tagging` (
+    `resource_type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `resource_id` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `tag_id` int(11) NOT NULL,
+  PRIMARY KEY (`resource_type`,`resource_id`,`tag_id`),
+  KEY `IDX_A4AED123BAD26311` (`tag_id`),
+  CONSTRAINT `FK_A4AED123BAD26311` FOREIGN KEY (`tag_id`) REFERENCES `tag` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `video_views` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `platform_id` int(11) DEFAULT NULL,
+  `campaign_id` int(11) DEFAULT NULL,
+  `country_id` int(11) DEFAULT NULL,
+  `city_id` int(11) DEFAULT NULL,
+  `current_time` smallint(6) NOT NULL,
+  `timestamp` int(11) NOT NULL,
+  `track_number` smallint(6) NOT NULL,
+  `ip` bigint(20) DEFAULT NULL,
+  `is_paid` tinyint(1) NOT NULL,
+  `viewer_id` char(43) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `fingerprint` int(11) DEFAULT NULL,
+  `is_in_stats` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_9E929525FFE6496F` (`platform_id`),
+  KEY `IDX_9E929525F639F774` (`campaign_id`),
+  KEY `IDX_9E929525F92F3E70` (`country_id`),
+  KEY `IDX_9E9295258BAC62AF` (`city_id`),
+  KEY `ip` (`ip`),
+  KEY `is_paid_viewer` (`viewer_id`,`campaign_id`,`is_paid`,`timestamp`,`is_in_stats`),
+  CONSTRAINT `FK_9E9295258BAC62AF` FOREIGN KEY (`city_id`) REFERENCES `net_city` (`id`) ON DELETE SET NULL,
+  CONSTRAINT `FK_9E929525F639F774` FOREIGN KEY (`campaign_id`) REFERENCES `campaign` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_9E929525F92F3E70` FOREIGN KEY (`country_id`) REFERENCES `net_country` (`id`) ON DELETE SET NULL,
+  CONSTRAINT `FK_9E929525FFE6496F` FOREIGN KEY (`platform_id`) REFERENCES `platform` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `video_view_payment` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `video_view_id` int(11) DEFAULT NULL,
+  `charged` decimal(5,2) NOT NULL,
+  `comission` decimal(5,2) NOT NULL,
+  `paid` decimal(5,2) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_E5868038E6F8F16A` (`video_view_id`),
+  CONSTRAINT `FK_E5868038E6F8F16A` FOREIGN KEY (`video_view_id`) REFERENCES `video_views` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `vifeed_group` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `roles` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_E0FE35C95E237E06` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `vifeed_user_groups` (
+    `user_id` int(11) NOT NULL,
+  `group_id` int(11) NOT NULL,
+  PRIMARY KEY (`user_id`,`group_id`),
+  KEY `IDX_DF562C08A76ED395` (`user_id`),
+  KEY `IDX_DF562C08FE54D947` (`group_id`),
+  CONSTRAINT `FK_DF562C08A76ED395` FOREIGN KEY (`user_id`) REFERENCES `vifeed_user` (`id`),
+  CONSTRAINT `FK_DF562C08FE54D947` FOREIGN KEY (`group_id`) REFERENCES `vifeed_group` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `vifeed_user_ip_log` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `logged_at` datetime NOT NULL,
+  `ip` bigint(20) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_ABC0A4A5A76ED395` (`user_id`),
+  CONSTRAINT `FK_ABC0A4A5A76ED395` FOREIGN KEY (`user_id`) REFERENCES `vifeed_user` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `wallet` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `type` enum('yandex','wm','qiwi') COLLATE utf8_unicode_ci NOT NULL,
+  `number` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_7C68921FA76ED395` (`user_id`),
+  CONSTRAINT `FK_7C68921FA76ED395` FOREIGN KEY (`user_id`) REFERENCES `vifeed_user` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
+        $this->addSql("CREATE TABLE `withdrawal` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `wallet_id` int(11) NOT NULL,
+  `amount` decimal(9,2) NOT NULL,
+  `status` enum('new','ok','error','cancelled') COLLATE utf8_unicode_ci NOT NULL,
+  `updated_at` datetime NOT NULL,
+  `created_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_6D2D3B45A76ED395` (`user_id`),
+  KEY `IDX_6D2D3B45712520F3` (`wallet_id`),
+  CONSTRAINT `FK_6D2D3B45712520F3` FOREIGN KEY (`wallet_id`) REFERENCES `wallet` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_6D2D3B45A76ED395` FOREIGN KEY (`user_id`) REFERENCES `vifeed_user` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+
     }
 
     public function down(Schema $schema)
     {
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != "mysql", "Migration can only be executed safely on 'mysql'.");
-        
+
         $this->addSql("ALTER TABLE financial_transactions DROP FOREIGN KEY FK_1353F2D9CE062FF9");
         $this->addSql("ALTER TABLE credits DROP FOREIGN KEY FK_4117D17E4C3A3BB");
         $this->addSql("ALTER TABLE financial_transactions DROP FOREIGN KEY FK_1353F2D94C3A3BB");

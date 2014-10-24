@@ -26,8 +26,8 @@ class Version20141021233337 extends AbstractMigration
   KEY `platform_id` (`platform_id`),
   KEY `campaign_id` (`campaign_id`),
   KEY `date` (`date`),
-  CONSTRAINT `daily_stats_ibfk_1` FOREIGN KEY (`campaign_id`) REFERENCES `campaign` (`id`),
-  CONSTRAINT `daily_stats_ibfk_2` FOREIGN KEY (`platform_id`) REFERENCES `platform` (`id`)
+  CONSTRAINT `daily_stats_ibfk_1` FOREIGN KEY (`campaign_id`) REFERENCES `campaign` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `daily_stats_ibfk_2` FOREIGN KEY (`platform_id`) REFERENCES `platform` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;");
 
     }
