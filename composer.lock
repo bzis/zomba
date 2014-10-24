@@ -3937,7 +3937,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "b7638d0917ee1a5797f630ca36ec73a199dbd53e"
+                "reference": "e952b8cc5a9f84d9d08795bc963261e6effa91a0"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -3949,7 +3949,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-24 11:03:31"
+            "time": "2014-10-24 12:30:10"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4291,8 +4291,12 @@
             "time": "2014-10-02 07:26:00"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 20,
@@ -4329,5 +4333,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
