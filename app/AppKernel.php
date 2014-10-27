@@ -53,6 +53,7 @@ class AppKernel extends Kernel
             new Vifeed\GeoBundle\VifeedGeoBundle(),
             new Vifeed\TagBundle\VifeedTagBundle(),
             new Vifeed\BankPaymentBundle\BankPaymentBundle(),
+            new Nelmio\SecurityBundle\NelmioSecurityBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

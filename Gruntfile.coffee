@@ -119,9 +119,9 @@ module.exports = (grunt) ->
         ]
 
     curl:
-      "tmp/google-fonts/OpenSans.scss": "http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext"
-      "tmp/google-fonts/OleoScriptSwashCaps.scss": "http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps"
-      "tmp/google-fonts/Lora.scss": "http://fonts.googleapis.com/css?family=Lora:400,700&subset=cyrillic,latin"
+      "tmp/google-fonts/OpenSans.scss": "https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext"
+      "tmp/google-fonts/OleoScriptSwashCaps.scss": "https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps"
+      "tmp/google-fonts/Lora.scss": "https://fonts.googleapis.com/css?family=Lora:400,700&subset=cyrillic,latin"
 
     replace:
       select2:
