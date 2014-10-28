@@ -387,9 +387,11 @@ nelmio_security:
           - %assetic.cdn_url%
           - unsafe-eval
           - https://*.googleapis.com
+          - www.google-analytics.com
           - http://tracker.vifeed.dev
           - https://maps.gstatic.com
           - %tracker.host%
+          - mc.yandex.ru
         style:
           - self
           - %assetic.cdn_url%
@@ -409,6 +411,7 @@ nelmio_security:
         font:
           - fonts.gstatic.com
           - netdna.bootstrapcdn.com
+          - themes.googleusercontent.com
         connect:
           - self
           - gdata.youtube.com
