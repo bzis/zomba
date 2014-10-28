@@ -409,6 +409,8 @@ nelmio_security:
         font:
           - fonts.gstatic.com
           - netdna.bootstrapcdn.com
+        object:
+          - self
         connect:
           - self
           - gdata.youtube.com
