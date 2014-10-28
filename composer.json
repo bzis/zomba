@@ -182,7 +182,8 @@
         "oldsound/rabbitmq-bundle": "1.3.*",
         "bzis/daemon-bundle": "dev-master",
         "vresh/twilio-bundle": "dev-master",
-        "facebook/php-sdk-v4": "4.0.*"
+        "facebook/php-sdk-v4": "4.0.*",
+        "andre_487/php_rutils": "dev-master"
     },
     "require-dev": {
     },
