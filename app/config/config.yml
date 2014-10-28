@@ -389,6 +389,7 @@ nelmio_security:
           - https://*.googleapis.com
           - http://tracker.vifeed.dev
           - https://maps.gstatic.com
+          - %tracker.host%
         style:
           - self
           - %assetic.cdn_url%
