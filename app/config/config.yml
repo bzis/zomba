@@ -381,7 +381,7 @@ nelmio_security:
     # prevents inline scripts, unsafe eval, external scripts/images/styles/frames, etc
     csp:
         report_uri: /csp/report
-        default: [ self ]
+        default: [ none ]
         script:
           - self
           - %assetic.cdn_url%
@@ -403,6 +403,8 @@ nelmio_security:
           - img.youtube.com
           - https://*.gstatic.com
           - https://*.googleapis.com
+        media:
+          - %assetic.cdn_url%
         font:
           - fonts.gstatic.com
           - netdna.bootstrapcdn.com
