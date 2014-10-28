@@ -365,10 +365,10 @@ nelmio_api_doc: ~
 nelmio_security:
     # signs/verifies all cookies
     signed_cookie:
-        names: ['*']
+        names: [user_token]
     # encrypt all cookies
     encrypted_cookie:
-        names: ['*']
+        names: [user_token]
     # prevents framing of the entire site
     clickjacking:
         paths:
@@ -384,15 +384,31 @@ nelmio_security:
         default: [ self ]
         script:
           - self
+          - %assetic.cdn_url%
           - unsafe-eval
+          - https://*.googleapis.com
+          - http://tracker.vifeed.dev
+          - https://maps.gstatic.com
         style:
           - self
+          - %assetic.cdn_url%
           - unsafe-inline
+          - https://fonts.googleapis.com
         frame:
           - player.vimeo.com
+          - www.youtube.com
+        img:
+          - self
+          - %assetic.cdn_url%
+          - img.youtube.com
+          - https://*.gstatic.com
+          - https://*.googleapis.com
         font:
           - fonts.gstatic.com
           - netdna.bootstrapcdn.com
+        connect:
+          - self
+          - gdata.youtube.com
     # disables content type sniffing for script resources
     content_type:
         nosniff: true
