@@ -412,9 +412,12 @@ nelmio_security:
           - fonts.gstatic.com
           - netdna.bootstrapcdn.com
           - themes.googleusercontent.com
+        object:
+          - self
         connect:
           - self
           - gdata.youtube.com
+          - %tracker.host%:8081
     # disables content type sniffing for script resources
     content_type:
         nosniff: true
