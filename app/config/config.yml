@@ -362,6 +362,72 @@ fos_user:
 
 nelmio_api_doc: ~
 
+nelmio_security:
+    # signs/verifies all cookies
+    signed_cookie:
+        names: [user_token]
+    # encrypt all cookies
+    encrypted_cookie:
+        names: [user_token]
+    # prevents framing of the entire site
+    clickjacking:
+        paths:
+            '^/.*': DENY
+    # prevents redirections outside the website's domain
+    external_redirects:
+        abort: true
+        log: true
+
+    # prevents inline scripts, unsafe eval, external scripts/images/styles/frames, etc
+    csp:
+        report_uri: /csp/report
+        default: [ none ]
+        script:
+          - self
+          - %assetic.cdn_url%
+          - unsafe-eval
+          - https://*.googleapis.com
+          - http://tracker.vifeed.dev
+          - https://maps.gstatic.com
+          - %tracker.host%
+        style:
+          - self
+          - %assetic.cdn_url%
+          - unsafe-inline
+          - https://fonts.googleapis.com
+        frame:
+          - player.vimeo.com
+          - www.youtube.com
+        img:
+          - self
+          - %assetic.cdn_url%
+          - img.youtube.com
+          - https://*.gstatic.com
+          - https://*.googleapis.com
+        media:
+          - %assetic.cdn_url%
+        font:
+          - fonts.gstatic.com
+          - netdna.bootstrapcdn.com
+        connect:
+          - self
+          - gdata.youtube.com
+    # disables content type sniffing for script resources
+    content_type:
+        nosniff: true
+
+    # forced HTTPS handling, don't combine with flexible mode
+    # and make sure you have SSL working on your site before enabling this
+#    forced_ssl:
+#        hsts_max_age: 2592000 # 30 days
+#        hsts_subdomains: true
+
+    # flexible HTTPS handling, read the detailed config info
+    # and make sure you have SSL working on your site before enabling this
+#    flexible_ssl:
+#        cookie_name: auth
+#        unsecured_logout: false
+
 snc_redis:
     session:
         client: session

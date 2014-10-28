@@ -40,3 +40,8 @@ vifeed_user_frontend:
 
 fos_js_routing:
   resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+nelmio_security:
+    path:     /csp/report
+    defaults: { _controller: nelmio_security.csp_reporter_controller:indexAction }
+    methods:  [POST]
