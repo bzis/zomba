@@ -388,11 +388,12 @@ nelmio_security:
           - unsafe-eval
           - https://*.googleapis.com
           - www.google-analytics.com
-          - http://tracker.vifeed.dev
+          - tracker.vifeed.dev
           - https://maps.gstatic.com
           - %tracker.host%
           - mc.yandex.ru
           - s7.addthis.com
+          - vkontakte.ru
         style:
           - self
           - %assetic.cdn_url%
