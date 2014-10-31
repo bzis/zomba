@@ -399,9 +399,11 @@ nelmio_security:
           - %assetic.cdn_url%
           - unsafe-inline
           - https://fonts.googleapis.com
+          - s7.addthis.com
         frame:
           - player.vimeo.com
           - www.youtube.com
+          - s7.addthis.com
         img:
           - self
           - %assetic.cdn_url%
