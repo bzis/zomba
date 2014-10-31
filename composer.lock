@@ -4028,7 +4028,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "2aae9335a9d3677946ff88b14bc2d24820b49d31"
+                "reference": "95c832925ce8dc4a5273815f16f4fd4d9392d604"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4040,7 +4040,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-30 15:22:32"
+            "time": "2014-10-31 14:27:17"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4176,7 +4176,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "7ca3940e0885805516f42ce4b9a2caf62014b3b1"
+                "reference": "2e5ad310250e04f4f06a8882b47aad31dd0b9687"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4185,7 +4185,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-10-30 13:47:02"
+            "time": "2014-10-31 14:27:04"
         },
         {
             "name": "vifeed/video-view-bundle",
