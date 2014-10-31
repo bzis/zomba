@@ -918,12 +918,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "1a9dffa64e33fdc10f4b4c3f5d7230b74d4a1021"
+                "reference": "f4fe9d9cc21a711d89d91d29c4a4e7945289cdd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/1a9dffa64e33fdc10f4b4c3f5d7230b74d4a1021",
-                "reference": "1a9dffa64e33fdc10f4b4c3f5d7230b74d4a1021",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/f4fe9d9cc21a711d89d91d29c4a4e7945289cdd0",
+                "reference": "f4fe9d9cc21a711d89d91d29c4a4e7945289cdd0",
                 "shasum": ""
             },
             "require": {
@@ -968,7 +968,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2014-08-18 18:03:07"
+            "time": "2014-10-30 14:49:25"
         },
         {
             "name": "doctrine/orm",
@@ -1045,16 +1045,16 @@
         },
         {
             "name": "facebook/php-sdk-v4",
-            "version": "4.0.11",
+            "version": "4.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/facebook-php-sdk-v4.git",
-                "reference": "e2dc662c4ab4da680434b6b777d56461a9bd2563"
+                "reference": "0683838b6966446b2cbef841f01f1d447ae7a5f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/facebook-php-sdk-v4/zipball/e2dc662c4ab4da680434b6b777d56461a9bd2563",
-                "reference": "e2dc662c4ab4da680434b6b777d56461a9bd2563",
+                "url": "https://api.github.com/repos/facebook/facebook-php-sdk-v4/zipball/0683838b6966446b2cbef841f01f1d447ae7a5f9",
+                "reference": "0683838b6966446b2cbef841f01f1d447ae7a5f9",
                 "shasum": ""
             },
             "require": {
@@ -1090,7 +1090,7 @@
                 "facebook",
                 "sdk"
             ],
-            "time": "2014-08-25 18:58:37"
+            "time": "2014-10-30 23:02:36"
         },
         {
             "name": "fortawesome/font-awesome",
@@ -1469,12 +1469,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "731c774d79c109eac44a19d0f3aa8caf8736e25b"
+                "reference": "354ed386eda6cabed86d3492163ae5634a4ba47e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/731c774d79c109eac44a19d0f3aa8caf8736e25b",
-                "reference": "731c774d79c109eac44a19d0f3aa8caf8736e25b",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/354ed386eda6cabed86d3492163ae5634a4ba47e",
+                "reference": "354ed386eda6cabed86d3492163ae5634a4ba47e",
                 "shasum": ""
             },
             "require": {
@@ -1503,7 +1503,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-10-28 09:45:32"
+            "time": "2014-10-31 09:49:22"
         },
         {
             "name": "guzzle/guzzle",
@@ -1511,12 +1511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "3c0ca2255751631f1dd64eb16bbe3b9440258297"
+                "reference": "5e6fb7097efac7180bd75006079144025255eb63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/3c0ca2255751631f1dd64eb16bbe3b9440258297",
-                "reference": "3c0ca2255751631f1dd64eb16bbe3b9440258297",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/5e6fb7097efac7180bd75006079144025255eb63",
+                "reference": "5e6fb7097efac7180bd75006079144025255eb63",
                 "shasum": ""
             },
             "require": {
@@ -1595,7 +1595,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-10-15 19:36:56"
+            "time": "2014-10-29 23:08:23"
         },
         {
             "name": "hashids/hashids",
@@ -3761,25 +3761,31 @@
         },
         {
             "name": "twig/extensions",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fabpot/Twig-extensions.git",
-                "reference": "c0ab818595338dd5569369bfce2552d02cec5d50"
+                "url": "https://github.com/twigphp/Twig-extensions.git",
+                "reference": "8cf4b9fe04077bd54fc73f4fde83347040c3b8cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig-extensions/zipball/c0ab818595338dd5569369bfce2552d02cec5d50",
-                "reference": "c0ab818595338dd5569369bfce2552d02cec5d50",
+                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/8cf4b9fe04077bd54fc73f4fde83347040c3b8cd",
+                "reference": "8cf4b9fe04077bd54fc73f4fde83347040c3b8cd",
                 "shasum": ""
             },
             "require": {
                 "twig/twig": "~1.12"
             },
+            "require-dev": {
+                "symfony/translation": "~2.3"
+            },
+            "suggest": {
+                "symfony/translation": "Allow the time_diff output to be translated"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -3794,18 +3800,16 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Common additional features for Twig that do not directly belong in core",
-            "homepage": "https://github.com/fabpot/Twig-extensions",
+            "homepage": "http://twig.sensiolabs.org/doc/extensions/index.html",
             "keywords": [
                 "i18n",
                 "text"
             ],
-            "time": "2014-07-05 10:01:35"
+            "time": "2014-10-30 14:30:03"
         },
         {
             "name": "twig/twig",
@@ -4024,7 +4028,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/FrontendBundle.git",
-                "reference": "2f21c92230cc4b83cbe401c91d4d0a5b3d3e07b0"
+                "reference": "2aae9335a9d3677946ff88b14bc2d24820b49d31"
             },
             "require": {
                 "friendsofsymfony/jsrouting-bundle": "~1.1"
@@ -4036,7 +4040,7 @@
                 }
             },
             "description": "Vifeed/FrontendBundle",
-            "time": "2014-10-28 15:54:39"
+            "time": "2014-10-30 15:22:32"
         },
         {
             "name": "vifeed/geo-bundle",
@@ -4172,7 +4176,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/VideoPromoBundle.git",
-                "reference": "9f4f7fbb0c14873f20169425aeceae400ff13536"
+                "reference": "7ca3940e0885805516f42ce4b9a2caf62014b3b1"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4181,7 +4185,7 @@
                 }
             },
             "description": "Vifeed/VideoPromoBundle",
-            "time": "2014-10-28 12:53:54"
+            "time": "2014-10-30 13:47:02"
         },
         {
             "name": "vifeed/video-view-bundle",
