@@ -411,6 +411,10 @@ nelmio_security:
           - img.youtube.com
           - https://*.gstatic.com
           - https://*.googleapis.com
+          - mc.yandex.ru
+          - www.google-analytics.com
+          - s7.addthis.com
+          - https://stats.g.doubleclick.net
         media:
           - %assetic.cdn_url%
         font:
