@@ -429,6 +429,8 @@ nelmio_security:
           - gdata.youtube.com
           - %tracker.host%:8081
           - ws://%tracker.host%:8081
+          - %tracker.host%:8080
+          - ws://%tracker.host%:8080
     # disables content type sniffing for script resources
     content_type:
         nosniff: true
