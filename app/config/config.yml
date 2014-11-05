@@ -362,80 +362,80 @@ fos_user:
 
 nelmio_api_doc: ~
 
-nelmio_security:
-    # signs/verifies all cookies
-    signed_cookie:
-        names: [user_token]
-    # encrypt all cookies
-    encrypted_cookie:
-        names: [user_token]
-    # prevents framing of the entire site
-    clickjacking:
-        paths:
-            '^/.*': DENY
-    # prevents redirections outside the website's domain
-    external_redirects:
-        abort: true
-        log: true
-
-    # prevents inline scripts, unsafe eval, external scripts/images/styles/frames, etc
-    csp:
-        report_uri: /csp/report
-        default: [ none ]
-        script:
-          - self
-          - %assetic.cdn_url%
-          - unsafe-eval
-          - https://*.googleapis.com
-          - www.google-analytics.com
-          - tracker.vifeed.dev
-          - https://maps.gstatic.com
-          - %tracker.host%
-          - mc.yandex.ru
-          - s7.addthis.com
-          - vkontakte.ru
-          - unsafe-inline
-          - https://www.youtube.com/iframe_api
-          - https://s.ytimg.com
-        style:
-          - self
-          - %assetic.cdn_url%
-          - %tracker.host%
-          - unsafe-inline
-          - https://fonts.googleapis.com
-          - s7.addthis.com
-        frame:
-          - player.vimeo.com
-          - www.youtube.com
-          - s7.addthis.com
-        img:
-          - self
-          - %assetic.cdn_url%
-          - img.youtube.com
-          - https://*.gstatic.com
-          - https://*.googleapis.com
-          - mc.yandex.ru
-          - www.google-analytics.com
-          - s7.addthis.com
-          - https://stats.g.doubleclick.net
-        media:
-          - %assetic.cdn_url%
-        font:
-          - fonts.gstatic.com
-          - netdna.bootstrapcdn.com
-          - themes.googleusercontent.com
-        object:
-          - self
-        connect:
-          - self
-          - gdata.youtube.com
-          - %tracker.host%:8081
-          - ws://%tracker.host%:8081
-          - %tracker.host%:8080
-          - ws://%tracker.host%:8080
-    # disables content type sniffing for script resources
-    content_type:
-        nosniff: true
+# nelmio_security:
+#     # signs/verifies all cookies
+#     signed_cookie:
+#         names: [user_token]
+#     # encrypt all cookies
+#     encrypted_cookie:
+#         names: [user_token]
+#     # prevents framing of the entire site
+#     clickjacking:
+#         paths:
+#             '^/.*': DENY
+#     # prevents redirections outside the website's domain
+#     external_redirects:
+#         abort: true
+#         log: true
+#
+#     # prevents inline scripts, unsafe eval, external scripts/images/styles/frames, etc
+#     csp:
+#         report_uri: /csp/report
+#         default: [ none ]
+#         script:
+#           - self
+#           - %assetic.cdn_url%
+#           - unsafe-eval
+#           - https://*.googleapis.com
+#           - www.google-analytics.com
+#           - tracker.vifeed.dev
+#           - https://maps.gstatic.com
+#           - %tracker.host%
+#           - mc.yandex.ru
+#           - s7.addthis.com
+#           - vkontakte.ru
+#           - unsafe-inline
+#           - https://www.youtube.com/iframe_api
+#           - https://s.ytimg.com
+#         style:
+#           - self
+#           - %assetic.cdn_url%
+#           - %tracker.host%
+#           - unsafe-inline
+#           - https://fonts.googleapis.com
+#           - s7.addthis.com
+#         frame:
+#           - player.vimeo.com
+#           - www.youtube.com
+#           - s7.addthis.com
+#         img:
+#           - self
+#           - %assetic.cdn_url%
+#           - img.youtube.com
+#           - https://*.gstatic.com
+#           - https://*.googleapis.com
+#           - mc.yandex.ru
+#           - www.google-analytics.com
+#           - s7.addthis.com
+#           - https://stats.g.doubleclick.net
+#         media:
+#           - %assetic.cdn_url%
+#         font:
+#           - fonts.gstatic.com
+#           - netdna.bootstrapcdn.com
+#           - themes.googleusercontent.com
+#         object:
+#           - self
+#         connect:
+#           - self
+#           - gdata.youtube.com
+#           - %tracker.host%:8081
+#           - ws://%tracker.host%:8081
+#           - %tracker.host%:8080
+#           - ws://%tracker.host%:8080
+#     # disables content type sniffing for script resources
+#     content_type:
+#         nosniff: true
 
     # forced HTTPS handling, don't combine with flexible mode
     # and make sure you have SSL working on your site before enabling this
