@@ -1244,12 +1244,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "f5491a956629282c6962a34087d21dd5f86d2d71"
+                "reference": "a5173723d226531a35fc17982661e5dc256b9dcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/f5491a956629282c6962a34087d21dd5f86d2d71",
-                "reference": "f5491a956629282c6962a34087d21dd5f86d2d71",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/a5173723d226531a35fc17982661e5dc256b9dcc",
+                "reference": "a5173723d226531a35fc17982661e5dc256b9dcc",
                 "shasum": ""
             },
             "require": {
@@ -1313,7 +1313,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-10-20 12:40:34"
+            "time": "2014-11-05 13:02:55"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1469,12 +1469,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "354ed386eda6cabed86d3492163ae5634a4ba47e"
+                "reference": "9f5aaa6a66c68210cbe7ef79ab369ce42798210d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/354ed386eda6cabed86d3492163ae5634a4ba47e",
-                "reference": "354ed386eda6cabed86d3492163ae5634a4ba47e",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/9f5aaa6a66c68210cbe7ef79ab369ce42798210d",
+                "reference": "9f5aaa6a66c68210cbe7ef79ab369ce42798210d",
                 "shasum": ""
             },
             "require": {
@@ -1503,7 +1503,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-10-31 09:49:22"
+            "time": "2014-11-06 09:58:49"
         },
         {
             "name": "guzzle/guzzle",
@@ -3092,17 +3092,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v3.0.7",
+            "version": "v3.0.8",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "3d7b900225882063cf179ce1d41bb8b1450a5a17"
+                "reference": "bc5e96bb4faf6bee7121085951d11b89488952f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/3d7b900225882063cf179ce1d41bb8b1450a5a17",
-                "reference": "3d7b900225882063cf179ce1d41bb8b1450a5a17",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/bc5e96bb4faf6bee7121085951d11b89488952f5",
+                "reference": "bc5e96bb4faf6bee7121085951d11b89488952f5",
                 "shasum": ""
             },
             "require": {
@@ -3141,7 +3141,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2014-10-01 06:52:36"
+            "time": "2014-11-03 21:16:34"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -4154,7 +4154,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:vifeed/UserBundle.git",
-                "reference": "8be6e9318f2f29d0161a4b0e0449f6ee10c7b3a3"
+                "reference": "f26710add48caf2b5c99d52fcfd953b496934763"
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "dev-master",
@@ -4167,7 +4167,7 @@
                 }
             },
             "description": "Vifeed/UserBundle",
-            "time": "2014-10-28 12:41:38"
+            "time": "2014-11-06 10:15:39"
         },
         {
             "name": "vifeed/video-promo-bundle",
