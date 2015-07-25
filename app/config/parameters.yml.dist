@@ -3,9 +3,9 @@ parameters:
     database_driver:   pdo_mysql
     database_host:     127.0.0.1
     database_port:     ~
-    database_name:     vifeed
-    database_user:     root
-    database_password: rootpass
+    database_name:     code
+    database_user:     code
+    database_password: code
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
@@ -14,7 +14,7 @@ parameters:
     mailer_encryption: tls
 
     locale:            ru
-    secret:            'R87iwvZtvpvcjbctdcbufLG[sbht7TKjW#ALeGQVMe@gUeah/JwB3QotuMr[it'
+    secret:            'code'
 
     assetic.ruby.bin: /opt/rbenv/versions/2.1.2/bin/ruby
     assetic.filter.compass.bin: /opt/rbenv/versions/2.1.2/bin/compass
@@ -29,14 +29,14 @@ parameters:
     developer_email:   dev@example.com
 
     social:
-        VKAppID: '4310780'
+        VKAppID: 'code'
         VKAppSecret: ''
 
     payment.secret: 'secret'
 
     robokassa.login: 'vifeed-dev'
-    robokassa.password1: 'DZ1oZrZc9U8e'
-    robokassa.password2: 'dEv56kZLMA2X'
+    robokassa.password1: 'code'
+    robokassa.password2: 'code'
 
     qiwi.login: 'qiwi_login'
     qiwi.password: 'qiwi_pass'
@@ -84,10 +84,10 @@ parameters:
     # максимальное количество воркеров-обработчиков просмотров
     vifeed.payment.max_workers: 2
 
-    rabbitmq.host: 'localhost'
+    rabbitmq.host: 'code'
     rabbitmq.port: 5672
-    rabbitmq.user: 'guest'
-    rabbitmq.password: 'guest'
+    rabbitmq.user: 'code'
+    rabbitmq.password: 'code'
     rabbitmq.vhost: '/'
 
     feedback.notification.email: feedback@zombakka.com
@@ -102,6 +102,6 @@ parameters:
     vk.app_id: ''
     vk.app_secret: ''
 
-    twilio.sid: AC668d221231b47c2f7db6c19ced65b584
-    twilio.token: 8b9610584c29edcbb87bca3647235569
-    twilio.phone_number: +14846536503
+    twilio.sid: code
+    twilio.token: code
+    twilio.phone_number: +code
