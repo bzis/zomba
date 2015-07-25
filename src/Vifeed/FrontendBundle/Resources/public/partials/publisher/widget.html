@@ -1,0 +1,91 @@
+<h1 ng-hide="previewUrl === null">Настройка виджета</h1>
+<h1 ng-show="previewUrl === null">Настройка авто-виджета <small>Показ случайного видео для вашей площадки</small></h1>
+<hr>
+<form class="form-horizontal" name="platform_widget" for="campaign">
+  <div class="row">
+    <div class="form-group" ng-show="previewUrl">
+      <label class="col-md-3 control-label">Youtube видео</label>
+      <div class="col-md-7">
+        <iframe frameborder="0" width="640" height="400" ng-src="{{previewUrl}}" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="code" class="col-md-3 control-label">Код виджета</label>
+      <div class="col-md-7">
+        <textarea class="form-control" id="code" rows="5"><script id="zmbk-script" src="http://{{trackerHost}}/widget/{{widgetPath}}/?{{videoSizeParameter}}{{nextParameter}}"></script></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-3 control-label">Размер видео плеера</label>
+      <div class="col-md-7 widget-size">
+        <!-- Actually angular-ui already has realization of these buttons' behavior -->
+        <button type="button" class="btn btn-primary" ng-class="{ active: resolutionType == 'md' }" ng-click="setResolution('md')">640x400</button>
+        <button type="button" class="btn btn-primary" ng-class="{ active: resolutionType == 'lm' }" ng-click="setResolution('lm')">560x360</button>
+        <button type="button" class="btn btn-primary" ng-class="{ active: resolutionType == 'sm' }" ng-click="setResolution('sm')">480x310</button>
+        <button type="button" class="btn btn-primary" ng-class="{ active: resolutionType == 'xs' }" ng-click="setResolution('xs')">300x200</button>
+        <button type="button" class="btn btn-primary" ng-class="{ active: resolutionType == 'cs' }" ng-click="setResolution('cs')">Другой</button>
+        <div class="input-group" ng-show="resolutionType === 'cs'">
+          <span class="input-group-addon">
+            <i class="fa fa-arrows-h"></i>
+          </span>
+          <input type="number" class="form-control" id="video-width" ng-model="videoCustomWidth" ng-keyup="refreshCustomResolution()" ng-maxlength="4">
+        </div>
+        <div class="input-group last" ng-show="resolutionType === 'cs'">
+          <span class="input-group-addon">
+            <i class="fa fa-arrows-v"></i>
+          </span>
+          <input type="number" class="form-control" id="video-height" ng-model="videoCustomHeight" ng-keyup="refreshCustomResolution()" ng-maxlength="4">
+        </div>
+      </div>
+    </div>
+    <!-- It temporarily is hidden, because we don't know is this functional required -->
+    <!--div class="form-group">
+        <label for="title" class="col-md-3 control-label">Воспроизводить следующее видео автоматически</label>
+        <div class="col-md-6">
+            <button type="button" class="btn btn-primary">Да</button>
+        </div>
+    </div-->
+    <div class="form-group">
+      <label for="countries" class="col-md-3 control-label">
+        Кнопка "Следующее видео"
+        <span tooltip="Хотите ли показывать кнопку 'Следующее видео' после того, как текущее видео закончилось" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+      </label>
+      <div class="col-md-5">
+        <button type="button" class="btn btn-primary" ng-class="{ active: isNextButton }" ng-click="toggleNextButton()">
+          <span ng-show="!isNextButton">Включить</span>
+          <span ng-show="isNextButton">Выключить</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div ng-show="previewUrl !== null">
+    <hr>
+    <h3>Страница виджета для постинга в социальные сети</h3>
+    <hr>
+    <div class="row">
+      <div class="form-group">
+        <div class="col-md-3 social-icons">
+          <a href="javascript:void(0);" class="fa-stack fa-lg icon-gplus" ng-click="shareLinkVia('gl')" title="Опубликовать ссылку в Google+">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+          </a>
+          <a href="javascript:void(0);" class="fa-stack fa-lg icon-twitter" ng-click="shareLinkVia('tw')" title="Опубликовать ссылку в Twitter">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </a>
+          <a href="javascript:void(0);" class="fa-stack fa-lg icon-facebook" ng-click="shareLinkVia('fb')" title="Опубликовать ссылку в Facebook">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </a>
+          <a href="javascript:void(0);" class="fa-stack fa-lg icon-vk" ng-click="shareLinkVia('vk')" title="Опубликовать ссылку во VKontakte">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+          </a>
+        </div>
+        <div class="col-md-7">
+          <input type="text" class="form-control" id="url" ng-model="shareLink">
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

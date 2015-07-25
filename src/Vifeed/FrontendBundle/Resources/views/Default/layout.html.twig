@@ -1,0 +1,45 @@
+{% spaceless %}<!DOCTYPE html>
+<html lang="ru" data-ng-app="{% block app %}indexApp{% endblock %}">
+  <head>
+    <meta charset="utf-8">
+    <title>Zombakka - сервис вирусного продвижения видео</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сервис Zombakka предлагает качественное и быстрое продвижение видео, раскрутку рекламных и вирусных роликов в социальных сетях, сайтах и мобильных приложениях">
+    <meta name="keywords" content="видео, вирусное продвижение, вирусные ролики, продвижение, раскрутка, ролики, видеоролики, ютуб, Вконтакте, Facebook, увеличение просмотров">
+    <meta name="author" content="">
+    <link href="https://plus.google.com/+Zombakka-Inc" rel="publisher" />
+    <!-- core CSS -->
+    {% block stylesheets %}
+    {% endblock %}
+
+    {% include 'VifeedFrontendBundle:Default:favicon.html.twig' %}
+</head>
+  <body>
+    <div id="wrap">
+      <!-- Static navbar -->
+      <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ path('vifeed_frontend_homepage') }}"><img src="{{ asset('/bundles/vifeedfrontend/images/logo.png') }}" alt="zombakka" id="logo"></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            {% block navbar %}{% endblock %}
+            <div data-login-toolbar></div>
+          </div>
+        </div>
+      </nav>
+      {% block carousel %}{% endblock %}
+      {% block content %}{% endblock %}
+    </div>
+    {% include 'VifeedFrontendBundle:Public:footer.html.twig' %}
+    {% include 'VifeedFrontendBundle:Default:analytics.html.twig' %}
+    {% block javascripts %}
+    {% endblock %}
+  </body>
+</html>
+{% endspaceless %}

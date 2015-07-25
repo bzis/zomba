@@ -1,0 +1,9 @@
+partnership:
+    type: rest
+    resource: '@VifeedFrontendBundle/Controller/Api/PartnershipController.php'
+    name_prefix: api_
+
+feedback:
+    type: rest
+    resource: '@VifeedFrontendBundle/Controller/Api/FeedbackController.php'
+    name_prefix: api_

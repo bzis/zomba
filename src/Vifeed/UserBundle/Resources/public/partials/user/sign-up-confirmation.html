@@ -1,0 +1,17 @@
+<section ng-init="confirmRegistration()">
+  <div class="lead col-md-12">
+    <h1 class="form-signup-heading">Подтверждение регистрации</h1>
+  </div>
+  <div class="col-md-12">
+    <alert ng-hide="errorList.length > 0" type="{{type}}">
+      <p>{{progressMessage}}</p>
+    </alert>
+    <alert ng-show="errorList.length > 0">
+      <h4>Не удалось подтвердить вашу регистрацию</h4>
+      <p>Возможные причины:</p>
+      <ul>
+        <li ng-repeat="message in errorList">{{message}}</li>
+      </ul>
+    </alert>
+  </div>
+</section>

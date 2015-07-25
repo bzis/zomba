@@ -1,0 +1,166 @@
+{% extends 'VifeedFrontendBundle:Public:layout.html.twig' %}
+
+{% block app %}partnershipApp{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  {% javascripts output='js/*.js'
+    '@VifeedFrontendBundle/Resources/assets/js/partnership/partnership.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/partnership/controllers/partnership-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/partnership/resources/partnerships.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/partnership-app.coffee' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+{% endblock %}
+
+{% block carousel %}
+  {{ render(controller('VifeedFrontendBundle:Carousel:index', {'enabledSlides': ['partners']})) }}
+{% endblock %}
+
+{% block content %}
+<div id="DIV_1" class="skrollr-section">
+	<div id="DIV_2" class="container">
+    <div ng-view></div>
+	</div>
+  <div id="DIV_4">
+    <div class="video-wraper" id="video-wraper"></div>
+    <div class="video-screenshot partners"></div> 
+    <div  class="layer" data-depth="-0.25" id="VIDEO_5">
+      <video autoplay preload loop muted poster="{{ cdn_url }}/videos/partner-846.jpg" class="background video-background">
+        <source src="{{ cdn_url }}/videos/partner-846.mp4" type="video/mp4">
+        <source src="{{ cdn_url }}/videos/partner-846.webm" type="video/webm">
+          Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+<style>
+#DIV_1 {
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+
+}/*#DIV_1*/
+
+#DIV_2 {
+    /*height: 696px;*/
+    left: 0px;
+    /*position: absolute;*/
+    top: 0px;
+    /*width: 800px;*/
+    z-index: 1000;
+}/*#DIV_2*/
+
+#DIV_4 {
+    height: auto;
+    left: 0px;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: auto;
+    z-index: -20;
+    overflow: hidden;
+}/*#DIV_4*/
+
+#VIDEO_5 {
+    display: block;
+    /*height: auto;*/
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 30;
+}/*#VIDEO_5*/
+#VIDEO_5 video {
+  top: -250px;
+  left: -150px;
+display: block;
+/*height: auto;*/
+/*height: 500px;*/
+/*width: 500px;*/
+min-height: 125%;
+min-width: 125%;
+position: absolute;
+bottom: 0;
+z-index: 40;
+}
+
+#video-wraper {
+background-color:  rgba(0, 0, 0, 0.7);
+top: -0;
+left: 0;
+display: block;
+/*height: auto;*/
+/*height: 500px;*/
+/*width: 500px;*/
+min-height: 100%;
+min-width: 100%;
+position: absolute;
+z-index: 40;
+}
+</style>
+
+
+
+
+
+
+<script type="text/javascript">
+$(function() {
+
+    // $('#DIV_4').parallax();
+});
+</script>
+
+{# <div class="skrollr-section skrollr-for-musicians">
+  <div class="bcg" style="position: relative;"
+       data-bottom-top="background-position:0px 100px;"
+       data-top-bottom="background-position: 0px -100px;">
+
+
+
+
+<div style="
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: 100%;
+z-index: 1;">
+      <div class="container">
+        <section class="content-section hs-container">
+
+  {% include 'VifeedFrontendBundle:Public:partner-form.html.twig' %}
+
+</section>
+</div>
+</div>
+</div>
+
+<div id="scene-few-statistics" style="
+position: absolute;
+z-index: 0;
+top: 0px;
+left: 0px;
+height: auto;
+min-height: 100%;
+width: auto;
+min-width: 100%;
+opacity: 1;
+overflow: hidden;
+">
+
+  {# <div class="layer" data-depth="-0.50">
+    <video class="background video-background" autoplay preload loop muted poster="{{ cdn_url }}/videos/partner-846.jpg">
+      <source src="{{ cdn_url }}/videos/partner-846.mp4" type="video/mp4">
+      <source src="{{ cdn_url }}/videos/partner-846.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+
+</div> #}
+{% endblock %}

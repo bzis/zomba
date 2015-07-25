@@ -1,0 +1,4 @@
+services:
+
+    old_sound_rabbit_mq.campaign_status_change_producer:
+        class: Vifeed\SystemBundle\Tests\Mock\RabbitMock

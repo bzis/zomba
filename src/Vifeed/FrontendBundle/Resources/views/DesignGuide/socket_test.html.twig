@@ -1,0 +1,58 @@
+<script type="text/javascript" src="http://tracker-stage.vifeed.co/socket/socket.io.js"></script>
+<h1>Stage-tracker socket tester</h1>
+<div><textarea cols="60" rows="20" id="zmbk-output"></textarea></div>
+<script type="text/javascript">
+  var textarea = $('#zmbk-output');
+  var socket = {};
+  var hashes = {};
+  var spawnedConnections = 0;
+
+  function trackPlayback(hashName, trackTime) {
+    if (trackTime === 1000) {
+      textarea.append('Stop tracking: ' + hashName + "\n");
+      clearInterval(hashes[hashName].intervalId);
+      socket[hashName].disconnect();
+      return;
+    }
+
+    // textarea.append('Tracking hash: ' + hashName + ' (' + trackTime + ' secs)' + "\n");
+    // socket[hashName].emit('track', 'tracking:' + hashName, trackTime, 1000);
+    socket[hashName].emit('track', 'tracking:' + hashName, trackTime, trackTime);
+  }
+
+  function spawn() {
+    spawnedConnections += 1;
+    textarea.append('Spawned connection #' + spawnedConnections + "\n");
+    var hash = Math.random() * (100000000 - 1) + 100000000;
+    socket[hash] = io.connect('http://tracker-stage.vifeed.co:8080', { 'force new connection': true });
+    hashes[hash] = {
+      name: hash,
+      trackTime: 0,
+      intervalId: null
+    }
+    socket[hash].on('connect', function (_res) {
+      socket[hash].emit('player ready', 'tracking:' + hash, 1000);
+      $.get(
+        "http://tracker-stage.vifeed.co/test/generate/" + hash,
+        {},
+        function (data) {
+          hashes[hash].intervalId = setInterval(function () {
+            hashes[hash].trackTime += 1;
+            trackPlayback(hash, hashes[hash].trackTime);
+          }, 1000);
+        }
+      );
+    });
+  }
+
+  function stop() {
+    spawnedConnections = 0;
+    textarea.append("All connections have been closed\n");
+    for (var h in hashes) {
+      clearInterval(hashes[h].intervalId);
+      socket[h].disconnect();
+    }
+  }
+</script>
+<button onclick="spawn();">Spawn a new connection</button>
+<button onclick="stop();">Stop all</button>

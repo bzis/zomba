@@ -1,0 +1,4 @@
+tags:
+    type: rest
+    resource: '@VifeedTagBundle/Controller/Api/TagController.php'
+    name_prefix: api_

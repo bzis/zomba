@@ -1,0 +1,104 @@
+<h1>Доступные кампании</h1>
+<hr>
+<div class="row">
+  <div class="col-md-8">
+    <div class="btn-group">
+      <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" ng-disabled="isLoading">
+        <strong>{{chosenPlatform.name}}</strong>
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li ng-repeat="platform in platforms track by platform.id">
+          <a href="javascript:void(0);" ng-click="loadCampaignsByPlatform(platform)">{{platform.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <button ng-click="goToWidget(chosenPlatform.hashId)" class="btn btn-lg btn-primary" ng-disabled="isLoading">
+      <strong>Настроить авто-виджет</strong>
+    </button>
+  </div>
+  <div class="col-md-4">
+    <div class="btn-group pull-right">
+      <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" ng-disabled="isLoading">
+        <strong><i class="fa fa-globe"></i> {{chosenCountry.name}}</strong>
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li ng-repeat="country in countries track by country.id">
+          <a href="javascript:void(0);" ng-click="changeCountry(chosenPlatform, country)">{{country.name}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<hr>
+<alert ng-show="!platforms.length">
+  <p>Чтобы подключить доступные кампании, необходимо сперва создать хотя бы одну рекламную площадку</p>
+</alert>
+<div ng-show="!campaigns.length && isLoading === false">
+  <h4>В данный момент нет доступных кампаний для размещения на ваших площадках</h4>
+</div>
+<div class="list-group campagin-list">
+  <a href="javascript:void(0);" class="list-group-item" ng-click="goToCampaignWidget(chosenPlatform.hashId, campaign.id)" ng-class="{ 'banned': campaign.isBanned }" ng-repeat="campaign in campaigns track by campaign.id" ng-mouseenter="highlightCampaign(campaign)" ng-mouseleave="shadowCampaign(campaign)">
+    <div class="sparkbars">
+      <div class="budget" style="width: {{campaign.budgetRatio.left}}%;"></div>
+      <div class="budget-used" style="width: {{campaign.budgetRatio.right}}%;"></div>
+    </div>
+    <div class="list-group-item-wrapper row">
+      <div class="col-md-1">
+        <img
+          class="media-object"
+          ng-src="{{campaign.previewUrl}}"
+          ng-click="videoPreview(campaign, $event)"
+          width="70"
+          height="55"
+          alt="{{campaign.title}}"
+          tooltip="Нажмите на изображение, чтобы просмотреть видео ролик"
+          tooltip-animation="false"
+          tooltip-placement="right">
+      </div>
+      <div class="col-md-11">
+        <h4 class="list-group-item-heading">
+          {{campaign.title}}
+          <span class="small pull-right">ставка:
+            <span class="label label-info" tooltip-html-unsafe="Стоимость одного просмотра,<br> которую вы будете получать<br> за каждый уникальный<br> просмотр ролика<br> с вашего ресурса" tooltip-animation="false" tooltip-placement="left">
+              {{campaign.maxBid}} <i class="fa fa-rub"></i>
+            </span>
+          </span>
+          <span class="small pull-right">бюджет:
+            <span class="label label-info" tooltip="Общий бюджет кампании" tooltip-animation="false" tooltip-placement="top">
+              {{campaign.remainingAmount}} <i class="fa fa-rub"></i>
+            </span>
+          </span>
+        </h4>
+        <p class="list-group-item-text col-md-8" ng-show="campaign.tags.length">{{campaign.tags}}</p>
+        <button type="button" ladda="loadingStates[campaign.id]" class="btn btn-xs btn-primary pull-right ladda-button" data-style="zoom-out" ng-class="{ 'btn-primary': campaign.isBanned, 'btn-danger': !campaign.isBanned }" ng-show="campaign.isSelected" ng-click="campaign.isBanned ? enableCampaign(chosenPlatform.id, campaign, $event) : disableCampaign(chosenPlatform.id, campaign, $event)">
+          <span class="ladda-label" ng-show="campaign.isBanned"><i class="fa fa-undo"></i> включить</span>
+          <span class="ladda-label" ng-show="!campaign.isBanned"><i class="fa fa-times-circle"></i> отключить</span>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+<ul class="pagination" ng-show="paginator.last > 1">
+  <li ng-class="{ disabled: paginator.current === 1 }">
+    <a href="javascript:void(0);" ng-click="changeCampaignList(chosenPlatform, chosenCountry, paginator.first)" ng-hide="paginator.current === 1">&laquo;</a>
+    <span ng-show="paginator.current === 1">&laquo;</span>
+  </li>
+  <li ng-class="{ disabled: paginator.current === 1 }">
+    <a href="javascript:void(0);" ng-click="changeCampaignList(chosenPlatform, chosenCountry, paginator.previous)" ng-hide="paginator.current === 1">&lsaquo;</a>
+    <span ng-show="paginator.current === 1">&lsaquo;</span>
+  </li>
+  <li ng-repeat="page in paginator.pages" ng-class="{ active: paginator.current === page }">
+    <a href="javascript:void(0);" ng-click="changeCampaignList(chosenPlatform, chosenCountry, page)" ng-hide="paginator.current === page">{{page}}</a>
+    <span ng-show="paginator.current === page">{{page}}</span>
+  </li>
+  <li ng-class="{ disabled: paginator.current === paginator.last }">
+    <a href="javascript:void(0);" ng-click="changeCampaignList(chosenPlatform, chosenCountry, paginator.next)" ng-hide="paginator.current === paginator.last">&rsaquo;</a>
+    <span ng-show="paginator.current === paginator.last">&rsaquo;</span>
+  </li>
+  <li ng-class="{ disabled: paginator.current === paginator.last }">
+    <a href="javascript:void(0);" ng-click="changeCampaignList(chosenPlatform, chosenCountry, paginator.last)" ng-hide="paginator.current === paginator.last">&raquo;</a>
+    <span ng-show="paginator.current === paginator.last">&raquo;</span>
+  </li>
+</ul>

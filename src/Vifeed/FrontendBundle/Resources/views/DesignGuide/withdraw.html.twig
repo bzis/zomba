@@ -1,0 +1,104 @@
+<h1>Управление кошелками</h1>
+<hr>
+
+  <table class="table withdraw-table table-striped">
+       <thead>
+         <tr>
+           <th>Тип кошелька</th>
+           <th>Кошелек</th>
+           <th>Выведено</th>
+           <th>Последняя операция</th>
+           <th>Управление</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>Яндекс деньги</td>
+           <td>100</td>
+           <td>100</td>
+           <td>100</td>
+           <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-xs">Вывести</button>
+                <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Вывести</a></li>
+                  <li><a href="#">Удалить</a></li>
+                </ul>
+              </div>
+            </td>
+
+       </tbody>
+     </table>
+<br>
+<br>
+
+<h1>Вывод средств</h1>
+<hr>
+
+<form class="form-horizontal ng-scope ng-pristine ng-invalid ng-invalid-required" name="campaign_settings" for="campaign">
+ <div class="row">
+   <div class="form-group">
+     <label for="firstName" class="col-md-2 control-label">
+       Сумма
+     </label>
+     <div class="col-md-2">
+       <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" id="firstName">
+     </div>
+   </div>
+ </div>
+ <div class="row">
+   <div class="form-group">
+     <label for="firstName" class="col-md-2 control-label">
+       Кошелек
+     </label>
+     <div class="col-md-2">
+        <!-- Single button -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Яндекс Деньги: 123012391234 <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Яндекс Деньги: 123012391234</a></li>
+            <li><a href="#">Яндекс Деньги: 123012391234</a></li>
+          </ul>
+        </div>
+     </div>
+   </div>
+ </div>
+<div class="row">
+        <div class="col-md-2">
+            <button type="submit"class="btn btn-primary btn-block ladda-button btn-lg">
+                Вывести
+            </button>
+        </div>
+    </div>
+</form>
+<br>
+<br>
+<h1>Новый кошелек</h1>
+<hr>
+
+<form class="form-horizontal ng-scope ng-pristine ng-invalid ng-invalid-required" name="campaign_settings" for="campaign">
+ <div class="row">
+   <div class="form-group">
+     <label for="firstName" class="col-md-2 control-label">
+       Тип кошелка
+     </label>
+     <div class="col-md-2">
+        <!-- Single button -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Яндекс Деньги<span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Яндекс Деньги</a></li>
+            <li><a href="#">Яндекс Деньги</a></li>
+          </ul>
+        </div>
+     </div>
+   </div>
+ </div>

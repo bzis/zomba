@@ -1,0 +1,23 @@
+{% extends 'VifeedFrontendBundle:Public:layout.html.twig' %}
+
+{% block app %}contactsApp{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  {% javascripts output='js/*.js'
+    '@VifeedFrontendBundle/Resources/assets/js/contacts/contacts.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/contacts/controllers/contacts-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/contacts/resources/contacts.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/contacts-app.coffee' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="lead col-md-12">
+      <h1>Контакты <small>Связаться с нами</small></h1>
+      <div ng-view></div>
+    </div>
+  </div>
+{% endblock %}

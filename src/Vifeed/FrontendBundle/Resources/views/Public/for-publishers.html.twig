@@ -1,0 +1,13 @@
+{% extends 'VifeedFrontendBundle:Public:layout.html.twig' %}
+
+{% block carousel %}
+  {{ render(controller('VifeedFrontendBundle:Carousel:index', { 'enabledSlides': ['publishers'] })) }}
+{% endblock %}
+
+{% block content %}
+  {% include 'VifeedFrontendBundle:Public:_how-does-it-work-for-publishers.html.twig' %}
+  {% include 'VifeedFrontendBundle:Public:_work_with_us.html.twig' %}
+  {% include 'VifeedFrontendBundle:Public:_promo_viral_service.html.twig' %}
+  {% include 'VifeedFrontendBundle:Public:_who_trusts_us.html.twig' %}
+  {% include 'VifeedFrontendBundle:Public:_are-you-ready-to-work.html.twig' %}
+{% endblock %}

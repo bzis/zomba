@@ -1,0 +1,26 @@
+services:
+
+    kernel.listener.dateinterval_exception:
+        class: Vifeed\SystemBundle\EventListener\WrongDateIntervalExceptionListener
+        arguments: [ @fos_rest.view_handler ]
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
+
+    vifeed.rabbitmq.connection_manager:
+        class: Vifeed\SystemBundle\RabbitMQ\ConnectionManager
+        arguments: [ %rabbitmq.host%, %rabbitmq.port%, %rabbitmq.user%, %rabbitmq.password%, %rabbitmq.vhost% ]
+
+    vifeed.social.facebook_api_provider:
+        class: Vifeed\SystemBundle\Social\Facebook\FacebookApiProvider
+        arguments: [ %facebook.app_id%, %facebook.app_secret% ]
+
+    vifeed.social.gplus_api_provider:
+        class: Vifeed\SystemBundle\Social\Google\GooglePlusApiProvider
+
+    vifeed.social.vk_api:
+        class: Vifeed\SystemBundle\Social\Vk\VkApi
+        arguments: [ %vk.app_id%, %vk.app_secret% ]
+
+    vifeed.social.vk_api_provider:
+        class: Vifeed\SystemBundle\Social\Vk\VkApiProvider
+        arguments: [ @vifeed.social.vk_api ]

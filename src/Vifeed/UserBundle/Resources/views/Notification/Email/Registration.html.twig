@@ -1,0 +1,8 @@
+{% extends 'VifeedFrontendBundle:Email:layout.html.twig' %}
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block content %}
+  {% autoescape false %}
+  {{ 'registration.email.message.html'|trans({'%username%': user.username, '%confirmationUrl%': confirmationUrl|url_decode}) }}
+  {% endautoescape %}
+{% endblock %}

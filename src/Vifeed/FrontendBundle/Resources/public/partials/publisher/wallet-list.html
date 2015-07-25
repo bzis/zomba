@@ -1,0 +1,41 @@
+<h1>Управление кошельками</h1>
+<hr>
+<table class="table withdraw-table table-striped">
+  <thead>
+    <tr>
+      <th>Тип кошелька</th>
+      <th>Номер</th>
+      <th>Выведено</th>
+      <th>Последняя операция</th>
+      <th>Управление</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="wallet in wallets track by wallet.id">
+      <td>{{wallet.name}}</td>
+      <td>{{wallet.number}}</td>
+      <td>{{wallet.withdrawnAmount}}</td>
+      <td>{{wallet.lastOperationDate || 'Не зарегистрирована'}}</td>
+      <td>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary btn-xs" ng-click="withdrawal(wallet);">Вывести</button>
+          <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only">Вывести</span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="javascript:void(0);" ng-click="withdrawal(wallet);">Вывести</a></li>
+            <li><a href="javascript:void(0);" ng-click="deleteWallet(wallet);">Удалить</a></li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<div class="row">
+  <div class="col-md-2">
+    <button type="button" id="add-wallet-button" class="btn btn-primary btn-block" ng-click="addWallet()">Добавить кошелек</button>
+  </div>
+</div>
+<hr>

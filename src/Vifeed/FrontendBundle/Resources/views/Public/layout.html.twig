@@ -1,0 +1,35 @@
+{% extends 'VifeedFrontendBundle:Default:layout.html.twig' %}
+
+{% block navbar %}
+  {% include 'VifeedFrontendBundle:Public:navbar.html.twig' %}
+{% endblock %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  {% stylesheets output='css/*.css' filter='cssrewrite,?yui_css'
+      '@frontend_common_css'
+      '@VifeedFrontendBundle/Resources/assets/sass/public.scss'
+  %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  {% javascripts output='js/*.js'  filter='?uglifyjs2'
+    '@frontend_common_js'
+    '@jquery_parallax'
+    '@jquery_easy_pie_chart'
+    '@skrollr'
+    '@scrollmagic'
+    '@jquery_fitvids'
+    '@odometer'
+    '@snapsvg'
+    '@sexy_modal_template'
+    '@VifeedFrontendBundle/Resources/assets/js/promo/controllers/promo-modal-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/promo/controllers/promo-management-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/public_animation.coffee'
+  %}
+  <script type="text/javascript" src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+{% endblock %}

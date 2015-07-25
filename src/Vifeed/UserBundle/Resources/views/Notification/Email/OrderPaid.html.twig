@@ -1,0 +1,5 @@
+{% extends 'VifeedFrontendBundle:Email:layout.html.twig' %}
+
+{% block content %}
+  {{ order.user.username }}, ваш счёт пополнен на {{ order.amount }} рублей.
+{% endblock %}

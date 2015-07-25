@@ -1,0 +1,29 @@
+@import 'bootstrap/variables';
+
+$video-screenshot: (films, films2, for_company1 , for_company2, music1, music2, game1, game2, partners);
+
+.video-screenshot {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+@each $screenshot in $video-screenshot {
+  &.#{$screenshot} {
+    background-image: url('/bundles/vifeedfrontend/images/video-screenshots/#{$screenshot}.jpg');
+  }
+}
+}
+@media all and (max-width: $screen-xs-max) {
+  .mobile-view .video-screenshot {
+    display: block;
+  }
+  .mobile-view {
+    video.video-background, {
+      display: none;
+    }
+  }
+}

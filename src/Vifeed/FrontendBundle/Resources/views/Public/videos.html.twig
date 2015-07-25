@@ -1,0 +1,56 @@
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel fade">
+  <!-- Indicators -->
+
+  {% if videos|length > 1 %}
+    <ol class="carousel-indicators">
+      {% for key, slide in videos %}
+        <li data-target="#carousel" data-slide-to="{{ loop.index0 }}"{% if loop.first %} class="active"{% endif %}></li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+
+  <div class="carousel-inner" id="scene2" class="scene" data-calibrate-x="true" data-calibrate-y="true">
+
+  {% for key, video in videos %}
+      <div class="item {% if loop.first %} active{% endif %}">
+        <div class="video-screenshot {{ key }}"></div>
+        <div class="video-wraper" data-depth="0"></div>
+        <div class="layer" data-depth="0.50">
+          <video class="background video-background" autoplay preload loop muted poster="{{ cdn_url }}/videos/{{ key }}-846.jpg">
+            <source src="{{ cdn_url }}/videos/{{ key }}-846.mp4" type="video/mp4">
+            <source src="{{ cdn_url }}/videos/{{ key }}-846.webm" type="video/webm">
+
+              Your browser does not support the video tag.
+          </video>
+        </div>
+        {#       <div class="layer" data-depth="0.20"><div class="background main"></div></div>
+        #}
+        <div class="container">
+          <div class="carousel-caption">
+            <article>
+              <h1>{{ video['title'] }}</h1>
+              <div>
+              <div class="col-md-6">
+                Просмотров до вирусного продвижения:
+                <h2>{{ video['before'] }}</h2>
+              </div>
+              <div class="col-md-6">
+                Просмотров после вирусного продвижения:
+                <h2>{{ video['after'] }}</h2>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+  {% endfor %}
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+</div>

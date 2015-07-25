@@ -1,0 +1,5 @@
+services:
+
+    vifeed.platform.manager:
+        class: Vifeed\PlatformBundle\Manager\PlatformManager
+        arguments: [ @doctrine.orm.default_entity_manager, @hashids, @vifeed.tag.manager ]

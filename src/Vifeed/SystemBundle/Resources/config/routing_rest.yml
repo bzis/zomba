@@ -1,0 +1,4 @@
+age_ranges:
+    type: rest
+    resource: '@VifeedSystemBundle/Controller/Api/AgeRangeController.php'
+    name_prefix: api_

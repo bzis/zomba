@@ -1,0 +1,8 @@
+services:
+
+    vifeed.tag.manager:
+        class: Vifeed\TagBundle\Manager\TagManager
+        arguments:
+            - @doctrine.orm.entity_manager
+            - Vifeed\TagBundle\Entity\Tag
+            - Vifeed\TagBundle\Entity\Tagging

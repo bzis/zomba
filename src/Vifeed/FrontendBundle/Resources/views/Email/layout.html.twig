@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">    <!-- So that mobile webkit will display zoomed in -->
+    <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+
+    <title>{{ subject }}</title>
+    <style type="text/css">
+
+        /* Resets: see reset.css for details */
+        .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+        .ExternalClass {width: 100%; background-color: #ebebeb;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        body {margin:0; padding:0;}
+        table {border-spacing:0;}
+        table td {border-collapse:collapse;}
+        .yshortcuts a {border-bottom: none !important;}
+
+
+        /* Constrain email width for small screens */
+        @media screen and (max-width: 600px) {
+            table[class="container"] {
+                width: 95% !important;
+            }
+        }
+
+        /* Give content more room on mobile */
+        @media screen and (max-width: 480px) {
+            td[class="container-padding"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+         }
+
+    </style>
+</head>
+<body style="margin:0; padding:10px 0;" bgcolor="#ebebeb" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<br>
+
+<!-- 100% wrapper (grey background) -->
+<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#ebebeb">
+  <tr>
+    <td align="center" valign="top" bgcolor="#ebebeb" style="background-color: #ebebeb;">
+      <a href="http://zombakka.com"><img src="{{ asset('/bundles/vifeedfrontend/images/email-logo.jpg') }}" alt="zombakka" style="margin: 30px 0 30px 0;" width="258" height="40"></a>
+
+      <!-- 600px container (white background) -->
+      <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff">
+        <tr>
+          <td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;">
+            <br>
+
+            <!-- ### BEGIN CONTENT ### -->
+            <div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #D03C0F">
+            {{ subject }}
+            </div><br>
+
+            {% block content %}
+            {% endblock %}
+            {# The 100% wrapper <span style="font-family: Andale Mono, Courier, monospace; color: #666;">&lt;table&gt;</span> is included for clients that strip out the <span style="font-family: Andale Mono, Courier, monospace; color: #666;">&lt;body&gt;</span> tag. Change background color as required.
+            <br><br>
+
+
+            The inner <span style="font-family: Andale Mono, Courier, monospace; color: #666;">&lt;table&gt;</span> with <span style="font-family: Andale Mono, Courier, monospace; color: #666;">container</span> class has the following functions:
+            <br><br>
+
+            <strong>On desktop:</strong>
+            <ul>
+                <li>Wraps the email to a max recommended width of <span style="font-family: Andale Mono, Courier, monospace; color: #666;">600px</span></li>
+                <li>Adds <span style="font-family: Andale Mono, Courier, monospace; color: #666;">30px</span> left and right padding. (Hint: that means you have <span style="font-family: Andale Mono, Courier, monospace; color: #666;">540px</span> for content.</li>
+            </ul>
+
+            <strong>On mobile:</strong>
+            <ul>
+                <li>Wraps email to fluid <span style="font-family: Andale Mono, Courier, monospace; color: #666;">95%</span></li>
+                <li>Reduces left and right padding to <span style="font-family: Andale Mono, Courier, monospace; color: #666;">12px</span> for more content real estate</li>
+                <li>See breakpoints in CSS</li>
+            </ul>
+            <br>
+
+            <em style="font-style:italic; font-size: 12px; color: #aaa;">N.B. The above is provided as explanation only and has not been live tested in clients.</em> #}
+            <br><br>
+
+            <div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #D03C0F">
+              Подписывайтесь на нас
+            </div>
+            <br>
+            {% spaceless %}
+            <a title="Follow on Facebook" href="http://www.facebook.com/zombakka" target="_blank">
+              <img src="{{ asset('/bundles/vifeedfrontend/images/social/social_facebook.jpg') }}" width="40" height="40" alt="Follow on Facebook">
+            </a>
+            {% endspaceless %} {% spaceless %}
+            <a title="Follow on Twitter" href="http://twitter.com/intent/follow?source=followbutton&amp;variant=1.0&amp;screen_name=zombakka" target="_blank">
+              <img src="{{ asset('/bundles/vifeedfrontend/images/social/social_twitter.jpg') }}" width="40" height="40" alt="Follow on Twitter">
+            </a>
+            {% endspaceless %} {% spaceless %}
+            <a title="Follow on VK" href="http://vk.com/zombakka" target="_blank">
+              <img src="{{ asset('/bundles/vifeedfrontend/images/social/social_vk.jpg') }}" width="40" height="40" alt="Follow on VK">
+            </a>
+            {% endspaceless %} {% spaceless %}
+            <a title="Follow on Tumblr" href="http://zombakka.tumblr.com" target="_blank">
+              <img src="{{ asset('/bundles/vifeedfrontend/images/social/social_tumblr.jpg') }}" width="40" height="40" alt="Follow on Tumblr">
+            </a>
+            {% endspaceless %} {% spaceless %}
+            <a title="Follow on Google" href="https://plus.google.com/+Zombakka-Inc" target="_blank">
+              <img src="{{ asset('/bundles/vifeedfrontend/images/social/social_google-plus.jpg') }}" width="40" height="40" alt="Follow on Google">
+            </a>
+            {% endspaceless %} {% spaceless %}
+            <a title="Follow on Youtube" href="http://www.youtube.com/channel/UCV-0tIK3Oc2IxexXTtU3sMQ?sub_confirmation=1" target="_blank">
+              <img src="{{ asset('/bundles/vifeedfrontend/images/social/social_youtube.jpg') }}" width="40" height="40" alt="Follow on Youtube">
+            </a>
+            {% endspaceless %}
+            <br>
+            <br>
+            <em style="font-style:italic; font-size: 12px; color: #aaa;">Zombakka это сервис для продвижения видео.
+              <a href="http://zombakka.com">Посетите zombakka.com</a> или напишите нам на <a href="mailto:support@zombakka.com">support@zombakka.com</a>.
+              <br>
+              <br>
+              Вы можете управлять уведомлениями по электронной почте в <a href="http://zombakka.com/#/profile">настройках аккаунта</a>.
+            </em>
+            <br><br>
+
+            <!-- ### END CONTENT ### -->
+
+          </td>
+        </tr>
+      </table>
+      <!--/600px container -->
+
+    </td>
+  </tr>
+</table>
+<!--/100% wrapper-->
+<br>
+<br>
+
+
+
+
+{# <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_horizontal_follow_toolbox"></div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53a98993717c29f8"></script> #}
+
+</body>
+</html>

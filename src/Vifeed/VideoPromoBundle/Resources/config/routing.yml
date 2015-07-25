@@ -1,0 +1,3 @@
+vifeed_video_promo_homepage:
+    pattern:  /{campaignHash}/{platformHash}/{isNextButton}
+    defaults: { _controller: VifeedVideoPromoBundle:Default:index, isNextButton: 1 }

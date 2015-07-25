@@ -1,0 +1,33 @@
+parameters:
+    vifeed.bank_plugin.templates:
+        - { receipt: '' }
+        - { transfer: '' }
+
+services:
+    vifeed.payment.form.bank_transfer_type:
+        class: Vifeed\BankPaymentBundle\Form\BankTransferType
+        tags:
+            - { name: "payment.method_form_type" }
+            - { name: "form.type", alias: "bank_transfer" }
+
+    vifeed.payment.form.bank_receipt_type:
+        class: Vifeed\BankPaymentBundle\Form\BankReceiptType
+        tags:
+            - { name: "payment.method_form_type" }
+            - { name: "form.type", alias: "bank_receipt" }
+
+    vifeed.payment.plugin.bank_transfer:
+        class: Vifeed\BankPaymentBundle\Plugin\BankTransferPlugin
+        arguments: [ @doctrine.orm.entity_manager, @router ]
+        tags:
+            - { name: "payment.plugin" }
+
+    vifeed.payment.plugin.bank_receipt:
+        class: Vifeed\BankPaymentBundle\Plugin\BankReceiptPlugin
+        arguments: [ @doctrine.orm.entity_manager, @router ]
+        tags:
+            - { name: "payment.plugin" }
+
+    vifeed.payment.bill_generator:
+        class: Vifeed\BankPaymentBundle\Bill\BillGenerator
+        arguments: [ %vifeed%, %vifeed.bank_plugin.templates%, @templating ]

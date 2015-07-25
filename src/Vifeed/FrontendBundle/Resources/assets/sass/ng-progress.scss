@@ -1,0 +1,10 @@
+$ng-progress-lite-bar: #1ba392;
+
+.ngProgressLiteBar {
+  background: $ng-progress-lite-bar;
+  z-index: 10000;
+}
+
+.ngProgressLite .ngProgressLiteBarShadow {
+  box-shadow: 0 0 10px lighten($ng-progress-lite-bar, 12%), 0 0 5px lighten($ng-progress-lite-bar, 12%);
+}

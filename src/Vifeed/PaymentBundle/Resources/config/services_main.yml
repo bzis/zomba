@@ -1,0 +1,10 @@
+services:
+
+    vifeed.payment.wallet_serialization_listener:
+        class: Vifeed\PaymentBundle\EventListener\WalletSerializationListener
+        tags:
+            - { name: jms_serializer.event_subscriber }
+
+    vifeed.payment.pay_video_view.consumer:
+        class: Vifeed\PaymentBundle\Consumer\PayVideoViewConsumer
+        arguments: [ @doctrine.orm.entity_manager, @vifeed.payment.video_view_payment_manager ]

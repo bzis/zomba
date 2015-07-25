@@ -1,0 +1,9 @@
+services:
+
+    vifeed.geo.provider.netload:
+        class: Vifeed\GeoBundle\Provider\NetloadGeoProvider
+        arguments: [@doctrine.dbal.default_connection]
+
+    vifeed.geo.manager:
+        class: Vifeed\GeoBundle\Manager\GeoManager
+        arguments: [@vifeed.geo.provider.netload]

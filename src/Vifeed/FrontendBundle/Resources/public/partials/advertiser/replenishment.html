@@ -1,0 +1,286 @@
+<h1>Пополнение счета</h1>
+<hr>
+<alert type="success" ng-show="bankReceiptGenerated">
+  <p>Ваша квитанция на сумму {{bankAmount}} <i class="fa fa-rub"></i> успешно сформирована (Номер квитанции: {{bankOrderId}})</p>
+  <p>После оплаты в банке ваш баланс будет пополнен в течение 1 &ndash; 7 рабочих дней в зависимости от скорости обработки заявки вашим банком</p>
+</alert>
+<alert ng-show="isApiError" type="danger">
+  Похоже, у нас что-то сломалось, потому что не удалось выполнить операцию пополнения счета <i class="fa fa-frown-o"></i>
+</alert>
+<form class="form-horizontal" submit-form="replenish()" name="replenishment_form" novalidate>
+  <div class="row">
+    <div class="form-group">
+      <label for="amount" class="col-md-3 control-label">Биллинг</label>
+      <div class="col-md-6">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary" ng-model="order.provider" btn-radio="'robokassa'" ng-click="hideCompanyForm()">Робокасса</button>
+          <!--button type="button" class="btn btn-primary" ng-model="order.provider" btn-radio="'bank_transfer'" ng-click="showCompanyForm()">Безналичный расчет</button>
+          <button type="button" class="btn btn-primary" ng-model="order.provider" btn-radio="'paypal_express_checkout'">Paypal</button>
+          <button type="button" class="btn btn-primary" ng-model="order.provider" btn-radio="'qiwi_wallet'">Qiwi</button-->
+          <button type="button" class="btn btn-primary" ng-model="order.provider" btn-radio="'bank_receipt'" ng-click="hideCompanyForm()">Наличными в банке</button>
+        </div>
+      </div>
+    </div>
+    <!--div id="company-container" ng-show="showCompany">
+      <div class="form-group">
+        <label for="taxation-system" class="col-md-3 control-label">Система налогообложения</label>
+        <div class="col-md-6">
+          <select class="form-control" id="taxation-system" ng-model="company.system" ng-options="system.name for system in taxationSystems">
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="company-name" class="col-md-3 control-label">
+          Название организации
+          <span tooltip="Название вашей организации с указанием формы ответственности. Например, ООО &quot;Рога и копыта&quot;" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="company-name"
+            name="company_name"
+            ng-model="company.name"
+            ng-required="true">
+          <error-message
+            for="company_name"
+            required="Вы забыли указать название организации"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address" class="col-md-3 control-label">
+          Юридический адрес организации
+          <span tooltip="Юридический адрес организации. Например, Российская Федерация, 127018, Москва, ул. Сущевский Вал, д. 43" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            name="address"
+            ng-model="company.address"
+            ng-required="true">
+          </textarea>
+          <error-message for="address" required="Вы забыли указать юридический адрес вашей организации"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inn" class="col-md-3 control-label">
+          ИНН организации
+          <span tooltip="ИНН вашей организации. Например, 7700000000" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-6">
+          <input
+            type="number"
+            class="form-control"
+            id="inn"
+            name="inn"
+            ng-model="company.inn"
+            ng-required="true"
+            ng-minlength="10"
+            ng-maxlength="10">
+          <error-message
+            for="inn"
+            required="Вы забыли указать ИНН организации"
+            minlength="Неверный номер ИНН"
+            maxlength="Неверный номер ИНН"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="kpp" class="col-md-3 control-label">
+          КПП организации
+          <span tooltip="КПП вашей организации. Например, 770000000" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-6">
+          <input
+            type="number"
+            class="form-control"
+            id="kpp"
+            name="kpp"
+            ng-model="company.kpp"
+            ng-required="true"
+            ng-minlength="9"
+            ng-maxlength="9">
+          <error-message
+            for="kpp"
+            required="Вы забыли указать КПП организации"
+            minlength="Неверный номер КПП"
+            maxlength="Неверный номер КПП"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="bic" class="col-md-3 control-label">
+          БИК организации
+          <span tooltip="БИК вашей организации. Например, 010000000" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-6">
+          <input
+            type="number"
+            class="form-control"
+            id="bic"
+            name="bic"
+            ng-model="company.bic"
+            ng-required="true"
+            ng-minlength="9"
+            ng-maxlength="9">
+          <error-message
+            for="bic"
+            required="Вы забыли указать БИК организации"
+            minlength="Неверный номер БИК"
+            maxlength="Неверный номер БИК"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="bank-account" class="col-md-3 control-label">
+          Расчетный счет организации
+          <span tooltip="Расчетный счет вашей организации. Например, 12345678901234567890 в Сбербанке России" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="bank-account"
+            name="bank_account"
+            ng-model="company.bankAccount"
+            ng-required="true">
+          <error-message
+            for="bic"
+            required="Вы забыли указать расчетный счет организации">
+          </error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="correspondent-account" class="col-md-3 control-label">
+          Корр. счет организации
+          <span tooltip="Корр. счет вашей организации. Например, 30100000000001234567890" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-6">
+          <input
+            type="number"
+            class="form-control"
+            id="correspondent-account"
+            name="correspondent_account"
+            ng-model="company.correspondentAccount"
+            ng-required="true"
+            ng-minlength="20"
+            ng-maxlength="20">
+          <error-message
+            for="correspondent_account"
+            required="Вы забыли указать корр. счет организации"
+            minlength="Неверный номер корр. счета"
+            maxlength="Неверный номер корр. счета">
+          </error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="contact-name" class="col-md-3 control-label">
+          ФИО контактного лица
+          <span tooltip="Фамилия, имя и отчество контактного лица. Например, Иванов Иван Иванович" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="contact-name"
+            name="contact_name"
+            ng-model="company.contactName"
+            ng-required="true">
+          <error-message
+            for="contact_name"
+            required="Вы забыли указать ФИО контактного лица"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="position" class="col-md-3 control-label">
+          Должность контактного лица
+          <span tooltip="Должность контактного лица. Например, Менеджер" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="position"
+            name="position"
+            ng-model="company.position"
+            ng-required="true">
+          <error-message
+            for="position"
+            required="Вы забыли указать должность контактного лица"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="col-md-3 control-label">
+          Телефон организации или контактного лица
+          <span tooltip="Телефон организации или контактного лица. Например, 4955551234" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            name="phone"
+            ng-model="company.phone"
+            ng-required="true"
+            ui-mask="+7 (999) 999-99-99">
+          </textarea>
+          <error-message
+            for="phone"
+            required="Вы забыли указать телефон вашей организации"
+            mask="Вы ввели неверный телефон">
+          </error-message>
+        </div>
+      </div>
+    </div-->
+    <div class="form-group">
+      <label for="amount" class="col-md-3 control-label">Сумма</label>
+      <div class="col-md-6">
+        <input
+          type="number"
+          class="form-control"
+          id="amount"
+          name="replenish_amount"
+          min="1"
+          max="9999999"
+          step="1"
+          ng-model="order.amount"
+          ng-required="true">
+        <error-message
+          for="replenish_amount"
+          required="Вы забыли указать сумму"
+          min="Слишком маленькая сумма"
+          max="Слишком большая сумма"></error-message>
+      </div>
+    </div>
+    <!-- <div class="form-group" ng-show="order.provider === 'qiwi_wallet'">
+      <label for="phone" class="col-md-3 control-label">Телефон</label>
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          id="phone"
+          name="phone"
+          ng-model="order.phone"
+          ng-required="order.provider === 'qiwi_wallet'"
+          ui-mask="+7 (999) 999-99-99">
+        <error-message for="phone" required="Вы забыли указать телефон"></error-message>
+      </div>
+    </div> -->
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-3">
+      <button
+        type="submit"
+        ladda="loadingProgress"
+        class="btn btn-primary btn-block ladda-button"
+        data-style="zoom-out"
+        analytics-on
+        analytics-event="Place an order"
+        analytics-category="Order"
+        analytics-value="order.amount">
+        <span class="ladda-label">Пополнить</span>
+      </button>
+    </div>
+  </div>
+</form>
+<hr>

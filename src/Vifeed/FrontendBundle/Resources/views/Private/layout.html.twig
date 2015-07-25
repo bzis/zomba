@@ -1,0 +1,39 @@
+{% extends 'VifeedFrontendBundle:Default:layout.html.twig' %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  {% stylesheets output='css/*.css' filter='cssrewrite,?yui_css'
+    '@frontend_common_css'
+    '@select2_css'
+    '@daterangepicker_css' %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  {% javascripts output='js/*.js' filter='?uglifyjs2'
+    '@frontend_common_js'
+    '@lodash'
+    '@select2_js'
+    '@moment_js'
+    '@daterangepicker'
+    '@profile_template'
+    '@sexy_modal_template'
+    '@VifeedFrontendBundle/Resources/assets/js/kernel/resources/billing.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/kernel/resources/campaigns.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/kernel/resources/countries.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/kernel/directives/zmbk-float-formatter.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/kernel/directives/zmbk-min.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/kernel/directives/zmbk-max.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/kernel/directives/zmbk-range.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/kernel/resources/tags.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/datepicker/datepicker.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/datepicker/controllers/datepicker-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/datepicker/directives/date-range.js'
+    '@VifeedFrontendBundle/Resources/assets/js/profile/resources/companies.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/profile/profile.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/profile/controllers/profile-ctrl.coffee' %}
+  <script type="text/javascript" src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+{% endblock %}

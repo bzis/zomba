@@ -1,0 +1,245 @@
+@import 'compass/css3/images';
+@import 'compass/css3/border-radius';
+@import 'compass/css3/text-shadow';
+@import 'compass/css3/box-shadow';
+@import 'compass/css3/animation';
+@import 'compass/css3/transform';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+@import 'carousel';
+@import 'video_screenshots';
+@import '../../../../../../../../bower-vendor/odometer/sass/odometer-theme-default.sass';
+
+//
+// Public
+//
+
+.thumbnail {
+  background: none;
+  border: 0;
+}
+
+.content-section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  h1 {
+    margin: 0 0 60px;
+  }
+
+  &.how-its-work-section {
+    padding-bottom: 0;
+  }
+}
+
+.bcg {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.hs-container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.skrollr-section {
+  color: #fff;
+
+  // Feedback states
+  .has-success {
+    @include form-control-validation(lighten($state-success-text, 15%), lighten($state-success-text, 15%), darken($state-success-bg, 15%));
+  }
+
+  .has-warning {
+    @include form-control-validation(lighten($state-warning-text, 15%), lighten($state-warning-text, 15%), darken($state-warning-bg, 15%));
+  }
+
+  .has-error {
+    @include form-control-validation(lighten($state-danger-text, 15%), lighten($state-danger-text, 15%), darken($state-danger-bg, 15%));
+  }
+
+  h2,
+  h3 {
+    color: #1ba392;
+  }
+
+  h1 {
+    color: #fff;
+
+    strong {
+      color: #1ba392;
+    }
+  }
+
+  .hs-wrapper {
+    background-color: rgba(#137064, .5); // rgba(20,112,100, .5)
+  }
+
+  .bcg {
+    background-color: #000;
+  }
+}
+
+@media all and (max-width: $screen-xs) {
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}
+
+$skrollr-sections: (brands, for-musicians, for-games, for-movies, for-companies);
+
+@each $section in $skrollr-sections {
+  .skrollr-#{$section} .bcg {
+    background-image: url('/bundles/vifeedfrontend/images/#{$section}-background.jpg');
+  }
+}
+
+.chart {
+  display: inline-block;
+  font-size: 20px;
+  height: 180px;
+  padding-top: 80px;
+  position: relative;
+  text-align: center;
+  width: 180px;
+}
+
+.chart canvas {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+
+.navbar-nav>.dropdown .dropdown-menu {
+  background: #141c26;
+  width: 100%;
+
+  a {
+    color: #1ba392;
+    padding: 10px 20px;
+  }
+
+  a:hover {
+    background: #1ba392;
+    color: #fff;
+  }
+}
+
+
+.how-its-work {
+  h1,
+  h3 {
+    opacity: 0;
+    transition: opacity 1.25s ease-in-out;
+    -moz-transition: opacity 1.25s ease-in-out;
+    -webkit-transition: opacity 1.25s ease-in-out;
+  }
+
+  &.on h1,
+  &.on h3 {
+    opacity: 1;
+  }
+
+  .svg-wrapper {
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.pulse-arrow {
+  bottom: 30px;
+  display: block;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  i {
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+    width: 26px;
+    @include animation(pulsate 1s ease-in);
+    @include animation-iteration-count(infinite);
+
+    &:before {
+      content: '\f107';
+      color: #000;
+      font-size: 40px;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+}
+@-webkit-keyframes pulsate {
+  0% {
+    @include scale(1.1, 1.1);
+    opacity: .0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    @include scale(.6, .6);
+    opacity: .0;
+  }
+}
+
+.few-statistics-section {
+  background: transparent;
+  color: #fff;
+
+  .carousel-inner {
+    height: 500px;
+  }
+
+  .content-section {
+    background: transparent;
+    z-index: 20000;
+    position: absolute;
+    width: 100%;
+  }
+
+  .text-center {
+    color: #fff;
+  }
+
+  .video-wraper {
+    z-index: 10000;
+    background-color: rgba(20, 28, 38, .5);
+  }
+
+  video {
+    position: relative;
+    top: -50%;
+    z-index: -200;
+  }
+}
+
+.blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+}
+
+@import 'sprites';

@@ -1,0 +1,55 @@
+{% extends 'VifeedFrontendBundle:Private:layout.html.twig' %}
+
+{% block app %}publisherApp{% endblock %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  {% stylesheets output='css/*.css' filter='cssrewrite,?yui_css'
+    '@VifeedFrontendBundle/Resources/assets/sass/publisher.scss' %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  <script type="text/javascript" src='http://vkontakte.ru/js/api/openapi.js'></script>
+  {% javascripts output='js/*.js'
+    '@publisher_template'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/resources/platforms.js'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/resources/vk.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/resources/wallets.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/resources/withdrawals.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/publisher.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/home-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/new-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/list-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/campaign-list-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/campaign-video-preview-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/finance-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/finance-details-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/wallet-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/wallet-new-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/wallet-list-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/widget-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/controllers/withdrawal-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher/services/campaign-paginator.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/publisher-app.coffee' %}
+  <script type="text/javascript" src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+{% endblock %}
+
+{% block navbar %}
+  <ul class="nav navbar-nav">
+    <li><a href="/#/platform/new">Новая площадка</a></li>
+    <li><a href="/#/platform/list">Мои площадки</a></li>
+    <li><a href="/#/campaign/list">Доступные кампании</a></li>
+    <li><a href="/#/finance">Финансы</a></li>
+  </ul>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div ng-view></div>
+  </div>
+{% endblock %}
+

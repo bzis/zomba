@@ -1,0 +1,33 @@
+karser_robokassa_callback:
+    pattern:  /payment/robokassa/callback
+    defaults: { _controller: KarserRobokassaBundle:Robokassa:callback }
+
+chewbacco_payment_qiwi_wallet:
+    resource: "@ChewbaccoPaymentQiwiWalletBundle/Resources/config/routing.yml"
+    prefix:   /payment/qiwi_wallet
+
+payment_completed:
+    pattern:  '/#/payment/completed'
+    defaults:
+        _controller: VifeedPaymentBundle:Frontend\Payment:index
+    methods: [GET]
+    options:
+        expose: true
+
+payment_declined:
+    pattern:  '/#/payment/declined'
+    defaults:
+        _controller: VifeedPaymentBundle:Frontend\Payment:index
+    methods: [GET]
+    options:
+        expose: true
+
+order_bill:
+    pattern: '/orders/{id}/bill'
+    defaults:
+        _controller: VifeedPaymentBundle:Frontend\Payment:bill
+    methods: [GET]
+    requirements:
+        id:  \d+
+    options:
+        expose: true

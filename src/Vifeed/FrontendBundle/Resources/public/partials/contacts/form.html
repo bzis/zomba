@@ -1,0 +1,103 @@
+<section class="content-section hs-container">
+  <div ng-show="isSent" class="row">
+    <h3 class="text-center">Спасибо за ваше сообщение! Мы постараемся ответить вам как можно быстрее</h3>
+  </div>
+  <alert ng-show="validationErrors.length" close="alertClose();">
+    <h4>Не удалось отправить сообщение</h4>
+    <ul><li ng-repeat="errorMessage in validationErrors">{{errorMessage}}</li></ul>
+  </alert>
+  <form ng-hide="isSent" class="form-horizontal" submit-form="sendMessage()" name="contacts_form" novalidate>
+    <div class="row">
+      <div class="form-group">
+        <label for="name" class="col-xs-push-1 col-xs-3 control-label">Имя</label>
+        <div class="col-xs-7 col-xs-push-1">
+          <input
+            type="text"
+            class="form-control input-lg"
+            id="name"
+            name="name"
+            ng-model="contacts.name"
+            ng-required="true"
+            ng-maxlength="30"
+            placeholder="Укажите ваше имя">
+          <error-message
+            for="name"
+            required="Вы забыли указать ваше имя"
+            maxlength="Максимальное количество допустимых символов равно 30">
+          </error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-xs-push-1 col-xs-3 control-label">Email</label>
+        <div class="col-xs-7 col-xs-push-1">
+          <input
+            type="email"
+            class="form-control input-lg"
+            id="email"
+            name="email"
+            ng-model="contacts.email"
+            ng-required="true"
+            ng-maxlength="100"
+            placeholder="Укажите ваш email">
+          <error-message
+            for="email"
+            required="Вы забыли указать ваш email адрес"
+            email="Похоже, вы ввели неверный email адрес"
+            maxlength="Максимальное количество допустимых символов равно 100">
+          </error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="col-xs-push-1 col-xs-3 control-label">Мобильный телефон</label>
+        <div class="col-xs-7 col-xs-push-1">
+          <input
+            type="text"
+            class="form-control input-lg"
+            id="phone"
+            name="mobile_phone"
+            ng-model="contacts.phone"
+            ui-mask="+7 (999) 999-99-99">
+          <error-message
+            for="mobile_phone"
+            mask="Вы ввели неверный телефон">
+          </error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message" class="col-xs-push-1 col-xs-3 control-label">Сообщение</label>
+        <div class="col-xs-7 col-xs-push-1">
+          <textarea
+            class="form-control"
+            name="message"
+            id="message"
+            textarea-limiter
+            ng-model="contacts.message"
+            ng-trim="false"
+            ng-maxlength="1024"
+            ng-required="true"
+            rows="5">
+          </textarea>
+          <error-message for="message" required="Вы забыли указать сообщение"></error-message>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <div class="col-xs-10 col-xs-push-1 col-xs-pull-1 col-sm-3 col-sm-push-4 col-sm-pull-1">
+          <button
+            type="submit"
+            ladda="loadingProgress"
+            class="btn btn-lg btn-primary btn-block uppercase ladda-button"
+            data-style="zoom-out"
+            analytics-on
+            analytics-event="Contact us via feedback form"
+            analytics-category="Contact us">
+            <span class="ladda-label">
+              <strong>Отправить</strong>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,62 @@
+vifeed_frontend_homepage:
+    pattern:  /
+    defaults: { _controller: VifeedFrontendBundle:Default:index }
+
+product_overview:
+    pattern: /product-overview
+    defaults: { _controller: VifeedFrontendBundle:Default:productOverview }
+
+for_companies:
+    pattern:  /for-companies
+    defaults: { _controller: VifeedFrontendBundle:Default:forCompanies }
+
+for_movies:
+    pattern:  /for-movies
+    defaults: { _controller: VifeedFrontendBundle:Default:forMovies }
+
+for_musicians:
+    pattern:  /for-musicians
+    defaults: { _controller: VifeedFrontendBundle:Default:forMusicians }
+
+for_games:
+    pattern:  /for-games
+    defaults: { _controller: VifeedFrontendBundle:Default:forGames }
+
+for_partners:
+    pattern:  /for-partners
+    defaults: { _controller: VifeedFrontendBundle:Default:forPartners }
+    methods: [GET]
+    options:
+        expose: true
+
+for_publishers:
+    pattern:  /for-publishers
+    defaults: { _controller: VifeedFrontendBundle:Default:forPublishers }
+
+design_guide:
+    pattern:  /design-guide
+    defaults: { _controller: VifeedFrontendBundle:DesignGuide:index }
+
+about_us:
+    pattern:  /about-us
+    defaults: { _controller: VifeedFrontendBundle:Default:aboutUs }
+
+press_about_us:
+    pattern:  /press-about-us
+    defaults: { _controller: VifeedFrontendBundle:Default:pressAboutUs }
+
+contacts:
+    pattern:  /contacts
+    defaults: { _controller: VifeedFrontendBundle:Default:contacts }
+    methods: [GET]
+    options:
+        expose: true
+
+information:
+    pattern:  /information
+    defaults: { _controller: VifeedFrontendBundle:Default:information }
+    methods: [GET]
+
+faq:
+    pattern:  /faq
+    defaults: { _controller: VifeedFrontendBundle:Faq:index }

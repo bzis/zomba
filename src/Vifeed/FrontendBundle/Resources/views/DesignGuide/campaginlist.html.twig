@@ -1,0 +1,68 @@
+<h1>Открытые кампании</h1>
+<hr>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="btn-group">
+      <button class="btn btn-lg btn-primary">
+        <strong><i class="fa fa-rocket"></i> Gamepilot</strong>
+        </button>
+        <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      </div>
+      <button class="btn btn-lg btn-primary">
+      	<strong>Настроить авто-виджет</strong>
+      </button>
+    </div>
+    <div class="col-md-4">
+      <div class="btn-group pull-right">
+      <button class="btn btn-lg btn-primary">
+        <strong><i class="fa fa-globe"></i> Страна</strong>
+        </button>
+        <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      </div>
+	</div>
+  </div>
+<hr>
+
+<div class="">
+<hr >
+<div class="list-group campagin-list">
+  {%  for i in 0..10 %}
+  <a href="#" class="list-group-item">
+    <div class="sparkbars">
+      <div class="budget" style="width: 80%;"></div>
+      <div class="budget-used" style="width: 20%;"></div>
+    </div>
+    <div class="list-group-item-wrapper row">
+    <div class="col-md-1">
+      <img class="media-object" src="http://img.youtube.com/vi/kRUNOwygDGU/hqdefault.jpg" width="70"
+      height="55" alt="">
+    </div>
+    <div class="col-md-11">
+    <h4 class="list-group-item-heading">Captain Stubing Shares the Love Down Under
+      <span class="small pull-right">ставка: <span class="label label-info">10 <i class="fa fa-rub"></i></span></span>
+      <span class="small pull-right">бюджет: <span class="label label-info">100 000 <i class="fa fa-rub"></i></span></span>
+    </h4>
+    <p class="list-group-item-text col-md-8">...</p>
+	<button type="button" class="btn btn-xs btn-primary pull-right"><i class="fa fa-undo"></i> включить</button>
+    </div>
+  </div>
+  </a>
+  {% endfor %}
+
+
+</div>
+<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>

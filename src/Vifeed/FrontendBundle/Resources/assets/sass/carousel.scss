@@ -1,0 +1,484 @@
+// compass
+@import 'compass/css3/transition';
+
+// CUSTOMIZE THE CAROUSEL
+//--------------------------------------------------
+
+// Carousel base class
+
+$carousel-control-icon-height: 100px;
+$carousel-control-icon-width: $carousel-control-icon-height/2;
+$carousel-control-icon-size: 60px;
+$carousel-background: #182228;
+
+video.video-background {
+  height: auto;
+  left: -5%;
+  min-height: 110%;
+  min-width: 110%;
+  position: absolute;
+  width: auto;
+  z-index: -100;
+
+  @media (min-width: $screen-xs-max) {
+    top: -10%;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    top: -40%;
+  }
+}
+
+.video-wraper {
+  background-image: url('/bundles/vifeedfrontend/images/carousel/pattern.png');
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.carousel {
+  background-color: $carousel-background;
+
+  .carousel-control {
+    z-index: 3;
+
+    &:focus {
+      outline: 0;
+    }
+
+    .icon-prev,
+    .icon-next {
+      top: 234px - 60/2;
+
+      &:before {
+        // padding-top: $carousel-control-icon-height/2 - 15px;
+        color: #fff;
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+
+    .icon-prev {
+      // margin-left: -5px;
+      // height: $carousel-control-icon-height;
+      // width: $carousel-control-icon-width;
+      // @include border-radius(0 $carousel-control-icon-height $carousel-control-icon-height 0);
+      // background: #fff;
+      left: 60px;
+
+      &:before {
+        @include text-shadow(none);
+        content: '\f104';
+        font-size: 60px;
+      }
+    }
+
+    .icon-next {
+      // margin-right: -5px;
+
+      // height: $carousel-control-icon-height;
+      // width: $carousel-control-icon-width;
+      // @include border-radius($carousel-control-icon-height 0 0 $carousel-control-icon-height);
+      // background: #fff;
+      right: 60px;
+
+      &:before {
+        @include text-shadow(none);
+        content: '\f105';
+        font-size: 60px;
+      }
+    }
+  }
+
+  // Declare heights because of positioning of img element
+  .item {
+    background-color: $carousel-background;
+
+    @media (min-width: $screen-xs-max) {
+      height: 312px;
+    }
+    @media (min-width: $screen-sm-min) {
+      height: 372px;
+    }
+    @media (min-width: $screen-md-min) {
+      height: 467px;
+    }
+    @media (min-width: $screen-lg-min) {
+      height: 467px;
+    }
+
+    .layer {
+      height: 100%;
+      width: 100%;
+    }
+
+    .music-left,
+    .music-right,
+    .partners-left,
+    .partners-right,
+    .movies-left,
+    .movies-right,
+    .games-left,
+    .games-right,
+    .companies-left,
+    .companies-right,
+    .publishers-left,
+    .publishers-right {
+      background-size: auto 100% !important;
+      height: 100%;
+      position: absolute;
+      width: 33%;
+    }
+
+    .main-left,
+    .main-right {
+      background-repeat: no-repeat !important;
+      background-size: auto 100% !important;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+
+    .hypnosis-left,
+    .hypnosis-right {
+      background-repeat: no-repeat !important;
+      background-size: auto 560px !important;
+      height: 560px;
+      position: absolute;
+      width: 33%;
+    }
+
+    .music-left {
+      background: url('/bundles/vifeedfrontend/images/carousel/music-left.png');
+      background-position: right;
+      left: -3%;
+    }
+
+    .music-right {
+      background: url('/bundles/vifeedfrontend/images/carousel/music-right.png');
+      background-position: left;
+      right: -3%;
+    }
+
+    .publishers-left,
+    .partners-left {
+      background: url('/bundles/vifeedfrontend/images/carousel/partners-left.png');
+      background-position: right;
+      left: -3%;
+    }
+
+    .publishers-right,
+    .partners-right {
+      background: url('/bundles/vifeedfrontend/images/carousel/partners-right.png');
+      background-position: left;
+      right: -3%;
+    }
+
+    .movies-left {
+      background: url('/bundles/vifeedfrontend/images/carousel/movies-left.png');
+      background-position: right;
+      left: -3%;
+    }
+
+    .movies-right {
+      background: url('/bundles/vifeedfrontend/images/carousel/movies-right.png');
+      background-position: left;
+      right: -3%;
+    }
+
+    .games-left {
+      background: url('/bundles/vifeedfrontend/images/carousel/games-left.png');
+      background-position: right;
+      left: -3%;
+    }
+
+    .games-right {
+      background: url('/bundles/vifeedfrontend/images/carousel/games-right.png');
+      background-position: left;
+      right: -3%;
+    }
+
+    .companies-left {
+      background: url('/bundles/vifeedfrontend/images/carousel/companies-left.png');
+      background-position: right;
+      left: -3%;
+    }
+
+    .companies-right {
+      background: url('/bundles/vifeedfrontend/images/carousel/companies-right.png');
+      background-position: left;
+      right: -3%;
+    }
+
+    .main-left {
+      background: url('/bundles/vifeedfrontend/images/carousel/main-left.png');
+      background-position: right;
+      right: 50%;
+    }
+
+    .main-right {
+      background: url('/bundles/vifeedfrontend/images/carousel/main-right.png');
+      background-position: left;
+      left: 50%;
+    }
+
+    .hypnosis-left {
+      background: url('/bundles/vifeedfrontend/images/carousel/hypnosis-left.gif');
+      background-position: right;
+      left: -10%;
+      top: -5%;
+    }
+
+    .hypnosis-right {
+      background: url('/bundles/vifeedfrontend/images/carousel/hypnosis-right.gif');
+      background-position: left;
+      right: -10%;
+      top: -5%;
+    }
+
+    .layer-hypnosis {
+      z-index: -1;
+    }
+}
+
+// }
+  // img {
+  //   // top: -75%;
+  //   // left: -75%;
+  //   // left: 0;
+  //   min-height: 150%;
+  //   min-width: 150%;
+
+  //   // position: absolute;
+  //   // top: 0;
+  //   // @media (min-width: $screen-xs-max) {
+  //   //   height: 312px;
+  //   // }
+  //   // @media (min-width: $screen-sm-min) {
+  //   //   height: 312px;
+  //   // }
+  //   // @media (min-width: $screen-md-min) {
+  //   //   height: 372px;
+  //   // }
+  //   // @media (min-width: $screen-lg-min) {
+  //   //   height: 372px;
+  //   // }
+  // }
+
+}
+
+// Since positioning the image, we need to help out the caption
+.carousel-caption {
+  font-weight: lighter;
+  left: 15%;
+  right: 15%;
+  top: 20px;
+  z-index: 10;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 15px;
+  }
+
+   div {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    //   position: absolute;
+    //   top: 33%;
+  }
+
+  article {
+    // background-color: $navbar-inverse-bg;
+    font-size: 18px;
+    height: 100%;
+    padding: 30px;
+    padding-top: 0;
+    // text-align: left;
+    // text-shadow: 2px 2px 0 #000;
+    h1,
+    h2,
+    h3 {
+      color: #fff;
+    }
+
+    h1 {
+      // font-family: $font-family-serif;
+      font-size: 60px;
+      margin-top: 0;
+    }
+
+    .btn {
+      // margin-top: 30px;
+      // position: absolute;
+      @include box-shadow(none);
+      background-color: #fff;
+      border: solid 3px #fff;
+      color: #0f584f;
+      font-size: 1.5em;
+      font-weight: lighter;
+      padding: .8em 2em;
+
+      &:hover {
+        background-color: $carousel-background;
+        border-color: #0f584f;
+        color: #fff;
+      }
+      @media (max-width: $screen-sm-min) {
+        padding: .4em .8em;
+        font-size: large;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      h1 {
+        font-size: 42px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: $screen-lg-min) {
+      h1 {
+        font-size: 3em;
+      }
+
+      p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+
+.carousel-indicators {
+  left: 15%;
+  padding-right: 15px;
+  right: 15%;
+  text-align: right;
+  width: 100%;
+
+  @media (max-width: $screen-lg-min) {
+    display: none;
+  }
+
+}
+
+#header-wrapper {
+  position: relative;
+  background: #137064;
+
+  @include background(
+    image-url('/bundles/vifeedfrontend/images/carousel/header.svg'),
+    linear-gradient(top left, #16a2ba, #16ba77)
+    // linear-gradient(top left, #137064, #1BA392)
+  );
+
+  // +linear-gradient(#f08c89, #F2B69D, 'http://html5up.net/uploads/demos/telephasic/css/images/header.svg');
+  // background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg');
+}
+
+#header-wrapper:before {
+  background: url('/bundles/vifeedfrontend/images/carousel/overlay.png');
+  background-size: 128px 128px;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel.fade {
+  opacity: 1;
+
+  .item {
+    display: block !important;
+    left: 0 !important;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    @include transition(opacity .7s ease-in-out);
+    width: 100%;
+    z-index: 1;
+
+    &:first-child {
+      position: relative;
+      top: auto;
+    }
+
+    &.active {
+      opacity: 1;
+      z-index: 2;
+      @include transition(opacity .7s ease-in-out);
+    }
+  }
+}
+
+
+//Adaptive overrides
+#promo-video {
+  display: none;
+  width: 100%;
+}
+
+@media screen and (min-width: $screen-md) {
+  .carousel-caption div {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: $screen-sm-max) {
+  .mid-carousel-inner > .carousel-inner {
+    height: 1200px !important;
+  }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  .carousel .item {
+    height: auto;
+    .layer-hypnosis {
+      display: none;
+    }
+    .layer-images {
+      .layer-images-right {
+        display: none;
+      }
+      .layer-images-left {
+        float: none;
+        position: relative;
+        margin: auto;
+        width: 100%;
+        opacity: 0.5;
+      }
+    }
+  }
+  .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+  }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  .carousel-wrap.home {
+    .carousel {
+      display: none;
+    }
+    #promo-video {
+      display: block;
+    }
+  }
+  .carousel-caption article h1 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+}

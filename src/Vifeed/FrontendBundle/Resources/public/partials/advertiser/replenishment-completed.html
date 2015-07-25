@@ -1,0 +1,23 @@
+<h1>Пополнение счета</h1>
+<hr>
+<div class="row">
+  <div ng-switch on="state">
+    <div ng-switch-when="loading">
+      <alert><p>Минутку. Идет проверка пополнения вашего счета.</p></alert>
+    </div>
+    <div ng-switch-when="success">
+      <alert type="success">
+        <p>Ваш баланс успешно пополнен на сумму {{amount}} <i class="fa fa-rub"></i> (Номер платежа: {{orderId}})</p>
+      </alert>
+    </div>
+    <div ng-switch-when="waiting">
+      <alert><p>Ваш счет пока не был пополнен. Если у вас есть вопросы, пожалуйста, обратитесь в саппорт.</p></alert>
+    </div>
+    <div ng-switch-when="error">
+      <alert type="danger">
+        <p>Ошибка пополнения счета. Получены неверные данные. Если у вас есть вопросы, пожалуйста, обратитесь в саппорт.</p>
+      </alert>
+    </div>
+  </div>
+</div>
+<hr>

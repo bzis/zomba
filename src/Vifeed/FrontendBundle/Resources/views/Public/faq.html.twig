@@ -1,0 +1,63 @@
+{% extends 'VifeedFrontendBundle:Public:layout.html.twig' %}
+
+{% block content %}
+  <div class="container">
+    <div class="lead col-md-12">
+      <h1>FAQ <small>Часто Задаваемые Вопросы</small></h1>
+    </div>
+    <tabset>
+      <tab class="col-md-6">
+        <tab-heading>
+          <h4 class="uppercase" style="text-align: center">
+            <strong>Для рекламодателей</strong>
+          </h4>
+        </tab-heading>
+        <br>
+        <div class="lead col-md-12">
+          <dl class="panel-group" id="faq-advertiser">
+            {% for key, item in faq['advertiser'] %}
+              <div class="panel panel-default">
+                <dt class="panel-heading">
+                  <dfn class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faq-advertiser" href="#collapse-faq-advertiser{{ key }}">{{ item['q'] }}</a>
+                  </dfn>
+                </dt>
+                <dd id="collapse-faq-advertiser{{ key }}" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    {{ item['a'] }}
+                  <div>
+                </dd>
+              </div>
+            {% endfor %}
+          </dl>
+        </div>
+      </tab>
+      <tab class="col-md-6">
+        <tab-heading>
+          <h4 class="uppercase" style="text-align: center">
+            <strong>Для владельцев площадок</strong>
+          </h4>
+        </tab-heading>
+        <br>
+        <div class="lead col-md-12">
+          <dl class="panel-group" id="faq-publisher">
+            {% for key, item in faq['publisher'] %}
+              <div class="panel panel-default">
+                <dt class="panel-heading">
+                  <dfn class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faq-publisher" href="#collapse-faq-publisher{{ key }}">{{ item['q'] }}</a>
+                  </dfn>
+                </dt>
+                <dd id="collapse-faq-publisher{{ key }}" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    {{ item['a'] }}
+                  <div>
+                </dd>
+              </div>
+            {% endfor %}
+          </dl>
+        </div>
+      </tab>
+    </tabset>
+  </div>
+{% endblock %}

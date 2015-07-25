@@ -1,0 +1,9 @@
+campaigns:
+    type: rest
+    resource: '@VifeedCampaignBundle/Controller/Api/CampaignController.php'
+    name_prefix: api_
+
+stats:
+    type: rest
+    resource: '@VifeedCampaignBundle/Controller/Api/StatisticsController.php'
+    name_prefix: api_

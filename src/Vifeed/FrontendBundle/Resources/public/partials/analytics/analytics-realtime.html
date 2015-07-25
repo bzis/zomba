@@ -1,0 +1,250 @@
+<div class="analytics">
+  <h1>Аналитика кампаний <small>в реальном времени</small></h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="btn-group btn-block">
+        <button class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" date-range ng-model="period" ranges="ranges" locale="translation" on-change="changeAnalyticsPeriod">
+          <strong><i class="fa fa-calendar"></i> Режим реального времени</strong>
+          <span class="caret"></span>
+        </button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="col-md-6 pull-right">
+        <a href="javascript:void(0);" ng-click="videoPreview(chosenCampaign, $event)">
+          <img
+            ng-src="{{chosenCampaign.previewUrl}}"
+            width="65"
+            height="45"
+            alt="{{chosenCampaign.title}}"
+            tooltip="Нажмите на изображение, чтобы просмотреть видео ролик"
+            tooltip-animation="false"
+            tooltip-placement="left">
+        </a>
+        <button type="button" class="btn btn-lg btn-primary dropdown-toggle chose-campaign pull-right" data-toggle="dropdown" ng-disabled="isLoading">
+          <strong><i class="fa fa-list-ul"></i></strong>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li ng-repeat="campaign in campaigns track by campaign.id">
+            <a href="javascript:void(0);" ng-click="changeCampaign(campaign)">{{campaign.title}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Статистика кампании "{{chosenCampaign.title}}"</h3>
+    </div>
+  </div>
+  <hr>
+  <div class="row table-panel">
+    <div class="col-md-4 table-cell-panel">
+      <div class="panel panel-default cell-panel">
+        <div class="panel-heading">
+          <strong class="panel-title">Смотрят сейчас</strong>
+        </div>
+        <table class="table table-hover">
+          <tr>
+            <td class="text-center watching-now"><span class="right-now-value ng-binding">{{watchingNow}}</span></td>
+          </tr>
+          <tr>
+            <td>Просмотров за все время <span class="pull-right">{{chosenCampaign.paidViews}}</span></td>
+          </tr>
+          <tr>
+            <td>Дата создания <span class="pull-right">{{chosenCampaign.createdAt | amDateFormat: 'LL'}}</span></td>
+          </tr>
+          <tr>
+            <td>Статус <span class="pull-right">{{chosenCampaign.statusHuman}}</span></td>
+          </tr>
+          <tr>
+            <td>Цена за просмотр <span class="pull-right">{{chosenCampaign.maxBid}} <i class="fa fa-rub"></i></span></td>
+          </tr>
+          <tr>
+            <td>Бюджет кампании <span class="pull-right">{{chosenCampaign.totalBudget}} <i class="fa fa-rub"></i></span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-8 table-cell-panel">
+      <div class="panel panel-default cell-panel">
+        <div class="panel-heading">
+          <strong class="panel-title">
+            График просмотров в режиме реального времени
+          </strong>
+        </div>
+        <div style="padding:0 1px;">
+          <highchart id="chart" config="chartConfig"></highchart>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default cell-panel">
+        <div class="panel-heading">
+          <strong class="panel-title">
+            Карта просмотров в режиме реального времени
+          </strong>
+        </div>
+        <google-map center="map.center" zoom="map.zoom" draggable="true" options="map.options" events="map.events" control="map.control">
+          <layer namespace="visualization" type="HeatmapLayer" show="true" options="heatmap.options" onCreated="heatLayerCallback"></layer>
+        </google-map>
+      </div>
+    </div>
+  </div>
+    <div class="row table-panel">
+    <div class="col-md-4 col-sm-12 table-cell-panel">
+      <div class="panel panel-default cell-panel">
+        <div class="panel-heading">
+          <strong class="panel-title">Youtube</strong>
+          <small class="pull-right">{{chosenCampaign.statistics.updatedAt | amDateFormat: 'LL'}}</small>
+        </div>
+        <table class="table table-hover">
+          <tr>
+            <td class="col-md-1">
+              <i class="fa fa-eye"></i>
+            </td>
+            <td>
+              Просмотров
+              <span class="pull-right">{{chosenCampaign.statistics.views}}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa fa-thumbs-o-up"></i>
+            </td>
+            <td>
+              Лайков
+              <span class="pull-right">{{chosenCampaign.statistics.likes}}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa fa-thumbs-o-down"></i>
+            </td>
+            <td>
+              Дизлайков
+              <span class="pull-right">{{chosenCampaign.statistics.dislikes}}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa fa-heart-o"></i>
+            </td>
+            <td>
+              В избранном
+              <span class="pull-right">{{chosenCampaign.statistics.favorites}}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa fa-comments-o"></i>
+            </td>
+            <td>
+              Комментариев
+              <span class="pull-right">{{chosenCampaign.statistics.comments}}</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-8 col-sm-12 table-cell-panel">
+      <div class="panel panel-default cell-panel">
+        <div class="panel-heading">
+          <strong class="panel-title">Социальная активность</strong>
+          <small class="pull-right">{{chosenCampaign.socialActivity.updatedAt | amDateFormat: 'LL'}}</small>
+        </div>
+        <table class="table table-hover">
+          <tbody>
+            <th class="text-center">
+              Площадки
+            </th>
+            <!--th class="text-center">
+              Размещение
+            </th-->
+            <th class="text-center">
+              Лайки
+            </th>
+            <th class="text-center">
+              Репосты
+            </th>
+          </tbody>
+          <tr>
+            <td class="social-icons text-center">
+              <i class="fa fa-facebook" tooltip="facebook"></i>
+            </td>
+            <!--td class="text-center">
+              &mdash;
+            </td-->
+            <td class="text-center">
+              {{chosenCampaign.socialActivity.fb.likes}}
+            </td>
+            <td class="text-center">
+              {{chosenCampaign.socialActivity.fb.shares}}
+            </td>
+          </tr>
+          <tr>
+            <td class="social-icons text-center">
+              <i class="fa fa-vk" tooltip="vkontakte"></i>
+            </td>
+            <!--td class="text-center">
+              &mdash;
+            </td-->
+            <td class="text-center">
+              {{chosenCampaign.socialActivity.vk.likes}}
+            </td>
+            <td class="text-center">
+              {{chosenCampaign.socialActivity.vk.shares}}
+            </td>
+          </tr>
+          <tr>
+            <td class="social-icons text-center">
+              <i class="fa fa-google-plus" tooltip="google plus"></i>
+            </td>
+            <!--td class="text-center">
+              &mdash;
+            </td-->
+            <td class="text-center">
+              {{chosenCampaign.socialActivity.gplus.likes}}
+            </td>
+            <td class="text-center">
+              {{chosenCampaign.socialActivity.gplus.shares}}
+            </td>
+          </tr>
+          <!--tr>
+            <td class="social-icons text-center">
+              <i class="fa fa-link" tooltip="сайты и блоги"></i>
+            </td>
+            <td class="text-center">
+              &mdash;
+            </td>
+            <td class="text-center">
+              &mdash;
+            </td>
+            <td class="text-center">
+              &mdash;
+            </td>
+          </tr-->
+          <tfoot>
+            <th class="text-center">
+              итого:
+            </th>
+            <!--th class="text-center">
+              &mdash;
+            </th-->
+            <th class="text-center">
+              {{chosenCampaign.socialActivity.total.likes}}
+            </th>
+            <th class="text-center">
+              {{chosenCampaign.socialActivity.total.shares}}
+            </th>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

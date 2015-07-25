@@ -1,0 +1,30 @@
+<h1>Мои площадки</h1>
+<hr>
+<table class="table campaigns-table table-striped" ng-show="platforms.length">
+  <thead>
+    <tr>
+      <th class="col-md-5">Название</th>
+      <th class="col-md-5">Линк</th>
+      <th class="col-md-2">Управление</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="platform in platforms track by platform.id">
+      <td>{{platform.name}}</td>
+      <td><a ng-href="http://{{platform.url}}" target="_blank">{{platform.url}}</a></td>
+      <td>
+        <div class="btn-group">
+          <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
+            выберите действие <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0);" ng-click="deletePlatform(platform)">Удалить</a></li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div ng-hide="platforms.length">
+  <h4>У вас нет ни одной площадки. Перейдите в раздел "<a href="/#/platform/new">Новая площадка</a>", чтобы добавить свои рекламные площадки.</h4>
+</div>

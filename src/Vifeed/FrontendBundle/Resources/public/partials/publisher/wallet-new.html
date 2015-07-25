@@ -1,0 +1,41 @@
+<h1>Новый кошелек</h1>
+<hr>
+<form class="form-horizontal" submit-form="createWallet()" name="wallet_form" for="wallet" novalidate>
+  <div class="row">
+    <alert type="info"><p>{{wallet.hint}}</p></alert>
+  </div>
+  <div class="row">
+    <div class="form-group">
+      <label for="wallet-type" class="col-md-2 control-label">Тип кошелька</label>
+      <div class="col-md-2">
+        <div class="btn-group">
+          <button type="button" id="wallet-type" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            {{wallet.name}} <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li ng-repeat="wallet in walletList track by wallet.type">
+              <a href="javascript:void(0);" ng-click="changeWallet(wallet)">{{wallet.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="wallet-number" class="col-md-2 control-label">Номер кошелька</label>
+      <div class="col-md-4">
+        <input type="text" class="form-control" id="wallet-number" name="wallet_number" ng-model="wallet.number" ng-required="true" ng-pattern="wallet.format">
+        <error-message
+          for="wallet_number"
+          required="Вы забыли указать номер кошелька."
+          pattern="Похоже, что вы указали неверный номер кошелька. {{wallet.pattern}}"></error-message>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-2">
+      <button type="submit" id="add-wallet-button" class="btn btn-primary btn-block">Добавить кошелек</button>
+    </div>
+  </div>
+</form>
+<hr>

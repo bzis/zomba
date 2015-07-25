@@ -1,0 +1,64 @@
+home_page:
+    pattern: /
+    defaults:
+        _controller: VifeedFrontendBundle:Default:index
+    options:
+        expose: true
+
+sign_up_page:
+    pattern:  /sign-up/
+    defaults:
+        _controller: VifeedUserBundle:Frontend\User:index
+    methods: [GET]
+    options:
+        expose: true
+
+fos_user_registration_confirm:
+    pattern:  '/sign-up/#/confirm/{token}'
+    defaults:
+        _controller: VifeedUserBundle:Frontend\User:index
+    methods: [GET]
+    options:
+        expose: true
+
+fos_user_registration_check_email:
+    pattern: /check-email
+    defaults:
+        _controller: 'FOSUserBundle:Registration:checkEmail'
+
+password_page:
+    pattern:  /password/
+    defaults:
+        _controller: VifeedUserBundle:Frontend\Password:index
+    methods: [GET]
+    options:
+        expose: true
+
+sign_up:
+    pattern: /api/users
+    defaults:
+        _controller: VifeedUserBundle:Api\Registration:putUsers
+    methods: [PUT]
+    options:
+        expose: true
+
+sign_in:
+    path: /api/users/login_check
+    defaults:
+        _controller: FOSUserBundle:Security:check
+    methods: [POST]
+    options:
+        expose: true
+
+sign_out:
+    pattern: /api/users/token
+    defaults:
+        _controller: VifeedUserBundle:Api\Security:deleteUsersToken
+    methods: [DELETE]
+    options:
+        expose: true
+
+fos_user_resetting_reset:
+    pattern: /password/#/update?token={token}
+    defaults:
+        _controller: VifeedFrontendBundle:Default:index

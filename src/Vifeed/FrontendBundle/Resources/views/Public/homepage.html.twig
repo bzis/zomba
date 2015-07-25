@@ -1,0 +1,13 @@
+{% extends 'VifeedFrontendBundle:Public:layout.html.twig' %}
+
+{% block carousel %}
+  {{ render(controller('VifeedFrontendBundle:Carousel:index', {'enabledSlides': ['main', 'music', 'movies', 'games', 'companies', 'partners'] })) }}
+{% endblock %}
+
+{% block content %}
+  {% include 'VifeedFrontendBundle:Public:how-its-work.html.twig' %}
+  {% include 'VifeedFrontendBundle:Public:few-statistics.html.twig' %}
+  {% include 'VifeedFrontendBundle:Public:where-will-be-seen.html.twig' %}
+  {% include 'VifeedFrontendBundle:Public:brands.html.twig' %}
+  {% include 'VifeedFrontendBundle:Public:_press-about-us.html.twig' %}
+{% endblock %}

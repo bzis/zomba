@@ -1,0 +1,37 @@
+// Inverted navbar
+//
+// Reset inverted navbar basics
+$navbar-inverse-bg: #141C26;
+//$navbar-inverse-color: #1ba392;
+$navbar-inverse-link-color: #1ba392;
+$navbar-inverse-link-active-bg: $navbar-inverse-link-color;
+
+//buttons
+$btn-default-bg: #ebebeb;
+$btn-primary-bg: #1ba392;
+
+$link-color: #16a2ba;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-lighten-color:      lighten($link-color, 15%) !default;
+
+
+//== Modals
+//
+//##
+
+//** Modal backdrop opacity
+$modal-backdrop-opacity: .85;
+
+// Typography
+// -------------------------
+$font-family-sans-serif:  'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+// $font-family-serif:       'Lora', "Times New Roman", Times, serif !default;
+// $headings-font-family: $font-family-serif;
+//$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
+//$font-family-base:        $font-family-sans-serif !default;
+
+// Iconography
+// -------------------------
+$icon-font-path:          '//stage-cdn.vifeed.co/fonts/';
+
+@import '../../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/variables';

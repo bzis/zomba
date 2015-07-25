@@ -1,0 +1,31 @@
+#zmbk-btn {
+  background-color: #fff;
+  border: solid 1px #fff;
+  color: #137064;
+  cursor: pointer;
+  font-weight: lighter;
+  font-size: 24px;
+  margin: -34px 0 0;
+  padding: .8em 2em;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 2000;
+}
+
+#zmbk-container h3 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+#zmbk-container {
+  background-image: url("/bundles/vifeedvideopromo/images/no-signal.jpg");
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    background-image: url("/bundles/vifeedvideopromo/images/no-signal-retina.jpg");
+  }
+  height: 671px;
+  background-size: 100% auto;
+  vertical-align: middle;
+  text-align: center;
+}

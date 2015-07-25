@@ -1,0 +1,25 @@
+{% extends 'VifeedFrontendBundle:Default:layout.html.twig' %}
+
+{% block app %}userApp{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  {% javascripts output='js/*.js' filter='?uglifyjs2'
+    '@VifeedUserBundle/Resources/assets/js/user-app.coffee'
+    '@VifeedUserBundle/Resources/assets/js/controllers/signup-ctrl.coffee'
+    '@VifeedUserBundle/Resources/assets/js/controllers/confirm-ctrl.coffee'
+    '@VifeedUserBundle/Resources/assets/js/controllers/password-forgot-ctrl.coffee'
+    '@VifeedUserBundle/Resources/assets/js/controllers/password-update-ctrl.coffee' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+{% endblock %}
+
+{% block navbar %}
+  {% include 'VifeedFrontendBundle:Public:navbar.html.twig' %}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div ng-view></div>
+  </div>
+{% endblock %}

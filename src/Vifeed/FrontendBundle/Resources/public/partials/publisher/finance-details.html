@@ -1,0 +1,88 @@
+<h1>Мои финансы <small>доход по дням</small></h1>
+<hr>
+<div class="row">
+  <div class="col-md-8">
+    <div class="btn-group btn-block">
+      <button class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" date-range ng-model="period" ranges="ranges" locale="translation" on-change="changeFinanceDetailPeriod">
+        <strong><i class="fa fa-calendar"></i> {{period.startDate | amDateFormat: 'LL'}} - {{period.endDate | amDateFormat: 'LL'}}</strong>
+        <span class="caret"></span>
+        <span class="sr-only">Показать календарь</span>
+      </button>
+    </div>
+    <hr>
+    <h3>Доходы с площадки &laquo;{{platform.name}}&raquo;</h3>
+    <button class="btn btn-md btn-default" ng-click="changePeriod('/finance')">
+      <strong><i class="fa fa-arrow-left"></i> к общим доходам</strong>
+    </button>
+    <hr>
+    <table class="table campaigns-table table-striped">
+      <thead>
+        <tr ng-show="!stats.length">
+          <th><alert type="info">{{info.earnings}}</alert></th>
+        </tr>
+        <tr ng-show="stats.length">
+          <th>Дата</th>
+          <th>
+            Просмотры
+            <span tooltip="Количество уникальных посетителей, просмотревших видео ролик" tooltip-animation="false" tooltip-placement="top"><i class="fa fa-info-circle"></i></span>
+          </th>
+          <th>Сумма</th>
+        </tr>
+      </thead>
+      <tbody ng-show="stats.length">
+        <tr ng-repeat="record in stats track by $index">
+          <td>{{record.date | amDateFormat: 'LL'}}</td>
+          <td>{{record.views}}</td>
+          <td>{{record.earned}} <small><i class="fa fa-rub"></i></small></td>
+        </tr>
+        <tr>
+          <td>Итого:</td>
+          <td></td>
+          <td>{{totalEarned}} <small><i class="fa fa-rub"></i></small></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <hr>
+    <table class="table campaigns-table table-striped">
+      <caption><h3>Выплаты</h3><hr></caption>
+      <thead>
+        <tr ng-show="!withdrawals.length">
+          <th><alert type="info">{{info.withdrawals}}</alert></th>
+        </tr>
+        <tr ng-show="withdrawals.length">
+          <th>Дата операции</th>
+          <th>Способ вывода</th>
+          <th>Статус</th>
+          <th>Сумма</th>
+        </tr>
+      </thead>
+      <tbody ng-show="withdrawals.length">
+        <tr ng-repeat="withdrawal in withdrawals track by $index">
+          <td>{{withdrawal.date | amDateFormat: 'LL'}}</td>
+          <td>{{withdrawal.type}}</td>
+          <td>{{withdrawal.status}}</td>
+          <td>{{withdrawal.amount}} <small><i class="fa fa-rub"></i></small></td>
+        </tr>
+        <tr>
+          <td colspan="3">Всего выплачено:</td>
+          <td>{{totalWithdrawals}} <small><i class="fa fa-rub"></i></small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">Cостояние счета</div>
+      <dl class="dl-horizontal">
+        <dt><h3>Баланс:</h3></dt>
+        <dd><h3><b>{{balance}}</b> <i class="fa fa-rub"></i></h3></dd>
+      </dl>
+      <div class="panel-body">
+        <button class="btn btn-lg btn-primary btn-block uppercase" ng-click="goToWallets()">
+          <strong>Вывести</strong>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

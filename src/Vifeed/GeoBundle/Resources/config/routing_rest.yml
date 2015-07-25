@@ -1,0 +1,9 @@
+countries:
+    type: rest
+    resource: '@VifeedGeoBundle/Controller/Api/CountryController.php'
+    name_prefix: api_
+
+cities:
+    type: rest
+    resource: '@VifeedGeoBundle/Controller/Api/CityController.php'
+    name_prefix: api_

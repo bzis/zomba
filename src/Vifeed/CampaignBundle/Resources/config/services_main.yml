@@ -1,0 +1,17 @@
+services:
+
+    vifeed.listener.campaign_serialization_listener:
+        class: Vifeed\CampaignBundle\EventListener\CampaignSerializationListener
+        tags:
+            - {name: jms_serializer.event_subscriber}
+        arguments: [ @doctrine.orm.entity_manager, @vifeed.campaign.manager ]
+
+    vifeed.entity_listener.campaign:
+        class: Vifeed\CampaignBundle\EventListener\CampaignChangeListener
+        arguments: [ @old_sound_rabbit_mq.campaign_status_change_producer ]
+        tags:
+            -  { name: doctrine.entity_listener }
+
+    vifeed.rabbit.new_campaign_notify.consumer:
+        class: Vifeed\CampaignBundle\Consumer\NewCampaignNotificationConsumer
+        arguments: [ @doctrine.orm.entity_manager, @vifeed.user.notification_manager, @logger, @vifeed.campaign.manager, @service_container ]

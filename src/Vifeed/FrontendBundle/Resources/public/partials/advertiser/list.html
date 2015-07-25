@@ -1,0 +1,267 @@
+<h1>Управление кампаниями</h1>
+<hr>
+<alert ng-show="isApiError" type="danger">
+  Похоже, у нас что-то сломалось, потому что не удалось загрузить ваши кампании <i class="fa fa-frown-o"></i>
+</alert>
+<alert ng-show="statusErrors.length" close="alertClose()">
+  <h4>Ошибка изменения статуса кампании</h4>
+  <ul><li ng-repeat="errorMessage in statusErrors">{{errorMessage}}</li></ul>
+</alert>
+<tabset class="nav nav-tabs">
+  <tab>
+    <tab-heading>
+      Запущенные <span class="badge">{{badges.on}}</span>
+    </tab-heading>
+    <h2 class="text-center" ng-hide="campaigns.on.length">У вас нет запущенных кампаний</h2>
+    <table class="table campaigns-table table-striped" ng-show="campaigns.on.length">
+      <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th>Бюджет</th>
+          <th>
+            Остаток
+            <span tooltip="Если вы заархивируете кампанию, остаток средств будет возвращен на ваш счет" tooltip-animation="false" tooltip-placement="top"><i class="fa fa-info-circle"></i></span>
+          </th>
+          <th>Ставка</th>
+          <th>Показов</th>
+          <th>Просмотров</th>
+          <th>Управление</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="campaign in campaigns.on track by campaign.id">
+          <td>
+            <a href="javascript:void(0);" ng-click="videoPreview(campaign, $event)">
+              <img
+                class="img-thumbnail"
+                ng-src="{{campaign.previewUrl}}"
+                width="70"
+                height="45"
+                alt="{{campaign.title}}"
+                tooltip="Нажмите на изображение, чтобы просмотреть видео ролик"
+                tooltip-animation="false"
+                tooltip-placement="right">
+            </a>
+          </td>
+          <td><a ng-href="/#/campaign/{{campaign.id}}/edit">{{campaign.title}}</a></td>
+          <td>{{campaign.totalBudget}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.balance}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.maxBid}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.views}}</td>
+          <td>{{campaign.paidViews}}</td>
+          <td>
+            <div class="btn-group">
+              <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown" ng-disabled="isLoading">
+                выберите действие <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a ng-href="/#/campaign/{{campaign.id}}/edit">Редактировать</a></li>
+                <li class="divider"></li>
+                <li>
+                  <a href="javascript:void(0);" ng-click="archiveCampaign(campaign)">Заархивировать</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" ng-click="pauseCampaign(campaign)">Остановить</a>
+                </li>
+                <!--li>
+                  <a href="javascript:void(0);" ng-click="startCampaign(campaign)">Запустить</a>
+                </li-->
+                <li class="divider"></li>
+                <li><a ng-href="/#/analytics/{{campaign.id}}">Аналитика</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </tab>
+  <tab>
+    <tab-heading>
+      Завершенные <span class="badge">{{badges.ended}}</span>
+    </tab-heading>
+    <h2 class="text-center" ng-hide="campaigns.ended.length">У вас нет завершенных кампаний</h2>
+    <table class="table campaigns-table table-striped" ng-show="campaigns.ended.length">
+      <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th>Бюджет</th>
+          <th>
+            Остаток
+            <span tooltip="Если вы заархивируете кампанию, остаток средств будет возвращен на ваш счет" tooltip-animation="false" tooltip-placement="top"><i class="fa fa-info-circle"></i></span>
+          </th>
+          <th>Ставка</th>
+          <th>Показов</th>
+          <th>Просмотров</th>
+          <th>Управление</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="campaign in campaigns.ended track by campaign.id">
+          <td>
+            <a href="javascript:void(0);" ng-click="videoPreview(campaign, $event)">
+              <img
+                class="img-thumbnail"
+                ng-src="{{campaign.previewUrl}}"
+                width="70"
+                height="45"
+                alt="{{campaign.title}}"
+                tooltip="Нажмите на изображение, чтобы просмотреть видео ролик"
+                tooltip-animation="false"
+                tooltip-placement="right">
+            </a>
+          </td>
+          <td><a ng-href="/#/campaign/{{campaign.id}}/edit">{{campaign.title}}</a></td>
+          <td>{{campaign.totalBudget}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.balance}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.maxBid}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.views}}</td>
+          <td>{{campaign.paidViews}}</td>
+          <td>
+            <div class="btn-group">
+              <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown" ng-disabled="isLoading">
+                выберите действие <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a ng-href="/#/campaign/{{campaign.id}}/edit">Редактировать</a></li>
+                <li class="divider"></li>
+                <li>
+                  <a href="javascript:void(0);" ng-click="archiveCampaign(campaign)">Заархивировать</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" ng-click="startCampaign(campaign)">Запустить</a>
+                </li>
+                <li class="divider"></li>
+                <li><a ng-href="/#/analytics/{{campaign.id}}">Аналитика</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </tab>
+  <tab>
+    <tab-heading>
+      Приостановленные <span class="badge">{{badges.paused}}</span>
+    </tab-heading>
+    <h2 class="text-center" ng-hide="campaigns.paused.length">У вас нет приостановленных кампаний</h2>
+    <table class="table campaigns-table table-striped" ng-show="campaigns.paused.length">
+      <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th>Бюджет</th>
+          <th>
+            Остаток
+            <span tooltip="Если вы заархивируете кампанию, остаток средств будет возвращен на ваш счет" tooltip-animation="false" tooltip-placement="top"><i class="fa fa-info-circle"></i></span>
+          </th>
+          <th>Ставка</th>
+          <th>Показов</th>
+          <th>Просмотров</th>
+          <th>Управление</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="campaign in campaigns.paused track by campaign.id">
+          <td>
+            <a href="javascript:void(0);" ng-click="videoPreview(campaign, $event)">
+              <img
+                class="img-thumbnail"
+                ng-src="{{campaign.previewUrl}}"
+                width="70"
+                height="45"
+                alt="{{campaign.title}}"
+                tooltip="Нажмите на изображение, чтобы просмотреть видео ролик"
+                tooltip-animation="false"
+                tooltip-placement="right">
+            </a>
+          </td>
+          <td><a ng-href="/#/campaign/{{campaign.id}}/edit">{{campaign.title}}</a></td>
+          <td>{{campaign.totalBudget}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.balance}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.maxBid}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.views}}</td>
+          <td>{{campaign.paidViews}}</td>
+          <td>
+            <div class="btn-group">
+              <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown" ng-disabled="isLoading">
+                выберите действие <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a ng-href="/#/campaign/{{campaign.id}}/edit">Редактировать</a></li>
+                <li class="divider"></li>
+                <li>
+                  <a href="javascript:void(0);" ng-click="archiveCampaign(campaign)">Заархивировать</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" ng-click="startCampaign(campaign)">Запустить</a>
+                </li>
+                <li class="divider"></li>
+                <li><a ng-href="/#/analytics/{{campaign.id}}">Аналитика</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </tab>
+  <tab>
+    <tab-heading>
+      Архивированные <span class="badge">{{badges.archived}}</span>
+    </tab-heading>
+    <h2 class="text-center" ng-hide="campaigns.archived.length">У вас нет заархивированных кампаний</h2>
+    <table class="table campaigns-table table-striped" ng-show="campaigns.archived.length">
+      <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th>Бюджет</th>
+          <th>
+            Остаток
+            <span tooltip="Если вы заархивируете кампанию, остаток средств будет возвращен на ваш счет" tooltip-animation="false" tooltip-placement="top"><i class="fa fa-info-circle"></i></span>
+          </th>
+          <th>Ставка</th>
+          <th>Показов</th>
+          <th>Просмотров</th>
+          <th>Управление</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="campaign in campaigns.archived track by campaign.id">
+          <td>
+            <a href="javascript:void(0);" ng-click="videoPreview(campaign, $event)">
+              <img
+                class="img-thumbnail"
+                ng-src="{{campaign.previewUrl}}"
+                width="70"
+                height="45"
+                alt="{{campaign.title}}"
+                tooltip="Нажмите на изображение, чтобы просмотреть видео ролик"
+                tooltip-animation="false"
+                tooltip-placement="right">
+            </a>
+          </td>
+          <td><a ng-href="/#/campaign/{{campaign.id}}/edit">{{campaign.title}}</a></td>
+          <td>{{campaign.totalBudget}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.balance}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.maxBid}} <small><i class="fa fa-rub"></i></small></td>
+          <td>{{campaign.views}}</td>
+          <td>{{campaign.paidViews}}</td>
+          <td>
+            <div class="btn-group">
+              <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown" ng-disabled="isLoading">
+                выберите действие <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a ng-href="/#/campaign/{{campaign.id}}/edit">Редактировать</a></li>
+                <li class="divider"></li>
+                <li>
+                  <a href="javascript:void(0);" ng-click="startCampaign(campaign)">Запустить</a>
+                </li>
+                <li class="divider"></li>
+                <li><a ng-href="/#/analytics/{{campaign.id}}">Аналитика</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </tab>
+</tabset>

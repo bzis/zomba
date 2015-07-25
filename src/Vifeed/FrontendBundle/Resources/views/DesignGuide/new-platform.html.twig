@@ -1,0 +1,55 @@
+  <h1>Новая рекламная площадка</h1>
+  <hr>
+  <form class="form-horizontal ng-scope ng-pristine ng-invalid ng-invalid-required" name="campaign_settings" for="campaign">
+    <div class="row">
+        <div class="form-group">
+            <label for="tags" class="col-md-2 control-label">
+                Ссылка
+            </label>
+            <div class="col-md-7">
+              <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" id="url" placeholder="http://example.ru">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="title" class="col-md-2 control-label">Название</label>
+            <div class="col-md-7">
+                <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" id="title" placeholder="Название кампании" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description" class="col-md-2 control-label">
+                Описание
+            </label>
+            <div class="col-md-7">
+                <textarea class="form-control" id="description" rows="5"></textarea>
+                <p class="help-block ng-binding">Осталось 1024 символа</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="countries" class="col-md-2 control-label">
+                Страны
+                <i class="fa fa-info-circle"></i>
+            </label>
+            <div class="col-md-7">
+              <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" id="countries" placeholder="Выберите страны...">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tags" class="col-md-2 control-label">
+                Теги
+                <i class="fa fa-info-circle"></i>
+            </label>
+            <div class="col-md-7">
+              <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" id="tags" placeholder="Введите теги...">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-block" type="button" ng-click="createCampaign()">Добавить площадку</button>
+        </div>
+    </div>
+  </form>
+  <br>
+  <br>

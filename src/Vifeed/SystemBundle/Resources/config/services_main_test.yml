@@ -1,0 +1,7 @@
+services:
+    mailer:
+        class: Vifeed\SystemBundle\Tests\Mock\MailerMock
+        arguments: [ @swiftmailer.transport ]
+    vifeed.sms_manager:
+        class: Vifeed\SystemBundle\Tests\Mock\SmsManagerMock
+        arguments: [ @twilio.api, %twilio.phone_number%, @logger ]

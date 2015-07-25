@@ -1,0 +1,10 @@
+services:
+    vifeed.payment.payment_state_change_listener:
+        class:  Vifeed\PaymentBundle\EventListener\PaymentStateChangeListener
+        arguments: [ @doctrine.orm.entity_manager, @vifeed.campaign.manager, @vifeed.user.notification_manager ]
+        tags:
+            - { name: 'kernel.event_subscriber' }
+
+    vifeed.payment.video_view_payment_manager:
+        class: Vifeed\PaymentBundle\Manager\VideoViewPaymentManager
+        arguments: [ @doctrine.orm.default_entity_manager, @vifeed.campaign.manager, %vifeed%, %vifeed.payment.ip_filter%]

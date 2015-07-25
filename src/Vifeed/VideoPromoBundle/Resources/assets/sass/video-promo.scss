@@ -1,0 +1,73 @@
+.sparkbars {
+  background-position: 0px 0px;
+  color: rgb(102, 102, 102);
+  height: 2px;
+  text-align: right;
+  text-decoration: none solid rgb(102, 102, 102);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+  border: 0px none rgb(102, 102, 102);
+  font: normal normal normal 11px/normal Arial, Tahoma, Verdana, Georgia, sans-serif;
+  margin: 4px 0px;
+  outline: rgb(102, 102, 102) none 0px;
+  overflow: hidden;
+}
+
+.likes {
+  background-position: 0px 0px;
+  color: rgb(102, 102, 102);
+  float: left;
+  height: 2px;
+  text-align: right;
+  text-decoration: none solid rgb(102, 102, 102);
+  background: rgb(39, 147, 230) none repeat scroll 0px 0px / auto padding-box border-box;
+  border: 0px none rgb(102, 102, 102);
+  font: normal normal normal 11px/normal Arial, Tahoma, Verdana, Georgia, sans-serif;
+  outline: rgb(102, 102, 102) none 0px;
+}
+
+.dislikes {
+  background-position: 0px 0px;
+  color: rgb(102, 102, 102);
+  float: left;
+  height: 2px;
+  text-align: right;
+  text-decoration: none solid rgb(102, 102, 102);
+  background: rgb(204, 204, 204) none repeat scroll 0px 0px / auto padding-box border-box;
+  border: 0px none rgb(102, 102, 102);
+  font: normal normal normal 11px/normal Arial, Tahoma, Verdana, Georgia, sans-serif;
+  outline: rgb(102, 102, 102) none 0px;
+}
+
+.views-info .views {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.total-likes,
+.total-dislikes {
+  float: right;
+}
+
+.total-likes {
+  margin-right: 10px;
+}
+
+.video-container {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

@@ -1,0 +1,188 @@
+@import '../../../../../../../../tmp/google-fonts/OpenSans';
+// @import '../../../../../../../../tmp/google-fonts/Lora';
+// @import '../../../../../../../../tmp/google-fonts/OleoScriptSwashCaps';
+
+@import 'compass/css3/images';
+@import 'compass/css3/border-radius';
+@import 'compass/css3/text-shadow';
+@import "compass/css3/transition";
+
+@import 'bootstrap-override';
+@import 'font-awesome-override';
+@import 'ng-progress';
+
+// Remove spin buttons for inputs with number type in WebKit browsers
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Remove spin buttons for inputs with number type in Firefox
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#navbar-balance {
+  background-color: #137064;
+  color: #fff;
+  margin-left: 15px;
+}
+
+
+#logo {
+  margin-top: -4px;
+}
+
+a:focus {
+  outline: none;
+}
+
+a::-moz-focus-inner {
+  border: 0;
+}
+
+// $social_icons: (
+//     vk: #597da3,
+//     gplus: #dd4b39,
+//     facebook: #4c66a4,
+//     twitter: #55acee
+// );
+
+.social-icons {
+
+  // @each $icon, $color in $social-icons {
+  //   a.icon-#{$icon} .fa-circle {
+  //     color: $color;
+  //   }
+  //   a:hover .icon-#{$icon} {
+  //     color: $color;
+  //   }
+  // }
+
+  a.icon-vk .fa-circle {
+    color: #597da3;
+  }
+
+  a:hover .fa-vk {
+    color: #597da3;
+  }
+
+  a.icon-gplus .fa-circle {
+    color: #dd4b39;
+  }
+
+  a:hover .fa-google-plus {
+    color: #dd4b39;
+  }
+
+  a.icon-facebook .fa-circle {
+    color: #4c66a4;
+  }
+
+  a:hover .fa-facebook {
+    color: #4c66a4;
+  }
+
+  a.icon-twitter .fa-circle {
+    color: #55acee;
+  }
+
+  a:hover .fa-twitter {
+    color: #55acee;
+  }
+
+  a:hover .fa-vk,
+  a:hover .fa-google-plus,
+  a:hover .fa-facebook,
+  a:hover .fa-twitter,
+  {
+    @include transition(color 0.3s linear);
+  }
+  a:hover .fa-circle {
+    color: #fff;
+    @include transition(color 0.5s linear);
+  }
+}
+
+.sexy-modal {
+  width: 100%;
+  text-align: center;
+  display: table !important;
+  height: 100%;
+
+  .modal {
+  }
+
+  .modal-dialog {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .modal-content {
+  }
+}
+
+.sexy-modal {
+  .close-btn {
+    background-position: 50% 50%;
+    color: rgb(76, 76, 76);
+    cursor: pointer;
+    height: 45px;
+    opacity: .30000001192092896;
+    position: fixed;
+    right: 27px;
+    text-align: center;
+    text-decoration: none solid rgb(76, 76, 76);
+    top: 78px;
+    vertical-align: middle;
+    width: 45px;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0) url(/bundles/vifeedfrontend/images/close.svg) no-repeat scroll 50% 50% / auto padding-box border-box;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    font: normal normal normal 15px/25px proxima-nova, sans-serif;
+    outline: rgb(76, 76, 76) none 0;
+    transition: all .5s cubic-bezier(.27, 1.64, .32, .95) 0s;
+  }
+
+  .close-btn:hover {
+    opacity: 1;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    border-radius: 50%;
+    border-color: rgba(255,255,255,.3);
+  }
+
+  .modal {
+    width: 100%;
+    text-align: center;
+    display: table !important;
+    height: 100%;
+  }
+
+  .modal-dialog {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.modal-dialog {
+  @media (max-width: $screen-sm-min) {
+    margin: 0;
+    padding-top: 50px;
+    height: 100%;
+  }
+  .modal-content {
+    @media (max-width: $screen-sm-min) {
+      @include border-radius(0);
+      border: none;
+      min-height: 100%;
+    }
+  }
+}
+
+#navbar {
+  z-index: 60000;
+}

@@ -1,0 +1,124 @@
+<h1>Новая рекламная площадка</h1>
+<hr>
+<alert ng-show="isLoadingError" type="danger">
+  <p>Похоже, у нас что-то сломалось, потому что наш сервер вернул ошибку <i class="fa fa-frown-o"></i></p>
+  <p>Попробуйте повторить попытку чуть позже</p>
+</alert>
+<form class="form-horizontal" submit-form="createPlatform()" name="platform_form" for="platform" novalidate>
+  <!--div class="row">
+    <div class="form-group">
+      <label for="url" class="col-md-2 control-label">Тип площадки</label>
+      <div class="col-md-7">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary" ng-model="platform.type" btn-radio="'site'">Сайт</button>
+          <button type="button" class="btn btn-primary" ng-model="platform.type" btn-radio="'vk'">Группа VKontakte</button>
+        </div>
+      </div>
+    </div>
+  </div-->
+  <div class="row">
+    <div class="form-group has-feedback">
+      <label for="url" class="col-md-2 control-label">Ссылка</label>
+      <div class="col-md-7" popover="Ссылка на вашу рекламную площадку<br><strong>Например:</strong> <em>http://google.com</em>" popover-title="Ссылка на рекламную площадку" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <input
+          type="text"
+          class="form-control"
+          id="url"
+          name="platform_url"
+          placeholder="http://example.ru"
+          ng-model="platform.url"
+          ng-required="true"
+          ng-pattern="/^https?:\/\/[a-z0-9]{1,}\..+/"
+          ng-change="detectType()">
+        <span class="fa fa-check form-control-feedback" ng-show="isVkConfirmed"></span>
+        <error-message
+          for="platform_url"
+          required="Укажите полный линк вашей площадки."
+          pattern="Неверный формат линка. Линк должен иметь префикс http:// или https://">
+        </error-message>
+      </div>
+    </div>
+    <div class="form-group" ng-show="platform.type === 'vk' && !isVkConfirmed && platform.url.length">
+      <label for="url" class="col-md-2 control-label">Подтверждение</label>
+      <div class="col-md-7">
+        <button type="button" class="btn btn-warning" ng-click="confirmVkPublic()" title="Нажмите, чтобы подтвердить, что вы являетесь администратором группы на сайте vk.com">
+          <i class="fa fa-exclamation-circle"></i> Подтвердить VK группу
+        </button>
+        <div class="vk-response-container" ng-show='confirmationError'><alert type="danger">{{confirmationError}}</alert></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="title" class="col-md-2 control-label">Название</label>
+      <div class="col-md-7" popover="Название вашей площадки<br><strong>Например:</strong> <em>Мой классный блог</em>" popover-title="Название рекламной площадки" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          name="platform_title"
+          placeholder="Название рекламной площадки"
+          ng-model="platform.title"
+          ng-required="true">
+        <error-message for="platform_title" required="Укажите название рекламной площадки"></error-message>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="description" class="col-md-2 control-label">Описание</label>
+      <div class="col-md-7" popover="Описание вашей рекламной площадки<br><strong>Например:</strong> <em>В моем классном блоге я пишу о классных штуках</em>" popover-title="Описание рекламной площадки" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <textarea
+          class="form-control"
+          id="description"
+          name="platform_description"
+          placeholder="Описание рекламной площадки"
+          textarea-limiter
+          ng-model="platform.description"
+          ng-trim="false"
+          ng-maxlength="1024"
+          ng-required="true"
+          rows="5">
+        </textarea>
+        <!--p class="help-block">{{symbolsLeft}}</p-->
+        <error-message for="platform_description" required="Укажите краткое описание рекламной площадки"></error-message>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="countries" class="col-md-2 control-label">
+        Страны
+        <span tooltip="Страны, в которых вы хотите представлять вашу рекламную площадку для лучшего таргетирования" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+      </label>
+      <div class="col-md-7" popover="Страны, в которых вы хотите представлять вашу рекламную площадку для лучшего таргетирования<br><strong>Например:</strong> <em>Россия, Украина</em>" popover-title="Страны" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <select class="form-control col-md-7" id="countries" ui-select2 ng-model="platform.countries" data-placeholder="Выберите страну или оставьте поле пустым для показа во всех странах" multiple>
+          <option ng-repeat="country in countries track by country.id" value="{{country.id}}">{{country.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="tags" class="col-md-2 control-label">
+        Тэги
+        <span tooltip="Тэги, максимально точно характеризующие вашу рекламную площадку. Тэги используются для лучшего таргетирования" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+      </label>
+      <div class="col-md-7" popover="Тэги, максимально точно характеризующие вашу рекламную площадку<br><strong>Например:</strong> <em>music, metal, hard rock</em>" popover-title="Тэги" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <input
+          type="hidden"
+          class="form-control"
+          id="tags"
+          ui-select2="tagOptions"
+          ng-model="platform.tags"
+          ui-event="{ 'select2-highlight': 'loadTags($event)' }"
+          placeholder="Выберите или введите тэги, характеризующие вашу рекламную площадку">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <alert ng-show="validationErrors.length" close="alertClose();">
+    <h4>Не удалось создать рекламную площадку</h4>
+    <ul><li ng-repeat="errorMessage in validationErrors">{{errorMessage}}</li></ul>
+  </alert>
+  <div class="row">
+    <div class="col-md-2">
+      <button type="submit" ladda="loadingProgress" class="btn btn-primary btn-block ladda-button" data-style="zoom-out">
+        <span class="ladda-label">Добавить площадку</span>
+      </button>
+    </div>
+  </div>
+</form>
+<hr>

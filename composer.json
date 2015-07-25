@@ -25,72 +25,6 @@
             }
         },
         {
-            "type": "git",
-            "name": "vifeed/campaign-bundle",
-            "url": "git@github.com:vifeed/CampaignBundle.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "git",
-            "name": "vifeed/frontend-bundle",
-            "url": "git@github.com:vifeed/FrontendBundle.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "git",
-            "name": "vifeed/payment-bundle",
-            "url": "git@github.com:vifeed/PaymentBundle.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "git",
-            "name": "vifeed/platform-bundle",
-            "url": "git@github.com:vifeed/PlatformBundle.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "git",
-            "name": "vifeed/system-bundle",
-            "url": "git@github.com:vifeed/SystemBundle.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "git",
-            "name": "vifeed/user-bundle",
-            "url": "git@github.com:vifeed/UserBundle.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "git",
-            "name": "vifeed/geo-bundle",
-            "url": "git@github.com:vifeed/GeoBundle.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "git",
-            "name": "vifeed/tag-bundle",
-            "url": "git@github.com:vifeed/TagBundle.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "git",
-            "name": "vifeed/video-view-bundle",
-            "url": "git@github.com:vifeed/VideoViewBundle.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "git",
-            "name": "vifeed/video-promo-bundle",
-            "url": "git@github.com:vifeed/VideoPromoBundle.git",
-            "version": "dev-master"
-        },
-        {
-            "type": "git",
-            "name": "vifeed/bank-payment-bundle",
-            "url": "git@github.com:vifeed/BankPaymentBundle.git",
-            "version": "dev-master"
-        },
-        {
             "type": "vcs",
             "url": "https://github.com/bzis/hashidsBundle.git",
             "version": "dev-master"
@@ -162,18 +96,7 @@
         "fortawesome/font-awesome": "4.0.x-dev",
         "angular-ui/bootstrap": "dev-master",
         "angular-ui/ui-utils": "dev-master",
-        "cayetanosoriano/hashids-bundle": "dev-master",
-        "vifeed/campaign-bundle": "dev-master",
-        "vifeed/frontend-bundle": "dev-master",
-        "vifeed/payment-bundle": "dev-master",
-        "vifeed/platform-bundle": "dev-master",
-        "vifeed/system-bundle": "dev-master",
-        "vifeed/user-bundle": "dev-master",
-        "vifeed/geo-bundle": "dev-master",
-        "vifeed/tag-bundle": "dev-master",
-        "vifeed/video-view-bundle": "dev-master",
-        "vifeed/video-promo-bundle": "dev-master",
-        "vifeed/bank-payment-bundle": "dev-master",
+        "cayetanosoriano/hashids-bundle": "dev-master",        
         "kriswallsmith/spork": "dev-master",
         "raven/raven": "0.10.*",
         "stof/doctrine-extensions-bundle": "~1.1@dev",

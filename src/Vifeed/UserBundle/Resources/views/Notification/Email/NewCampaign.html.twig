@@ -1,0 +1,22 @@
+{% extends 'VifeedFrontendBundle:Email:layout.html.twig' %}
+
+{% block content %}
+  <strong>«{{ campaign.name }}»</strong>
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <img width="150" src="http://img.youtube.com/vi/{{ campaign.hash }}/mqdefault.jpg">
+      </td>
+      <td>
+        <ul>
+          <li>Бюджет кампании: <span style="font-family: Andale Mono, Courier, monospace; color: #666;"> {{ campaign.budget }} руб.</span></li>
+          <li>Ставка за просмотр: <span style="font-family: Andale Mono, Courier, monospace; color: #666;"> {{ campaign.bid }} руб.</span></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <br/>
+  <a href="http://zombakka.com/#/campaign/list">Участвовать в кампании »</a>
+  <br>
+  <br>
+{% endblock %}

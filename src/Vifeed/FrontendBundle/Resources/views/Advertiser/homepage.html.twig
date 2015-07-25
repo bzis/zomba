@@ -1,0 +1,55 @@
+{% extends 'VifeedFrontendBundle:Private:layout.html.twig' %}
+
+{% block app %}advertiserApp{% endblock %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  {% stylesheets output='css/*.css' filter='cssrewrite,?yui_css'
+    '@VifeedFrontendBundle/Resources/assets/sass/advertiser.scss' %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  <script type="text/javascript" src='https://maps.googleapis.com/maps/api/js?libraries=visualization&amp;sensor=false'></script>
+  <script src="http://{{ tracker_host }}/socket/socket.io.js"></script>
+  {% javascripts output='js/*.js'
+    '@angular_socket'
+    '@angular_maps'
+    '@highcharts'
+    '@analytics_template'
+    '@advertiser_template'
+    '@VifeedFrontendBundle/Resources/assets/js/mixin/mixer.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/mixin/validator-period-mixin.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/analytics/analytics.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/analytics/resources/statistics.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/analytics/controllers/base-analytics-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/analytics/controllers/analytics-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/analytics/controllers/analytics-realtime-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/analytics/controllers/analytics-video-preview-ctrl.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/analytics/services/*.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/advertiser/resources/*.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/advertiser/services/youtube-fetcher.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/advertiser/services/bid-optimizer.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/advertiser/advertiser.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/advertiser/controllers/*.coffee'
+    '@VifeedFrontendBundle/Resources/assets/js/advertiser-app.coffee' %}
+  <script type="text/javascript" src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+{% endblock %}
+
+{% block navbar %}
+  <ul class="nav navbar-nav">
+    <li><a href="/#/campaign/new">Новая кампания</a></li>
+    <li><a href="/#/campaign/management">Мои кампании</a></li>
+    <li><a href="/#/analytics">Аналитика</a></li>
+    <li><a href="/#/finance">Финансы</a></li>
+  </ul>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div ng-view></div>
+  </div>
+{% endblock %}

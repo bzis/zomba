@@ -1,0 +1,352 @@
+  <h1>Аналитика кампаний</h1>
+
+
+  <hr>
+
+<div class="row">
+    <div class="col-md-8">
+      <div class="btn-group btn-block">
+        <button class="btn btn-lg btn-primary dropdown-toggle ng-pristine ng-valid" data-toggle="dropdown" date-range="" ng-model="period" ranges="ranges" locale="translation" on-change="changeAnalyticsPeriod">
+          <strong><i class="fa fa-calendar"></i> Режим реального времени</strong>
+          <span class="caret"></span>
+        </button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="col-md-6 pull-right">
+        <button type="button" class="btn btn-lg btn-primary dropdown-toggle chose-campaign pull-right" data-toggle="dropdown" ng-disabled="isLoading">
+          <strong><i class="fa fa-list-ul"></i> The Many Rivers Ensemble - Upwelling 2013</strong>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <!-- ngRepeat: campaign in campaigns track by campaign.id --><li ng-repeat="campaign in campaigns track by campaign.id" class="ng-scope">
+            <a href="javascript:void(0);" ng-click="changeCampaign(campaign)" class="ng-binding">The Many Rivers Ensemble - Upwelling 2013</a>
+          </li><!-- end ngRepeat: campaign in campaigns track by campaign.id -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+
+  <div class="row table-row table-panel">
+    <div class="col-md-4 table-cell-panel">
+      <div class="panel panel-default cell-panel">
+      <div class="panel-heading">
+        <strong class="panel-title">
+          Количество просмотров
+        </strong>
+      </div>
+      <table class="table table-hover">
+        <tr>
+          <td class="text-center watching-now">
+            <span class="right-now-value ng-binding">765</span>
+          </td>
+        </tr>
+          {# <tr>
+            <td class="text-center">
+              <a>
+                <img ng-src="//img.youtube.com/vi/QmmE5e0T1IM/hqdefault.jpg" width="100%" alt="The Many Rivers Ensemble - Upwelling 2013" tooltip="Нажмите на изображение, чтобы просмотреть видео ролик" tooltip-animation="false" tooltip-placement="left" class="ng-scope" src="//img.youtube.com/vi/QmmE5e0T1IM/hqdefault.jpg">
+              </a>
+            </td>
+          </tr> #}
+          <tr>
+            <td>
+              Просмотров за все время
+              <span class="pull-right">1765</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Дата запуска
+              <span class="pull-right">14 января 2014</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Статус
+              <span class="pull-right">работает</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-8 table-cell-panel">
+      <div class="panel panel-default cell-panel">
+        <div class="panel-heading">
+          <strong class="panel-title">
+            График просмотров с xx по xx
+          </strong>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <hr>
+
+<div class="row table-row">
+  <div class="col-md-2 table-cell">
+    <a class="thumbnail">
+      <img ng-src="//img.youtube.com/vi/QmmE5e0T1IM/hqdefault.jpg" width="100%" alt="The Many Rivers Ensemble - Upwelling 2013" tooltip="Нажмите на изображение, чтобы просмотреть видео ролик" tooltip-animation="false" tooltip-placement="left" class="ng-scope" src="//img.youtube.com/vi/QmmE5e0T1IM/hqdefault.jpg">
+    </a>
+  </div>
+
+
+  <div class="col-md-5 table-cell">
+    <div class="panel panel-default">
+      <ul class="list-group">
+      <li class="list-group-item">
+        <span class="badge">14</span>
+        Количество просмотров
+      </li>
+      <li class="list-group-item">
+        <span class="badge">14 января 2014</span>
+        Дата запуска
+      </li>
+      <li class="list-group-item">
+        <span class="badge">работает</span>
+        Статус
+      </li>
+      <ul>
+    </div>
+  </div>
+
+  <div class="col-md-5 table-cell">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <strong class="panel-title">
+          Смотрят сейчас
+        </strong>
+      </div>
+      <div class="text-center watching-now">
+      <span class="right-now-value ng-binding">0</span>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+<hr>
+<div class="row">
+
+<div class="col-md-12">
+    <ul class="nav nav-tabs">
+      <li class="col-md-6 active">
+        <a><h4 class="uppercase text-center"
+          <i class="fa fa-bar-chart-o"></i>
+          <strong>
+            Детально
+          </strong>
+        </h4></a>
+      </li>
+      <li class="col-md-6">
+        <a><h4 class="uppercase text-center">
+          <i class="fa fa-globe"></i>
+          <strong>
+            На карте
+          </strong>
+        </h4></a>
+      </li>
+    </ul>
+    <br>
+    <div class='chart'>
+      <div id='chart'></div>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+  <div class="row table-row table-panel">
+    <div class="col-md-4 col-sm-12 table-cell-panel">
+      <div class="panel panel-default cell-panel">
+        <div class="panel-heading">
+          <strong class="panel-title">
+            Youtube
+          </strong>
+        </div>
+        <table class="table table-hover">
+          <tr>
+            <td class="col-md-1">
+              <i class="fa fa-eye"></i>
+            </td>
+            <td>
+              Просмотров
+              <span class="pull-right">765</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa fa-thumbs-o-up"></i>
+            </td>
+            <td>
+              Лайков
+              <span class="pull-right">45</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa fa-thumbs-o-down"></i>
+            </td>
+            <td>
+              Дизлайков
+              <span class="pull-right">12</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa fa-heart-o"></i>
+            </td>
+            <td>
+              В избранном
+              <span class="pull-right">30</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa fa-comments-o"></i>
+            </td>
+            <td>
+              Комментариев
+              <span class="pull-right">10</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-8 col-sm-12 table-cell-panel">
+      <div class="panel panel-default cell-panel">
+        <div class="panel-heading">
+          <strong class="panel-title">
+            Размещение
+          </strong>
+        </div>
+        <table class="table table-hover">
+          <tbody>
+            <th class="text-center">
+              Площадки
+            </th>
+            <th class="text-center">
+              Размещение
+            </th>
+            <th class="text-center">
+              Лайки
+            </th>
+            <th class="text-center">
+              Репосты
+            </th>
+          </tbody>
+          <tr>
+            <td class="social-icons text-center">
+              <i class="fa fa-facebook" tooltip="facebook"></i>
+            </td>
+            <td class="text-center">
+              1200
+            </td>
+            <td class="text-center">
+              5000
+            </td>
+            <td class="text-center">
+              754
+            </td>
+          </tr>
+          <tr>
+            <td class="social-icons text-center">
+              <i class="fa fa-vk" tooltip="vkontakte"></i>
+            </td>
+            <td class="text-center">
+              1200
+            </td>
+            <td class="text-center">
+              5000
+            </td>
+            <td class="text-center">
+              754
+            </td>
+          </tr>
+          <tr>
+            <td class="social-icons text-center">
+              <i class="fa fa-google-plus" tooltip="google plus"></i>
+            </td>
+            <td class="text-center">
+              1200
+            </td>
+            <td class="text-center">
+              5000
+            </td>
+            <td class="text-center">
+              754
+            </td>
+          </tr>
+          <tr>
+            <td class="social-icons text-center">
+              <i class="fa fa-link" tooltip="сайты и блоги"></i>
+            </td>
+            <td class="text-center">
+              200
+            </td>
+            <td class="text-center">
+              0
+            </td>
+            <td class="text-center">
+              0
+            </td>
+          </tr>
+          <tfoot>
+            <th class="text-center">
+              итого:
+            </th>
+            <th class="text-center">
+              2000
+            </th>
+            <th class="text-center">
+              990
+            </th>
+            <th class="text-center">
+              203
+            </th>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+<script>
+var chart = c3.generate({
+    data: {
+        padding: {
+            left: 0,
+            bottom: 0,
+        },
+        columns: [
+            ['показы', 7, 6, 9, 14, 18, 21, 25],
+            ['просмтотры', 3, 4, 5, 8, 11, 15, 17]
+        ],
+        type: 'spline',
+        groups: [
+            ['data1', 'data2']
+        ]
+    },
+    axis: {
+        x: {
+          type : 'categorized',
+          categories: ['18:20', '18:21', '18:22', '18:23', '18:24', '18:25', '18:26']
+        }
+    },
+    color: {
+      pattern: ['#35cde7', '#0e6676', '#ff7f0e', '#ffbb78', '#2ca02c', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5']
+    }
+});
+
+</script>
+  <br>

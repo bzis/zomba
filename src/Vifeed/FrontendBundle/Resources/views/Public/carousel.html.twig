@@ -1,0 +1,95 @@
+{% set class = 'carousel-wrap' %}
+{% for key, slide in slides %}
+  {% if key in ['main', 'partners'] %}
+    {% set class = 'carousel-wrap home' %}
+  {% endif %}
+{% endfor %}
+
+<div class="{{ class }}">
+  {# Carousel #}
+  <div id="carousel" class="carousel fade">
+    {# Indicators #}
+    {% if slides|length > 1 %}
+      <ol class="carousel-indicators">
+        {% for key, slide in slides %}
+          <li data-target="#carousel" data-slide-to="{{ loop.index0 }}"{% if loop.first %} class="active"{% endif %}></li>
+        {% endfor %}
+      </ol>
+    {% endif %}
+    <div class="carousel-inner" id="scene" data-calibrate-x="false" data-calibrate-y="true">
+      {% for key, slide in slides %}
+        <div class="item{% if loop.first %} active{% endif %}">
+          <div class="layer layer-hypnosis" data-depth="0.5">
+            <div class="hypnosis-left"></div>
+            <div class="hypnosis-right"></div>
+          </div>
+          <div class="layer layer-images" data-depth="0.2">
+            <div class="layer-images-left {{ key }}-left"></div>
+            <div class="layer-images-right {{ key }}-right"></div>
+          </div>
+          <div class="container"{% if key in ['main', 'partners'] %} data-ng-controller="PromoModalCtrl"{% endif %}>
+            <div class="carousel-caption">
+              <article>
+                <h1>{{ slide.title }}</h1>
+                <div>
+                  <p>
+                    {{ slide.text | raw }}
+                  </p>
+                  {% if slide.type == 'advertiser' %}
+                  <p>Начните свою кампанию всего за 100 <i class="fa fa-rub"></i>.</p>
+                  {% elseif slide.type == 'publisher' %}
+                  <p>Создайте свою площадку прямо сейчас.</p>
+                  {% endif %}
+                </div>
+                <a class="btn btn-lg btn-primary"
+                  {% if slides|length == 1 %}
+                    {% if key in ['music', 'movies', 'games', 'companies'] %}
+                      href="{{ path('sign_up_page') }}"
+                    {% elseif key == 'publishers' %}
+                      href="{{ path('sign_up_page') }}#/publisher"
+                    {% elseif key == 'partners' %}
+                      data-ng-click="showPromoModal()"
+                      data-analytics-on="click"
+                      data-analytics-event="play video about project"
+                      data-analytics-category="Media play"
+                    {% elseif slide.btnUrl is defined %}
+                      href="{{ slide.btnUrl }}"
+                    {% endif %}
+                  {% else %}
+                    {% if key == 'main' %}
+                      data-ng-click="showPromoModal()"
+                      data-analytics-on="click"
+                      data-analytics-event="play video about project"
+                      data-analytics-category="Media play"
+                    {% elseif slide.btnUrl is defined %}
+                      href="{{ slide.btnUrl }}"
+                    {% endif %}
+                  {% endif %}
+                  >
+                  {% if slides|length == 1 %}
+                    {{ slide.btnTitle }}
+                  {% else %}
+                    Узнать больше
+                  {% endif %}
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% if slides|length > 1 %}
+      <a class="left carousel-control" href="#carousel" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
+    {% endif %}
+  </div>
+
+  {# Zombakka promo video #}
+  <div class="video" id="promo-video">
+    <iframe src="//player.vimeo.com/video/100289644?title=0&amp;byline=0&amp;portrait=0&amp;color=4AA091" width="767" height="431" allowfullscreen></iframe>
+  </div>
+</div>

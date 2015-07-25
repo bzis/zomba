@@ -1,0 +1,91 @@
+<section class="content-section hs-container">
+  <div class="row">
+    <h1 class="text-center"><strong>Эксклюзивные</strong> условия <br> размещения для рекламных агенств и партнеров</h1>
+  </div>
+  <div ng-show="isSent" class="row">
+    <h3 class="text-center">Спасибо! Наши менеджеры свяжутся с вами в ближайшее время</h3>
+  </div>
+  <alert ng-show="validationErrors.length" close="alertClose();">
+    <h4>Не удалось отправить сообщение</h4>
+    <ul><li ng-repeat="errorMessage in validationErrors">{{errorMessage}}</li></ul>
+  </alert>
+  <form ng-hide="isSent" class="form-horizontal" submit-form="sendPartnershipRequest()" name="partnership_form" novalidate>
+    <div class="row">
+      <div class="form-group">
+        <label for="first-name" class="col-xs-push-1 col-xs-3 control-label">Имя</label>
+        <div class="col-xs-7 col-xs-push-1">
+          <input
+            type="text"
+            class="form-control input-lg"
+            id="first-name"
+            name="first_name"
+            ng-model="profile.firstName"
+            ng-required="true"
+            placeholder="Укажите ваше имя">
+          <error-message for="first_name" required="Вы забыли указать ваше имя"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="last-name" class="col-xs-push-1 col-xs-3 control-label">Фамилия</label>
+        <div class="col-xs-7 col-xs-push-1">
+          <input
+            type="text"
+            class="form-control input-lg"
+            id="last-name"
+            name="last_name"
+            ng-model="profile.lastName"
+            ng-required="true"
+            placeholder="Укажите вашу фамилию">
+          <error-message for="last_name" required="Вы забыли указать вашу фамилию"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-xs-push-1 col-xs-3 control-label">Email</label>
+        <div class="col-xs-7 col-xs-push-1">
+          <input
+            type="email"
+            class="form-control input-lg"
+            id="email"
+            name="email"
+            ng-model="profile.email"
+            ng-required="true"
+            placeholder="Укажите ваш email">
+          <error-message
+            for="email"
+            required="Вы забыли указать ваш email адрес."
+            email="Похоже, вы ввели неверный email адрес">
+          </error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="col-xs-push-1 col-xs-3 control-label">Мобильный телефон</label>
+        <div class="col-xs-7 col-xs-push-1">
+          <input
+            type="text"
+            class="form-control input-lg"
+            id="phone"
+            name="mobile_phone"
+            ng-model="profile.phone"
+            ng-required="true"
+            ui-mask="+7 (999) 999-99-99">
+          <error-message
+            for="mobile_phone"
+            required="Вы забыли указать ваш контактный телефон"
+            mask="Вы ввели неверный телефон">
+          </error-message>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <div class="col-xs-10 col-xs-push-1 col-xs-pull-1 col-sm-3 col-sm-push-4 col-sm-pull-1">
+            <button type="submit" ladda="loadingProgress" class="btn btn-lg btn-primary btn-block uppercase ladda-button" data-style="zoom-out">
+              <span class="ladda-label">
+                <strong>Отправить</strong>
+              </span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>

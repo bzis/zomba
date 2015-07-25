@@ -1,0 +1,131 @@
+// compass
+@import 'compass/utilities/sprites';
+@import 'compass/css3/background-size';
+
+// @import "../../../../../../../../bower-vendor/Retina-sprites-for-Compass/src/_retina-sprites.scss";
+
+// $sprites: sprite-map("bundles/vifeedfrontend/images/logos/*.png");
+// $sprites-retina: sprite-map("bundles/vifeedfrontend/images/logos-retina/*.png");
+
+
+// @import "compass/utilities/sprites";         // Include compass sprite helpers
+// @import "compass/css3/background-size";      // Include helper to calc background size
+//
+// // General Sprite Defaults
+// // You can override them before you import this file.
+// $icon-sprite-base-class: ".icon-sprite" !default;
+// $icon-sprite-dimensions: false !default;
+// $icon-spacing: 10px !default;
+// $icon-position: 0% !default;
+// $icon-repeat: no-repeat !default;
+//
+// $icon-sprites: sprite-map("sprites/*.png", $spacing: $icon-spacing, $repeat: $icon-repeat, $position: $icon-position);
+// $icon-sprites-retina: sprite-map("sprites-retina/*.png", $spacing: $icon-spacing * 2, $repeat: $icon-repeat, $position: $icon-position);
+//
+// // All sprites should extend this class
+// // The icon-sprite mixin will do so for you.
+// #{$icon-sprite-base-class} {
+//   background: $icon-sprites $icon-repeat;
+// }
+//
+// @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+//   #{$icon-sprite-base-class} {
+//     background: $icon-sprites-retina $icon-repeat;
+//     @include background-size(ceil(image-width(sprite-path($icon-sprites-retina)) / 2) auto);
+//   }
+// }
+//
+// // Extends the sprite base class and set the background position for the desired sprite.
+// // It will also apply the image dimensions if $dimensions is true.
+// @mixin icon-sprite($name, $dimensions: $icon-sprite-dimensions, $offset-x: 0, $offset-y: 0) {
+//   @extend #{$icon-sprite-base-class};
+//   @include sprite($icon-sprites, $name, $dimensions, $offset-x, $offset-y)
+// }
+//
+// // Example Usage.
+// .icon-analytics {
+// 	@include icon-sprite(main-sprite);
+// }
+
+$sprites: sprite-map('bundles/vifeedfrontend/images/sprites/*.png');
+$sprites2x: sprite-map('bundles/vifeedfrontend/images/sprites-retina/*.png');
+
+@mixin sprite-base-background($name) {
+  background-repeat: no-repeat;
+  display: block;
+  height: image-height(sprite-file($sprites, $name));
+  width: image-width(sprite-file($sprites, $name));
+  background-image: sprite-url($sprites);
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    background-image: sprite-url($sprites2x);
+    @include background-size(ceil(image-width(sprite-path($sprites2x)) / 2) auto);
+  }
+}
+
+@mixin sprite-background($name) {
+  // background-repeat: no-repeat;
+  // display: block;
+  // background-image: sprite-url($sprites);
+  background-position: sprite-position($sprites, $name);
+
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    // background-image: sprite-url($sprites2x);
+    background-position: 0 round(nth(sprite-position($sprites2x, $name), 2) / 2);
+    // height: round(image-height(sprite-file($sprites2x, $name)) / 2);
+    // width: round(image-width(sprite-file($sprites2x, $name)) / 2);
+    // treat the @2x retina sprite sheet as 50% wide for double resolution upon display //
+    // @include background-size(ceil(image-width(sprite-path($sprites2x)) / 2) auto);
+  }
+}
+
+$sprites-brands: (apple, colgate, intel, lipton, sony, starbucks, valve, warner-bros);
+
+
+// brands logos
+.brand-logo {
+  @include sprite-base-background(logo-apple);
+}
+
+@each $brand in $sprites-brands {
+  .logo-#{$brand} {
+    @include sprite-background("logo-#{$brand}");
+  }
+}
+
+$sprites-platforms: (sites, social, mobile);
+
+// platforms
+.platform {
+  @include sprite-base-background(platform-sites);
+}
+
+@each $platform in $sprites-platforms {
+  .platform-#{$platform} {
+    @include sprite-background("platform-#{$platform}");
+  }
+}
+
+$sprites-press: (gamepilot, 'russian-startup');
+// press
+.press {
+  @include sprite-base-background(press-gamepilot);
+}
+
+@each $press in $sprites-press {
+  .press-#{$press} {
+    height: image-height(sprite-file($sprites, "press-#{$press}"));
+    width: image-width(sprite-file($sprites, "press-#{$press}"));
+    @include sprite-background("press-#{$press}");
+  }
+}
+
+// publisher-steps
+.publisher-step {
+  @include sprite-base-background(publisher-step-1);
+}
+
+@for $i from 1 through 3 {
+  .publisher-step-#{$i} {
+    @include sprite-background("publisher-step-#{$i}");
+  }
+}

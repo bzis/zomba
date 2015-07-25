@@ -1,0 +1,7 @@
+parameters:
+#    vifeed_video_promo.example.class: Vifeed\VideoPromoBundle\Example
+
+services:
+#    vifeed_video_promo.example:
+#        class: %vifeed_video_promo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

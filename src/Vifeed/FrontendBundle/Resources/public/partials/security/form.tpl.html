@@ -1,0 +1,44 @@
+<form name="form" submit-form="login()" class="form-signin" novalidate>
+  <h3 class="form-signin-heading">Пожалуйста, авторизируйтесь.</h3>
+  <div class="alert alert-warning" ng-show="authReason">{{authReason}}</div>
+  <div class="alert alert-danger" ng-show="authError">{{authError}}</div>
+  <div class="form-group">
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+      <input
+        class="form-control"
+        type="email"
+        name="email"
+        placeholder="E-mail"
+        ng-model="user.email"
+        ng-required="true">
+    </div>
+    <error-message
+      for="email"
+      required="Вы забыли указать ваш e-mail адрес"
+      email="Похоже, вы ввели неверный e-mail адрес">
+    </error-message>
+  </div>
+  <div class="form-group">
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon"><i class="fa fa-key"></i></span>
+      <input
+        class="form-control"
+        type="password"
+        name="password"
+        placeholder="Пароль"
+        ng-model="user.password"
+        ng-required="true">
+    </div>
+    <error-message for="password" required="Вы забыли ввести пароль"></error-message>
+  </div>
+  <label class="checkbox">
+    <input type="checkbox" ng-model="user.rememberMe"> Запомнить меня
+    <a ng-href="/password/#/forgot" class="pull-right">Забыли пароль?</a>
+  </label>
+  <div class="row">
+    <button type="submit" ladda="loadingProgress" id="signin-button" class="btn btn-lg btn-primary btn-block uppercase ladda-button">
+      <span class="ladda-label"><strong>Войти</strong></span>
+    </button>
+  </div>
+</form>

@@ -1,0 +1,232 @@
+// compass
+@import 'compass/css3/box-sizing';
+
+// Core variables and mixins
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+
+// Reset
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/normalize';
+// @import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/print';
+
+// Core CSS
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/scaffolding';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/type';
+// @import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/code';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/grid';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/tables';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/forms';
+@import 'bootstrap/_buttons.scss';
+
+// Components
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/component-animations';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/glyphicons';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/dropdowns';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/button-groups';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/input-groups';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/navs';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/navbar';
+// @import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/breadcrumbs';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/pagination';
+// @import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/pager';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/labels';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/badges';
+// @import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/jumbotron';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/thumbnails';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/alerts';
+// @import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/progress-bars';
+// @import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/media';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/list-group';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/panels';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/wells';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/close';
+
+// Components w/ JavaScript
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/modals';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/tooltip';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/popovers';
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/carousel';
+
+// Utility classes
+@import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/utilities';
+// @import '../../../../../../../../bower-vendor/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/responsive-utilities';
+
+
+
+.dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+@import '../../../../../../../../bower-vendor/select2-bootstrap-css/lib/select2-bootstrap.scss';
+
+
+@import 'footer';
+
+.badge {
+  background-color: #428bca;
+}
+
+.active .badge {
+  background-color: #999;
+}
+
+// uppercase
+.uppercase {
+  text-transform: uppercase;
+}
+
+.navbar-nav>.dropdown>.dropdown-toggle:hover {
+  background-color: #1ba392 !important;
+}
+
+// Login form
+.form-signin {
+  margin: 0 auto;
+  max-width: 430px;
+  padding: 15px;
+
+  h3 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  // .form-signin-heading, .checkbox {
+  //  margin-bottom: 10px;
+  // }
+
+  .checkbox {
+    font-weight: normal;
+  }
+
+  .form-control {
+    @include box-sizing(border-box);
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    position: relative;
+  }
+
+  .form-control:focus {
+    z-index: 2;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: #000; // #137064;
+  font-weight: lighter;
+}
+
+//fix strang bug http://uploadr.obnovlenie.ru/uploads/lazzycoder-2013-10-27-221123.png
+.input-group-lg .input-lg {
+  height: 45px !important;
+}
+
+
+.image-block {
+  @extend .thumbnail;
+  background-color: transparent;
+  border: 0;
+
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.row.table-row {
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.row.table-row > [class*="col-"] {
+  display: table-cell;
+  float: none;
+  // vertical-align:top;
+}
+
+@media only screen and (min-width : $screen-sm-min) {
+  // Make Navigation Toggle on Desktop Hover
+  .dropdown:hover
+  .dropdown-menu {
+    display: block;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+
+.nav-tabs {
+  > li.active > a {
+    cursor: default;
+  }
+  a {
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: $screen-lg) {
+  .nav-tabs > li > a {
+    height: 99px;
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  .nav-tabs > li {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .nav-tabs > li {
+    width: 100%;
+    float: none;
+    > a {
+      border: none;
+      height: auto;
+    }
+    &.active > a {
+      border: none;
+      background: transparent;
+      &:hover, &:focus {
+        border: none;
+        background: transparent;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+@media all and (max-width: $screen-xs) {
+  .btn-lg {
+    font-size: 16px;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .content-section {
+    .col-xs-3 {
+      width: 30%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .col-xs-7 {
+      width: 53%;
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: $screen-lg) {
+  .navbar .container {
+    width: auto;
+  }
+}

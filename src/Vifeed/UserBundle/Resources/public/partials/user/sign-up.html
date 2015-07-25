@@ -1,0 +1,147 @@
+<section ng-hide="user.isAuthenticated()">
+  <div class="lead col-md-12">
+    <h1 class="form-signup-heading">Регистрация. <small>Как вы хотите сотрудничать с zombakka?</small></h1>
+  </div>
+  <tabset>
+    <tab select="setUserAsAdvertiser()" class="col-md-6">
+      <tab-heading>
+        <h4 class="uppercase" style="text-align: center">
+          <i class="fa fa-square" ng-class="{ 'fa-check-square': user.type === 'advertiser' }"></i>
+          <strong>
+            У меня есть видео, которое
+            <br />
+            я хочу продвигать.
+          </strong>
+        </h4>
+      </tab-heading>
+      <br>
+      <div class="lead col-md-12">
+        Вы хотите, чтобы ваше видео посмотрело больше людей? <br />
+        Регистрируйтесь бесплатно, минимальный бюджет рекламной кампании составляет всего <strong>100</strong> <i class="fa fa-rub"></i>.
+      </div>
+    </tab>
+    <tab select="setUserAsPublisher()" active="isPublisher" class="col-md-6">
+      <tab-heading>
+        <h4 class="uppercase" style="text-align: center">
+          <i class="fa fa-square" ng-class="{ 'fa-check-square': user.type === 'publisher' }"></i>
+          <strong>
+            У меня есть сайт / блог / игра / приложение
+            <br />
+            на котором я хочу заработать.
+          </strong>
+        </h4>
+      </tab-heading>
+      <br>
+      <div class="lead col-md-12">
+        Мы будем выплачивать вам деньги за публикации видео на вашем сайте, блоге, игре или приложении.<br /> Вы cможете снимать деньги ежедневно.
+      </div>
+    </tab>
+  </tabset>
+  <form role="form" submit-form="signup()" name="user_form" novalidate>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="user_email"
+                    ng-model="user.email"
+                    ng-required="true"
+                    placeholder="Email">
+                </div>
+                <error-message
+                  for="user_email"
+                  required="Вы забыли указать ваш email адрес."
+                  email="Похоже, вы ввели неверный email адрес">
+                </error-message>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                <input
+                  class="form-control"
+                  type="password"
+                  name="user_password"
+                  ng-model="user.password"
+                  ng-required="true"
+                  ng-minlength="6"
+                  placeholder="Пароль">
+              </div>
+              <error-message
+                for="user_password"
+                required="Вы забыли ввести пароль."
+                minlength="Слишком короткий пароль. Введите хотя бы 6 символов">
+              </error-message>
+            </div>
+            <div class="form-group col-md-6">
+              <input
+                class="form-control input-lg"
+                type="password"
+                name="user_password_repeat"
+                ng-model="user.passwordRepeat"
+                password-match="user.password"
+                ng-required="true"
+                placeholder="Пароль еще раз">
+              <error-message
+                for="user_password_repeat"
+                required="Вы забыли ввести пароль еще один раз."
+                equal="Пароли не совпадают. Проверьте правильность ввода">
+              </error-message>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div ng-show="user.type === 'advertiser'">
+            <button
+              type="submit"
+              ladda="loadingProgress"
+              class="btn btn-lg btn-primary btn-block uppercase ladda-button"
+              data-style="zoom-out"
+              analytics-on
+              analytics-event="Create an account for advertiser"
+              analytics-category="Registration">
+              <span class="ladda-label">
+                <strong>Запустить мою кампанию</strong>
+              </span>
+            </button>
+          </div>
+          <div ng-show="user.type === 'publisher'">
+            <button
+              type="submit"
+              ladda="loadingProgress"
+              class="btn btn-lg btn-primary btn-block uppercase ladda-button"
+              data-style="zoom-out"
+              analytics-on
+              analytics-event="Create an account for publisher"
+              analytics-category="Registration">
+              <span class="ladda-label">
+                <strong>Начать зарабатывать</strong>
+              </span>
+            </button>
+          </div>
+          <br>
+          <br>
+          <p>
+            <a href="javascript:void(0);" ng-click="showLoginForm()">Войдите</a>, если у вас уже есть аккаунт
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="col-md-12">
+    <alert ng-show="errorList.length > 0">
+      <h4>Не удалось создать нового пользователя</h4>
+      <ul>
+        <li ng-repeat="message in errorList">{{message}}</li>
+      </ul>
+    </alert>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+parameters:
+    twig.exception_listener.class: Vifeed\SystemBundle\EventListener\ExceptionListener
+
+services:
+
+    kernel.listener.command_dispatch:
+        class: Vifeed\SystemBundle\EventListener\ConsoleExceptionListener
+        arguments:
+            logger: "@logger"
+        tags:
+            - { name: kernel.event_listener, event: console.exception }
+
+    vifeed.mailer:
+        class: Vifeed\SystemBundle\Mailer\VifeedMailer
+        arguments: [ @mailer, @twig, %fos_user.registration.confirmation.from_email% ]
+
+    vifeed.sms_manager:
+        class: Vifeed\SystemBundle\Sms\SmsManager
+        arguments: [ @twilio.api, %twilio.phone_number%, @logger ]
+
+    vifeed.url_decode.twig.extension:
+        class: Vifeed\SystemBundle\Twig\Extension\UrlDecodeExtension
+        tags:
+            -  { name: twig.extension }
+
+    vifeed.num_to_words.twig.extension:
+        class: Vifeed\SystemBundle\Twig\Extension\NumToWordsExtension
+        tags:
+            -  { name: twig.extension }
+
+    vifeed.doctrine.entity_listener_resolver:
+        class: Vifeed\SystemBundle\Doctrine\EntityListenerResolver
+        arguments: [ "@service_container" ]
+
+    monolog.processor.tag:
+            class: Monolog\Processor\TagProcessor
+            arguments:  [ env: %project.environment% ]
+            tags:
+                - { name: monolog.processor, handler: main }

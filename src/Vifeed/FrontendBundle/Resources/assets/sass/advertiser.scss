@@ -1,0 +1,38 @@
+// @import 'common-private';
+@import 'stats';
+
+.bid-simulator {
+  .radio-inline {
+    padding-top: 0;
+  }
+}
+
+.angular-google-map-container {
+  height: 600px;
+  width: 100%;
+}
+
+// fix for Twitter Bootstrap handling of responsive images
+.angular-google-map img {
+  max-width: inherit;
+}
+
+.angular-google-map {
+  top: 80px;
+}
+
+.bubble-alert {
+  position: fixed;
+  width: 600px;
+  right: 20px;
+  top: 70px;
+  z-index: 10;
+}
+
+.analytics .chose-campaign {
+  max-width: 100%;
+  // width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

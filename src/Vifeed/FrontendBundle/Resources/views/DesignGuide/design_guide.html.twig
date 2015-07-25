@@ -1,0 +1,32 @@
+{% extends 'VifeedFrontendBundle:Default:layout.html.twig' %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  {% stylesheets output='css/*.css' filter='cssrewrite,?yui_css'
+    '@VifeedFrontendBundle/Resources/assets/sass/advertiser.scss'
+    %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}
+  {% stylesheets output='css/*.css' filter='cssrewrite,?yui_css'
+    '@VifeedFrontendBundle/Resources/assets/sass/publisher.scss'
+    %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    {# // <script id="zmbk-script" src="http://tracker.vifeed.dev/widget/auto/d1w2qP/?width=640&amp;height=400&amp;nextBtn=1"></script> #}
+    {# {% include 'VifeedFrontendBundle:DesignGuide:socket_test.html.twig' %} #}
+
+    {# {% include 'VifeedFrontendBundle:DesignGuide:withdraw.html.twig' %} #}
+    {# {% include 'VifeedFrontendBundle:DesignGuide:settings.html.twig' %} #}
+    {# {% include 'VifeedFrontendBundle:DesignGuide:stats.html.twig' %} #}
+    {# {% include 'VifeedFrontendBundle:DesignGuide:campaginlist.html.twig' %} #}
+    {# {% include 'VifeedFrontendBundle:DesignGuide:registration.html.twig' %} #}
+    {# {% include 'VifeedFrontendBundle:DesignGuide:campagins.html.twig' %} #}
+    {# {% include 'VifeedFrontendBundle:DesignGuide:new-platform.html.twig' %} #}
+    {# {% include 'VifeedFrontendBundle:DesignGuide:widget.html.twig' %} #}
+    {# {% include 'VifeedFrontendBundle:DesignGuide:billing.html.twig' %} #}
+  </div>
+{% endblock %}

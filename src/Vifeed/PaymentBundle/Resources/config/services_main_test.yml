@@ -1,0 +1,4 @@
+parameters:
+    chewbacco_payment_qiwi_wallet.client.class: Vifeed\PaymentBundle\Tests\Mock\QiwiClientMock
+    payment.paypal.client.class: Vifeed\PaymentBundle\Tests\Mock\PaypalClientMock
+    karser.robokassa.client.class: Vifeed\PaymentBundle\Tests\Mock\RobokassaClientMock

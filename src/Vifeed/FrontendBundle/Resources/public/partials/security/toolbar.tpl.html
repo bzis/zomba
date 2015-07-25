@@ -1,0 +1,17 @@
+<ul class="nav navbar-nav navbar-right">
+  <li ng-show="isAuthenticated()">
+    <a href="/#/profile">{{currentUser.fullName || 'Профиль'}}</a>
+  </li>
+  <li ng-show="isAuthenticated()">
+    <a href="javascript:void(0);" id="signout-link" ng-click="logout('/')">Выход</a>
+  </li>
+  <li ng-hide="isAuthenticated()">
+    <a href="javascript:void(0);" id="signup-link" ng-click="signup()">Регистрация</a>
+  </li>
+  <li ng-hide="isAuthenticated()">
+    <a href="javascript:void(0);" id="signin-link" ng-click="login()">Вход</a>
+  </li>
+  <li ng-show="isAuthenticated()">
+    <a href="/#/finance" id="navbar-balance">Баланс: {{currentUser.balance || 0}} <i class="fa fa-rub"></i></a>
+  </li>
+</ul>

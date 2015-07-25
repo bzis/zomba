@@ -1,0 +1,444 @@
+<h1>Настройки</h1>
+<hr>
+<h2>Персональная информация</h2>
+<hr>
+<form class="form-horizontal" submit-form="updateUserInfo()" name="user_settings" novalidate>
+  <div class="row">
+    <div class="form-group">
+      <label for="first-name" class="col-md-3 control-label">Имя</label>
+      <div class="col-md-5">
+        <input
+          type="text"
+          class="form-control"
+          id="first-name"
+          name="first_name"
+          ng-model="profile.firstName"
+          ng-required="true"
+          placeholder="Укажите ваше имя">
+        <error-message for="first_name" required="Вы забыли указать ваше имя"></error-message>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="last-name" class="col-md-3 control-label">Фамилия</label>
+      <div class="col-md-5">
+        <input
+          type="text"
+          class="form-control"
+          id="last-name"
+          name="last_name"
+          ng-model="profile.lastName"
+          ng-required="true"
+          placeholder="Укажите вашу фамилию">
+        <error-message for="last_name" required="Вы забыли указать вашу фамилию"></error-message>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-md-3 control-label">Email</label>
+      <div class="col-md-5">
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          ng-model="profile.email"
+          ng-required="true"
+          placeholder="Укажите ваш email">
+        <error-message
+          for="email"
+          required="Вы забыли указать ваш email адрес."
+          email="Похоже, вы ввели неверный email адрес">
+        </error-message>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phone" class="col-md-3 control-label">Мобильный телефон</label>
+      <div class="col-md-5">
+        <input
+          type="text"
+          class="form-control"
+          id="phone"
+          name="mobile_phone"
+          ng-model="profile.phone"
+          ng-required="true"
+          ui-mask="+7 (999) 999-99-99">
+        <error-message
+          for="mobile_phone"
+          required="Вы забыли указать ваш контактный телефон"
+          mask="Вы ввели неверный телефон">
+        </error-message>
+      </div>
+    </div>
+    <div class="form-group" ng-show="profile.type === 'publisher'">
+      <div class="col-md-offset-3 col-md-5">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="profile.notification.email" ng-true-value="1" ng-false-value="0"> Оповещать по почте о появлении новой кампании
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group" ng-show="profile.type === 'publisher'">
+      <div class="col-md-offset-3 col-md-5">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="profile.notification.sms" ng-true-value="1" ng-false-value="0"> Оповещать через SMS о появлении новой кампании
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group" ng-show="profile.type === 'advertiser'">
+      <div class="col-md-offset-3 col-md-5">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="profile.notification.news" ng-true-value="1" ng-false-value="0"> Оповещать по почте о новостях, акциях и спецпредложениях
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <alert ng-show="errorList.length > 0">
+      <h4>Не удалось обновить персональную информацию</h4>
+      <ul>
+        <li ng-repeat="message in errorList">{{message}}</li>
+      </ul>
+    </alert>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-2">
+      <button type="submit" id="save-profile-button" ladda="loadingProfile" class="btn btn-primary btn-block ladda-button" data-style="zoom-out">
+        <span class="ladda-label">Сохранить</span>
+      </button>
+    </div>
+  </div>
+</form>
+<br>
+<br>
+<h2>Изменение пароля</h2>
+<hr>
+<form class="form-horizontal" submit-form="updateUserPasswords()" name="password_settings" novalidate>
+  <div class="row">
+    <div class="form-group">
+      <label for="current-password" class="col-md-3 control-label">Текущий пароль</label>
+      <div class="col-md-5">
+        <input
+          type="password"
+          class="form-control"
+          id="current-password"
+          name="current_password"
+          ng-model="password.current"
+          ng-required="true"
+          ng-minlength="6"
+          placeholder="Текущий пароль">
+        <error-message
+          for="current_password"
+          required="Вы забыли ввести пароль."
+          minlength="Слишком короткий пароль. Введите хотя бы 6 символов">
+        </error-message>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="new-password" class="col-md-3 control-label">Новый пароль</label>
+      <div class="col-md-5">
+        <input
+          type="password"
+          class="form-control"
+          id="new-password"
+          name="new_password"
+          ng-model="password.newOne"
+          ng-required="true"
+          ng-minlength="6"
+          placeholder="Новый пароль">
+        <error-message
+          for="new_password"
+          required="Вы забыли ввести пароль."
+          minlength="Слишком короткий пароль. Введите хотя бы 6 символов">
+        </error-message>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="repeat-password" class="col-md-3 control-label">Новый пароль еще раз</label>
+      <div class="col-md-5">
+        <input
+          type="password"
+          class="form-control"
+          id="repeat-password"
+          name="new_password_repeated"
+          ng-model="password.newOneRepeated"
+          password-match="password.newOne"
+          ng-required="true"
+          placeholder="Новый пароль еще раз">
+        <error-message
+          for="new_password_repeated"
+          required="Вы забыли ввести пароль еще один раз."
+          equal="Пароли не совпадают. Проверьте правильность ввода">
+        </error-message>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <alert ng-show="passwordErrorList.length > 0">
+      <h4>Не удалось изменить пароль</h4>
+      <ul>
+        <li ng-repeat="message in passwordErrorList">{{message}}</li>
+      </ul>
+    </alert>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-2">
+      <button type="submit" id="save-password-button" ladda="loadingPasswords" class="btn btn-primary btn-block ladda-button" data-style="zoom-out">
+        <span class="ladda-label">Изменить пароль</span>
+      </button>
+    </div>
+  </div>
+</form>
+<hr>
+<!--div ng-show="profile.type == 'advertiser'">
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="hasCompany"> Я представляю юридическое лицо
+        </label>
+      </div>
+    </div>
+  </div>
+</div-->
+<div ng-show="hasCompany">
+  <br>
+  <h2>Юридическое лицо</h2>
+  <hr>
+  <form class="form-horizontal" submit-form="updateCompany()" name="company_settings" novalidate>
+    <div class="row">
+      <div class="form-group">
+        <label for="taxation-system" class="col-md-3 control-label">Система налогообложения</label>
+        <div class="col-md-5">
+          <select class="form-control" id="taxation-system" ng-model="company.system" ng-options="system.name for system in taxationSystems">
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="company-name" class="col-md-3 control-label">
+          Название организации
+          <span tooltip="Название вашей организации с указанием формы ответственности. Например, ООО &quot;Рога и копыта&quot;" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-5">
+          <input
+            type="text"
+            class="form-control"
+            id="company-name"
+            name="company_name"
+            ng-model="company.name"
+            ng-required="true">
+          <error-message
+            for="company_name"
+            required="Вы забыли указать название организации"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address" class="col-md-3 control-label">
+          Юридический адрес организации
+          <span tooltip="Юридический адрес организации. Например, Российская Федерация, 127018, Москва, ул. Сущевский Вал, д. 43" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-5">
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            name="address"
+            ng-model="company.address"
+            ng-required="true">
+          </textarea>
+          <error-message for="address" required="Вы забыли указать юридический адрес вашей организации"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inn" class="col-md-3 control-label">
+          ИНН организации
+          <span tooltip="ИНН вашей организации. Например, 7700000000" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-5">
+          <input
+            type="number"
+            class="form-control"
+            id="inn"
+            name="inn"
+            ng-model="company.inn"
+            ng-required="true"
+            ng-minlength="10"
+            ng-maxlength="10">
+          <error-message
+            for="inn"
+            required="Вы забыли указать ИНН организации"
+            minlength="Неверный номер ИНН"
+            maxlength="Неверный номер ИНН"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="kpp" class="col-md-3 control-label">
+          КПП организации
+          <span tooltip="КПП вашей организации. Например, 770000000" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-5">
+          <input
+            type="number"
+            class="form-control"
+            id="kpp"
+            name="kpp"
+            ng-model="company.kpp"
+            ng-required="true"
+            ng-minlength="9"
+            ng-maxlength="9">
+          <error-message
+            for="kpp"
+            required="Вы забыли указать КПП организации"
+            minlength="Неверный номер КПП"
+            maxlength="Неверный номер КПП"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="bic" class="col-md-3 control-label">
+          БИК организации
+          <span tooltip="БИК вашей организации. Например, 010000000" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-5">
+          <input
+            type="number"
+            class="form-control"
+            id="bic"
+            name="bic"
+            ng-model="company.bic"
+            ng-required="true"
+            ng-minlength="9"
+            ng-maxlength="9">
+          <error-message
+            for="bic"
+            required="Вы забыли указать БИК организации"
+            minlength="Неверный номер БИК"
+            maxlength="Неверный номер БИК"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="bank-account" class="col-md-3 control-label">
+          Расчетный счет организации
+          <span tooltip="Расчетный счет вашей организации. Например, 12345678901234567890 в Сбербанке России" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-5">
+          <input
+            type="text"
+            class="form-control"
+            id="bank-account"
+            name="bank_account"
+            ng-model="company.bankAccount"
+            ng-required="true">
+          <error-message
+            for="bic"
+            required="Вы забыли указать расчетный счет организации">
+          </error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="correspondent-account" class="col-md-3 control-label">
+          Корр. счет организации
+          <span tooltip="Корр. счет вашей организации. Например, 30100000000001234567890" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-5">
+          <input
+            type="number"
+            class="form-control"
+            id="correspondent-account"
+            name="correspondent_account"
+            ng-model="company.correspondentAccount"
+            ng-required="true"
+            ng-minlength="20"
+            ng-maxlength="20">
+          <error-message
+            for="correspondent_account"
+            required="Вы забыли указать корр. счет организации"
+            minlength="Неверный номер корр. счета"
+            maxlength="Неверный номер корр. счета">
+          </error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="contact-name" class="col-md-3 control-label">
+          ФИО контактного лица
+          <span tooltip="Фамилия, имя и отчество контактного лица. Например, Иванов Иван Иванович" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-5">
+          <input
+            type="text"
+            class="form-control"
+            id="contact-name"
+            name="contact_name"
+            ng-model="company.contactName"
+            ng-required="true">
+          <error-message
+            for="contact_name"
+            required="Вы забыли указать ФИО контактного лица"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="position" class="col-md-3 control-label">
+          Должность контактного лица
+          <span tooltip="Должность контактного лица. Например, Менеджер" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-5">
+          <input
+            type="text"
+            class="form-control"
+            id="position"
+            name="position"
+            ng-model="company.position"
+            ng-required="true">
+          <error-message
+            for="position"
+            required="Вы забыли указать должность контактного лица"></error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="col-md-3 control-label">
+          Телефон организации или контактного лица
+          <span tooltip="Телефон организации или контактного лица. Например, 4955551234" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-5">
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            name="phone"
+            ng-model="company.phone"
+            ng-required="true"
+            ui-mask="+7 (999) 999-99-99">
+          </textarea>
+          <error-message
+            for="phone"
+            required="Вы забыли указать телефон вашей организации"
+            mask="Вы ввели неверный телефон">
+          </error-message>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <alert ng-show="companyErrorList.length > 0">
+        <h4>Не удалось изменить информацию об организации</h4>
+        <ul>
+          <li ng-repeat="message in companyErrorList">{{message}}</li>
+        </ul>
+      </alert>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-2">
+        <button type="submit" id="save-company-button" ladda="loadingCompany" class="btn btn-primary btn-block ladda-button" data-style="zoom-out">
+          <span class="ladda-label">Изменить</span>
+        </button>
+      </div>
+    </div>
+  </form>
+  <hr>
+</div>

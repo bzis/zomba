@@ -1,0 +1,26 @@
+registration:
+    email:
+        subject: Добро пожаловать!
+        message.text: |
+            Здравствуйте!
+
+            Для подтверждения вашей регистрации, пройдите по ссылке %confirmationUrl%
+
+            С наилучшими пожеланиями,
+            команда сайта.
+        message.html: |
+            <p>Здравствуйте!</p>
+
+            <p>Для подтверждения вашей регистрации, пройдите по ссылке <a href="%confirmationUrl%">%confirmationUrl%</a></p>
+
+# Password resetting
+resetting:
+    email:
+        subject: Сброс пароля
+        message: |
+            Здравствуйте!
+
+            Для сброса пароля, пожалуйста, пройдите по ссылке %confirmationUrl%
+
+            С наилучшими пожеланиями,
+            команда сайта.

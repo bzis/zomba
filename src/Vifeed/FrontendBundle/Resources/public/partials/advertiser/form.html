@@ -1,0 +1,268 @@
+<h1>Настройте вашу кампанию</h1>
+<hr>
+<alert ng-show="isLoadingError" type="danger">
+  <p>Похоже, у нас что-то сломалось, потому что не удалось загрузить все данные <i class="fa fa-frown-o"></i></p>
+  <p>Попробуйте повторить попытку чуть позже</p>
+</alert>
+<alert ng-show="isFormError" class="bubble-alert pull-center" type="danger" close="closeBubbleAlert();">
+  <div>
+    Не удалось сохранить кампанию, потому что форма содержит ошибки.<br>
+    Проверьте правильность заполнения всех полей и снова нажмите кнопку "Сохранить"
+  </div>
+</alert>
+<form class="form-horizontal" submit-form="saveCampaign()" name="campaign_settings" for="campaign" novalidate>
+  <div class="row">
+    <div class="form-group" ng-show="previewUrl">
+      <label class="col-md-2 control-label">Youtube видео</label>
+      <div class="col-md-7">
+        <iframe frameborder="0" width="560" height="315" ng-src="{{previewUrl}}" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="title" class="col-md-2 control-label">Название кампании</label>
+      <div class="col-md-7" popover="Название вашей кампании<br><strong>Например:</strong> <em>Мое классное видео</em>" popover-title="Название кампании" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <input type="text" name="campaign_name" class="form-control" id="title" placeholder="Название кампании" ng-required="true" ng-model="campaign.title">
+        <error-message for="campaign_name" required="Укажите название кампании"></error-message>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="description" class="col-md-2 control-label">
+        Описание видео
+        <span tooltip="Описание, которое будет отображаться под видео" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+      </label>
+      <div class="col-md-7" popover="Описание, которое будет отображаться под видео<br><strong>Например:</strong> <em>Зацените это классное видео</em>" popover-title="Описание видео" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <textarea
+          class="form-control"
+          name="campaign_description"
+          id="description"
+          textarea-limiter
+          ng-model="campaign.description"
+          ng-trim="false"
+          ng-maxlength="1024"
+          ng-required="true"
+          rows="5">
+        </textarea>
+        <error-message for="campaign_description" required="Укажите краткое описание видео"></error-message>
+      </div>
+    </div>
+  </div>
+  <h2>Таргетинг</h2>
+  <hr>
+  <div class="row">
+    <div class="form-group">
+      <label for="country" class="col-md-2 control-label">
+        Страны
+        <span tooltip="Страны, в которых будет показываться ваше видео" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+      </label>
+      <div class="col-md-7" popover="Страны, в которых будет показываться ваше видео<br><strong>Например:</strong> <em>Россия, Украина</em>" popover-title="Страны" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <select class="form-control col-md-7" id="country" ui-select2="countryOptions" ng-model="campaign.countries" data-placeholder="Выберите страну или оставьте поле пустым для показа во всех странах" ng-disabled="isLocked" multiple>
+          <option ng-repeat="country in countries track by country.id" value="{{country.id}}">{{country.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="tags" class="col-md-2 control-label">
+        Тэги
+        <span tooltip="Тэги, использующиеся на рекламных площадках для лучшего таргетирования" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+      </label>
+      <div class="col-md-7" popover="Тэги, максимально характеризующие ваше видео<br><strong>Например:</strong> <em>music, metal</em>" popover-title="Тэги" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <input
+          type="text"
+          class="form-control col-md-7"
+          id="tags"
+          ui-select2="tagOptions"
+          ng-model="campaign.tags"
+          ui-event="{ 'select2-highlight': 'loadTags($event)' }"
+          placeholder="Выберите или введите тэги, характеризующие ваше видео"
+          ng-disabled="isLocked">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="male-gender" class="col-md-2 control-label">
+        Пол
+        <span tooltip="Пол зрителей, на которых ориентировано видео" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+      </label>
+      <radio-choice class="col-md-7" ng-model="campaign.gender" ng-disabled="isLocked" popover="Пол зрителей, для которых предназначено ваше видео" popover-title="Пол зрителей" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <label class="radio-inline">
+          <input type="radio" name="gender" id="male-gender" value="male" ng-disabled="isLocked"> Мужчины
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="gender" value="female" ng-disabled="isLocked"> Женщины
+        </label>
+      </radio-choice>
+    </div>
+    <div class="form-group">
+      <label for="check-all" class="col-md-2 control-label">
+        Возраст
+        <span tooltip="Возраст зрителей, на которых ориентировано видео" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+      </label>
+      <div class="col-md-7" popover="Возраст зрителей, для которых предназначено ваше видео" popover-title="Возраст зрителей" popover-trigger="mouseenter" popover-animation="false" popover-placement="right">
+        <label class="checkbox-inline">
+          <input type="checkbox" id="check-all" ng-click="clearAges()" ng-checked="campaign.ages.length === 0" ng-disabled="isLocked"> Все
+        </label>
+        <label class="checkbox-inline" ng-repeat="age in ages track by age.id">
+          <input type="checkbox" value="{{age.id}}" ng-click="updateAge(age.id)" ng-checked="campaign.ages.indexOf(age.id) !== -1" ng-disabled="isLocked"> {{age.name}}
+        </label>
+      </div>
+    </div>
+  </div>
+  <h2>Бюджет и ценообразование</h2>
+  <hr>
+  <div class="row">
+    <div class="col-md-8">
+       <!--popover="<strong>Бюджет:</strong> общая сумма, которую вы хотите потратить на кампанию. Кампания будет запущена максимально быстро на подходящих рекламных площадках.<br><br>
+                <strong>Дневной бюджет:</strong> сумма, которую вы хотите потратить в день. Вы можете выбрать этот вид бюджета, если хотите, чтобы ваше видео показывалось каждый день в течение какого-то периода.<br><br>
+                <strong>Максимальная ставка:</strong> цена, которую вы хотите платить за один просмотр. Чем большую ставку вы назначите, тем быстрее получите необходимое количество просмотров. Ставка зависит от таргетинга. Детальный таргетинг требует большей ставки."
+       popover-title="Бюджет кампании"
+       popover-trigger="mouseenter"
+       popover-animation="false"
+       popover-placement="right"-->
+      <div class="form-group">
+        <label for="budget" class="col-md-4 control-label">
+          Бюджет
+          <span tooltip="Общий бюджет вашей кампании" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-8">
+          <div class="form-group">
+            <div class="input-group col-md-4">
+              <span class="input-group-addon">
+                <i class="fa fa-rub"></i>
+              </span>
+              <input
+                type="number"
+                name="budget"
+                class="form-control"
+                id="budget"
+                ng-required="true"
+                ng-change="changeBugdetLimits()"
+                ng-model="campaign.totalBudget"
+                ng-pattern="/^\d+$/"
+                min="100"
+                placeholder="1000"
+                ng-disabled="isLocked">
+            </div>
+          </div>
+          <error-message
+            for="budget"
+            required="Вы забыли установить сумму бюджета"
+            min="Сумма бюджета кампании не может быть меньше 100 рублей"
+            pattern="Сумма бюджета должна быть положительным целым числом">
+          </error-message>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="daily-budget" class="col-md-4 control-label">
+          Дневной бюджет
+          <span tooltip="Дневной бюджет вашей кампании. Количество денег в сутки, которые вы хотите тратить" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-8">
+          <div class="form-group">
+            <div class="input-group col-md-4 pull-left">
+              <span class="input-group-addon">
+                <i class="fa fa-rub"></i>
+              </span>
+              <input
+                type="number"
+                name="daily_budget"
+                class="form-control"
+                id="daily-budget"
+                ng-disabled="unlimitedDailyBudget || isLocked"
+                ng-required="true"
+                ng-pattern="/^\d+$/"
+                ng-model="campaign.dailyBudget"
+                zmbk-min="minDailyBudget"
+                zmbk-max="campaign.totalBudget"
+                placeholder="100">
+               <!-- I'm using 'zmbk-min' and 'zmbk-man' because appropriate 'min' and 'max' cause an error when I tried to pass a model into them -->
+            </div>
+            <label class="col-md-push-1 col-md-5 checkbox-inline pull-left">
+              <input type="checkbox" ng-model="unlimitedDailyBudget" ng-change="changeBugdetLimits()" ng-disabled="isLocked" /> Не ограничен
+            </label>
+          </div>
+          <error-message
+            for="daily_budget"
+            required="Установите сумму дневного бюджета или выберите неограниченный дневной бюджет"
+            min="Сумма дневного бюджета должна быть 10% или больше от общего бюджета кампании, но не менее 100 рублей"
+            max="Сумма дневного бюджета не может превышать сумму общего бюджета кампании"
+            pattern="Сумма дневного бюджета должна быть положительным целым числом">
+          </error-message>
+          <small>
+            Сумма в рублях, которую вы готовы потратить за одни сутки.<br>
+            Поставьте галочку "Не ограничен" или укажите нулевой дневной бюджет, если не хотите ограничивать ваш суточный бюджет.<br>
+            Дневной бюджет должен быть больше или равен 10% от общего бюджета, но не менее 100 рублей.
+          </small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="bid" class="col-md-4 control-label">
+          Ставка
+          <span tooltip="Стоимость одного просмотра вашего видео" tooltip-animation="false" tooltip-placement="left"><i class="fa fa-info-circle"></i></span>
+        </label>
+        <div class="col-md-8">
+          <div class="form-group">
+            <div class="input-group col-md-5">
+              <span class="input-group-addon">
+                <i class="fa fa-rub"></i>
+              </span>
+              <input
+                type="text"
+                name="bid"
+                class="form-control"
+                id="bid"
+                ng-required="true"
+                zmbk-range min="1" max="maxBid"
+                zmbk-float-formatter
+                ng-model="campaign.maxBid"
+                placeholder="2.00"
+                ng-pattern="/^\d+((\.|\,)\d+)?$/"
+                ng-disabled="isLocked">
+              <span class="input-group-addon" ng-hide="isLocked">
+                <a href="javascript:void(0);" ng-click="increaseMaxBid()">
+                  <i class="fa fa-plus-circle"></i>
+                </a>
+              </span>
+              <span class="input-group-addon" ng-hide="isLocked">
+                <a href="javascript:void(0);" ng-click="decreaseMaxBid()">
+                  <i class="fa fa-minus-circle"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+          <error-message
+            for="bid"
+            required="Вы забыли указать ставку за просмотр"
+            range="Cтавка за просмотр должна иметь значение в интервале от 1-го рубля до суммы дневного или общего бюджета кампании"
+            pattern="Значение ставки должно быть положительным числом. Копейки должны отделяться от рублей точкой">
+          </error-message>
+          <small>
+            Сумма, которую вы готовы платить за один просмотр.<br>
+            Чем меньше цена клика, тем на меньшем количестве площадок будет опубликован ваш ролик. И тем ниже будет скорость набора просмотров.
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <alert ng-show="validationErrors.length > 0" close="alertClose();">
+    <h4>Не удалось создать кампанию</h4>
+    <ul><li ng-repeat="errorMessage in validationErrors">{{errorMessage}}</li></ul>
+  </alert>
+  <div class="row">
+    <div class="col-md-2">
+      <button
+        type="submit"
+        ladda="loadingProgress"
+        class="btn btn-primary btn-block ladda-button"
+        data-style="zoom-out"
+        tooltip="После сохранения кампании вы сможете изменить только название и описание кампании"
+        tooltip-animation="false"
+        tooltip-placement="top">
+        <span class="ladda-label">{{saveButtonLabel}}</span>
+      </button>
+    </div>
+    <div class="col-md-2" ng-show="showCancelButton">
+      <button type="button" class="btn btn-primary btn-block" ng-click="cancelCampaign()">Отменить</button>
+    </div>
+  </div>
+</form>
+<hr>

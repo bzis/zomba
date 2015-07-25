@@ -1,0 +1,99 @@
+<h1>Мои финансы <small>расход по дням</small></h1>
+<hr>
+<div class="row">
+  <div class="col-md-8">
+    <div class="btn-group btn-block">
+      <button class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" date-range ng-model="period" ranges="ranges" locale="translation" on-change="changeFinanceDetailPeriod">
+        <strong><i class="fa fa-calendar"></i> {{period.startDate | amDateFormat: 'LL'}} - {{period.endDate | amDateFormat: 'LL'}}</strong>
+        <span class="caret"></span>
+        <span class="sr-only">Показать календарь</span>
+      </button>
+    </div>
+    <hr>
+    <h3>{{campaign.title}}</h3>
+    <button class="btn btn-md btn-default" ng-click="changePeriod('/finance')">
+      <strong><i class="fa fa-arrow-left"></i> к общим расходам</strong>
+    </button>
+    <hr>
+    <table class="table campaigns-table table-striped">
+      <thead>
+        <tr ng-show="!stats.length">
+          <th><alert type="info">{{info.spendings}}</alert></th>
+        </tr>
+        <tr ng-show="stats.length > 0">
+          <th>Дата</th>
+          <th>
+            Показы
+            <span tooltip="Количество уникальных посетителей, которым был показан ваш видео ролик" tooltip-animation="false" tooltip-placement="top"><i class="fa fa-info-circle"></i></span>
+          </th>
+          <th>
+            Просмотры
+            <span tooltip="Количество уникальных посетителей, просмотревших ваш видео ролик" tooltip-animation="false" tooltip-placement="top"><i class="fa fa-info-circle"></i></span>
+          </th>
+          <th>
+            KPI
+            <span tooltip="Отношение показов к просмотрам" tooltip-animation="false" tooltip-placement="top"><i class="fa fa-info-circle"></i></span>
+          </th>
+          <th>Сумма</th>
+        </tr>
+      </thead>
+      <tbody ng-show="stats.length > 0">
+        <tr ng-repeat="record in stats track by $index">
+          <td>{{record.date | amDateFormat: 'LL'}}</td>
+          <td>{{record.views}}</td>
+          <td>{{record.paid_views}}</td>
+          <td>{{record.kpi}}</td>
+          <td>{{record.charged || 0}} <small><i class="fa fa-rub"></i></small></td>
+        </tr>
+          <tr>
+            <td>Итого:</td>
+            <td>{{totalSpendings.views}}</td>
+            <td>{{totalSpendings.paidViews}}</td>
+            <td>{{totalSpendings.kpi}}</td>
+            <td>{{totalSpendings.charged}} <small><i class="fa fa-rub"></i></small></td>
+          </tr>
+      </tbody>
+    </table>
+    <br>
+    <hr>
+    <table class="table campaigns-table table-striped">
+      <caption><h3>Платежи</h3><hr></caption>
+      <thead>
+        <tr ng-show="!payments.length">
+          <th><alert type="info">{{info.payments}}</alert></th>
+        </tr>
+        <tr ng-show="payments.length > 0">
+          <th>Дата операции</th>
+          <th>Способ оплаты</th>
+          <th>Сумма</th>
+        </tr>
+      </thead>
+      <tbody ng-show="payments.length > 0">
+        <tr ng-repeat="payment in payments track by $index">
+          <td>{{payment.date | amDateFormat: 'LL'}}</td>
+          <td>{{payment.paymentSystemName}}</td>
+          <td>{{payment.amount}} <small><i class="fa fa-rub"></i></small></td>
+        </tr>
+        <tr>
+          <td>Итого:</td>
+          <td></td>
+          <td>{{totalPayments}} <small><i class="fa fa-rub"></i></small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">Cостояние счета</div>
+      <dl class="dl-horizontal">
+        <dt><h3>Баланс:</h3></dt>
+        <dd><h3><b>{{balance}}</b> <i class="fa fa-rub"></i></h3></dd>
+      </dl>
+      <div class="panel-body">
+        <button class="btn btn-lg btn-primary btn-block uppercase" ng-click="replenishAccount()">
+          <strong>Пополнить</strong>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
