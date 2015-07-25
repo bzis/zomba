@@ -3,7 +3,7 @@ require 'capistrano/flowdock'
 # for Flowdock Gem notifications
 set :flowdock_project_name, 'vifeed'
 set :flowdock_deploy_tags, ['frontend']
-set :flowdock_api_token, '99c0b1ff68ca7ff45786742d6430d6a7'
+set :flowdock_api_token, 'code'
 
 set :stages,        %w(production staging)
 set :default_stage, 'staging'
