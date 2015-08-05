@@ -1,18 +1,18 @@
 parameters:
     project.environment: stage
     database_driver: pdo_mysql
-    database_host: stage.ctpklt153wwy.eu-west-1.rds.amazonaws.com
+    database_host: host
     database_port: null
     database_name: vifeed
     database_user: chief
-    database_password: DL6LR$db&cz4Qe
+    database_password: pass
     mailer_transport: smtp
     mailer_encryption: tls
-    mailer_host: email-smtp.eu-west-1.amazonaws.com
-    mailer_user: AKIAI4BLDCAYTRD6DSZA
-    mailer_password: Ap70NrgTyvBYmJ06hGATIcfeA96oWIG/utKvijhewKD5
+    mailer_host: code
+    mailer_user: code
+    mailer_password: code
     locale: ru
-    secret: 'YMnfCuNL[QXTmMsshpnnRjN6GgNPDosJR@JK4W.ugmHh%inc>p7nyzsCWV'
+    secret: 'code'
     developer_email: no-reply@zombakka.com
     assetic.ruby.bin: /opt/rbenv/versions/2.1.2/bin/ruby
     assetic.filter.compass.bin: /opt/rbenv/versions/2.1.2/bin/compass
@@ -23,19 +23,19 @@ parameters:
     assetic.filter.compass.timeout: 600
     assetic.cdn_url: 'http://cdn-stage.vifeed.co'
     assetic.cdn_path: "%kernel.root_dir%/../web"
-    social: { VKAppID: 4325637, VKAppSecret: '' }
-    payment.secret: 2ceea4871a6205c421dc3ce9b0a7b350aafe7000
-    robokassa.login: Zombakka
-    robokassa.password1: DZ1oZrZc9U8e
-    robokassa.password2: dEv56kZLMA2X
-    redis_dns.default: 'redis://stage.nmhes6.0001.euw1.cache.amazonaws.com:6379/1'
-    redis_dns.session: 'redis://stage.nmhes6.0001.euw1.cache.amazonaws.com:6379/2'
-    redis_dns.doctrine: 'redis://stage.nmhes6.0001.euw1.cache.amazonaws.com:6379/3'
-    cayetanosoriano_hashids.salt: 'randomsalt'
+    social: { VKAppID: code, VKAppSecret: '' }
+    payment.secret: code
+    robokassa.login: code
+    robokassa.password1: code
+    robokassa.password2: code
+    redis_dns.default: 'code'
+    redis_dns.session: 'code'
+    redis_dns.doctrine: 'code'
+    cayetanosoriano_hashids.salt: 'code'
     cayetanosoriano_hashids.min_hash_length: 6
-    google.api.key: 'AIzaSyBrcW_Q9-soi0XD3cU-nZPYOI_wo0JZvLI'
-    qiwi.login: 8586
-    qiwi.password: '8]Eo7xXp52kH7H6j'
+    google.api.key: 'code'
+    qiwi.login: code
+    qiwi.password: 'code'
     paypal.username: hd.deman@gmail.co
     paypal.password: weeqw
     paypal.api_signature: dsfsdf
@@ -65,16 +65,16 @@ parameters:
     backend.host: backend.zombakka.com
     rabbitmq.host: 'hot-giraffe.rmq.cloudamqp.com'
     rabbitmq.port: 5672
-    rabbitmq.user: 'qlqfznst'
-    rabbitmq.password: 'MQbk9FIj2QhHlob0P8bQy7JsdBNF6vSB'
+    rabbitmq.user: 'code'
+    rabbitmq.password: 'code'
     rabbitmq.vhost: 'stage'
     daemon.pid_file_location: /tmp
-    twilio.sid: AC668d221231b47c2f7db6c19ced65b584
-    twilio.token: 8b9610584c29edcbb87bca3647235569
-    twilio.phone_number: 14846536503
+    twilio.sid: code
+    twilio.token: code
+    twilio.phone_number: code
     public_domain: vifeed.co
     promo_domain: zomba.me
-    facebook.app_id: 297198780441139
-    facebook.app_secret: dd9fb9783437d289f0ac0e0adc559092
-    vk.app_id: 4345643
-    vk.app_secret: 69YPxuys9WNktkxyGIm7
+    facebook.app_id: code
+    facebook.app_secret: code
+    vk.app_id: code
+    vk.app_secret: code
