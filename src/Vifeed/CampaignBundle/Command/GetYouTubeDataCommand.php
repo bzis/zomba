@@ -51,9 +51,6 @@ class GetYouTubeDataCommand extends ContainerAwareCommand
         foreach ($request as $video) {
             /** @var \Google_Service_YouTube_Video $video */
             /** @var \Google_Service_YouTube_VideoStatistics $stats */
-            var_dump($video);
-            exit;
-//            var_dump($video->getAgeGating());
             $stats = $video->getStatistics();
 
             $hash = $video->getId();
